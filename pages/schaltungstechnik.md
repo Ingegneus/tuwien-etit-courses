@@ -64,8 +64,7 @@ tags:: uni
 				  collapsed:: true
 					- $u_{ed}$ ... differenzenspannung an [[opv]] [V]
 					  $u_a$ ... ausgangsspannung [V]
-			- ![image.png](../assets/documents/image_1718381907068_0.png){:width 400}
-			  collapsed:: true
+			- ![image.png](../assets/documents/verstärkungsfehler-bsp-schaltung.webp){:width 400}
 			- [📚 2024-06-14 18h23m.xopp](../assets/documents/2024-06-14 18h23m.xopp)
 			- ![📚 2024-06-14 18h23m_annotated.pdf](../assets/documents/2024-06-14 18h23m_annotated.pdf)
 	- ### Integration von Systemen

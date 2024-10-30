@@ -149,6 +149,7 @@ alias:: Automatisierung, automatisierungs
 	- ![2021-02-05.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2021-02-05.pdf)
 	  background-color:: green
 - ## flashcards
+  collapsed:: true
 	- ### index
 	  collapsed:: true
 		- {{query (and [[flashcard]] (page [[automatisierungstechnik]]))}}

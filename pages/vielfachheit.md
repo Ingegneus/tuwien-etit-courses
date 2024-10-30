@@ -5,6 +5,7 @@ tags:: [[lineare algebra]], [[uni]], [[mathematik]], [[charakteristisches polyno
 alias:: geometrische vielfachheit, geometrischen vielfachheit, algebraische vielfachheit
 
 - [[geometrische vielfachheit]]
+  id:: 6721ea2f-a722-419c-9bb1-e242b3b5fb50
 	- [[geometrische Vielfachheit]] $g_{j}$ des [[eigenwertes]] λj, j = 1, . . . , m ist deﬁniert als die Dimension des 
 	  Eigenraumes zum Eigenwert λj, d. h. gj = dim(Kern(A − λjE)). Für die geometrische 
 	  Vielfachheit gj eines Eigenwertes λj gilt 1 ≤ gj ≤ nj.
@@ -22,6 +23,7 @@ alias:: geometrische vielfachheit, geometrischen vielfachheit, algebraische viel
 	  collapsed:: true
 		- ((6714d974-4e15-486c-931b-3163399dc6d7))
 - [[algebraische vielfachheit]]
+  id:: 6721ea2f-a264-4d52-b17e-7207884b997c
 	- A habe m verschiedene Wurzeln 
 	  λ1, . . . , λm ∈ C mit den entsprechenden Vielfachheiten n1, . . . , nm. Dann bezeichnet die
 	- Zahl nj die algebraische Vielfachheit des Eigenwertes λj, j = 1, . . . , m
