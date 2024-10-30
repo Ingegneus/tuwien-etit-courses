@@ -156,10 +156,10 @@ alias:: Automatisierung, automatisierungs
 		  query-properties:: [:block :tags]
 		  query-sort-by:: block
 		  query-sort-desc:: false
-	- wie lautet die allgemeine lösung eines linearen zeitinvarianten systems?
+	- wie lautet die allgemeine lösung eines linearen [[zeitinvarianten]] systems?
+	  id:: 6714ba62-f7a2-4391-b28f-5670d8ef3f5f
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard
-	  id:: 6714ba62-f7a2-4391-b28f-5670d8ef3f5f
 		- $\mathbf{x}(t)=\Phi(t)\mathbf{x}_{0}+\int_{0}^{t}\Phi(t-\tau)\mathbf{B}\mathbf{u}(\tau)\mathrm{d}\tau$
 	- was kann man immer machen wenn das [[Ausgangssignal]] höhere höhere [[ableitungen]] hat?
 	  id:: 6713cc3f-8aee-4148-a06c-a3ba42049204
