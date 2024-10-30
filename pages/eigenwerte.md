@@ -2,7 +2,7 @@ icon:: ↔️
 color:: "#9bf6ff"
 template-used:: standard-page
 tags:: [[uni]], [[mathematik]], [[lineare algebra]] 
-alias:: eigenvalue, eigenwert, eigenvalues, eigenwertes
+alias:: eigenvalue, eigenwert, eigenvalues, eigenwertes, eigenwerts
 
 - ((671678e9-67ec-4643-8093-1e6b480442f4)) $=0$
   tags:: formel

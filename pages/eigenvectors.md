@@ -1,7 +1,7 @@
 icon:: ↗
 color:: "#bdb2ff"
 template-used:: standard-page
-tags:: [[linag]] 
+tags:: [[linag]], [[eigenwert]] 
 alias:: eigenvektor, eigenvektoren, eigenvector
 
 - $(A-\lambda_{i}E)\cdot x_{i}=0$

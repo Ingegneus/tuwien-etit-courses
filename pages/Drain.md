@@ -1,0 +1,2 @@
+public:: true
+tags:: [[Feldeffekttransistor]]
