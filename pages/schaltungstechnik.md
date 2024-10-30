@@ -64,7 +64,7 @@ tags:: uni
 				  collapsed:: true
 					- $u_{ed}$ ... differenzenspannung an [[opv]] [V]
 					  $u_a$ ... ausgangsspannung [V]
-			- ![image.png](../assets/image_1718381907068_0.png){:width 400}
+			- ![image.png](../assets/documents/image_1718381907068_0.png){:width 400}
 			  collapsed:: true
 			- [📚 2024-06-14 18h23m.xopp](../assets/documents/2024-06-14 18h23m.xopp)
 			- ![📚 2024-06-14 18h23m_annotated.pdf](../assets/documents/2024-06-14 18h23m_annotated.pdf)
@@ -90,7 +90,7 @@ tags:: uni
 		- ![📚 2024-06-16 20h34m_annotated.pdf](../assets/documents/2024-06-16 20h34m_annotated.pdf)
 	- ### Verstärker
 	  background-color:: green
-		- ![file](../assets/verstärker angabe.webp){:width 400}
+		- ![file](../assets/documents/verstärker angabe.webp){:width 400}
 		- a) Berechnen Sie die Ausgangsspannung in Abhängigkeit von den Eingangsspannungen mittels Superposition
 		  background-color:: green
 		- b) Berechnen Sie $R_1$ und $R_3$
@@ -131,7 +131,7 @@ tags:: uni
 		- ![📚 2024-06-17 10h14m_annotated.pdf](../assets/documents/2024-06-17 10h14m_annotated.pdf)
 	- ### Komplexer Rückkopplungsfaktor
 	  background-color:: green
-		- ![file](../assets/komplexer rückkopplungsfaktor.webp){:width 400}
+		- ![file](../assets/documents/komplexer rückkopplungsfaktor.webp){:width 400}
 		- a) Berechnen Sie den komplexen Rückkopplungsfaktor $\beta$ der gegebenen Schaltung (symbolisch).
 		  background-color:: green
 		- b) Berechnen Sie die Grenzfrequenz des Poles des Rückkopplungsfaktors
@@ -148,12 +148,12 @@ tags:: uni
 		  id:: f7743fca-c3be-438e-8c6c-d6176541e98b
 	- ### Welche Ausgangsspannung liefert die Schaltung?
 	  background-color:: green
-		- ![file](../assets/schaltung-ausgang-spg-1.webp){:width 400}
+		- ![file](../assets/documents/schaltung-ausgang-spg-1.webp){:width 400}
 		- [📚 2024-06-21 15h56m.xopp](../assets/documents/2024-06-21 15h56m.xopp)
 		- ![📚 2024-06-21 15h56m_annotated.pdf](../assets/documents/2024-06-21 15h56m_annotated.pdf)
 	- ### Welche Ausgangsspannung liefert die Schaltung?
 	  background-color:: green
-		- ![file](../assets/schaltung-ausgang-spg-2.webp){:width 400}
+		- ![file](../assets/documents/schaltung-ausgang-spg-2.webp){:width 400}
 		- [📚 2024-06-21 16h18m.xopp](../assets/documents/2024-06-21 16h18m.xopp)
 		- ![📚 2024-06-21 16h18m_annotated.pdf](../assets/documents/2024-06-21 16h18m_annotated.pdf)
 	- ### [[Tiefpassfilter]]
@@ -182,7 +182,7 @@ tags:: uni
 			- ![📚 2024-06-23 11h25m_annotated.pdf](../assets/documents/2024-06-23 11h25m_annotated.pdf)
 	- ### Sensorschaltung
 	  background-color:: green
-		- ![file](../assets/sensor-bsp-messschaltung.webp){:width 600}
+		- ![file](../assets/documents/sensor-bsp-messschaltung.webp){:width 600}
 		- Mit der angegebenen schaltung sollen die spannungsausgänge von 3 sensoren gewichtet addiert werden
 		  background-color:: green
 			- $|A_1|=|\frac{\underline{U}_{a1}}{\underline{U}_{e1}}|=2$, $|A_2|=|\frac{\underline{U}_{a1}}{\underline{U}_{e2}}|=1$, $|A_3|=|\frac{\underline{U}_{a1}}{\underline{U}_{e3}}|=1.333$
@@ -247,26 +247,26 @@ tags:: uni
 		- Schwingungsbedingung
 			- wenn bei $|G|=1$ die phase $\varphi=180\degree$ erreicht ist, dann ist die schaltung instabil, da mitkopplung
 	- Zeichne das Kleinsignalersatzschaltbild inklusive aller Rauschgeneratoren und Formeln
-	  ![img](../assets/emitterschaltung-rauschgeneratoren-aufgabe.webp){:width 400} 
+	  ![img](../assets/documents/emitterschaltung-rauschgeneratoren-aufgabe.webp){:width 400} 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, schaltung, [[bipolar transistor]]
 	  id:: 667b2313-7130-42a7-a847-944dcdff87b3
-		- ![img](../assets/emitterschaltung-rauschgeneratoren-schaltung.webp){:width 800}
+		- ![img](../assets/documents/emitterschaltung-rauschgeneratoren-schaltung.webp){:width 800}
 	- kollektorschaltung
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, [[transistor]], [[schaltung]], [[bipolar transistor]]
 	  id:: 667b22a2-de0a-426b-936b-b9cd6352ce19
-		- ![img](../assets/kollektorschaltung.webp){:width 400}
+		- ![img](../assets/documents/kollektorschaltung.webp){:width 400}
 	- emitterschaltung
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, [[transistor]], [[schaltung]], [[bipolar transistor]]
 	  id:: 667b2294-f51f-4de5-8ce4-3c0248999024
-		- ![img](../assets/emitterschaltung.webp){:width 400}
+		- ![img](../assets/documents/emitterschaltung.webp){:width 400}
 	- basisschaltung
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, [[transistor]], [[schaltung]], [[bipolar transistor]]
 	  id:: 667b224f-172f-4a4d-83f5-3f64adb34ae0
-		- ![img](../assets/basisschaltung.webp){:width 400}
+		- ![img](../assets/documents/basisschaltung.webp){:width 400}
 	- [[stromverteilungs rauschen]] ([[partition noise]])
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[rauschen]]
@@ -292,21 +292,21 @@ tags:: uni
 		  collapsed:: true
 			- komplexer
 			- geringerer [[wirkungsgrad]] aufgrund von $R_{E}$
-		- ![img](../assets/parallelgeschaltene-transistoren.webp){:width 400}
+		- ![img](../assets/documents/parallelgeschaltene-transistoren.webp){:width 400}
 	- Durch welche Maßnahmen lässt sich der Einfluss des Leitwiderstandes der Analogschalter weitgehend eliminieren?
-	  ![img](../assets/cmos-multiplexer.webp){:width 400}
+	  ![img](../assets/documents/cmos-multiplexer.webp){:width 400}
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
 	  id:: 667b11a2-eb7a-470f-bc5f-3c204a815317
 	  collapsed:: true
 		- in dem ein weiterer schalter eingebaut wird um den selben spannungsabfall zu erzeugen
-		- ![img](../assets/cmos-multiplexer-verbesserung.webp){:width 400}
+		- ![img](../assets/documents/cmos-multiplexer-verbesserung.webp){:width 400}
 	- was ist der stromflusswinkel und wie schaut er für den a/ab/b betrieb aus?
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
 	  id:: 667af4e8-753a-49e5-9611-b6886f7e9664
 	  collapsed:: true
-		- ![img](../assets/stromflusswinkel-erklärung.webp){:width 400}
+		- ![img](../assets/documents/stromflusswinkel-erklärung.webp){:width 400}
 		  id:: 82ad4c74-8901-4beb-8e30-8f952015e015
 		- der stromflusswinkel ist definiert, als jener strom der durch den "ausgangstransistor" in einer periode fließt
 		- [hier](((82ad4c74-8901-4beb-8e30-8f952015e015))) ist grün der a-betrieb, gelb der ab-betreib, rot der b-betrieb
@@ -331,12 +331,11 @@ tags:: uni
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional
 	  collapsed:: true
-	  ![img](../assets/schaltung-elektrometer.webp){:width 350} ![img](../assets/schaltung-elektrometer-weird.webp){:width 400}
+	  ![img](../assets/documents/schaltung-elektrometer.webp){:width 350} ![img](../assets/documents/schaltung-elektrometer-weird.webp){:width 400}
 		- elektrometer verstärker
 		- beweis, dass das, das selbe ist
-		  collapsed:: true
-			- [📚 2024-06-25 17h17m.xopp](../assets/documents/.xopp)
-			- ![2024-06-25 17h17m_annotated.pdf](../assets/documents/.pdf)
+			- [📚 2024-06-25 17h17m.xopp](../assets/documents/2024-06-25 17h17m.xopp)
+			- ![📚 2024-06-25 17h17m_annotated.pdf](../assets/documents/2024-06-25 17h17m_annotated.pdf)
 	- Beschreibe die Vor- und Nachteile der Kaskodenschaltung, das Funktionsprinzip und wo sie eingesetzt werden
 	  id:: 667ad3da-0b01-4ddb-8e99-b9f5eb29b683
 	  deck:: Uni::Schaltungstechnik_Theorie
@@ -358,7 +357,7 @@ tags:: uni
 			- in stromspiegeln bei [[MOSFET]]s
 			- in okmbination mit spannungs leitern, können auch hochspannungs transistoren aufgebaut werden
 	- um welche schaltung handelt es sich?
-	  ![img](../assets/schaltung-kaskoden.webp){:width 400} 
+	  ![img](../assets/documents/schaltung-kaskoden.webp){:width 400} 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional
 	  id:: 667ad2c9-6131-4de2-b271-12b0c3ac0ea5
@@ -368,47 +367,47 @@ tags:: uni
 	  tags:: flashcard, [[transistor]]
 	  id:: 66798cbb-c707-42ef-9f83-8b1333cd2f9f
 	  collapsed:: true
-		- ![file](../assets/komp-emitterfolger-2dioden.webp){:width 400}
+		- ![file](../assets/documents/komp-emitterfolger-2dioden.webp){:width 400}
 		- die schaltung hat ähnlichkeiten zu jener im b-betrieb, nur dass zwischen den basis kontakten von $T_1$ und $T_2$ eine offset spannung erzeugt werden muss um die [[transistoren]] "vorzuladen". dafür wird die flussspannung der dioden verwendet
 	- komplementärer emitterfolger im b-betrieb
 	  id:: 66798c85-f29b-4f69-babf-ff80b25b42c3
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, [[transistor]]
 	  collapsed:: true
-		- ![file](../assets/emitterfolger-b-betrieb.webp){:width 400, :height 366}
+		- ![file](../assets/documents/emitterfolger-b-betrieb.webp){:width 400, :height 366}
 	- betriebsbereiche auf der arbeitsgeraden
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[transistor]]
 	  id:: 66798c2f-83a4-4c98-bd95-d133abfe74af
 	  collapsed:: true
-		- ![file](../assets/arbeitsbereiche-kl-feld.webp){:width 400}
+		- ![file](../assets/documents/arbeitsbereiche-kl-feld.webp){:width 400}
 	- emitterfolger im a-betrieb
 	  id:: 66797db4-ed02-4d2f-b95d-6170acfe22d8
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[transistor]]
 	  collapsed:: true
-		- ![file](../assets/emitterfolger-a-betrieb.webp){:width 400}
+		- ![file](../assets/documents/emitterfolger-a-betrieb.webp){:width 400}
 		- arbeitspunkteinstellung mittels $R_{a}$ und $R_{b}$
 	- Ausgangskennlinienfeld eines [[feldeffekttransistor]] mit Early-Spannung
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[feldeffekt transistor]]
 	  id:: 6677fabb-3354-443d-8cdf-c12a6c88c095
 	  collapsed:: true
-		- ![file](../assets/ausgangskennlinienfeld-fet.webp){:width 800}
+		- ![file](../assets/documents/ausgangskennlinienfeld-fet.webp){:width 800}
 	- Ausgangskennlinienfeld eines [[bipolartransistors]] mit Early-Spannung
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]]
 	  id:: 6677fabb-12af-4305-b099-5648ef43cc3c
 	  collapsed:: true
-		- ![file](../assets/ausgangskennlinienfeld-bjt.webp){:width 800}
+		- ![file](../assets/documents/ausgangskennlinienfeld-bjt.webp){:width 800}
 	- was ist die korrekte Ersatzschaltung für die Berechnung der Eingangsrauschgrößen der Gesamtschaltung
 	  $\bar{v_{ia}}^2$, $\bar{i_{ia}}^2$ ... Eingangsrauschgrößen des Verstärkers
-	  ![file](../assets/korr-esb-verstärker-rauschen.webp){:width 400}
+	  ![file](../assets/documents/korr-esb-verstärker-rauschen.webp){:width 400}
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
 	  id:: 6677fabb-534f-4505-acec-5a2a99ce3749
 	  collapsed:: true
-		- ![file](../assets/korr-esb-verstärker-rauschen-schaltung.webp){:width 400}
+		- ![file](../assets/documents/korr-esb-verstärker-rauschen-schaltung.webp){:width 400}
 	- Was ist das Problem bei der Integration von Frequenzgangskompensation? Abhilfe?
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
@@ -432,7 +431,7 @@ tags:: uni
 		  collapsed:: true
 			- nur für $A_0>1$ stabil, aber dafür größere Bandbreite
 			- $f_{g1}$ kann um $A_0$ größer gewählt werden
-		- ![file](../assets/univ-vs-ange-freq-komp.webp){:width 800}
+		- ![file](../assets/documents/univ-vs-ange-freq-komp.webp){:width 800}
 	- was ist die Frequenzgangskompenstaion mit Pole Splitting und warum ist sie notwendig?
 	  id:: 6676c9a3-b141-486d-bed1-f2178e1cf8d6
 	  deck:: Uni::Schaltungstechnik_Theorie
@@ -444,16 +443,16 @@ tags:: uni
 		- pole splitting bezieht sich daruaf, dass die pole $f_{g1}$ und $f_{g2}$ auseinander geschoben werden.
 		- dabei soll die verstärkung $=0\text{dB}$ bei $f_{g2}$ sein
 		  background-color:: yellow
-		- ![file](../assets/pole-splitting-graph.webp){:width 400}
+		- ![file](../assets/documents/pole-splitting-graph.webp){:width 400}
 	- Um welche Schaltung handelt es sich?
-	  ![file](../assets/komp-emitterfolger-2dioden.webp){:width 400} 
+	  ![file](../assets/documents/komp-emitterfolger-2dioden.webp){:width 400} 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, schaltung, wip
 	  id:: 6676c9a3-d59d-40fa-8467-edb6cb47a58d
 	  collapsed:: true
 		- Komplementärer [[Emitterfolger]] im [[AB-Betrieb]] mit 2 [[dioden]]
 	- Um welche Schaltung handelt es sich?
-	  ![file](../assets/var-z-diode.webp){:width 400} 
+	  ![file](../assets/documents/var-z-diode.webp){:width 400} 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, schaltung, wip
 	  id:: 6676c9a3-adcd-4741-bdb3-1224f5c0ff5e
@@ -461,7 +460,7 @@ tags:: uni
 		- Komplementärer [[Emitterfolger]] im [[AB-Betrieb]]
 		- variable z-diode
 	- Um welche Schaltung handelt es sich?
-	  ![file](../assets/vv-opv.webp){:width 400} 
+	  ![file](../assets/documents/vv-opv.webp){:width 400} 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, opv, schaltung
 	  id:: 66758c5d-52e5-4df4-adb2-005e64dcc518
@@ -469,7 +468,7 @@ tags:: uni
 		- vv-opv
 		- breitband operationsverstärker
 	- Um welche Schaltung handelt es sich?
-	  ![file](../assets/vc-opv.webp){:width 400} 
+	  ![file](../assets/documents/vc-opv.webp){:width 400} 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, opv, schaltung
 	  id:: 6675ac34-866b-4ad7-bc59-dbd564eb744b
@@ -477,7 +476,7 @@ tags:: uni
 		- vc-opv
 		- transkonduktanz verstärker
 	- Um welche Schaltung handelt es sich?
-	  ![file](../assets/cv-opv.webp){:width 400} 
+	  ![file](../assets/documents/cv-opv.webp){:width 400} 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, opv, schaltung
 	  id:: 6675ac5d-8778-4e60-ab64-af3d4e5f4b1b
@@ -489,7 +488,7 @@ tags:: uni
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, opv, schaltung
 	  collapsed:: true
-	  ![file](../assets/cc-opv-1.webp){:width 400} ![file](../assets/cc-opv-2.webp){:width 371}
+	  ![file](../assets/documents/cc-opv-1.webp){:width 400} ![file](../assets/documents/cc-opv-2.webp){:width 371}
 		- cc-opv
 		- stromverstärker
 	- pnp [[transistor]]
@@ -497,7 +496,7 @@ tags:: uni
 	  tags:: flashcard, [[bipolar transistor]] , transistor
 	  id:: 28177fa4-5eca-44ba-8ad3-efb571bcda1f
 	  collapsed:: true
-		- ![file](../assets/pnp-BJT.webp){:width 75}
+		- ![file](../assets/documents/pnp-BJT.webp){:width 75}
 		- [[eselsbrücke]]: ***P***feil ***N***ach ***P***ipi (innen)
 		- $U_{f}<0$ und $U_{BE}\le U_{f}$
 		  tags:: formel
@@ -510,7 +509,7 @@ tags:: uni
 	  tags:: flashcard, [[bipolar transistor]] , transistor
 	  id:: 667539fc-ea92-4f08-b9fc-54dc7af86e44
 	  collapsed:: true
-		- ![file](../assets/npn-BJT.webp){:width 75}
+		- ![file](../assets/documents/npn-BJT.webp){:width 75}
 		- [[eselsbrücke]]: ***N***icht ***P***feil ***N***ach innen
 		- $U_{f}>0$ und $U_{BE}\ge U_{f}$
 		  tags:: formel
@@ -523,7 +522,7 @@ tags:: uni
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, MOSFET, transistor, FET
 	  collapsed:: true
-		- ![file](../assets/pMOSFET.webp){:width 73} ![file](../assets/pMOSFET-bulk.webp){:width 100}
+		- ![file](../assets/documents/pMOSFET.webp){:width 73} ![file](../assets/documents/pMOSFET-bulk.webp){:width 100}
 		- der freie [[Bulk]] anschluss macht nicht wirklich was. er sollte nur gelten $\varphi_{B}\ge\varphi_{S}$
 		- $U_{th}<0$ und ${}U_{GS}\le U_{th}$
 		  tags:: formel
@@ -536,7 +535,7 @@ tags:: uni
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, MOSFET, transistor, FET
 	  collapsed:: true
-		- ![file](../assets/nMOSFET.webp){:width 86} ![file](../assets/nMOSFET-bulk.webp){:width 100}
+		- ![file](../assets/documents/nMOSFET.webp){:width 86} ![file](../assets/documents/nMOSFET-bulk.webp){:width 100}
 		- [[eselsbrücke]]: pfeil geht rei***N***
 		- der freie [[Bulk]] anschluss macht nicht wirklich was. er sollte nur gelten $\varphi_{B}\le\varphi_{S}$
 		- $U_{th}>0$ und ${}U_{GS}\ge U_{th}$
@@ -632,14 +631,14 @@ tags:: uni
 	  tags:: flashcard, FET, Schaltung
 	  id:: 6671a888-5431-43b7-9f91-dc6edb5a8d71
 	  collapsed:: true
-		- ![file](../assets/schaltung-transmissionsgate.webp){:width 400}
-		- ![file](../assets/transmissionsgate-ausgangswiderstand.webp){:width 400}
+		- ![file](../assets/documents/schaltung-transmissionsgate.webp){:width 400}
+		- ![file](../assets/documents/transmissionsgate-ausgangswiderstand.webp){:width 400}
 	- [[feldeffekttransistor]] als Serienschalter, Funktionsweise und Ausgangswiderstand
 	  id:: 6671a888-3d9f-4506-b905-4846d9f0f814
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, FET, Schalter, Schaltung
 	  collapsed:: true
-		- ![file](../assets/fet-serienschalter.webp){:width 400}
+		- ![file](../assets/documents/fet-serienschalter.webp){:width 400}
 		- für $U_{st}-U_{e}>U_{th}$ sperrt; $r_{a}=R$
 		- für $U_{st}-U_{e}<U_{th}$ leitet; $r_{a}=R\parallel r_{ds}$
 	- vollständiges Kleinsignalersatzschaltbild mit Rauschgeneratoren [[bipolar transistor]] 
@@ -647,31 +646,31 @@ tags:: uni
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]], schaltung
 	  collapsed:: true
-		- ![file](../assets/kleinsig-esb-bjt.webp){:width 400}
+		- ![file](../assets/documents/kleinsig-esb-bjt.webp){:width 400}
 	- Kleinsignalersatzschaltbild mit äquivalenten (b) Rauschgeneratoren [[bipolar transistor]] (Eingangsrauschquellen)
 	  id:: 666afba4-09a4-4162-a6ca-03848dbb9db5
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]], schaltung
 	  collapsed:: true
-		- ![file](../assets/bjt-rausch-äquivalent.webp){:width 400}
+		- ![file](../assets/documents/bjt-rausch-äquivalent.webp){:width 400}
 	- vollständiges Kleinsignalersatzschaltbild mit Rauschgeneratoren [[FET]]
 	  id:: 666afc3c-3140-40fb-9700-02273f4f324a
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[feldeffekt transistor]] , schaltung
 	  collapsed:: true
-		- ![file](../assets/kleinsig-esb-fet.webp){:width 400}
+		- ![file](../assets/documents/kleinsig-esb-fet.webp){:width 400}
 	- Kleinsignalersatzschaltbild mit äquivalenten (b) Rauschgeneratoren [[FET]] (Eingangsrauschquellen)
 	  id:: 666afcb8-2e55-4729-a71f-211e61d8cd02
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[feldeffekt transistor]] , schaltung
 	  collapsed:: true
-		- ![file](../assets/fet-rausch-äquivalent.webp){:width 400}
+		- ![file](../assets/documents/fet-rausch-äquivalent.webp){:width 400}
 	- leiten Sie aus den Rauschgeneratoren die äquivalenten Eingangsrauschquellen des [[BJT]] ab
 	  id:: 6671b8bb-800c-461e-91dd-48a72f080ce5
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard , [[bipolar transistor]], [[rauschen]], [[transistor]]
 	  collapsed:: true
-		- ![file](../assets/bjt-rausch-äquivalent.webp){:width 400}
+		- ![file](../assets/documents/bjt-rausch-äquivalent.webp){:width 400}
 		  id:: 6673c33b-d1b0-4c8e-a98e-4242de035fab
 		- vereinfachungen:
 		  collapsed:: true
@@ -685,7 +684,7 @@ tags:: uni
 				- vereinfachung:
 					- der rauschstrom kommt von einer konstant stromquelle. dadurch, dass $r_{b}\ll r_{\pi}$, fließt der strom hauptsächlich über $r_{b}$. der spannungsabfall daran ist dann sehr klein im vergleich zum spannungsabfall an $r_{\pi}$. daher wird der einfluss von $i_{b}^2$ und $r_{b}$ vernachlässigt.
 				- ausgehend von [a)](((6673c33b-d1b0-4c8e-a98e-4242de035fab))), wird der eingang kurzgeschlossen
-				- ![file](../assets/schaltung-bjt-herleitung-1.webp){:width 400}
+				- ![file](../assets/documents/schaltung-bjt-herleitung-1.webp){:width 400}
 				- gesamt rauschstrom am ausgang soll bei beiden schaltungen gleich sein
 				  collapsed:: true
 					- $i_o=g_{m}v_{b}+i_{c}=g_{m}v_{i}$
@@ -709,7 +708,7 @@ tags:: uni
 				- vereinfachung:
 					- die rausch spannungsquelle $\bar{v_{b}}^2$ und der [[Basis]][[widerstand]] $r_{b}$ fallen weg, da der eingang offen ist.
 				- ausgehend von [a)](((6673c33b-d1b0-4c8e-a98e-4242de035fab))), bleiben die eingänge offen
-				- ![file](../assets/schaltung-bjt-herleitung-2.webp){:width 400}
+				- ![file](../assets/documents/schaltung-bjt-herleitung-2.webp){:width 400}
 				- gesamt rauschstrom am ausgang soll bei beiden schaltungen gleich sein
 				  collapsed:: true
 					- $i_o=i_c+\beta(j\omega)i_b=\beta(j\omega)i_i$
@@ -737,7 +736,7 @@ tags:: uni
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, wip , [[feldeffekt transistor]] , [[rauschen]], [[transistor]]
 	  id:: 6673e06c-7213-47d6-bed7-1743a3123e42
-		- ![file](../assets/fet-rausch-äquivalent.webp){:width 400}
+		- ![file](../assets/documents/fet-rausch-äquivalent.webp){:width 400}
 		  id:: c4ee6e12-bbfe-493b-9d00-5fb1a69f697e
 		- vereinfachungen:
 		  collapsed:: true
@@ -753,7 +752,7 @@ tags:: uni
 				  collapsed:: true
 					- der [[Gate]] rauschstromgenerator wird [kurzgeschlossen](((6673e94c-9857-44f4-b1d9-59ec665faf69))), daher fällt er weg
 				- ausgehend von [a)](((c4ee6e12-bbfe-493b-9d00-5fb1a69f697e))), wird der eingang kurzgeschlossen
-				- ![file](../assets/schaltung-fet-herleitung-1.webp){:width 400}
+				- ![file](../assets/documents/schaltung-fet-herleitung-1.webp){:width 400}
 				- gesamt rauschstrom am ausgang soll bei beiden schaltungen gleich sein
 				  collapsed:: true
 					- $i_{o}=i_{d}=g_{m}v_{i}$
@@ -771,7 +770,7 @@ tags:: uni
 			- Eingang beider Schaltungen (a) und (b) öffnen und $i_{o}$ berechnen um auf $\bar{i_{i}}^2$ zu kommen
 			  logseq.order-list-type:: number
 				- ausgehend von [a)](((c4ee6e12-bbfe-493b-9d00-5fb1a69f697e))), bleiben die eingänge offen
-				- ![file](../assets/schaltung-fet-herleitung-2.webp){:width 400}
+				- ![file](../assets/documents/schaltung-fet-herleitung-2.webp){:width 400}
 				- gesamt rauschstrom am ausgang soll bei beiden schaltungen gleich sein
 				  collapsed:: true
 					- $i_{o}=i_{d}+i_{g}\frac{g_{m}}{j\omega C_{gs}}=i_{i}\frac{g_{m}}{j\omega C_{gs}}$
@@ -795,7 +794,7 @@ tags:: uni
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, schaltungs design
 	  collapsed:: true
-		- ![file](../assets/schaltung-entwurf-diagramm.webp){:width 400}
+		- ![file](../assets/documents/schaltung-entwurf-diagramm.webp){:width 400}
 	- Electrical Rule Check erklären
 	  id:: 666afdeb-0f11-4af5-bdcd-f232b9de812b
 	  deck:: Uni::Schaltungstechnik_Theorie
@@ -951,40 +950,40 @@ tags:: uni
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[FET]], [[transistor]], [[rauschen]]
 	  collapsed:: true
-		- ![file](../assets/fet rauschmodell.webp){:width 400}
+		- ![file](../assets/documents/fet rauschmodell.webp){:width 400}
 	- [[Bodediagramm]] Verlauf von $G=\frac{sT}{1+sT}$ (Hochpass)
 	  id:: 667051d3-1191-43cb-afd0-6812f26adc93
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, Hochpass
 	  collapsed:: true
-		- ![hochpass.webp](../assets/hochpass.webp){:width 400, :height 305}
+		- ![hochpass.webp](../assets/documents/hochpass.webp){:width 400, :height 305}
 	- [[Bodediagramm]] Verlauf von $G=\frac{1}{1+sT}$ (Tiefpass)
 	  id:: 66706738-e6ae-4916-a061-99d55b4f468e
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, Tiefpass
 	  collapsed:: true
-		- ![tiefpass.webp](../assets/tiefpass.webp){:width 400}
+		- ![tiefpass.webp](../assets/documents/tiefpass.webp){:width 400}
 	- [[Bodediagramm]] Verlauf von $G=sT$ (D-Glied)
 	  id:: 66706774-314d-42f7-90a6-03ac38e19e2e
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, D-Glied
 	  collapsed:: true
-		- ![d-glied.webp](../assets/d-glied.webp){:width 400}
+		- ![d-glied.webp](../assets/documents/d-glied.webp){:width 400}
 	- [[Bodediagramm]] Verlauf von $G=K$ (P-Glied)
 	  id:: 6670684d-379e-4e10-a17f-38bd9022ce6e
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, P-Glied
 	  collapsed:: true
-		- ![p-glied.webp](../assets/p-glied.webp){:width 400}
+		- ![p-glied.webp](../assets/documents/p-glied.webp){:width 400}
 	- [[Bodediagramm]] Verlauf von $G=\frac{1}{sT}$ (I-Glied)
 	  id:: 66706887-a33e-415b-b85d-be7b9b7a7a97
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, I-Glied
 	  collapsed:: true
-		- ![i-glied.webp](../assets/i-glied.webp){:width 400}
+		- ![i-glied.webp](../assets/documents/i-glied.webp){:width 400}
 	- [[Bodediagramm]] Verlauf von ${G=1+sT}$ (PD-Glied)
 	  id:: 667068ba-1898-4bf3-88d2-7f039580e088
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, PD-Glied
 	  collapsed:: true
-		- ![pd-glied.webp](../assets/pd-glied.webp){:width 400}
+		- ![pd-glied.webp](../assets/documents/pd-glied.webp){:width 400}
