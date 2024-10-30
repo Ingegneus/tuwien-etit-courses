@@ -1,5 +1,5 @@
 icon:: 💎
-color:: "#ffd6a5"
+inherit-color-icon-from:: [[logseq-page-color-orange]]
 tags:: [[uni]], [[lineare algebra]] 
 alias:: charakteristischen polynom, charakteristischen polynoms
 

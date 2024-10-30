@@ -1,5 +1,5 @@
 icon:: ↔️
-color:: "#9bf6ff"
+inherit-color-icon-from:: [[logseq-page-color-lightblue]]
 template-used:: standard-page
 tags:: [[uni]], [[mathematik]], [[lineare algebra]] 
 alias:: eigenvalue, eigenwert, eigenvalues, eigenwertes, eigenwerts

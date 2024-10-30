@@ -27,3 +27,11 @@ tags:: [[uni]], [[automatisierungstechnik]]
 	- $t$ ... zeit
 	- $\tilde{\mathbf{A}}$ ... tranformierte [[Systemmatrix]] eines [[linearen]], [[autonomen]] systems ([[jordansche normalform]])
 	- $d_{i}$ ... die diagonalelemente der [[matrix]] $\tilde{\mathbf{A}}$
+- $\tilde{\Phi}(t)=e^{\mathbf{\Omega}t} \\ =\begin{pmatrix}{e^{\alpha_1t}\cos(\beta_1t)} & e^{\alpha_1t}\sin(\beta_1t) & \cdots & {0} & 0\\ {-e^{\alpha_1t}\sin(\beta_1t)} & {e^{\alpha_1t}\cos(\beta_1t)} & {\cdots} & {0} & 0\\ {\vdots} & {\vdots} & \ddots & \vdots & \vdots\\ {0} & {0} & {\cdots} & {e^{\alpha_{r}t}\cos(\beta_{r}t)} & e^{\alpha_{r}t}\sin(\beta_{r}t)\\ {0} & {0} & {\cdots} & -e^{\alpha_{r}t}\sin(\beta_{r}t) & {e^{\alpha_{r}t}\cos(\beta_{r}t)}\end{pmatrix}$
+  tags:: formel, transitionsmatrix
+  bezeichnung:: [[transitionsmatrix]] in regulärer [[zustandstransformation]], wenn die [[eigenwerte]] der [[Systemmatrix]] $\mathbf{A}$ [[konjugiert komplex]] sind
+	- $\tilde{\Phi}(t)$ ... transformierte [[transitionsmatrix]]
+	- $t$ ... zeit
+	- ${\mathbf{\Omega}}$ ... tranformierte [[Systemmatrix]] eines [[linearen]], [[autonomen]] systems wenn die [[eigenwerte]] [[konjugiert komplex]] sind ([[jordansche normalform]]) [link](((672106f0-bdcd-4f36-bc24-36f6986eb183)))
+	- $\alpha_{i}$ ... [[realteil]] des $i$-ten [[eigenwerts]] der [[matrix]] ${\mathbf{A}}$
+	- $\beta_{i}$ ... [[imaginärteil]] des $i$-ten [[eigenwerts]] der [[matrix]] ${\mathbf{A}}$

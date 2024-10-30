@@ -1,9 +1,12 @@
 icon:: ➗
-color:: "#a0c4ff"
+inherit-color-icon-from:: [[logseq-page-color-blue]] 
 template-used:: standard-page
 tags:: [[uni]]
 alias:: mathematik, math
 
+- $x=\frac{a}{b}$ dann ist $|x|=|\frac{a}{b}|=\frac{|a|}{|b|}$
+  tags:: formel, mathematik
+  bezeichnung:: betragsrechnung von brüchen
 - ## flashcards
 	- wie wird eine [[taylorreihe]] entwickelt?
 	  id:: 6713c995-9c83-45db-8427-7ad83d4e50cb
@@ -16,7 +19,7 @@ alias:: mathematik, math
 			- $a$ ... stelle in dessen umgebung entwickelt werden soll
 		- ${\mathbf{f}(\mathbf{x}_{0}+\Delta\mathbf{x})=\mathbf{f}(\mathbf{x}_{0})+\frac{\partial}{\partial\mathbf{x}}\mathbf{f}(\mathbf{x}_{0})\Delta\mathbf{x}+\mathbf{r}(\mathbf{x}_{0},\Delta\mathbf{x})}$
 		  tags:: formel, taylorreihe
-		  bezeichnung:: taylorreihe zweiter erdnung, allgemeine form
+		  bezeichnung:: [[taylorreihe]] zweiter erdnung, allgemeine form
 			- $\mathbf{x}_0$ ... stelle um die entwickelt wird
 			  id:: 6710e826-3066-47c5-9fe6-69a1b1b0ba21
 			- $\Delta\mathbf{x}$ ... kleine auslenkung von der entwicklungsstelle

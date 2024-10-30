@@ -1,6 +1,6 @@
 public:: true
 icon:: 🟧
-color:: "#ffd6a5"
+inherit-color-icon-from:: [[logseq-page-color-orange]]
 template-used:: standard-page
 tags:: [[uni]]
 alias:: Dynamikmatrix

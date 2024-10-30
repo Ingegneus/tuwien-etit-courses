@@ -1,5 +1,5 @@
 icon:: 🌡
-color:: "#fdffb6"
+inherit-color-icon-from:: [[logseq-page-color-yellow]]
 tags:: [[uni]] 
 alias:: zustandgröße
 

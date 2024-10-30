@@ -1,5 +1,5 @@
 icon:: 🔲
-color:: "#caffbf"
+inherit-color-icon-from:: [[logseq-page-color-green]]
 template-used:: standard-page
 tags:: [[lineare algebra]], [[uni]] 
 alias:: adjunkte, adjungierte, komplementäre matrix

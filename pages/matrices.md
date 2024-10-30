@@ -1,5 +1,5 @@
 icon:: 🔳
-color:: "#fdffb6"
+inherit-color-icon-from:: [[logseq-page-color-yellow]]
 template-used:: standard-page
 tags:: [[lineare algebra]] 
 alias:: matrix, matrizen

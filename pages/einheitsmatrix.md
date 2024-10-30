@@ -1,5 +1,5 @@
 public:: true
 icon:: ℹ️
-color:: "#a0c4ff"
+inherit-color-icon-from:: [[logseq-page-color-blue]]
 template-used:: standard-page
 tags:: [[matrix]], [[uni]], [[lineare algebra]]

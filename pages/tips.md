@@ -1,5 +1,5 @@
 icon:: ℹ
-color:: "#9bf6ff"
+inherit-color-icon-from:: [[logseq-page-color-lightblue]]
 tags:: -
 alias:: tip, improvement, improvements, fix
 

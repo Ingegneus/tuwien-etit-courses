@@ -1,6 +1,6 @@
 public:: true
 icon:: 🤖
-color:: "#9bf6ff"
+inherit-color-icon-from:: [[logseq-page-color-lightblue]]
 tags:: [[uni]]
 alias:: Automatisierung, automatisierungs
 
@@ -426,9 +426,9 @@ alias:: Automatisierung, automatisierungs
 				- ((6713c328-76a7-4f2f-9b85-8bcb58bd5b4d))
 				- $\frac{\partial}{\partial\mathbf{u}}\mathbf{h}(\mathbf{x}_{R}, \mathbf{u}_{R})$ ... [[jakobimatrix]] des systems
 		- $\begin{array}{l} \Delta\dot{\mathbf{x}} = \mathbf{A}\Delta\mathbf{x} + \mathbf{B}\Delta\mathbf{u} \\ \Delta\mathbf{y} = \mathbf{C}\Delta\mathbf{x} + \mathbf{D}\Delta\mathbf{u}\end{array}$
-		  tags:: formel, wip
-		  bezeichnung:: linearisierung um eine ruhelage, einfache [[matrix]] schreibweise
 		  id:: 67122f45-a683-469e-88e8-058b5545e5fd
+		  tags:: formel, wip
+		  bezeichnung:: [[linearisierung]] um eine [[ruhelage]], einfache [[matrix]] schreibweise
 			- $\mathbf{A}$ ... [[Dynamikmatrix]]  des [[linearisierten]] systems [link](((67120fe5-fe8f-4d7c-9c39-be3330693430)))
 			- $\mathbf{B}$ ... [[Eingangsmatrix]] des [[linearisierten]] systems [link](((67120fe5-420c-4660-a28e-b75481571673)))
 			- $\mathbf{C}$ ... [[Ausgangsmatrix]] des [[linearisierten]] systems [link](((671239e4-022e-4196-8377-5c30ff0b3b11)))

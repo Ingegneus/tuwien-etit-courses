@@ -22,4 +22,4 @@ logdeq-graf/
 ├─ whiteboards/
 ```
 
-nun kopiere/verschiebe den inhalt von tuwien-etit-courses/ nach logdeq-graf/
+nun kopiere/verschiebe den inhalt von `tuwien-etit-courses/` nach `logdeq-graf/`

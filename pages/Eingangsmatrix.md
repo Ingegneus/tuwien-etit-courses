@@ -1,5 +1,5 @@
 icon:: 🟦
-color:: "#a0c4ff"
+inherit-color-icon-from:: [[logseq-page-color-blue]]
 template-used:: standard-page
 tags:: [[uni]]
 alias:: input matrix

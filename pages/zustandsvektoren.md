@@ -1,5 +1,5 @@
 icon:: 💨
-color:: "#ffc6ff"
+inherit-color-icon-from:: [[logseq-page-color-pink]]
 template-used:: standard-page
 tags:: [[uni]]
 alias:: zustandsvektor, zustandsvektors
