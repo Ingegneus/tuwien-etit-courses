@@ -169,7 +169,7 @@ alias:: Automatisierung, automatisierungs
 		- zum Beispiel $5\ddot{y}-\frac{1}{10}\dot{y}y=7.5t u$
 			- man kann einen neuen zustand $x_1 = y$ einführen
 			- und $x_2 = \dot y$
-		- ziel dabei ist es, die variable alleine stehen zu lassen ohne ableitungen, integrale oder dergleichen. gilt auch für die eingänge
+		- ziel dabei ist es, die variable alleine stehen zu lassen ohne [[ableitungen]], [[integrale]] oder dergleichen. gilt auch für die eingänge
 	- was ist die [[zustandsraumdarstellung]] eines systems
 	  id:: 67063236-f001-405b-b61b-40bd3b6f77af
 	  deck:: Uni::Automatisierungstechnik_Theorie
