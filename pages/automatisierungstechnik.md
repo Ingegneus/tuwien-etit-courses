@@ -42,8 +42,11 @@ alias:: Automatisierung, automatisierungs
 				- ((671e6a4a-7f50-4907-873e-4ba1e3c4fca5))
 				- ((672106f0-bdcd-4f36-bc24-36f6986eb183))
 				- ((83774afb-cb88-4c67-b8d6-b4e2313a52d1))
+				- ((67226f1c-9890-463b-9a3d-cbf28270b121))
 			- [📚 2024-10-25 16h44m.xopp](../assets/documents/2024-10-25 16h44m.xopp)
 			- ![📚 2024-10-25 16h44m_annotated.pdf](../assets/documents/2024-10-25 16h44m_annotated.pdf)
+		- {{renderer :media-timestamp, 1:11:55, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} Aufgabe 2.4)
+		  background-color:: green
 	- ![2022-02-04.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2022-02-04.pdf)
 	  background-color:: green
 	  collapsed:: true
@@ -344,7 +347,7 @@ alias:: Automatisierung, automatisierungs
 	  id:: 6713c976-2e4a-4432-bdd5-554850fe0ef3
 	  collapsed:: true
 		- {{embed [[zustandsgrößen]]}}
-	- wie prüft man ein [[system]] auf [[linearität]]
+	- wie prüft man ein [[system (mathematik)]] auf [[linearität]]
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard, wip
 	  id:: 6713c976-dbff-41c8-a897-765c36530523
@@ -360,7 +363,7 @@ alias:: Automatisierung, automatisierungs
 	  tags:: flashcard
 	  id:: 6713c976-cd9a-4024-953d-d83ac3c857da
 	  collapsed:: true
-		- eine [[trajektorie]] ist eine lösung einer [[system]] [[dgl]]
+		- eine [[trajektorie]] ist eine lösung einer [[system (mathematik)]] [[dgl]]
 		- ![img](../assets/documents/AUT-2022-11-22-trajektorie.webp){:width 400}
 		- [link](((670d389a-4eef-4ce3-b96d-45d619392212)))
 		  {{renderer :media-timestamp, 20:22}}
@@ -458,12 +461,17 @@ alias:: Automatisierung, automatisierungs
 		- skript
 		  collapsed:: true
 			- ((6714d2d2-68d5-4dd1-abc4-a19d6b74b6a8))
-	- ausgehend vom [[LTI]] [[system]] 
-	   $\dot{\mathbf{x}}=\mathbf{A}\mathbf{x}+\mathbf{B}\mathbf{u},\qquad\mathbf{x}(0)=\mathbf{x}_{0} \\ \mathbf{y}=\mathbf{Cx}+\mathbf{Du}$
-	  wie wir die reguläre zustandstransformation durchgeführt?
+	- wie schaut ein transformiertes [[system (mathematik)]] aus?
+	  deck:: Uni::Automatisierungstechnik_Theorie
+	  tags:: flashcard, [[zustandstransformation]]
+		- $\dot{\mathbf{z}} = \underbrace{\mathbf{V}^{-1}\mathbf{AV}}_{\tilde{\mathbf{A}}}\mathbf{z}+\underbrace{\mathbf{V}^{-1}\mathbf{B}}_{\tilde{\mathbf{B}}}\mathbf{u}~, \quad \mathbf{z}(0) = \mathbf{z}_{0}=\mathbf{V}^{-1}\mathbf{x}_{0} \\ \mathbf{y}=\underbrace{\mathbf{C}\mathbf{V}}_{\tilde{\mathbf{C}}}\mathbf{z}+\underbrace{\mathbf{D}}_{\tilde{\mathbf{D}}}\mathbf{u}$
+		  tags:: formel, wip
+		  bezeichnung:: reguläre [[zustandstransformation]] eines [[LTI]] [[system (mathematik)]]
+			- $-$ ...
+	- ausgehend vom [[LTI]] [[system (mathematik)]] $\\ \dot{\mathbf{x}}=\mathbf{A}\mathbf{x}+\mathbf{B}\mathbf{u},\qquad\mathbf{x}(0)=\mathbf{x}_{0} \\ \mathbf{y}=\mathbf{Cx}+\mathbf{Du}\\$wie wird die reguläre [[zustandstransformation]] durchgeführt?
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard, wip
 		- $\mathbf{x}(t)=\mathbf{V}\mathbf{z}(t)$
-		- $\dot{\mathbf{z}}=\underbrace{\mathbf{V}^{-1}\mathbf{A}\mathbf{V}}_{\tilde{\mathbf{A}}}\mathbf{z}+\underbrace{\mathbf{V}^{-1}\mathbf{B}}_{\tilde{\mathbf{B}}}\mathbf{u}, \quad \mathbf{z}(0)=\mathbf{z}_{0}=\mathbf{V}^{-1}\mathbf{x}_{0} \\ \mathbf{y}=\underbrace{\mathbf{C}\mathbf{V}}_{\tilde{\mathbf{C}}}\mathbf{z}+\underbrace{\mathbf{D}}_{\tilde{\mathbf{D}}}\mathbf{u}$
-		- $\mathbf{z}(t)=\tilde{\Phi}(t)\mathbf{z}_{0}+\int_{0}^{t}\tilde{\Phi}(t-\tau)\tilde{\mathbf{B}}\mathbf{u}(\tau)\mathrm{d}\tau \\ \mathbf{y}(t)=\tilde{\mathbf{C}}z(t)+\tilde{\mathbf{D}}\mathbf{u}(t)~.$
+		- $\dot{\mathbf{z}}=\underbrace{\mathbf{V}^{-1}\mathbf{A}\mathbf{V}}_{\tilde{\mathbf{A}}}\mathbf{z}+\underbrace{\mathbf{V}^{-1}\mathbf{B}}_{\tilde{\mathbf{B}}}\mathbf{u}~, \quad \mathbf{z}(0)=\mathbf{z}_{0}=\mathbf{V}^{-1}\mathbf{x}_{0} \\ \mathbf{y}=\underbrace{\mathbf{C}\mathbf{V}}_{\tilde{\mathbf{C}}}\mathbf{z}+\underbrace{\mathbf{D}}_{\tilde{\mathbf{D}}}\mathbf{u}$
+		- $\mathbf{z}(t)=\tilde{\Phi}(t)\mathbf{z}_{0}+\int_{0}^{t}\tilde{\Phi}(t-\tau)\tilde{\mathbf{B}}\mathbf{u}(\tau)\mathrm{d}\tau \\ \mathbf{y}(t)=\tilde{\mathbf{C}}z(t)+\tilde{\mathbf{D}}\mathbf{u}(t)$
 		- $\mathbf{x}(t)=\mathbf{V}\tilde{\Phi}(t)\mathbf{V}^{-1}\mathbf{x}_{0}+\int_{0}^{t}\mathbf{V}\tilde{\Phi}(t-\tau)\mathbf{V}^{-1}\mathbf{B}\mathbf{u}(\tau)\operatorname{d}\tau \\ \mathbf{y}(t)=\mathbf{C}\mathbf{x}(t)+\mathbf{D}\mathbf{u}(t)$

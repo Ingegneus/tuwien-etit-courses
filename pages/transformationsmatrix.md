@@ -18,7 +18,7 @@ tags:: [[uni]], [[mathematik]]
 		- $\bar{\mathbf{V}}$ ... eine [[transformationsmatrix]] [link](((6720c624-d622-49e7-8904-bf8803605c50)))
 		- $\mathbf{T}$ ... eine [[transformationsmatrix]] [link](((671e6fb4-11e3-459b-97b5-51f2c8fb6697)))
 -
-- $\mathbf{T}=\frac12\begin{pmatrix}1 & -i & \cdots & 0 & 0\\ 1 & i & \cdots & 0 & 0\\ \vdots & \vdots & \ddots & \vdots & \vdots\\ 0 & 0 & \cdots & 1 & -i\\ 0 & 0 & \cdots & 1 & i\end{pmatrix},\\ \mathbf{T^{-1}}=\frac12\begin{pmatrix}1 & 1 & \cdots & 0 & 0\\ i & -i & \cdots & 0 & 0\\ \vdots & \vdots & \ddots & \vdots & \vdots\\ 0 & 0 & \cdots & 1 & 1\\ 0 & 0 & \cdots & i & -i\end{pmatrix}$
+- $\mathbf{T}=\frac12\begin{pmatrix}1 & -i & \cdots & 0 & 0\\ 1 & i & \cdots & 0 & 0\\ \vdots & \vdots & \ddots & \vdots & \vdots\\ 0 & 0 & \cdots & 1 & -i\\ 0 & 0 & \cdots & 1 & i\end{pmatrix}~,\\ \mathbf{T^{-1}}=\frac12\begin{pmatrix}1 & 1 & \cdots & 0 & 0\\ i & -i & \cdots & 0 & 0\\ \vdots & \vdots & \ddots & \vdots & \vdots\\ 0 & 0 & \cdots & 1 & 1\\ 0 & 0 & \cdots & i & -i\end{pmatrix}$
   tags:: formel
   bezeichnung:: eine [[transformationsmatrix]]
   id:: 671e6fb4-11e3-459b-97b5-51f2c8fb6697

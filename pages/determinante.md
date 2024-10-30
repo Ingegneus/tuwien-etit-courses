@@ -1,5 +1,5 @@
 icon:: 🟪
-color:: "#bdb2ff"
+inherit-color-icon-from:: [[logseq-page-color-purple]]
 template-used:: standard-page
 tags:: [[uni]], [[linear algebra]] 
 alias:: [[determinanten]]

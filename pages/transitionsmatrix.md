@@ -30,6 +30,7 @@ tags:: [[uni]], [[automatisierungstechnik]]
 - $\tilde{\Phi}(t)=e^{\mathbf{\Omega}t} \\ =\begin{pmatrix}{e^{\alpha_1t}\cos(\beta_1t)} & e^{\alpha_1t}\sin(\beta_1t) & \cdots & {0} & 0\\ {-e^{\alpha_1t}\sin(\beta_1t)} & {e^{\alpha_1t}\cos(\beta_1t)} & {\cdots} & {0} & 0\\ {\vdots} & {\vdots} & \ddots & \vdots & \vdots\\ {0} & {0} & {\cdots} & {e^{\alpha_{r}t}\cos(\beta_{r}t)} & e^{\alpha_{r}t}\sin(\beta_{r}t)\\ {0} & {0} & {\cdots} & -e^{\alpha_{r}t}\sin(\beta_{r}t) & {e^{\alpha_{r}t}\cos(\beta_{r}t)}\end{pmatrix}$
   tags:: formel, transitionsmatrix
   bezeichnung:: [[transitionsmatrix]] in regulärer [[zustandstransformation]], wenn die [[eigenwerte]] der [[Systemmatrix]] $\mathbf{A}$ [[konjugiert komplex]] sind
+  id:: 67226f1c-9890-463b-9a3d-cbf28270b121
 	- $\tilde{\Phi}(t)$ ... transformierte [[transitionsmatrix]]
 	- $t$ ... zeit
 	- ${\mathbf{\Omega}}$ ... tranformierte [[Systemmatrix]] eines [[linearen]], [[autonomen]] systems wenn die [[eigenwerte]] [[konjugiert komplex]] sind ([[jordansche normalform]]) [link](((672106f0-bdcd-4f36-bc24-36f6986eb183)))
