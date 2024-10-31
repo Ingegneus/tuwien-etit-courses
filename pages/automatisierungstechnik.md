@@ -6,7 +6,6 @@ alias:: Automatisierung, automatisierungs
 
 - [📁 folder](file://C:\Users\Matteo\Documents\Uni\Automatisierung)
 - ## beispiele
-  collapsed:: true
 	- [UE1](((670d389a-4eef-4ce3-b96d-45d619392212)))
 	  background-color:: green
 		- {{renderer :media-timestamp, 00:21:45, ((670d389a-4eef-4ce3-b96d-45d619392212))}} Aufgabe 1.1)
@@ -49,7 +48,7 @@ alias:: Automatisierung, automatisierungs
 		- {{renderer :media-timestamp, 1:11:55, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} Aufgabe 2.4)
 		  background-color:: green
 			- formeln
-				-
+				- ((67234c51-e437-4e1f-a175-2035d14681aa))
 			- [📚 2024-10-31 09h53m.xopp](../assets/documents/2024-10-31 09h53m.xopp)
 			- ![📚 2024-10-31 09h53m_annotated.pdf](../assets/documents/2024-10-31 09h53m_annotated.pdf)
 	- ![2022-02-04.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2022-02-04.pdf)
@@ -157,7 +156,6 @@ alias:: Automatisierung, automatisierungs
 	- ![2021-02-05.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2021-02-05.pdf)
 	  background-color:: green
 - ## flashcards
-  collapsed:: true
 	- ### index
 	  collapsed:: true
 		- {{query (and [[flashcard]] (page [[automatisierungstechnik]]))}}
@@ -165,6 +163,13 @@ alias:: Automatisierung, automatisierungs
 		  query-properties:: [:block :tags]
 		  query-sort-by:: block
 		  query-sort-desc:: false
+	- wie schaut ein [[LTI]] system im [[bildbereich]] aus
+	  deck:: Uni::Automatisierungstechnik_Theorie
+	  tags:: flashcard
+		- $\hat{\mathbf{x}}(s)-\mathbf{x}_{0}=\mathbf{A}\hat{\mathbf{x}}(s)+\mathbf{b}\hat{u}(s) \\ \hat{y}(s)=\mathbf{c}^{\mathrm{T}}\hat{\mathbf{x}}(s)+d\hat{u}(s)$
+		  tags:: formel, wip
+		  bezeichnung:: [[LTI]] system im [[bildbereich]]
+			- $-$ ...
 	- wann ist eine [[matrix]] nilpotent?
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard

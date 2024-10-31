@@ -38,3 +38,11 @@ tags:: [[uni]], [[automatisierungstechnik]]
 	- ${\mathbf{\Omega}}$ ... tranformierte [[Systemmatrix]] eines [[linearen]], [[autonomen]] systems wenn die [[eigenwerte]] [[konjugiert komplex]] sind ([[jordansche normalform]]) [link](((672106f0-bdcd-4f36-bc24-36f6986eb183)))
 	- $\alpha_{i}$ ... [[realteil]] des $i$-ten [[eigenwerts]] der [[matrix]] ${\mathbf{A}}$
 	- $\beta_{i}$ ... [[imaginärteil]] des $i$-ten [[eigenwerts]] der [[matrix]] ${\mathbf{A}}$
+- $\mathbf{\Phi}(s) = (s\mathbf{E}-\mathbf{A})^{-1}$
+  tags:: formel
+  bezeichnung:: [[transitionsmatrix]] im [[laplacebereich]]
+  id:: 67234c51-e437-4e1f-a175-2035d14681aa
+	- $\mathbf{\Phi}(s)$ ... [[transitionsmatrix]] im $s$-bereich
+	- $s$ ... bildvariable
+	- $\mathbf{E}$ ... [[einheitsmatrix]]
+	- $\mathbf{A}$ ... [[Systemmatrix]]
