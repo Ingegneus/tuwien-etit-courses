@@ -1,11 +1,14 @@
-!!! warnung
+!!! note
 
     dieses repo ist ein work in progress (wip). es wird definitiv noch unvollständige oder falsche sachen geben 
 
-# tuwien-etit-courses
+# was ist das hier
 in diesem logseq grafen, versuche ich so gut es geht die stärken von logseq zu verwenden, um verständliche resourcen für studierende zu bieten. das system dass ich aufgesetzt habe ist bestimmt noch ausbaufähig, aber es ist mal ein anfang.
 
-mir ist klar, dass in unserem studium git nicht wirklich thema ist und daher die bar of entry um hier mitzumachen höher ist, als zur fachschaft zu gehen und ein pdf abzugeben. ich bin der überzeugung, dass das hier langlebiger ist. stellt euch vor es gäbe nicht 20 ausarbeitungen, sondern eine quelle die immer den letzten stand hat und ziemlich sicher auf richtigheit kontrolliert wurde.
+mir ist klar, dass in unserem studium git nicht wirklich thema ist und daher die bar of entry, um hier mitzumachen höher ist, als zur fachschaft zu gehen und ein pdf abzugeben. ich bin der überzeugung, dass das hier langlebiger ist. stellt euch vor es gäbe nicht 20 ausarbeitungen, sondern eine quelle die immer den letzten stand hat und ziemlich sicher auf richtigheit kontrolliert wurde.
+
+## motivation
+ich hasse die art und weise wie lehrmateria organisiert und präsentiert wird. das ist ein ansatz beziehungsweise experiment es besser zu machen
 
 # wie nutze ich das hier
 es gibt zwei arten wie du diese ausabitung verwenden kannst.
