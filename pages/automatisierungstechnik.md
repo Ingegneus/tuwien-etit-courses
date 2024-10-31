@@ -6,6 +6,7 @@ alias:: Automatisierung, automatisierungs
 
 - [📁 folder](file://C:\Users\Matteo\Documents\Uni\Automatisierung)
 - ## beispiele
+  collapsed:: true
 	- [UE1](((670d389a-4eef-4ce3-b96d-45d619392212)))
 	  background-color:: green
 		- {{renderer :media-timestamp, 00:21:45, ((670d389a-4eef-4ce3-b96d-45d619392212))}} Aufgabe 1.1)
@@ -47,6 +48,10 @@ alias:: Automatisierung, automatisierungs
 			- ![📚 2024-10-25 16h44m_annotated.pdf](../assets/documents/2024-10-25 16h44m_annotated.pdf)
 		- {{renderer :media-timestamp, 1:11:55, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} Aufgabe 2.4)
 		  background-color:: green
+			- formeln
+				-
+			- [📚 2024-10-31 09h53m.xopp](../assets/documents/2024-10-31 09h53m.xopp)
+			- ![📚 2024-10-31 09h53m_annotated.pdf](../assets/documents/2024-10-31 09h53m_annotated.pdf)
 	- ![2022-02-04.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2022-02-04.pdf)
 	  background-color:: green
 	  collapsed:: true
@@ -160,6 +165,11 @@ alias:: Automatisierung, automatisierungs
 		  query-properties:: [:block :tags]
 		  query-sort-by:: block
 		  query-sort-desc:: false
+	- wann ist eine [[matrix]] nilpotent?
+	  deck:: Uni::Automatisierungstechnik_Theorie
+	  tags:: flashcard
+	  collapsed:: true
+		- {{embed ((6723472c-5a53-4cd9-9a9c-73a2288a42b8))}}
 	- wie lautet die allgemeine lösung eines linearen [[zeitinvarianten]] systems?
 	  id:: 6714ba62-f7a2-4391-b28f-5670d8ef3f5f
 	  deck:: Uni::Automatisierungstechnik_Theorie
