@@ -5,6 +5,8 @@ tags:: [[uni]]
 alias:: Automatisierung, automatisierungs
 
 - [📁 folder](file://C:\Users\Matteo\Documents\Uni\Automatisierung)
+- ## vorlesungen
+	- [[aut vo temp]]
 - ## beispiele
 	- [UE1](((670d389a-4eef-4ce3-b96d-45d619392212)))
 	  background-color:: green
@@ -22,7 +24,8 @@ alias:: Automatisierung, automatisierungs
 			- ![📚 2024-10-18 19h56m_annotated.pdf](../assets/documents/2024-10-18 19h56m_annotated.pdf)
 	- [UE2](((6713c96e-d606-449c-8013-b19ee52a12e9)))
 	  background-color:: green
-		- Aufgabe 2.1)
+	  ![📚 doc](../assets/documents/Automatisierung_UE2_Lineare_dynamische_Systeme.pdf)
+		- {{renderer :media-timestamp, 15:25, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} [Aufgabe 2.1)](((6723bef6-7df5-4c1d-ac04-937ad238fd72)))
 		  background-color:: green
 			- formeln
 				- ((671678e8-ee03-4007-b265-9bc44d9e4b10))
@@ -36,7 +39,7 @@ alias:: Automatisierung, automatisierungs
 			  background-color:: green
 			- [📚 2024-10-23 16h03m.xopp](../assets/documents/2024-10-23 16h03m.xopp)
 			- ![📚 2024-10-23 16h03m_annotated.pdf](../assets/documents/2024-10-23 16h03m_annotated.pdf)
-		- {{renderer :media-timestamp, 48:20, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} Aufgabe 2.2)
+		- {{renderer :media-timestamp, 48:20, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} [Aufgabe 2.2)](((6723bf25-1e0b-45a3-b083-52ad9f455747)))
 		  background-color:: green
 			- formeln
 				- ((671e6a4a-7f50-4907-873e-4ba1e3c4fca5))
@@ -45,10 +48,12 @@ alias:: Automatisierung, automatisierungs
 				- ((67226f1c-9890-463b-9a3d-cbf28270b121))
 			- [📚 2024-10-25 16h44m.xopp](../assets/documents/2024-10-25 16h44m.xopp)
 			- ![📚 2024-10-25 16h44m_annotated.pdf](../assets/documents/2024-10-25 16h44m_annotated.pdf)
-		- {{renderer :media-timestamp, 1:11:55, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} Aufgabe 2.4)
+		- {{renderer :media-timestamp, 1:11:55, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} [Aufgabe 2.4)](((6723bf3d-9b22-4943-a9bb-39462c2806c2)))
 		  background-color:: green
 			- formeln
 				- ((67234c51-e437-4e1f-a175-2035d14681aa))
+				- ((672397b1-e35d-4257-a8c9-cab0b1329d27))
+				- ((672397b1-abfc-49e4-ab4d-d4c52767ecdc))
 			- [📚 2024-10-31 09h53m.xopp](../assets/documents/2024-10-31 09h53m.xopp)
 			- ![📚 2024-10-31 09h53m_annotated.pdf](../assets/documents/2024-10-31 09h53m_annotated.pdf)
 	- ![2022-02-04.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2022-02-04.pdf)
@@ -169,7 +174,8 @@ alias:: Automatisierung, automatisierungs
 		- $\hat{\mathbf{x}}(s)-\mathbf{x}_{0}=\mathbf{A}\hat{\mathbf{x}}(s)+\mathbf{b}\hat{u}(s) \\ \hat{y}(s)=\mathbf{c}^{\mathrm{T}}\hat{\mathbf{x}}(s)+d\hat{u}(s)$
 		  tags:: formel, wip
 		  bezeichnung:: [[LTI]] system im [[bildbereich]]
-			- $-$ ...
+		  id:: 672397b1-e35d-4257-a8c9-cab0b1329d27
+			- $-$ ... [[zustandsvektor]]
 	- wann ist eine [[matrix]] nilpotent?
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard

@@ -1,5 +1,5 @@
 > **🚧 Achtung**
-dieses repo ist ein work in progress (wip). es wird definitiv noch unvollständige oder falsche informationen geben 
+dieses repo ist ein work in progress (wip). es wird definitiv noch unvollständigkeiten oder fehler geben 
 
 # was ist das hier
 in diesem logseq grafen, versuche ich so gut es geht die stärken von logseq zu verwenden, um verständliche resourcen für studierende zu bieten. das system dass ich aufgesetzt habe ist bestimmt noch ausbaufähig, aber es ist mal ein anfang.

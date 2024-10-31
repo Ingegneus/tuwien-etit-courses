@@ -8,4 +8,5 @@ alias:: zustandsvektor, zustandsvektors
 - $\hat{\mathbf{x}}(s)=\left(s\mathbf{E}-\mathbf{A}\right)^{-1}\mathbf{x}_{0}+\left(s\mathbf{E}-\mathbf{A}\right)^{-1}\mathbf{b}\hat{u}(s)$
   tags:: formel, wip
   bezeichnung:: [[zustandsvektor]] im [[bildbereich]] transformiert
+  id:: 672397b1-abfc-49e4-ab4d-d4c52767ecdc
 	- $-$ ...
