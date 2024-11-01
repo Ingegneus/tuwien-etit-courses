@@ -6,7 +6,6 @@ tags:: uni
 - [📁 folder](file://C:\Users\Matteo\Documents\Uni\Schaltungstechnik)
 - ## vorlesungen
 - ## beispiele
-  collapsed:: true
 	- ### Verstärkungsfehler
 	  background-color:: green
 		- a) Zeichnen Sie eine Invertierende OV-Grundschaltung
@@ -159,9 +158,8 @@ tags:: uni
 	  background-color:: green
 		- a) Zeichnen sie die Schaltung eines invertierenden Tiefpassfilters mit OPV!
 		  background-color:: green
-		- b) dimensionieren sie den Filter so, dass er folgende Ubertragungsfunktion hat! (OPV idealisiert) 
+		- b) dimensionieren sie den Filter so, dass er folgende Ubertragungsfunktion hat! (OPV idealisiert) $\\ \frac{-10}{1+\frac{j2\pi f}{1\text{kHz}}}$
 		  background-color:: green
-		  $\frac{-10}{1+\frac{j2\pi f}{1\text{kHz}}}$
 		- [📚 2024-06-22 17h08m.xopp](../assets/documents/2024-06-22 17h08m.xopp)
 		- ![📚 2024-06-22 17h08m_annotated.pdf](../assets/documents/2024-06-22 17h08m_annotated.pdf)
 	- ### [[Bodediagramm]] Schleifenverstärkung
@@ -668,7 +666,6 @@ tags:: uni
 	  id:: 6671b8bb-800c-461e-91dd-48a72f080ce5
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard , [[bipolar transistor]], [[rauschen]], [[transistor]]
-	  collapsed:: true
 		- ![file](../assets/documents/bjt-rausch-äquivalent.webp){:width 400}
 		  id:: 6673c33b-d1b0-4c8e-a98e-4242de035fab
 		- vereinfachungen:
@@ -746,7 +743,6 @@ tags:: uni
 			- Eingang beider Schaltungen (a) und (b) kurzschließen und Ausgangsrausch strom $i_{o}$ berechnen, um $\bar{v_{i}}^2$ zu erhalten.
 			  logseq.order-list-type:: number
 			  id:: 6673e94c-9857-44f4-b1d9-59ec665faf69
-			  collapsed:: true
 				- vereinfachung:
 				  collapsed:: true
 					- der [[Gate]] rauschstromgenerator wird [kurzgeschlossen](((6673e94c-9857-44f4-b1d9-59ec665faf69))), daher fällt er weg
@@ -771,7 +767,6 @@ tags:: uni
 				- ausgehend von [a)](((c4ee6e12-bbfe-493b-9d00-5fb1a69f697e))), bleiben die eingänge offen
 				- ![file](../assets/documents/schaltung-fet-herleitung-2.webp){:width 400}
 				- gesamt rauschstrom am ausgang soll bei beiden schaltungen gleich sein
-				  collapsed:: true
 					- $i_{o}=i_{d}+i_{g}\frac{g_{m}}{j\omega C_{gs}}=i_{i}\frac{g_{m}}{j\omega C_{gs}}$
 					  bezeichnung:: rauschstrom am ausgang
 					  tags:: formel

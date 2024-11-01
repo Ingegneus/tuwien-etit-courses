@@ -4,6 +4,7 @@ tags:: Automatisierungstechnik
 - ## vorlesungen
 	- ![📚 2020_Gesamtskriptum.pdf](file://C:\Users\Matteo\Documents\Uni\Automatisierung\willi\01_Vorlesung\2020_Gesamtskriptum.pdf)
 	- 2021_10_07
+	  collapsed:: true
 		- ![aut-vo](C:\Users\Matteo\Shared\Matteo Quest 2\AUT\2021_10_07.mp4)
 			- {{renderer :media-timestamp, 00:00:02}} Ja, einen schönen guten Morgen, meine sehr geehrten Damen und Herren, ich darf sie recht herzlich begrüßen zur Vorlesung automatisierung und ich möchte ganz am Beginn kurz erzählen, was wir in dieser Vorlesung machen, werden. Im ersten Kapitel möchte ich ganz kurz dem Begriff eines Systems und von [[zustandsgrößen]], Eingangs und [[ausgangsgröße]]n diskutieren und dann in weiterer Folge
 			- {{renderer :media-timestamp, 00:00:30}} würde ich einige Beispiele zeigen von Systemen, als ein einfaches elektrisches System mechanisches System hydraulisches biologisches System. Und dann möchte ich Ihnen auch noch zeigen, was der Unterschied zwischen Zeitkontinuerlichen und Zeit des Krätensystemen sind, mit der das ist das erste Kapitel ist seine Art Motivationskapitel, das soll also grundsätzlich zeigen, welche Systemklassen wir im Rahmen dieser Vorlesung behandeln wollen. Als zweite Kapitel
@@ -5517,6 +5518,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:24:00}}   Fragen  zu  hier  zu.  Gut,  dann  bleibt  mir  nur  noch  Ihnen  einen  schönen  Abend  zu  wünschen.  Die  Aufzeichnung  wird  innerhalb  der  nächsten  Tage  auch  über  den  Tuwell  Kurs  verfügbar  sein.
 			- {{renderer :media-timestamp, 01:24:31}}   Nichtsdestotrotz  würde  mich  freuen,  wenn  die  von  Ihnen,  denen  es  möglich  ist,  in  die  Präsenzübungstermine  zu  kommen,  weil  da  bekomme  ich  tatsächlich  leichter  mit,  ob  ich  zu  schnell  bin,  zu  langsam  und  mir  fällt  auch  besser  auf,  wenn  ich  in  exzessivem  Dialekt  verfalle.  Danke  für  Ihre  Aufmerksamkeit.  Ich  werde  die  Aufzeichnung  schon  mal
 	- 2022_11_29_Automatisierung_UE2
+	  collapsed:: true
 		- ![aut-ue](C:\Users\Matteo\Shared\Matteo Quest 2\AUT\ue\2022_11_29_Automatisierung_UE2.mp4)
 		  id:: 6713c96e-d606-449c-8013-b19ee52a12e9
 		  collapsed:: true
@@ -5710,8 +5712,8 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:33:32}}   S  durch  diesen  werden  wir  jetzt  quasi  rücktransformieren.  Das  heißt,  unter  dem  Strich  D  nach  Dt,  das  ist  für  das  S.  Und  das  kennen  wir  schon.
 			- {{renderer :media-timestamp, 01:34:04}}   Wir  müssen  nur  aufpassen,  dass  D  kommen  den  beiden  Termen  vor,  die  sind  mit  dem  Produkt  verknüpft.  Das  ist  die  Produktregel  also.  Deshalb  können  wir  es  rausziehen.  Da  haben  wir  dann  den  Zweier  vom  Halbleiten  vom  Sinus.  Und  so  können  Sie  dann  auch  beliebige  Korrespondenzen  berechnen.
 	- 2022_12_06_Automatisierung_UE3
-	  collapsed:: true
 		- ![aut-ue](C:\Users\Matteo\Shared\Matteo Quest 2\AUT\ue\2022_12_06_Automatisierung_UE3.mp4)
+		  id:: 67234c2b-153b-4204-b3b8-5828d0122842
 			- {{renderer :media-timestamp, 00:00:04}}   So,  genau,  also  wie  gesagt,  herzlich  willkommen  zur  Ausübung.  Heute  geht  es  um  Regelkreise  beziehungsweise  zum  Nutenteil  über  Übertragungsfunktionen  und  Stabilität.  Bevor  wir  mit  der  Aufgabe  3 .1  beginnen,  die  Theorie  dazu.
 			- {{renderer :media-timestamp, 00:00:32}}   Vorerst  Übertragungsfunktionen  vom  Systemen  in  Zustandsdarstellung  lassen  sich  immer  explizit  berechnen.  Nach  dieser  Vorschrift,  das  ist  immer  ein  gebrochenes  rationales  Verhältnis  mit  einem  Zählergrad  Kleiner  gleich
 			- {{renderer :media-timestamp, 00:01:00}}   dem  Männergrad.  Hier  sehen  Sie  es  für  Eingrößensysteme.  Entfaut  von  Mehrgrößensystemen  sieht  das  nur  unwesentlich  anders  aus.  Das  ist  hier  eine  [[matrix]]  C  mal  SE  minus  A  hochminus  1  mal  eine  [[matrix]]  B  plus  einer  [[matrix]]  D.  Ansonsten
@@ -5876,6 +5878,7 @@ tags:: Automatisierungstechnik
 	- 2022_12_13_Automatisierung_UE4
 	  collapsed:: true
 		- ![aut-ue](C:\Users\Matteo\Shared\Matteo Quest 2\AUT\ue\2022_12_13_Automatisierung_UE4.mp4)
+		  id:: 67234c2b-aaa9-48f3-9a71-4c2e5d08fd4c
 			- {{renderer :media-timestamp, 00:00:05}}   In  der  heutigen  Einheit  werden  wir  uns  verschiedene  Methoden  ansehen,  wie  man  Regeln  entwerfen  kann.  Und  zunächst  werden  wir  ein  Einstiegsbeispiel  mal  betrachten,  wo  gleich  vorweg,  wo  man  sieht,  wie  man  den  Regeln  nicht  entwerfen  soll.  Das  heißt,  wir  sehen  in  Aufgabe  4 .1  eine  Übertragungsstrecke  G  von  S.  Und  wenn  Sie  hier  den
 			- {{renderer :media-timestamp, 00:00:30}}   Nenner  betrachten,  werden  Sie  feststellen,  dass  der  erste  Teil  die  Nullstelle  bei  plus  fünf  liegt.  Und  damit  in  der  rechten  S -Halbübne  liegt  und  damit  instabil  ist.  Der  zweite  Term  liegt  bei  der  offenen  S -Halbübne,  die  ist  stabil.  Aber  wie  gesagt,  der  erste  Term,  der  macht  Probleme,  der  ist  instabil.
 			- {{renderer :media-timestamp, 00:01:00}}   Und  da  wäre  jetzt  ein  naiver  Zugang,  wie  man  einen  Regeln  entwerfen  kann,  dass  man  einfach  die  Strecke  völlig  kompensiert.  Und  anschließend  ein  gewünschtes  Reglerverhalten  vorgibt.  Das  sehen  Sie  hier.  Hier  ist  bereits  ein  Regler  vorgegeben.  Und  wenn
@@ -6060,6 +6063,7 @@ tags:: Automatisierungstechnik
 	- 2023_01_10_Automatisierung_UE5
 	  collapsed:: true
 		- ![aut-ue](C:\Users\Matteo\Shared\Matteo Quest 2\AUT\ue\2023_01_10_Automatisierung_UE5.mp4)
+		  id:: 67234c2b-aa3d-4983-b0c1-7ac4398465e3
 			- {{renderer :media-timestamp, 00:00:06}}   So,  schönen  guten  Abend.  Willkommen  zur  fünften  Übung  der  Automatisierungsübung.  Heute  wird  es  um  digitale  bzw.  [[zeitdiskrete]]  Regelkreise  gehen.  Bevor  es  aber,  also  wir  werden  die  Aufgabe  5 .1  und  5 .5
 			- {{renderer :media-timestamp, 00:00:30}}   behandeln.  Bevor  wir  dazu  kommen,  werde  ich  aber  automatisieren  das  Skriptum,  die  betreffenden  oder  entzeigen.  Also  zum  einen  typischerweise  haben  wir  oder  verwenden  wir  für  die  [[regelungstechnik]]
 			- {{renderer :media-timestamp, 00:01:01}}   Mikrocontroller,  Mikrocomputer,  Computer  oder  SPS  Implementierungen,  also  getaktete  digitale  Systeme,  die  nicht  [[zeitkontinuierliche]]  Kurvenformen  aufnehmen  oder  realisieren  können.  Demnach  sind  wir  prinzipiell  gezwungen,  die  von  der  zeitkontinuierlichen

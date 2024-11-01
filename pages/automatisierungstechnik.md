@@ -10,16 +10,22 @@ alias:: Automatisierung, automatisierungs
 - ## beispiele
 	- [UE1](((670d389a-4eef-4ce3-b96d-45d619392212)))
 	  background-color:: green
-		- {{renderer :media-timestamp, 00:21:45, ((670d389a-4eef-4ce3-b96d-45d619392212))}} Aufgabe 1.1)
+	  ![📚 doc](../assets/documents/Automatisierung_UE1_Systemanalyse.pdf)
+		- {{renderer :media-timestamp, 00:21:45, ((670d389a-4eef-4ce3-b96d-45d619392212))}} [Aufgabe 1.1)](((6724c433-2054-4cae-a0c7-8189a8b54740)))
 		  background-color:: green
+		  collapsed:: true
 			- formeln
 			  id:: 67137aaa-de70-4aa6-b1cc-28cdb18cab78
+			  collapsed:: true
 				- ((67122f45-de81-44a5-a037-8b3d5d9241fa))
 			- [📚 2024-10-16 19h43m.xopp](../assets/documents/2024-10-16 19h43m.xopp)
 			- ![📚 2024-10-16 19h43m_annotated.pdf](../assets/documents/2024-10-16 19h43m_annotated.pdf)
-		- {{renderer :media-timestamp, 01:12:05, ((670d389a-4eef-4ce3-b96d-45d619392212))}} Aufgabe 1.3)
+		- {{renderer :media-timestamp, 01:12:05, ((670d389a-4eef-4ce3-b96d-45d619392212))}} [Aufgabe 1.3)](((6724c44b-c553-4d8f-97ed-6c5e519059a7)))
 		  background-color:: green
-			- ((67122f45-9636-4f84-bfd4-c73aed78e4bd))
+		  collapsed:: true
+			- formeln
+			  collapsed:: true
+				- ((67122f45-9636-4f84-bfd4-c73aed78e4bd))
 			- [📚 2024-10-18 19h56m.xopp](../assets/documents/2024-10-18 19h56m.xopp)
 			- ![📚 2024-10-18 19h56m_annotated.pdf](../assets/documents/2024-10-18 19h56m_annotated.pdf)
 	- [UE2](((6713c96e-d606-449c-8013-b19ee52a12e9)))
@@ -27,7 +33,9 @@ alias:: Automatisierung, automatisierungs
 	  ![📚 doc](../assets/documents/Automatisierung_UE2_Lineare_dynamische_Systeme.pdf)
 		- {{renderer :media-timestamp, 15:25, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} [Aufgabe 2.1)](((6723bef6-7df5-4c1d-ac04-937ad238fd72)))
 		  background-color:: green
+		  collapsed:: true
 			- formeln
+			  collapsed:: true
 				- ((671678e8-ee03-4007-b265-9bc44d9e4b10))
 				- ((4b1b3de8-2aa6-4d25-8f9c-0d1b44573ad3))
 				- ((6717bfce-d663-4bfb-837a-ad7fcea2e66d))
@@ -41,7 +49,9 @@ alias:: Automatisierung, automatisierungs
 			- ![📚 2024-10-23 16h03m_annotated.pdf](../assets/documents/2024-10-23 16h03m_annotated.pdf)
 		- {{renderer :media-timestamp, 48:20, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} [Aufgabe 2.2)](((6723bf25-1e0b-45a3-b083-52ad9f455747)))
 		  background-color:: green
+		  collapsed:: true
 			- formeln
+			  collapsed:: true
 				- ((671e6a4a-7f50-4907-873e-4ba1e3c4fca5))
 				- ((672106f0-bdcd-4f36-bc24-36f6986eb183))
 				- ((83774afb-cb88-4c67-b8d6-b4e2313a52d1))
@@ -50,12 +60,29 @@ alias:: Automatisierung, automatisierungs
 			- ![📚 2024-10-25 16h44m_annotated.pdf](../assets/documents/2024-10-25 16h44m_annotated.pdf)
 		- {{renderer :media-timestamp, 1:11:55, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} [Aufgabe 2.4)](((6723bf3d-9b22-4943-a9bb-39462c2806c2)))
 		  background-color:: green
+		  collapsed:: true
 			- formeln
+			  collapsed:: true
 				- ((67234c51-e437-4e1f-a175-2035d14681aa))
 				- ((672397b1-e35d-4257-a8c9-cab0b1329d27))
 				- ((672397b1-abfc-49e4-ab4d-d4c52767ecdc))
+				- ((6724aaef-8410-4c29-8fde-f677528c0937))
 			- [📚 2024-10-31 09h53m.xopp](../assets/documents/2024-10-31 09h53m.xopp)
 			- ![📚 2024-10-31 09h53m_annotated.pdf](../assets/documents/2024-10-31 09h53m_annotated.pdf)
+	- [UE3](((67234c2b-153b-4204-b3b8-5828d0122842)))
+	  background-color:: green
+	  ![📚 doc](../assets/documents/Automatisierung_UE3_Regelkreis.pdf)
+		- {{renderer :media-timestamp, 03:16, ((67234c2b-153b-4204-b3b8-5828d0122842))}} [Aufgabe 3.1.](((67254b5d-122d-4394-9ae1-c9d89ebc30ba)))
+		  background-color:: green
+			- formeln
+			- [📚 2024-11-01 22h47m.xopp](../assets/documents/2024-11-01 22h47m.xopp)
+			- ![📚 2024-11-01 22h47m_annotated.pdf](../assets/documents/2024-11-01 22h47m_annotated.pdf)
+	- [UE4](((67234c2b-aaa9-48f3-9a71-4c2e5d08fd4c)))
+	  background-color:: green
+	  ![📚 doc](../assets/documents/Automatisierung_UE4_FKL_-_Reglerentwurf.pdf)
+	- [UE5](((67234c2b-aa3d-4983-b0c1-7ac4398465e3)))
+	  background-color:: green
+	  ![📚 doc](../assets/documents/Automatisierung_UE5_Digitaler_Regelkreis.pdf)
 	- ![2022-02-04.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2022-02-04.pdf)
 	  background-color:: green
 	  collapsed:: true
@@ -161,6 +188,7 @@ alias:: Automatisierung, automatisierungs
 	- ![2021-02-05.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2021-02-05.pdf)
 	  background-color:: green
 - ## flashcards
+  collapsed:: true
 	- ### index
 	  collapsed:: true
 		- {{query (and [[flashcard]] (page [[automatisierungstechnik]]))}}
