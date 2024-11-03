@@ -7,6 +7,12 @@ alias:: mathematik, math
 - $x=\frac{a}{b}$ dann ist $|x|=|\frac{a}{b}|=\frac{|a|}{|b|}$
   tags:: formel, mathematik
   bezeichnung:: betragsrechnung von brüchen
+- $\frac{z\left(s\right)}{n\left(s\right)}$: wenn $z(s_{z0}) = n(s_{z0}) = 0$ dann ist die [[nullstelle]] gleich (es kann also ein linearer term abgespalten werden) und der bruch ist nicht teilerfremd
+  tags:: formel, trick, tip
+  bezeichnung:: trick um zu erkennen ob der bruch teilerfremd ist
+	- $z(s)$ ... [zählerpolynom]([[polynom]])
+	- $n(s)$ ... [nennerpolynom]([[polynom]])
+	- $s_{z0}$ ... [[nullstelle]] des zählers
 - ## flashcards
 	- wie erfolgt die erweiterung/ergänzung auf ein vollständiges quadrat?
 	  id:: 67235854-9c4c-44d4-8fd0-b81872bedc7b

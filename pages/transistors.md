@@ -1,3 +1,4 @@
+icon:: 🌋
 inherit-color-icon-from:: [[logseq-page-color-purple]]
 tags:: [[technik]], [[uni]] 
 alias:: transistor, transistoren

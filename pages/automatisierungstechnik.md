@@ -60,7 +60,6 @@ alias:: Automatisierung, automatisierungs
 			- ![📚 2024-10-25 16h44m_annotated.pdf](../assets/documents/2024-10-25 16h44m_annotated.pdf)
 		- {{renderer :media-timestamp, 1:11:55, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} [Aufgabe 2.4)](((6723bf3d-9b22-4943-a9bb-39462c2806c2)))
 		  background-color:: green
-		  collapsed:: true
 			- formeln
 			  collapsed:: true
 				- ((67234c51-e437-4e1f-a175-2035d14681aa))
@@ -75,14 +74,18 @@ alias:: Automatisierung, automatisierungs
 		- {{renderer :media-timestamp, 03:16, ((67234c2b-153b-4204-b3b8-5828d0122842))}} [Aufgabe 3.1.](((67254b5d-122d-4394-9ae1-c9d89ebc30ba)))
 		  background-color:: green
 			- formeln
+				- ((67234c51-e437-4e1f-a175-2035d14681aa))
+				- ((67254498-19a4-47c4-a559-8bad13c5ebe3))
 			- [📚 2024-11-01 22h47m.xopp](../assets/documents/2024-11-01 22h47m.xopp)
 			- ![📚 2024-11-01 22h47m_annotated.pdf](../assets/documents/2024-11-01 22h47m_annotated.pdf)
 	- [UE4](((67234c2b-aaa9-48f3-9a71-4c2e5d08fd4c)))
 	  background-color:: green
 	  ![📚 doc](../assets/documents/Automatisierung_UE4_FKL_-_Reglerentwurf.pdf)
+		-
 	- [UE5](((67234c2b-aa3d-4983-b0c1-7ac4398465e3)))
 	  background-color:: green
 	  ![📚 doc](../assets/documents/Automatisierung_UE5_Digitaler_Regelkreis.pdf)
+		-
 	- ![2022-02-04.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2022-02-04.pdf)
 	  background-color:: green
 	  collapsed:: true
@@ -188,7 +191,6 @@ alias:: Automatisierung, automatisierungs
 	- ![2021-02-05.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2021-02-05.pdf)
 	  background-color:: green
 - ## flashcards
-  collapsed:: true
 	- ### index
 	  collapsed:: true
 		- {{query (and [[flashcard]] (page [[automatisierungstechnik]]))}}
@@ -196,6 +198,10 @@ alias:: Automatisierung, automatisierungs
 		  query-properties:: [:block :tags]
 		  query-sort-by:: block
 		  query-sort-desc:: false
+	- welche bedeutung haben die [[eigenwerte]] der [[Systemmatrix]]? 
+	  deck:: Uni::Automatisierungstechnik_Theorie
+	  tags:: flashcard
+		- sie sind auch die [[pole]] der [[Übertragungsfunktion]]
 	- wie schaut ein [[LTI]] system im [[bildbereich]] aus
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard
