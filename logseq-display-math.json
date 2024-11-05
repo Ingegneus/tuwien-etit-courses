@@ -1,0 +1,26 @@
+{
+  "macros": {
+    "\\differentialM": "\\mathrm{d}",
+    "\\ftt": "\\circ\\hspace{-4pt} - \\{hspace-2pt}\\bullet",
+    "\\ttf": "\\bullet\\hspace{-4pt} - \\hspace{-2pt}\\circ",
+    "\\gdefred": "\\gdef\\red{#e5484d}",
+    "\\gdefyellow": "\\gdef\\yellow{#e5bf34}",
+    "\\gdefgreen": "\\gdef\\green{#30a46c}",
+    "\\gdefgray": "\\gdef\\gray{#707070}",
+    "\\gdefblue": "\\gdef\\blue{#0091ff}",
+    "\\gdefpurple": "\\gdef\\purple{#8e4ec6}",
+    "\\gdefpink": "\\gdef\\pink{#d6409f}",
+    "\\bgred": "\\gdefred \\hspace{-0.2em}\\colorbox{\\red}{$\\displaystyle #1$} \\hspace{-0.2em}",
+    "\\bgyellow": "\\gdefyellow \\hspace{-0.2em}\\colorbox{\\yellow}{$\\displaystyle #1$} \\hspace{-0.2em}",
+    "\\bggreen": "\\gdefgreen \\hspace{-0.2em}\\colorbox{\\green}{$\\displaystyle #1$} \\hspace{-0.2em}",
+    "\\bggray": "\\gdefgray \\hspace{-0.2em}\\colorbox{\\gray}{$\\displaystyle #1$} \\hspace{-0.2em}",
+    "\\bgblue": "\\gdefblue \\hspace{-0.2em}\\colorbox{\\blue}{$\\displaystyle #1$} \\hspace{-0.2em}",
+    "\\bgpurple": "\\gdefpurple \\hspace{-0.2em}\\colorbox{\\purple}{$\\displaystyle #1$} \\hspace{-0.2em}",
+    "\\bgpink": "\\gdefpink \\hspace{-0.2em}\\colorbox{\\pink}{$\\displaystyle #1$} \\hspace{-0.2em}",
+    "\\hnsp": "\\hspace{-1.6em}",
+    "\\hns": "\\hspace{-1.3em}",
+    "\\hnp": "\\hspace{-0.3em}"
+    },
+  "preferDisplay": true,
+  "disabled": false
+}

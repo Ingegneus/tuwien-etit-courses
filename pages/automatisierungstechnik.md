@@ -60,6 +60,7 @@ alias:: Automatisierung, automatisierungs
 			- ![📚 2024-10-25 16h44m_annotated.pdf](../assets/documents/2024-10-25 16h44m_annotated.pdf)
 		- {{renderer :media-timestamp, 1:11:55, ((6713c96e-d606-449c-8013-b19ee52a12e9))}} [Aufgabe 2.4)](((6723bf3d-9b22-4943-a9bb-39462c2806c2)))
 		  background-color:: green
+		  collapsed:: true
 			- formeln
 			  collapsed:: true
 				- ((67234c51-e437-4e1f-a175-2035d14681aa))
@@ -192,12 +193,46 @@ alias:: Automatisierung, automatisierungs
 	  background-color:: green
 - ## flashcards
 	- ### index
-	  collapsed:: true
-		- {{query (and [[flashcard]] (page [[automatisierungstechnik]]))}}
-		  query-table:: true
+		- query-table:: true
+		  collapsed:: true
+		  #+BEGIN_QUERY
+		  {
+		  :title [:b "all flashcards"]
+		  :query [:find (pull ?block [*])
+		  :where
+		  [?block :block/content ?blockcontent]
+		  [?block :block/page ?page]
+		  [?page :block/name ?pagename]
+		  [?block :block/path-refs [:block/name "flashcard"]]
+		  ( or
+		  (property ?block :deck "Uni::Automatisierungstechnik_Theorie")
+		  (property ?block :deck "Uni::Mathematik_Theorie")
+		  )
+		  ( not
+		  (?page :page/name "templates-uni")
+		  )
+		  ]
+		  }
+		  #+END_QUERY
+		- query-table:: true
 		  query-properties:: [:block :tags]
-		  query-sort-by:: block
-		  query-sort-desc:: false
+		  #+BEGIN_QUERY
+		  {
+		  :title [:b "all flashcards defined here"]
+		  :query [:find (pull ?block [*])
+		  :where
+		  [?block :block/content ?blockcontent]
+		  [?block :block/page ?page]
+		  [?page :block/name ?pagename]
+		  [?block :block/path-refs [:block/name "flashcard"]]
+		  ( or
+		  (property ?block :deck "Uni::Automatisierungstechnik_Theorie")
+		  (property ?block :deck "Uni::Mathematik_Theorie")
+		  )
+		  [?page :page/name "automatisierungstechnik"]
+		  ]
+		  }
+		  #+END_QUERY
 	- welche bedeutung haben die [[eigenwerte]] der [[Systemmatrix]]? 
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard
@@ -215,7 +250,7 @@ alias:: Automatisierung, automatisierungs
 	  tags:: flashcard
 	  collapsed:: true
 		- {{embed ((6723472c-5a53-4cd9-9a9c-73a2288a42b8))}}
-	- wie lautet die allgemeine lösung eines linearen [[zeitinvarianten]] systems?
+	- wie lautet die allgemeine lösung eines [[linearen]] [[zeitinvarianten]] [[systems]]?
 	  id:: 6714ba62-f7a2-4391-b28f-5670d8ef3f5f
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard
@@ -301,38 +336,28 @@ alias:: Automatisierung, automatisierungs
 	  collapsed:: true
 		- wenn es sich in diese form überführen lässt ([[matrix]] schreibweise)
 		- $\dot{\mathbf{x}}=\mathbf{A}(t)\mathbf{x}+\mathbf{B}(t)\mathbf{u}~,\qquad\mathbf{x}(t_{0})=\mathbf{x}_{0} \\ \mathbf{y}=\mathbf{C}(t)\mathbf{x}+\mathbf{D}(t)\mathbf{u}$
-		  tags:: formel
-		  bezeichnung:: [[linear]] [[zeitinvariantes]] system, [[zustandsraumdarstellung]]
 		  id:: e08332b5-2b72-462d-8c3d-7b7b4d1b2a23
+		  tags:: formel
+		  bezeichnung:: [[linear]] [[zeitvariantes]] system, [[zustandsraumdarstellung]]
 		  collapsed:: true
-			- ((67138ab1-181a-49b1-891e-f0a72036b01c)) von der Zeit $t$ abhängig
-			- ((671391a2-acdd-4459-8495-9f80c58207cb)) von der Zeit $t$ abhängig
-			- ((671391ab-954e-42d8-9316-4ba379f1dc4d)) von der Zeit $t$ abhängig
-			- ((671391bc-936b-489f-8df5-bc54ac5df8b0)) von der Zeit $t$ abhängig
-			- ((6713c976-36b0-4499-836a-4f50a8738b53))
-			- ((6713c976-d9a5-4ca2-817d-e9ff7cfa10e5))
-			- ((6713c976-d547-4097-a7bb-de4a9416207b))
+			- $\mathbf{A}$ ... [[Dynamikmatrix]] von der Zeit $t$ abhängig
+			- $\mathbf{B}$ ... [[Eingangsmatrix]] von der Zeit $t$ abhängig
+			- $\mathbf{C}$ ... [[Ausgangsmatrix]] von der Zeit $t$ abhängig
+			- $\mathbf{D}$ ... [[Durchgriffsmatrix]] von der Zeit $t$ abhängig
+			- $\mathbf{u}$ ... [[Eingangssignal]]
+			- $\mathbf{y}$ ... [[Ausgangssignal]]
+			- $\mathbf{x}$ ... [[zustandsvektor]]
 			- $\mathbf{x}(t_0)$ ... Anfangsbedingung
 		- skript
 		  collapsed:: true
 			- ((6707e513-673d-4329-bffa-4bbba881f61e))
 			- ((6707e62f-76a3-4e0f-8155-843c10498afa))
-	- wann ist ein system [[zeitinvariant]] und [[linear]]?
+	- wann ist ein system [[zeitinvariant]] und [[linear]] ([[LTI]])?
+	  id:: 670b86ba-461c-4d37-913f-1a9d07a67894
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard, grundlagen
-	  id:: 670b86ba-461c-4d37-913f-1a9d07a67894
 		- wenn es sich in diese form überführen lässt (also keine explizite zeitabhängigkeit und [[matrix]] schreibweise)
-		- $\dot{\mathbf{x}} = \mathbf{A}\mathbf{x}+\mathbf{B}\mathbf{u}, \quad \mathbf{x}(0) = \mathbf{x}_{0} \\ \mathbf{y} = \mathbf{C} \mathbf{x} + \mathbf{D} \mathbf{u}$
-		  tags:: formel
-		  bezeichnung:: [[linear]] [[zeitinvariantes]] system, [[zustandsraumdarstellung]]
-			- ((67138ab1-181a-49b1-891e-f0a72036b01c))
-			- ((671391a2-acdd-4459-8495-9f80c58207cb))
-			- ((671391ab-954e-42d8-9316-4ba379f1dc4d))
-			- ((671391bc-936b-489f-8df5-bc54ac5df8b0))
-			- ((6713c976-36b0-4499-836a-4f50a8738b53))
-			- ((6713c976-d9a5-4ca2-817d-e9ff7cfa10e5))
-			- ((6713c976-d547-4097-a7bb-de4a9416207b))
-			- $\mathbf{x}(0)$ ... Anfangsbedingung
+		- ((6729bee5-385f-4bbf-ac7d-5f099188180c))
 		- skript
 		  collapsed:: true
 			- ((6707e513-673d-4329-bffa-4bbba881f61e))
@@ -516,7 +541,7 @@ alias:: Automatisierung, automatisierungs
 		- skript
 		  collapsed:: true
 			- ((6714d2d2-68d5-4dd1-abc4-a19d6b74b6a8))
-	- wie schaut ein transformiertes [[system (mathematik)]] aus?
+	- wie schaut ein transformiertes [[system]] aus?
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard, [[zustandstransformation]]
 		- $\dot{\mathbf{z}} = \underbrace{\mathbf{V}^{-1}\mathbf{AV}}_{\tilde{\mathbf{A}}}\mathbf{z}+\underbrace{\mathbf{V}^{-1}\mathbf{B}}_{\tilde{\mathbf{B}}}\mathbf{u}~, \quad \mathbf{z}(0) = \mathbf{z}_{0}=\mathbf{V}^{-1}\mathbf{x}_{0} \\ \mathbf{y}=\underbrace{\mathbf{C}\mathbf{V}}_{\tilde{\mathbf{C}}}\mathbf{z}+\underbrace{\mathbf{D}}_{\tilde{\mathbf{D}}}\mathbf{u}$
