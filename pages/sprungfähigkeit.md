@@ -8,10 +8,10 @@ alias:: sprungfähig
   deck:: Uni::Automatisierungstechnik_Theorie
   tags:: flashcard
   id:: 6729c8eb-9d18-43de-8049-66086358715c
-	- $G \left(s\right) = \frac{z\left(s\right)}{n\left(s\right)}~,\quad \operatorname*{\mathrm{lim}}_{s\to\infty}G\left(s\right)\ne0$
+	- $G \left(s\right) = \frac{z\left(s\right)}{n\left(s\right)}~,\quad \operatorname*{\mathrm{lim}}_{s\to\infty}G\left(s\right)\ne0\\$  also  $\opn{grad}(z(s)) = \opn{grad}(n(s))$
+	  id:: 6729ef23-4d38-4044-b7e9-f4866a30bcc0
 	  tags:: formel
 	  bezeichnung:: bedingung für die [[sprungfähigkeit]] eines [[systems]]
-	  id:: 6729ef23-4d38-4044-b7e9-f4866a30bcc0
 		- $s$ ... [[laplacebereich]] variable
 		- $G\left(s\right)$ ... [[Übertragungsfunktion]]
 		- $z\left(s\right)$ ... [zählerpolynom]([[polynom]])

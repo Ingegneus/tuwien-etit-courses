@@ -26,9 +26,13 @@ alias:: Übertragungsfunktion
 	- $\mathbf{\Phi}(s)$ ... [[transitionsmatrix]]
 	- $\mathbf{B}$ ... [[Eingangsmatrix]]
 	- $\mathbf{D}$ ... [[Durchgriffsmatrix]]
-- wenn bei ((67254498-19a4-47c4-a559-8bad13c5ebe3)), $~\mathbf{D} = 0$, dann ist immer $\opn{grad}(z(s)) < \opn{grad}(n(s))$ 
-  tags:: formel
+- wenn bei ((67254498-19a4-47c4-a559-8bad13c5ebe3)), $~\mathbf{D} = 0$, dann ist immer $\opn{grad}(z(s)) < \opn{grad}(n(s))$ [[realisierbarkeit]]? 
+  tags:: formel, wip
   bezeichnung:: eigenschaft einer [[Übertragungsfunktion]].
 	- $\mathbf{D}$ ... [[Durchgriffsmatrix]]
 	- $n(s)$ ... [Nennerpolynom]([[polynom]])
 	- $z(s)$ ... [Zählerpolynom]([[polynom]])
+	- welche struktur haben lösungen von [[linearen]], [[zeitinvarianten]], [[autonomen]] [[systemen]] der Form $\\ \dot{ \mathbf{x}} = \mathbf{A} \mathbf{x}~, \quad\mathbf{x}(0) = \mathbf{x}_{0}$ ?
+	  deck:: Uni::Automatisierungstechnik_Theorie
+	  tags:: flashcard
+		- .

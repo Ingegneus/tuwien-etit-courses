@@ -232,3 +232,8 @@ svg.awLi-favicon {
 .katex .boxpad {
     padding: 0 0.2em;
 }
+
+.block-ref {
+	display: inline-block;
+	padding: none;
+}

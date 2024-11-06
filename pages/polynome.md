@@ -4,10 +4,20 @@ template-used:: standard-page
 tags:: [[mathematik]], [[uni]]
 alias:: polynom, polynoms
 
+- $-\frac{p}{2}\pm\sqrt{\left(\frac{p}{2}\right)^2-q}$
+  tags:: formel
+  bezeichnung:: wenn der koeffizeint der quadratischen potenz $1$ ist, kann man die kleine lösungsformel anwenden
+  alias:: quadratische lösungsformel, quadratic formula
+	- $p, q$ ... koeffizienten des quadratischen [[polynoms]]
+- $\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+  tags:: formel
+  bezeichnung:: große lösungsformel, quadratische lösungsformel, quadratic formula
+	- $a, b, c$ ... koeffizienten des quadratischen [[polynoms]]
 - polynomdivision [link](https://www.mathebibel.de/polynomdivision)
   deck:: Uni::Automatisierungstechnik_Theorie
   tags:: flashcard, wip
   id:: 67290be5-009a-4d75-afb2-6a0484a92450
+  collapsed:: true
 	- ### Berechne $\\(2 x^3 + 4 x^2 − 2 x − 4) : (x − 1) =~? \\$ mithilfe einer Polynomdivision.
 		- #### $x^3$-Term
 			- Division
@@ -69,6 +79,7 @@ alias:: polynom, polynoms
 - horner schema [link](https://www.mathebibel.de/horner-schema)
   deck:: Uni::Automatisierungstechnik_Theorie
   tags:: flashcard
+  collapsed:: true
 	- ### Berechne $\\(2x^3 + 4x^2 - 2x - 4) : (x - 1) =  ?\\$ mit hilfe des Horner-Schemas.
 		- #### Tabelle aufstellen
 		  logseq.order-list-type:: number

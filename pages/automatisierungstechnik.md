@@ -373,17 +373,9 @@ alias:: automatisierung, automatisierungs
 	  tags:: flashcard, grundlagen
 	  id:: 670b86ba-baa2-47ca-a463-7550a919729d
 	  collapsed:: true
-		- wenn auf es [frei](((6707e302-6e9f-4f87-81e0-2ca5daeea57c))) und zeitinvariant ist. dann lässt es sich in dieser form
-		- ${ \begin{array}{l l}{\dot{\mathbf{x}}=\mathbf{f}(\mathbf{x})~,}&{{}\qquad\mathbf{x}(0)=\mathbf{x}_{0}}\\ {\mathbf{y}=\mathbf{h}(\mathbf{x})}\end{array}}$
-		  tags:: formel, autonom, system
-		  bezeichnung:: form eines [[autonomen]] systems
-			- ${\dot{\mathbf{x}}}$ ... [[zeitableitung]] des [[Zustandsvektors]]
-			- ${\mathbf{x}(0)}$ ... wert des [[Zustandsvektors]] an der stelle $t=0$
-			- ${\mathbf{x}_0}$ ... anfangswert des [[Zustandsvektors]]
-			- ${\mathbf{y}}$ ... ausgang des systems
-			- ${\mathbf{f}(\mathbf{x})}$ ... eine vektorwertige funktion in $\mathbf{x}$
-			- ${\mathbf{h}(\mathbf{x})}$ ... eine vektorwertige funktion in $\mathbf{x}$
-		-
+		- wenn es [frei](((6707e302-6e9f-4f87-81e0-2ca5daeea57c))) und [[zeitinvariant]] ist, dann lässt es sich in dieser form
+		  ((6729bee5-0c5a-4946-8764-29f1eb4a8626))
+		  auschreiben
 		- skript
 			- ((6707e85a-ac93-4d6b-b607-90b96e187cd7))
 	- wie ist die [[transitionsmatrix]] definiert
