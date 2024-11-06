@@ -1,7 +1,7 @@
 icon:: 🦘
 inherit-color-icon-from:: [[logseq-page-color-orange]] 
 template-used:: standard-page
-tags:: [[uni]] 
+tags:: [[uni]], [[automatisierungstechnik]], [[Sprungantwort]] 
 alias:: sprungfähig
 
 - wann ist ein [[system]] mit der [[Übertragungsfunktion]] $G(s)$ [[sprungfähig]] ? 
@@ -11,6 +11,7 @@ alias:: sprungfähig
 	- $G \left(s\right) = \frac{z\left(s\right)}{n\left(s\right)}~,\quad \operatorname*{\mathrm{lim}}_{s\to\infty}G\left(s\right)\ne0$
 	  tags:: formel
 	  bezeichnung:: bedingung für die [[sprungfähigkeit]] eines [[systems]]
+	  id:: 6729ef23-4d38-4044-b7e9-f4866a30bcc0
 		- $s$ ... [[laplacebereich]] variable
 		- $G\left(s\right)$ ... [[Übertragungsfunktion]]
 		- $z\left(s\right)$ ... [zählerpolynom]([[polynom]])

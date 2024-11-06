@@ -2,7 +2,7 @@ public:: true
 icon:: 🤖
 inherit-color-icon-from:: [[logseq-page-color-lightblue]]
 tags:: [[uni]]
-alias:: Automatisierung, automatisierungs
+alias:: automatisierung, automatisierungs
 
 - [📁 folder](file://C:\Users\Matteo\Documents\Uni\Automatisierung)
 - ## vorlesungen
@@ -77,6 +77,8 @@ alias:: Automatisierung, automatisierungs
 			- formeln
 				- ((67234c51-e437-4e1f-a175-2035d14681aa))
 				- ((67254498-19a4-47c4-a559-8bad13c5ebe3))
+				- ((6729ef23-4d38-4044-b7e9-f4866a30bcc0))
+				- ((672a2989-ea9a-4046-b0d5-aeb334016b0e))
 			- [📚 2024-11-01 22h47m.xopp](../assets/documents/2024-11-01 22h47m.xopp)
 			- ![📚 2024-11-01 22h47m_annotated.pdf](../assets/documents/2024-11-01 22h47m_annotated.pdf)
 	- [UE4](((67234c2b-aaa9-48f3-9a71-4c2e5d08fd4c)))
@@ -192,7 +194,9 @@ alias:: Automatisierung, automatisierungs
 	- ![2021-02-05.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2021-02-05.pdf)
 	  background-color:: green
 - ## flashcards
+  collapsed:: true
 	- ### index
+	  collapsed:: true
 		- query-table:: true
 		  collapsed:: true
 		  #+BEGIN_QUERY
@@ -216,6 +220,7 @@ alias:: Automatisierung, automatisierungs
 		  #+END_QUERY
 		- query-table:: true
 		  query-properties:: [:block :tags]
+		  collapsed:: true
 		  #+BEGIN_QUERY
 		  {
 		  :title [:b "all flashcards defined here"]
@@ -270,6 +275,7 @@ alias:: Automatisierung, automatisierungs
 	  tags:: flashcard, wip, ai
 	  collapsed:: true
 		- was ist die zustandsraumdarstellung eines systems
+		  collapsed:: true
 		  Die Zustandsraumdarstellung (State-Space Representation) ist eine mathematische Methode zur Beschreibung dynamischer Systeme. 
 		  
 		  Anstatt die Eingangs-/Ausgangsbeziehung direkt darzustellen, fokussiert sie sich auf den **inneren Zustand** des Systems zu einem bestimmten Zeitpunkt.
@@ -384,7 +390,9 @@ alias:: Automatisierung, automatisierungs
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard, grundlagen
 	  id:: 670b86ba-d750-4530-be16-b35b2ad26db7
+	  collapsed:: true
 		- ((6717bedf-9586-4607-a3d4-5211a81e6421))
+		  collapsed:: true
 		- das folgt aus dem exponential lösungsansatz für [diese](((670d3663-38e7-4891-a2e8-7ae2cf96c68a)))
 		  $\dot{\mathbf{x}}=\mathbf{A}\mathbf{x}~,\qquad\mathbf{x}(t_{0})=\mathbf{x}_{0}$
 		  [[differentialgleichung]].
@@ -436,6 +444,7 @@ alias:: Automatisierung, automatisierungs
 		  id:: 67122f45-9636-4f84-bfd4-c73aed78e4bd
 		  tags:: formel, wip
 		  bezeichnung:: bedingung für [[linearität]] von systemen
+		  collapsed:: true
 			- $\alpha_{1}, \alpha_{2}, \beta_{1}, \beta_{2}$ ... beliebige faktoren $\in\mathbb{R}$
 		- oder man schaut ob sich das system in die form {{embed ((e08332b5-2b72-462d-8c3d-7b7b4d1b2a23))}} überführen lässt
 	- was ist eine [[trajektorie]]?
@@ -465,6 +474,7 @@ alias:: Automatisierung, automatisierungs
 		  id:: 67122f45-de81-44a5-a037-8b3d5d9241fa
 		  tags:: formel, wip
 		  bezeichnung:: [[linearisierung]] um eine [[Ruhelage]]
+		  collapsed:: true
 			- $\Delta\dot{\mathbf{x}}$ ... [[zeitableitung]] der auslenkung
 			- $\mathbf{f}\left(\mathbf{x}_{R},\mathbf{u}_{R}\right)$ ... system an der stelle $\mathbf{x}_{R}$ und eingang $\mathbf{u}_{R}$
 			  id:: 67120fe5-7abe-493b-902e-aa4fe9796178
