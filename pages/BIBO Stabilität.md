@@ -7,6 +7,7 @@ alias:: BIBO-stabil, BIBO-Stabilität, BIBO stabil
 - wann ist ein [[system]] [[BIBO-stabil]]? 
   deck:: Uni::Automatisierungstechnik_Theorie
   tags:: flashcard, grundlagen
+  id:: 672a2871-2bdc-4d6b-a6ea-5ec459e0d191
 	- $\int_{0}^{\infty}|g(t)|\opn{d}t<\infty$
 	  tags:: formel
 	  bezeichnung:: Bedingung für [[BIBO-Stabilität]], wenn ein [[lineares]], [[zeitinvariantes]] [[Eingrößensystem]] dieser Form vorliegt [link](((6729bee5-385f-4bbf-ac7d-5f099188180c))) (entspricht absoluter integrabilität)

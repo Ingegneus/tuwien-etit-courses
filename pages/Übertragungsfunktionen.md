@@ -1,6 +1,6 @@
 icon:: 📉
 inherit-color-icon-from:: [[logseq-page-color-red]]
-tags:: [[uni]] 
+tags:: [[uni]], [[schaltungstechnik]], [[automatisierungstechnik]], [[signale uns systeme 1]] 
 alias:: Übertragungsfunktion
 
 - $G(s) = \frac{Y\left(s\right)}{X\left(s\right)}$
@@ -32,7 +32,3 @@ alias:: Übertragungsfunktion
 	- $\mathbf{D}$ ... [[Durchgriffsmatrix]]
 	- $n(s)$ ... [Nennerpolynom]([[polynom]])
 	- $z(s)$ ... [Zählerpolynom]([[polynom]])
-	- welche struktur haben lösungen von [[linearen]], [[zeitinvarianten]], [[autonomen]] [[systemen]] der Form $\\ \dot{ \mathbf{x}} = \mathbf{A} \mathbf{x}~, \quad\mathbf{x}(0) = \mathbf{x}_{0}$ ?
-	  deck:: Uni::Automatisierungstechnik_Theorie
-	  tags:: flashcard
-		- .

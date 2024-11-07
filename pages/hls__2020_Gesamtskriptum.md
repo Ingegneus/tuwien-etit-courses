@@ -74,3 +74,10 @@ file-path:: C:\Users\Matteo\Documents\Uni\Automatisierung\willi\01_Vorlesung\202
   hl-page:: 50
   hl-color:: yellow
   id:: 6714d974-4e15-486c-931b-3163399dc6d7
+- [:span]
+  ls-type:: annotation
+  hl-page:: 60
+  hl-color:: yellow
+  id:: 672bbbac-9b19-42cd-8b83-2f3757b8703b
+  hl-type:: area
+  hl-stamp:: 1730919335357

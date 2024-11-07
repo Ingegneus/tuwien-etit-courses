@@ -6,4 +6,5 @@ alias:: wave propagation, wellenausbreitungs
 - ## vorlesungen
 	- [[wellen vo temp]]
 - ## beispiele
+	-
 - ## flashcards

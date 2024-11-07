@@ -194,7 +194,6 @@ alias:: automatisierung, automatisierungs
 	- ![2021-02-05.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2021-02-05.pdf)
 	  background-color:: green
 - ## flashcards
-  collapsed:: true
 	- ### index
 	  collapsed:: true
 		- query-table:: true
@@ -238,13 +237,23 @@ alias:: automatisierung, automatisierungs
 		  ]
 		  }
 		  #+END_QUERY
+	- welche struktur haben lösungen von [[linearen]], [[zeitinvarianten]], [[autonomen]] [[systemen]] der Form $\\ \dot{ \mathbf{x}} = \mathbf{A} \mathbf{x}~, \quad\mathbf{x}(0) = \mathbf{x}_{0}$ ?
+	  deck:: Uni::Automatisierungstechnik_Theorie
+	  tags:: flashcard
+	  id:: 672b9e83-248f-44e1-aeb0-956bb8dd5b3a
+		- Jede Lösung $x_{j}(t),~j=1,\ldots,n$ des [[systems]] ist eine Linearkombination der Funktionen $\\t^{k_{1}}\mathrm{e}^{\lambda t},\quad t^{k_{2}}\mathrm{e}^{\alpha t}\cos(\beta t)\quad u n d\quad t^{k_{3}}\mathrm{e}^{\alpha t}\sin(\beta t)$
+		- skript
+		  collapsed:: true
+			- ((672bbbac-9b19-42cd-8b83-2f3757b8703b))
 	- welche bedeutung haben die [[eigenwerte]] der [[Systemmatrix]]? 
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard
+	  id:: 6729bee5-1fa5-4f94-bf67-3121c89d7e93
 		- sie sind auch die [[pole]] der [[Übertragungsfunktion]]
 	- wie schaut ein [[LTI]] system im [[bildbereich]] aus
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard
+	  id:: 6729bee5-1e22-41f4-93cc-5ffc3390a802
 		- $\hat{\mathbf{x}}(s)-\mathbf{x}_{0}=\mathbf{A}\hat{\mathbf{x}}(s)+\mathbf{b}\hat{u}(s) \\ \hat{y}(s)=\mathbf{c}^{\mathrm{T}}\hat{\mathbf{x}}(s)+d\hat{u}(s)$
 		  tags:: formel, wip
 		  bezeichnung:: [[LTI]] system im [[bildbereich]]
@@ -253,6 +262,7 @@ alias:: automatisierung, automatisierungs
 	- wann ist eine [[matrix]] nilpotent?
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard
+	  id:: 6729bee5-5a43-48fd-81e1-9171dd9e783f
 	  collapsed:: true
 		- {{embed ((6723472c-5a53-4cd9-9a9c-73a2288a42b8))}}
 	- wie lautet die allgemeine lösung eines [[linearen]] [[zeitinvarianten]] [[systems]]?
@@ -537,6 +547,7 @@ alias:: automatisierung, automatisierungs
 	- wofür braucht man die [[zustandstransformation]]?
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard
+	  id:: 6729bee5-97f3-44a9-b04d-0f656ffdf0ba
 		- damit das berechnen der [[transitionsmatrix]] einfacher wird
 		- ![img](../assets/documents/zustandstranformation-motivation.webp){:width 400}
 		- {{renderer :media-timestamp, 00:04:57, ((6713c96e-d606-449c-8013-b19ee52a12e9))}}
@@ -546,6 +557,7 @@ alias:: automatisierung, automatisierungs
 	- wie schaut ein transformiertes [[system]] aus?
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard, [[zustandstransformation]]
+	  id:: 6729bee5-6c05-4c25-9c64-c5d47bb41d16
 		- $\dot{\mathbf{z}} = \underbrace{\mathbf{V}^{-1}\mathbf{AV}}_{\tilde{\mathbf{A}}}\mathbf{z}+\underbrace{\mathbf{V}^{-1}\mathbf{B}}_{\tilde{\mathbf{B}}}\mathbf{u}~, \quad \mathbf{z}(0) = \mathbf{z}_{0}=\mathbf{V}^{-1}\mathbf{x}_{0} \\ \mathbf{y}=\underbrace{\mathbf{C}\mathbf{V}}_{\tilde{\mathbf{C}}}\mathbf{z}+\underbrace{\mathbf{D}}_{\tilde{\mathbf{D}}}\mathbf{u}$
 		  tags:: formel, wip
 		  bezeichnung:: reguläre [[zustandstransformation]] eines [[LTI]] [[system (mathematik)]]
@@ -553,6 +565,7 @@ alias:: automatisierung, automatisierungs
 	- ausgehend vom [[LTI]] [[system (mathematik)]] $\\ \dot{\mathbf{x}}=\mathbf{A}\mathbf{x}+\mathbf{B}\mathbf{u},\qquad\mathbf{x}(0)=\mathbf{x}_{0} \\ \mathbf{y}=\mathbf{Cx}+\mathbf{Du}\\$wie wird die reguläre [[zustandstransformation]] durchgeführt?
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard, wip
+	  id:: 6729bee5-704c-45d5-a082-794565e0f1c5
 		- $\mathbf{x}(t)=\mathbf{V}\mathbf{z}(t)$
 		- $\dot{\mathbf{z}}=\underbrace{\mathbf{V}^{-1}\mathbf{A}\mathbf{V}}_{\tilde{\mathbf{A}}}\mathbf{z}+\underbrace{\mathbf{V}^{-1}\mathbf{B}}_{\tilde{\mathbf{B}}}\mathbf{u}~, \quad \mathbf{z}(0)=\mathbf{z}_{0}=\mathbf{V}^{-1}\mathbf{x}_{0} \\ \mathbf{y}=\underbrace{\mathbf{C}\mathbf{V}}_{\tilde{\mathbf{C}}}\mathbf{z}+\underbrace{\mathbf{D}}_{\tilde{\mathbf{D}}}\mathbf{u}$
 		- $\mathbf{z}(t)=\tilde{\Phi}(t)\mathbf{z}_{0}+\int_{0}^{t}\tilde{\Phi}(t-\tau)\tilde{\mathbf{B}}\mathbf{u}(\tau)\mathrm{d}\tau \\ \mathbf{y}(t)=\tilde{\mathbf{C}}z(t)+\tilde{\mathbf{D}}\mathbf{u}(t)$

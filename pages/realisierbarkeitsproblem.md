@@ -7,6 +7,7 @@ alias:: realsierbar, realisierbarkeit
 - wann ist ein [[system]] [[realisierbar]]?
   deck:: Uni::Automatisierungstechnik_Theorie
   tags:: flashcard
+  id:: 6729ef22-e5a4-4ad8-b6f1-ba79fd873b4d
 	- ((672a3290-b9d3-4434-9d7c-133715e031d8)) $,\quad \opn{grad}(z(s)) \le \opn{grad}(n(s)) \Longleftrightarrow \left|\opn{lim}_{s \to \infty} G \left(s \right)\right| < 0$
 	  tags:: formel
 	  bezeichnung:: bedingung für die [[realisierbarkeit]] eines [[systems]]

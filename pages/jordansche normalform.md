@@ -31,4 +31,5 @@ tags:: [[uni]], [[mathematik]]
 - was sind jordan blöcke?
   deck:: Uni::Automatisierungstechnik_Theorie
   tags:: flashcard, wip
+  id:: 6729bef3-50b4-417a-b6e0-ceb4509f7c9d
 	-

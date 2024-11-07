@@ -79,6 +79,7 @@ alias:: polynom, polynoms
 - horner schema [link](https://www.mathebibel.de/horner-schema)
   deck:: Uni::Automatisierungstechnik_Theorie
   tags:: flashcard
+  id:: 6729bef4-6c12-40e9-bca8-0b1527ebce40
   collapsed:: true
 	- ### Berechne $\\(2x^3 + 4x^2 - 2x - 4) : (x - 1) =  ?\\$ mit hilfe des Horner-Schemas.
 		- #### Tabelle aufstellen
