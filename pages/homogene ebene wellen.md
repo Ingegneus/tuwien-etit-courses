@@ -1,7 +1,7 @@
 icon:: 🟦
 inherit-color-icon-from:: [[logseq-page-color-blue]] 
 template-used:: standard-page
-tags:: [[wellensausbreitung]], [[uni]]
+tags:: [[wellenausbreitung]], [[uni]]
 alias:: hew
 
 - $+ \cfrac{\partial}{\partial z}e_{y} = \mu \cfrac{\partial}{\partial t}h_{x}$

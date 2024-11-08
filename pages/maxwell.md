@@ -1,7 +1,7 @@
 icon:: .
 inherit-color-icon-from:: [[logseq-page-color-red]] 
 template-used:: standard-page
-tags:: [[wellensausbreitung]], [[uni]]
+tags:: [[wellenausbreitung]], [[uni]]
 
 - $\vect{\nabla} \cdot \vect{S} = \opn{lim}_{\mathcal{V} \to0} \frac{1}{V} \oint_{\Sigma} \vect{S} \cdot \opn{d} \vect{F} = - \frac{\partial}{\partial t} \rho$
 - $\vect{\nabla} \cdot( \vect{\nabla} \times \vect{H}) \equiv0$
