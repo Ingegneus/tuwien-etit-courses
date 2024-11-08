@@ -1,7 +1,7 @@
 icon:: 🔲
 inherit-color-icon-from:: [[logseq-page-color-green]]
 template-used:: standard-page
-tags:: [[lineare algebra]], [[uni]] 
+tags:: [[lineare algebra]], [[uni]], [[matrix]], [[mathematik]] 
 alias:: adjunkte, adjungierte, komplementäre matrix
 
 - $\text{adj}A=\begin{pmatrix}{\tilde{a}_{11}} & {\tilde{a}_{12}} & {\cdots} & {\tilde{a}_{1n}}\\ {\tilde{a}_{21}} & {\tilde{a}_{22}} & {} & {\tilde{a}_{2n}}\\ {\vdots} &  & \ddots & \vdots\\ {\tilde{a}_{n1}} & {\tilde{a}_{n2}} & {\cdots} & {\tilde{a}_{nn}}\end{pmatrix}^{T}=\begin{pmatrix}{\tilde{a}_{11}} & {\tilde{a}_{21}} & {\cdots} & {\tilde{a}_{n1}}\\ {\tilde{a}_{12}} & {\tilde{a}_{22}} & {} & \tilde{a}_{n2}\\ {\vdots} & {} & {\ddots} & \vdots\\ {\tilde{a}_{1n}} & {\tilde{a}_{2n}} & {\cdots} & \tilde{a}_{nn}\end{pmatrix}$

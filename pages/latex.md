@@ -13,3 +13,4 @@ tags:: tech, it
 	  |`\begin{Vmatrix} & & \\ & & \end{Vmatrix}`|double <u>V</u>ertical line <u>matrix</u>| $\begin{Vmatrix} 1 & 0 \\ 0 & 1\end{Vmatrix}$|
 	  |`\frac{}{}`| <u>frac</u>tion |$\frac{1}{\sqrt{2}+\frac{1}{\sqrt{2} + \frac{1}{\sqrt{2}+\dotsb}}}$|
 	  |`\cfrac{}{}`| <u>c</u>ontinued <u>frac</u>tion (nested fractions don't look so small)|$\cfrac{1}{\sqrt{2}+\cfrac{1}{\sqrt{2} + \cfrac{1}{\sqrt{2}+\dotsb}}}$|
+	  |`\left\{ \right\}`| adapting curly braces| $\left\{\frac12\right\}$ |

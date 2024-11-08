@@ -194,6 +194,7 @@ alias:: automatisierung, automatisierungs
 	- ![2021-02-05.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2021-02-05.pdf)
 	  background-color:: green
 - ## flashcards
+  collapsed:: true
 	- ### index
 	  collapsed:: true
 		- query-table:: true
@@ -240,7 +241,7 @@ alias:: automatisierung, automatisierungs
 	- welche struktur haben lösungen von [[linearen]], [[zeitinvarianten]], [[autonomen]] [[systemen]] der Form $\\ \dot{ \mathbf{x}} = \mathbf{A} \mathbf{x}~, \quad\mathbf{x}(0) = \mathbf{x}_{0}$ ?
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard
-	  id:: 672b9e83-248f-44e1-aeb0-956bb8dd5b3a
+	  id:: 672caa16-69d1-4526-b0da-21d3b1f44cbb
 		- Jede Lösung $x_{j}(t),~j=1,\ldots,n$ des [[systems]] ist eine Linearkombination der Funktionen $\\t^{k_{1}}\mathrm{e}^{\lambda t},\quad t^{k_{2}}\mathrm{e}^{\alpha t}\cos(\beta t)\quad u n d\quad t^{k_{3}}\mathrm{e}^{\alpha t}\sin(\beta t)$
 		- skript
 		  collapsed:: true

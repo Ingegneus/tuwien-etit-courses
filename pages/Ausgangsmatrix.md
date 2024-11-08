@@ -1,7 +1,7 @@
 icon:: 🟥
 inherit-color-icon-from:: [[logseq-page-color-red]]
 template-used:: standard-page
-tags:: [[uni]]
+tags:: [[uni]], [[automatisierungstechnik]] 
 alias:: output matrix
 
 - Beschreibt, welche [[Zustandsgrößen]] des Systems zum [[Ausgangssignal]] beitragen. Häufig auch $\mathbf{c}_T$ (Zeilenvektor) wenn es sich um ein eingrößensystem handelt.
