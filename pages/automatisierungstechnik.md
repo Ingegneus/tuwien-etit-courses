@@ -196,7 +196,6 @@ alias:: automatisierung, automatisierungs
 - ## flashcards
   collapsed:: true
 	- ### index
-	  collapsed:: true
 		- query-table:: true
 		  collapsed:: true
 		  #+BEGIN_QUERY

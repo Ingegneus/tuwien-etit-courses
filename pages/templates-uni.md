@@ -28,22 +28,64 @@ tags:: [[templates]], [[uni]]
 				- formeln
 				- ![📚 doc](../assets/documents/)
 	- ## flashcards
-	  collapsed:: true
 		- ### index
-			- {{query (and [[flashcard]] (page [[]]))}}
-			  query-table:: true
+		  collapsed:: true
+			- query-table:: true
+			  collapsed:: true
+			  #+BEGIN_QUERY
+			  {
+			  :title [:b "all flashcards"]
+			  :query [:find (pull ?block [*])
+			  :where
+			  [?block :block/content ?blockcontent]
+			  [?block :block/page ?page]
+			  [?page :block/name ?pagename]
+			  [?block :block/path-refs [:block/name "flashcard"]]
+			  ( or
+			  (property ?block :deck "Uni::Automatisierungstechnik_Theorie")
+			  (property ?block :deck "Uni::Mathematik_Theorie")
+			  )
+			  ( not
+			  (?page :page/name "templates-uni")
+			  )
+			  ]
+			  }
+			  #+END_QUERY
+			- query-table:: true
 			  query-properties:: [:block :tags]
-			  query-sort-by:: block
-			  query-sort-desc:: false
+			  collapsed:: true
+			  #+BEGIN_QUERY
+			  {
+			  :title [:b "all flashcards defined here"]
+			  :query [:find (pull ?block [*])
+			  :where
+			  [?block :block/content ?blockcontent]
+			  [?block :block/page ?page]
+			  [?page :block/name ?pagename]
+			  [?block :block/path-refs [:block/name "flashcard"]]
+			  ( or
+			  (property ?block :deck "Uni::Automatisierungstechnik_Theorie")
+			  (property ?block :deck "Uni::Mathematik_Theorie")
+			  )
+			  [?page :page/name "automatisierungstechnik"]
+			  ]
+			  }
+			  #+END_QUERY
 - flashcard
   template:: flashcard
   template-including-parent:: false
-  collapsed:: true
 	- text
 	  id:: d15440a1-738b-4891-b9c7-436f5bad96b7
-	  deck:: Uni::Automatisierungstechnik_Theorie
+	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
 		- .
+- beispiel
+  template:: beispiel
+  template-including-parent:: false
+	- Beispiel 1)
+	  background-color:: green
+		- formeln
+		- ![📚 doc](../assets/documents/)
 - vocabulary
   template:: vocabulary
   template-including-parent:: false

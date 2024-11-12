@@ -13,40 +13,38 @@ tags:: uni
 		- b) und berechnen Sie den Einfluss einer endlichen Geradeaus-Leerlaufverstärkung.
 		  background-color:: green
 			- formeln
-			  collapsed:: true
 				- $u_{en}=-\frac{u_{a}}{v_{g}}$
 				  tags:: [[formel]], [[opv]]
 				  bezeichnung:: potential am negativen [[opv]] kontakt, wenn $u_{ep}=0$ [(ref)](((666c479b-dc31-47d7-afdf-857e3e084817))) [V]
-					- $u_a$ ... ausgangsspannung [V]
-					  $v_g$ ... geradeaus-leerlaufverstärkung [-]
+					- $u_a$ ... ausgangsspannung $\mathrm{[V]}$
+					  $v_g$ ... geradeaus-leerlaufverstärkung $\mathrm{[-]}$
 				- ${v_{g}=\frac{u_{a}}{u_{ep}-u_{en}}}$
 				  id:: 666c479b-dc31-47d7-afdf-857e3e084817
 				  tags:: [[formel]], [[vv-opv]], [[opv]]
-				  bezeichnung:: geradeaus leerlaufverstärkung (open loop gain) (wenn ideal, $v_{g\infty}=\infty$) [-]
-				  collapsed:: true
-					- $u_{en}$ ... potential am negativen [[opv]] kontakt [V]
-					  $u_{ep}$ ... potential am positiven [[opv]] kontakt [V]
-					  $u_{a}$ ... ausgangsspannung [V]
+				  bezeichnung:: geradeaus leerlaufverstärkung (open loop gain) (wenn ideal, $v_{g\infty}=\infty$) $\mathrm{[-]}$
+					- $u_{en}$ ... potential am negativen [[opv]] kontakt $\mathrm{[V]}$
+					  $u_{ep}$ ... potential am positiven [[opv]] kontakt  $\mathrm{[V]}$
+					  $u_{a}$ ... ausgangsspannung $\mathrm{[V]}$
 				- ${{v_{gt}=\frac{2\cdot u_{a}}{u_{ep}-u_{en}}}}$
 				  tags:: [[formel]], [[vv-opv]], [[opv]]
-				  bezeichnung:: gleichtaktverstärkung (open loop gain) (wenn ideal, $v_{gt\infty}=0$) [-]
+				  bezeichnung:: gleichtaktverstärkung (open loop gain) (wenn ideal, $v_{gt\infty}=0$) $\mathrm{[-]}$
 				  collapsed:: true
-					- $u_{en}$ ... potential am negativen [[opv]] kontakt [V]
-					  $u_{ep}$ ... potential am positiven [[opv]] kontakt [V]
-					  $u_{a}$ ... ausgangsspannung [V]
+					- $u_{en}$ ... potential am negativen [[opv]] kontakt $\mathrm{[V]}$
+					  $u_{ep}$ ... potential am positiven [[opv]] kontakt $\mathrm{[V]}$
+					  $u_{a}$ ... ausgangsspannung $\mathrm{[V]}$
 				- ${v_{r}=\frac{u_{a}}{u_{e}}}$
 				  tags:: [[formel]], [[vv-opv]], [[opv]]
-				  bezeichnung:: verstärkung/übertragungsfunktion (closed loop gain) (wenn ideal, $v_{r\infty}$) [-]
-					- $u_{e}$ ... eingangsspannung [V]
-					  $u_{a}$ ... ausgangsspannung [V]
+				  bezeichnung:: verstärkung/übertragungsfunktion (closed loop gain) (wenn ideal, $v_{r\infty}$) $\mathrm{[-]}$
+					- $u_{e}$ ... eingangsspannung $\mathrm{[V]}$
+					  $u_{a}$ ... ausgangsspannung $\mathrm{[V]}$
 				- ${v_{s}=\beta\cdot v_{g}}$
 				  tags:: [[formel]], [[vv-opv]], [[opv]]
-				  bezeichnung:: schleifen verstärkung (loop gain) (wenn ideal, ??) [-]
+				  bezeichnung:: schleifen verstärkung (loop gain) (wenn ideal, ??) $\mathrm{[-]}$
 				  id:: 6676c9a3-b64a-4899-92bd-d0463f4b9f84
 				  collapsed:: true
-					- $\beta$ ... schleifen verstärkung [-]
+					- $\beta$ ... schleifen verstärkung $\mathrm{[-]}$
 					  id:: 6676c9a3-049d-440e-a8ca-be6997a6aa76
-					  $v_{g}$ ... geradeaus leerlaufverstärkung [-]
+					  $v_{g}$ ... geradeaus leerlaufverstärkung $\mathrm{[-]}$
 		- c) Berechnen Sie den Fehlerfaktor $F$.
 		  background-color:: green
 		- canvas
@@ -56,13 +54,11 @@ tags:: uni
 		  background-color:: green
 		  id:: 666c6b2d-53cf-48a6-a98f-e7f51157b0b3
 			- formeln
-			  collapsed:: true
 				- $\beta=-\frac{u_{ed}}{u_{a}}$
 				  tags:: [[formel]], [[opv]]
-				  bezeichnung:: rückkopplungsfaktor (feedback ratio) [-]
-				  collapsed:: true
-					- $u_{ed}$ ... differenzenspannung an [[opv]] [V]
-					  $u_a$ ... ausgangsspannung [V]
+				  bezeichnung:: rückkopplungsfaktor (feedback ratio) $\mathrm{[-]}$
+					- $u_{ed}$ ... differenzenspannung an [[opv]] $\mathrm{[V]}$
+					  $u_a$ ... ausgangsspannung $\mathrm{[V]}$
 			- ![image.png](../assets/documents/verstärkungsfehler-bsp-schaltung.webp){:width 400}
 			- [📚 2024-06-14 18h23m.xopp](../assets/documents/2024-06-14 18h23m.xopp)
 			- ![📚 2024-06-14 18h23m_annotated.pdf](../assets/documents/2024-06-14 18h23m_annotated.pdf)
@@ -71,7 +67,6 @@ tags:: uni
 		- Berechnen Sie den Widerstand einer 200nm weiten und 1µm langen Leiterbahn, wenn sie einen Schichtwiderstand von 1Ω/□ aufweist.
 		  background-color:: green
 			- formeln
-			  collapsed:: true
 				- $R_{\square}=\frac{\rho}{H}$
 				  tags:: [[formel]]
 				  bezeichnung:: [[Schichtwiderstand]] einer Leiterbahn [Ω]
@@ -82,8 +77,8 @@ tags:: uni
 				  bezeichnung:: Leiterbahn widerstand aufgrund des [[Schichtwiderstands]] [Ω]
 				  collapsed:: true
 					- $R_{\square}$ ... [[Schichtwiderstand]] [Ω/□]
-					- $L$ ... Länge der Leiterbahn [m]
-					- $W$ ... Weite/Breite der Leiterbahn [m]
+					- $L$ ... Länge der Leiterbahn $\mathrm{[m]}$
+					- $W$ ... Weite/Breite der Leiterbahn $\mathrm{[m]}$
 		- [📚 2024-06-16 20h34m.xopp](../assets/documents/2024-06-16 20h34m.xopp)
 		- ![📚 2024-06-16 20h34m_annotated.pdf](../assets/documents/2024-06-16 20h34m_annotated.pdf)
 	- ### Verstärker
@@ -103,7 +98,6 @@ tags:: uni
 		- c) Berechnen Sie die Grenzfrequenzen $f_{g1}$ und $f_{g2}$
 		  background-color:: green
 			- formeln
-			  collapsed:: true
 				- $G=\frac{1}{1+j\frac{\omega}{\omega_{g}}}$
 				  tags:: formel, Kreisfrequenz, Frequenz, Übertragungsfunktion, Tiefpass, wip
 				  bezeichnung:: Standard Darstellung der [[Übertragungsfunktion]] des [[Tiefpasses]], um [[Grenzkreisfrequenz]] abzulesen
@@ -118,7 +112,7 @@ tags:: uni
 				  tags:: formel, Kreisfrequenz, Frequenz, Übertragungsfunktion
 				  bezeichnung:: Kreisfrequenz [rad/s]
 				  collapsed:: true
-					- ${}f$ ... Frequenz [Hz]
+					- ${}f$ ... Frequenz $\mathrm{[Hz]}$
 		- d) Wie groß ist der Fehler der Verstärkung $v_1=\frac{u_{a1}}{u_{e1}}$ (Abweichung Ist-Wert vom Soll-Wert) bei 10MHz?
 		  background-color:: green
 		- e) Zeichnen Sie den Betragsfrequenzgang (Knickzugnäherung!) von $v_1=\frac{u_{a1}}{u_{e1}}$
@@ -174,7 +168,7 @@ tags:: uni
 				- ${}\Delta\varphi=\arg\left(v_{s}\right)$ wenn $|v_{s}|=1$ bzw. $|v_{s\text{ dB}}|=0$
 				  tags:: formel, [[Bodediagramm]]
 				  bezeichnung:: Phasenreserve  [°]
-					- $v_s$ ... [Schleifenverstärkung](((6676c9a3-b64a-4899-92bd-d0463f4b9f84))) [dB]
+					- $v_s$ ... [Schleifenverstärkung](((6676c9a3-b64a-4899-92bd-d0463f4b9f84))) $\mathrm{[dB]}$
 			- [📚 2024-06-23 11h25m.xopp](../assets/documents/2024-06-23 11h25m.xopp)
 			- ![📚 2024-06-23 11h25m_annotated.pdf](../assets/documents/2024-06-23 11h25m_annotated.pdf)
 	- ### Sensorschaltung
@@ -321,8 +315,8 @@ tags:: uni
 		  tags:: formel
 		  bezeichnung:: maximale anstiegsgeschwindigkeit (slew rate) [V/s]
 		  collapsed:: true
-			- $U_a$ ... ausgangsspannung [V]
-			- $\frac{\text{d}}{\text{d}t}$ ... zeit ableitung [s]
+			- $U_a$ ... ausgangsspannung $\mathrm{[V]}$
+			- $\frac{\text{d}}{\text{d}t}$ ... zeit ableitung $\mathrm{[s]}$
 	- um welche schaltungen handelt es sich?
 	  id:: 4563c626-e7a9-4cf1-b71c-2e4b35112971
 	  deck:: Uni::Schaltungstechnik_Theorie
@@ -499,8 +493,8 @@ tags:: uni
 		  tags:: formel
 		  bezeichnung:: bedingungen für das durchschalten eines npn [[transistors]]
 		  collapsed:: true
-			- $U_{f}$ ... fluss spannung [V]
-			- $U_{BE}$ ... [[Basis]]-[[Emitter]] spannung [V]
+			- $U_{f}$ ... fluss spannung $\mathrm{[V]}$
+			- $U_{BE}$ ... [[Basis]]-[[Emitter]] spannung $\mathrm{[V]}$
 	- npn [[transistor]]
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]] , transistor
@@ -512,8 +506,8 @@ tags:: uni
 		  tags:: formel
 		  bezeichnung:: bedingungen für das durchschalten eines npn [[transistors]]
 		  collapsed:: true
-			- $U_{f}$ ... fluss spannung [V]
-			- $U_{BE}$ ... [[Basis]]-[[Emitter]] spannung [V]
+			- $U_{f}$ ... fluss spannung $\mathrm{[V]}$
+			- $U_{BE}$ ... [[Basis]]-[[Emitter]] spannung $\mathrm{[V]}$
 	- p-Kanal MOSFET enhancement mode (selbstsperrend) schaltzeichen und bedingung
 	  id:: 66752f65-2498-48e4-8dac-a9f3bf86f354
 	  deck:: Uni::Schaltungstechnik_Theorie
@@ -525,8 +519,8 @@ tags:: uni
 		  tags:: formel
 		  bezeichnung:: bedingungen für das durchschalten eines nMOS [[transistors]]
 		  collapsed:: true
-			- $U_{th}$ ... threshold spannung [V]
-			- $U_{GS}$ ... [[Gate]]-[[Source]] spannung [V]
+			- $U_{th}$ ... threshold spannung $\mathrm{[V]}$
+			- $U_{GS}$ ... [[Gate]]-[[Source]] spannung $\mathrm{[V]}$
 	- n-Kanal MOSFET enhancement mode (selbstsperrend) schaltzeichen und bedingung
 	  id:: 667518c4-dc59-4d4f-9d00-c081b5420c2c
 	  deck:: Uni::Schaltungstechnik_Theorie
@@ -539,9 +533,9 @@ tags:: uni
 		  tags:: formel
 		  bezeichnung:: bedingungen für das durchschalten eines nMOS [[transistors]]
 		  collapsed:: true
-			- $U_{th}$ ... threshold spannung [V]
-			- $U_{GS}$ ... [[Gate]]-[[Source]] spannung [V]
-	- ${\bar{v_{b}}^2}$ ... Spannungsquadrat des Rauschgenerators an der [[Basis]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] [V]
+			- $U_{th}$ ... threshold spannung $\mathrm{[V]}$
+			- $U_{GS}$ ... [[Gate]]-[[Source]] spannung $\mathrm{[V]}$
+	- ${\bar{v_{b}}^2}$ ... Spannungsquadrat des Rauschgenerators an der [[Basis]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] $\mathrm{[V]}$
 	  id:: 667437ca-2a30-46fc-8b76-f369e56b5a6d
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]]
@@ -550,12 +544,12 @@ tags:: uni
 		  tags:: formel, [[rauschen]], [[BJT]], wip
 		  bezeichnung:: Spannungsquadrat des Rauschgenerators an der [[Basis]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] ([[thermisches rauschen]]) [V]
 			- $k$ ... Boltzmannkonstante [J/K]
-			- ${}T$ ... [[Temperatur]] [K]
+			- ${}T$ ... [[Temperatur]] $\mathrm{[K]}$
 			- ${}r_{b}$ ... Basis Widerstand des [[BJT]] im [[kleinsignal]] modell [Ω]
-			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll [Hz]
+			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
 		- terme:
 			- [[thermisches rauschen]]
-	- $\bar{i_{c}}^2$ ... Stromquadrat des Rauschgenerators am [[Kollektor]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] [V]
+	- $\bar{i_{c}}^2$ ... Stromquadrat des Rauschgenerators am [[Kollektor]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] $\mathrm{[V]}$
 	  id:: 66743b07-2acf-4972-a281-0b0ff3712004
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]]
@@ -566,10 +560,10 @@ tags:: uni
 		  collapsed:: true
 			- $q$ ...  []
 			- ${}I_C$ ... []
-			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll [Hz]
+			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
 		- terme:
 			- [[schrot rauschen]]
-	- $\bar{i_{b}}^2$ ... Stromquadrat des Rauschgenerators an der [[Basis]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] [V]
+	- $\bar{i_{b}}^2$ ... Stromquadrat des Rauschgenerators an der [[Basis]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] $\mathrm{[V]}$
 	  id:: 66743b07-b038-4302-914a-959f4b33e441
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]]
@@ -578,11 +572,11 @@ tags:: uni
 		  tags:: formel, [[rauschen]], [[BJT]], wip
 		  bezeichnung:: Stromquadrat des Rauschgenerators an der [[Basis]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] (terme: [[schrot rauschen]] , [[funkel rauschen]], [[telegrafen rauschen]]) [A²]
 			- $q$ ...  []
-			- $I_B$ ... [[Basis]]strom [A]
-			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll [Hz]
-			- $K_1$ ... empirischer korrektur faktor je nach bauelement [-]
+			- $I_B$ ... [[Basis]]strom $\mathrm{[A]}$
+			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
+			- $K_1$ ... empirischer korrektur faktor je nach bauelement $\mathrm{[-]}$
 				- hängt vom herstellungsprozess des bauelementes bzw. des ics ab und kann für bauelemente auf einem wafer wegen kontamination (am jeweiligen ort vorhanden/nicht vorhanden) stark streuen. für rauscharme niederfrequenzschaltungen, die aus diskreten bauelementen oder standard-ics aufgebaut werden, lassen sich die komponenten deshalb bezüglich geringstem 1/f-rauschen selektieren. die amplitudenverteilung des [[1/f-rauschens]] ist nicht gaussisch.
-			- $a$ ... eine konstante von $0.5-2$ [-]
+			- $a$ ... eine konstante von $0.5-2$ $\mathrm{[-]}$
 			- $f$ ... []
 			- $K_2$ ... []
 			- $I_{B}^{c}$ ... []
@@ -591,7 +585,7 @@ tags:: uni
 			- [[schrot rauschen]]
 			- [[funkel rauschen]]
 			- [[telegrafen rauschen]]
-	- ${\bar{i_{d}}^2}$ ... Stromquadrat des Rauschgenerators am [[Drain]] eines [[FET]] im [[kleinsignal]] [[ersatzschaltbild]] [V]
+	- ${\bar{i_{d}}^2}$ ... Stromquadrat des Rauschgenerators am [[Drain]] eines [[FET]] im [[kleinsignal]] [[ersatzschaltbild]] $\mathrm{[V]}$
 	  id:: 66743b07-f5cf-4beb-94a9-7b753a74f92d
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[feldeffekt transistor]]
@@ -601,15 +595,15 @@ tags:: uni
 		  bezeichnung:: Stromquadrat des Rauschgenerators am [[Drain]] eines [[FET]] im [[kleinsignal]] [[ersatzschaltbild]] (terme: [[thermisches rauschen]], [[funkel rauschen]]) [V]
 		  collapsed:: true
 			- $k$ ... Boltzmannkonstante [J/K]
-			- ${}T$ ... [[Temperatur]] [K]
-			- $g_{m}$ ... [[transkonduktanz]] [S]
-			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll [Hz]
+			- ${}T$ ... [[Temperatur]] $\mathrm{[K]}$
+			- $g_{m}$ ... [[transkonduktanz]] $\mathrm{[S]}$
+			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
 			- $K_1$ ...
 			- $f$ ...
 		- terme
 			- [[thermisches rauschen]]
 			- [[funkel rauschen]]
-	- $\bar{i_{g}}^2$ ... Stromquadrat des Rauschgenerators am [[Gate]] eines [[FET]] im [[kleinsignal]] [[ersatzschaltbild]] [V]
+	- $\bar{i_{g}}^2$ ... Stromquadrat des Rauschgenerators am [[Gate]] eines [[FET]] im [[kleinsignal]] [[ersatzschaltbild]] $\mathrm{[V]}$
 	  id:: 66743beb-5b67-48b7-a428-dbba04461ec1
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[feldeffekt transistor]]
@@ -620,7 +614,7 @@ tags:: uni
 			- $q$ ...  []
 			  collapsed:: true
 			- ${}I_G$ ... []
-			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll [Hz]
+			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
 		- terme:
 			- [[schrot rauschen]]
 	- [[Transmissiongate]] und dessen [[Ausgangswiderstand]] in Abhängigkeit der [[Eingangsspannung]] 
@@ -710,10 +704,10 @@ tags:: uni
 					- $i_o=i_c+\beta(j\omega)i_b=\beta(j\omega)i_i$
 					  bezeichnung:: rauschstrom am ausgang
 					  tags:: formel
-						- $i_{c}$ ... [[Kollektor]] rauschstrom [A]
+						- $i_{c}$ ... [[Kollektor]] rauschstrom $\mathrm{[A]}$
 						- $\beta(j\omega)$ ... Stromverstärkung (frequenzabhängig)
-						- $i_{b}$ ... [[Basis]] rauschstrom [A]
-						- $i_{i}$ ... äquivalenter eingangs rauschstrom [A]
+						- $i_{b}$ ... [[Basis]] rauschstrom $\mathrm{[A]}$
+						- $i_{i}$ ... äquivalenter eingangs rauschstrom $\mathrm{[A]}$
 					- $i_{i}=i_{b}+\frac{i_{c}}{\beta\left(j\omega\right)}$
 					- $i_{b}$ und $i_{c}$ sind unabhängige generatoren daher
 					  collapsed:: true
@@ -770,10 +764,10 @@ tags:: uni
 					- $i_{o}=i_{d}+i_{g}\frac{g_{m}}{j\omega C_{gs}}=i_{i}\frac{g_{m}}{j\omega C_{gs}}$
 					  bezeichnung:: rauschstrom am ausgang
 					  tags:: formel
-						- $i_{g}$ ... [[Gate]] rauschstrom [A]
-						- $C_{gs}$ ... [[Gate]]-[[Source]] [[Kapazität]] [F]
-						- $i_{d}$ ... [[Drain]] rauschstrom [A]
-						- $i_{i}$ ... äquivalenter eingangs rauschstrom [A]
+						- $i_{g}$ ... [[Gate]] rauschstrom $\mathrm{[A]}$
+						- $C_{gs}$ ... [[Gate]]-[[Source]] [[Kapazität]] $\mathrm{[F]}$
+						- $i_{d}$ ... [[Drain]] rauschstrom $\mathrm{[A]}$
+						- $i_{i}$ ... äquivalenter eingangs rauschstrom $\mathrm{[A]}$
 					- $i_{o}=i_{g}+i_{d}\frac{j\omega Cgs}{g_{m}}=i_{i}$
 					- $i_{g}$ und $i_{d}$ sind unabhängige generatoren daher
 					  collapsed:: true
@@ -914,12 +908,12 @@ tags:: uni
 			  id:: 667b0f07-887e-4fbc-8f69-76f7b0dee63f
 			  collapsed:: true
 				- $q$ ...  []
-				- $I$ ... relevanter strom [A]
-				- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll [Hz]
-				- $K_1$ ... empirischer korrektur faktor je nach bauelement [-]
+				- $I$ ... relevanter strom $\mathrm{[A]}$
+				- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
+				- $K_1$ ... empirischer korrektur faktor je nach bauelement $\mathrm{[-]}$
 				  collapsed:: true
 					- hängt vom herstellungsprozess des bauelementes bzw. des ICs ab und kann für bauelemente auf einem wafer wegen kontamination (am jeweiligen ort vorhanden/nicht vorhanden) stark streuen. für rauscharme niederfrequenzschaltungen, die aus diskreten bauelementen oder standard-ics aufgebaut werden, lassen sich die komponenten deshalb bezüglich geringstem 1/f-rauschen selektieren. die amplitudenverteilung des [[1/f-rauschens]] ist nicht gaussisch.
-				- $c$ ... eine konstante von $0.5-2$ [-]
+				- $c$ ... eine konstante von $0.5-2$ $\mathrm{[-]}$
 				- $f$ ... []
 				- $K_2$ ... []
 				- $f_{c}$ ... []
