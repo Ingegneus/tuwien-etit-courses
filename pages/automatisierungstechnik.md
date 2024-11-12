@@ -91,7 +91,6 @@ alias:: automatisierung, automatisierungs
 		-
 	- ![2022-02-04.pdf](file://C:\Users\Matteo\Documents\Uni\[[Automatisierung]]\willi\06_Prüfung\2022-02-04.pdf)
 	  background-color:: green
-	  collapsed:: true
 		- 1) Die Aufgaben a) und b) können unabhängig voneinander gelöst werden.
 		  background-color:: green
 			- a) Gegeben sind die folgenden Modellgleichungen:

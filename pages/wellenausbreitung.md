@@ -6,25 +6,35 @@ alias:: wave propagation, wellenausbreitungs
 - ## vorlesungen
 	- [[wellen vo temp]]
 - ## beispiele
-	- Beispiel 1)
+	- Übergang von Vakuum nach Glas
 	  background-color:: green
-		- formeln
-			- $\Theta_i = \Theta_r$
-			  tags:: formel
-			  bezeichnung:: Reflektions gesetz
-				- $\Theta_i$ ... einfallswinkel (**i**nbound) $\mathrm{[°]}$
-				- $\Theta_r$ ... reflektionswinkel (**r**eflected) $\mathrm{[°]}$
-			- $\frac{\sin\left(\Theta_1\right)}{\sin\left(\Theta_2\right)}=\frac{n_1}{n_2}$
-			  tags:: formel
-			  bezeichnung:: brechungsgesetz/gesetz von snellius
-				- $\Theta_i$ ... einfallswinkel (**i**nbound) $\mathrm{[°]}$
-				- $\Theta_r$ ... reflektionswinkel (**r**eflected) $\mathrm{[°]}$
-				- $n_1$ ... brechungsindex $\mathbf{[-]}$
-				- $n_2$ ... brechungsindex $\mathbf{[-]}$
-			- $\Theta_{b}=\arctan\left(\frac{n_2}{n_1}\right)$
-			  tags:: formel
-			  bezeichnung:: brewster winkel $\mathbf{[°]}$
-				- $-$ ...
+		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n1 = \mathrm{1}$) und Glas ($n2 = \mathrm{1,6}$) eingestrahlt.
+		  background-color:: green
+		  ![img](../assets/Documents/WA_vakuum_glas_bsp1.webp){:width 400}
+			- formeln
+			  collapsed:: true
+				- $\Theta_i = \Theta_r$
+				  tags:: formel
+				  bezeichnung:: Reflektions gesetz
+					- $\Theta_i$ ... einfallswinkel (**i**nbound) $\mathrm{[°]}$
+					- $\Theta_r$ ... reflektionswinkel (**r**eflected) $\mathrm{[°]}$
+				- $\frac{\sin\left(\Theta_1\right)}{\sin\left(\Theta_2\right)}=\frac{n_1}{n_2}$
+				  tags:: formel
+				  bezeichnung:: brechungsgesetz/gesetz von snellius
+					- $\Theta_i$ ... einfallswinkel (**i**nbound) $\mathrm{[°]}$
+					- $\Theta_r$ ... reflektionswinkel (**r**eflected) $\mathrm{[°]}$
+					- $n_1$ ... brechungsindex $\mathbf{[-]}$
+					- $n_2$ ... brechungsindex $\mathbf{[-]}$
+				- $\Theta_{b}=\arctan\left(\frac{n_2}{n_1}\right)$
+				  tags:: formel
+				  bezeichnung:: brewster winkel $\mathbf{[°]}$
+					- $-$ ...
+			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
+			  background-color:: green
+			- b) Berechnen Sie die TE und TM-Anteile ($E$ und $H$) der reﬂektierten und der transmittierten Welle!
+			  background-color:: green
+			- c) Berechnen Sie die Elliptizität der reﬂektierten und der transmittierten Welle in $\mathrm{dB}$!
+			  background-color:: green
 - ## flashcards
 	- ### index
 		- query-table:: true
