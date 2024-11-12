@@ -8,32 +8,57 @@ alias:: wave propagation, wellenausbreitungs
 - ## beispiele
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
-		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n1 = \mathrm{1}$) und Glas ($n2 = \mathrm{1,6}$) eingestrahlt.
+		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n1 = \mathrm{1}$) und Glas ($n2 = \mathrm{1.6}$) eingestrahlt.
 		  background-color:: green
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp1.webp){:width 400}
-			- formeln
-			  collapsed:: true
-				- $\Theta_i = \Theta_r$
-				  tags:: formel
-				  bezeichnung:: Reflektions gesetz
-					- $\Theta_i$ ... einfallswinkel (**i**nbound) $\mathrm{[°]}$
-					- $\Theta_r$ ... reflektionswinkel (**r**eflected) $\mathrm{[°]}$
-				- $\frac{\sin\left(\Theta_1\right)}{\sin\left(\Theta_2\right)}=\frac{n_1}{n_2}$
-				  tags:: formel
-				  bezeichnung:: brechungsgesetz/gesetz von snellius
-					- $\Theta_i$ ... einfallswinkel (**i**nbound) $\mathrm{[°]}$
-					- $\Theta_r$ ... reflektionswinkel (**r**eflected) $\mathrm{[°]}$
-					- $n_1$ ... brechungsindex $\mathbf{[-]}$
-					- $n_2$ ... brechungsindex $\mathbf{[-]}$
-				- $\Theta_{b}=\arctan\left(\frac{n_2}{n_1}\right)$
-				  tags:: formel
-				  bezeichnung:: brewster winkel $\mathbf{[°]}$
-					- $-$ ...
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
+				- formeln
+				  collapsed:: true
+					- $\Theta_i = \Theta_r$
+					  tags:: formel
+					  bezeichnung:: Reflektions gesetz
+						- $\Theta_i$ ... einfallswinkel (**i**nbound) $\mathrm{[°]}$
+						- $\Theta_r$ ... reflektionswinkel (**r**eflected) $\mathrm{[°]}$
+					- $\frac{\sin\left(\Theta_1\right)}{\sin\left(\Theta_2\right)}=\frac{n_1}{n_2}$
+					  tags:: formel
+					  bezeichnung:: brechungsgesetz/gesetz von snellius
+						- $\Theta_i$ ... einfallswinkel (**i**nbound) $\mathrm{[°]}$
+						- $\Theta_r$ ... reflektionswinkel (**r**eflected) $\mathrm{[°]}$
+						- $n_1$ ... brechungsindex $\mathbf{[-]}$
+						- $n_2$ ... brechungsindex $\mathbf{[-]}$
+					- $\Theta_{b}=\arctan\left(\frac{n_2}{n_1}\right)$
+					  tags:: formel
+					  bezeichnung:: brewster winkel $\mathbf{[°]}$
+						- $-$ ...
+				- [📚 2024-11-12 16h29m.xopp](../assets/documents/2024-11-12 16h29m.xopp)
+				- ![📚 2024-11-12 16h29m_annotated.pdf](../assets/documents/2024-11-12 16h29m_annotated.pdf)
 			- b) Berechnen Sie die TE und TM-Anteile ($E$ und $H$) der reﬂektierten und der transmittierten Welle!
 			  background-color:: green
 			- c) Berechnen Sie die Elliptizität der reﬂektierten und der transmittierten Welle in $\mathrm{dB}$!
+			  background-color:: green
+		- Variante 2) Ein Lichtstrahl der Sonne (unpolarisiert, aber TM, TE gleich stark) fällt zu später Stunde ($\Theta_e = 75°$) auf einen See ($n2 = 1.33$). An der glatten Wasseroberﬂäche wird er reﬂektiert. Zwei Fotografen fotograﬁeren diese Landschaft. Der zweite verwendet ein ideales Polarisationsﬁlter um die Reﬂexion der Sonne im Wasser zu unterdrücken.
+		  background-color:: green
+		  ![img](../assets/documents/WA_vakuum_glas_bsp2.webp){:width 400}
+			- a) Wie groß ist die (gesamte) reﬂektierte Lichtleistung im Verhältnis zur eingestrahlten (in $\mathrm{dB}$)? Zeichnen Sie alle verwendeten Winkel ein.
+			  background-color:: green
+			- b) Wie gut kann das ideal eingesetzte Polarisationsﬁlter des zweiten Fotografen die Reﬂexion im Vergleich zum ersten Fotografen unterdrücken (in $\mathrm{dB}$)?
+			  background-color:: green
+	- Stehende Welle im verlustbehafteten Medium
+	  background-color:: green
+		- Eine sich im verlustbehafteten Medium (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden metallischen Wand mit unendlicher Leitfähigkeit reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
+		  background-color:: green
+		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
+		  ![img](../assets/documents/WA_stehende_welle_wand_bsp1.webp){:width 400}
+			- a) Wie groß ist die Phasengeschwindigkeit $v_P$?
+			  background-color:: green
+			- b) Setzten Sie die einfallende Welle an ($E_e$ und $H_e$) und berechnen Sie die Wellenzahl $k_e$. Wie groß ist die Dämpfung in $\mathrm{dB/m}$
+			  background-color:: green
+			- c) Berechnen Sie die komplexe Amplitude und den zeitlichen Verlauf der einfallenden Welle am Ort der metallischen Wand $z_0 = \mathrm{8~m}$!
+			  background-color:: green
+			- d) Finden Sie einen Ansatz für die reﬂektierte Welle ($E_r$ und $H_r$)! Wie muss der zeitliche Verlauf der reﬂektierten Welle aussehen, damit die Randbedingungen erfüllt sind?
+			  background-color:: green
+			- e) Berechnen Sie die Hüllkurve des Gesamtfeldes
 			  background-color:: green
 - ## flashcards
 	- ### index
