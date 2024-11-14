@@ -2,7 +2,6 @@ public:: true
 tags:: Automatisierungstechnik
 
 - ## vorlesungen
-	- ![📚 2020_Gesamtskriptum.pdf](file://C:\Users\Matteo\Documents\Uni\Automatisierung\willi\01_Vorlesung\2020_Gesamtskriptum.pdf)
 	- 2021_10_07
 	  collapsed:: true
 		- ![aut-vo](C:\Users\Matteo\Shared\Matteo Quest 2\AUT\2021_10_07.mp4)

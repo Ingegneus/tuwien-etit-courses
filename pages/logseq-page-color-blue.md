@@ -1,4 +1,5 @@
 color:: "#a0c4ff"
+exclude-from-graph-view:: true
 template-used:: standard-page
 tags:: [[logseq]], [[color]]
 

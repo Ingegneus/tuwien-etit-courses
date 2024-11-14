@@ -6,6 +6,7 @@ tags:: uni
 - [📁 folder](file://C:\Users\Matteo\Documents\Uni\Schaltungstechnik)
 - ## vorlesungen
 - ## beispiele
+  collapsed:: true
 	- ### Verstärkungsfehler
 	  background-color:: green
 		- a) Zeichnen Sie eine Invertierende OV-Grundschaltung
@@ -575,7 +576,7 @@ tags:: uni
 			- $I_B$ ... [[Basis]]strom $\mathrm{[A]}$
 			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
 			- $K_1$ ... empirischer korrektur faktor je nach bauelement $\mathrm{[-]}$
-				- hängt vom herstellungsprozess des bauelementes bzw. des ics ab und kann für bauelemente auf einem wafer wegen kontamination (am jeweiligen ort vorhanden/nicht vorhanden) stark streuen. für rauscharme niederfrequenzschaltungen, die aus diskreten bauelementen oder standard-ics aufgebaut werden, lassen sich die komponenten deshalb bezüglich geringstem 1/f-rauschen selektieren. die amplitudenverteilung des [[1/f-rauschens]] ist nicht gaussisch.
+				- hängt vom herstellungsprozess des bauelementes bzw. des ics ab und kann für bauelemente auf einem wafer wegen kontamination (am jeweiligen ort vorhanden/nicht vorhanden) stark streuen. für rauscharme niederfrequenzschaltungen, die aus diskreten bauelementen oder standard-ics aufgebaut werden, lassen sich die komponenten deshalb bezüglich geringstem 1/f-rauschen selektieren. die amplitudenverteilung des [[1\/f-rauschens]] ist nicht gaussisch.
 			- $a$ ... eine konstante von $0.5-2$ $\mathrm{[-]}$
 			- $f$ ... []
 			- $K_2$ ... []
@@ -881,7 +882,7 @@ tags:: uni
 			- Bipolartransistor: durch Verunreinigungen und Kristallfehler
 			- JFET: durch tiefe Störstellen im Kanal
 			- MOSFET: durch Si/SiO2-Interface Zustände im Kanal
-		- Das [[1/f-Rauschen]] ist bei niedrigen Frequenzen stark und immer mit Stromfluss verbunden
+		- Das [[1\/f-rauschen]] ist bei niedrigen Frequenzen stark und immer mit Stromfluss verbunden
 	- [[thermisches rauschen]] ([[johnson noise]])
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[rauschen]]
@@ -912,7 +913,7 @@ tags:: uni
 				- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
 				- $K_1$ ... empirischer korrektur faktor je nach bauelement $\mathrm{[-]}$
 				  collapsed:: true
-					- hängt vom herstellungsprozess des bauelementes bzw. des ICs ab und kann für bauelemente auf einem wafer wegen kontamination (am jeweiligen ort vorhanden/nicht vorhanden) stark streuen. für rauscharme niederfrequenzschaltungen, die aus diskreten bauelementen oder standard-ics aufgebaut werden, lassen sich die komponenten deshalb bezüglich geringstem 1/f-rauschen selektieren. die amplitudenverteilung des [[1/f-rauschens]] ist nicht gaussisch.
+					- hängt vom herstellungsprozess des bauelementes bzw. des ICs ab und kann für bauelemente auf einem wafer wegen kontamination (am jeweiligen ort vorhanden/nicht vorhanden) stark streuen. für rauscharme niederfrequenzschaltungen, die aus diskreten bauelementen oder standard-ics aufgebaut werden, lassen sich die komponenten deshalb bezüglich geringstem 1/f-rauschen selektieren. die amplitudenverteilung des [[1\/f-rauschens]] ist nicht gaussisch.
 				- $c$ ... eine konstante von $0.5-2$ $\mathrm{[-]}$
 				- $f$ ... []
 				- $K_2$ ... []
