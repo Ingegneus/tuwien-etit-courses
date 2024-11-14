@@ -36,7 +36,6 @@ tags:: [[wellenausbreitung]]
 	- $\vect{\nabla} \times \vect{H} = j \omega \delta \vect{E}$
 	- $\vect{P}(t) = \vect{E}(t) \times \vect{H}(t)$
 	- $\vect{\nabla}\cdot\vect{P}(t)=-\sigma\underbrace{{E}(t)\cdot{E}(t)}_{\vect{E^2}(t)}-\frac{\partial}{\partial t}\left(\frac{\varepsilon}{2} \underbrace{{E}(t)\cdot{E}(t)}_{\vect{E^2}(t)}+\frac{\mu}{2} \underbrace{\vect{H}(t)\cdot\vect{H}(t)}_{\vect{H^2}(t)}\right)$
-	  id:: 672cec6d-e05d-4a9c-9201-9036191aa824
 	- $w_{\opn{e}}(t) = \frac{\varepsilon}{2} \vect{E^2}(t)$
 	- $w_{\opn{m}}(t) = \frac{\mu}{2} \vect{H}^{2}(t)$
 	- $\int_{\mathcal{V}} \vect{\nabla} \cdot \vect{P}(t) \opn{d}V = \oint_{\Sigma} \vect{P}(t) \cdot \opn{d} \vect{F}$
@@ -144,19 +143,32 @@ tags:: [[wellenausbreitung]]
 - ## Reﬂexion an glatten Grenzflächen, die [[parallelplattenleitung]]
   collapsed:: true
 	- $\frac{\sin \Theta_{1}}{\sin \Theta_{2}} =  \sqrt{\frac{\varepsilon_{2}}{\varepsilon_{1}}} =  \frac{n_{2}}{n_{1}}$
-	  id:: 6734720f-e42f-46c0-a512-3075ea423042
 	  tags:: formel
 	  bezeichnung:: brechungsgesetz/gesetz von snellius
+	  id:: 6734720f-e42f-46c0-a512-3075ea423042
+	  collapsed:: true
 		- $\Theta_1$ ... winkel $\mathrm{[°]}$
 		- $\Theta_2$ ... winkel $\mathrm{[°]}$
 		- $\varepsilon_1$ ... permittivität $\mathrm{\left[\frac{As}{Vm}\right]}$
 		- $n_1$ ... brechungsindex $\mathrm{[-]}$
 		- $n_2$ ... brechungsindex $\mathrm{[-]}$
 	- $\Gamma_{\mathrm{TM}} =  \displaystyle \frac{\sqrt{\varepsilon_{2}} \cos \Theta_{1} -  \sqrt{\varepsilon_{1}} \cos \Theta_{2}}{\sqrt{\varepsilon_{2}} \cos \Theta_{1} +  \sqrt{\varepsilon_{1}} \cos \Theta_{2}} =  \displaystyle \frac{n^{2} \cos \Theta_{1} -  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}{n^{2} \cos \Theta_{1} +  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}$
+	  tags:: formel, wip
+	  bezeichnung:: reflektionsfaktor der transversal polarisierten magnetischen welle
+	  id:: 6735b379-5292-4604-baef-85a4c9a6fc3f
+		- $-$ ...
 	- ${T_{\mathrm{TM}}} = {\displaystyle \frac{2 \sqrt{\varepsilon_{1}} \cos \Theta_{1}}{\sqrt{\varepsilon_{2}} \cos \Theta_{1} +  \sqrt{\varepsilon_{1}} \cos \Theta_{2}} =  \displaystyle \frac{2n \cos \Theta_{1}}{n^{2} \cos \Theta_{1} +  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}}$
+	  tags:: formel, wip
+	  bezeichnung:: transmissionsfaktor der transversal polarisierten magnetischen welle
+	  id:: 6735b379-80fa-4b2a-be2d-af5089fe1fa8
 	- $\Gamma_{\mathrm{TE}} = \frac{\sqrt{\varepsilon_{1}} \cos \Theta_{1} - \sqrt{\varepsilon_{2}} \cos \Theta_{2}}{\sqrt{\varepsilon_{1}} \cos \Theta_{1} + \sqrt{\varepsilon_{2}} \cos \Theta_{2}} = \frac{\cos \Theta_{1} - \sqrt{n^{2} - \sin^{2} \Theta_{1}}}{\cos \Theta_{1} + \sqrt{n^{2} - \sin^{2} \Theta_{1}}}$
+	  tags:: formel, wip
+	  bezeichnung:: reflektionsfaktor der transversal polarisierten elektrischen welle
+	  id:: 6735b379-8ba8-4a90-b5e2-8b5b38036526
 	- $T_{\mathrm{TE}} = \frac{2 \sqrt{\varepsilon_{1}} \cos \Theta_{1}}{\sqrt{\varepsilon_{1}} \cos \Theta_{1} + \sqrt{\varepsilon_{2}} \cos \Theta_{2}} = \frac{2 \cos \Theta_{1}}{\cos \Theta_{1} + \sqrt{n^{2} - \sin^{2} \Theta_{1}}}$
+	  id:: 6735b379-1a1f-417e-8323-7fe94bd9e2cf
 	- $\Gamma_{\mathrm{TM}} = 0 \quad \Leftarrow \quad \tan \Theta_{\mathrm{B}} = \sqrt{\frac{\varepsilon_{2}}{\varepsilon_{1}}} = \frac{n_{2}}{n_{1}} = n$
+	  id:: 6735b379-a4a2-48f4-800f-7b9292b7a3a1
 	- $\frac{2 \pi}{\lambda_1}z_{0m} \cos \Theta_{m}=m \pi \quad \Rightarrow \quad d=-z_{0m}= \frac{\lambda_1m}{2 \cos \Theta_{m}}= \frac{m}{2f \sqrt{\mu_1 \varepsilon_1} \cos \Theta_{m}}$
 	- $\lambda_{x}= \frac{\lambda_{1}}{\sin \Theta_{m}}$
 	- $\lambda_{\mathrm{H},m}= \frac{\lambda_{0}}{\sin \Theta_{m}}$
@@ -199,6 +211,7 @@ tags:: [[wellenausbreitung]]
 	- $R= \cfrac{l}{2 \pi a} \sqrt{\cfrac{\omega \mu}{2 \sigma_{1}}}, \quad X= \cfrac{l}{2 \pi a} \sqrt{\cfrac{\omega \mu}{2 \sigma_{1}}}$
 	- $\cfrac{R}{R_{0}}= \cfrac{X}{X_{0}}= \cfrac{a}{2} \sqrt{\cfrac{\omega \mu \sigma_{1}}{2}}= \cfrac{a}{2d_{1}} \propto \sqrt{\omega} \gg1$
 - ## Resonatoren
+  collapsed:: true
 	- $\lambda_{\mathrm{G},m,n} = \frac{1}{\sqrt{\left(\frac{m}{2a} \right)^{2} + \left(\frac{n}{2b} \right)^{2}}}$
 	- $\lambda_{\mathrm{H}} = \frac{\lambda}{\sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}}$
 	- $v_{\mathrm{P}} = \frac{c}{\sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}}$
@@ -225,6 +238,7 @@ tags:: [[wellenausbreitung]]
 	- $Q_{0} = \frac{\pi \eta}{2 \mathbb{R}_{\mathrm{M}}} \frac{b \sqrt{(a^{2} + c^{2})^{3}}}{a c(a^{2} + c^{2}) + 2b(a^{3} + c^{3})}$
 	- $Q_{0} = \frac{\pi \eta \sqrt{2}}{6 \mathbb{R}_{\mathrm{M}}}$
 - ## [[koaxialleitungen]]
+  collapsed:: true
 	- ${\vect{E}} = {E_{r} \vect{e_{r}}}$
 	- ${\vect{H}} = {H_{\varphi} \vect{e_{\varphi}}}$
 	- $\frac{\partial}{\partial z}U(z) + Z^{\prime}I(z) = 0 ,\qquad \frac{\partial}{\partial z}I(z) + Y^{\prime}U(z) = 0$
@@ -261,6 +275,7 @@ tags:: [[wellenausbreitung]]
 	- $p_{v}(z) = - \frac{\opn{d}P}{\opn{d}z} = - \frac{\opn{d}}{\opn{d}z}P_{0}e^{ - 2 \alpha z} = 2 \alpha P_{0}e^{ - 2 \alpha z} = 2 \alpha P(z)$
 	- $\mathrm{mit} \qquad \alpha = \alpha_{R} + \alpha_{G}$
 - ## [[dielektrische wellenleiter]]
+  collapsed:: true
 	- ${\xi = k_{x1}d}$
 	- ${\eta = k_{x2}d}$
 	- ${ - \xi \cot \xi = \eta}$
@@ -268,6 +283,7 @@ tags:: [[wellenausbreitung]]
 	- $k_{x1,m} = \frac{(2m - 1) \pi}{2d},\quad m = 1,2,\dots.$
 	- $\omega_{c,m} = \frac{(2m - 1) \pi}{2d \sqrt{\varepsilon_{0} \mu_{0}(\varepsilon_{r1} - \varepsilon_{r2})}}$
 - ## [[streifenleitungen]]
+  collapsed:: true
 	- $Z_{\mathrm{L},0} \approx \sqrt{\frac{\mu_{0}}{\varepsilon_{0}}} \frac{1}{2 \pi} \ln \left(\frac{8h}{w} + \frac{w}{4h} \right)$
 	- $Z_{\mathrm{L}} = \frac{Z_{\mathrm{L},0}}{\sqrt{\varepsilon_{\mathrm{eff}}}}$
 	- $\lambda = \frac{\lambda_{0}}{\sqrt{\varepsilon_{\mathrm{eff}}}}$
@@ -287,6 +303,7 @@ tags:: [[wellenausbreitung]]
 	- $\alpha_{\mathrm{D}} = \frac{\pi}{\lambda} \tan \Theta$
 	- $\alpha_{\mathrm{D}} = \frac{\pi}{\lambda} \tan \Theta \left(\frac{\varepsilon_{r}}{\varepsilon_{\mathrm{eff}}} \frac{\varepsilon_{\mathrm{eff}} - 1}{\varepsilon_{r} - 1} \right)$
 - ## Wellen und Hindernisse
+  collapsed:: true
 	- $\Gamma_{\mathrm{rauh}} = \Gamma_{\mathrm{glatt}} \exp \left[ - 2 \left(k \sigma \cos \Theta_{\mathrm{e}} \right)^{2} \right]$
 	- $E/E_{0} = 1/2 - \exp \left( - j \pi/4 \right) \left[C \left(v \right) + j S \left(v \right) \right]/\sqrt{2}$
 	- $C \left(v \right) = \int^{v} \cos \left(\pi t^{2}/2 \right)d t \qquad S \left(v \right) = \int^{v} \sin \left(\pi t^{2}/2 \right)d t$
@@ -386,6 +403,7 @@ tags:: [[wellenausbreitung]]
 	- $M E G = \int G \left(\vartheta,\varphi \right) P \left(\vartheta,\varphi \right)d \Omega$
 	- $\mathbf{4} \boldsymbol{\pi}$
 - ## wellen im freien raum
+  collapsed:: true
 	- $r \doteq \sqrt{\frac{d \lambda}{4}}$
 	- $T_{e,I S O} = \frac{P_{s}}{4 \pi d^{2}}$
 	- $T_{e} = \frac{P_{s}G_{s}}{4 \pi d^{2}}$
@@ -403,6 +421,7 @@ tags:: [[wellenausbreitung]]
 	- $\frac{P_{e}}{P_{s}} = \sigma G_{s}^{2} \bigg(\frac{\lambda}{4 \pi} \bigg)^{2} \frac{1}{4 \pi d^{4}}$
 	- $\sigma = A G = A \frac{4 \pi}{\lambda^{2}}A = 4 \pi \frac{A^{2}}{\lambda^{2}}$
 - ## [[mehrwegausbreitung]]
+  collapsed:: true
 	- $\tau_{1} = d_{1}/c,\qquad \mathrm{und} \qquad \tau_{2} = d_{2}/c$
 	- $\mathbf{h}(\tau) = \mathbf{A}_{1} \delta \left(\tau - \tau_{1} \right) + \mathbf{A}_{2} \delta \left(\tau - \tau_{2} \right)$
 	- $\mathbf{H} \left(j \omega \right) = \int \mathbf{h}(\tau)e^{ - j \omega \tau} \left.d \tau = \mathbf{A}_{1} \left.e^{ - j \omega \tau_{1}} + \mathbf{A}_{2} \left.e^{ - j \omega \tau_{2}} \right.$

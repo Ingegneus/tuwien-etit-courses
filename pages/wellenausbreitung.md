@@ -15,6 +15,7 @@ alias:: wave propagation, wellenausbreitungs
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
 				- formeln
+				  collapsed:: true
 					- $\Theta_i = \Theta_r$
 					  tags:: formel
 					  bezeichnung:: Reflektions gesetz
@@ -23,7 +24,7 @@ alias:: wave propagation, wellenausbreitungs
 					- ((6734720f-e42f-46c0-a512-3075ea423042))
 					- $\Theta_{b}=\arctan\left(\frac{n_2}{n_1}\right)$
 					  tags:: formel
-					  bezeichnung:: brewster winkel
+					  bezeichnung:: [[brewster winkel]]
 						- $\Theta_b$ ... Brewster winkel $\mathrm{[°]}$
 						- $n_1$ ... brechungsindex $\mathrm{[-]}$
 						- $n_2$ ... brechungsindex $\mathrm{[-]}$
@@ -34,7 +35,25 @@ alias:: wave propagation, wellenausbreitungs
 			- c) Berechnen Sie die TE und TM-Anteile ($E$ und $H$) der reﬂektierten und der transmittierten Welle!
 			  background-color:: green
 				- formeln
-					-
+					- ((6735b379-5292-4604-baef-85a4c9a6fc3f))
+					- ((6735b379-80fa-4b2a-be2d-af5089fe1fa8))
+					- ((6735b379-8ba8-4a90-b5e2-8b5b38036526))
+					- ((6735b379-1a1f-417e-8323-7fe94bd9e2cf))
+					- $n=\frac{k_2}{k_1}=\sqrt{\frac{\varepsilon_2}{\varepsilon_1}}=\frac{n_2}{n_1}$
+					  tags:: formel
+					  bezeichnung:: relativer brechnungsindex
+					  collapsed:: true
+						- $n$ ... relativer brechnungsindex $\mathrm{\left[ - \right]}$
+						- $k_1$ ... wellenzahl $\mathrm{\left[ \frac{rad}{m} \right]}$
+						- $k_2$ ... wellenzahl $\mathrm{\left[ \frac{rad}{m} \right]}$
+						- $\varepsilon_1$ ... relative permittivität $\mathrm{\left[ - \right]}$
+						- $\varepsilon_2$ ... relative permittivität $\mathrm{\left[ - \right]}$
+						- $n_1$ ... brechnungsindex $\mathrm{\left[ - \right]}$
+						- $n_2$ ... brechnungsindex $\mathrm{\left[ - \right]}$
+					- $\Gamma_{TM} = 0$
+					  tags:: formel
+					  bezeichnung:: reflektionsfaktor wenn einfallswinkel = [[brewster winkel]] [FS](((6735b379-a4a2-48f4-800f-7b9292b7a3a1)))
+						- $\Gamma_{TM}$ ... reflektionsfaktor $\mathrm{\left[ - \right]}$
 			- d) Berechnen Sie die Elliptizität der reﬂektierten und der transmittierten Welle in $\mathrm{dB}$!
 			  background-color:: green
 				- formeln
