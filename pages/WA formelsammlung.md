@@ -4,6 +4,7 @@ template-used:: standard-page
 tags:: [[wellenausbreitung]]
 
 - ## [[maxwell]]
+  collapsed:: true
 	- $\vect{\nabla} \cdot \vect{S} = \opn{lim}_{\mathcal{V} \to0} \frac{1}{V} \oint_{\Sigma} \vect{S} \cdot \opn{d} \vect{F} = - \frac{\partial}{\partial t} \rho$
 	- $\vect{\nabla} \cdot( \vect{\nabla} \times \vect{H}) \equiv0$
 	- $\vect{\nabla} \times \vect{H} = \vect{S} + \frac{\partial}{\partial t} \vect{D}$
@@ -83,7 +84,6 @@ tags:: [[wellenausbreitung]]
 	- $H_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial x}H_{z} - \omega \delta \frac{\partial}{\partial y}E_{z} \right)$
 	- $H_{y} = \frac{ - j}{\kappa^{2}} \left( k_{z} \frac{\partial}{\partial y} H_{z} + \omega \delta \frac{\partial}{\partial x} E_{z} \right)$
 - ## [[homogene ebene wellen]]
-  collapsed:: true
 	- $+ \cfrac{\partial}{\partial z}e_{y} = \mu \cfrac{\partial}{\partial t}h_{x}$
 	- $- \cfrac{\partial}{\partial z}e_{x} = \mu \cfrac{\partial}{\partial t}h_{y}$
 	- $0 = \mu \cfrac{\partial}{\partial t}h_{z}$
@@ -107,6 +107,7 @@ tags:: [[wellenausbreitung]]
 	- ${p_{z}^{+}=e_{x}^{+}h_{y}^{+}}-{e_{y}^{+}h_{x}^{+}}$
 	- ${p_{z}^{+}=-\cfrac{1}{\eta}\left(e_{r}^{+^2}+e_{y}^{+^2}\right)}$
 	- $\overline{\vect{P}\left(t\right)}=\overline{\vect{E}\times \vect{H}}=\cfrac{1}{\eta}\left(\overline{{e_{x}^{+}}^2+{e_{y}^{+}}^2}\right)\vect{i}_{z}=\cfrac{1}{2\eta}\left(\overline{E_{x0}^2+E_{y0}^2}\right)\vect{i}_{z}$
+	  id:: 6735b379-9fad-4f67-bd6e-6a9603401496
 	- $e_{x}\left(z,t\right) = \operatorname{Re} \{E_{x}\left(z\right)e^{j \omega t} \} = E_0 \cos \left(k\left(vt - z\right) \right) = E_0 \cos \left( \omega t - kz \right)$
 	- $k = \cfrac{\omega}{v} = \omega \sqrt{\mu \varepsilon}$
 	- $\lambda = \cfrac{2 \pi}{k} = \cfrac{2 \pi}{\omega \sqrt{\varepsilon \mu}}$
@@ -122,6 +123,7 @@ tags:: [[wellenausbreitung]]
 	- ${e_{y}\left(z,0\right)} = {E \cos \left( - kz \pm \cfrac{\pi}{2} \right) = \pm E \sin \left(kz \right)}$
 	- $\vect{E} =E_{y0}e^{ - jkz} \vect{i}_y$
 	- $\eta \vect{H} = - E_{y0}e^{ - jkz} \vect{i}_{x}$
+	  id:: 6735b379-187a-4654-8126-efd8a322477b
 	- $\begin{aligned} P&=\int\vect{P}\cdot\opn{d}\vect{F}=\cfrac12\opn{Re} \left\{\int(\vect{E}\times\vect{H^{*}})\cdot\opn{d}\vect{F} \right\} \\ &= \cfrac{1}{2} \opn{Re} \left\{\int(E_{x}H_{y}^{*} - E_{y}H_{x}^{*}) \opn{d}F \right\} \\ &= \cfrac{w d}{2} \opn{Re} \{ - E_{y0}e^{ - j k z}( - \cfrac{E_{y0}}{\eta}e^{ + j k z}) \} = \cfrac{E_{y0}^{2}}{2 \eta}w d \end{aligned}$
 	- $P = \cfrac{|U|^{2}}{2Z_{\opn{PV}}}$
 	- $U = \int_{ - d}^{0}E_{y} \opn{d}y = E_{y0}~d$
@@ -141,7 +143,6 @@ tags:: [[wellenausbreitung]]
 	- $\eta \approx \eta_{\opn{E}} \cfrac{1 + j}{\sqrt{2s}} \qquad j k_{z} \approx k_{\opn{E}} \sqrt{\cfrac{s}{2}}\left(1 + j\right)$
 	- $d = \cfrac{1}{\alpha} \approx \cfrac{1}{k_{\opn{E}}} \sqrt{\cfrac{2}{s}} = \sqrt{\cfrac{2}{\omega \mu \sigma}}$
 - ## Reﬂexion an glatten Grenzflächen, die [[parallelplattenleitung]]
-  collapsed:: true
 	- $\frac{\sin \Theta_{1}}{\sin \Theta_{2}} =  \sqrt{\frac{\varepsilon_{2}}{\varepsilon_{1}}} =  \frac{n_{2}}{n_{1}}$
 	  tags:: formel
 	  bezeichnung:: brechungsgesetz/gesetz von snellius
