@@ -7,7 +7,6 @@ alias:: wave propagation, wellenausbreitungs
 	- ![📚 WA-Skriptum-17.Auflage.pdf](file://C:\Users\Matteo\Documents\Uni\Wellenausbreitung\WA-Skriptum-17.Auflage.pdf)
 	- [[wellen vo temp]]
 - ## beispiele
-  collapsed:: true
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
 		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.6}$) eingestrahlt.
@@ -55,19 +54,28 @@ alias:: wave propagation, wellenausbreitungs
 					  tags:: formel
 					  bezeichnung:: reflektionsfaktor wenn einfallswinkel = [[brewster winkel]] [FS](((6735b379-a4a2-48f4-800f-7b9292b7a3a1)))
 						- $\Gamma_{TM}$ ... reflektionsfaktor $\mathrm{\left[ - \right]}$
-					- $P=\frac{E^2A}{2\eta}$
+					- $P=\frac{E_0^2A}{2\eta}$
 					  tags:: formel, wip
-					  bezeichnung:: Strahlleistung, abgeleitet von hier [link](((6735b379-9fad-4f67-bd6e-6a9603401496)))
+					  bezeichnung:: abgestrahlte leistung einer [[antenne]]
 						- $P$ ... Strahlleistung $\mathrm{\left[ W \right]}$
 						- $E$ ...
 						- $A$ ...
 						- $\eta$ ... wellenwiderstand $\mathrm{\left[ \Omega \right]}$
+						- skript
+						  collapsed:: true
+							- ((6737138c-9739-4333-8d9b-11a498e0f337))
 					- $\eta H = E$
 					  tags:: formel, wip
 					  bezeichnung:: abgeleitet von hier [link](((6735b379-187a-4654-8126-efd8a322477b)))
 						- $\eta$ ... wellenwiderstand $\mathrm{\left[ \Omega \right]}$
 						- $H$ ... magnetsiche feldstärke $\mathrm{\left[ \frac{A}{m} \right]}$
 						- $E$ ... elektrische feldstärke $\mathrm{\left[ \frac{V}{s} \right]}$
+					- $\eta=\sqrt{\frac{\mu}{\varepsilon}}$
+					  tags:: formel
+					  bezeichnung:: wellenwiderstand
+						- $\eta$ ... wellenwiderstand $\mathrm{\left[ \Omega \right]}$
+						- $\mu$ ... permeabilität des mediums $\mathrm{\left[ \frac{A}{s} \right]}$
+						- $\varepsilon$ ... permettivität des mediums $\mathrm{\left[ \frac{V}{m} \right]}$
 			- d) Berechnen Sie die Elliptizität der reﬂektierten und der transmittierten Welle in $\mathrm{dB}$!
 			  background-color:: green
 				- formeln

@@ -126,6 +126,7 @@ tags:: [[wellenausbreitung]]
 	  id:: 6735b379-187a-4654-8126-efd8a322477b
 	- $\begin{aligned} P&=\int\vect{P}\cdot\opn{d}\vect{F}=\cfrac12\opn{Re} \left\{\int(\vect{E}\times\vect{H^{*}})\cdot\opn{d}\vect{F} \right\} \\ &= \cfrac{1}{2} \opn{Re} \left\{\int(E_{x}H_{y}^{*} - E_{y}H_{x}^{*}) \opn{d}F \right\} \\ &= \cfrac{w d}{2} \opn{Re} \{ - E_{y0}e^{ - j k z}( - \cfrac{E_{y0}}{\eta}e^{ + j k z}) \} = \cfrac{E_{y0}^{2}}{2 \eta}w d \end{aligned}$
 	- $P = \cfrac{|U|^{2}}{2Z_{\opn{PV}}}$
+	  id:: 6735b379-6bbc-4df6-9bbd-9f29e63108cf
 	- $U = \int_{ - d}^{0}E_{y} \opn{d}y = E_{y0}~d$
 	- $P = \cfrac{|E_{y0}|^{2}d^{2}}{2Z_{\opn{PV}}}$
 	- $\vect{\nabla}\times\vec{E}=-j\omega\mu\vect{H}$
@@ -310,14 +311,13 @@ tags:: [[wellenausbreitung]]
 	- $C \left(v \right) = \int^{v} \cos \left(\pi t^{2}/2 \right)d t \qquad S \left(v \right) = \int^{v} \sin \left(\pi t^{2}/2 \right)d t$
 	- $v = h \sqrt{2/\lambda \left(1/d_{s} + 1/d_{e} \right)}$
 - ## [[antennen]]
-  collapsed:: true
 	- $\vect{\mathbf{A}} \left(\vect{r} \right) = \mu \int \frac{\vect{\mathbf{S}}_{e} \left(\vect{r}^{\prime} \right)e^{ - j k \left|\vect{r} - \vect{r}^{\prime} \right|}}{4 \pi \left|\vect{r} - \vect{r}^{\prime} \right|} d V^{\prime}$
 	- ${V}^{\prime}$
 	- $\vect{\mathbf{A}} \left(\vect{r} \right) = \mu \frac{e^{ - j k r}}{4 \pi r} \int \vect{\mathbf{S}}_{e} \left(\vect{r}^{\prime} \right) e^{ + j k r^{\prime} \cos \vartheta}d V^{\prime} = \mu \frac{e^{ - j k r}}{4 \pi r} \vect{\mathbf{N}} \left(\vartheta \right)$
 	- ${|\tilde{r} - \tilde{r}^{\prime}|} = {\sqrt{r^{2} + r^{\prime2} - 2r r^{\prime} \cos \tilde{\vartheta}}}$
 	- ${ - } { \sqrt{\left(r - r^{\prime} \cos \vartheta \right)^{2} + r^{\prime2} \sin^{2} \vartheta}}$
 	- $= {(r - r^{\prime} \cos \vartheta) \left[1 + \frac{1}{2} \frac{r^{\prime}}{\left(r - r^{\prime} \cos \vartheta \right)^{2}} + \cdots \right]}$
-	- $\Delta \alpha = k \Delta r = \frac{2 \pi}{\lambda} \frac{r^{\prime}^{2} \sin^{2} \vartheta}{2 \left(r - r^{\prime} \cos \vartheta \right)}$
+	- $\Delta \alpha = k \Delta r = \frac{2 \pi}{\lambda} \frac{r^{\prime 2} \sin^2 \vartheta}{2 \left(r - r^{\prime} \cos \vartheta \right)}$
 	- $\Delta \alpha_{m a x} = \frac{\pi}{\lambda} \frac{r^{\prime2}}{r}$
 	- $\frac{\pi}{2} = \frac{\pi}{\lambda} \frac{D^{2}}{r_{R}}$
 	- $r_{R} = \frac{2D^{2}}{\lambda} \left( + \lambda \right)$
@@ -363,6 +363,15 @@ tags:: [[wellenausbreitung]]
 	- $|\mathbf{E}_{E}| = \frac{A}{\lambda r}E_{0}$
 	- $T_{E} \left(r \right) = \frac{\left|\mathbf{E}_{E} \right|^{2}}{2 \eta} = \left(\frac{A}{\lambda r} \right)^{2} \frac{E_{0}^{2}}{2 \eta}$
 	- $P_{S} = \frac{E_{0}^{2}}{2 \eta} A$
+	  tags:: formel, wip
+	  bezeichnung:: abgestrahlte leistung einer [[antenne]]
+		- $P_S$ ... Strahlleistung $\mathrm{\left[ W \right]}$
+		- $E_0$ ... elektrische feldstärke $\mathrm{\left[ \frac{V}{m} \right]}$
+		- $A$ ... fläche der antennen apertur $\mathrm{\left[ m^2 \right]}$
+		- $\eta$ ... wellenwiderstand $\mathrm{\left[ \Omega \right]}$
+		- skript
+		  collapsed:: true
+			- ((6737138c-9739-4333-8d9b-11a498e0f337))
 	- $G = 4 \pi r^{2} \frac{T_{E} \left(r \right)}{P_{S}} = 4 \pi \frac{A}{\lambda^{2}}$
 	- $G_{I S O} = \frac{4 \pi}{\lambda^{2}}A w$
 	- $P_{E} = A \bar{T}_{E}$
