@@ -60,6 +60,6 @@ alias:: et1
 		  #+END_QUERY
 - $\varepsilon = \varepsilon_r \cdot \varepsilon_0$
   tags:: formel
-  bezeichnung:: permittivität in materie
-	- $\varepsilon_r$ ... relative permittivität $\mathbf{[-]}$
+  bezeichnung:: [[permittivität]] in materie
+	- $\varepsilon_r$ ... relative [[permittivität]] $\mathbf{[-]}$
 	- ((6734c4a0-0bc0-452c-a33f-bcf1d8de32da))

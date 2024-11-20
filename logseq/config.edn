@@ -176,7 +176,9 @@
  ;;  :editor/down            ["ctrl+j" "down"]
  ;;  :editor/left            ["ctrl+h" "left"]
  ;;  :editor/right           ["ctrl+l" "right"]}
- :shortcuts {}
+ :shortcuts 
+ {:whiteboard/unlock		"mod+shift+u"
+  :plugin.logseq-automatic-linker/$shortcut$mod_shift_l "mod+shift+l"}
 
  ;; Configure the behavior of pressing Enter in document mode.
  ;; if set to true, pressing Enter will create a new block.

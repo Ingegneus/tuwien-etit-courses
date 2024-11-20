@@ -1,7 +1,7 @@
 icon:: 📚
 inherit-color-icon-from:: [[logseq-page-color-purple]] 
 template-used:: standard-page
-tags:: [[wellenausbreitung]]
+tags:: [[wellenausbreitung]], formeln
 
 - ## [[maxwell]]
   collapsed:: true
@@ -84,6 +84,7 @@ tags:: [[wellenausbreitung]]
 	- $H_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial x}H_{z} - \omega \delta \frac{\partial}{\partial y}E_{z} \right)$
 	- $H_{y} = \frac{ - j}{\kappa^{2}} \left( k_{z} \frac{\partial}{\partial y} H_{z} + \omega \delta \frac{\partial}{\partial x} E_{z} \right)$
 - ## [[homogene ebene wellen]]
+  collapsed:: true
 	- $+ \cfrac{\partial}{\partial z}e_{y} = \mu \cfrac{\partial}{\partial t}h_{x}$
 	- $- \cfrac{\partial}{\partial z}e_{x} = \mu \cfrac{\partial}{\partial t}h_{y}$
 	- $0 = \mu \cfrac{\partial}{\partial t}h_{z}$
@@ -93,8 +94,8 @@ tags:: [[wellenausbreitung]]
 	- $\cfrac{\partial^2}{\partial z^2}e_{x} - \mu \varepsilon \cfrac{\partial^2}{\partial t^2}e_{x} = 0$
 	- $e_{x}\left(z,t\right) = \underbrace{c_1f_1\left(z - vt\right)}_{ = e_{x}^{ + }\left(z,t\right)} + \underbrace{c_2f_2\left(z + vt\right)}_{ = e_{x}^{ - }\left(z,t\right)}$
 	- $v = \cfrac{1}{\sqrt{\varepsilon \mu}} = \cfrac{\omega}{k}$
-	- $\eta = \sqrt{\cfrac{\mu}{\varepsilon}}$
-	- $\eta = \eta_0 = \sqrt{\cfrac{\mu_0}{\varepsilon_0}} \approx120 \pi \Omega \approx377 \Omega$
+	- ((673c4eb2-5827-434c-a323-0ff29f347504))
+	- ((673b66c9-9d1e-40e9-9289-92ee3f902303))
 	- $h_{x}^{ + } = - \cfrac{e_{y}^{ + }}{\eta}$
 	- $\cfrac{e_{x}^{ + }}{h_{y}^{ + }} = - \cfrac{e_{y}^{ + }}{h_{x}^{ + }} = \eta$
 	- $\vect{E} \perp \vect{H} \perp \vect{i}_{z}$
@@ -129,6 +130,12 @@ tags:: [[wellenausbreitung]]
 	  id:: 6735b379-6bbc-4df6-9bbd-9f29e63108cf
 	- $U = \int_{ - d}^{0}E_{y} \opn{d}y = E_{y0}~d$
 	- $P = \cfrac{|E_{y0}|^{2}d^{2}}{2Z_{\opn{PV}}}$
+	  id:: 6735b379-fdec-41d2-9e92-0a885348c026
+	  tags:: formel
+	  bezeichnung:: transportierte leistung in der parallelplattenleitung
+		- $E_{y0}$ ... elektrisches Feld in $y$-Richtung (normal zur Platte/Grenzfläche) $\mathrm{\left[ \frac{V}{m} \right]}$
+		- $d$ ... abstand zwischen den platten der parallelplattenleitung $\mathrm{\left[ m \right]}$
+		- $Z_{PV}$ ... Widerstand der über leistung und spannung berechnet wird. entspricht dem [[wellenwiderstand]] $Z_L$ bzw $\eta$ $\mathrm{\left[ \Omega \right]}$
 	- $\vect{\nabla}\times\vec{E}=-j\omega\mu\vect{H}$
 	- $\vect{\nabla}\times\vect{H}=\sigma\vec{E}+j\omega\varepsilon\vect{E}$
 	- $\delta = \varepsilon - j\cfrac{\sigma}{\omega} = \varepsilon(1 - j s)$
@@ -151,13 +158,14 @@ tags:: [[wellenausbreitung]]
 	  collapsed:: true
 		- $\Theta_1$ ... winkel $\mathrm{[°]}$
 		- $\Theta_2$ ... winkel $\mathrm{[°]}$
-		- $\varepsilon_1$ ... permittivität $\mathrm{\left[\frac{As}{Vm}\right]}$
-		- $n_1$ ... brechungsindex $\mathrm{[-]}$
-		- $n_2$ ... brechungsindex $\mathrm{[-]}$
+		- $\varepsilon_1$ ... absolute [[permittivität]] $\mathrm{\left[\frac{As}{Vm}\right]}$
+		- $n_1$ ... [[brechungsindex]] $\mathrm{[-]}$
+		- $n_2$ ... [[brechungsindex]] $\mathrm{[-]}$
 	- $\Gamma_{\mathrm{TM}} =  \displaystyle \frac{\sqrt{\varepsilon_{2}} \cos \Theta_{1} -  \sqrt{\varepsilon_{1}} \cos \Theta_{2}}{\sqrt{\varepsilon_{2}} \cos \Theta_{1} +  \sqrt{\varepsilon_{1}} \cos \Theta_{2}} =  \displaystyle \frac{n^{2} \cos \Theta_{1} -  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}{n^{2} \cos \Theta_{1} +  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}$
 	  tags:: formel, wip
 	  bezeichnung:: reflektionsfaktor der transversal polarisierten magnetischen welle
 	  id:: 6735b379-5292-4604-baef-85a4c9a6fc3f
+	  collapsed:: true
 		- $-$ ...
 	- ${T_{\mathrm{TM}}} = {\displaystyle \frac{2 \sqrt{\varepsilon_{1}} \cos \Theta_{1}}{\sqrt{\varepsilon_{2}} \cos \Theta_{1} +  \sqrt{\varepsilon_{1}} \cos \Theta_{2}} =  \displaystyle \frac{2n \cos \Theta_{1}}{n^{2} \cos \Theta_{1} +  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}}$
 	  tags:: formel, wip
@@ -169,7 +177,7 @@ tags:: [[wellenausbreitung]]
 	  id:: 6735b379-8ba8-4a90-b5e2-8b5b38036526
 	- $T_{\mathrm{TE}} = \frac{2 \sqrt{\varepsilon_{1}} \cos \Theta_{1}}{\sqrt{\varepsilon_{1}} \cos \Theta_{1} + \sqrt{\varepsilon_{2}} \cos \Theta_{2}} = \frac{2 \cos \Theta_{1}}{\cos \Theta_{1} + \sqrt{n^{2} - \sin^{2} \Theta_{1}}}$
 	  id:: 6735b379-1a1f-417e-8323-7fe94bd9e2cf
-	- $\Gamma_{\mathrm{TM}} = 0 \quad \Leftarrow \quad \tan \Theta_{\mathrm{B}} = \sqrt{\frac{\varepsilon_{2}}{\varepsilon_{1}}} = \frac{n_{2}}{n_{1}} = n$
+	- $\Gamma_{\mathrm{TM}} = 0 \quad \Leftarrow \quad \tan \Theta_{\mathrm{B}} =$ ((67360de7-70f6-457a-b7e1-e13b553b5d80))
 	  id:: 6735b379-a4a2-48f4-800f-7b9292b7a3a1
 	- $\frac{2 \pi}{\lambda_1}z_{0m} \cos \Theta_{m}=m \pi \quad \Rightarrow \quad d=-z_{0m}= \frac{\lambda_1m}{2 \cos \Theta_{m}}= \frac{m}{2f \sqrt{\mu_1 \varepsilon_1} \cos \Theta_{m}}$
 	- $\lambda_{x}= \frac{\lambda_{1}}{\sin \Theta_{m}}$
@@ -311,6 +319,7 @@ tags:: [[wellenausbreitung]]
 	- $C \left(v \right) = \int^{v} \cos \left(\pi t^{2}/2 \right)d t \qquad S \left(v \right) = \int^{v} \sin \left(\pi t^{2}/2 \right)d t$
 	- $v = h \sqrt{2/\lambda \left(1/d_{s} + 1/d_{e} \right)}$
 - ## [[antennen]]
+  collapsed:: true
 	- $\vect{\mathbf{A}} \left(\vect{r} \right) = \mu \int \frac{\vect{\mathbf{S}}_{e} \left(\vect{r}^{\prime} \right)e^{ - j k \left|\vect{r} - \vect{r}^{\prime} \right|}}{4 \pi \left|\vect{r} - \vect{r}^{\prime} \right|} d V^{\prime}$
 	- ${V}^{\prime}$
 	- $\vect{\mathbf{A}} \left(\vect{r} \right) = \mu \frac{e^{ - j k r}}{4 \pi r} \int \vect{\mathbf{S}}_{e} \left(\vect{r}^{\prime} \right) e^{ + j k r^{\prime} \cos \vartheta}d V^{\prime} = \mu \frac{e^{ - j k r}}{4 \pi r} \vect{\mathbf{N}} \left(\vartheta \right)$
@@ -365,10 +374,12 @@ tags:: [[wellenausbreitung]]
 	- $P_{S} = \frac{E_{0}^{2}}{2 \eta} A$
 	  tags:: formel, wip
 	  bezeichnung:: abgestrahlte leistung einer [[antenne]]
+	  id:: 6735b379-9a02-48b3-997c-2ecd856cb257
+	  collapsed:: true
 		- $P_S$ ... Strahlleistung $\mathrm{\left[ W \right]}$
 		- $E_0$ ... elektrische feldstärke $\mathrm{\left[ \frac{V}{m} \right]}$
 		- $A$ ... fläche der antennen apertur $\mathrm{\left[ m^2 \right]}$
-		- $\eta$ ... wellenwiderstand $\mathrm{\left[ \Omega \right]}$
+		- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
 		- skript
 		  collapsed:: true
 			- ((6737138c-9739-4333-8d9b-11a498e0f337))
@@ -377,7 +388,7 @@ tags:: [[wellenausbreitung]]
 	- $P_{E} = A \bar{T}_{E}$
 	- $G_{\mathrm{DUT/ISO}} = \frac{\mathit{E I R P}}{P_{\mathrm{L_{\mathrm{DUT}}}}} \cdot \frac{\left|E_{\vartheta_{\mathrm{DUT}}} \right|_{\mathrm{max}}^{2}}{\left|E_{\vartheta_{\mathrm{ISO}}} \right|_{\mathrm{max}}^{2}}$
 	- $\mathit{E I R P} = P_{L}G_{I S O}$
-	- $\mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}} \mathit{\mathit{\Delta}}}$
+	- $L=ns$
 	- $l = \frac{\pi D}{\cos \psi}$
 	- $s = l \sin \psi = \pi D \tan \psi$
 	- ${k_{\mathrm{wendel}}l - k_{0}s = 2 \pi \nu \qquad \nu = 1,2,3,\dots.}$
@@ -387,12 +398,13 @@ tags:: [[wellenausbreitung]]
 	- $l = \left(\lambda_{0} + s \right) \frac{v}{c_{0}}$
 	- $\frac{3}{4} \lambda_{0}<\lambda<\frac{4}{3} \lambda_{0}$
 	- $\mathbf{P} = \frac{1}{2} \left|\mathbf{I} \right|^{2} \mathbf{Z}_{A}$
-	- $\vect{\mathbf{\Gamma}} \vect{\mathbf{\Gamma}} = \frac{1}{2} \vect{\mathbf{\Gamma}} \vect{\mathbf{\Sigma}} \vect{\mathbf{\Sigma}} \vect{\mathbf{\Sigma}} \vect{\mathbf{\Sigma}} \vect{\mathbf{\Sigma}} \vect{\mathbf{\Sigma}}$
-	- $\mathbf{\Gamma}^{r} \mathbf{\Gamma}_{r} = \frac{1}{2} \mathbf{\Gamma} \mathbf{\Gamma} \mathbf{\Gamma} \mathbf{\Gamma} \mathbf{\Gamma} \mathbf{\Gamma} \mathbf{\Gamma} \mathbf{\Gamma} \mathbf{\Gamma}$
-	- $\mathbf{\Pi}_{\vartheta} = - \frac{1}{2} \mathbf{\Pi}_{\vartheta} \mathbf{\Pi}_{\varphi}^{\star} \approx0$
-	- $\underline{{r}}_{ - } \underline{{\Gamma}}_{\varphi} \overline{{\overline{{\mathbf{\Sigma}}}}}_{ - } \mathbf{\Lambda}_{\mathbf{\Lambda}}$
-	- $\left|\overline{{\Pi}}_{\varphi} \right| = \left|\underline{{\pm}}_{\vartheta} \right|/\eta$
-	- $P_{r} = \frac{1}{2} \mathop{\int}_{\varphi = 0}^{2 \pi} \mathop{\int}_{\vartheta = 0}^{\pi} \frac{\left|\mathbf{E}_{\vartheta} \right|^{2}}{\eta} r^{2} \sin \vartheta d \vartheta d \varphi$
+	- $\vect{\mathbf{T}} = \frac{1}{2} \vect{\mathbf{E}} \times \vect{\mathbf{H}}^{\star}$
+	- $\mathbf{T}_{r}=\frac{1}{2} \mathbf{E}_{\vartheta}\mathbf{H}_{\varphi}^{\star}$
+	- $\mathbf{T}_{\vartheta}=-\frac{1}{2}\mathbf{E}_{r}\mathbf{H}_{\varphi}^{\phantom{\varphi}\star}\approx0$
+	- $\mathbf{T}_{\varphi}\equiv0$
+	- $|\mathbf{H}_{\varphi}|=\left|\mathbf{E}_{\vartheta}\right|/\eta$
+	- $P_{r} = \frac{1}{2} \int \limits_{\varphi = 0}^{2 \pi} \int \limits_{\vartheta = 0}^{\pi} \frac{\left|\mathbf{E}_{\vartheta} \right|^{2}}{\eta} r^{2} \sin \vartheta \opn d \vartheta \opn d \varphi$
+	- $\mathbf{E}_{\vartheta}=j\eta~\frac{\mathbf{I}s}{2\lambda}~\frac{e^{-j k r}}{r}~\sin\vartheta$
 	- $P_{r} = \frac{1}{3} \pi \eta \left(\frac{s^{2}}{\lambda^{2}} \right) \left|\mathbf{I} \right|^{2}$
 	- $R_{A} = \frac{2}{3} \pi \eta \left(\frac{s^{2}}{\lambda^{2}} \right)$
 	- $m = \frac{1 + |\rho|}{1 - |\rho|} = \frac{|U_{m a x}|}{|U_{m i n}|}$
@@ -452,10 +464,10 @@ tags:: [[wellenausbreitung]]
 	- $\sigma^{2} = \overline{{R e(\mathbb{\mathbf{\mathcal{L}}})^{2}}} = P_{m}$
 	- $p(a) = \frac{a}{\sigma^{2}} \cdot \exp \left[ - \frac{a^{2}}{2 \sigma^{2}} \right]$
 	- ${\mathrm{Mittelwert}} { \overline{{a}} = \sigma \sqrt{\frac{\pi}{2}}}$
-	- ${\mathrm{Mittelwert}} { \frac{a^{2}}{a^{2}} = 2 \sigma^{2}}$
-	- ${\mathrm{Varianz}} { \overline{{a^{2}}} - \left(\overline{{a}} \right)^{2} = 2 \sigma^{2} - \sigma^{2} \frac{\pi}{2} = 0.429 \sigma^{2}}$
-	- ${\mathrm{Medianwert}} {a_{50} = \sigma \sqrt{2 \cdot l n2} = 1.18 \sigma}$
+	- ${\text{Mittelwert }} { \frac{a^{2}}{a^{2}} = 2 \sigma^{2}}$
+	- ${\text{Varianz }} { \overline{{a^{2}}} - \left(\overline{{a}} \right)^{2} = 2 \sigma^{2} - \sigma^{2} \frac{\pi}{2} = 0.429 \sigma^{2}}$
+	- ${\text{Medianwert }} {a_{50} = \sigma \sqrt{2 \cdot l n2} = 1.18 \sigma}$
 	- $p(a) = \frac{a}{\sigma^{2}} \cdot \exp \left[ - \frac{a^{2} + A^{2}}{2 \sigma^{2}} \right]\cdot I_{0} \left(\frac{a A}{\sigma^{2}} \right)$
 	- $\mathrm{quadrat. Mittelwert} \quad \overline{{a^{2}}} = 2 \sigma^{2} + A^{2}$
 	- $\frac{P_{e}}{P_{r}} = G_{s} \cdot G_{e} \left(\frac{\lambda}{4 \pi d_{0}} \right)^{2} \left(\frac{d_{0}}{d} \right)^{n}$
-	- $p(F) = \frac{1}{\sigma_{F} \sqrt{2 \cdot \pi}} \cdot \exp \left[ - \frac{(F - M)^{2}}{2 \cdot \sigma_{F}^{2}} \right]
+	- $p(F) = \frac{1}{\sigma_{F} \sqrt{2 \cdot \pi}} \cdot \exp \left[ - \frac{(F - M)^{2}}{2 \cdot \sigma_{F}^{2}} \right]$

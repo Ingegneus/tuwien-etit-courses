@@ -233,7 +233,21 @@ svg.awLi-favicon {
     padding: 0 0.2em;
 }
 
+/* block reference underline */
 .block-ref {
 	display: inline-block;
 	padding: 0px 0px;
 }
+
+/* done marker prevent strikethrough and opycity */
+.inline .done{
+	text-decoration: none; 
+	opacity: 1;
+}
+.done:before{
+	text-decoration: none!important; 
+}
+
+/* sticky headers */
+.will-stick .is-sticky{
+border-bottom:none}
