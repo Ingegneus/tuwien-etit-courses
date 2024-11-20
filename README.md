@@ -11,7 +11,7 @@ ich hasse die art und weise wie lehrmaterial organisiert und präsentiert wird. 
 
 # wie nutze ich das hier
 es gibt zwei arten wie du diese ausarbeitung verwenden kannst.
-## variante 1: installation (windows)
+## variante 1: installation (explizit windows, aber sollte für macos und linux gleich finktionieren)
 hierfür brauchst du erstmal [logseq](https://github.com/logseq/logseq). was ist logseq? Das ist eine Plattform für Wissensmanagement und Zusammenarbeit. Sie legt den Fokus auf Privatsphäre, Langlebigkeit und Benutzerkontrolle. mehr infos findest du [hier](https://logseq.com/).
 als nächstes empfehle ich dir [git](https://git-scm.com/downloads) zu installieren. damit kannst du recht einfach updates zu diesem material herunter laden und auch kollaborieren. sobald du das installiert hast, such dir einen folder aus wo du deinen "grafen" speichern möchtest, dann öffne ein terminal (command prompt, powershell, ...) 
 `cd dein/pfad/zum/grafen` 
@@ -36,10 +36,10 @@ logseq-graf/
 nun kopiere/verschiebe den inhalt von `tuwien-etit-courses/` nach `logdeq-graf/`. jetzt kannst du in logseq deinen grafen neu [indexieren](https://docs.logseq.com/#/page/63500411-87b0-4d62-a9ac-5b5418bc3201) und du kannst sie in logseq bearbeiten.
 
 Die häufigsten git befehle die du brauchen wirst sind:  
-```git add ./path/to/file.ext``` - fügt eine datei zur staging area hinzu. bedeutet, dass die änderungen an dieser datei (oder falls die datei neu ist, die datei selbst) zum upload freigegeben sind  
-```git commit -m "meaningful commit message"``` - fügt die änderungen die in der staging area sind dem aktuellen branch hinzu. dadurch sind die bearbeitungen durchgegangen  
-```git push``` -  lädt deine änderungen auf guthub hoch  
-```git pull``` - zieht den zustand von github und vereint es mit deiner lokalen version  
+`git add ./path/to/file.ext` - fügt eine datei zur staging area hinzu. bedeutet, dass die änderungen an dieser datei (oder falls die datei neu ist, die datei selbst) zum upload freigegeben sind  
+`git commit -m "meaningful commit message"` - fügt die änderungen die in der staging area sind dem aktuellen branch hinzu. dadurch sind die bearbeitungen durchgegangen  
+`git push` -  lädt deine änderungen auf guthub hoch  
+`git pull` - zieht den zustand von github und vereint es mit deiner lokalen version  
 
 ## variante 2: statische HTML
 lade dir den html.zip ordner runter. entpacke ihn und öffne die `index.html` datei (sollte sich automatisch im browser öffnen).
