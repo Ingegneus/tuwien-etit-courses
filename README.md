@@ -35,11 +35,11 @@ logseq-graf/
 
 nun kopiere/verschiebe den inhalt von `tuwien-etit-courses/` nach `logdeq-graf/`. jetzt kannst du in logseq deinen grafen neu [indexieren](https://docs.logseq.com/#/page/63500411-87b0-4d62-a9ac-5b5418bc3201) und du kannst sie in logseq bearbeiten.
 
-Die häufigsten git befehle die du brauchen wirst sind:
-`git add ./path/to/file.ext` - fügt eine datei zur staging area hinzu. bedeutet, dass die änderungen an dieser datei (oder falls die datei neu ist, die datei selbst) zum upload freigegeben sind  
-`git commit -m "meaningful commit message"` - fügt die änderungen die in der staging area sind dem aktuellen branch hinzu. dadurch sind die bearbeitungen durchgegangen  
-`git push` -  lädt deine änderungen auf guthub hoch  
-`git pull` - zieht den zustand von github und vereint es mit deiner lokalen version  
+Die häufigsten git befehle die du brauchen wirst sind:  
+```git add ./path/to/file.ext``` - fügt eine datei zur staging area hinzu. bedeutet, dass die änderungen an dieser datei (oder falls die datei neu ist, die datei selbst) zum upload freigegeben sind  
+```git commit -m "meaningful commit message"``` - fügt die änderungen die in der staging area sind dem aktuellen branch hinzu. dadurch sind die bearbeitungen durchgegangen  
+```git push``` -  lädt deine änderungen auf guthub hoch  
+```git pull``` - zieht den zustand von github und vereint es mit deiner lokalen version  
 
 ## variante 2: statische HTML
 lade dir den html.zip ordner runter. entpacke ihn und öffne die `index.html` datei (sollte sich automatisch im browser öffnen).
