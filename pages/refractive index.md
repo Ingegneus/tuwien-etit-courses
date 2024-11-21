@@ -10,6 +10,7 @@ alias:: brechungsindex, brechungsindexes, brechungsindizes
   bezeichnung:: relativer [[brechnungsindex]]
   collapsed:: true
 	- $n$ ... relativer brechungsindex $\mathrm{\left[ - \right]}$
+	  id:: 673e338e-cda2-43e1-9f69-c0d84c64bbb9
 	- $k_1$ ... wellenzahl $\mathrm{\left[ \frac{rad}{m} \right]}$
 	- $k_2$ ... wellenzahl $\mathrm{\left[ \frac{rad}{m} \right]}$
 	- $\varepsilon_1$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$

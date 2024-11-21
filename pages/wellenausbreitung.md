@@ -15,7 +15,6 @@ alias:: wave propagation, wellenausbreitungs
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
 				- formeln
-				  collapsed:: true
 					- $\Theta_i = \Theta_r$
 					  tags:: formel
 					  bezeichnung:: Reflektions gesetz
@@ -48,6 +47,7 @@ alias:: wave propagation, wellenausbreitungs
 						- $\vect{P}_{\mathrm{TE,t}}$ ... leistung der transmittierten TE Welle $\mathrm{\left[ W \right]}$
 						- $\vect{P}_{\mathrm{TM,t}}$ ... leistung der transmittierten TM Welle $\mathrm{\left[ W \right]}$
 					- ((6735b379-9a02-48b3-997c-2ecd856cb257))
+					- ((67360de7-70f6-457a-b7e1-e13b553b5d80))
 			- [📚 2024-11-12 16h29m.xopp](../assets/documents/2024-11-12 16h29m.xopp)
 			- ![📚 2024-11-12 16h29m_annotated.pdf](../assets/documents/2024-11-12 16h29m_annotated.pdf)
 		- Variante 2) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{2~mm^2}$ und einer Leistung von $P = \mathrm{1~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.5}$) eingestrahlt.
@@ -57,7 +57,6 @@ alias:: wave propagation, wellenausbreitungs
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
 				- formeln
-				  collapsed:: true
 					- $\Theta_i = \Theta_r$
 					  tags:: formel
 					  bezeichnung:: Reflektions gesetz
@@ -66,7 +65,7 @@ alias:: wave propagation, wellenausbreitungs
 					- ((6734720f-e42f-46c0-a512-3075ea423042))
 					- $\Theta_{b}=\arctan\left(\frac{n_2}{n_1}\right)$
 					  tags:: formel
-					  bezeichnung:: [[brewster winkel]]
+					  bezeichnung:: [[brewster winkel]] [link](((6735b379-a4a2-48f4-800f-7b9292b7a3a1)))
 						- $\Theta_b$ ... Brewster winkel $\mathrm{[°]}$
 						- $n_1$ ... [[brechungsindex]] $\mathrm{[-]}$
 						- $n_2$ ... [[brechungsindex]] $\mathrm{[-]}$
@@ -91,22 +90,95 @@ alias:: wave propagation, wellenausbreitungs
 						- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
 						- $H$ ... magnetsiche feldstärke $\mathrm{\left[ \frac{A}{m} \right]}$
 						- $E$ ... elektrische feldstärke $\mathrm{\left[ \frac{V}{s} \right]}$
-					- ((673c4eb2-5827-434c-a323-0ff29f347504))
-					  id:: 6737bf12-dd02-4ddf-9475-403da7dd3d06
 					- ((67360de7-70f6-457a-b7e1-e13b553b5d80))
 			- c) Berechnen Sie die Elliptizität der reﬂektierten und der transmittierten Welle in $\mathrm{dB}$!
 			  background-color:: green
 			  collapsed:: true
 				- formeln
+					- ((67360dd7-52ba-4a90-a63b-ad4871a896af))
 			- [📚 2024-11-18 17h41m.xopp](../assets/documents/2024-11-18 17h41m.xopp)
 			- ![📚 2024-11-18 17h41m_annotated.pdf](../assets/documents/2024-11-18 17h41m_annotated.pdf)
-		- Variante 3) Ein Lichtstrahl der Sonne (unpolarisiert, aber TM, TE gleich stark) fällt zu später Stunde ($\Theta_e = 75°$) auf einen See ($n2 = 1.33$). An der glatten Wasseroberﬂäche wird er reﬂektiert. Zwei Fotografen fotograﬁeren diese Landschaft. Der zweite verwendet ein ideales Polarisationsﬁlter um die Reﬂexion der Sonne im Wasser zu unterdrücken.
+		- Variante 3) Ein Lichtstrahl der Sonne (unpolarisiert, aber TM, TE gleich stark) fällt zu später Stunde ($\Theta_e = 75°$) auf einen See ($n_2 = 1.33$). An der glatten Wasseroberﬂäche wird er reﬂektiert. Zwei Fotografen fotograﬁeren diese Landschaft. Der zweite verwendet ein ideales Polarisationsﬁlter um die Reﬂexion der Sonne im Wasser zu unterdrücken.
 		  background-color:: green
-		  ![img](../assets/documents/WA_vakuum_glas_bsp.webp){:width 400}
+		  ![img](../assets/documents/WA_vakuum_glas_bsp.webp){:width 400, :height 213}
 			- a) Wie groß ist die (gesamte) reﬂektierte Lichtleistung im Verhältnis zur eingestrahlten (in $\mathrm{dB}$)? Zeichnen Sie alle verwendeten Winkel ein.
 			  background-color:: green
+				- formeln
+				  collapsed:: true
+					- $\Theta_i = \Theta_r$
+					  tags:: formel
+					  bezeichnung:: Reflektions gesetz
+						- $\Theta_i$ ... einfallswinkel (***i***nbound) $\mathrm{[°]}$
+						- $\Theta_r$ ... reflektionswinkel (***r***eflected) $\mathrm{[°]}$
+					- ((6734720f-e42f-46c0-a512-3075ea423042))
+					- ((6735b379-8ba8-4a90-b5e2-8b5b38036526))
+					- ((6735b379-5292-4604-baef-85a4c9a6fc3f))
+					- ((6735b379-9a02-48b3-997c-2ecd856cb257))
+				- lösung
+					- ```python
+					  import math
+					  
+					  def cos(x):
+					      return math.cos(x)
+					  def sin(x):
+					      return math.sin(x)
+					  def asin(x):
+					      return math.asin(x)
+					  def sqrt(x):
+					      return math.sqrt(x)
+					  def pow2(x):
+					      return math.pow(x,2)
+					  def log10(x):
+					      return math.log10(x)
+					  
+					  n1 = 1
+					  n2 = 1.33
+					  n = n2/n1
+					  theta1 = math.radians(75)
+					  theta2 = asin(n1/n2 * sin(theta1))
+					  "theta2: " + str(math.degrees(theta2))
+					  ```
+						- {{evalparent}}
+					- ```python
+					  gammaTE = (( n1 * cos(theta1) - n2 * cos(theta2) ) /
+					             ( n1 * cos(theta1) + n2 * cos(theta2) ))
+					  "gammaTE: " + str(gammaTE)
+					  ```
+						- {{evalparent}}
+					- ```python
+					  gammaTM = (( n2*cos(theta1)-n1*cos(theta2) ) /
+					             ( n2*cos(theta1)+n1*cos(theta2) ))
+					  "gammaTM: " + str(gammaTM)
+					  ```
+						- {{evalparent}}
+					- ```python
+					  R = round(10 * log10((gammaTE**2+gammaTM**2)/2),3)
+					  "R: " + str(R) + " dB"
+					  ```
+						- {{evalparent}}
 			- b) Wie gut kann das ideal eingesetzte Polarisationsﬁlter des zweiten Fotografen die Reﬂexion im Vergleich zum ersten Fotografen unterdrücken (in $\mathrm{dB}$)?
 			  background-color:: green
+				- es geht hierbei darum, dass ein filter verwendet wird welches den TM oder TE anteil filtert
+				- lösung
+					- ```python
+					  # gammaTM = 0
+					  R_TM=round(10 * log10((gammaTE**2)/2),3)
+					  "R_TM: " + str(R_TM) + " dB"
+					  ```
+						- {{evalparent}}
+					- ```python
+					  # gammaTE = 0
+					  R_TE = round(10 * log10((gammaTM**2)/2),3)
+					  "R_TE: " + str(R_TE) + " dB"
+					  ```
+						- {{evalparent}}
+					- ```python
+					  # R_TE negativer
+					  "Photograf2/Photograf1: " + str(R_TE-R) + " dB"
+					  ```
+						- {{evalparent}}
+			- [📚 2024-11-20 19h04m.xopp](../assets/documents/2024-11-20 19h04m.xopp)
+			- ![📚 2024-11-20 19h04m_annotated.pdf](../assets/documents/2024-11-20 19h04m_annotated.pdf)
 	- Stehende Welle im verlustbehafteten Medium
 	  background-color:: green
 		- Eine sich im verlustbehafteten Medium (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden metallischen Wand mit unendlicher Leitfähigkeit reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.

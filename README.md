@@ -42,4 +42,4 @@ Die häufigsten git befehle die du brauchen wirst sind:
 `git pull` - zieht den zustand von github und vereint es mit deiner lokalen version  
 
 ## variante 2: statische HTML
-lade dir den html.zip ordner runter. entpacke ihn und öffne die `index.html` datei (sollte sich automatisch im browser öffnen).
+lade dir die `html.zip` datei von [hier](https://github.com/Ingegneus/tuwien-etit-courses/releases) runter, entpacke sie und öffne die `index.html` datei (sollte sich automatisch im browser öffnen).

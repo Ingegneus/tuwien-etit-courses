@@ -155,28 +155,47 @@ tags:: [[wellenausbreitung]], formeln
 	  tags:: formel
 	  bezeichnung:: brechungsgesetz/gesetz von snellius
 	  id:: 6734720f-e42f-46c0-a512-3075ea423042
-	  collapsed:: true
-		- $\Theta_1$ ... winkel $\mathrm{[°]}$
-		- $\Theta_2$ ... winkel $\mathrm{[°]}$
+		- $\Theta_1$ ... winkel in medium 1 (eintritt) $\mathrm{[°]}$
+		- $\Theta_2$ ... winkel in medium 2 (transmission) $\mathrm{[°]}$
 		- $\varepsilon_1$ ... absolute [[permittivität]] $\mathrm{\left[\frac{As}{Vm}\right]}$
 		- $n_1$ ... [[brechungsindex]] $\mathrm{[-]}$
 		- $n_2$ ... [[brechungsindex]] $\mathrm{[-]}$
 	- $\Gamma_{\mathrm{TM}} =  \displaystyle \frac{\sqrt{\varepsilon_{2}} \cos \Theta_{1} -  \sqrt{\varepsilon_{1}} \cos \Theta_{2}}{\sqrt{\varepsilon_{2}} \cos \Theta_{1} +  \sqrt{\varepsilon_{1}} \cos \Theta_{2}} =  \displaystyle \frac{n^{2} \cos \Theta_{1} -  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}{n^{2} \cos \Theta_{1} +  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}$
-	  tags:: formel, wip
-	  bezeichnung:: reflektionsfaktor der transversal polarisierten magnetischen welle
 	  id:: 6735b379-5292-4604-baef-85a4c9a6fc3f
-	  collapsed:: true
-		- $-$ ...
+	  tags:: formel, wip
+	  bezeichnung:: reflektionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TM fall)
+		- $\Gamma_{\mathrm{TM}}$ ... reflexionsfaktor der TM Welle $\mathrm{\left[ - \right]}$
+		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
+		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
+		- $\Theta_2$ ... transmissionswinkel $\mathrm{\left[ ° \right]}$
+		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\mathrm{\left[ - \right]}$
 	- ${T_{\mathrm{TM}}} = {\displaystyle \frac{2 \sqrt{\varepsilon_{1}} \cos \Theta_{1}}{\sqrt{\varepsilon_{2}} \cos \Theta_{1} +  \sqrt{\varepsilon_{1}} \cos \Theta_{2}} =  \displaystyle \frac{2n \cos \Theta_{1}}{n^{2} \cos \Theta_{1} +  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}}$
-	  tags:: formel, wip
-	  bezeichnung:: transmissionsfaktor der transversal polarisierten magnetischen welle
 	  id:: 6735b379-80fa-4b2a-be2d-af5089fe1fa8
-	- $\Gamma_{\mathrm{TE}} = \frac{\sqrt{\varepsilon_{1}} \cos \Theta_{1} - \sqrt{\varepsilon_{2}} \cos \Theta_{2}}{\sqrt{\varepsilon_{1}} \cos \Theta_{1} + \sqrt{\varepsilon_{2}} \cos \Theta_{2}} = \frac{\cos \Theta_{1} - \sqrt{n^{2} - \sin^{2} \Theta_{1}}}{\cos \Theta_{1} + \sqrt{n^{2} - \sin^{2} \Theta_{1}}}$
 	  tags:: formel, wip
-	  bezeichnung:: reflektionsfaktor der transversal polarisierten elektrischen welle
+	  bezeichnung:: transmissionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TM fall)
+		- $T_{\mathrm{TE}}$ ... transmissionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
+		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
+		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
+		- $\Theta_2$ ... transmissionswinkel $\mathrm{\left[ ° \right]}$
+		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\mathrm{\left[ - \right]}$
+	- $\Gamma_{\mathrm{TE}} = \frac{\sqrt{\varepsilon_{1}} \cos \Theta_{1} - \sqrt{\varepsilon_{2}} \cos \Theta_{2}}{\sqrt{\varepsilon_{1}} \cos \Theta_{1} + \sqrt{\varepsilon_{2}} \cos \Theta_{2}} = \frac{\cos \Theta_{1} - \sqrt{n^{2} - \sin^{2} \Theta_{1}}}{\cos \Theta_{1} + \sqrt{n^{2} - \sin^{2} \Theta_{1}}}$
 	  id:: 6735b379-8ba8-4a90-b5e2-8b5b38036526
+	  tags:: formel, wip
+	  bezeichnung:: reflektionsfaktor der transversal polarisierten elektrischen welle (fresnel formel TE fall)
+		- $\Gamma_{\mathrm{TE}}$ ... reflexionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
+		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
+		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
+		- $\Theta_2$ ... transmissionswinkel $\mathrm{\left[ ° \right]}$
+		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\mathrm{\left[ - \right]}$
 	- $T_{\mathrm{TE}} = \frac{2 \sqrt{\varepsilon_{1}} \cos \Theta_{1}}{\sqrt{\varepsilon_{1}} \cos \Theta_{1} + \sqrt{\varepsilon_{2}} \cos \Theta_{2}} = \frac{2 \cos \Theta_{1}}{\cos \Theta_{1} + \sqrt{n^{2} - \sin^{2} \Theta_{1}}}$
 	  id:: 6735b379-1a1f-417e-8323-7fe94bd9e2cf
+	  tags:: formel
+	  bezeichnung:: transmissionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TE fall)
+		- $T_{\mathrm{TE}}$ ... transmissionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
+		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
+		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
+		- $\Theta_2$ ... transmissionswinkel $\mathrm{\left[ ° \right]}$
+		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\mathrm{\left[ - \right]}$
 	- $\Gamma_{\mathrm{TM}} = 0 \quad \Leftarrow \quad \tan \Theta_{\mathrm{B}} =$ ((67360de7-70f6-457a-b7e1-e13b553b5d80))
 	  id:: 6735b379-a4a2-48f4-800f-7b9292b7a3a1
 	- $\frac{2 \pi}{\lambda_1}z_{0m} \cos \Theta_{m}=m \pi \quad \Rightarrow \quad d=-z_{0m}= \frac{\lambda_1m}{2 \cos \Theta_{m}}= \frac{m}{2f \sqrt{\mu_1 \varepsilon_1} \cos \Theta_{m}}$
