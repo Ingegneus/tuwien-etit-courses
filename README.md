@@ -7,9 +7,9 @@ in diesem logseq grafen, versuche ich so gut es geht die stärken von logseq zu 
 mir ist klar, dass in unserem studium git nicht wirklich thema ist und daher die bar of entry, um hier mitzumachen höher ist, als zur fachschaft zu gehen und ein pdf abzugeben. ich bin der überzeugung, dass das hier langlebiger ist. stell dir vor es gäbe nicht 20 ausarbeitungen, sondern eine quelle die immer auf dem letzten stand ist und ziemlich sicher auf richtigkeit kontrolliert wurde.
 
 hier ein paar screenshots  
-[img]("https://raw.githubusercontent.com/ingegneus/tuwien-etit-courses/refs/heads/main/assets/storages/uni-git-assets/ls-uni-screenshot-1.webp")
+![img](https://raw.githubusercontent.com/ingegneus/tuwien-etit-courses/refs/heads/main/assets/storages/uni-git-assets/ls-uni-screenshot-1.webp)
 
-[img]("https://raw.githubusercontent.com/ingegneus/tuwien-etit-courses/refs/heads/main/assets/storages/uni-git-assets/ls-uni-screenshot-2.webp")
+![img](https://raw.githubusercontent.com/ingegneus/tuwien-etit-courses/refs/heads/main/assets/storages/uni-git-assets/ls-uni-screenshot-2.webp)
 
 
 ### motivation
