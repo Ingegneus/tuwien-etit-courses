@@ -46,13 +46,13 @@ lade dir die `html.zip` datei von [hier](https://github.com/Ingegneus/tuwien-eti
 
 ### mein logseq setup
 ich verwende logseq für so ziemlich alles und habe einige workflows entwickelt. für die uni nutze ich diese plugins:  
-live math (einfachere eingabe von latex)  
-display math (wendet \displaystyle überall and und man kann custom macros definiern)  
-logseq anki sync (damit kann man logseq flashcards mit anki synchronisieren und lernen)  
-helium (wenn man ein video schaut dann "floatet" es beim scrollen und bleibt immer sichtbar, auch wenn man notizen zu einem video macht)  
-media timestamp (die ganzen vo transcript timestamps sind mittels media timestamp eingetragen)  
+- live math (einfachere eingabe von latex)  
+- display math (wendet \displaystyle überall and und man kann custom macros definiern)  
+- logseq anki sync (damit kann man logseq flashcards mit anki synchronisieren und lernen)  
+- helium (wenn man ein video schaut dann "floatet" es beim scrollen und bleibt immer sichtbar, auch wenn man notizen zu einem video macht)  
+- media timestamp (die ganzen vo transcript timestamps sind mittels media timestamp eingetragen)  
 
 [hier](https://docs.logseq.com/#/page/plugins) ist eine anleitung wie man plugins installiert
 
 ### TODOs
-contribution guidelines
+- contribution guidelines
