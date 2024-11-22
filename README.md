@@ -10,7 +10,7 @@ mir ist klar, dass in unserem studium git nicht wirklich thema ist und daher die
 geteilte fenster für einfacheres referenzieren von material. unten sieht man auch einen ausführbaren code block (ähnlich zu jupyter) der das beispiel durchrechnen kann
 ![img](https://raw.githubusercontent.com/ingegneus/tuwien-etit-courses/refs/heads/main/assets/storages/uni-git-assets/ls-uni-screenshot-1.webp)
 
-links: beispiele mit verlinkten formeln + erklärung; rechts: vorlesung mit transcript und timestamps für die leichtere suche
+links: beispiele mit verlinkten formeln + erklärung im pop up fenster; rechts: vorlesung mit transcript und timestamps für die leichtere suche
 ![img](https://raw.githubusercontent.com/ingegneus/tuwien-etit-courses/refs/heads/main/assets/storages/uni-git-assets/ls-uni-screenshot-2.webp)
 
 automatische formelsammlung die gefiltert werden kann

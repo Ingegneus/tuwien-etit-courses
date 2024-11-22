@@ -162,8 +162,9 @@ tags:: [[wellenausbreitung]], formeln
 		- $\omega$ ... [[Kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
 	- $\eta^{2} = \cfrac{\mu}{\delta} = \cfrac{\mu}{\varepsilon} \cfrac{1}{1 - j s}$
 	- $\eta = \mathbb{R} + j \mathbb{X} = \eta_{\opn{E}} \cfrac{1}{\sqrt{1 - j s}}$
-	- $j k_{z} = j \omega \sqrt{\mu \delta} = j \omega \sqrt{\mu \varepsilon} \sqrt{1 - j s} = \gamma = \alpha + j \beta$
-	- $j k_{z} = j k_{\opn{E}} \sqrt{1 - j s}$
+	- ((673e3379-30f5-45e3-8e01-5b4add8a83e2))
+	  id:: 6740c68b-e124-4f93-b1f1-9c8be879951c
+	- ((673e3379-c0da-481e-b625-bd67e865a008))
 	- $\mathbb{R} = \eta_{\opn{E}} \sqrt{\cfrac{\sqrt{1 + s^{2}} + 1}{2(1 + s^{2})}} \qquad \mathbb{X} = \eta_{\opn{E}} \sqrt{\cfrac{\sqrt{1 + s^{2}} - 1}{2(1 + s^{2})}}$
 	-
 	- $\alpha = k_{\opn{E}} \sqrt{\cfrac{\sqrt{1 + s^{2}} - 1}{2}} \qquad \beta = k_{\opn{E}} \sqrt{\cfrac{\sqrt{1 + s^{2}} + 1}{2}}$

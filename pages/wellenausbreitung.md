@@ -179,13 +179,16 @@ alias:: wave propagation, wellenausbreitungs
 			- ![📚 2024-11-20 19h04m_annotated.pdf](../assets/documents/2024-11-20 19h04m_annotated.pdf)
 	- Stehende Welle im verlustbehafteten Medium
 	  background-color:: green
-		- Eine sich im verlustbehafteten Medium (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden metallischen Wand mit unendlicher Leitfähigkeit reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
+		- Eine sich im [verlustbehafteten Medium](((6740c4fa-4d26-4310-b196-321b7391feb6))) (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden [metallischen Wand mit unendlicher Leitfähigkeit](((67405634-4634-4d0d-b586-6a52b1bb7c75))) reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
 		  background-color:: green
 		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
 		  ![img](../assets/documents/WA_stehende_welle_wand_bsp1.webp){:width 400}
 			- skript
 			  collapsed:: true
 				- ((67405657-2347-4d8b-93f5-98a6b52c836c))
+				  id:: 67405634-4634-4d0d-b586-6a52b1bb7c75
+				- ((6740c51b-b09e-4b73-b018-e2d77efe468b))
+				  id:: 6740c4fa-4d26-4310-b196-321b7391feb6
 			- a) Wie groß ist die Phasengeschwindigkeit $v_P$?
 			  background-color:: green
 			  collapsed:: true
@@ -214,6 +217,7 @@ alias:: wave propagation, wellenausbreitungs
 					- ((67404a07-268a-4632-b86f-c136cdfaf0eb))
 					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
 					- ((673e3379-65ec-4bba-988b-f6a5d8499e68))
+					- ((673e3379-30f5-45e3-8e01-5b4add8a83e2)) [FS](((6740c68b-e124-4f93-b1f1-9c8be879951c)))
 				- lösung
 					- ```python
 					  mu = mur * mu_0
@@ -227,7 +231,12 @@ alias:: wave propagation, wellenausbreitungs
 					- ```python
 					  # bei z = 0
 					  E0 = 5
+					  sig = 1.5e-3
+					  alpha = 0
 					  
+					  s = sig / (eps * w)
+					  D = 20 * log10(E0 / (E0 * e**-alpha))
+					  "D = " + f"{D}" + "dB" 
 					  ```
 						- {{evalparent}}
 			- c) Berechnen Sie die komplexe Amplitude und den zeitlichen Verlauf der einfallenden Welle am Ort der metallischen Wand $z_0 = \mathrm{8~m}$!
