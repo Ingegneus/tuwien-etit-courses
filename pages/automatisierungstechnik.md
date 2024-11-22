@@ -14,10 +14,8 @@ alias:: automatisierung, automatisierungs
 	  ![📚 doc](../assets/documents/Automatisierung_UE1_Systemanalyse.pdf)
 		- {{renderer :media-timestamp, 00:21:45, ((670d389a-4eef-4ce3-b96d-45d619392212))}} [Aufgabe 1.1)](((6724c433-2054-4cae-a0c7-8189a8b54740)))
 		  background-color:: green
-		  collapsed:: true
 			- formeln
 			  id:: 67137aaa-de70-4aa6-b1cc-28cdb18cab78
-			  collapsed:: true
 				- ((67122f45-de81-44a5-a037-8b3d5d9241fa))
 			- [📚 2024-10-16 19h43m.xopp](../assets/documents/2024-10-16 19h43m.xopp)
 			- ![📚 2024-10-16 19h43m_annotated.pdf](../assets/documents/2024-10-16 19h43m_annotated.pdf)
@@ -476,7 +474,6 @@ alias:: automatisierung, automatisierungs
 		  id:: 67122f45-de81-44a5-a037-8b3d5d9241fa
 		  tags:: formel, wip
 		  bezeichnung:: [[linearisierung]] um eine [[Ruhelage]]
-		  collapsed:: true
 			- $\Delta\dot{\mathbf{x}}$ ... [[zeitableitung]] der auslenkung
 			- $\mathbf{f}\left(\mathbf{x}_{R},\mathbf{u}_{R}\right)$ ... system an der stelle $\mathbf{x}_{R}$ und eingang $\mathbf{u}_{R}$
 			  id:: 67120fe5-7abe-493b-902e-aa4fe9796178
@@ -484,7 +481,6 @@ alias:: automatisierung, automatisierungs
 			  id:: 6713c328-76a7-4f2f-9b85-8bcb58bd5b4d
 			- $\mathbf{A} = \frac{\partial}{\partial\mathbf{x}}\mathbf{f}(\mathbf{x}_{R},\mathbf{u}_{R})$
 			  id:: 67120fe5-fe8f-4d7c-9c39-be3330693430
-			  collapsed:: true
 				- ((67138ab1-181a-49b1-891e-f0a72036b01c))
 				- $\mathbf{x}_R$ ... [[zustandsvektor]] der [[Ruhelage]]
 				  id:: 95e69f11-41f5-4e86-bc12-f48d7246dad1
@@ -496,7 +492,6 @@ alias:: automatisierung, automatisierungs
 			  id:: 67120fe5-420c-4660-a28e-b75481571673
 			  tags:: formel, wip
 			  bezeichnung:: [[Eingangsmatrix]]  des [[linearisierten]] systems, $\text{dim}(\mathbf{x}_R)\times \text{dim}(\mathbf{u})$ [[matrix]].
-			  collapsed:: true
 				- ((671391a2-acdd-4459-8495-9f80c58207cb))
 				- ((95e69f11-41f5-4e86-bc12-f48d7246dad1))
 				- ((67112bbe-f4f6-4bee-be82-c96a3a180967))
