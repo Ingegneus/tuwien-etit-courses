@@ -6,10 +6,15 @@ in diesem logseq grafen, versuche ich so gut es geht die stärken von logseq zu 
 
 mir ist klar, dass in unserem studium git nicht wirklich thema ist und daher die bar of entry, um hier mitzumachen höher ist, als zur fachschaft zu gehen und ein pdf abzugeben. ich bin der überzeugung, dass das hier langlebiger ist. stell dir vor es gäbe nicht 20 ausarbeitungen, sondern eine quelle die immer auf dem letzten stand ist und ziemlich sicher auf richtigkeit kontrolliert wurde.
 
-hier ein paar screenshots  
+### hier ein paar screenshots  
+geteilte fenster für einfacheres referenzieren von material. unten sieht man auch einen ausführbaren code block (ähnlich zu jupyter) der das beispiel durchrechnen kann
 ![img](https://raw.githubusercontent.com/ingegneus/tuwien-etit-courses/refs/heads/main/assets/storages/uni-git-assets/ls-uni-screenshot-1.webp)
 
+links: beispiele mit verlinkten formeln + erklärung; rechts: vorlesung mit transcript und timestamps für die leichtere suche
 ![img](https://raw.githubusercontent.com/ingegneus/tuwien-etit-courses/refs/heads/main/assets/storages/uni-git-assets/ls-uni-screenshot-2.webp)
+
+automatische formelsammlung die gefiltert werden kann
+![img](https://raw.githubusercontent.com/ingegneus/tuwien-etit-courses/refs/heads/main/assets/storages/uni-git-assets/ls-uni-screenshot-3.webp)
 
 
 ### motivation

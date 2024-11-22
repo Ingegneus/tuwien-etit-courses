@@ -7,5 +7,5 @@ alias:: formula, [[formeln]], [[formel]], [[formule]]
 - {{query (and [[formel]] (not (page [[formulas]])) (not (page [[templates-uni]])) (not(page [[schaltungstechnik]])) (not [[journal]])))}}
   query-sort-by:: block
   query-table:: true
-  query-sort-desc:: true
+  query-sort-desc:: false
   query-properties:: [:block :bezeichnung]
