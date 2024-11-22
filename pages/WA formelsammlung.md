@@ -145,7 +145,6 @@ tags:: [[wellenausbreitung]], formeln
 	  id:: 6735b379-fdec-41d2-9e92-0a885348c026
 	  tags:: formel
 	  bezeichnung:: transportierte leistung in der parallelplattenleitung
-	  collapsed:: true
 		- $E_{y0}$ ... elektrisches Feld in $y$-Richtung (normal zur Platte/Grenzfläche) $\mathrm{\left[ \frac{V}{m} \right]}$
 		- $d$ ... abstand zwischen den platten der parallelplattenleitung $\mathrm{\left[ m \right]}$
 		- $Z_{PV}$ ... Widerstand der über leistung und spannung berechnet wird. entspricht dem [[wellenwiderstand]] $Z_L$ bzw $\eta$ $\mathrm{\left[ \Omega \right]}$
