@@ -61,4 +61,4 @@ ich verwende logseq für so ziemlich alles und habe einige workflows entwickelt.
 [hier](https://docs.logseq.com/#/page/plugins) ist eine anleitung wie man plugins installiert
 
 ### TODOs
-- contribution guidelines
+- [contribution guidelines](https://github.com/Ingegneus/tuwien-etit-courses/blob/main/UNI-CONTRIBUTION.md)
