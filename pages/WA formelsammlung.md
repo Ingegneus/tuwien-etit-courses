@@ -84,7 +84,6 @@ tags:: [[wellenausbreitung]], formeln
 	- $H_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial x}H_{z} - \omega \delta \frac{\partial}{\partial y}E_{z} \right)$
 	- $H_{y} = \frac{ - j}{\kappa^{2}} \left( k_{z} \frac{\partial}{\partial y} H_{z} + \omega \delta \frac{\partial}{\partial x} E_{z} \right)$
 - ## [[homogene ebene wellen]]
-  collapsed:: true
 	- $+ \cfrac{\partial}{\partial z}e_{y} = \mu \cfrac{\partial}{\partial t}h_{x}$
 	- $- \cfrac{\partial}{\partial z}e_{x} = \mu \cfrac{\partial}{\partial t}h_{y}$
 	- $0 = \mu \cfrac{\partial}{\partial t}h_{z}$
@@ -93,7 +92,16 @@ tags:: [[wellenausbreitung]], formeln
 	- $0 = \varepsilon \cfrac{\partial}{\partial t}e_{z}$
 	- $\cfrac{\partial^2}{\partial z^2}e_{x} - \mu \varepsilon \cfrac{\partial^2}{\partial t^2}e_{x} = 0$
 	- $e_{x}\left(z,t\right) = \underbrace{c_1f_1\left(z - vt\right)}_{ = e_{x}^{ + }\left(z,t\right)} + \underbrace{c_2f_2\left(z + vt\right)}_{ = e_{x}^{ - }\left(z,t\right)}$
-	- $v = \cfrac{1}{\sqrt{\varepsilon \mu}} = \cfrac{\omega}{k}$
+	- $v_p = \cfrac{1}{\sqrt{\varepsilon \mu}} = \cfrac{\omega}{k}$
+	  tags:: formel
+	  bezeichnung:: phasengeschwindigkeit
+	  id:: 673e3379-4b5b-475a-91a4-08da8e21eb58
+	  collapsed:: true
+		- $v_p$ ... phasengeschwindigkeit $\mathrm{\left[ \frac{m}{s} \right]}$
+		- $\varepsilon$ ... absolute [[permittivität]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
+		- $\mu$ ... absolute [[permeabilität]] $\mathrm{\left[ \frac{Vs}{Am} \right]}$
+		- $\omega$ ... [[Kreisfrequenz]] der welle $\mathrm{\left[ \frac{rad}{s} \right]}$
+		- $k$ ... [[wellenzahl]] $\mathrm{\left[ \frac{rad}{m} \right]}$
 	- ((673c4eb2-5827-434c-a323-0ff29f347504))
 	- ((673b66c9-9d1e-40e9-9289-92ee3f902303))
 	- $h_{x}^{ + } = - \cfrac{e_{y}^{ + }}{\eta}$
@@ -110,10 +118,13 @@ tags:: [[wellenausbreitung]], formeln
 	- $\overline{\vect{P}\left(t\right)}=\overline{\vect{E}\times \vect{H}}=\cfrac{1}{\eta}\left(\overline{{e_{x}^{+}}^2+{e_{y}^{+}}^2}\right)\vect{i}_{z}=\cfrac{1}{2\eta}\left(\overline{E_{x0}^2+E_{y0}^2}\right)\vect{i}_{z}$
 	  id:: 6735b379-9fad-4f67-bd6e-6a9603401496
 	- $e_{x}\left(z,t\right) = \operatorname{Re} \{E_{x}\left(z\right)e^{j \omega t} \} = E_0 \cos \left(k\left(vt - z\right) \right) = E_0 \cos \left( \omega t - kz \right)$
-	- $k = \cfrac{\omega}{v} = \omega \sqrt{\mu \varepsilon}$
+	- ((67403e6c-c82c-4ada-a67e-ba11b41ebcc8))
+	  id:: 67404a07-268a-4632-b86f-c136cdfaf0eb
 	- $\lambda = \cfrac{2 \pi}{k} = \cfrac{2 \pi}{\omega \sqrt{\varepsilon \mu}}$
 	- ${\vect{E}_1 = \vect{E}_{x} = \left(E_1 \vect{i}_{x} + 0 \vect{i}_{y} \right)e^{ - jkz}}$
+	  id:: 673e3379-9e8e-4059-b99e-e764c678fa51
 	- ${\vect{E}_2 = \vect{E}_{y} = \left(0 \vect{i}_{x} + E_2 \vect{i}_{y} \right)e^{ - jkz}}$
+	  id:: 673e3379-e89e-4420-ab3d-b82a29adc93c
 	- ${e_{ x}\left(z,t\right) = E_1 \cos\left( ω t - kz \right)}$
 	- ${e_{y}\left(z,t\right) = E_2 \cos \left( \omega t - kz + \psi \right)}$
 	- ${e_{x}\left(0,t\right) = E_1 \cos{\left( \omega t\right)}}$
@@ -123,6 +134,7 @@ tags:: [[wellenausbreitung]], formeln
 	- ${e_{x}\left(z,0\right)} = {E \cos \left( - kz \right) = E \cos\left(kz\right)}$
 	- ${e_{y}\left(z,0\right)} = {E \cos \left( - kz \pm \cfrac{\pi}{2} \right) = \pm E \sin \left(kz \right)}$
 	- $\vect{E} =E_{y0}e^{ - jkz} \vect{i}_y$
+	  id:: 673e3379-7ae8-425b-bf90-a176d50f983b
 	- $\eta \vect{H} = - E_{y0}e^{ - jkz} \vect{i}_{x}$
 	  id:: 6735b379-187a-4654-8126-efd8a322477b
 	- $\begin{aligned} P&=\int\vect{P}\cdot\opn{d}\vect{F}=\cfrac12\opn{Re} \left\{\int(\vect{E}\times\vect{H^{*}})\cdot\opn{d}\vect{F} \right\} \\ &= \cfrac{1}{2} \opn{Re} \left\{\int(E_{x}H_{y}^{*} - E_{y}H_{x}^{*}) \opn{d}F \right\} \\ &= \cfrac{w d}{2} \opn{Re} \{ - E_{y0}e^{ - j k z}( - \cfrac{E_{y0}}{\eta}e^{ + j k z}) \} = \cfrac{E_{y0}^{2}}{2 \eta}w d \end{aligned}$
@@ -133,6 +145,7 @@ tags:: [[wellenausbreitung]], formeln
 	  id:: 6735b379-fdec-41d2-9e92-0a885348c026
 	  tags:: formel
 	  bezeichnung:: transportierte leistung in der parallelplattenleitung
+	  collapsed:: true
 		- $E_{y0}$ ... elektrisches Feld in $y$-Richtung (normal zur Platte/Grenzfläche) $\mathrm{\left[ \frac{V}{m} \right]}$
 		- $d$ ... abstand zwischen den platten der parallelplattenleitung $\mathrm{\left[ m \right]}$
 		- $Z_{PV}$ ... Widerstand der über leistung und spannung berechnet wird. entspricht dem [[wellenwiderstand]] $Z_L$ bzw $\eta$ $\mathrm{\left[ \Omega \right]}$
@@ -140,6 +153,14 @@ tags:: [[wellenausbreitung]], formeln
 	- $\vect{\nabla}\times\vect{H}=\sigma\vec{E}+j\omega\varepsilon\vect{E}$
 	- $\delta = \varepsilon - j\cfrac{\sigma}{\omega} = \varepsilon(1 - j s)$
 	- $s = \cfrac{1}{Q} = \tan \theta = \cfrac{\sigma}{\varepsilon \omega}$
+	  id:: 673e3379-65ec-4bba-988b-f6a5d8499e68
+	  tags:: formel, wip
+	  bezeichnung:: bandbreite
+		- $s$ ... bandbreite $\mathrm{\left[ - \right]}$
+		- $Q$ ... güte $\mathrm{\left[ - \right]}$
+		- $\sigma$ ... elektrische leitfähigkeit $\mathrm{\left[ \frac{S}{m} \right]}$
+		- $\varepsilon$ ... absolute [[permittivität]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
+		- $\omega$ ... [[Kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
 	- $\eta^{2} = \cfrac{\mu}{\delta} = \cfrac{\mu}{\varepsilon} \cfrac{1}{1 - j s}$
 	- $\eta = \mathbb{R} + j \mathbb{X} = \eta_{\opn{E}} \cfrac{1}{\sqrt{1 - j s}}$
 	- $j k_{z} = j \omega \sqrt{\mu \delta} = j \omega \sqrt{\mu \varepsilon} \sqrt{1 - j s} = \gamma = \alpha + j \beta$
@@ -155,6 +176,7 @@ tags:: [[wellenausbreitung]], formeln
 	  tags:: formel
 	  bezeichnung:: brechungsgesetz/gesetz von snellius
 	  id:: 6734720f-e42f-46c0-a512-3075ea423042
+	  collapsed:: true
 		- $\Theta_1$ ... winkel in medium 1 (eintritt) $\mathrm{[°]}$
 		- $\Theta_2$ ... winkel in medium 2 (transmission) $\mathrm{[°]}$
 		- $\varepsilon_1$ ... absolute [[permittivität]] $\mathrm{\left[\frac{As}{Vm}\right]}$
@@ -164,6 +186,7 @@ tags:: [[wellenausbreitung]], formeln
 	  id:: 6735b379-5292-4604-baef-85a4c9a6fc3f
 	  tags:: formel, wip
 	  bezeichnung:: reflektionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TM fall)
+	  collapsed:: true
 		- $\Gamma_{\mathrm{TM}}$ ... reflexionsfaktor der TM Welle $\mathrm{\left[ - \right]}$
 		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
 		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
@@ -173,6 +196,7 @@ tags:: [[wellenausbreitung]], formeln
 	  id:: 6735b379-80fa-4b2a-be2d-af5089fe1fa8
 	  tags:: formel, wip
 	  bezeichnung:: transmissionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TM fall)
+	  collapsed:: true
 		- $T_{\mathrm{TE}}$ ... transmissionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
 		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
 		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
@@ -182,6 +206,7 @@ tags:: [[wellenausbreitung]], formeln
 	  id:: 6735b379-8ba8-4a90-b5e2-8b5b38036526
 	  tags:: formel, wip
 	  bezeichnung:: reflektionsfaktor der transversal polarisierten elektrischen welle (fresnel formel TE fall)
+	  collapsed:: true
 		- $\Gamma_{\mathrm{TE}}$ ... reflexionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
 		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
 		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
@@ -191,6 +216,7 @@ tags:: [[wellenausbreitung]], formeln
 	  id:: 6735b379-1a1f-417e-8323-7fe94bd9e2cf
 	  tags:: formel
 	  bezeichnung:: transmissionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TE fall)
+	  collapsed:: true
 		- $T_{\mathrm{TE}}$ ... transmissionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
 		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
 		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$

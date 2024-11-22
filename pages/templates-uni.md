@@ -101,3 +101,24 @@ tags:: [[templates]], [[uni]]
 	  tags:: formel
 	  bezeichnung:: -
 		- $-$ ...
+- new calc block
+  template:: new calc block
+  template-including-parent:: false
+	- ```python
+	  import pyodide_js
+	  await pyodide_js.loadPackage("micropip")
+	  import micropip
+	  await micropip.install('scipy')
+	  from scipy import *
+	  from scipy.constants import *
+	  from numpy import arcsin, arctan, arccos
+	  
+	  "resultat: " + f"{var:.4g}" + "unit"
+	  ```
+		- {{evalparent}}
+- calc block
+  template:: calc block
+  template-including-parent:: false
+	- ```python
+	  ```
+		- {{evalparent}}

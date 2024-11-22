@@ -14,6 +14,7 @@ alias:: wave propagation, wellenausbreitungs
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp){:width 400}
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
 					- $\Theta_i = \Theta_r$
 					  tags:: formel
@@ -29,10 +30,12 @@ alias:: wave propagation, wellenausbreitungs
 						- $n_2$ ... [[brechungsindex]] $\mathrm{[-]}$
 			- b) Berechnen Sie die Querschnitsfläche $A$ des transmittierten Strahls!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
 					- ((6734720b-5c51-4f95-ac33-ed541e99c1ca))
 			- c) Berechnen Sie die Leistungen $P_{\mathrm{TE,t}}$ und $P_{\mathrm{TM,t}}$ der transmittierten Wellen!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
 					- ((6735b379-5292-4604-baef-85a4c9a6fc3f))
 					- ((6735b379-80fa-4b2a-be2d-af5089fe1fa8))
@@ -56,6 +59,7 @@ alias:: wave propagation, wellenausbreitungs
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp){:width 400}
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
 					- $\Theta_i = \Theta_r$
 					  tags:: formel
@@ -72,6 +76,7 @@ alias:: wave propagation, wellenausbreitungs
 			- b) Berechnen Sie die TE und TM-Anteile ($E$ und $H$) der reﬂektierten und der transmittierten Welle!
 			  background-color:: green
 			  id:: 673c4ed2-dc05-4f5a-9d66-ba650eefaef8
+			  collapsed:: true
 				- formeln
 				  id:: 673c4ed2-0871-43a6-bce8-22143bd350d7
 					- ((6735b379-5292-4604-baef-85a4c9a6fc3f))
@@ -116,27 +121,20 @@ alias:: wave propagation, wellenausbreitungs
 					- ((6735b379-9a02-48b3-997c-2ecd856cb257))
 				- lösung
 					- ```python
-					  import math
-					  
-					  def cos(x):
-					      return math.cos(x)
-					  def sin(x):
-					      return math.sin(x)
-					  def asin(x):
-					      return math.asin(x)
-					  def sqrt(x):
-					      return math.sqrt(x)
-					  def pow2(x):
-					      return math.pow(x,2)
-					  def log10(x):
-					      return math.log10(x)
+					  import pyodide_js
+					  await pyodide_js.loadPackage("micropip")
+					  import micropip
+					  await micropip.install('scipy')
+					  from scipy import *
+					  from scipy.constants import *
+					  from numpy import arcsin, arctan, arccos
 					  
 					  n1 = 1
 					  n2 = 1.33
 					  n = n2/n1
-					  theta1 = math.radians(75)
-					  theta2 = asin(n1/n2 * sin(theta1))
-					  "theta2: " + str(math.degrees(theta2))
+					  theta1 = 75 * degree
+					  theta2 = arcsin(n1/n2 * sin(theta1))
+					  "theta2: " + f"{round(theta2 / degree,3)}" +" deg"
 					  ```
 						- {{evalparent}}
 					- ```python
@@ -185,16 +183,61 @@ alias:: wave propagation, wellenausbreitungs
 		  background-color:: green
 		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
 		  ![img](../assets/documents/WA_stehende_welle_wand_bsp1.webp){:width 400}
+			- skript
+			  collapsed:: true
+				- ((67405657-2347-4d8b-93f5-98a6b52c836c))
 			- a) Wie groß ist die Phasengeschwindigkeit $v_P$?
 			  background-color:: green
+			  collapsed:: true
+				- formeln
+					- ((673e3379-4b5b-475a-91a4-08da8e21eb58))
+				- lösung
+					- ```python
+					  import pyodide_js
+					  await pyodide_js.loadPackage("micropip")
+					  import micropip
+					  await micropip.install('scipy')
+					  from scipy import *
+					  from scipy.constants import *
+					  from numpy import arcsin, arctan, arccos
+					  
+					  epsr = 7
+					  mur = 1
+					  
+					  v_p = 1/((epsilon_0 * epsr * mu_0 * mur)**(1/2))
+					  "v_p = " + f"{v_p:.4g}" + " m/s"
+					  ```
+						- {{evalparent}}
 			- b) Setzten Sie die einfallende Welle an ($E_e$ und $H_e$) und berechnen Sie die Wellenzahl $k_e$. Wie groß ist die Dämpfung in $\mathrm{dB/m}$
 			  background-color:: green
+				- formeln
+					- ((67404a07-268a-4632-b86f-c136cdfaf0eb))
+					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
+					- ((673e3379-65ec-4bba-988b-f6a5d8499e68))
+				- lösung
+					- ```python
+					  mu = mur * mu_0
+					  eps = epsr * epsilon_0
+					  f = 20E6
+					  w = 2 * pi * f
+					  k = w * sqrt(mu * eps)
+					  "k = " + f"{k:.4g}" + "rad/m"
+					  ```
+						- {{evalparent}}
+					- ```python
+					  # bei z = 0
+					  E0 = 5
+					  
+					  ```
+						- {{evalparent}}
 			- c) Berechnen Sie die komplexe Amplitude und den zeitlichen Verlauf der einfallenden Welle am Ort der metallischen Wand $z_0 = \mathrm{8~m}$!
 			  background-color:: green
 			- d) Finden Sie einen Ansatz für die reﬂektierte Welle ($E_r$ und $H_r$)! Wie muss der zeitliche Verlauf der reﬂektierten Welle aussehen, damit die Randbedingungen erfüllt sind?
 			  background-color:: green
 			- e) Berechnen Sie die Hüllkurve des Gesamtfeldes
 			  background-color:: green
+			- [📚 2024-11-21 18h45m.xopp](../assets/documents/2024-11-21 18h45m.xopp)
+			- ![📚 2024-11-21 18h45m_annotated.pdf](../assets/documents/2024-11-21 18h45m_annotated.pdf)
 - ## flashcards
 	- ### index
 		- query-table:: true

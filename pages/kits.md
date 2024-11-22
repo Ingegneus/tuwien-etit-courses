@@ -39,11 +39,19 @@
 			- call the entry function once for each macro, passing it the macro’s element
 				- The macro can provide arguments to the element, read from your code with `.dataset` or `.getAttribute`
 	- to use libraries in [[python]] use:
-		- ```python
+		- id:: 673e338c-774b-497c-8a98-ce0e6cfeabd6
+		  ```python
 		  import js
 		  pyodide = js.logseq.Language.python.Pyodide
 		  await pyodide.loadPackage("package-name")
 		  ```testing [[kits]]
+			- has limitations, since pyodide doesn't provide every package on PyPI
+		- ```python
+		  import pyodide_js
+		  await pyodide_js.loadPackage("micropip")
+		  import micropip
+		  await micropip.install('package-name')
+		  ```
 	- [[file]] interactions are difficult, but maybe can be circumvented by uploading files to the internet, and then using web requests, though the standard `requests` package doesn't work in pyodide
 	  id:: 664cf2b0-d577-473d-9ee0-7a82edbc3d0e
 		- ```python

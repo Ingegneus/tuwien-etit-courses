@@ -9,5 +9,22 @@
                           :rects (),
                           :page 120},
                :content {:text "[:span]", :image 1731662728516},
+               :properties {:color "green"}}
+              {:id #uuid "67405657-2347-4d8b-93f5-98a6b52c836c",
+               :page 47,
+               :position {:bounding {:x1 93.00158432126045,
+                                     :y1 565.8744506835938,
+                                     :x2 327.16447189450264,
+                                     :y2 579.5675048828125,
+                                     :width 513,
+                                     :height 725.9596638655463},
+                          :rects ({:x1 93.00158432126045,
+                                   :y1 565.8744506835938,
+                                   :x2 327.16447189450264,
+                                   :y2 579.5675048828125,
+                                   :width 513,
+                                   :height 725.9596638655463}),
+                          :page 47},
+               :content {:text "Grenzﬂäche zu ideal leitfähigem Metall"},
                :properties {:color "green"}}],
- :extra {:page 120}}
+ :extra {:page 48}}
