@@ -16,14 +16,13 @@ alias:: wellenzahl, repetenz
 	- $\varepsilon$ ... absolute [[permittivität]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
 	- $\mu$ ... absolute [[permeabilität]] $\mathrm{\left[ \frac{Vs}{Am} \right]}$
 - $j k_{z} = j k_{\opn{E}} \sqrt{1 - j s}$
-  id:: 673e3379-c0da-481e-b625-bd67e865a008
   tags:: formel, wip
   bezeichnung:: koplexwertige [[wellenzahl]], in verlustbehafteten medien
 	- $-$ ...
 - $j k_{z} = j \omega \sqrt{\mu \delta} = j \omega \sqrt{\mu \varepsilon} \sqrt{1 - j s} = \gamma = \alpha + j \beta$
-  id:: 673e3379-30f5-45e3-8e01-5b4add8a83e2
   tags:: formel, wip
   bezeichnung:: koplexwertige [[wellenzahl]], in verlustbehafteten medien
+  id:: 674496c6-ef08-4cfe-8444-ef86aadf0f47
 	- $k_z$ ... [[wellenzahl]] in $z$-richtung $\mathrm{\left[ \frac{rad}{m} \right]}$
 	- $\omega$ ... [[Kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
 	- $\mu$ ... absolute [[magnetische permeabilität]] $\mathrm{\left[ \frac{Vs}{Am} \right]}$

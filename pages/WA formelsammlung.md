@@ -4,7 +4,6 @@ template-used:: standard-page
 tags:: [[wellenausbreitung]], formeln
 
 - ## [[maxwell]]
-  collapsed:: true
 	- $\vect{\nabla} \cdot \vect{S} = \opn{lim}_{\mathcal{V} \to0} \frac{1}{V} \oint_{\Sigma} \vect{S} \cdot \opn{d} \vect{F} = - \frac{\partial}{\partial t} \rho$
 	- $\vect{\nabla} \cdot( \vect{\nabla} \times \vect{H}) \equiv0$
 	- $\vect{\nabla} \times \vect{H} = \vect{S} + \frac{\partial}{\partial t} \vect{D}$
@@ -31,6 +30,15 @@ tags:: [[wellenausbreitung]], formeln
 	- $\vect{\nabla} \times \vect{H} = \vect{S} + j \omega \vect{D} = \sigma \vect{E} + j \omega \varepsilon \vect{E} = j \omega \delta \vect{E}$
 	- $\delta = \varepsilon + \frac{\sigma}{j \omega} = \varepsilon - j \frac{\sigma}{\omega}$
 	- $\tan \theta = \frac{\varepsilon^{\prime \prime}}{\varepsilon^{\prime}} = \frac{\sigma}{\omega \varepsilon}$
+	  id:: 673e3379-c5b6-4af8-a61a-20daa9718476
+	  tags:: formel, wip
+	  bezeichnung:: verlustwinkel
+		- $\tan \theta$ ...  verlustwinkel
+		- $\varepsilon''$ ... [[imaginärteil]] von ((673e3379-64cb-4d50-98c9-668f6b9fd3fd)) $\mathrm{\left[ \frac{As}{Vm} \right]}$
+		- $\varepsilon'$ ... [[realteil]]  von ((673e3379-64cb-4d50-98c9-668f6b9fd3fd)) $\mathrm{\left[ \frac{As}{Vm} \right]}$
+		- $\sigma$ ... elektrische leitfähigkeit $\mathrm{\left[ \frac{S}{m} \right]}$
+		- $\varepsilon$ ... absolute [[permittivität]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
+		- $\omega$ ... [[Kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
 	- $\vect{\nabla} \cdot \vect{E} = 0$
 	- $\vect{\nabla} \cdot \vect{H} = 0$
 	- $\vect{\nabla} \times \vect{E} = - j \omega \mu \vect{H}$
@@ -150,8 +158,8 @@ tags:: [[wellenausbreitung]], formeln
 		- $Z_{PV}$ ... Widerstand der über leistung und spannung berechnet wird. entspricht dem [[wellenwiderstand]] $Z_L$ bzw $\eta$ $\mathrm{\left[ \Omega \right]}$
 	- $\vect{\nabla}\times\vec{E}=-j\omega\mu\vect{H}$
 	- $\vect{\nabla}\times\vect{H}=\sigma\vec{E}+j\omega\varepsilon\vect{E}$
-	- $\delta = \varepsilon - j\cfrac{\sigma}{\omega} = \varepsilon(1 - j s)$
-	- $s = \cfrac{1}{Q} = \tan \theta = \cfrac{\sigma}{\varepsilon \omega}$
+	- ((673e3379-64cb-4d50-98c9-668f6b9fd3fd))
+	- $s = \cfrac{1}{Q} =$ ((673e3379-c5b6-4af8-a61a-20daa9718476))
 	  id:: 673e3379-65ec-4bba-988b-f6a5d8499e68
 	  tags:: formel, wip
 	  bezeichnung:: bandbreite
@@ -162,7 +170,7 @@ tags:: [[wellenausbreitung]], formeln
 		- $\omega$ ... [[Kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
 	- $\eta^{2} = \cfrac{\mu}{\delta} = \cfrac{\mu}{\varepsilon} \cfrac{1}{1 - j s}$
 	- $\eta = \mathbb{R} + j \mathbb{X} = \eta_{\opn{E}} \cfrac{1}{\sqrt{1 - j s}}$
-	- ((673e3379-30f5-45e3-8e01-5b4add8a83e2))
+	- ((674496c6-ef08-4cfe-8444-ef86aadf0f47))
 	  id:: 6740c68b-e124-4f93-b1f1-9c8be879951c
 	- ((673e3379-c0da-481e-b625-bd67e865a008))
 	- $\mathbb{R} = \eta_{\opn{E}} \sqrt{\cfrac{\sqrt{1 + s^{2}} + 1}{2(1 + s^{2})}} \qquad \mathbb{X} = \eta_{\opn{E}} \sqrt{\cfrac{\sqrt{1 + s^{2}} - 1}{2(1 + s^{2})}}$
@@ -172,6 +180,7 @@ tags:: [[wellenausbreitung]], formeln
 	- $\eta \approx \eta_{\opn{E}} \cfrac{1 + j}{\sqrt{2s}} \qquad j k_{z} \approx k_{\opn{E}} \sqrt{\cfrac{s}{2}}\left(1 + j\right)$
 	- $d = \cfrac{1}{\alpha} \approx \cfrac{1}{k_{\opn{E}}} \sqrt{\cfrac{2}{s}} = \sqrt{\cfrac{2}{\omega \mu \sigma}}$
 - ## Reﬂexion an glatten Grenzflächen, die [[parallelplattenleitung]]
+  collapsed:: true
 	- $\frac{\sin \Theta_{1}}{\sin \Theta_{2}} =  \sqrt{\frac{\varepsilon_{2}}{\varepsilon_{1}}} =  \frac{n_{2}}{n_{1}}$
 	  tags:: formel
 	  bezeichnung:: brechungsgesetz/gesetz von snellius

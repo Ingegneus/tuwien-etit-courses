@@ -23,8 +23,8 @@ alias:: brechungsindex, brechungsindexes, brechungsindizes
   tags:: formel
   bezeichnung:: [[konplexer]] [[brechnungsindex]]
 	- $\underline n$ ... [[komplexer]] [[brechnungsindex]] $\mathrm{\left[ - \right]}$
-	- $\underline \mu$ ... [[komplexe]] relativer [[magnetsiche permeabilität]] $\mathrm{\left[ - \right]}$
-	- $\underline \varepsilon$ ... [[komplexe]] relativer [[elektrische permettivität]] $\mathrm{\left[ - \right]}$
+	- $\underline \mu$ ... [[komplexer]] relativer [[magnetsiche permeabilität]] $\mathrm{\left[ - \right]}$
+	- $\underline \varepsilon$ ... [[komplexer]] relativer [[elektrische permettivität]] $\mathrm{\left[ - \right]}$
 - $n=\sqrt{\mu_r \cdot \varepsilon_r}$
   tags:: formel
   bezeichnung:: [[brechnungsindex]]

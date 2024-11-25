@@ -9,6 +9,7 @@ alias:: wave propagation, wellenausbreitungs
 - ## beispiele
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.6}$) eingestrahlt.
 		  background-color:: green
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp){:width 400}
@@ -191,7 +192,6 @@ alias:: wave propagation, wellenausbreitungs
 				  id:: 6740c4fa-4d26-4310-b196-321b7391feb6
 			- a) Wie groß ist die Phasengeschwindigkeit $v_P$?
 			  background-color:: green
-			  collapsed:: true
 				- formeln
 					- ((673e3379-4b5b-475a-91a4-08da8e21eb58))
 				- lösung
@@ -202,7 +202,7 @@ alias:: wave propagation, wellenausbreitungs
 					  await micropip.install('scipy')
 					  from scipy import *
 					  from scipy.constants import *
-					  from numpy import arcsin, arctan, arccos
+					  from numpy import *
 					  
 					  epsr = 7
 					  mur = 1
@@ -217,7 +217,8 @@ alias:: wave propagation, wellenausbreitungs
 					- ((67404a07-268a-4632-b86f-c136cdfaf0eb))
 					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
 					- ((673e3379-65ec-4bba-988b-f6a5d8499e68))
-					- ((673e3379-30f5-45e3-8e01-5b4add8a83e2)) [FS](((6740c68b-e124-4f93-b1f1-9c8be879951c)))
+					- ((674496c6-ef08-4cfe-8444-ef86aadf0f47)) [FS](((6740c68b-e124-4f93-b1f1-9c8be879951c)))
+					- ((673e3379-64cb-4d50-98c9-668f6b9fd3fd))
 				- lösung
 					- ```python
 					  mu = mur * mu_0
@@ -235,12 +236,31 @@ alias:: wave propagation, wellenausbreitungs
 					  alpha = 0
 					  
 					  s = sig / (eps * w)
-					  D = 20 * log10(E0 / (E0 * e**-alpha))
-					  "D = " + f"{D}" + "dB" 
+					  jkz=1j*k*sqrt(1-1j*s)
+					  alpha = real(jkz)
+					  beta = imag(jkz)
+					  
+					  "α = " + f"{alpha:.4g}" + " rad/m \n\
+					  β = " + f"{beta:.4g}" + " rad/m"
 					  ```
+						- {{evalparent}}
+					- ```python
+					  
+					  D = 20 * log10(E0 / (E0 * e**-alpha))
+					  
+					  "D = " + f"{D:.4g}" + " dB"
+					  ```
+						- ich weiß leider nicht warum man genau die Dämpfung so ausrechnet und warum man genau $\alpha$ verwendet #wip
 						- {{evalparent}}
 			- c) Berechnen Sie die komplexe Amplitude und den zeitlichen Verlauf der einfallenden Welle am Ort der metallischen Wand $z_0 = \mathrm{8~m}$!
 			  background-color:: green
+				- formeln
+					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
+				- ```python
+				  E = E0 * e**(-jkz*8)
+				  "E = " + f"{E:.4g}" + " V/m"
+				  ```
+					- {{evalparent}}
 			- d) Finden Sie einen Ansatz für die reﬂektierte Welle ($E_r$ und $H_r$)! Wie muss der zeitliche Verlauf der reﬂektierten Welle aussehen, damit die Randbedingungen erfüllt sind?
 			  background-color:: green
 			- e) Berechnen Sie die Hüllkurve des Gesamtfeldes
