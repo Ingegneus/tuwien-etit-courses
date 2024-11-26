@@ -257,7 +257,9 @@ alias:: wave propagation, wellenausbreitungs
 				- formeln
 					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
 				- ```python
-				  E = E0 * e**(-jkz*8)
+				  z0 = 8
+				  z = z0
+				  E = E0 * e**(-jkz*z)
 				  "E = " + f"{E:.4g}" + " V/m"
 				  ```
 					- {{evalparent}}

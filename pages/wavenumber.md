@@ -18,6 +18,7 @@ alias:: wellenzahl, repetenz
 - $j k_{z} = j k_{\opn{E}} \sqrt{1 - j s}$
   tags:: formel, wip
   bezeichnung:: koplexwertige [[wellenzahl]], in verlustbehafteten medien
+  id:: 673e3379-c0da-481e-b625-bd67e865a008
 	- $-$ ...
 - $j k_{z} = j \omega \sqrt{\mu \delta} = j \omega \sqrt{\mu \varepsilon} \sqrt{1 - j s} = \gamma = \alpha + j \beta$
   tags:: formel, wip
