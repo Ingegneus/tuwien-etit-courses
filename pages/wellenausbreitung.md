@@ -9,10 +9,10 @@ alias:: wave propagation, wellenausbreitungs
 - ## beispiele
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
-	  collapsed:: true
 		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.6}$) eingestrahlt.
 		  background-color:: green
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp){:width 400}
+			- {{evalpage}}
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
 			  collapsed:: true
@@ -58,6 +58,7 @@ alias:: wave propagation, wellenausbreitungs
 		  background-color:: green
 		  id:: 673c4ed2-b233-4982-9c12-8768a4de297f
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp){:width 400}
+			- {{evalpage}}
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
 			  collapsed:: true
@@ -107,6 +108,7 @@ alias:: wave propagation, wellenausbreitungs
 		- Variante 3) Ein Lichtstrahl der Sonne (unpolarisiert, aber TM, TE gleich stark) fällt zu später Stunde ($\Theta_e = 75°$) auf einen See ($n_2 = 1.33$). An der glatten Wasseroberﬂäche wird er reﬂektiert. Zwei Fotografen fotograﬁeren diese Landschaft. Der zweite verwendet ein ideales Polarisationsﬁlter um die Reﬂexion der Sonne im Wasser zu unterdrücken.
 		  background-color:: green
 		  ![img](../assets/documents/WA_vakuum_glas_bsp.webp){:width 400, :height 213}
+			- {{evalpage}}
 			- a) Wie groß ist die (gesamte) reﬂektierte Lichtleistung im Verhältnis zur eingestrahlten (in $\mathrm{dB}$)? Zeichnen Sie alle verwendeten Winkel ein.
 			  background-color:: green
 				- formeln
@@ -180,6 +182,7 @@ alias:: wave propagation, wellenausbreitungs
 			- ![📚 2024-11-20 19h04m_annotated.pdf](../assets/documents/2024-11-20 19h04m_annotated.pdf)
 	- Stehende Welle im verlustbehafteten Medium
 	  background-color:: green
+	  collapsed:: true
 		- Eine sich im [verlustbehafteten Medium](((6740c4fa-4d26-4310-b196-321b7391feb6))) (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden [metallischen Wand mit unendlicher Leitfähigkeit](((67405634-4634-4d0d-b586-6a52b1bb7c75))) reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
 		  background-color:: green
 		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
@@ -190,6 +193,7 @@ alias:: wave propagation, wellenausbreitungs
 				  id:: 67405634-4634-4d0d-b586-6a52b1bb7c75
 				- ((6740c51b-b09e-4b73-b018-e2d77efe468b))
 				  id:: 6740c4fa-4d26-4310-b196-321b7391feb6
+			- {{evalpage}}
 			- a) Wie groß ist die Phasengeschwindigkeit $v_P$?
 			  background-color:: green
 				- formeln
@@ -216,17 +220,17 @@ alias:: wave propagation, wellenausbreitungs
 				- formeln
 					- ((67404a07-268a-4632-b86f-c136cdfaf0eb))
 					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
-					- ((673e3379-65ec-4bba-988b-f6a5d8499e68))
+					- ((673e3379-65ec-4bba-988b-f6a5d8499e68)) [FS](((6745a2d1-96eb-4141-93fd-4c8e10df8d94)))
 					- ((674496c6-ef08-4cfe-8444-ef86aadf0f47)) [FS](((6740c68b-e124-4f93-b1f1-9c8be879951c)))
-					- ((673e3379-64cb-4d50-98c9-668f6b9fd3fd))
+					- ((67459ac7-d3b4-47bf-9ac5-0379a5e2e1e8)) [FS](((673e3379-64cb-4d50-98c9-668f6b9fd3fd)))
 				- lösung
 					- ```python
 					  mu = mur * mu_0
 					  eps = epsr * epsilon_0
 					  f = 20E6
 					  w = 2 * pi * f
-					  k = w * sqrt(mu * eps)
-					  "k = " + f"{k:.4g}" + "rad/m"
+					  ke = w * sqrt(mu * eps)
+					  "ke = " + f"{ke:.4g}" + "rad/m"
 					  ```
 						- {{evalparent}}
 					- ```python
@@ -236,39 +240,112 @@ alias:: wave propagation, wellenausbreitungs
 					  alpha = 0
 					  
 					  s = sig / (eps * w)
-					  jkz=1j*k*sqrt(1-1j*s)
-					  alpha = real(jkz)
-					  beta = imag(jkz)
+					  jke=1j*ke*sqrt(1-1j*s)
+					  alpha = real(jke)
+					  beta = imag(jke)
 					  
 					  "α = " + f"{alpha:.4g}" + " rad/m \n\
 					  β = " + f"{beta:.4g}" + " rad/m"
 					  ```
 						- {{evalparent}}
 					- ```python
-					  
 					  D = 20 * log10(E0 / (E0 * e**-alpha))
 					  
 					  "D = " + f"{D:.4g}" + " dB"
 					  ```
-						- ich weiß leider nicht warum man genau die Dämpfung so ausrechnet und warum man genau $\alpha$ verwendet #wip
 						- {{evalparent}}
+						- ich weiß leider nicht warum man genau die Dämpfung so ausrechnet und warum man genau $\alpha$ verwendet #wip
 			- c) Berechnen Sie die komplexe Amplitude und den zeitlichen Verlauf der einfallenden Welle am Ort der metallischen Wand $z_0 = \mathrm{8~m}$!
 			  background-color:: green
 				- formeln
 					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
-				- ```python
-				  z0 = 8
-				  z = z0
-				  E = E0 * e**(-jkz*z)
-				  "E = " + f"{E:.4g}" + " V/m"
-				  ```
-					- {{evalparent}}
+					- ((673e3379-9e8e-4059-b99e-e764c678fa51))
+					- ((673e3379-54d5-49f8-b0db-18b82bf799c4))
+				- lösung
+					- ```python
+					  z0 = 8
+					  z = z0
+					  Ee = E0 * e**(-jke*z)
+					  "Ee(z=8) = " + f"{Ee:.4g}" + " V/m \n\
+					  abs(Ee) = " + f"{abs(Ee):.4g}" + " V/m"
+					  ```
+						- {{evalparent}}
+					- ```python
+					  await micropip.install('matplotlib')
+					  import matplotlib.pyplot as plt
+					  import io, base64
+					  
+					  T = 1/f
+					  print(T)
+					  t = linspace(0, 2*T , 500)  # Generate 500 points between 0 and 4π
+					  y = E0*e**(-alpha*z0)*cos(w*t-beta*z0)
+					  
+					  # Create the plot
+					  plt.plot(t, y)  # Plot y = sin(x)
+					  plt.xlabel('t')  # Label the x-axis
+					  plt.ylabel('E_e(z_0, t)')  # Label the y-axis
+					  plt.grid(True)  # Add a grid
+					  buf = io.BytesIO()
+					  plt.savefig(buf, format = 'png')
+					  buf.seek(0)
+					  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
+					  buf.close()
+					  png
+					  ```
+						- {{evalparent}}
 			- d) Finden Sie einen Ansatz für die reﬂektierte Welle ($E_r$ und $H_r$)! Wie muss der zeitliche Verlauf der reﬂektierten Welle aussehen, damit die Randbedingungen erfüllt sind?
 			  background-color:: green
+				- formeln
+					- ((67459ac8-e918-4a08-8003-07057ff681d6))
+					- ((6745a3c5-baa9-4655-ac6f-92348bdacfc0))
+					- $E_{r}=Ae^{jk_{z}\left(z-z_0\right)}$
+					  tags:: formel
+					  bezeichnung:: ansatz für die reflektierte/rücklaufende welle
+						- $E_r$ ... reflektierte/rücklaufende welle des [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
+						- $A$ ... amplitude (?) $\mathrm{\left[ \frac{V}{m} \right]}$
+						- $k_z$ ... [[komplexe]] [[wellenzahl]] $\mathrm{\left[ \frac{rad}{m} \right]}$
+						- $z$ ... entfernung in ausbreitungsrichtung (hier $z$-Achse) $\mathrm{\left[ m \right]}$
+						- $z_0$ ... entfernung zur stelle an der die reflexion stattfindet $\mathrm{\left[ m \right]}$
+				- lösung
+					- ```python
+					  t = 1
+					  epx = E0 * e**(-alpha*z) * cos(beta*z0-w*t)
+					  enx = E0 * e**(-alpha*z) * cos(beta*z0+w*t)
+					  
+					  enx+epx
+					  ```
+						- {{evalparent}}
+				- verstehe das beispiel nicht
 			- e) Berechnen Sie die Hüllkurve des Gesamtfeldes
 			  background-color:: green
+				- formeln
+					- $|E_{ges}|^2 = \vect{E}(z) \cdot \vect{E}^*(z)$
+					  tags:: formel
+					  bezeichnung:: analyse der hüllkurve des [elektrischen gesamtfeldes]([[elektrisches feld]])
+						- $|E_{ges}|^2$ ... betrags quadrat des gesamten [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
+						- $\vect{E}(z)$ ... [[komplexe]] amplitude des [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
+				- lösung
+					- ```python
+					  await micropip.install('sympy')
+					  import sympy as sp
+					  
+					  E = sp.symbols('E')
+					  E0 = sp.symbols('E0', positive = True)
+					  a = sp.symbols('a', real = True)
+					  b = sp.symbols('b', real = True)
+					  z = sp.symbols('z', real = True)
+					  z0 = sp.symbols('z0', integer = True)
+					  jkz = a + 1j * b
+					  
+					  E = E0 * (sp.E**(-jkz*z) \
+					            -sp.E**(-jkz*(2*z0-z)))
+					  sp.trigsimp(sp.conjugate(E)*E)
+					  ```
+						- {{evalparent}}
 			- [📚 2024-11-21 18h45m.xopp](../assets/documents/2024-11-21 18h45m.xopp)
 			- ![📚 2024-11-21 18h45m_annotated.pdf](../assets/documents/2024-11-21 18h45m_annotated.pdf)
+	- Rechteckhohlleiter
+		- Untersuchen Sie die Ausbreitung von $\mathrm{TE}_{m,n}$ Wellen in $z$ Richtung im skizzierten Rechteckhohlleiter.
 - ## flashcards
 	- ### index
 		- query-table:: true

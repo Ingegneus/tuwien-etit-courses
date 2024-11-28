@@ -4,6 +4,7 @@ template-used:: standard-page
 tags:: [[wellenausbreitung]], formeln
 
 - ## [[maxwell]]
+  collapsed:: true
 	- $\vect{\nabla} \cdot \vect{S} = \opn{lim}_{\mathcal{V} \to0} \frac{1}{V} \oint_{\Sigma} \vect{S} \cdot \opn{d} \vect{F} = - \frac{\partial}{\partial t} \rho$
 	- $\vect{\nabla} \cdot( \vect{\nabla} \times \vect{H}) \equiv0$
 	- $\vect{\nabla} \times \vect{H} = \vect{S} + \frac{\partial}{\partial t} \vect{D}$
@@ -38,7 +39,7 @@ tags:: [[wellenausbreitung]], formeln
 		- $\varepsilon'$ ... [[realteil]]  von ((673e3379-64cb-4d50-98c9-668f6b9fd3fd)) $\mathrm{\left[ \frac{As}{Vm} \right]}$
 		- $\sigma$ ... elektrische leitfähigkeit $\mathrm{\left[ \frac{S}{m} \right]}$
 		- $\varepsilon$ ... absolute [[permittivität]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
-		- $\omega$ ... [[Kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
+		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
 	- $\vect{\nabla} \cdot \vect{E} = 0$
 	- $\vect{\nabla} \cdot \vect{H} = 0$
 	- $\vect{\nabla} \times \vect{E} = - j \omega \mu \vect{H}$
@@ -100,6 +101,20 @@ tags:: [[wellenausbreitung]], formeln
 	- $0 = \varepsilon \cfrac{\partial}{\partial t}e_{z}$
 	- $\cfrac{\partial^2}{\partial z^2}e_{x} - \mu \varepsilon \cfrac{\partial^2}{\partial t^2}e_{x} = 0$
 	- $e_{x}\left(z,t\right) = \underbrace{c_1f_1\left(z - vt\right)}_{ = e_{x}^{ + }\left(z,t\right)} + \underbrace{c_2f_2\left(z + vt\right)}_{ = e_{x}^{ - }\left(z,t\right)}$
+	  tags:: formel
+	  bezeichnung:: allgemeiner lösungsansatz der eindimensionalen [[hew]]
+	  id:: 6745a3c5-baa9-4655-ac6f-92348bdacfc0
+	  collapsed:: true
+		- $e_x(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung $\mathrm{\left[ \frac{V}{m} \right]}$
+		- $e_x^{+}(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung der hinlaufenden welle $\mathrm{\left[ \frac{V}{m} \right]}$
+		- $e_x^{-}(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung der rücklaufenden welle $\mathrm{\left[ \frac{V}{m} \right]}$
+		- $z$ ... $z$-koordinate, hier ist es die ausbreitungsrichtung $\mathrm{\left[ m \right]}$
+		- $t$ ... zeit $\mathrm{\left[ s \right]}$
+		- $c_1 , c_2$ ... beliebige komplexe constante
+		- $f_1(z-vt) , f_2(z-vt)$ ... beliebige 2 mal stetig differenzierbare funktion
+		- skript
+		  collapsed:: true
+			- ((6745f002-178c-48da-aada-e68861acbbc2))
 	- $v_p = \cfrac{1}{\sqrt{\varepsilon \mu}} = \cfrac{\omega}{k}$
 	  tags:: formel
 	  bezeichnung:: phasengeschwindigkeit
@@ -108,7 +123,7 @@ tags:: [[wellenausbreitung]], formeln
 		- $v_p$ ... phasengeschwindigkeit $\mathrm{\left[ \frac{m}{s} \right]}$
 		- $\varepsilon$ ... absolute [[permittivität]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
 		- $\mu$ ... absolute [[permeabilität]] $\mathrm{\left[ \frac{Vs}{Am} \right]}$
-		- $\omega$ ... [[Kreisfrequenz]] der welle $\mathrm{\left[ \frac{rad}{s} \right]}$
+		- $\omega$ ... [[kreisfrequenz]] der welle $\mathrm{\left[ \frac{rad}{s} \right]}$
 		- $k$ ... [[wellenzahl]] $\mathrm{\left[ \frac{rad}{m} \right]}$
 	- ((673c4eb2-5827-434c-a323-0ff29f347504))
 	- ((673b66c9-9d1e-40e9-9289-92ee3f902303))
@@ -129,12 +144,21 @@ tags:: [[wellenausbreitung]], formeln
 	- ((67403e6c-c82c-4ada-a67e-ba11b41ebcc8))
 	  id:: 67404a07-268a-4632-b86f-c136cdfaf0eb
 	- $\lambda = \cfrac{2 \pi}{k} = \cfrac{2 \pi}{\omega \sqrt{\varepsilon \mu}}$
-	- ${\vect{E}_1 = \vect{E}_{x} = \left(E_1 \vect{i}_{x} + 0 \vect{i}_{y} \right)e^{ - jkz}}$
+	- ${\vect{E}_1 = \vect{E}_{x} = \left(E_1 \vect{i}_{x} + 0 \vect{i}_{y} \right)e^{ - jkz}} \\ {\vect{E}_2 = \vect{E}_{y} = \left(0 \vect{i}_{x} + E_2 \vect{i}_{y} \right)e^{ - jkz}}$
 	  id:: 673e3379-9e8e-4059-b99e-e764c678fa51
-	- ${\vect{E}_2 = \vect{E}_{y} = \left(0 \vect{i}_{x} + E_2 \vect{i}_{y} \right)e^{ - jkz}}$
-	  id:: 673e3379-e89e-4420-ab3d-b82a29adc93c
-	- ${e_{ x}\left(z,t\right) = E_1 \cos\left( ω t - kz \right)}$
-	- ${e_{y}\left(z,t\right) = E_2 \cos \left( \omega t - kz + \psi \right)}$
+	  tags:: formel, wip
+	  bezeichnung:: allgemeine form einer polarisierten welle (elliptische polarisation) Effektivwert (?)
+		- $-$ ...
+		- skript
+		  collapsed:: true
+			- ((67459414-cc15-4ce4-be2d-77b9db927f8b))
+	- ${e_{ x}\left(z,t\right) = E_1 \cos\left( ω t - kz \right)} \\ {e_{y}\left(z,t\right) = E_2 \cos \left( \omega t - kz + \psi \right)}$
+	  id:: 673e3379-54d5-49f8-b0db-18b82bf799c4
+	  tags:: formel, wip
+	  bezeichnung:: allgemeine form des momentanwertes einer polarisierten welle (elliptische polarisation)
+		- skript
+		  collapsed:: true
+			- ((674594a5-fb6a-4ebb-89dd-80b6f7e96ed2))
 	- ${e_{x}\left(0,t\right) = E_1 \cos{\left( \omega t\right)}}$
 	- ${e_{y}\left(0,t\right) = E_2 \cos{\left( \omega t + \psi\right)}}$
 	- $e_{x}\left(0,t\right) = E \cos{\left( \omega t\right)}$
@@ -158,16 +182,10 @@ tags:: [[wellenausbreitung]], formeln
 		- $Z_{PV}$ ... Widerstand der über leistung und spannung berechnet wird. entspricht dem [[wellenwiderstand]] $Z_L$ bzw $\eta$ $\mathrm{\left[ \Omega \right]}$
 	- $\vect{\nabla}\times\vec{E}=-j\omega\mu\vect{H}$
 	- $\vect{\nabla}\times\vect{H}=\sigma\vec{E}+j\omega\varepsilon\vect{E}$
-	- ((673e3379-64cb-4d50-98c9-668f6b9fd3fd))
-	- $s = \cfrac{1}{Q} =$ ((673e3379-c5b6-4af8-a61a-20daa9718476))
-	  id:: 673e3379-65ec-4bba-988b-f6a5d8499e68
-	  tags:: formel, wip
-	  bezeichnung:: bandbreite
-		- $s$ ... bandbreite $\mathrm{\left[ - \right]}$
-		- $Q$ ... güte $\mathrm{\left[ - \right]}$
-		- $\sigma$ ... elektrische leitfähigkeit $\mathrm{\left[ \frac{S}{m} \right]}$
-		- $\varepsilon$ ... absolute [[permittivität]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
-		- $\omega$ ... [[Kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
+	- ((67459ac7-d3b4-47bf-9ac5-0379a5e2e1e8))
+	  id:: 673e3379-64cb-4d50-98c9-668f6b9fd3fd
+	- ((673e3379-65ec-4bba-988b-f6a5d8499e68))
+	  id:: 6745a2d1-96eb-4141-93fd-4c8e10df8d94
 	- $\eta^{2} = \cfrac{\mu}{\delta} = \cfrac{\mu}{\varepsilon} \cfrac{1}{1 - j s}$
 	- $\eta = \mathbb{R} + j \mathbb{X} = \eta_{\opn{E}} \cfrac{1}{\sqrt{1 - j s}}$
 	- ((674496c6-ef08-4cfe-8444-ef86aadf0f47))

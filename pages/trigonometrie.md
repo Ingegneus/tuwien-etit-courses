@@ -18,3 +18,11 @@ alias:: trigonometry
   tags:: [[formel]]
   bezeichnung:: wichtige [[trigonometrie]] werte
   id:: 67254d49-6cb0-4a8f-8f79-29b4ed5c7cfb
+- $\cos(\alpha)=\cos(-\alpha)$
+  tags:: formel
+  bezeichnung:: verhalten von $\cos$ bei vorzeichenänderung des arguments
+	- $\alpha$ ... winkelargument
+- $\sin(\alpha)=-\sin(-\alpha)$
+  tags:: formel
+  bezeichnung:: verhalten von $\cos$ bei vorzeichenänderung des arguments
+	- $\alpha$ ... winkelargument

@@ -52,8 +52,8 @@
 video,
 iframe[src$='.mp4'],
 iframe[src$='.mkv']{
-	height: 400px;
-	width: auto;
+	max-height: 400px;
+	width: 100%;
 	border-radius: calc(var(--radius) - 4px);
 	float: left;
 	position: relative;
@@ -62,7 +62,7 @@ iframe[src$='.mkv']{
 iframe[id^='youtube-player'], 
 iframe[src*='youtube-nocookie.com'],
 iframe[src*='player.vimeo'] {
-	height: 400px;
+	max-height: 400px;
 	aspect-ratio: 16/9;
 	border-radius: calc(var(--radius) - 4px);
 	float: left;
@@ -78,6 +78,24 @@ iframe[src*='player.vimeo'] {
     position: absolute;
     transition: opacity .3s;
 	height: 40.463px
+}
+
+/* helium floating video */
+#logseq-helium-plugin--helium > ul{
+	position: relative!important;
+}
+
+/*
+.helium-controls{
+	display:none;
+}
+
+.helium > svg{
+	display:none;
+}*/
+
+.helium{
+	content: "🎈";
 }
 
 :root {
@@ -163,7 +181,6 @@ blockquote {
 }
 
 /* bullet and fold arrow */
-
 html:not(.is-native-android) .bullet-container::before  { 
 	content: '';
 	position: absolute;
@@ -175,7 +192,6 @@ html:not(.is-native-android) .bullet-container::before  {
 }
 
 /* hide the svg icons before folder links */
-
 svg.awLi-favicon {
     display: none;
 }
