@@ -9,6 +9,7 @@ alias:: wave propagation, wellenausbreitungs
 - ## beispiele
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.6}$) eingestrahlt.
 		  background-color:: green
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp){:width 400}
@@ -122,7 +123,7 @@ alias:: wave propagation, wellenausbreitungs
 					- ((6735b379-8ba8-4a90-b5e2-8b5b38036526))
 					- ((6735b379-5292-4604-baef-85a4c9a6fc3f))
 					- ((6735b379-9a02-48b3-997c-2ecd856cb257))
-				- lösung
+				- code
 					- ```python
 					  import pyodide_js
 					  await pyodide_js.loadPackage("micropip")
@@ -160,7 +161,7 @@ alias:: wave propagation, wellenausbreitungs
 			- b) Wie gut kann das ideal eingesetzte Polarisationsﬁlter des zweiten Fotografen die Reﬂexion im Vergleich zum ersten Fotografen unterdrücken (in $\mathrm{dB}$)?
 			  background-color:: green
 				- es geht hierbei darum, dass ein filter verwendet wird welches den TM oder TE anteil filtert
-				- lösung
+				- code
 					- ```python
 					  # gammaTM = 0
 					  R_TM=round(10 * log10((gammaTE**2)/2),3)
@@ -182,7 +183,6 @@ alias:: wave propagation, wellenausbreitungs
 			- ![📚 2024-11-20 19h04m_annotated.pdf](../assets/documents/2024-11-20 19h04m_annotated.pdf)
 	- Stehende Welle im verlustbehafteten Medium
 	  background-color:: green
-	  collapsed:: true
 		- Eine sich im [verlustbehafteten Medium](((6740c4fa-4d26-4310-b196-321b7391feb6))) (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden [metallischen Wand mit unendlicher Leitfähigkeit](((67405634-4634-4d0d-b586-6a52b1bb7c75))) reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
 		  background-color:: green
 		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
@@ -198,7 +198,7 @@ alias:: wave propagation, wellenausbreitungs
 			  background-color:: green
 				- formeln
 					- ((673e3379-4b5b-475a-91a4-08da8e21eb58))
-				- lösung
+				- code
 					- ```python
 					  import pyodide_js
 					  await pyodide_js.loadPackage("micropip")
@@ -207,6 +207,14 @@ alias:: wave propagation, wellenausbreitungs
 					  from scipy import *
 					  from scipy.constants import *
 					  from numpy import *
+					  await micropip.install('matplotlib')
+					  import matplotlib.pyplot as plt
+					  import io, base64
+					  await micropip.install('sympy')
+					  import sympy as sp
+					  from sympy.utilities.lambdify import lambdify
+					  from sympy import latex
+					  
 					  
 					  epsr = 7
 					  mur = 1
@@ -223,7 +231,7 @@ alias:: wave propagation, wellenausbreitungs
 					- ((673e3379-65ec-4bba-988b-f6a5d8499e68)) [FS](((6745a2d1-96eb-4141-93fd-4c8e10df8d94)))
 					- ((674496c6-ef08-4cfe-8444-ef86aadf0f47)) [FS](((6740c68b-e124-4f93-b1f1-9c8be879951c)))
 					- ((67459ac7-d3b4-47bf-9ac5-0379a5e2e1e8)) [FS](((673e3379-64cb-4d50-98c9-668f6b9fd3fd)))
-				- lösung
+				- code
 					- ```python
 					  mu = mur * mu_0
 					  eps = epsr * epsilon_0
@@ -261,7 +269,7 @@ alias:: wave propagation, wellenausbreitungs
 					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
 					- ((673e3379-9e8e-4059-b99e-e764c678fa51))
 					- ((673e3379-54d5-49f8-b0db-18b82bf799c4))
-				- lösung
+				- code
 					- ```python
 					  z0 = 8
 					  z = z0
@@ -271,16 +279,13 @@ alias:: wave propagation, wellenausbreitungs
 					  ```
 						- {{evalparent}}
 					- ```python
-					  await micropip.install('matplotlib')
-					  import matplotlib.pyplot as plt
-					  import io, base64
-					  
 					  T = 1/f
 					  print(T)
 					  t = linspace(0, 2*T , 500)  # Generate 500 points between 0 and 4π
 					  y = E0*e**(-alpha*z0)*cos(w*t-beta*z0)
 					  
 					  # Create the plot
+					  plt.clf()
 					  plt.plot(t, y)  # Plot y = sin(x)
 					  plt.xlabel('t')  # Label the x-axis
 					  plt.ylabel('E_e(z_0, t)')  # Label the y-axis
@@ -298,24 +303,60 @@ alias:: wave propagation, wellenausbreitungs
 				- formeln
 					- ((67459ac8-e918-4a08-8003-07057ff681d6))
 					- ((6745a3c5-baa9-4655-ac6f-92348bdacfc0))
-					- $E_{r}=Ae^{jk_{z}\left(z-z_0\right)}$
+					- $E_{r}=Ae^{jk_{z}\left(z_0-z\right)}$
 					  tags:: formel
 					  bezeichnung:: ansatz für die reflektierte/rücklaufende welle
 						- $E_r$ ... reflektierte/rücklaufende welle des [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
-						- $A$ ... amplitude (?) $\mathrm{\left[ \frac{V}{m} \right]}$
+						- $A$ ... anfangs amplitude der reflektierten welle. entspricht der einfallenden welle $\mathrm{\left[ \frac{V}{m} \right]}$
 						- $k_z$ ... [[komplexe]] [[wellenzahl]] $\mathrm{\left[ \frac{rad}{m} \right]}$
 						- $z$ ... entfernung in ausbreitungsrichtung (hier $z$-Achse) $\mathrm{\left[ m \right]}$
 						- $z_0$ ... entfernung zur stelle an der die reflexion stattfindet $\mathrm{\left[ m \right]}$
-				- lösung
+				- code
 					- ```python
-					  t = 1
-					  epx = E0 * e**(-alpha*z) * cos(beta*z0-w*t)
-					  enx = E0 * e**(-alpha*z) * cos(beta*z0+w*t)
+					  t = sp.symbols('t')
+					  z = sp.symbols('z', real=True)
+					  z0 = 8
 					  
-					  enx+epx
+					  # Expression
+					  # gesamt feld momentanwert
+					  eges = E0 * sp.exp(-alpha * z0) * sp.cos(w * t - beta * z0) * (1 - sp.exp(-alpha * (z0 - z)) * sp.cos(w * t - beta * (z0 - z)))
+					  eges = eges.subs(z, z0)
+					  # einfallendes feld momentanwert
+					  ee = E0 * sp.exp(-alpha * z0) * sp.cos(w * t - beta * z0)
+					  ee = ee.subs(z,z0)
+					  # reflektiertes feld momentanwert
+					  er = -E0 * sp.exp(-alpha * z0) * sp.cos(w * t - beta * z0) * sp.exp(-alpha * (z0 - z)) * sp.cos(w * t - beta * (z0 - z))
+					  er = er.subs(z,z0)
+					  
+					  # Convert to numerical function
+					  numerical_eges = lambdify(t, eges)
+					  numerical_ee = lambdify(t, ee)
+					  numerical_er = lambdify(t, er)
+					  
+					  # Numerical plotting
+					  T=1/f
+					  t_vals = linspace(-T+8, 8, 500)
+					  
+					  plt.clf()
+					  y_vals = numerical_eges(t_vals)
+					  plt.plot(t_vals, y_vals, label='eges')
+					  y_vals = numerical_ee(t_vals)
+					  plt.plot(t_vals, y_vals, label='ee')
+					  y_vals = numerical_er(t_vals)
+					  plt.plot(t_vals, y_vals, label='er')
+					  
+					  plt.xlabel("t")
+					  plt.grid(True)
+					  plt.legend()
+					  buf = io.BytesIO()
+					  plt.savefig(buf, format = 'png')
+					  buf.seek(0)
+					  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
+					  buf.close()
+					  png
 					  ```
 						- {{evalparent}}
-				- verstehe das beispiel nicht
+				- verstehe das beispiel nicht. da ist was an der reflektierten welle falsch
 			- e) Berechnen Sie die Hüllkurve des Gesamtfeldes
 			  background-color:: green
 				- formeln
@@ -324,28 +365,68 @@ alias:: wave propagation, wellenausbreitungs
 					  bezeichnung:: analyse der hüllkurve des [elektrischen gesamtfeldes]([[elektrisches feld]])
 						- $|E_{ges}|^2$ ... betrags quadrat des gesamten [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
 						- $\vect{E}(z)$ ... [[komplexe]] amplitude des [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
-				- lösung
+				- code
 					- ```python
-					  await micropip.install('sympy')
-					  import sympy as sp
+					  # symbolic math
+					  E_s = sp.symbols('E')
+					  E0_s = sp.symbols('E0', positive = True)
+					  a_s = sp.symbols('α', real = True)
+					  b_s = sp.symbols('β', real = True)
+					  z_s = sp.symbols('z', real = True)
+					  z0_s = sp.symbols('z0', real = True)
+					  jke_s = a_s + 1j * b_s
 					  
-					  E = sp.symbols('E')
-					  E0 = sp.symbols('E0', positive = True)
-					  a = sp.symbols('a', real = True)
-					  b = sp.symbols('b', real = True)
-					  z = sp.symbols('z', real = True)
-					  z0 = sp.symbols('z0', integer = True)
-					  jkz = a + 1j * b
+					  E_s = E0_s * (sp.exp(-jke_s*z_s) \
+					            -sp.exp(-jke_s*(z0_s-z_s)))
+					  Eabs_s = sp.simplify(sp.conjugate(E_s)*E_s)
+					  'E = ' + str(Eabs_s) + '\n\n\
+					  latex output: ' + latex(Eabs_s)
+					  ```
+						- {{evalparent}}
+						- $E_{0}^{2} \cdot \left(1 - e^{\left(2 z - z_{0}\right) \left(α - 1.0 i β\right)}\right) \left(1 - e^{\left(2 z - z_{0}\right) \left(α + 1.0 i β\right)}\right) e^{- 2 z α}$
+					- ```python
+					  # plot
+					  # bei z = z0
+					  E = E0 * e**(-jke*z0)*(1 - e**(-jke*(z0-z)))
+					  absE2 = E*sp.conjugate(E)
 					  
-					  E = E0 * (sp.E**(-jkz*z) \
-					            -sp.E**(-jkz*(2*z0-z)))
-					  sp.trigsimp(sp.conjugate(E)*E)
+					  lam = 2*pi / ke
+					  z = linspace(-4*lam+z0,z0, 1000)
+					  y = absE2
+					  
+					  # Create the plot
+					  plt.clf()
+					  plt.plot(z, y)
+					  plt.plot(z, -y)
+					  plt.xlabel('z') 
+					  plt.ylabel('E')
+					  plt.grid(True)
+					  buf = io.BytesIO()
+					  plt.savefig(buf, format = 'png')
+					  buf.seek(0)
+					  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
+					  buf.close()
+					  png
 					  ```
 						- {{evalparent}}
 			- [📚 2024-11-21 18h45m.xopp](../assets/documents/2024-11-21 18h45m.xopp)
 			- ![📚 2024-11-21 18h45m_annotated.pdf](../assets/documents/2024-11-21 18h45m_annotated.pdf)
 	- Rechteckhohlleiter
-		- Untersuchen Sie die Ausbreitung von $\mathrm{TE}_{m,n}$ Wellen in $z$ Richtung im skizzierten Rechteckhohlleiter.
+	  background-color:: green
+		- Variante 1) Untersuchen Sie die Ausbreitung von $\mathrm{TE}_{m,n}$ Wellen in $z$ Richtung im skizzierten Rechteckhohlleiter.
+		  background-color:: green
+		  ![img](../assets/documents/WA_rechteckhohlleiter_bsp_1.webp){:width 400}
+			- Finden Sie einen geeigneten Ansatz für die Komponenten der gewünschten Moden in Ausbreitungsrichtung, der die Wellengleichung erfüllt. Ermitteln Sie die Separationsbedingungen.
+			  background-color:: green
+				- formeln
+					-
+				- code
+			- Leiten Sie daraus die restlichen Feldkomponenten her und passen Sie an den Rand an! Welche Komponenten verschwinden?
+			  background-color:: green
+			- Berechnen Sie die Hohlleiterwellenlängen, die Grenzwellenlängen und die Grenzfrequenzen aller gefragter Moden als Funktion von $m$ und $n$! Ist ein TEM Modus ausbreitungsfähig? Wieso? Wenn ja, welche Grenzwellenlänge bzw. Feldwellenwiderstand hat er?
+			  background-color:: green
+			- Berechnen und skizzieren Sie das Dispersionsdiagramm für die $\mathrm{TE}_{10}$, $\mathrm{TE}_{11}$, $\mathrm{TE}_{20}$ Moden für $a = 4 \mathrm{cm}$, $b = 3\mathrm{cm}$, $\varepsilon_r = 3$, $\mu_r = 1$, $\varepsilon_0 = 8,854 \cdot 10^{−12} \mathrm{As/Vm}$, $\mu_0 = 4\pi \cdot 10^{−7} \mathrm{Vs/Am}$. Achten Sie auf die Beschriftung! Geben Sie die Grenzfrequenzen an! In welchem Frequenzbereich ist nur ein einziger Modus ausbreitungsfähig? Welcher?
+			  background-color:: green
 - ## flashcards
 	- ### index
 		- query-table:: true

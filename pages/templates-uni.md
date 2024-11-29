@@ -111,7 +111,14 @@ tags:: [[templates]], [[uni]]
 	  await micropip.install('scipy')
 	  from scipy import *
 	  from scipy.constants import *
-	  from numpy import arcsin, arctan, arccos
+	  from numpy import *
+	  await micropip.install('matplotlib')
+	  import matplotlib.pyplot as plt
+	  import io, base64
+	  await micropip.install('sympy')
+	  import sympy as sp
+	  from sympy.utilities.lambdify import lambdify
+	  from sympy import latex
 	  
 	  "resultat: " + f"{var:.4g}" + "unit"
 	  ```
