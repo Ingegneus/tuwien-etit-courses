@@ -117,5 +117,17 @@
                                    :height 963.7008403361344}),
                           :page 28},
                :content {:text "eindimensionale homogene Wellengleichung"},
-               :properties {:color "green"}}],
- :extra {:page 29}}
+               :properties {:color "green"}}
+              {:id #uuid "674b6434-58f7-44a3-b43b-601434f2dbaf",
+               :page 73,
+               :position {:bounding {:x1 80,
+                                     :y1 668,
+                                     :x2 604,
+                                     :y2 711,
+                                     :width 669,
+                                     :height 946.7193277310924},
+                          :rects (),
+                          :page 73},
+               :content {:text "[:span]", :image 1732994097268},
+               :properties {:color "yellow"}}],
+ :extra {:page 73}}

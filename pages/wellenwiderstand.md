@@ -7,6 +7,7 @@ alias:: wellenwiderstand
 - $\eta=\sqrt{\frac{\mu}{\varepsilon}}$
   id:: 673c4eb2-5827-434c-a323-0ff29f347504
 	- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
+	  id:: 6745a3e6-234f-4498-958d-161644084cd7
 	- $\mu$ ... absolute [[magnetische permeabilität]] des mediums $\mathrm{\left[ \frac{A}{s} \right]}$
 	- $\varepsilon$ ... absolute [[elektrische permittivität]] des mediums $\mathrm{\left[ \frac{V}{m} \right]}$
 - $\eta_0=\sqrt{\frac{\mu_0}{\varepsilon_0}}$

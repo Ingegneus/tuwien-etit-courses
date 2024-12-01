@@ -7,6 +7,7 @@ alias:: wave propagation, wellenausbreitungs
 	- ![📚 WA-Skriptum-17.Auflage.pdf](file://C:\Users\Matteo\Documents\Uni\Wellenausbreitung\WA-Skriptum-17.Auflage.pdf)
 	- [[wellen vo temp]]
 - ## beispiele
+	- ![📚 23_wa_version2.pdf](file://C:\Users\Matteo\Documents\Uni\Wellenausbreitung\23_wa_version2.pdf)
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
 	  collapsed:: true
@@ -183,6 +184,7 @@ alias:: wave propagation, wellenausbreitungs
 			- ![📚 2024-11-20 19h04m_annotated.pdf](../assets/documents/2024-11-20 19h04m_annotated.pdf)
 	- Stehende Welle im verlustbehafteten Medium
 	  background-color:: green
+	  collapsed:: true
 		- Eine sich im [verlustbehafteten Medium](((6740c4fa-4d26-4310-b196-321b7391feb6))) (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden [metallischen Wand mit unendlicher Leitfähigkeit](((67405634-4634-4d0d-b586-6a52b1bb7c75))) reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
 		  background-color:: green
 		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
@@ -366,55 +368,97 @@ alias:: wave propagation, wellenausbreitungs
 						- $|E_{ges}|^2$ ... betrags quadrat des gesamten [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
 						- $\vect{E}(z)$ ... [[komplexe]] amplitude des [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
 				- code
-					- ```python
-					  # symbolic math
-					  E_s = sp.symbols('E')
-					  E0_s = sp.symbols('E0', positive = True)
-					  a_s = sp.symbols('α', real = True)
-					  b_s = sp.symbols('β', real = True)
-					  z_s = sp.symbols('z', real = True)
-					  z0_s = sp.symbols('z0', real = True)
-					  jke_s = a_s + 1j * b_s
-					  
-					  E_s = E0_s * (sp.exp(-jke_s*z_s) \
-					            -sp.exp(-jke_s*(z0_s-z_s)))
-					  Eabs_s = sp.simplify(sp.conjugate(E_s)*E_s)
-					  'E = ' + str(Eabs_s) + '\n\n\
-					  latex output: ' + latex(Eabs_s)
-					  ```
-						- {{evalparent}}
-						- $E_{0}^{2} \cdot \left(1 - e^{\left(2 z - z_{0}\right) \left(α - 1.0 i β\right)}\right) \left(1 - e^{\left(2 z - z_{0}\right) \left(α + 1.0 i β\right)}\right) e^{- 2 z α}$
-					- ```python
-					  # plot
-					  # bei z = z0
-					  E = E0 * e**(-jke*z0)*(1 - e**(-jke*(z0-z)))
-					  absE2 = E*sp.conjugate(E)
-					  
-					  lam = 2*pi / ke
-					  z = linspace(-4*lam+z0,z0, 1000)
-					  y = absE2
-					  
-					  # Create the plot
-					  plt.clf()
-					  plt.plot(z, y)
-					  plt.plot(z, -y)
-					  plt.xlabel('z') 
-					  plt.ylabel('E')
-					  plt.grid(True)
-					  buf = io.BytesIO()
-					  plt.savefig(buf, format = 'png')
-					  buf.seek(0)
-					  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
-					  buf.close()
-					  png
-					  ```
-						- {{evalparent}}
+					- meine lösung
+						- ```python
+						  # meine lösung
+						  # symbolic math
+						  E_s = sp.symbols('E')
+						  E0_s = sp.symbols('E0', positive = True)
+						  a_s = sp.symbols('α', real = True)
+						  b_s = sp.symbols('β', real = True)
+						  z_s = sp.symbols('z', real = True)
+						  z0_s = sp.symbols('z0', real = True)
+						  jke_s = a_s + 1j * b_s
+						  
+						  E_s = E0_s * (sp.exp(-jke_s*z_s) \
+						            -sp.exp(-jke_s*(z0_s-z_s)))
+						  Eabs_s = sp.simplify(sp.conjugate(E_s)*E_s)
+						  'E = ' + str(Eabs_s) + '\n\n\
+						  latex output: ' + latex(Eabs_s)
+						  ```
+							- {{evalparent}}
+							- $E_{0}^{2} \cdot \left(1 - e^{\left(2 z - z_{0}\right) \left(α - 1.0 i β\right)}\right) \left(1 - e^{\left(2 z - z_{0}\right) \left(α + 1.0 i β\right)}\right) e^{- 2 z α}$
+						- ```python
+						  # plot
+						  # bei z = z0
+						  lam = 2*pi / ke
+						  z = linspace(-4*lam+z0,z0, 1000)
+						  
+						  E = E0 * e**(-jke*z0)*(1 - e**(-jke*(z0-z)))
+						  absE2 = E*conj(E)
+						  
+						  y = absE2
+						  
+						  # Create the plot
+						  plt.clf()
+						  plt.plot(z, y)
+						  plt.plot(z, -y)
+						  plt.xlabel('z') 
+						  plt.ylabel('E')
+						  plt.grid(True)
+						  buf = io.BytesIO()
+						  plt.savefig(buf, format = 'png')
+						  buf.seek(0)
+						  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
+						  buf.close()
+						  png
+						  ```
+							- {{evalparent}}
+					- ausarbeitung
+						- ```python
+						  # lösung aus ausarbeitung
+						  Eabs_s  =E0_s**2 * (sp.exp(-2 * a_s * z_s) + \
+						                      sp.exp(-2 * a_s * (z0_s - z_s)) - \
+						                      2 * sp.exp(-2 * a_s * z0_s) * sp.cos(2*b_s*(z0_s-z_s)))
+						  'E = ' + str(Eabs_s) + '\n\n\
+						  latex output: ' + latex(Eabs_s)
+						  ```
+							- {{evalparent}}
+							- $E_{0}^{2} \left(e^{- 2 α \left(- z + z_{0}\right)} - 2 e^{- 2 z_{0} α} \cos{\left(2 β \left(- z + z_{0}\right) \right)} + e^{- 2 z α}\right)$
+						- ```python
+						  # plot
+						  # bei z = z0
+						  lam = 2*pi / ke
+						  z = linspace(-4*lam+z0,z0, 1000)
+						  
+						  absE2  =E0**2 * (exp(-2 * alpha * z) + \
+						                     exp(-2 * alpha * (z0 - z)) - \
+						                      2 * exp(-2 * alpha * z0) * cos(2*beta*(z0-z)))
+						  y = absE2
+						  
+						  # Create the plot
+						  plt.clf()
+						  plt.plot(z, y)
+						  plt.plot(z, -y)
+						  plt.xlabel('z') 
+						  plt.ylabel('E')
+						  plt.grid(True)
+						  buf = io.BytesIO()
+						  plt.savefig(buf, format = 'png')
+						  buf.seek(0)
+						  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
+						  buf.close()
+						  png
+						  ```
+							- {{evalparent}}
 			- [📚 2024-11-21 18h45m.xopp](../assets/documents/2024-11-21 18h45m.xopp)
 			- ![📚 2024-11-21 18h45m_annotated.pdf](../assets/documents/2024-11-21 18h45m_annotated.pdf)
 	- Rechteckhohlleiter
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1) Untersuchen Sie die Ausbreitung von $\mathrm{TE}_{m,n}$ Wellen in $z$ Richtung im skizzierten Rechteckhohlleiter.
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/WA_rechteckhohlleiter_bsp_1.webp){:width 400}
 			- Finden Sie einen geeigneten Ansatz für die Komponenten der gewünschten Moden in Ausbreitungsrichtung, der die Wellengleichung erfüllt. Ermitteln Sie die Separationsbedingungen.
 			  background-color:: green
@@ -426,6 +470,337 @@ alias:: wave propagation, wellenausbreitungs
 			- Berechnen Sie die Hohlleiterwellenlängen, die Grenzwellenlängen und die Grenzfrequenzen aller gefragter Moden als Funktion von $m$ und $n$! Ist ein TEM Modus ausbreitungsfähig? Wieso? Wenn ja, welche Grenzwellenlänge bzw. Feldwellenwiderstand hat er?
 			  background-color:: green
 			- Berechnen und skizzieren Sie das Dispersionsdiagramm für die $\mathrm{TE}_{10}$, $\mathrm{TE}_{11}$, $\mathrm{TE}_{20}$ Moden für $a = 4 \mathrm{cm}$, $b = 3\mathrm{cm}$, $\varepsilon_r = 3$, $\mu_r = 1$, $\varepsilon_0 = 8,854 \cdot 10^{−12} \mathrm{As/Vm}$, $\mu_0 = 4\pi \cdot 10^{−7} \mathrm{Vs/Am}$. Achten Sie auf die Beschriftung! Geben Sie die Grenzfrequenzen an! In welchem Frequenzbereich ist nur ein einziger Modus ausbreitungsfähig? Welcher?
+			  background-color:: green
+		- Variante 2)
+		  background-color:: green
+		- Variante 3)
+		  background-color:: green
+		- Variante 4)
+		  background-color:: green
+	- Hohlraumresonator
+	  background-color:: green
+		- Variante 1) Berechnen Sie den Grundmodus $\mathrm{TE_{101}}$ eines luftgefüllten ($\varepsilon_r = 1$) Hohlraumresonators (Abmessungen: $a = 4\mathrm{cm}$, $b = 2\mathrm{cm}$, $c = 4\mathrm{cm}$) mit $\mathbb{R}_M = 20\mathrm{m\Omega}$.
+		  background-color:: green
+		  ![img](../assets/documents/Wa_hohlraumresonator_bsp_1.webp){:width 400}
+			- a) Berechnen Sie die Resonanzfrequenz!
+			  background-color:: green
+				- formeln
+					- ((6745a3c5-c443-4fb4-bbea-b455958f827a))
+					- ((673e3379-4b5b-475a-91a4-08da8e21eb58))
+					- ((674b703d-c8a8-4814-8c70-f8289a9b6bdf))
+				- code
+					- ```python
+					  import pyodide_js
+					  await pyodide_js.loadPackage("micropip")
+					  import micropip
+					  await micropip.install('scipy')
+					  from scipy import *
+					  from scipy.constants import *
+					  from numpy import *
+					  await micropip.install('matplotlib')
+					  import matplotlib.pyplot as plt
+					  import io, base64
+					  await micropip.install('sympy')
+					  import sympy as sp
+					  from sympy.utilities.lambdify import lambdify
+					  from sympy import latex
+					  
+					  # angabe
+					  a = 4E-2
+					  b = 2E-2
+					  c = 4E-2
+					  mur = 1
+					  mu = mu_0 * mur
+					  epsr = 1
+					  eps = epsilon_0 * epsr
+					  Rm = 20E-3
+					  # TE_101
+					  m = 1
+					  n = 0
+					  p = 1
+					  
+					  # rechnung
+					  vp = 1 / sqrt((eps * mu))
+					  wmnp = pi * vp * sqrt((m/a)**2 + (n/b)**2 + (p/c)**2)
+					  fmnp = wmnp / (2 * pi)
+					  "fmnp = " + f"{fmnp:.4g}" + "Hz"
+					  ```
+						- {{evalparent}}
+			- b) Berechnen Sie die unbelastetet Güte! Vereinfachen Sie zuerst die Formel unter der Berücksichtigung $a = c$! Setzen Sie dann Zahlenwerte ein!
+			  background-color:: green
+				- formeln
+					- ((6745a3c5-66f7-450b-94fe-f6068dde589d))
+				- code
+					- ```python
+					  Rm_s, a_s, b_s, c_s, eta_s = sp.symbols('R_m a b c eta', 
+					                                          real=True, 
+					                                          positive=True)
+					  eta = 377
+					  Q0 = (
+					    (pi * eta) / (2 * Rm) * 
+					      (
+					        (b * sqrt((a**2 + c**2)**3)) / 
+					        (a * c * (a**2 + c**2) + 2 * b * (a**3 + c**3))
+					      )
+					  )
+					  
+					  Q0_s = (
+					    (sp.pi * eta_s) / (2 * Rm_s) *
+					    (
+					      b_s * sp.sqrt((a_s**2 + c_s**2)**3) /
+					      (a_s * c_s * (a_s**2 + c_s**2) + 2 * b_s * (a_s**3 + c_s**3))
+					    )
+					  )
+					  Q0_s_sim = Q0_s.subs(c_s, a_s)
+					           
+					  Q0_s_sim = sp.simplify(Q0_s_sim)
+					  'Q0_s = ' + str(Q0_s) + '\n\n\
+					  latex output: ' + latex(Q0_s) + '\n\n\
+					  Q0_s_sim = ' + str(Q0_s_sim) + '\n\n\
+					  latex output: ' + latex(Q0_s_sim)
+					  ```
+						- {{evalparent}}
+						- $\frac{\pi b \eta \left(a^{2} + c^{2}\right)^{\frac{3}{2}}}{2 Rm \left(a c \left(a^{2} + c^{2}\right) + 2 b \left(a^{3} + c^{3}\right)\right)}$
+						- $\frac{\sqrt{2} \pi b \eta}{2 R_{m} \left(a + 2 b\right)}$
+					- ```python
+					  Q0_s_sim.subs(a_s, a).subs(b_s,b).subs(Rm_s, Rm).subs(eta_s, eta).evalf(n=5)
+					  ```
+						- {{evalparent}}
+			- c) Berechnen Sie die Resonanzfrequenz und die unbelastete Güte, wenn der Hohlraumresonator mit einem verlustlosen Dielektrikum $\varepsilon_r = 2.5$ gefüllt ist!
+			  background-color:: green
+				- formeln
+					- ((6745a3c5-c443-4fb4-bbea-b455958f827a))
+					- ((6745a3c5-66f7-450b-94fe-f6068dde589d))
+					- ((673c4eb2-5827-434c-a323-0ff29f347504))
+				- code
+					- ```python
+					  # resonanzfrequenz
+					  epsr = 2.5
+					  eps = epsilon_0 * epsr
+					  
+					  # rechnung
+					  vp = 1 / sqrt((eps * mu))
+					  wmnp = pi * vp * sqrt((m/a)**2 + (n/b)**2 + (p/c)**2)
+					  fmnp = wmnp / (2 * pi)
+					  "fmnp = " + f"{fmnp:.4g}" + "Hz"
+					  ```
+						- {{evalparent}}
+					- ```python
+					  # unbelastete güte
+					  eta = sqrt(mu/eps)
+					  Q0 = (
+					    (pi * eta) / (2 * Rm) * 
+					      (
+					        (b * sqrt((a**2 + c**2)**3)) / 
+					        (a * c * (a**2 + c**2) + 2 * b * (a**3 + c**3))
+					      )
+					  )
+					  "Q0 = " + f"{Q0:.4g}"
+					  ```
+						- {{evalparent}}
+		- Variante 2) Berechnen Sie den Grundmodus $\mathrm{TE_{101}}$ eines luftgefüllten ($\varepsilon_r = 1$) Hohlraumresonators (Abmessungen: $a = 2b=c$, $\mathbb{R}_M = 30\mathrm{m\Omega}$).
+		  background-color:: green
+		  ![img](../assets/documents/Wa_hohlraumresonator_bsp_1.webp){:width 400}
+			- a) Berechnen Sie die Abmessungen $a, b, c$ für eine Resonanzfrequenz von $20 \mathrm{GHz}$!
+			  background-color:: green
+				- formeln
+					- ((6745a3c5-c443-4fb4-bbea-b455958f827a))
+					- ((673e3379-4b5b-475a-91a4-08da8e21eb58))
+					- ((674b703d-c8a8-4814-8c70-f8289a9b6bdf))
+				- code
+					- ```python
+					  pyodide_js.globals.clear();
+					  import pyodide_js
+					  await pyodide_js.loadPackage("micropip")
+					  import micropip
+					  await micropip.install('scipy')
+					  from scipy import *
+					  from scipy.constants import *
+					  from numpy import *
+					  await micropip.install('matplotlib')
+					  import matplotlib.pyplot as plt
+					  import io, base64
+					  await micropip.install('sympy')
+					  import sympy as sp
+					  from sympy.utilities.lambdify import lambdify
+					  from sympy import latex
+					  
+					  # angabe
+					  mur = 1
+					  mu = mu_0 * mur
+					  epsr = 1
+					  eps = epsilon_0 * epsr
+					  Rm = 30E-3
+					  fR = 20E9
+					  wmnp = 2 * pi * fR
+					  # TE_101
+					  m = 1
+					  n = 0
+					  p = 1
+					  
+					  Rm_s, a_s, b_s, c_s, vp_s ,m_s, n_s, p_s = sp.symbols('R_m a b c v_p m n p', 
+					                                                       real=True, 
+					                                                       positive=True)
+					  
+					  # rechnung
+					  vp = 1 / sqrt((eps * mu))
+					  wmnp_s = ( sp.pi * vp_s * sp.sqrt(
+					              (m_s/a_s)**2 + (n_s/b_s)**2 + (p_s/c_s)**2
+					             )
+					           )
+					  fmnp_s = wmnp_s / (2 * sp.pi)
+					  
+					  # werte einsetzen
+					  fmnp_s = (fmnp_s.subs(m_s,m)
+					                  .subs(n_s,n)
+					            	    .subs(p_s,p)
+					            	    .subs(c_s,a_s)
+					           		.subs(b_s,a_s/2)
+					           		.subs(vp_s, vp))
+					  eqn = sp.Eq(fmnp_s,fR)
+					  solution = sp.solve(eqn, a_s)
+					  a = float(solution[0])
+					  b = a/2
+					  c = a
+					  ("a = " + f"{a*100:.4g}" + "cm" + "\n" + 
+					   "b = " + f"{b*100:.4g}" + "cm" + "\n" + 
+					   "c = " + f"{c*100:.4g}" + "cm"
+					  )
+					  ```
+						- {{evalparent}}
+			- b) Berechnen Sie die unbelastetet Güte! Vereinfachen Sie zuerst die Formel unter der Berücksichtigung $a = 2b = c$!
+			  background-color:: green
+				- formeln
+					- ((6745a3c5-66f7-450b-94fe-f6068dde589d))
+				- code
+					- ```python
+					  eta_s = sp.symbols('eta', real=True, positive=True)
+					  Q0_s = (
+					    (sp.pi * eta_s) / (2 * Rm_s) *
+					    (
+					      b_s * sp.sqrt((a_s**2 + c_s**2)**3) /
+					      (a_s * c_s * (a_s**2 + c_s**2) + 2 * b_s * (a_s**3 + c_s**3))
+					    )
+					  )
+					  Q0_s_sim = Q0_s.subs(c_s, a_s).subs(b_s, a_s/2)
+					           
+					  Q0_s_sim = sp.simplify(Q0_s_sim)
+					  'Q0_s = ' + str(Q0_s) + '\n\n\
+					  latex output: \n' + latex(Q0_s) + '\n\n\
+					  Q0_s_sim = ' + str(Q0_s_sim) + '\n\n\
+					  latex output: \n' + latex(Q0_s_sim)
+					  ```
+						- {{evalparent}}
+						- $\frac{\pi b \eta \left(a^{2} + c^{2}\right)^{\frac{3}{2}}}{2 Rm \left(a c \left(a^{2} + c^{2}\right) + 2 b \left(a^{3} + c^{3}\right)\right)}$
+						- $\frac{\sqrt{2} \pi \eta}{8 R_{m}}$
+					- ```python
+					  eta = sqrt(mu/eps)
+					  Q0_s_sim.subs(a_s, a).subs(b_s,b).subs(Rm_s, Rm).subs(eta_s, eta).evalf(n=5)
+					  ```
+						- {{evalparent}}
+			- c) Berechnen Sie die relative Dielektrizitätskonstante und die unbelastete [[Güte]], wenn der Hohlraumresonator mit einem verlustlosen Dielektrikum gefüllt ist, um die Resonanzfrequenz auf $15 \mathrm{GHz}$ zu reduzieren!
+			  background-color:: green
+				- formeln
+					- ((6745a3c5-c443-4fb4-bbea-b455958f827a))
+					- ((6745a3c5-66f7-450b-94fe-f6068dde589d))
+					- ((673c4eb2-5827-434c-a323-0ff29f347504))
+				- code
+					- ```python
+					  # dielektrizitätskonstante
+					  fR = 15E9
+					  
+					  epsr_s = sp.symbols('eps_r', real=True, positive=True)
+					  eps_s = epsr_s * epsilon_0
+					  vp_s = 1 / sp.sqrt((eps_s * mu))
+					  wmnp_s = ( sp.pi * vp_s * sp.sqrt(
+					              (m_s/a_s)**2 + (n_s/b_s)**2 + (p_s/c_s)**2
+					             )
+					           )
+					  fmnp_s = wmnp_s / (2 * sp.pi)
+					  
+					  # werte einsetzen
+					  fmnp_s = (fmnp_s.subs(m_s,m)
+					                  .subs(n_s,n)
+					            	    .subs(p_s,p)
+					            		.subs(a_s,a)
+					            	    .subs(c_s,c)
+					           		.subs(b_s,b))
+					  eqn = sp.Eq(fmnp_s,fR)
+					  solution = sp.solve(eqn, epsr_s)
+					  epsr = float(solution[0])
+					  
+					  "ɛ_r = " + f"{epsr:.4g}"
+					  ```
+						- {{evalparent}}
+					- ```python
+					  # unbelastete güte
+					  eps = epsr * epsilon_0
+					  eta = sqrt(mu/eps)
+					  Q0 = (
+					    (pi * eta) / (2 * Rm) * 
+					      (
+					        (b * sqrt((a**2 + c**2)**3)) / 
+					        (a * c * (a**2 + c**2) + 2 * b * (a**3 + c**3))
+					      )
+					  )
+					  "Q0 = " + f"{Q0:.4g}"
+					  ```
+						- {{evalparent}}
+			- [📚 2024-12-01 16h11m.xopp](../assets/documents/2024-12-01 16h11m.xopp)
+			- ![📚 2024-12-01 16h11m_annotated.pdf](../assets/documents/2024-12-01 16h11m_annotated.pdf)
+	- [[Koaxialkabel]]
+	  background-color:: green
+		- Variante 1)
+		  background-color:: green
+		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp){:width 400}
+			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 60 \mathrm{\Omega}$. Der Außenradius sei $r_a = 8.5 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 1$.
+			  background-color:: green
+				- formeln
+					- ((6745a3c5-c563-4874-8d5b-50fee6812aea))
+				- code
+					- ```python
+					  pyodide_js.globals.clear();
+					  import pyodide_js
+					  await pyodide_js.loadPackage("micropip")
+					  import micropip
+					  await micropip.install('scipy')
+					  from scipy import *
+					  from scipy.constants import *
+					  from numpy import *
+					  await micropip.install('matplotlib')
+					  import matplotlib.pyplot as plt
+					  import io, base64
+					  await micropip.install('sympy')
+					  import sympy as sp
+					  from sympy.utilities.lambdify import lambdify
+					  from sympy import latex
+					  
+					  # angabe
+					  ZL = 60
+					  ra = 8.5E-3
+					  epsr = 1
+					  eps = epsr * epsilon_0
+					  mur = 1
+					  mu = mur * mu_0
+					  eta = sqrt(mu/eps)
+					  
+					  eta_s, ra_s, ri_s = sp.symbols('eta, r_a r_i', real=True, positive=True)
+					  ZL_s = eta_s/(2*pi) * sp.log(ra_s/ri_s)
+					  
+					  # werte einsetzen
+					  ZL_s = (ZL_s.subs(ra_s, ra)
+					          	.subs(eta_s, eta))
+					  eqn = sp.Eq(ZL_s, ZL)
+					  sol = sp.solve(eqn, ri_s)
+					  ri_s = sol[0]
+					  "ri: " + f"{ri_s:.4g}"
+					  ```
+						- {{evalparent}}
+			- b) Die Innen- bzw. Außenleiter bestehen aus Kupfer mit $\sigma = 57 \cdot 10^6 \mathrm{S/m}$. Wie groß ist die Eindringtiefe bei $f = 5 \mathrm{GHz}$? Berechnen Sie die ohmschen Verluste des Kabels in $\mathrm{dB/m}$.
+			  background-color:: green
+			- c) Ein Ende der Koaxialleitung wird mit Hilfe einer kreisförmigen Scheibe aus Graphit abgeschlossen. Die Scheibe habe ein $R_\square  = 120\pi \mathrm{\Omega}$. Welchen ohmschen Widerstand hat die kreisförmige Scheibe für eine einfallende $\mathrm{TEM}$ Welle?
+			  background-color:: green
+			- d) Wie groß ist der Reﬂexionsfaktor am Ende der Koaxialleitung auf Grund des Abschlusswidertandes der kreisförmigen Scheibe? In welchem Frequenzbereich gilt dieser Reﬂexionsfaktor?
 			  background-color:: green
 - ## flashcards
 	- ### index
@@ -494,3 +869,11 @@ alias:: wave propagation, wellenausbreitungs
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
 		- $\Gamma_{\mathrm{TM}}$
+	- was beschreibt eine mode?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+		- eine mode beschreibt die gestalt der felder
+	- was ist die günstigste form eines quaderförmigen hohlraum resonators?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+		- wenn man das größte volumen bei kleinstmöglicher oberfläche hat, also $a=b=c$

@@ -64,10 +64,10 @@ const Kits = Module.setChild("Kits")
     }
 
     divRow.lastChild.remove();
-    divRow.lastChild.after("=>", Kits.createElementOfClass("span", "out", res));
+    divRow.lastChild.after("🖥:", Kits.createElementOfClass("span", "out", res));
 })
 .setStatic(function onParentEvalStarted(container){
-    const btnRemove = Kits.createElementOfClass("button", "out", "X");
+    const btnRemove = Kits.createElementOfClass("button", "out", "❌");
     const divRow = Kits.createElementOfClass("div", "out", btnRemove, "...running...");
 
     const wrapper = container.getElementsByClassName("block-content-wrapper")[0];

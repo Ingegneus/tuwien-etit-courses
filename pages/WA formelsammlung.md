@@ -93,6 +93,7 @@ tags:: [[wellenausbreitung]], formeln
 	- $H_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial x}H_{z} - \omega \delta \frac{\partial}{\partial y}E_{z} \right)$
 	- $H_{y} = \frac{ - j}{\kappa^{2}} \left( k_{z} \frac{\partial}{\partial y} H_{z} + \omega \delta \frac{\partial}{\partial x} E_{z} \right)$
 - ## [[homogene ebene wellen]]
+  collapsed:: true
 	- $+ \cfrac{\partial}{\partial z}e_{y} = \mu \cfrac{\partial}{\partial t}h_{x}$
 	- $- \cfrac{\partial}{\partial z}e_{x} = \mu \cfrac{\partial}{\partial t}h_{y}$
 	- $0 = \mu \cfrac{\partial}{\partial t}h_{z}$
@@ -295,6 +296,13 @@ tags:: [[wellenausbreitung]], formeln
 - ## Resonatoren
   collapsed:: true
 	- $\lambda_{\mathrm{G},m,n} = \frac{1}{\sqrt{\left(\frac{m}{2a} \right)^{2} + \left(\frac{n}{2b} \right)^{2}}}$
+	  tags:: formel
+	  bezeichnung:: [grenzwellenlänge]([[wellenlänge]]) des $\mathrm{TE}_{mn}$ oder $\mathrm{TM}_{mn}$ modus
+		- $\lambda_{\mathrm{G},m,n}$ ... [grenzwellenlänge]([[wellenlänge]]) $\mathrm{\left[ m \right]}$
+		- $m$ ... modenindex $\mathrm{\left[ - \right]}$
+		- $n$ ... modenindex $\mathrm{\left[ - \right]}$
+		- $a$ ... breite des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
+		- $b$ ... höhe des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
 	- $\lambda_{\mathrm{H}} = \frac{\lambda}{\sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}}$
 	- $v_{\mathrm{P}} = \frac{c}{\sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}}$
 	- $v_{\mathrm{G}} = c \sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}$
@@ -304,9 +312,30 @@ tags:: [[wellenausbreitung]], formeln
 	- $\begin{aligned} - \frac{\partial}{\partial z}P(z) & = \frac12 \mathbb{R}_{\mathrm{M}} \left(2 \int_0^{a} \Big[|H_{x}|^2 + |H_{z}|^2 \Big]_{y = 0} \opn{d}x + 2 \int \limits_{0}^{b} \Big[|\underbrace{H_{y}}_0|^2 + |H_{z}|^2 \Big]_{x = 0} \opn{d}y \right) \\ &={\mathbb{R}_{\mathrm{M}}A^{2} \left(\left(\cfrac{k_{z}a}{\pi} \right)^{2} \int \limits_{0}^{a} \sin^{2} \left(\cfrac{\pi}{a}x \right) \mathrm{d}x + \int \limits_{0}^{b} \cfrac{a}{\pi} \cos^{2} \left(\cfrac{\pi}{a}x \right) \mathrm{d}x + \int \limits_{0}^{b} \mathrm{d}y \right)} \\ & = A^{2} \mathbb{R}_{\mathrm{M}} \left(\frac{a}{2} \left(1 + \left(\frac{2a}{\lambda_{\mathrm{H}}} \right)^{2} \right) + b \right) \end{aligned}$
 	- $\alpha = \frac{\pi}{\omega \mu} \mathbb{R}_{\mathrm{M}} \frac{\lambda_{\mathrm{H}}}{a^{3} b} \left(\frac{a}{2} \left(1 + \left(\frac{2a}{\lambda_{\mathrm{H}}}\right)^{2} \right) + b \right)$
 	- $c = p \frac{\lambda_{\mathrm{H}}}{2}, \quad \text{bzw.} \quad k_{z} = \frac{2 \pi}{\lambda_{\mathrm{H}}} = \frac{p \pi}{c}$
+	  id:: 6745a3c5-8db7-45c1-93bd-26e16b795df2
 	- $\left(\frac{m \pi}{a} \right)^{2} + \left(\frac{n \pi}{b} \right)^{2} + \left(\frac{p \pi}{c} \right)^{2} = \omega_{m n p}^{2} \varepsilon \mu$
+	  tags:: formel, wip
+	  bezeichnung:: separationsbedingung
+		- $-$ ...
 	- $\omega_{m n p} = \pi v \sqrt{\left(\frac{m}{a} \right)^{2} + \left(\frac{n}{b} \right)^{2} + \left(\frac{p}{c} \right)^{2}}$
+	  id:: 6745a3c5-c443-4fb4-bbea-b455958f827a
+	  tags:: formel
+	  bezeichnung:: resonanz [[kreisfrequenz]] für $\mathrm{TE}_{mnp}$ und $\mathrm{TM}_{mnp}$ schwingungen in einem [[hohlraumleiter]]
+		- $\omega_{mnp}$ ... resonanz [[kreisfrequenz]] $\mathrm{\left[ Hz \right]}$
+		- $v$ ... phasengeschwindigkeit $\mathrm{\left[ \frac{m}{s} \right]}$
+		- $m$ ... modenindex $\mathrm{\left[ - \right]}$
+		- $n$ ... modenindex $\mathrm{\left[ - \right]}$
+		- $p$ ... modenindex $\mathrm{\left[ - \right]}$
+		- $a$ ... breite des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
+		- $b$ ... höhe des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
+		- $c$ ... länge des [[hohlraumleiters]] . muss diese bedingung erfüllen [link](((6745a3c5-8db7-45c1-93bd-26e16b795df2))) $\mathrm{\left[ m \right]}$
+		- skript
+		  collapsed:: true
+			- ((674b6434-58f7-44a3-b43b-601434f2dbaf))
 	- $Q_{0,m n p} = \frac{\omega_{m n p}W}{P}$
+	  tags:: formel
+	  bezeichnung:: unbelastete [[güte]] (innere [[güte]])
+		- $-$ ...
 	- $Q_{0} = \frac{2 \pi W}{P T} \quad \text{mit} \quad T = \frac{1}{f_{m n p}}$
 	- $W = \frac{1}{4} \int_{\mathcal{V}} \left(\varepsilon \vect{E} \cdot \vect{E}^{*} + \mu \vect{H} \cdot \vect{H}^{*} \right) \opn{d}V$
 	- $P = \frac{1}{2} \mathbb{R}_{\mathrm{M}} \oint_{\Sigma} \vect{H}_{\mathrm{tang}} \cdot \vect{H}_{\mathrm{tang}}^{*} \opn{d}F$
@@ -318,9 +347,20 @@ tags:: [[wellenausbreitung]], formeln
 	- $W_{e}=W_{m}=A^{2}\mu\frac{a^{2}+c^{2}}{4c^{2}}a b c$
 	- $P = A^{2} \mathbb{R}_{\mathrm{M}} \frac{a c \left(a^{2} + c^{2} \right) + 2 b \left(a^{3} + c^{3}\right)}{c^{2}}$
 	- $Q_{0} = \frac{\pi \eta}{2 \mathbb{R}_{\mathrm{M}}} \frac{b \sqrt{(a^{2} + c^{2})^{3}}}{a c(a^{2} + c^{2}) + 2b(a^{3} + c^{3})}$
+	  id:: 6745a3c5-66f7-450b-94fe-f6068dde589d
+	  tags:: formel
+	  bezeichnung:: unbelastete [[güte]] der $\mathrm{TE}_{101}$
+		- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
+		- $\mathbb{R}_\mathrm{M}$ ... oberflächenwiderstand $\mathrm{\left[ \Omega \right]}$
+		- $a$ ... breite des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
+		- $b$ ... höhe des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
+		- $c$ ... länge des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
 	- $Q_{0} = \frac{\pi \eta \sqrt{2}}{6 \mathbb{R}_{\mathrm{M}}}$
+	  tags:: formel
+	  bezeichnung:: unbelastete [[güte]] der $\mathrm{TE}_{101}$ wenn $a=b=c$
+		- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
+		- $\mathbb{R}_\mathrm{M}$ ... oberflächenwiderstand $\mathrm{\left[ \Omega \right]}$
 - ## [[koaxialleitungen]]
-  collapsed:: true
 	- ${\vect{E}} = {E_{r} \vect{e_{r}}}$
 	- ${\vect{H}} = {H_{\varphi} \vect{e_{\varphi}}}$
 	- $\frac{\partial}{\partial z}U(z) + Z^{\prime}I(z) = 0 ,\qquad \frac{\partial}{\partial z}I(z) + Y^{\prime}U(z) = 0$
@@ -341,6 +381,7 @@ tags:: [[wellenausbreitung]], formeln
 	- $C^{\prime} = \frac{\tau}{\int_{\mathcal{C}} \vect{E} \cdot \vect{e}_{r} \opn{d}r} = \frac{\tau}{\int_{r_{i}}^{r_{a}} \frac{\tau}{2 \pi \varepsilon} \frac{\vect{e}_{r}^{\prime}}{r} \cdot \vect{e}_{r}^{\prime} \opn{d}r} = \frac{2 \pi \varepsilon}{\int_{r_{i}}^{r_{a}} \frac{1}{r} \opn{d}r}$
 	- $C^{\prime} = \frac{2 \pi \varepsilon}{\ln \frac{r_{a}}{r_{i}}}$
 	- $Z_{\mathrm{L,verlustlos}} = \frac{\eta}{2 \pi} \ln \frac{r_{a}}{r_{i}} \qquad \mathrm{mit} \qquad \eta = \sqrt{\frac{\mu}{\varepsilon}}$
+	  id:: 6745a3c5-c563-4874-8d5b-50fee6812aea
 	- $\mathbb{R}_{\star} = \sqrt{\frac{\omega \mu_{\mathrm{L}}}{2 \sigma}}$
 	- $R^{\prime} = \frac{R_{\mathrm{innen}} + R_{\mathrm{aussen}}}{l} \approx \frac{\frac{\mathbb{R}_{\triangle}l}{2 \pi r_{i}} + \frac{\mathbb{R}_{\triangle}l}{2 \pi r_{a}}}{l} = \frac{\mathbb{R}_{\triangle}}{2 \pi}(\frac{1}{r_{i}} + \frac{1}{r_{a}})$
 	- $R^{\prime} = \sqrt{\frac{\omega \mu_{\mathrm{L}}}{2 \sigma}} \frac{1}{2 \pi}(\frac{1}{r_{i}} + \frac{1}{r_{a}})$
