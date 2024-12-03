@@ -106,6 +106,9 @@ tags:: [[templates]], [[uni]]
   template-including-parent:: false
 	- ```python
 	  pyodide_js.globals.clear();
+	  ```
+		- {{evalparent}}
+	- ```python
 	  import pyodide_js
 	  await pyodide_js.loadPackage("micropip")
 	  import micropip

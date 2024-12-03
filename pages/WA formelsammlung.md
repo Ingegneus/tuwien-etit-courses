@@ -197,7 +197,16 @@ tags:: [[wellenausbreitung]], formeln
 	- $\alpha = k_{\opn{E}} \sqrt{\cfrac{\sqrt{1 + s^{2}} - 1}{2}} \qquad \beta = k_{\opn{E}} \sqrt{\cfrac{\sqrt{1 + s^{2}} + 1}{2}}$
 	- $\eta\approx\eta_{\mathrm{E}}\left(1+j\frac{s}{2}\right)\qquad j k_{z}\approx k_{\mathrm{E}}\left(\frac{s}{2}+j\right)$
 	- $\eta \approx \eta_{\opn{E}} \cfrac{1 + j}{\sqrt{2s}} \qquad j k_{z} \approx k_{\opn{E}} \sqrt{\cfrac{s}{2}}\left(1 + j\right)$
-	- $d = \cfrac{1}{\alpha} \approx \cfrac{1}{k_{\opn{E}}} \sqrt{\cfrac{2}{s}} = \sqrt{\cfrac{2}{\omega \mu \sigma}}$
+	- $d = \cfrac{1}{\alpha} \approx \cfrac{1}{k_{\mathrm{E}}} \sqrt{\cfrac{2}{s}} = \sqrt{\cfrac{2}{\omega \mu \sigma}}$
+	  id:: 674d7759-c315-4a22-a755-be7a35c4b441
+	  tags:: formel
+	  bezeichnung:: eindringtiefe
+		- $\alpha$ ... [[realteil]] der [[komplexen]] [[wellenzahl]] $\mathrm{\left[ \frac{rad}{m} \right]}$
+		- $k_\mathrm{E}$ ...
+		- $s$ ... bandbreite $\mathrm{\left[ - \right]}$
+		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
+		- $\mu$ ...
+		- $\sigma$ ... elektrische leitfähigkeit $\mathrm{\left[ \frac{S}{m} \right]}$
 - ## Reﬂexion an glatten Grenzflächen, die [[parallelplattenleitung]]
   collapsed:: true
 	- $\frac{\sin \Theta_{1}}{\sin \Theta_{2}} =  \sqrt{\frac{\varepsilon_{2}}{\varepsilon_{1}}} =  \frac{n_{2}}{n_{1}}$
@@ -288,9 +297,20 @@ tags:: [[wellenausbreitung]], formeln
 	- $I_{z}=-b H_{y1}(0)$
 	- $\mathrm{d}P_{\mathrm{w}}= \cfrac{1}{2}|H_{y1}(0)|^{2}b \mathbb{R}_{1} \opn{d}z \quad \text{bzw.} \quad \cfrac{\mathrm{d}P_{\mathrm{W}}}{\mathrm{d}z}= \cfrac{1}{2}|H_{y1}(0)|^{2}b \mathbb{R}_{1}$
 	- $p= \cfrac{1}{b} \cfrac{\mathrm{d}P_{\mathrm{W}}}{\mathrm{d}z}= \cfrac{1}{2}|H_{\mathrm{tang}}(0)|^{2} \mathbb{R}_1$
-	- $\mathbb{R}_{1}= \cfrac{1}{\sigma_{1}d_{1}}= \mathbb{R}_{\mathbb{\square}} \quad \text{(lies: R square)}$
+	- $\mathbb{R}_{1}= \cfrac{1}{\sigma_{1}d_{1}}= \mathbb{R}_{\square} \quad \text{(lies: R square)}$
 	- $R= \cfrac{l}{\sigma A}$
-	- $R= \int \mathrm{d}R= \int \limits_{0}^{l} \cfrac{\mathbb{R}_{\square}}{b} \mathrm{d}z= \cfrac{1}{\sigma_{1}d_{1}} \cfrac{l}{b} \propto \sqrt{\omega}$
+	- $R= \int \mathrm{d}R= \int \limits_{0}^{l} \cfrac{\mathbb{R}_{\square}}{b} \opn{d}z= \cfrac{1}{\sigma_{1}d_{1}} \cfrac{l}{b} \propto \sqrt{\omega}$
+	  id:: 674d7759-2399-4628-94f1-400ee5be7c0e
+	  tags:: formel
+	  bezeichnung:: gesamtwiderstand eines leiterstreifens aufgrund des skin effekts
+		- $R$ ... gesamter ohmscher widerstand $\mathrm{\left[\Omega\right]}$
+		- $l$ ... länge des streifens $\mathrm{\left[m\right]}$
+		- $\mathbb{R}_{\square}$ ... oberflächenwiderstand $\mathrm{\left[\Omega\right]}$
+		- $b$ ... breite des streifens $\mathrm{\left[m\right]}$
+		- $z$ ... ausbreitungsrichtung
+		- $\sigma_1$ ... elektrische leitfähigkeit $\mathrm{\left[\frac{S}{m}\right]}$
+		- $d_1$ ... eindringtiefe $\mathrm{\left[m\right]}$
+		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[\frac{rad}{s}\right]}$
 	- $R= \cfrac{l}{2 \pi a} \sqrt{\cfrac{\omega \mu}{2 \sigma_{1}}}, \quad X= \cfrac{l}{2 \pi a} \sqrt{\cfrac{\omega \mu}{2 \sigma_{1}}}$
 	- $\cfrac{R}{R_{0}}= \cfrac{X}{X_{0}}= \cfrac{a}{2} \sqrt{\cfrac{\omega \mu \sigma_{1}}{2}}= \cfrac{a}{2d_{1}} \propto \sqrt{\omega} \gg1$
 - ## Resonatoren
@@ -367,7 +387,13 @@ tags:: [[wellenausbreitung]], formeln
 	- ${\mathrm{mit}} { \quad Z^{\prime} = R^{\prime} + j \omega L^{\prime} ,\quad} {Y^{\prime} = G^{\prime} + j \omega C^{\prime}}$
 	- $\frac{\partial}{\partial z}U(z) - Y^{\prime}Z^{\prime}U(z) = 0 ,\qquad \frac{\partial}{\partial z}I(z) - Y^{\prime}Z^{\prime}I(z) = 0$
 	- $U_{v} = Z_{\mathrm{L}}I_{v} ,\qquad U_{r} = - Z_{\mathrm{L}}I_{r}$
-	- $Z_{\mathrm{L}} = \sqrt{\frac{Z^{\prime}}{Y^{\prime}}} \qquad \mathrm{bzw.} \qquad Z_{\mathrm{L}} = \sqrt{\frac{R^{\prime} + j \omega L^{\prime}}{G^{\prime} + j \omega C^{\prime}}}$
+	- $Z_{\mathrm{L}} = \sqrt{\frac{Z^{\prime}}{Y^{\prime}}} \quad \text{bzw.} \quad Z_{\mathrm{L}} = \sqrt{\frac{R^{\prime} + j \omega L^{\prime}}{G^{\prime} + j \omega C^{\prime}}}$
+	  id:: 674d7759-d37d-42be-8941-e48d01b3fc05
+	- $Z_{\mathrm{L,verlustlos}} = \sqrt{\frac{L^\prime}{C^\prime}} \quad \text{wenn} \quad R^\prime = G^\prime = 0 \quad \text{in}$ ((674d7759-d37d-42be-8941-e48d01b3fc05))
+	  tags:: formel, wip
+	  bezeichnung:: -
+	  id:: 674de501-a2a9-4e7a-8a81-892354262c7e
+		- $-$ ...
 	- $j k_{z} = \sqrt{Y^{\prime}Z^{\prime}} = \sqrt{(G^{\prime} + j \omega C^{\prime})(R^{\prime} + j \omega L^{\prime})}$
 	- $\frac{R^{\prime}}{L^{\prime}} = \frac{G^{\prime}}{C^{\prime}}$
 	- $v_{\mathrm{P}} = \frac{\omega}{k} = \frac{\omega}{\opn{Re}\{k_{z}\}} \approx \frac{1}{\sqrt{L^{\prime}C^{\prime}}}$
@@ -380,16 +406,35 @@ tags:: [[wellenausbreitung]], formeln
 	- $\vect{E} = \frac{\tau}{2 \pi \varepsilon} \frac{\vect{e_{r}}}{r}$
 	- $C^{\prime} = \frac{\tau}{\int_{\mathcal{C}} \vect{E} \cdot \vect{e}_{r} \opn{d}r} = \frac{\tau}{\int_{r_{i}}^{r_{a}} \frac{\tau}{2 \pi \varepsilon} \frac{\vect{e}_{r}^{\prime}}{r} \cdot \vect{e}_{r}^{\prime} \opn{d}r} = \frac{2 \pi \varepsilon}{\int_{r_{i}}^{r_{a}} \frac{1}{r} \opn{d}r}$
 	- $C^{\prime} = \frac{2 \pi \varepsilon}{\ln \frac{r_{a}}{r_{i}}}$
-	- $Z_{\mathrm{L,verlustlos}} = \frac{\eta}{2 \pi} \ln \frac{r_{a}}{r_{i}} \qquad \mathrm{mit} \qquad \eta = \sqrt{\frac{\mu}{\varepsilon}}$
+	- $Z_{\mathrm{L,verlustlos}} = \frac{\eta}{2 \pi} \ln \frac{r_{a}}{r_{i}} \quad \text{mit} \quad \eta = \sqrt{\frac{\mu}{\varepsilon}}$
 	  id:: 6745a3c5-c563-4874-8d5b-50fee6812aea
-	- $\mathbb{R}_{\star} = \sqrt{\frac{\omega \mu_{\mathrm{L}}}{2 \sigma}}$
+	- $\mathbb{R}_\square = \sqrt{\frac{\omega \mu_{\mathrm{L}}}{2 \sigma}}$
 	- $R^{\prime} = \frac{R_{\mathrm{innen}} + R_{\mathrm{aussen}}}{l} \approx \frac{\frac{\mathbb{R}_{\triangle}l}{2 \pi r_{i}} + \frac{\mathbb{R}_{\triangle}l}{2 \pi r_{a}}}{l} = \frac{\mathbb{R}_{\triangle}}{2 \pi}(\frac{1}{r_{i}} + \frac{1}{r_{a}})$
-	- $R^{\prime} = \sqrt{\frac{\omega \mu_{\mathrm{L}}}{2 \sigma}} \frac{1}{2 \pi}(\frac{1}{r_{i}} + \frac{1}{r_{a}})$
+	- $R^{\prime}=\sqrt{\frac{\omega\mu_{\mathrm{L}}}{2\sigma}}\frac{1}{2\pi}\left(\frac{1}{r_{i}}+\frac{1}{r_{a}}\right)$
+	  id:: 674d7759-1d40-46b8-9d39-cbf868cd298e
+	  tags:: formel, wip
+	  bezeichnung:: widerstandsbelag
+		- $\mu_L$ ... [[magnetische permeabilität]] des leiters $\mathrm{\left[\frac{Vs}{Am}\right]}$
 	- $G^{\prime} = \omega C^{\prime} \tan \delta_{\varepsilon} = \omega \frac{2 \pi \varepsilon}{\ln \frac{r_{a}}{r_{i}}} \tan \delta_{\varepsilon}$
 	- $j k_{z} = \gamma = \alpha + j \beta = \sqrt{(G^{\prime} + j \omega C^{\prime})(R^{\prime} + j \omega L^{\prime})}$
-	- $\alpha = \alpha_{R} + \alpha_{C} = (\underbrace{\frac{R^{\prime}}{2 \sqrt{\frac{L^{\prime}}{C^{\prime}}}}}_{(1)} + \underbrace{\underbrace{G^{\prime} \sqrt{\frac{L^{\prime}}{C^{\prime}}}}_{(2)}}_{(3)} \underbrace{1}_{(3)}$
-	- $\mathrm{mit} \qquad \quad \mathrm{sinh} \delta_{R} = \frac{R^{\prime}}{\omega L^{\prime}} ,\quad \sinh \delta_{G} = \frac{G^{\prime}}{\omega C^{\prime}}$
+	- $\alpha = \alpha_{R} + \alpha_{C} = \Bigg( \underbrace{ \frac{R^{\prime}}{2\sqrt{\frac{L^\prime}{C^\prime}}}}_{(1) \mathrlap{~~ \approx \alpha_R}} + \underbrace{\frac{G^\prime \sqrt{\frac{L^\prime}{C^\prime}}}{2}}_{(2) \mathrlap{~~ \approx \alpha_R}} \Bigg) \underbrace{\frac{1}{\cosh \frac{\theta_R - \theta_G}{2}}}_{(3) \mathrlap{ ~~\approx 1}} \\ \text{mit} \quad \sinh \theta_{R} = \frac{R^{\prime}}{\omega L^{\prime}} ~, \quad \sinh \theta_{G} = \frac{G^{\prime}}{\omega C^{\prime}}$
+	  id:: 674d7759-bd4b-46b8-ad6c-6eba0f844dff
+	  tags:: formel, wip
+	  bezeichnung:: dämpfung
+		- $\alpha$ ... gesamte dämpfung
+		- $\alpha_R$ ... ohmsche verluste
+		- $\alpha_C$ ... dielektrische verluste
+		- $R^\prime$ ... widerstandsbelag $\mathrm{\left[\frac{\Omega}{m}\right]}$
+		- $L^\prime$ ... induktivitätsbelag $\mathrm{\left[\frac{H}{m}\right]}$
+		- $C^\prime$ ... kapazitätsbelag $\mathrm{\left[\frac{F}{m}\right]}$
+		- $G^\prime$ ... leitwertsbelag $\mathrm{\left[\frac{S}{m}\right]}$
+		- $\theta_R$ ... induktiver verlustfaktor
+		- $\theta_G$ ... kapazitiver verlustfaktor
 	- $\alpha_{R} \approx \frac{R^{\prime}}{2 \sqrt{\frac{L^{\prime}}{C^{\prime}}}} = \frac{\mathbb{R}_{\perp}}{2 \eta r_{a}} \frac{1 + \frac{r_{a}}{r_{i}}}{\ln \frac{r_{a}}{r_{i}}}$
+	  tags:: formel, wip
+	  bezeichnung:: ohmsche verluste einer [[koaxialleitung]] [link](((674d7759-bd4b-46b8-ad6c-6eba0f844dff)))
+	  id:: 674d7759-4a7e-4220-b396-27bd49ccaa45
+		- $-$ ...
 	- $Z_{\mathrm{L,min. Dampfung}} = \frac{\eta_{0}}{2 \pi \sqrt{\varepsilon_{r}}} \ln \frac{r_{a}}{r_{i}} = \frac{77 \Omega}{\sqrt{\varepsilon_{r}}}$
 	- $U_{\mathrm{max}} = E_{\mathrm{max}} r_{i} \ln \frac{r_{a}}{r_{i}} = E_{\mathrm{max}} r_{a} \frac{\ln \frac{r_{a}}{r_{i}}}{\frac{r_{a}}{r_{i}}}$
 	- $Z_{\mathrm{L,max.Spannungsfest}} = \frac{60 \Omega}{\sqrt{\varepsilon_{r}}}$
