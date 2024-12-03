@@ -118,18 +118,34 @@ tags:: [[templates]], [[uni]]
 	  from numpy import *
 	  await micropip.install('matplotlib')
 	  import matplotlib.pyplot as plt
-	  import io, base64
+	  import io, base64, sys
 	  await micropip.install('sympy')
 	  import sympy as sp
 	  from sympy.utilities.lambdify import lambdify
 	  from sympy import latex
+	  printer = io.StringIO()
+	  sys.stdout = printer
 	  
-	  "resultat: " + f"{var:.4g}" + "unit"
+	  var_numeric
+	  var_symbolic
+	  print(f"var = {var_numeric:.4g}unit")
+	  print("============")
+	  print(f"latex code: {sp.latex(var_symbolic)}")
+	  sp.pprint(var_symbolic, use_unicode=False)
+	  
+	  printer.getValue()
 	  ```
 		- {{evalparent}}
 - calc block
   template:: calc block
   template-including-parent:: false
 	- ```python
+	  
+	  print(f"var = {var_numeric:.4g}unit")
+	  print("============")
+	  print(f"latex code: {sp.latex(var_symbolic)}")
+	  sp.pprint(var_symbolic, use_unicode=False)
+	  
+	  printer.getValue()
 	  ```
 		- {{evalparent}}

@@ -754,6 +754,7 @@ alias:: wave propagation, wellenausbreitungs
 	  background-color:: green
 		- Variante 1)
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp){:width 400}
 			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 60 \mathrm{\Omega}$. Der Außenradius sei $r_a = 8.5 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 1$.
 			  background-color:: green
@@ -864,6 +865,124 @@ alias:: wave propagation, wellenausbreitungs
 					  "r = " + f"{rA*1E4:.4g}" + "e-4"
 					  ```
 						- {{evalparent}}
+						- es ist schwierig den frequenzbereich abzuschätzen, da $R_A$ und $Z_L$ von der frequenz abhängen
+		- Variante 2)
+		  background-color:: green
+		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp){:width 400}
+			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 50 \mathrm{\Omega}$. Der Außenradius sei $r_a = 7.3 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 2.35$.
+			  background-color:: green
+				- formeln
+					- ((6745a3c5-c563-4874-8d5b-50fee6812aea))
+				- code
+					- ```python
+					  pyodide_js.globals.clear();
+					  ```
+						- {{evalparent}}
+					- ```python
+					  import pyodide_js
+					  await pyodide_js.loadPackage("micropip")
+					  import micropip
+					  await micropip.install('scipy')
+					  from scipy import *
+					  from scipy.constants import *
+					  from numpy import *
+					  await micropip.install('matplotlib')
+					  import matplotlib.pyplot as plt
+					  import io, base64, sys
+					  await micropip.install('sympy')
+					  import sympy as sp
+					  from sympy.utilities.lambdify import lambdify
+					  printer = io.StringIO()
+					  sys.stdout = printer
+					  
+					  # angabe
+					  ZL = 50
+					  ra = 7.3E-3
+					  epsr = 2.35
+					  eps = epsr * epsilon_0
+					  mur = 1
+					  mu = mur * mu_0
+					  eta = sqrt(mu/eps)
+					  
+					  eta_s, ra_s, ri_s = sp.symbols('eta r_a r_i', 
+					                                 real=True, 
+					                                 positive=True)
+					  ZL_s = eta_s/(2*pi) * sp.ln(ra_s / ri_s)
+					  
+					  eqn = sp.Eq(ZL_s, ZL)
+					  sol = sp.solve(eqn, ri_s)
+					  ri_s = sol[0]
+					  
+					  # werte einsetzen
+					  ri = (ri_s.subs(ra_s, ra)
+					          	.subs(eta_s, eta)).evalf(n=4)
+					  
+					  print(f"r_i = {ri*1000:.4g}mm")
+					  print("=============")
+					  print(f"latex code: {sp.latex(ri_s)}")
+					  sp.pprint(ri_s,use_unicode=False)
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+						- $r_{a} e^{- \frac{314.15926535898}{\eta}}$
+			- b) Berechnen Sie die ohmschen Verluste $\alpha_R$ des Kabels für eine Leitfähigkeit des Innen- bzw. Außenleiters von $\sigma=5.7\cdot10^7\mathrm{S/m}$ bei $8\mathrm{GHz}$ in $\mathrm{dB/m}$.
+			  background-color:: green
+				- formeln
+					- ((674d7759-c315-4a22-a755-be7a35c4b441))
+					- ((674d7759-1d40-46b8-9d39-cbf868cd298e))
+					- ((674d7759-4a7e-4220-b396-27bd49ccaa45))
+					- ((674de501-a2a9-4e7a-8a81-892354262c7e))
+				- code
+					- ```python
+					  sig = 57E6
+					  f = 8E9
+					  w = 2*pi*f
+					  R = (sqrt((w * mu)/(2 * sig))*
+					       1 / (2 * pi) * (1 / ri + 1 / ra))
+					  
+					  alphaR = R/(2*ZL)
+					  print(f"alphaR = {alphaR:.4g}unit")
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+					- ```python
+					  ```
+						- {{evalparent}}
+			- c) Ein Ende der Koaxialleitung wird mit Hilfe einer kreisförmigen Scheibe aus Graphit abgeschlossen. Die Scheibe habe ein $R_\square  = 120\pi \mathrm{\Omega}$. Welchen ohmschen Widerstand hat die kreisförmige Scheibe für eine einfallende $\mathrm{TEM}$ Welle?
+			  background-color:: green
+				- ![img](../assets/documents/WA_koaxleitung_abschluss_illustration.webp){:width 400}
+				- formeln
+					- ((674d7759-2399-4628-94f1-400ee5be7c0e))
+				- code
+					- ```python
+					  Rsq = 120*pi
+					  r_s = sp.symbols('r', positive=True, real=True)
+					  R = sp.integrate(Rsq/(2*pi*r_s), (r_s,ri,ra))
+					  "R = " + f"{R:.4g}" + "Ω"
+					  ```
+						- {{evalparent}}
+			- d) Wie groß ist der Reﬂexionsfaktor am Ende der Koaxialleitung auf Grund des Abschlusswidertandes der kreisförmigen Scheibe? In welchem Frequenzbereich gilt dieser Reﬂexionsfaktor?
+			  background-color:: green
+				- formeln
+					- $\rho_{A} = \frac{R_{A}-Z_{L}}{R_{A}+Z_{L}}$
+					  tags:: formel
+					  bezeichnung:: reflexionsfaktor am ende einer [[koaxialleitung]]
+						- $R_A$ ... Abschlusswiderstrand $\mathrm{\left[\Omega\right]}$
+						- $Z_L$ ... leitungsimpedanz $\mathrm{\left[\Omega\right]}$
+						- skript
+						  collapsed:: true
+							- ((674ec847-fd7d-4084-915e-8421e8671ad5))
+				- code
+					- ```python
+					  RA = R # wert der vorher berechnet wurde
+					  rA = (RA-ZL)/(RA+ZL)
+					  "r = " + f"{rA*1E4:.4g}" + "e-4"
+					  ```
+						- {{evalparent}}
+						- es ist schwierig den frequenzbereich abzuschätzen, da $R_A$ und $Z_L$ von der frequenz abhängen
+			-
 - ## flashcards
 	- ### index
 		- query-table:: true
