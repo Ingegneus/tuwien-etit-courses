@@ -918,7 +918,7 @@ alias:: wave propagation, wellenausbreitungs
 					          	.subs(eta_s, eta)).evalf(n=4)
 					  
 					  print(f"r_i = {ri*1000:.4g}mm")
-					  print("=============")
+					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
 					  print(f"latex code: {sp.latex(ri_s)}")
 					  sp.pprint(ri_s,use_unicode=False)
 					  
@@ -929,60 +929,43 @@ alias:: wave propagation, wellenausbreitungs
 			- b) Berechnen Sie die ohmschen Verluste $\alpha_R$ des Kabels für eine Leitfähigkeit des Innen- bzw. Außenleiters von $\sigma=5.7\cdot10^7\mathrm{S/m}$ bei $8\mathrm{GHz}$ in $\mathrm{dB/m}$.
 			  background-color:: green
 				- formeln
-					- ((674d7759-c315-4a22-a755-be7a35c4b441))
 					- ((674d7759-1d40-46b8-9d39-cbf868cd298e))
 					- ((674d7759-4a7e-4220-b396-27bd49ccaa45))
 					- ((674de501-a2a9-4e7a-8a81-892354262c7e))
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
 					  sig = 57E6
 					  f = 8E9
 					  w = 2*pi*f
 					  R = (sqrt((w * mu)/(2 * sig))*
 					       1 / (2 * pi) * (1 / ri + 1 / ra))
+					  print(f"R' = {R:.4g}Ω/m")
 					  
 					  alphaR = R/(2*ZL)
-					  print(f"alphaR = {alphaR:.4g}unit")
+					  print(f"alphaR = {alphaR:.4g}Np/m")
+					  print(f"alphaR = {alphaR*20/log(10):.4g}dB/m")
+					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
 					  
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
-					  ```
-						- {{evalparent}}
-			- c) Ein Ende der Koaxialleitung wird mit Hilfe einer kreisförmigen Scheibe aus Graphit abgeschlossen. Die Scheibe habe ein $R_\square  = 120\pi \mathrm{\Omega}$. Welchen ohmschen Widerstand hat die kreisförmige Scheibe für eine einfallende $\mathrm{TEM}$ Welle?
-			  background-color:: green
-				- ![img](../assets/documents/WA_koaxleitung_abschluss_illustration.webp){:width 400}
-				- formeln
-					- ((674d7759-2399-4628-94f1-400ee5be7c0e))
-				- code
-					- ```python
-					  Rsq = 120*pi
-					  r_s = sp.symbols('r', positive=True, real=True)
-					  R = sp.integrate(Rsq/(2*pi*r_s), (r_s,ri,ra))
-					  "R = " + f"{R:.4g}" + "Ω"
-					  ```
-						- {{evalparent}}
-			- d) Wie groß ist der Reﬂexionsfaktor am Ende der Koaxialleitung auf Grund des Abschlusswidertandes der kreisförmigen Scheibe? In welchem Frequenzbereich gilt dieser Reﬂexionsfaktor?
+			- c) Berechnen Sie die dielektrischen Verluste $\alpha_G$ des Kabels für ein Dielektrikum mit $\tan\delta = 0,001$ in $\mathrm{dB/m}$.
 			  background-color:: green
 				- formeln
-					- $\rho_{A} = \frac{R_{A}-Z_{L}}{R_{A}+Z_{L}}$
-					  tags:: formel
-					  bezeichnung:: reflexionsfaktor am ende einer [[koaxialleitung]]
-						- $R_A$ ... Abschlusswiderstrand $\mathrm{\left[\Omega\right]}$
-						- $Z_L$ ... leitungsimpedanz $\mathrm{\left[\Omega\right]}$
-						- skript
-						  collapsed:: true
-							- ((674ec847-fd7d-4084-915e-8421e8671ad5))
+					- ((674d7759-056e-4bac-998e-f2bccdc83035))
 				- code
 					- ```python
-					  RA = R # wert der vorher berechnet wurde
-					  rA = (RA-ZL)/(RA+ZL)
-					  "r = " + f"{rA*1E4:.4g}" + "e-4"
+					  printer.seek(0); printer.truncate(0)
+					  
+					  tand= 0.001
+					  G=1/R
+					  a = G*ZL/2
+					  print(f"α_G = {a*20/log(10):.4g}dB/m")
+					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-						- es ist schwierig den frequenzbereich abzuschätzen, da $R_A$ und $Z_L$ von der frequenz abhängen
-			-
 - ## flashcards
 	- ### index
 		- query-table:: true

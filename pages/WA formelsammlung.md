@@ -30,7 +30,7 @@ tags:: [[wellenausbreitung]], formeln
 	- $\vect{E}(x,y,z,t) = \vect{E}( \vect{r},t) = \opn{Re} \{\vect{E}( \vect{r})e^{j \omega t} \} = \frac{1}{2} \left( \vect{E}( \vect{r})e^{j \omega t} + \vect{E^{*}}( \vect{r})e^{ - j \omega t} \right)$
 	- $\vect{\nabla} \times \vect{H} = \vect{S} + j \omega \vect{D} = \sigma \vect{E} + j \omega \varepsilon \vect{E} = j \omega \delta \vect{E}$
 	- $\delta = \varepsilon + \frac{\sigma}{j \omega} = \varepsilon - j \frac{\sigma}{\omega}$
-	- $\tan \theta = \frac{\varepsilon^{\prime \prime}}{\varepsilon^{\prime}} = \frac{\sigma}{\omega \varepsilon}$
+	- $\tan \theta = \frac{\varepsilon''}{\varepsilon'} = \frac{\sigma}{\omega \varepsilon}$
 	  id:: 673e3379-c5b6-4af8-a61a-20daa9718476
 	  tags:: formel, wip
 	  bezeichnung:: verlustwinkel
@@ -57,7 +57,7 @@ tags:: [[wellenausbreitung]], formeln
 	- $\overline{{w_{\opn{m}}(t)}} = w_{\opn{m}} = \frac{\mu}{4}| \vect{H}(t)|^{2}$
 	- $\overline{{p_{\opn{v}}(t)}} = p_{\opn{v}} = \frac{\sigma}{2}| \vect{E}(t)|^{2}$
 	- $\vect{T} = \frac{1}{2} \vect{E} \times \vect{H}^{*} = \vect{T}_{\opn{w}} + j \vect{T}_{\opn{b}}$
-	- ${{\oint \vect{E} \cdot \opn{d} \vect{l}^{\prime} = }} { E_{t1} \Delta l + E_{n1} \Delta x + E_{n2} \Delta x - E_{t2} \Delta l - E_{n2} \Delta x - E_{n1} \Delta x}$
+	- ${{\oint \vect{E} \cdot \opn{d} \vect{l}' = }} { E_{t1} \Delta l + E_{n1} \Delta x + E_{n2} \Delta x - E_{t2} \Delta l - E_{n2} \Delta x - E_{n1} \Delta x}$
 	- $= { (E_{t1} - E_{t2}) \Delta l - 0E_{n1} + 0E_{n2} = - \frac{\partial}{\partial t} \int_{F} \vect{B} \cdot \opn{d} \vect{F} = 0}$
 	- $E_{t1} = E_{t2}$
 	- $H_{t1} = H_{t2}$
@@ -383,54 +383,60 @@ tags:: [[wellenausbreitung]], formeln
 - ## [[koaxialleitungen]]
 	- ${\vect{E}} = {E_{r} \vect{e_{r}}}$
 	- ${\vect{H}} = {H_{\varphi} \vect{e_{\varphi}}}$
-	- $\frac{\partial}{\partial z}U(z) + Z^{\prime}I(z) = 0 ,\qquad \frac{\partial}{\partial z}I(z) + Y^{\prime}U(z) = 0$
-	- ${\mathrm{mit}} { \quad Z^{\prime} = R^{\prime} + j \omega L^{\prime} ,\quad} {Y^{\prime} = G^{\prime} + j \omega C^{\prime}}$
-	- $\frac{\partial}{\partial z}U(z) - Y^{\prime}Z^{\prime}U(z) = 0 ,\qquad \frac{\partial}{\partial z}I(z) - Y^{\prime}Z^{\prime}I(z) = 0$
+	- $\frac{\partial}{\partial z}U(z) + Z'I(z) = 0 ,\qquad \frac{\partial}{\partial z}I(z) + Y'U(z) = 0$
+	- ${\mathrm{mit}} { \quad Z' = R' + j \omega L' ,\quad} {Y' = G' + j \omega C'}$
+	- $\frac{\partial}{\partial z}U(z) - Y'Z'U(z) = 0 ,\qquad \frac{\partial}{\partial z}I(z) - Y'Z'I(z) = 0$
 	- $U_{v} = Z_{\mathrm{L}}I_{v} ,\qquad U_{r} = - Z_{\mathrm{L}}I_{r}$
-	- $Z_{\mathrm{L}} = \sqrt{\frac{Z^{\prime}}{Y^{\prime}}} \quad \text{bzw.} \quad Z_{\mathrm{L}} = \sqrt{\frac{R^{\prime} + j \omega L^{\prime}}{G^{\prime} + j \omega C^{\prime}}}$
+	- $Z_{\mathrm{L}} = \sqrt{\frac{Z'}{Y'}} \quad \text{bzw.} \quad Z_{\mathrm{L}} = \sqrt{\frac{R' + j \omega L'}{G' + j \omega C'}}$
 	  id:: 674d7759-d37d-42be-8941-e48d01b3fc05
-	- $Z_{\mathrm{L,verlustlos}} = \sqrt{\frac{L^\prime}{C^\prime}} \quad \text{wenn} \quad R^\prime = G^\prime = 0 \quad \text{in}$ ((674d7759-d37d-42be-8941-e48d01b3fc05))
+	- $Z_{\mathrm{L,verlustlos}} = \sqrt{\frac{L'}{C'}} \quad \text{wenn} \quad R' = G' = 0 \quad \text{in}$ ((674d7759-d37d-42be-8941-e48d01b3fc05))
 	  tags:: formel, wip
 	  bezeichnung:: -
 	  id:: 674de501-a2a9-4e7a-8a81-892354262c7e
 		- $-$ ...
-	- $j k_{z} = \sqrt{Y^{\prime}Z^{\prime}} = \sqrt{(G^{\prime} + j \omega C^{\prime})(R^{\prime} + j \omega L^{\prime})}$
-	- $\frac{R^{\prime}}{L^{\prime}} = \frac{G^{\prime}}{C^{\prime}}$
-	- $v_{\mathrm{P}} = \frac{\omega}{k} = \frac{\omega}{\opn{Re}\{k_{z}\}} \approx \frac{1}{\sqrt{L^{\prime}C^{\prime}}}$
+	- $j k_{z} = \sqrt{Y'Z'} = \sqrt{(G' + j \omega C')(R' + j \omega L')}$
+	- $\frac{R'}{L'} = \frac{G'}{C'}$
+	- $v_{\mathrm{P}} = \frac{\omega}{k} = \frac{\omega}{\opn{Re}\{k_{z}\}} \approx \frac{1}{\sqrt{L'C'}}$
 	- $L = \frac{1}{I} \int_{A} \vect{B} \cdot \vect{n_{A}} \opn{d} \mathcal{A}$
-	- $L^{\prime} = \frac{1}{I} \int_{r_{i}}^{r_{a}} \vect{B} \cdot \vect{n_{A}} \opn{d}r = \frac{1}{I} \int_{r_{i}}^{r_{a}}B_{\varphi} \opn{d}r = \frac{\mu}{I} \int_{r_{i}}^{r_{a}}H_{\varphi} \opn{d}r$
+	- $L' = \frac{1}{I} \int_{r_{i}}^{r_{a}} \vect{B} \cdot \vect{n_{A}} \opn{d}r = \frac{1}{I} \int_{r_{i}}^{r_{a}}B_{\varphi} \opn{d}r = \frac{\mu}{I} \int_{r_{i}}^{r_{a}}H_{\varphi} \opn{d}r$
 	- $H_{\varphi} = \frac{I}{2 \pi r}$
-	- $L^{\prime} = \frac{\mu}{I} \int_{r_{i}}^{r_{a}} \frac{I}{2 \pi r} \opn{d}r$
-	- $L^{\prime} = \frac{\mu}{2 \pi} \ln \frac{r_{a}}{r_{i}}$
+	- $L' = \frac{\mu}{I} \int_{r_{i}}^{r_{a}} \frac{I}{2 \pi r} \opn{d}r$
+	- $L' = \frac{\mu}{2 \pi} \ln \frac{r_{a}}{r_{i}}$
 	- $C = \frac{Q}{\int_{\mathcal{C}} \vect{E} \cdot \vect{e_{r}} \opn{d}r}$
 	- $\vect{E} = \frac{\tau}{2 \pi \varepsilon} \frac{\vect{e_{r}}}{r}$
-	- $C^{\prime} = \frac{\tau}{\int_{\mathcal{C}} \vect{E} \cdot \vect{e}_{r} \opn{d}r} = \frac{\tau}{\int_{r_{i}}^{r_{a}} \frac{\tau}{2 \pi \varepsilon} \frac{\vect{e}_{r}^{\prime}}{r} \cdot \vect{e}_{r}^{\prime} \opn{d}r} = \frac{2 \pi \varepsilon}{\int_{r_{i}}^{r_{a}} \frac{1}{r} \opn{d}r}$
-	- $C^{\prime} = \frac{2 \pi \varepsilon}{\ln \frac{r_{a}}{r_{i}}}$
+	- $C' = \frac{\tau}{\int_{\mathcal{C}} \vect{E} \cdot \vect{e}_{r} \opn{d}r} = \frac{\tau}{\int_{r_{i}}^{r_{a}} \frac{\tau}{2 \pi \varepsilon} \frac{\vect{e}_{r}'}{r} \cdot \vect{e}_{r}' \opn{d}r} = \frac{2 \pi \varepsilon}{\int_{r_{i}}^{r_{a}} \frac{1}{r} \opn{d}r}$
+	- $C' = \frac{2 \pi \varepsilon}{\ln \frac{r_{a}}{r_{i}}}$
 	- $Z_{\mathrm{L,verlustlos}} = \frac{\eta}{2 \pi} \ln \frac{r_{a}}{r_{i}} \quad \text{mit} \quad \eta = \sqrt{\frac{\mu}{\varepsilon}}$
 	  id:: 6745a3c5-c563-4874-8d5b-50fee6812aea
 	- $\mathbb{R}_\square = \sqrt{\frac{\omega \mu_{\mathrm{L}}}{2 \sigma}}$
-	- $R^{\prime} = \frac{R_{\mathrm{innen}} + R_{\mathrm{aussen}}}{l} \approx \frac{\frac{\mathbb{R}_{\triangle}l}{2 \pi r_{i}} + \frac{\mathbb{R}_{\triangle}l}{2 \pi r_{a}}}{l} = \frac{\mathbb{R}_{\triangle}}{2 \pi}(\frac{1}{r_{i}} + \frac{1}{r_{a}})$
-	- $R^{\prime}=\sqrt{\frac{\omega\mu_{\mathrm{L}}}{2\sigma}}\frac{1}{2\pi}\left(\frac{1}{r_{i}}+\frac{1}{r_{a}}\right)$
+	- $R' = \frac{R_{\mathrm{innen}} + R_{\mathrm{aussen}}}{l} \approx \frac{\frac{\mathbb{R}_{\triangle}l}{2 \pi r_{i}} + \frac{\mathbb{R}_{\triangle}l}{2 \pi r_{a}}}{l} = \frac{\mathbb{R}_{\triangle}}{2 \pi}(\frac{1}{r_{i}} + \frac{1}{r_{a}})$
+	- $R'=\sqrt{\frac{\omega\mu_{\mathrm{L}}}{2\sigma}}\frac{1}{2\pi}\left(\frac{1}{r_{i}}+\frac{1}{r_{a}}\right)$
 	  id:: 674d7759-1d40-46b8-9d39-cbf868cd298e
 	  tags:: formel, wip
 	  bezeichnung:: widerstandsbelag
 		- $\mu_L$ ... [[magnetische permeabilität]] des leiters $\mathrm{\left[\frac{Vs}{Am}\right]}$
-	- $G^{\prime} = \omega C^{\prime} \tan \delta_{\varepsilon} = \omega \frac{2 \pi \varepsilon}{\ln \frac{r_{a}}{r_{i}}} \tan \delta_{\varepsilon}$
-	- $j k_{z} = \gamma = \alpha + j \beta = \sqrt{(G^{\prime} + j \omega C^{\prime})(R^{\prime} + j \omega L^{\prime})}$
-	- $\alpha = \alpha_{R} + \alpha_{C} = \Bigg( \underbrace{ \frac{R^{\prime}}{2\sqrt{\frac{L^\prime}{C^\prime}}}}_{(1) \mathrlap{~~ \approx \alpha_R}} + \underbrace{\frac{G^\prime \sqrt{\frac{L^\prime}{C^\prime}}}{2}}_{(2) \mathrlap{~~ \approx \alpha_R}} \Bigg) \underbrace{\frac{1}{\cosh \frac{\theta_R - \theta_G}{2}}}_{(3) \mathrlap{ ~~\approx 1}} \\ \text{mit} \quad \sinh \theta_{R} = \frac{R^{\prime}}{\omega L^{\prime}} ~, \quad \sinh \theta_{G} = \frac{G^{\prime}}{\omega C^{\prime}}$
+	- $G' = \omega C' \tan \delta_{\varepsilon} = \omega \frac{2 \pi \varepsilon}{\ln \frac{r_{a}}{r_{i}}} \tan \delta_{\varepsilon}$
+	  id:: 674d7759-056e-4bac-998e-f2bccdc83035
+	  tags:: formel
+	  bezeichnung:: leitwert belag einer [[koaxialleitung]]
+		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[\frac{rad}{s}\right]}$
+		- $C'$
+	- $j k_{z} = \gamma = \alpha + j \beta = \sqrt{(G' + j \omega C')(R' + j \omega L')}$
+	- $\alpha = \alpha_{R} + \alpha_{G} = \Bigg( \underbrace{ \frac{R'}{2\sqrt{\frac{L'}{C'}}}}_{(1) \mathrlap{~~ \approx \alpha_R}} + \underbrace{\frac{G' \sqrt{\frac{L'}{C'}}}{2}}_{(2) \mathrlap{~~ \approx \alpha_G}} \Bigg) \underbrace{\frac{1}{\cosh \frac{\theta_R - \theta_G}{2}}}_{(3) \mathrlap{ ~~\approx 1}} \\ \text{mit} \quad \sinh \theta_{R} = \frac{R'}{\omega L'} ~, \quad \sinh \theta_{G} = \frac{G'}{\omega C'}$
 	  id:: 674d7759-bd4b-46b8-ad6c-6eba0f844dff
 	  tags:: formel, wip
 	  bezeichnung:: dämpfung
+	  collapsed:: true
 		- $\alpha$ ... gesamte dämpfung
 		- $\alpha_R$ ... ohmsche verluste
 		- $\alpha_C$ ... dielektrische verluste
-		- $R^\prime$ ... widerstandsbelag $\mathrm{\left[\frac{\Omega}{m}\right]}$
-		- $L^\prime$ ... induktivitätsbelag $\mathrm{\left[\frac{H}{m}\right]}$
-		- $C^\prime$ ... kapazitätsbelag $\mathrm{\left[\frac{F}{m}\right]}$
-		- $G^\prime$ ... leitwertsbelag $\mathrm{\left[\frac{S}{m}\right]}$
+		- $R'$ ... widerstandsbelag $\mathrm{\left[\frac{\Omega}{m}\right]}$
+		- $L'$ ... induktivitätsbelag $\mathrm{\left[\frac{H}{m}\right]}$
+		- $C'$ ... kapazitätsbelag $\mathrm{\left[\frac{F}{m}\right]}$
+		- $G'$ ... leitwertsbelag $\mathrm{\left[\frac{S}{m}\right]}$
 		- $\theta_R$ ... induktiver verlustfaktor
 		- $\theta_G$ ... kapazitiver verlustfaktor
-	- $\alpha_{R} \approx \frac{R^{\prime}}{2 \sqrt{\frac{L^{\prime}}{C^{\prime}}}} = \frac{\mathbb{R}_{\perp}}{2 \eta r_{a}} \frac{1 + \frac{r_{a}}{r_{i}}}{\ln \frac{r_{a}}{r_{i}}}$
+	- $\alpha_{R} \approx \frac{R'}{2 \sqrt{\frac{L'}{C'}}} = \frac{\mathbb{R}_{\perp}}{2 \eta r_{a}} \frac{1 + \frac{r_{a}}{r_{i}}}{\ln \frac{r_{a}}{r_{i}}}$
 	  tags:: formel, wip
 	  bezeichnung:: ohmsche verluste einer [[koaxialleitung]] [link](((674d7759-bd4b-46b8-ad6c-6eba0f844dff)))
 	  id:: 674d7759-4a7e-4220-b396-27bd49ccaa45
@@ -464,10 +470,10 @@ tags:: [[wellenausbreitung]], formeln
 	- $P = \int \vect{P} \cdot \opn{d} \vect{F} = \int T_{w,z} \opn{d}x \opn{d}y = \frac{1}{2} \int E_{y} H_{x}^{*} \opn{d}x \opn{d}y = \frac{1}{2 \eta}|E_{y0}|^{2} hw$
 	- $Z_{\mathrm{W}} = \eta \frac{h}{w}.$
 	- $\alpha_{\mathrm{L}} = \sqrt{\frac{\omega \mu}{2 \sigma}} \frac{1}{Z_{\mathrm{L}}w}.$
-	- $\alpha_{\mathrm{L}}^{\prime} = \alpha_{\mathrm{L}} \left(1 + \frac{2}{\pi} \arctan$
+	- $\alpha_{\mathrm{L}}' = \alpha_{\mathrm{L}} \left(1 + \frac{2}{\pi} \arctan$
 	- $left(1,4 \frac{\Delta}{d_{1}}$
 	- $right) \right)$
-	- $\alpha_{\mathrm{D}} = k_{\mathrm{E}} \frac{S}{2},\quad \frac{\varepsilon^{\prime}}{\varepsilon^{\prime \prime}} = \tan \Theta = s$
+	- $\alpha_{\mathrm{D}} = k_{\mathrm{E}} \frac{S}{2},\quad \frac{\varepsilon'}{\varepsilon''} = \tan \Theta = s$
 	- $\alpha_{\mathrm{D}} = \frac{\pi}{\lambda} \tan \Theta$
 	- $\alpha_{\mathrm{D}} = \frac{\pi}{\lambda} \tan \Theta \left(\frac{\varepsilon_{r}}{\varepsilon_{\mathrm{eff}}} \frac{\varepsilon_{\mathrm{eff}} - 1}{\varepsilon_{r} - 1} \right)$
 - ## Wellen und Hindernisse
@@ -478,14 +484,14 @@ tags:: [[wellenausbreitung]], formeln
 	- $v = h \sqrt{2/\lambda \left(1/d_{s} + 1/d_{e} \right)}$
 - ## [[antennen]]
   collapsed:: true
-	- $\vect{\mathbf{A}} \left(\vect{r} \right) = \mu \int \frac{\vect{\mathbf{S}}_{e} \left(\vect{r}^{\prime} \right)e^{ - j k \left|\vect{r} - \vect{r}^{\prime} \right|}}{4 \pi \left|\vect{r} - \vect{r}^{\prime} \right|} d V^{\prime}$
-	- ${V}^{\prime}$
-	- $\vect{\mathbf{A}} \left(\vect{r} \right) = \mu \frac{e^{ - j k r}}{4 \pi r} \int \vect{\mathbf{S}}_{e} \left(\vect{r}^{\prime} \right) e^{ + j k r^{\prime} \cos \vartheta}d V^{\prime} = \mu \frac{e^{ - j k r}}{4 \pi r} \vect{\mathbf{N}} \left(\vartheta \right)$
-	- ${|\tilde{r} - \tilde{r}^{\prime}|} = {\sqrt{r^{2} + r^{\prime2} - 2r r^{\prime} \cos \tilde{\vartheta}}}$
-	- ${ - } { \sqrt{\left(r - r^{\prime} \cos \vartheta \right)^{2} + r^{\prime2} \sin^{2} \vartheta}}$
-	- $= {(r - r^{\prime} \cos \vartheta) \left[1 + \frac{1}{2} \frac{r^{\prime}}{\left(r - r^{\prime} \cos \vartheta \right)^{2}} + \cdots \right]}$
-	- $\Delta \alpha = k \Delta r = \frac{2 \pi}{\lambda} \frac{r^{\prime 2} \sin^2 \vartheta}{2 \left(r - r^{\prime} \cos \vartheta \right)}$
-	- $\Delta \alpha_{m a x} = \frac{\pi}{\lambda} \frac{r^{\prime2}}{r}$
+	- $\vect{\mathbf{A}} \left(\vect{r} \right) = \mu \int \frac{\vect{\mathbf{S}}_{e} \left(\vect{r}' \right)e^{ - j k \left|\vect{r} - \vect{r}' \right|}}{4 \pi \left|\vect{r} - \vect{r}' \right|} d V'$
+	- ${V}'$
+	- $\vect{\mathbf{A}} \left(\vect{r} \right) = \mu \frac{e^{ - j k r}}{4 \pi r} \int \vect{\mathbf{S}}_{e} \left(\vect{r}' \right) e^{ + j k r' \cos \vartheta}d V' = \mu \frac{e^{ - j k r}}{4 \pi r} \vect{\mathbf{N}} \left(\vartheta \right)$
+	- ${|\tilde{r} - \tilde{r}'|} = {\sqrt{r^{2} + r'^{2} - 2r r' \cos \tilde{\vartheta}}}$
+	- ${ - } { \sqrt{\left(r - r' \cos \vartheta \right)^{2} + r'^{2} \sin^{2} \vartheta}}$
+	- $= {(r - r' \cos \vartheta) \left[1 + \frac{1}{2} \frac{r'}{\left(r - r' \cos \vartheta \right)^{2}} + \cdots \right]}$
+	- $\Delta \alpha = k \Delta r = \frac{2 \pi}{\lambda} \frac{r'^{2} \sin^2 \vartheta}{2 \left(r - r' \cos \vartheta \right)}$
+	- $\Delta \alpha_{m a x} = \frac{\pi}{\lambda} \frac{r'^{2}}{r}$
 	- $\frac{\pi}{2} = \frac{\pi}{\lambda} \frac{D^{2}}{r_{R}}$
 	- $r_{R} = \frac{2D^{2}}{\lambda} \left( + \lambda \right)$
 	- $\frac{\left|\mathbf{E}_{\mathrm{Co}} \left(\vartheta,\varphi \right) \right|}{\left|\mathbf{E}_{\mathrm{Co}} \left(\vartheta_{m a x},\varphi_{m a x} \right) \right|} = \frac{\left|\mathbf{H}_{\mathrm{X}} \left(\vartheta,\varphi \right) \right|}{\left|\mathbf{H}_{\mathrm{X}} \left(\vartheta_{m a x},\varphi_{m a x} \right) \right|} = f \left(\vartheta,\varphi \right)$
@@ -495,7 +501,7 @@ tags:: [[wellenausbreitung]], formeln
 	- $\phi = r^{2}R e \left\{\vect{\Gamma} \right\} \cdot \vect{e}_{r}$
 	- $\vect{\mathbb{\Gamma}} = \frac{1}{2} \vect{\mathbb{\mathbf{H}}} \times \vect{\mathbb{\Pi}}^{\star}$
 	- $\frac{1}{2} \underset{f}{\int} \left(\vect{\mathbf{E}} \times \vect{\mathbf{H}}^{\star} \right) \cdot \vect{e_{r}} d f$
-	- $P_{r} = \frac{1}{2}R e \left\{\underset{f}{\int} \left(\vect{\mathbf{E}} \times \vect{\mathbf{H}}^{\star} \right) \cdot \vect{e}_{r}^{\phantom{\prime}} d f \right\}$
+	- $P_{r} = \frac{1}{2}R e \left\{\underset{f}{\int} \left(\vect{\mathbf{E}} \times \vect{\mathbf{H}}^{\star} \right) \cdot \vect{e}_{r}^{\phantom{'}} d f \right\}$
 	- $\mathit{d f} = r^{2} \sin \vartheta d \vartheta d \varphi = r^{2}d \Omega$
 	- $P_{r} = \int_{4 \pi}R e \left\{\vect{\mathbf{T}} \right\}r^{2} \cdot \vect{e}_{r} d \Omega = \int_{4 \pi} \phi d \Omega = \phi_{m a x} \int_{4 \pi} \frac{\phi}{\phi_{m a x}} d \Omega$
 	- $f \left(\vartheta,\varphi \right) = \frac{\left|\mathrm{E}_{\mathrm{Co}} \left(\vartheta,\varphi \right) \right|}{\left|\mathrm{E}_{\mathrm{Co}} \left(\vartheta_{m a x},\varphi_{m a x} \right) \right|}$
@@ -611,10 +617,10 @@ tags:: [[wellenausbreitung]], formeln
 	- $\tau_{G r} = - \frac{d \phi_{H}}{d \omega}$
 	- $\vect{\mathbf{E}} \left(\vect{r} \right) = \vect{\mathbf{E}}_{1} \left.e^{ - j \vect{k}_{1} \vect{r}} + \vect{\mathbf{E}}_{2} \left.e^{ - j \vect{k}_{2} \vect{r}} \right.$
 	- ${\varepsilon^{I}(l)} { = E_{0} \cdot \mathrm{ev}(\varepsilon_{i}(l - E||l_{0} - l|l_{0})}$
-	- ${\varepsilon^{\prime}(l)} { = l_{0} \cdot \mathrm{ev}(\varepsilon_{i}^{\prime}) k_{i}^{\prime}|l_{0}^{\prime}}$
-	- ${\varepsilon_{0} \cdot \mathrm{ev}(\varepsilon_{i}^{\prime}) \cdot \mathrm{ev}(\varepsilon_{i}^{\prime}) \cdot \mathrm{ev}(\varepsilon_{i}^{\prime}) \cdot \mathrm{ev}(\varepsilon_{i}^{\prime}) \cdot \mathrm{ev}(\varepsilon_{i}^{\prime}|l_{0}^{\prime})}$
-	- ${\varepsilon_{0} \cdot \mathrm{ev}(\varepsilon_{i}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}^{\prime}|l_{0}}^{\prime}|l_{0}^{\prime}|l_{0}|l_{0}^{\prime}|l_{0}} \right)}$
-	- ${|l_{0}^{\prime}|l_{0}|l_{0}^{\prime}|l_{0}|l_{0}} \right).}$
+	- ${\varepsilon'(l)} { = l_{0} \cdot \mathrm{ev}(\varepsilon_{i}') k_{i}'|l_{0}'}$
+	- ${\varepsilon_{0} \cdot \mathrm{ev}(\varepsilon_{i}') \cdot \mathrm{ev}(\varepsilon_{i}') \cdot \mathrm{ev}(\varepsilon_{i}') \cdot \mathrm{ev}(\varepsilon_{i}') \cdot \mathrm{ev}(\varepsilon_{i}'|l_{0}')}$
+	- ${\varepsilon_{0} \cdot \mathrm{ev}(\varepsilon_{i}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}}'|l_{0}'|l_{0}|l_{0}'|l_{0}} \right)}$
+	- ${|l_{0}'|l_{0}|l_{0}'|l_{0}|l_{0}} \right).}$
 	- $\Delta f_{D} = - \frac{v}{\lambda} \cos \left(\gamma \right) = - f \cdot \frac{v}{c} \mathrm{cos} \left(\gamma \right)$
 	- $p(E) = \frac{1}{\sigma \sqrt{2 \cdot \pi}} \cdot e^{ - \frac{E^{2}}{2 \cdot \sigma^{2}}}$
 	- $\mathrm{Varianz}{: = \overline{{E^{2}}} - \left(\overline{{E}} \right)^{2}}$
