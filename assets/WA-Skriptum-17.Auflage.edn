@@ -188,5 +188,17 @@
                                    :height 929.7378151260505}),
                           :page 85},
                :content {:text "Der rechte Faktor in (7.28) wird Reﬂexionsfaktor ρA (entspricht ΓTE bzw. ΓTM aus Kapitel 4.1) genannt"},
+               :properties {:color "green"}}
+              {:id #uuid "67500928-2cd7-4736-974a-ac900c32e971",
+               :page 82,
+               :position {:bounding {:x1 76,
+                                     :y1 529,
+                                     :x2 576,
+                                     :y2 573,
+                                     :width 645.0000000000001,
+                                     :height 912.7563025210085},
+                          :rects (),
+                          :page 82},
+               :content {:text "[:span]", :image 1733298470318},
                :properties {:color "green"}}],
- :extra {:page 85}}
+ :extra {:page 81}}

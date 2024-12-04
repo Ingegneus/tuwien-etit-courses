@@ -141,7 +141,7 @@ alias:: automatisierung, automatisierungs
 			- a) Gegeben ist das [[lineare]], [[zeitinvariante]] System
 			  background-color:: green
 			  collapsed:: true
-			  ![img](../assets/documents/AUT-2022-02-04-3a.webp){:width 400}
+			  ![img](../assets/documents/AUT-2022-02-04-3a.webp)
 				- i) Berechnen Sie die [[Übertragungsfunktion]] $G(s)$ vom Eingang $u$ zum Ausgang $y$.
 				  background-color:: green
 				- ii) Für die [[Übertragungsfunktionen]] gelte nun ${G_1(s)} = \frac{1}{as+1}$, $G_2(s) = V_2$, ${G_3(s) = \frac{1}{s}}$ und ${G_4 = \frac{1} {s+2}}$ , mit $V_2 > 0$. Für welche Werte von $a$ ist die [[Übertragungsfunktion]] [[BIBO-stabil]]?
@@ -152,7 +152,7 @@ alias:: automatisierung, automatisierungs
 			  wurde folgender [[PID-Regler]]
 			  $$R(s)=K_{p}\left(1+\frac{1}{T_{I}s}+T_{d}s\right),\quad K_{p}=5,\quad T_{I}=2,\quad T_{d}=2$$
 			  entworfen. Unten ist die zugehörige [[Nyquist-Ortskurve]] des [[offenen Kreises]] $L\left(s\right)$ zu sehen. Verwenden Sie das [[Nyquist-Kriterium]], um die [[Stabiliät]] des [[geschlossenen Regelkreises]] zu untersuchen.
-			  ![img](../assets/documents/AUT-2022-02-04-3b.webp){:width 400}
+			  ![img](../assets/documents/AUT-2022-02-04-3b.webp)
 			- c) Gegeben ist das lineare, [[zeitdiskrete]] Eingrößensystem
 			  background-color:: green
 			  collapsed:: true
@@ -317,7 +317,7 @@ alias:: automatisierung, automatisierungs
 	  id:: 6713c976-8b34-4000-b17c-3440c7336130
 	  collapsed:: true
 		-
-		- ![img](../assets/documents/allgemeines-lineares-system.webp){:width 400}
+		- ![img](../assets/documents/allgemeines-lineares-system.webp)
 			- $\mathbf{A}$ ... [[Dynamikmatrix]]
 			  id:: 67138ab1-181a-49b1-891e-f0a72036b01c
 			- $\mathbf{B}$ ... [[Eingangsmatrix]]
@@ -453,7 +453,7 @@ alias:: automatisierung, automatisierungs
 	  id:: 6713c976-cd9a-4024-953d-d83ac3c857da
 	  collapsed:: true
 		- eine [[trajektorie]] ist eine lösung einer [[system (mathematik)]] [[dgl]]
-		- ![img](../assets/documents/AUT-2022-11-22-trajektorie.webp){:width 400}
+		- ![img](../assets/documents/AUT-2022-11-22-trajektorie.webp)
 		- [link](((670d389a-4eef-4ce3-b96d-45d619392212)))
 		  {{renderer :media-timestamp, 20:22}}
 	- was ist die bedingung einer [[Ruhelage]]? 
@@ -544,7 +544,7 @@ alias:: automatisierung, automatisierungs
 	  tags:: flashcard
 	  id:: 6729bee5-97f3-44a9-b04d-0f656ffdf0ba
 		- damit das berechnen der [[transitionsmatrix]] einfacher wird
-		- ![img](../assets/documents/zustandstranformation-motivation.webp){:width 400}
+		- ![img](../assets/documents/zustandstranformation-motivation.webp)
 		- {{renderer :media-timestamp, 00:04:57, ((6713c96e-d606-449c-8013-b19ee52a12e9))}}
 		- skript
 		  collapsed:: true

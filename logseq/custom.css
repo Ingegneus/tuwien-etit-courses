@@ -49,6 +49,11 @@
 
 /* media */
 	/* size */
+	
+.block-content img {
+    max-height: 230px;
+	
+}
 video,
 iframe[src$='.mp4'],
 iframe[src$='.mkv']{

@@ -17,7 +17,7 @@ alias:: [[determinanten]]
 	- $a_{ij}$ ... elemente der [[matrix]] $A$
 	- visualiesierung
 	  collapsed:: true
-		- ![img](../assets/documents/regel-sarrus.webp){:width 400}
+		- ![img](../assets/documents/regel-sarrus.webp)
 - ${\text{det}}A=\sum_{i=1}^{n}(-1)^{i+j}\cdot a_{i j}\cdot{\text{det}}A_{i j} \quad (j\text{-te Spalte})\\ {\text{det}}A=\sum_{i=1}^{n}(-1)^{i+j}\cdot a_{i j}\cdot{\text{det}}A_{i j} \quad (i\text{-te Zeile})$
   tags:: formel
   bezeichnung:: berechnung einer der [[determinanten]] einer $n\times n$ [[matrix]] mit dem [[Laplace]]schen Entwicklungssatz. es muss entschieden werden ob nach zeile oder spalte entwickelt wird.

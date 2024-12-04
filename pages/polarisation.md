@@ -4,15 +4,15 @@ template-used:: standard-page
 tags:: [[uni]], [[wellenausbreitung]], [[photonik]] 
 alias:: polarisations, polarisiert, polarisiertes, polarized
 
-- ![img](../assets/documents/polarisations_arten.webp){:width 400}
-- ![img](../assets/documents/lineare_polarisation.webp){:width 400}
+- ![img](../assets/documents/polarisations_arten.webp)
+- ![img](../assets/documents/lineare_polarisation.webp)
   lineare [[polarisation]]
-- ![img](../assets/documents/elliptische_polarisation.webp){:width 400}
+- ![img](../assets/documents/elliptische_polarisation.webp)
   elliptische [[polarisation]]
-- ![img](../assets/documents/rechts-links_zirkulare_polarisation.webp){:width 400}
+- ![img](../assets/documents/rechts-links_zirkulare_polarisation.webp)
   rechts/links zirkulare [[polarisation]]
 - zirkular [[polarisiertes]] licht hat gleiche anteile s- wie p-[[polarisiertes]] licht
-- ![img](../assets/documents/elliptizität_welle.webp){:width 400}
+- ![img](../assets/documents/elliptizität_welle.webp)
   id:: 673626f1-7a7f-4324-88a7-2e0ecdfd2cb8
 - $\epsilon = \frac{a}{b}~,\quad \epsilon = 20 \log \left(\frac{b}{a} \right)$
   tags:: formel

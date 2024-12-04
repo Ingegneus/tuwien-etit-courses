@@ -11,10 +11,9 @@ alias:: wave propagation, wellenausbreitungs
 	- ![📚 Formelsammlung_7.Auflage.pdf](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Unterlagen\Formelsammlung_7.Auflage.pdf)
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
-	  collapsed:: true
 		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.6}$) eingestrahlt.
 		  background-color:: green
-		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp){:width 400}
+		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp)
 			- {{evalpage}}
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
@@ -60,7 +59,7 @@ alias:: wave propagation, wellenausbreitungs
 		- Variante 2) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{2~mm^2}$ und einer Leistung von $P = \mathrm{1~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.5}$) eingestrahlt.
 		  background-color:: green
 		  id:: 673c4ed2-b233-4982-9c12-8768a4de297f
-		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp){:width 400}
+		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp)
 			- {{evalpage}}
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
@@ -110,7 +109,7 @@ alias:: wave propagation, wellenausbreitungs
 			- ![📚 2024-11-18 17h41m_annotated.pdf](../assets/documents/2024-11-18 17h41m_annotated.pdf)
 		- Variante 3) Ein Lichtstrahl der Sonne (unpolarisiert, aber TM, TE gleich stark) fällt zu später Stunde ($\Theta_e = 75°$) auf einen See ($n_2 = 1.33$). An der glatten Wasseroberﬂäche wird er reﬂektiert. Zwei Fotografen fotograﬁeren diese Landschaft. Der zweite verwendet ein ideales Polarisationsﬁlter um die Reﬂexion der Sonne im Wasser zu unterdrücken.
 		  background-color:: green
-		  ![img](../assets/documents/WA_vakuum_glas_bsp.webp){:width 400, :height 213}
+		  ![img](../assets/documents/WA_vakuum_glas_bsp.webp)
 			- {{evalpage}}
 			- a) Wie groß ist die (gesamte) reﬂektierte Lichtleistung im Verhältnis zur eingestrahlten (in $\mathrm{dB}$)? Zeichnen Sie alle verwendeten Winkel ein.
 			  background-color:: green
@@ -185,11 +184,10 @@ alias:: wave propagation, wellenausbreitungs
 			- ![📚 2024-11-20 19h04m_annotated.pdf](../assets/documents/2024-11-20 19h04m_annotated.pdf)
 	- Stehende Welle im verlustbehafteten Medium
 	  background-color:: green
-	  collapsed:: true
 		- Eine sich im [verlustbehafteten Medium](((6740c4fa-4d26-4310-b196-321b7391feb6))) (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden [metallischen Wand mit unendlicher Leitfähigkeit](((67405634-4634-4d0d-b586-6a52b1bb7c75))) reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
 		  background-color:: green
 		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
-		  ![img](../assets/documents/WA_stehende_welle_wand_bsp1.webp){:width 400}
+		  ![img](../assets/documents/WA_stehende_welle_wand_bsp1.webp)
 			- skript
 			  collapsed:: true
 				- ((67405657-2347-4d8b-93f5-98a6b52c836c))
@@ -456,11 +454,10 @@ alias:: wave propagation, wellenausbreitungs
 			- ![📚 2024-11-21 18h45m_annotated.pdf](../assets/documents/2024-11-21 18h45m_annotated.pdf)
 	- Rechteckhohlleiter
 	  background-color:: green
-	  collapsed:: true
 		- Variante 1) Untersuchen Sie die Ausbreitung von $\mathrm{TE}_{m,n}$ Wellen in $z$ Richtung im skizzierten Rechteckhohlleiter.
 		  background-color:: green
 		  collapsed:: true
-		  ![img](../assets/documents/WA_rechteckhohlleiter_bsp_1.webp){:width 400}
+		  ![img](../assets/documents/WA_rechteckhohlleiter_bsp_1.webp)
 			- Finden Sie einen geeigneten Ansatz für die Komponenten der gewünschten Moden in Ausbreitungsrichtung, der die Wellengleichung erfüllt. Ermitteln Sie die Separationsbedingungen.
 			  background-color:: green
 				- formeln
@@ -483,7 +480,7 @@ alias:: wave propagation, wellenausbreitungs
 	  collapsed:: true
 		- Variante 1) Berechnen Sie den Grundmodus $\mathrm{TE_{101}}$ eines luftgefüllten ($\varepsilon_r = 1$) Hohlraumresonators (Abmessungen: $a = 4\mathrm{cm}$, $b = 2\mathrm{cm}$, $c = 4\mathrm{cm}$) mit $\mathbb{R}_M = 20\mathrm{m\Omega}$.
 		  background-color:: green
-		  ![img](../assets/documents/Wa_hohlraumresonator_bsp_1.webp){:width 400}
+		  ![img](../assets/documents/Wa_hohlraumresonator_bsp_1.webp)
 			- a) Berechnen Sie die Resonanzfrequenz!
 			  background-color:: green
 				- formeln
@@ -602,7 +599,7 @@ alias:: wave propagation, wellenausbreitungs
 						- {{evalparent}}
 		- Variante 2) Berechnen Sie den Grundmodus $\mathrm{TE_{101}}$ eines luftgefüllten ($\varepsilon_r = 1$) Hohlraumresonators (Abmessungen: $a = 2b=c$, $\mathbb{R}_M = 30\mathrm{m\Omega}$).
 		  background-color:: green
-		  ![img](../assets/documents/Wa_hohlraumresonator_bsp_1.webp){:width 400}
+		  ![img](../assets/documents/Wa_hohlraumresonator_bsp_1.webp)
 			- a) Berechnen Sie die Abmessungen $a, b, c$ für eine Resonanzfrequenz von $20 \mathrm{GHz}$!
 			  background-color:: green
 				- formeln
@@ -755,7 +752,7 @@ alias:: wave propagation, wellenausbreitungs
 		- Variante 1)
 		  background-color:: green
 		  collapsed:: true
-		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp){:width 400}
+		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp)
 			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 60 \mathrm{\Omega}$. Der Außenradius sei $r_a = 8.5 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 1$.
 			  background-color:: green
 				- formeln
@@ -836,7 +833,7 @@ alias:: wave propagation, wellenausbreitungs
 						- {{evalparent}}
 			- c) Ein Ende der Koaxialleitung wird mit Hilfe einer kreisförmigen Scheibe aus Graphit abgeschlossen. Die Scheibe habe ein $R_\square  = 120\pi \mathrm{\Omega}$. Welchen ohmschen Widerstand hat die kreisförmige Scheibe für eine einfallende $\mathrm{TEM}$ Welle?
 			  background-color:: green
-				- ![img](../assets/documents/WA_koaxleitung_abschluss_illustration.webp){:width 400}
+				- ![img](../assets/documents/WA_koaxleitung_abschluss_illustration.webp)
 				- formeln
 					- ((674d7759-2399-4628-94f1-400ee5be7c0e))
 				- code
@@ -868,7 +865,7 @@ alias:: wave propagation, wellenausbreitungs
 						- es ist schwierig den frequenzbereich abzuschätzen, da $R_A$ und $Z_L$ von der frequenz abhängen
 		- Variante 2)
 		  background-color:: green
-		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp){:width 400}
+		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp)
 			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 50 \mathrm{\Omega}$. Der Außenradius sei $r_a = 7.3 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 2.35$.
 			  background-color:: green
 				- formeln
@@ -950,7 +947,7 @@ alias:: wave propagation, wellenausbreitungs
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-			- c) Berechnen Sie die dielektrischen Verluste $\alpha_G$ des Kabels für ein Dielektrikum mit $\tan\delta = 0,001$ in $\mathrm{dB/m}$.
+			- c) Berechnen Sie die dielektrischen Verluste $\alpha_G$ des Kabels für ein Dielektrikum mit $\tan\delta = 0.001 \mathrm{dB/m}$ in $\mathrm{dB/m}$.
 			  background-color:: green
 				- formeln
 					- ((674d7759-056e-4bac-998e-f2bccdc83035))
@@ -959,14 +956,135 @@ alias:: wave propagation, wellenausbreitungs
 					  printer.seek(0); printer.truncate(0)
 					  
 					  tand= 0.001
-					  G=1/R
+					  
+					  G = w * (2 * pi * eps) / (log(ra/float(ri))) * tand
+					  print(f"G' = {G*1E3:.4g}mS/m")
 					  a = G*ZL/2
-					  print(f"α_G = {a*20/log(10):.4g}dB/m")
-					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+					  print(f"α_G = {a*20/log(10):.4g}dB/m") # bin mir hier nicht sicher ob die umrechnung nötig ist
+					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
+		- Variante 3)
+		  background-color:: green
+		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp) ![img](../assets/documents/WA_rechteckhohlleiter_bsp_1.webp)
+			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 50 \mathrm{\Omega}$. Der Außenradius sei $r_a = 6.3 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 2.25$.
+			  background-color:: green
+				- formeln
+					- ((6745a3c5-c563-4874-8d5b-50fee6812aea))
+				- code
+					- ```python
+					  pyodide_js.globals.clear();
+					  ```
+						- {{evalparent}}
+					- ```python
+					  import pyodide_js
+					  await pyodide_js.loadPackage("micropip")
+					  import micropip
+					  await micropip.install('scipy')
+					  from scipy import *
+					  from scipy.constants import *
+					  from numpy import *
+					  await micropip.install('matplotlib')
+					  import matplotlib.pyplot as plt
+					  import io, base64, sys
+					  await micropip.install('sympy')
+					  import sympy as sp
+					  from sympy.utilities.lambdify import lambdify
+					  printer = io.StringIO()
+					  sys.stdout = printer
+					  
+					  # angabe
+					  ZL = 50
+					  ra = 6.3E-3
+					  epsr = 2.25
+					  eps = epsr * epsilon_0
+					  mur = 1
+					  mu = mur * mu_0
+					  eta = sqrt(mu/eps)
+					  
+					  eta_s, ra_s, ri_s = sp.symbols('eta r_a r_i', 
+					                                 real=True, 
+					                                 positive=True)
+					  ZL_s = eta_s/(2*pi) * sp.ln(ra_s / ri_s)
+					  
+					  eqn = sp.Eq(ZL_s, ZL)
+					  sol = sp.solve(eqn, ri_s)
+					  ri_s = sol[0]
+					  
+					  # werte einsetzen
+					  ri = (ri_s.subs(ra_s, ra)
+					          	.subs(eta_s, eta)).evalf(n=4)
+					  
+					  print(f"r_i = {ri*1000:.4g}mm")
+					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
+					  print(f"latex code: {sp.latex(ri_s)}")
+					  sp.pprint(ri_s,use_unicode=False)
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+						- $r_{a} e^{- \frac{314.15926535898}{\eta}}$
+			- b) Berechnen Sie die ohmschen Verluste $\alpha_R$ des Kabels für eine Leitfähigkeit des Innen- bzw. Außenleiters von $\sigma=5.7\cdot10^7\mathrm{S/m}$ bei $10\mathrm{GHz}$ in $\mathrm{dB/m}$.
+			  background-color:: green
+				- formeln
+					- ((674d7759-1d40-46b8-9d39-cbf868cd298e))
+					- ((674d7759-4a7e-4220-b396-27bd49ccaa45))
+					- ((674de501-a2a9-4e7a-8a81-892354262c7e))
+				- code
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  sig = 57E6
+					  f = 10E9
+					  w = 2*pi*f
+					  R = (sqrt((w * mu)/(2 * sig))*
+					       1 / (2 * pi) * (1 / ri + 1 / ra))
+					  print(f"R' = {R:.4g}Ω/m")
+					  
+					  alphaR = R/(2*ZL)
+					  print(f"alphaR = {alphaR:.4g}Np/m")
+					  print(f"alphaR = {alphaR*20/log(10):.4g}dB/m")
+					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+			- c) Berechnen Sie die dielektrischen Verluste $\alpha_G$ des Kabels für ein Dielektrikum mit $\tan\delta = 0.001 \mathrm{dB/m}$ in $\mathrm{dB/m}$.
+			  background-color:: green
+				- formeln
+					- ((674d7759-056e-4bac-998e-f2bccdc83035))
+				- code
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
+					  tand= 0.001
+					  
+					  G = w * (2 * pi * eps) / (log(ra/float(ri))) * tand
+					  print(f"G' = {G*1E3:.4g}mS/m")
+					  a = G*ZL/2
+					  print(f"α_G = {a:.4g}dB/m")
+					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+			- d) Berechnen Sie mittels der Power-Loss-Method den Dämpfungskoefﬁzienten des abgebildeten Rechteckhohlleiters mit den Abmessungen $a = 22.86 \mathrm{mm}$ und $b = 10.16 \mathrm{mm}$ bei $10 \mathrm{GHz}$ (Grundmodus $\mathrm{TE}_{10}$) in $\mathrm{dB/m}$. Erklären Sie dabei Ihre Vorgehensweise. Das Metall sei durch $\sigma = 5.7 \cdot 10^7 \mathrm{S/m}$ charakterisiert. Bei der gesuchten Ausbreitung in $z$-Richtung lauten die Feldkomponenten: $\\ E_x = 0 \\ E_{y}=-\frac{j\omega\mu}{\pi}a A \sin\left(\frac{\pi}{a}x\right)e^{-j k_{z}z} \\ E_z=0 \\ H_{x}=\frac{j k_{z}}{\pi}a A \sin\left(\frac{\pi}{a}x\right)e^{-j k_{z}z} \\ H_y = 0 \\ H_{z} = A \cos \left( \frac{\pi}{a}x \right) e^{-j k_{z}z}$
+			  background-color:: green
+				- TODO
+		-
+	- Dielektrische Platte
+		- Berechnen Sie die Ausbreitungseigenschaften der $\mathrm{H}_{10}$-ähnlichen Grundwelle (siehe Rechteckhohlleiter), die von einer in $y$- und $z$-Richtung unbegrenzten und in $x$-Richtung $2d$ dicken dielektrischen Platte (Raum 1) geführt wird (Raum 2 ist Luft)!
+		  ![img](../assets/documents/WA_dielektrische_platte_bsp_1.webp)
+			- a) Finden Sie einen Ansatz für die Komponenten des elektromagnetischen Feldes in Ausbreitungsrichtung (positive $z$-Richtung) $E_{z1}$, $E_{z2}$, $H_{z1}$ und $H_{z2}$ der die Wellengleichung erfüllt und geben Sie die Separationsbedingungen an! Nutzen Sie die Symmetrie der Platte und berücksichtigen Sie nur $x > −d$!
+			- b) Bestimmen Sie die restlichen Feldkomponenten!
+			- c) Gewinnen Sie aus den Stetigkeitsbedingungen an der Grenzﬂäche zwischen Luft und Dielektrikum weitere Beziehungen zur Bestimmung der Ausbreitungskonstanten. Reduzieren Sie die gewonnenen Beziehungen zu einer einzigen transzendenten Gleichung für die Ausbreitungskonstante in $x$-Richtung ausserhalb der Platte in Abhängigkeit der Frequenz $\omega$!
+			- d) Ermitteln Sie eine Gleichung für die Grenzfrequenz der Grundwelle an. Die Grenzfrequenz ist durch den Übergang von der geführten Welle zur ungedämpften Abstrahlung in den Raum neben der Platte deﬁniert!
+	- Dielektrischer Wellenleiter
+		- Gegeben sei ein dielektrischer Wellenleiter der Dicke d = 1cm mit einer relativen Permit-
+		  tivit¨at von ǫ2 = 2, 26. Oberhalb des Wellenleiters beﬁnde sich Luft (ǫ3 = 1), unterhalb ein 
+		  idealer Leiter. Es breite sich eine Welle in z-Richtung aus!
+		-
 - ## flashcards
+  collapsed:: true
 	- ### index
 		- query-table:: true
 		  collapsed:: true

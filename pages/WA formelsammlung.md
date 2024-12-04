@@ -420,7 +420,14 @@ tags:: [[wellenausbreitung]], formeln
 	  tags:: formel
 	  bezeichnung:: leitwert belag einer [[koaxialleitung]]
 		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[\frac{rad}{s}\right]}$
-		- $C'$
+		- $C'$ ... kapazitätsbelag $\mathrm{\left[\frac{F}{m}\right]}$
+		- $\delta_\varepsilon$ ... eﬀektive Verlustwinkel des Dielektrikums unter Berücksichtigung eventueller 
+		  Lufträume. oft auch als $\theta_\varepsilon$ bekannt. $\mathrm{\left[\degree\right]}$
+		- $\varepsilon$ ... absolute [[permittivität]] des dielektrikums $\mathrm{\left[\frac{As}{Vm}\right]}$
+		- $r_a$ ... radius des außenleiters $\mathrm{\left[m\right]}$
+		- $r_i$ ... radius des innenleiters $\mathrm{\left[m\right]}$
+		- skript
+			- ((67500928-2cd7-4736-974a-ac900c32e971))
 	- $j k_{z} = \gamma = \alpha + j \beta = \sqrt{(G' + j \omega C')(R' + j \omega L')}$
 	- $\alpha = \alpha_{R} + \alpha_{G} = \Bigg( \underbrace{ \frac{R'}{2\sqrt{\frac{L'}{C'}}}}_{(1) \mathrlap{~~ \approx \alpha_R}} + \underbrace{\frac{G' \sqrt{\frac{L'}{C'}}}{2}}_{(2) \mathrlap{~~ \approx \alpha_G}} \Bigg) \underbrace{\frac{1}{\cosh \frac{\theta_R - \theta_G}{2}}}_{(3) \mathrlap{ ~~\approx 1}} \\ \text{mit} \quad \sinh \theta_{R} = \frac{R'}{\omega L'} ~, \quad \sinh \theta_{G} = \frac{G'}{\omega C'}$
 	  id:: 674d7759-bd4b-46b8-ad6c-6eba0f844dff

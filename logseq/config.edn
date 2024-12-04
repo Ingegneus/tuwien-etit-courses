@@ -256,7 +256,7 @@
  :commands [
 		["." [[:editor/input "{{now}}"]]]
 		["doc" [[:editor/input "![📚 doc](../assets/documents/)"]]]
-		["img" [[:editor/input "![img](../assets/.webp){:width 400}"]]]
+		["img" [[:editor/input "![img](../assets/.webp)"]]]
 		["l" [[:editor/input "[]([[]])"]]]
 		
 		["highlight-yellow" [[:editor/input "<span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-yellow);color: black'></span>"]]]
