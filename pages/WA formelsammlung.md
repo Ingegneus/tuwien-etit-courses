@@ -10,14 +10,18 @@ tags:: [[wellenausbreitung]], formeln
 	- $\vect{\nabla} \times \vect{H} = \vect{S} + \frac{\partial}{\partial t} \vect{D}$
 	- $\vect{\nabla} \cdot \vect{S} = - \frac{\partial}{\partial t}( \vect{\nabla} \cdot \vect{D}) = - \frac{\partial}{\partial t} \rho$
 	- $\vect{\nabla} \cdot \vect{S} + \frac{\partial}{\partial t} \rho = 0$
-	- $\vect{\nabla} \cdot \vect{D} = \rho$
-	- $\vect{\nabla} \cdot \vect{B} = 0$
-	- $\vect{\nabla} \times \vect{E} =  - \frac{\partial}{\partial t} \vect{B}$
-	- $\vect{\nabla} \times \vect{H} = \vect{S} + \frac{\partial}{\partial t} \vect{D}$
+	- ((674d7759-514d-4a2f-86fd-5eefd6ce3560))
+	- ((674d7759-9266-4b79-976c-cf24786054dc))
+	- ((674d7759-5865-4965-ba0b-734256ee8c82))
+	- ((674d7759-9dd7-4dae-9bfd-fab05a74ed26))
 	- $\int_{\Sigma} \vect{D} \cdot \opn{d} \vect{F} = \int_{\tau} \rho \opn{d}V$
+	  id:: 674d7759-90de-4016-b2c3-c6ff31f602cd
 	- $\int_{\Sigma} \vect{B} \cdot \opn{d} \vect{F} = 0$
+	  id:: 674d7759-c6ee-43ea-b699-6c73aca1240d
 	- $\oint \vect{E} \cdot \opn{d} \vect{l} =  - \frac{\partial}{\partial t} \int_{\Sigma} \vect{B} \cdot \opn{d} \vect{F}$
+	  id:: 674d7759-0a77-4eca-b8f6-dece037a378a
 	- $\oint \vect{H} \cdot \opn{d} \vect{l} =  \int_{\Sigma} \vect{S} \cdot \opn{d} \vect{F} + \frac{\partial}{\partial t} \int_{\Sigma} \vect{D} \cdot \opn{d} \vect{F}$
+	  id:: 674d7759-852f-457f-b1c5-6a68ea277918
 	- $\vect{F} = q \left( \vect{E} + \vect{v} \times \vect{B} \right)$
 	- $\vect{S} = \sigma \vect{E}$
 	- $\vect{S} = \rho \vect{v}$
@@ -32,8 +36,7 @@ tags:: [[wellenausbreitung]], formeln
 	- $\delta = \varepsilon + \frac{\sigma}{j \omega} = \varepsilon - j \frac{\sigma}{\omega}$
 	- $\tan \theta = \frac{\varepsilon''}{\varepsilon'} = \frac{\sigma}{\omega \varepsilon}$
 	  id:: 673e3379-c5b6-4af8-a61a-20daa9718476
-	  tags:: formel, wip
-	  bezeichnung:: verlustwinkel
+	  collapsed:: true
 		- $\tan \theta$ ...  verlustwinkel
 		- $\varepsilon''$ ... [[imaginärteil]] von ((673e3379-64cb-4d50-98c9-668f6b9fd3fd)) $\mathrm{\left[ \frac{As}{Vm} \right]}$
 		- $\varepsilon'$ ... [[realteil]]  von ((673e3379-64cb-4d50-98c9-668f6b9fd3fd)) $\mathrm{\left[ \frac{As}{Vm} \right]}$
@@ -53,9 +56,9 @@ tags:: [[wellenausbreitung]], formeln
 	- $\vect{E}( \vect{r},t) = \frac{1}{2} \left( \vect{E}( \vect{r}) \mathit{e}^{j \omega t} + \vect{E}^{*}( \vect{r}) \mathit{e}^{ - j \omega t} \right)$
 	- $\vect{E}(t) \cdot \vect{E}(t) = \frac{1}{4} \left( \vect{E}( \vect{r}) \cdot \vect{E}( \vect{r})e^{2j \omega t} + 2 \vect{E}( \vect{r}) \cdot \vect{E}^{*}( \vect{r}) + \vect{E}^{*}( \vect{r}) \cdot \vect{E}^{*}( \vect{r})e^{ - 2j \omega t} \right)$
 	- $\overrightarrow{E}(t) \cdot \overrightarrow{E}(t) = \frac{1}{2}| \overrightarrow{E}(t)|^{2}$
-	- $\overline{{w_{\opn{e}}(t)}} = w_{\opn{e}} = \frac{\varepsilon}{4}| \vect{E}(t)|^{2}$
-	- $\overline{{w_{\opn{m}}(t)}} = w_{\opn{m}} = \frac{\mu}{4}| \vect{H}(t)|^{2}$
-	- $\overline{{p_{\opn{v}}(t)}} = p_{\opn{v}} = \frac{\sigma}{2}| \vect{E}(t)|^{2}$
+	- $\overline{{w_{\mathrm{e}}(t)}} = w_{\mathrm{e}} = \frac{\varepsilon}{4}| \vect{E}(t)|^{2}$
+	- $\overline{{w_{\mathrm{m}}(t)}} = w_{\mathrm{m}} = \frac{\mu}{4}| \vect{H}(t)|^{2}$
+	- $\overline{{p_{\mathrm{v}}(t)}} = p_{\mathrm{v}} = \frac{\sigma}{2}| \vect{E}(t)|^{2}$
 	- $\vect{T} = \frac{1}{2} \vect{E} \times \vect{H}^{*} = \vect{T}_{\opn{w}} + j \vect{T}_{\opn{b}}$
 	- ${{\oint \vect{E} \cdot \opn{d} \vect{l}' = }} { E_{t1} \Delta l + E_{n1} \Delta x + E_{n2} \Delta x - E_{t2} \Delta l - E_{n2} \Delta x - E_{n1} \Delta x}$
 	- $= { (E_{t1} - E_{t2}) \Delta l - 0E_{n1} + 0E_{n2} = - \frac{\partial}{\partial t} \int_{F} \vect{B} \cdot \opn{d} \vect{F} = 0}$
@@ -73,14 +76,21 @@ tags:: [[wellenausbreitung]], formeln
 	- $\vect{n} \times( \vect{E}_{1} - \vect{E}_{2}) = \vect{0}$
 	- $\vect{n} \times( \vect{H}_{1} - \vect{H}_{2}) = \vect{K}$
 	- $\nabla^{2} \vect{E} - \mu \varepsilon \frac{\partial^{2}}{\partial t^{2}} \vect{E} - \mu \sigma \frac{\partial}{\partial t} \vect{E} = 0$
+	  tags:: formel, wip
+	  bezeichnung:: wellengleichung (telegrafengleichung) mit verlusten
+		- $-$ ...
 	- $\nabla^{2} \vect{E} + ( \omega^{2} \mu \varepsilon - j \omega \mu \sigma) \vect{E} = 0$
 	- $\nabla^{2} \vect{E} + \omega^{2} \mu \delta \vect{E} = 0$
 	- $\nabla^{2} = \frac{\partial^{2}}{\partial x^{2}} + \frac{\partial^{2}}{\partial y^{2}} + \frac{\partial^{2}}{\partial z^{2}}$
 	- $k = \omega \sqrt{\mu \delta}$
 	- $\Psi(x,y,z) = X(x)Y(y)Z(z)$
-	- $\frac{1}{X(x)} \frac{\partial^{2}}{\partial x^{2}}X(x) + \frac{1}{Y(y)} \frac{\partial^{2}}{\partial y^{2}}Y(y) + \frac{1}{Z(z)} \frac{\partial^{2}}{\partial z^{2}}Z(z) + \underbrace{k^{2}}_{\opn{const.}} = 0$
+	- $\frac{1}{X(x)} \frac{\partial^{2}}{\partial x^{2}}X(x) + \frac{1}{Y(y)} \frac{\partial^{2}}{\partial y^{2}}Y(y) + \frac{1}{Z(z)} \frac{\partial^{2}}{\partial z^{2}}Z(z) + \underbrace{k^{2}}_{\text{const.}} = 0$
 	- $\frac{1}{X(x)} \frac{\partial^{2}}{\partial x^{2}}X(x) = - k_{x}^{2}$
 	- $k_{x}^{2} + k_{y}^{2} + k_{z}^{2} = k^{2} = \omega^{2} \mu \delta$
+	  tags:: formel, wip
+	  bezeichnung:: separationsbedingung
+	  id:: 674d7759-0e35-482f-8086-9026be01cd14
+		- $-$ ...
 	- $\frac{\partial^{2}}{\partial x^{2}}X(x) + k_{x}^{2}X(x) = 0$
 	- $\frac{\partial}{\partial y}H_{z} - \frac{\partial}{\partial z}H_{y} = j \omega \delta E_{x}$
 	- $\frac{\partial}{\partial z}H_{x} - \frac{\partial}{\partial x}H_{z} = j \omega \delta E_{y}$
@@ -89,11 +99,14 @@ tags:: [[wellenausbreitung]], formeln
 	- $\frac{\partial}{\partial z}E_{x} - \frac{\partial}{\partial x}E_{z} = - j \omega \mu H_{y}$
 	- $\frac{\partial}{\partial x}E_{y} - \frac{\partial}{\partial y}E_{x} = - j \omega \mu H_{z}$
 	- $E_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial x}E_{z} + \omega \mu \frac{\partial}{\partial y}H_{z} \right)$
+	  id:: 674d7759-4a91-4489-b9af-4545f96e73a2
 	- $E_{y} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial y}E_{z} - \omega \mu \frac{\partial}{\partial x}H_{z} \right)$
+	  id:: 674d7759-d98e-422d-b379-68671adeae48
 	- $H_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial x}H_{z} - \omega \delta \frac{\partial}{\partial y}E_{z} \right)$
+	  id:: 674d7759-f64a-45ff-be7f-3c676218796f
 	- $H_{y} = \frac{ - j}{\kappa^{2}} \left( k_{z} \frac{\partial}{\partial y} H_{z} + \omega \delta \frac{\partial}{\partial x} E_{z} \right)$
+	  id:: 674d7759-2ef6-4ef6-9620-b611b833d779
 - ## [[homogene ebene wellen]]
-  collapsed:: true
 	- $+ \cfrac{\partial}{\partial z}e_{y} = \mu \cfrac{\partial}{\partial t}h_{x}$
 	- $- \cfrac{\partial}{\partial z}e_{x} = \mu \cfrac{\partial}{\partial t}h_{y}$
 	- $0 = \mu \cfrac{\partial}{\partial t}h_{z}$
@@ -381,6 +394,7 @@ tags:: [[wellenausbreitung]], formeln
 		- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
 		- $\mathbb{R}_\mathrm{M}$ ... oberflächenwiderstand $\mathrm{\left[ \Omega \right]}$
 - ## [[koaxialleitungen]]
+  collapsed:: true
 	- ${\vect{E}} = {E_{r} \vect{e_{r}}}$
 	- ${\vect{H}} = {H_{\varphi} \vect{e_{\varphi}}}$
 	- $\frac{\partial}{\partial z}U(z) + Z'I(z) = 0 ,\qquad \frac{\partial}{\partial z}I(z) + Y'U(z) = 0$
@@ -456,13 +470,21 @@ tags:: [[wellenausbreitung]], formeln
 	- $p_{v}(z) = - \frac{\opn{d}P}{\opn{d}z} = - \frac{\opn{d}}{\opn{d}z}P_{0}e^{ - 2 \alpha z} = 2 \alpha P_{0}e^{ - 2 \alpha z} = 2 \alpha P(z)$
 	- $\mathrm{mit} \qquad \alpha = \alpha_{R} + \alpha_{G}$
 - ## [[dielektrische wellenleiter]]
-  collapsed:: true
 	- ${\xi = k_{x1}d}$
 	- ${\eta = k_{x2}d}$
 	- ${ - \xi \cot \xi = \eta}$
 	- $\xi^{2} + \eta^{2} = \omega^{2} \mu_{0}d^{2}(\varepsilon_{1} - \varepsilon_{2}) = V^{2} \quad \Rightarrow \quad V = \frac{2 \pi d}{\lambda_{0}} \sqrt{n_{1}^{2} - n_{2}^{2}}$
 	- $k_{x1,m} = \frac{(2m - 1) \pi}{2d},\quad m = 1,2,\dots.$
 	- $\omega_{c,m} = \frac{(2m - 1) \pi}{2d \sqrt{\varepsilon_{0} \mu_{0}(\varepsilon_{r1} - \varepsilon_{r2})}}$
+	  id:: 674d7759-f065-41be-aa7b-2bb81097b152
+	  tags:: formel
+	  bezeichnung:: grenz [[kreisfrequenz]] eines [[dielektrischen wellenleiters]]
+		- $\omega_{c,m}$ ... grenz [[kreisfrequenz]] $\mathrm{\left[\frac{rad}{s}\right]}$
+		- $m$ ... index der untersuchten mode $\mathrm{\left[-\right]}$
+		- $d$ ... dicke der dielektrischen schicht $\mathrm{\left[m\right]}$
+		- ((67403e6e-6727-48b1-a844-64fcf2c30521))
+		- ((67403e6f-2a7f-4aec-8c79-829be01340e3))
+		- $\varepsilon_{r1}, \varepsilon_{r2}$ ... relative [[permittivität]] $\mathrm{\left[-\right]}$
 - ## [[streifenleitungen]]
   collapsed:: true
 	- $Z_{\mathrm{L},0} \approx \sqrt{\frac{\mu_{0}}{\varepsilon_{0}}} \frac{1}{2 \pi} \ln \left(\frac{8h}{w} + \frac{w}{4h} \right)$

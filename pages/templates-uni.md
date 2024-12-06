@@ -124,6 +124,7 @@ tags:: [[templates]], [[uni]]
 	  from sympy.utilities.lambdify import lambdify
 	  from sympy import latex
 	  printer = io.StringIO()
+	  stdout = sys.stdout
 	  sys.stdout = printer
 	  
 	  var_numeric

@@ -280,3 +280,8 @@ svg.awLi-favicon {
 /* sticky headers */
 .will-stick .is-sticky{
 border-bottom:none}
+
+/* pdf reader */
+.extensions__pdf-header{
+	background-color: black!important;
+}

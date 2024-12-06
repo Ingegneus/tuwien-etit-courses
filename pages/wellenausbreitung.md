@@ -11,6 +11,7 @@ alias:: wave propagation, wellenausbreitungs
 	- ![📚 Formelsammlung_7.Auflage.pdf](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Unterlagen\Formelsammlung_7.Auflage.pdf)
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.6}$) eingestrahlt.
 		  background-color:: green
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp)
@@ -184,6 +185,7 @@ alias:: wave propagation, wellenausbreitungs
 			- ![📚 2024-11-20 19h04m_annotated.pdf](../assets/documents/2024-11-20 19h04m_annotated.pdf)
 	- Stehende Welle im verlustbehafteten Medium
 	  background-color:: green
+	  collapsed:: true
 		- Eine sich im [verlustbehafteten Medium](((6740c4fa-4d26-4310-b196-321b7391feb6))) (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden [metallischen Wand mit unendlicher Leitfähigkeit](((67405634-4634-4d0d-b586-6a52b1bb7c75))) reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
 		  background-color:: green
 		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
@@ -454,6 +456,7 @@ alias:: wave propagation, wellenausbreitungs
 			- ![📚 2024-11-21 18h45m_annotated.pdf](../assets/documents/2024-11-21 18h45m_annotated.pdf)
 	- Rechteckhohlleiter
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1) Untersuchen Sie die Ausbreitung von $\mathrm{TE}_{m,n}$ Wellen in $z$ Richtung im skizzierten Rechteckhohlleiter.
 		  background-color:: green
 		  collapsed:: true
@@ -749,9 +752,9 @@ alias:: wave propagation, wellenausbreitungs
 			- ![📚 2024-12-01 16h11m_annotated.pdf](../assets/documents/2024-12-01 16h11m_annotated.pdf)
 	- [[Koaxialkabel]]
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1)
 		  background-color:: green
-		  collapsed:: true
 		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp)
 			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 60 \mathrm{\Omega}$. Der Außenradius sei $r_a = 8.5 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 1$.
 			  background-color:: green
@@ -772,11 +775,13 @@ alias:: wave propagation, wellenausbreitungs
 					  from numpy import *
 					  await micropip.install('matplotlib')
 					  import matplotlib.pyplot as plt
-					  import io, base64
+					  import io, base64, sys
 					  await micropip.install('sympy')
 					  import sympy as sp
 					  from sympy.utilities.lambdify import lambdify
 					  from sympy import latex
+					  printer = io.StringIO()
+					  sys.stdout = printer
 					  
 					  # angabe
 					  ZL = 60
@@ -800,9 +805,12 @@ alias:: wave propagation, wellenausbreitungs
 					  ri = (ri_s.subs(ra_s, ra)
 					          	.subs(eta_s, eta)).evalf(n=4)
 					  
-					  "r_i = " + f"{ri_s}" + '\n\n\
-					  latex output: ' + latex(ri_s)  + '\n\n\
-					  r_i = ' + f"{ri*1000:.4g}" + "mm"
+					  print(f"r_i = {ri*1000:.4g}mm")
+					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
+					  print(f"latex output: {latex(ri_s)}")
+					  sp.pprint(ri_s,use_unicode=False)
+					  
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 						- $r_{a} e^{- \frac{376.991118430776}{\eta}}$
@@ -815,20 +823,24 @@ alias:: wave propagation, wellenausbreitungs
 					- ((674de501-a2a9-4e7a-8a81-892354262c7e))
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
 					  sig = 57E6
 					  f = 5E9
 					  w = 2*pi*f
 					  d = sqrt(2/(w*mu*sig))
-					  "d = " + f"{d*1E9:.4g}" + "nm"
+					  print(f"d = {d*1E9:.4g}nm")
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 					- ```python
+					  printer.seek(0); printer.truncate(0)
 					  R = (sqrt((w * mu)/(2 * sig))*
 					       1 / (2 * pi) * (1 / ri + 1 / ra))
 					  
 					  alphaR = R/(2*ZL)
-					  "alphaR = " + f"{alphaR:.4g}" + "Np/m \n\
-					  alphaR = " + f"{alphaR*20/log(10):.4g}" + "dB/m"
+					  print(f"αR = {alphaR:.4g}Np/m")
+					  print(f"αR = {alphaR*20/log(10):.4g}dB/m")
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 			- c) Ein Ende der Koaxialleitung wird mit Hilfe einer kreisförmigen Scheibe aus Graphit abgeschlossen. Die Scheibe habe ein $R_\square  = 120\pi \mathrm{\Omega}$. Welchen ohmschen Widerstand hat die kreisförmige Scheibe für eine einfallende $\mathrm{TEM}$ Welle?
@@ -838,10 +850,12 @@ alias:: wave propagation, wellenausbreitungs
 					- ((674d7759-2399-4628-94f1-400ee5be7c0e))
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
 					  Rsq = 120*pi
 					  r_s = sp.symbols('r', positive=True, real=True)
 					  R = sp.integrate(Rsq/(2*pi*r_s), (r_s,ri,ra))
-					  "R = " + f"{R:.4g}" + "Ω"
+					  print(f"R = {R:.4g}Ω")
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 			- d) Wie groß ist der Reﬂexionsfaktor am Ende der Koaxialleitung auf Grund des Abschlusswidertandes der kreisförmigen Scheibe? In welchem Frequenzbereich gilt dieser Reﬂexionsfaktor?
@@ -857,9 +871,11 @@ alias:: wave propagation, wellenausbreitungs
 							- ((674ec847-fd7d-4084-915e-8421e8671ad5))
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
 					  RA = R # wert der vorher berechnet wurde
 					  rA = (RA-ZL)/(RA+ZL)
-					  "r = " + f"{rA*1E4:.4g}" + "e-4"
+					  print(f"r = {rA*1E4:.4g}e-4")
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 						- es ist schwierig den frequenzbereich abzuschätzen, da $R_A$ und $Z_L$ von der frequenz abhängen
@@ -967,6 +983,7 @@ alias:: wave propagation, wellenausbreitungs
 						- {{evalparent}}
 		- Variante 3)
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp) ![img](../assets/documents/WA_rechteckhohlleiter_bsp_1.webp)
 			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 50 \mathrm{\Omega}$. Der Außenradius sei $r_a = 6.3 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 2.25$.
 			  background-color:: green
@@ -1069,22 +1086,369 @@ alias:: wave propagation, wellenausbreitungs
 						- {{evalparent}}
 			- d) Berechnen Sie mittels der Power-Loss-Method den Dämpfungskoefﬁzienten des abgebildeten Rechteckhohlleiters mit den Abmessungen $a = 22.86 \mathrm{mm}$ und $b = 10.16 \mathrm{mm}$ bei $10 \mathrm{GHz}$ (Grundmodus $\mathrm{TE}_{10}$) in $\mathrm{dB/m}$. Erklären Sie dabei Ihre Vorgehensweise. Das Metall sei durch $\sigma = 5.7 \cdot 10^7 \mathrm{S/m}$ charakterisiert. Bei der gesuchten Ausbreitung in $z$-Richtung lauten die Feldkomponenten: $\\ E_x = 0 \\ E_{y}=-\frac{j\omega\mu}{\pi}a A \sin\left(\frac{\pi}{a}x\right)e^{-j k_{z}z} \\ E_z=0 \\ H_{x}=\frac{j k_{z}}{\pi}a A \sin\left(\frac{\pi}{a}x\right)e^{-j k_{z}z} \\ H_y = 0 \\ H_{z} = A \cos \left( \frac{\pi}{a}x \right) e^{-j k_{z}z}$
 			  background-color:: green
-				- TODO
-		-
-	- Dielektrische Platte
+				- TODO this
+	- Dielektrische Platte #wip
+	  background-color:: green
+	  collapsed:: true
 		- Berechnen Sie die Ausbreitungseigenschaften der $\mathrm{H}_{10}$-ähnlichen Grundwelle (siehe Rechteckhohlleiter), die von einer in $y$- und $z$-Richtung unbegrenzten und in $x$-Richtung $2d$ dicken dielektrischen Platte (Raum 1) geführt wird (Raum 2 ist Luft)!
+		  background-color:: green
 		  ![img](../assets/documents/WA_dielektrische_platte_bsp_1.webp)
 			- a) Finden Sie einen Ansatz für die Komponenten des elektromagnetischen Feldes in Ausbreitungsrichtung (positive $z$-Richtung) $E_{z1}$, $E_{z2}$, $H_{z1}$ und $H_{z2}$ der die Wellengleichung erfüllt und geben Sie die Separationsbedingungen an! Nutzen Sie die Symmetrie der Platte und berücksichtigen Sie nur $x > −d$!
+			  background-color:: green
 			- b) Bestimmen Sie die restlichen Feldkomponenten!
+			  background-color:: green
 			- c) Gewinnen Sie aus den Stetigkeitsbedingungen an der Grenzﬂäche zwischen Luft und Dielektrikum weitere Beziehungen zur Bestimmung der Ausbreitungskonstanten. Reduzieren Sie die gewonnenen Beziehungen zu einer einzigen transzendenten Gleichung für die Ausbreitungskonstante in $x$-Richtung ausserhalb der Platte in Abhängigkeit der Frequenz $\omega$!
+			  background-color:: green
 			- d) Ermitteln Sie eine Gleichung für die Grenzfrequenz der Grundwelle an. Die Grenzfrequenz ist durch den Übergang von der geführten Welle zur ungedämpften Abstrahlung in den Raum neben der Platte deﬁniert!
+			  background-color:: green
 	- Dielektrischer Wellenleiter
-		- Gegeben sei ein dielektrischer Wellenleiter der Dicke d = 1cm mit einer relativen Permit-
-		  tivit¨at von ǫ2 = 2, 26. Oberhalb des Wellenleiters beﬁnde sich Luft (ǫ3 = 1), unterhalb ein 
-		  idealer Leiter. Es breite sich eine Welle in z-Richtung aus!
-		-
+	  background-color:: green
+	  collapsed:: true
+		- Gegeben sei ein dielektrischer Wellenleiter der Dicke $d = 1\mathrm{cm}$ mit einer relativen Permittivität von $\varepsilon_2 = 2.26$. Oberhalb des Wellenleiters beﬁnde sich Luft ($\varepsilon_3 = 1$), unterhalb ein idealer Leiter. Es breite sich eine Welle in $z$-Richtung aus!
+		  background-color:: green
+		  ![img](../assets/documents/WA_dielektrischer_wellenleiter_bsp_1.webp)
+			- a) Finden Sie den minimalen Ansatz für $\mathrm{TE}$-Wellen! Benennen Sie alle Terme!
+			  background-color:: green
+				- skript
+					- ((67508335-6d86-4e15-a41a-550561c07696))
+				- formeln
+					- $H_{z1}=A_{1}~\mathrm{cos}\left(k_{x1}x\right)e^{-j k_{z}z} \\ H_{z2}=A_{2}~e^{-k_{x2}(x-d)}~e^{-j k_{z}z}$
+					  tags:: formel, wellenausbreitung
+					  bezeichnung:: ansatz für die $\mathrm{TE}$-welle in einem ebenen wellenleiter
+					  id:: 67508103-1a02-4819-8b68-7d3d9cf8f041
+					  collapsed:: true
+						- $H_{z1}, H_{z2}$ ... magnetische feldstärkekomponente in medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
+						- $A_1, A_2$ ... amplitude in medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
+						- $k_{x1}, k_{x2}$ ... [[wellenzahl]] in medium 1 bzw 2 $\mathrm{\left[\frac{rad}{m}\right]}$
+						- $z$ ... ausbreitungsrichtung $\mathrm{\left[m\right]}$
+						- $d$ ... [[eindringtiefe]] $\mathrm{\left[m\right]}$
+						- skript
+						  collapsed:: true
+							- ((675090f8-65ba-412b-8543-a560d7644e48))
+				- code
+				  id:: 67517609-f23a-458d-a213-d605769b4963
+				  collapsed:: true
+				- medium 2
+					- da in $x$-richtung stehende wellen anzunehmen sind wird $\cos$ oder $\sin$ angestzt. da am metall die randbedingung $E_{tang}$ erfüllt sein muss ([link](((67459ac8-e918-4a08-8003-07057ff681d6)))), wird ein $\cos$ angesetzt
+				- medium 3
+					- in $x$-richtung dissipiert die welle mit einer $e$ potenz
+			- b) Berechnen Sie die Separationsbedingungen und berechnen Sie die restlichen Feldkomponenten!
+			  background-color:: green
+				- formeln
+					- ((6750988d-c460-4ec0-8652-1b15a9976b66))
+					- $k_{x1}^{2}+k_{z}^{2} = k_1^2 = \omega^{2} \varepsilon_{1} \mu_{0} \\ -k_{x2}^{2} + k_{z}^{2} = k_2^2 = \omega^{2} \varepsilon_{2} \mu_{0}$
+					  tags:: formel, wip
+					  bezeichnung:: separationsbedingung für [[dielektrische wellenleiter]] [link](((674d7759-0e35-482f-8086-9026be01cd14)))
+					  id:: 67509364-eaba-40b7-bcaa-fc7c23e9954a
+					  collapsed:: true
+						- $-$ ...
+						- skript
+							- ((67517642-4ec8-4409-ade6-cc8d78118a1e))
+					- ((67508103-1a02-4819-8b68-7d3d9cf8f041))
+				- code
+					- ```python
+					  pyodide_js.globals.clear();
+					  ```
+						- {{evalparent}}
+					- ```python
+					  import pyodide_js
+					  await pyodide_js.loadPackage("micropip")
+					  import micropip
+					  await micropip.install('scipy')
+					  from scipy import *
+					  from scipy.constants import *
+					  from numpy import *
+					  await micropip.install('matplotlib')
+					  import matplotlib.pyplot as plt
+					  import io, base64, sys
+					  await micropip.install('sympy')
+					  import sympy as sp
+					  from sympy.utilities.lambdify import lambdify
+					  from sympy import latex
+					  printer = io.StringIO()
+					  stdout = sys.stdout
+					  sys.stdout = printer
+					  
+					  A2, kappa2, kx2, ky2, kz, k2, \
+					  Ex2, Ey2, Ez2, Hx2, Hy2, Hz2, \
+					  x, y, z, w, u = sp.symbols('A_2 κ_2 k_x2 k_y2 k_z k_2 \
+					  						    E_x2 E_y2 E_z2 H_x2 H_y2 H_z2 \
+					                              x y z ω μ', 
+					                             real=True)
+					  Ez2 = 0
+					  Hz2 = A2*sp.cos(kx2*x)*sp.exp(-1j*kz*z)
+					  eqn = sp.Eq(k2**2, kx2**2+kz**2)
+					  k2 = sp.solve(eqn,k2)[1]
+					  eqn = sp.Eq(kappa2**2, k2**2 - kz**2)
+					  kappa2 = sp.solve(eqn,kappa2)[1]
+					  
+					  Ex2 = (-1j / kappa2**2 *
+					    	  (
+					          kz * sp.diff(Ez2,x) + 
+					          w * u * sp.diff(Hz2,y) 
+					        )
+					  	 )
+					  print("######  E_x2  ######")
+					  print(f"latex code: {sp.latex(Ex2)}")
+					  sp.pprint(Ex2, use_unicode=False)
+					  
+					  Ey2 = (-1j / kappa2**2 *
+					    	  (
+					          kz * sp.diff(Ez2,y) + 
+					          w * u * sp.diff(Hz2,x) 
+					        )
+					  	 )
+					  print("\n######  E_y2  ######")
+					  print(f"latex code: {sp.latex(Ey2)}")
+					  sp.pprint(Ey2, use_unicode=False)
+					  
+					  Hx2 = (-1j / kappa2**2 *
+					    	  (
+					          kz * sp.diff(Hz2,x) + 
+					          w * u * sp.diff(Ez2,y) 
+					        )
+					  	 )
+					  print("\n######  H_x2  ######")
+					  print(f"latex code: {sp.latex(Hx2)}")
+					  sp.pprint(Hx2, use_unicode=False)
+					  
+					  Hy2 = (-1j / kappa2**2 *
+					    	  (
+					          kz * sp.diff(Hz2,y) + 
+					          w * u * sp.diff(Ez2,x) 
+					        )
+					  	 )
+					  print("\n######  H_y2  ######")
+					  print(f"latex code: {sp.latex(Hy2)}")
+					  sp.pprint(Hy2, use_unicode=False)
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
+					  A3, kappa3, kx3, ky3, k3, \
+					  Ex3, Ey3, Ez3, Hx3, Hy3, Hz3, d = sp.symbols('A_3 κ_3 k_x3 k_y3 k_3 \
+					  											E_x3 E_y3 E_z3 H_x3 H_y3 H_z3 d', 
+					                                             real=True)
+					  Ez3 = 0
+					  Hz3 = A3*sp.exp(-kx3*(x-d))*sp.exp(-1j*kz*z)
+					  eqn = sp.Eq(k3**2, -kx3**2+kz**2)
+					  k3 = sp.solve(eqn,k3)[1]
+					  eqn = sp.Eq(kappa3**2, k3**2 - kz**2)
+					  kappa3 = sp.solve(eqn,kappa3)[1]
+					  
+					  Ex3 = (-1j / kappa3**2 *
+					    	  (
+					          kz * sp.diff(Ez3,x) + 
+					          w * u * sp.diff(Hz3,y) 
+					        )
+					  	 )
+					  print("######  E_x3  ######")
+					  print(f"latex code: {sp.latex(Ex3)}")
+					  sp.pprint(Ex3, use_unicode=False)
+					  
+					  Ey3 = (-1j / kappa3**2 *
+					    	  (
+					          kz * sp.diff(Ez3,y) + 
+					          w * u * sp.diff(Hz3,x) 
+					        )
+					  	 )
+					  print("\n######  E_y3  ######")
+					  print(f"latex code: {sp.latex(Ey3)}")
+					  sp.pprint(sp.simplify(Ey3), use_unicode=False)
+					  
+					  Hx3 = (-1j / kappa3**2 *
+					    	  (
+					          kz * sp.diff(Hz3,x) + 
+					          w * u * sp.diff(Ez3,y) 
+					        )
+					  	 )
+					  print("\n######  H_x3  ######")
+					  print(f"latex code: {sp.latex(Hx3)}")
+					  sp.pprint(sp.simplify(Hx3), use_unicode=False)
+					  
+					  Hy3 = (-1j / kappa3**2 *
+					    	  (
+					          kz * sp.diff(Hz3,y) + 
+					          w * u * sp.diff(Ez3,x) 
+					        )
+					  	 )
+					  print("\n######  H_y3  ######")
+					  print(f"latex code: {sp.latex(Hy3)}")
+					  sp.pprint(Hy3, use_unicode=False)
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+			- c) Finden Sie die Randbedingungen!
+			  background-color:: green
+				- formeln
+					- ((67459ac8-e918-4a08-8003-07057ff681d6))
+					- $E_{\mathrm{tang1}} = E_{\mathrm{tang2}} \\ H_{\mathrm{tang1}} = H_{\mathrm{tang2}}$
+					  tags:: formel
+					  bezeichnung:: randbedingungen für den übergang einer welle an einer grenzfläche zwischen dielektrika
+						- $E_{\mathrm{tang1}},E_{\mathrm{tang2}}$ ... tangential komponente des [[elektrischen feldes]] im medium 1 bzw 2 $\mathrm{\left[\frac{V}{m}\right]}$
+						- $H_{\mathrm{tang1}},H_{\mathrm{tang2}}$ ... tangential komponente des [[magnetischen feldes]] im medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
+						- skript
+						  collapsed:: true
+							- ((6751d667-3181-4b73-87e6-9e864f549a9c))
+							- ((6751d67e-65ca-4200-97c6-6e1dbfc841a2))
+					- ((67508103-1a02-4819-8b68-7d3d9cf8f041))
+				- code
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  # randbedingung für x = d
+					  Ety2, Ety3, Hty2, Hty3, \
+					  Etz2, Etz3, Htz2, Htz3, \
+					  A2, A3, kx2, kx3, dd = sp.symbols('E_tang_x2 E_tang_x3 H_tang_x2 H_tang_x_3 \
+					  							      E_tang_z2 E_tang_z3 H_tang_z2 H_tang_z3 \
+					                                    A_2 A_3 k_x2 k_x3 d', 
+					                                    real=True)
+					  Etz2 = Etz3 # da TE welle = 0
+					  Hty2 = Hty3 # oben berechnet = 0
+					  
+					  Ety2 = Ey2.subs(x,dd)
+					  Ety3 = Ey3.subs(x,dd)
+					  
+					  Htz2 = Hz2.subs(x,dd)
+					  Htz3 = Hz3.subs(x,dd)
+					  
+					  print("######  Ey  ######")
+					  eqn = sp.Eq(Ety2,Ety3)
+					  rBEy = sp.solve(eqn, A3)[A3]
+					  print(f"latex code: {sp.latex(sp.trigsimp(rBEy))}")
+					  sp.pprint(sp.trigsimp(rBEy), use_unicode=False)
+					  
+					  print("\n######  Hz  ######")
+					  eqn = sp.Eq(Htz2,Htz3)
+					  rBHz = sp.solve(eqn, A3)[A3]
+					  eqn = sp.Eq(rBEy, rBHz)
+					  rBHz = rBEy-rBHz
+					  print(f"latex code: {sp.latex(sp.simplify(rBHz))}")
+					  sp.pprint(sp.simplify(rBHz), use_unicode=False)
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+			- d) Bestimmen Sie die Dispersionsgleichung und die Grenzfrequenzen der ersten drei Moden! Skizzieren Sie das Dispersionsdiagramm!
+			  background-color:: green
+				- skript
+				  collapsed:: true
+					- ((675330c9-5692-476c-ab43-c0f8c7614a54))
+				- formeln
+					- ((674d7759-f065-41be-aa7b-2bb81097b152))
+					- ((67509364-eaba-40b7-bcaa-fc7c23e9954a))
+				- code
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  d_n = 1E-2
+					  epsr2 = 2.26
+					  epsr3 = 1
+					  
+					  m, w, k_tot, kz2, kz3 = sp.symbols('m w k_tot kz2 kz3', 
+					                  			positive=True, 
+					                  			real=True)
+					  
+					  eqn = sp.Eq(kx2**2 + kz**2, w**2 * epsr2 *mu_0)
+					  kx2_t = sp.solve(eqn, kx2)[1]
+					  kz2 = sp.solve(kx2_t)[1][kz]
+					  sp.pprint(kz2, use_unicode=False)
+					  kz2_n = lambdify(w, kz2)
+					  
+					  eqn = sp.Eq(-kx3**2 + kz**2, w**2 * epsr3 *mu_0)
+					  kx3_t = sp.solve(eqn, kx3)[1]
+					  kz3 = sp.solve(kx3_t)[1][kz]
+					  sp.pprint(kz3, use_unicode=False)
+					  kz3_n = lambdify(w, kz3)
+					  
+					  wcm = (
+					    	    ((2 * m - 1) * pi) /
+					          (2 * d_n * sp.sqrt(epsilon_0 * mu_0 * (epsr2 - epsr3)))
+					        )
+					  
+					  fc1 = wcm.subs(m,1).evalf() / (2 * pi)
+					  print(f"fc1 = {fc1/1E9:.4g}GHz")
+					  fc2 = wcm.subs(m,2).evalf() / (2 * pi)
+					  print(f"fc2 = {fc2/1E9:.4g}GHz")
+					  fc3 = wcm.subs(m,3).evalf() / (2 * pi)
+					  print(f"fc3 = {fc3/1E9:.4g}GHz")
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
+					  w_n = linspace(0, 
+					                 int(max(fc1,fc2,fc3)*1.2*(2*pi)), 
+					                 1000)
+					  
+					  # Create the plot
+					  plt.clf()
+					  plt.plot(w_n, kz2_n(w_n), label='k_2')
+					  plt.plot(w_n, kz3_n(w_n), label= 'k_3')
+					  plt.plot([2*pi*fc1, 2*pi*fc1],
+					           [0, kz3_n(2*pi*fc1)],
+					           color='red',
+					           linestyle='--',
+					           label="fc1")
+					  plt.scatter([2*pi*fc1, 2*pi*fc1],
+					              [kz3_n(2*pi*fc1), kz3_n(2*pi*fc1)], 
+					              color='red', zorder=5)
+					  plt.plot([2*pi*fc2, 2*pi*fc2],
+					           [0, kz3_n(2*pi*fc2)],
+					           color='red',
+					           linestyle='--',
+					           label="fc2")
+					  plt.scatter([2*pi*fc2, 2*pi*fc2],
+					              [kz3_n(2*pi*fc2), kz3_n(2*pi*fc2)], 
+					              color='red', zorder=5)
+					  plt.plot([2*pi*fc3, 2*pi*fc3],
+					           [0, kz3_n(2*pi*fc3)],
+					           color='red',
+					           linestyle='--',
+					           label="fc3")
+					  plt.scatter([2*pi*fc3, 2*pi*fc3],
+					              [kz3_n(2*pi*fc3), kz3_n(2*pi*fc3)], 
+					              color='red', zorder=5)
+					  plt.xlabel('ω')  # Label the x-axis
+					  plt.ylabel('k')  # Label the y-axis
+					  plt.grid(True)  # Add a grid
+					  plt.legend()
+					  buf = io.BytesIO()
+					  plt.savefig(buf, format = 'png')
+					  buf.seek(0)
+					  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
+					  buf.close()
+					  png
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+			- [📚 2024-12-05 11h58m.xopp](../assets/documents/2024-12-05 11h58m.xopp)
+			- ![📚 2024-12-05 11h58m_annotated.pdf](../assets/documents/2024-12-05 11h58m_annotated.pdf)
+	- Parallelplattenleitung
+	  background-color:: green
+		- Es soll die Ausbreitungsfähigkeit des $\mathrm{TEM}$ Modus in $z$-Richtung auf dem abgebildeten Parallelplattenleiter (mit $\varepsilon_r = 3.5$) untersucht werden.
+		  background-color:: green
+		  id:: 67507618-c8e1-4f6f-88bc-e228e47f184d
+		  Hinweis: $\varepsilon_0 = \mathrm{8.854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
+		  ![img](../assets/documents/WA_parallelplattenleitung_bsp_1.webp)
+			- a) Berechnen Sie die Komponenten der gefragten Moden, ﬁnden Sie einen Ansatz der die Wellengleichung erfüllt, ermitteln Sie die Separationsbedingungen und passen Sie an den Rand an! Verwenden Sie dabei die Näherung $w \gg d$. Welche Komponenten verschwinden?
+			  background-color:: green
+				- formeln
+					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
+					- ((6735b379-187a-4654-8126-efd8a322477b))
+					- ((67403e6c-c82c-4ada-a67e-ba11b41ebcc8)) [FS](((67404a07-268a-4632-b86f-c136cdfaf0eb)))
+				- code
+			- b) Berechnen Sie den Mediumswiderstand, den Leitungswellenwiderstand und die Grenzfrequenz des gefragten Modus für $w = 12 \mathrm{mm}$, $d = 3 \mathrm{mm}$! Geben Sie alle zur Berechnung notwendigen Schritte an!
+			  background-color:: green
+			- c) Berechnen Sie mittels der Power Loss Method den Dämpfungskoeﬃzienten für den gefragten Modus in $\mathrm{dB/m}$. Das Metall sei durch $\sigma_{Cu} = 48 \cdot 10^6 \mathrm{S/m}$ charakterisiert, die Frequenz sei $7 \mathrm{GHz}$. Geben Sie alle zur Berechnung notwendigen Schritte an!
+			  background-color:: green
+			- d) Zeichnen Sie die tatsächlichen Feldbilder ohne Verwendung der Näherung $w \gg d$ in zwei Ansichten! Welche Wellentypen sind prinzipiell auf dieser Leitung ausbreitungsfähig?
+			  background-color:: green
+				- ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_1.webp) ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_2.webp)
 - ## flashcards
-  collapsed:: true
 	- ### index
 		- query-table:: true
 		  collapsed:: true
@@ -1127,35 +1491,48 @@ alias:: wave propagation, wellenausbreitungs
 		  ]
 		  }
 		  #+END_QUERY
-	- wofür stehen TM, TE und TEM? 
+	- wie lautet der ansatz für die $\mathrm{TE}$-welle in einem ebenen wellenleiter
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 675179b4-cf9b-4790-9496-3e14e469dcc8
+		- ((67508103-1a02-4819-8b68-7d3d9cf8f041))
+	- wie lautet die separationsbedingung fpr [[dielektrische wellenleiter]]?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+	  id:: 67517953-6b7e-450b-a047-4e6dd56f023c
+		- ((67517609-f23a-458d-a213-d605769b4963))
+	- wofür stehen $\mathrm{TM}$, $\mathrm{TE}$ und $\mathrm{TEM}$? 
 	  id:: 6736247d-67c9-4c4e-ba0e-2d9d5c1a369d
-	  collapsed:: true
-		- TM
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+		- $\mathrm{TM}$
 			- ***T***ransversal ***M***agnetische Welle
 			- $H_z=0$ also der magnetische feldstärke vektor ist komplett transversal ($90°$) zur ausbreitungsrichtung (hier $z$)
-		- TE
+		- $\mathrm{TE}$
 			- ***T***ransversal ***E***lektrische Welle
 			- $E_z=0$ also der elektrische feldstärke vektor ist komplett transversal ($90°$) zur ausbreitungsrichtung (hier $z$)
-		- TEM
+		- $\mathrm{TEM}$
 			- ***T***ransversal ***E***lektro-***M***agnetische Welle
 			- $H_z = E_z = 0$ also der magnetische und elektrische feldstärke vektor ist komplett transversal ($90°$) zur ausbreitungsrichtung (hier $z$)
 	- wie teilt sich die leistung einer welle bei zitkular polarisierten welle auf?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 674d7841-1b87-4fd4-b726-5ffaf53b1838
 	  collapsed:: true
 		- die TE und TM Wellen haben die gleiche leistung
 		- ((673b6e21-b584-4162-9dee-58697f01a4bb))
 	- welcher faktor ($\Gamma_{\mathrm{TM}},~\Gamma_{\mathrm{TE}}, ~T_{\mathrm{TM}},~T_{\mathrm{TE}}$) ist unter einfall des [[brewster winkels]] gleich $0$?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 674d7841-5b07-4712-a098-3e0768f96c58
 		- $\Gamma_{\mathrm{TM}}$
 	- was beschreibt eine mode?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 674d7841-6fa3-4dae-921b-09d19b78642d
 		- eine mode beschreibt die gestalt der felder
 	- was ist die günstigste form eines quaderförmigen hohlraum resonators?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 674d7841-95a7-4f17-ada9-bdfbf1975442
 		- wenn man das größte volumen bei kleinstmöglicher oberfläche hat, also $a=b=c$
