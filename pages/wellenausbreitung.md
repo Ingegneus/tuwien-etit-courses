@@ -1444,6 +1444,8 @@ alias:: wave propagation, wellenausbreitungs
 			- b) Berechnen Sie den Mediumswiderstand, den Leitungswellenwiderstand und die Grenzfrequenz des gefragten Modus für $w = 12 \mathrm{mm}$, $d = 3 \mathrm{mm}$! Geben Sie alle zur Berechnung notwendigen Schritte an!
 			  background-color:: green
 				- formeln
+				- code
+					-
 			- c) Berechnen Sie mittels der Power Loss Method den Dämpfungskoeﬃzienten für den gefragten Modus in $\mathrm{dB/m}$. Das Metall sei durch $\sigma_{Cu} = 48 \cdot 10^6 \mathrm{S/m}$ charakterisiert, die Frequenz sei $7 \mathrm{GHz}$. Geben Sie alle zur Berechnung notwendigen Schritte an!
 			  background-color:: green
 			- d) Zeichnen Sie die tatsächlichen Feldbilder ohne Verwendung der Näherung $w \gg d$ in zwei Ansichten! Welche Wellentypen sind prinzipiell auf dieser Leitung ausbreitungsfähig?
