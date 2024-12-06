@@ -1,0 +1,3 @@
+- name: Logseq Publish SPA
+  uses: logseq/publish-spa@v0.3.1
+            
