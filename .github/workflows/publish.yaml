@@ -15,6 +15,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           version: nightly
-          theme-mode: "dark"
-          accent-color: "plum"
+          theme-mode: dark
+          accent-color: plum
           folder: www

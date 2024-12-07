@@ -1,10 +1,11 @@
+public:: true
 icon:: 📚
 inherit-color-icon-from:: [[logseq-page-color-purple]] 
 template-used:: standard-page
 tags:: [[wellenausbreitung]], formeln
+alias:: cheat sheet
 
 - ## [[maxwell]]
-  collapsed:: true
 	- $\vect{\nabla} \cdot \vect{S} = \opn{lim}_{\mathcal{V} \to0} \frac{1}{V} \oint_{\Sigma} \vect{S} \cdot \opn{d} \vect{F} = - \frac{\partial}{\partial t} \rho$
 	- $\vect{\nabla} \cdot( \vect{\nabla} \times \vect{H}) \equiv0$
 	- $\vect{\nabla} \times \vect{H} = \vect{S} + \frac{\partial}{\partial t} \vect{D}$
@@ -92,21 +93,15 @@ tags:: [[wellenausbreitung]], formeln
 	  id:: 674d7759-0e35-482f-8086-9026be01cd14
 		- $-$ ...
 	- $\frac{\partial^{2}}{\partial x^{2}}X(x) + k_{x}^{2}X(x) = 0$
-	- $\frac{\partial}{\partial y}H_{z} - \frac{\partial}{\partial z}H_{y} = j \omega \delta E_{x}$
-	- $\frac{\partial}{\partial z}H_{x} - \frac{\partial}{\partial x}H_{z} = j \omega \delta E_{y}$
-	- $\frac{\partial}{\partial x}H_{y} - \frac{\partial}{\partial y}H_{x} = j \omega \delta E_{z}$
-	- $\frac{\partial}{\partial y}E_{z} - \frac{\partial}{\partial z}E_{y} = - j \omega \mu H_{x}$
-	- $\frac{\partial}{\partial z}E_{x} - \frac{\partial}{\partial x}E_{z} = - j \omega \mu H_{y}$
-	- $\frac{\partial}{\partial x}E_{y} - \frac{\partial}{\partial y}E_{x} = - j \omega \mu H_{z}$
-	- $E_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial x}E_{z} + \omega \mu \frac{\partial}{\partial y}H_{z} \right)$
-	  id:: 674d7759-4a91-4489-b9af-4545f96e73a2
-	- $E_{y} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial y}E_{z} - \omega \mu \frac{\partial}{\partial x}H_{z} \right)$
-	  id:: 674d7759-d98e-422d-b379-68671adeae48
-	- $H_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial x}H_{z} - \omega \delta \frac{\partial}{\partial y}E_{z} \right)$
-	  id:: 674d7759-f64a-45ff-be7f-3c676218796f
-	- $H_{y} = \frac{ - j}{\kappa^{2}} \left( k_{z} \frac{\partial}{\partial y} H_{z} + \omega \delta \frac{\partial}{\partial x} E_{z} \right)$
+	- $\frac{\partial}{\partial y}H_{z} - \frac{\partial}{\partial z}H_{y} = j \omega \delta E_{x} \\ \frac{\partial}{\partial z}H_{x} - \frac{\partial}{\partial x}H_{z} = j \omega \delta E_{y} \\ \frac{\partial}{\partial x}H_{y} - \frac{\partial}{\partial y}H_{x} = j \omega \delta E_{z} \\ \frac{\partial}{\partial y}E_{z} - \frac{\partial}{\partial z}E_{y} = - j \omega \mu H_{x} \\ \frac{\partial}{\partial z}E_{x} - \frac{\partial}{\partial x}E_{z} = - j \omega \mu H_{y} \\ \frac{\partial}{\partial x}E_{y} - \frac{\partial}{\partial y}E_{x} = - j \omega \mu H_{z}$
+	  tags:: formel, wip
+	  bezeichnung:: komponentenweise darstellung der [[maxwellschen]] rotorgleichungen in [[kartesischer]] form. vorraussetzung: [[harmonische]] Vorgänge und Quellenfreiheit. 
+	  anschreiben
+		- $-$ ...
+	- ((6750988d-c460-4ec0-8652-1b15a9976b66))
 	  id:: 674d7759-2ef6-4ef6-9620-b611b833d779
 - ## [[homogene ebene wellen]]
+  collapsed:: true
 	- $+ \cfrac{\partial}{\partial z}e_{y} = \mu \cfrac{\partial}{\partial t}h_{x}$
 	- $- \cfrac{\partial}{\partial z}e_{x} = \mu \cfrac{\partial}{\partial t}h_{y}$
 	- $0 = \mu \cfrac{\partial}{\partial t}h_{z}$

@@ -1136,7 +1136,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung, WA
 			- b) Berechnen Sie die Separationsbedingungen und berechnen Sie die restlichen Feldkomponenten!
 			  background-color:: green
 				- formeln
-					- ((6750988d-c460-4ec0-8652-1b15a9976b66))
+					- ((6750988d-c460-4ec0-8652-1b15a9976b66)) [FS](((674d7759-2ef6-4ef6-9620-b611b833d779)))
 					- $k_{x1}^{2}+k_{z}^{2} = k_1^2 = \omega^{2} \varepsilon_{1} \mu_{0} \\ -k_{x2}^{2} + k_{z}^{2} = k_2^2 = \omega^{2} \varepsilon_{2} \mu_{0}$
 					  tags:: formel, wip
 					  bezeichnung:: separationsbedingung für [[dielektrische wellenleiter]] [link](((674d7759-0e35-482f-8086-9026be01cd14)))
@@ -1453,6 +1453,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung, WA
 			  background-color:: green
 				- ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_1.webp) ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_2.webp)
 - ## flashcards
+  collapsed:: true
 	- ### index
 		- query-table:: true
 		  collapsed:: true
@@ -1540,3 +1541,11 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung, WA
 	  tags:: flashcard
 	  id:: 674d7841-95a7-4f17-ada9-bdfbf1975442
 		- wenn man das größte volumen bei kleinstmöglicher oberfläche hat, also $a=b=c$
+	- was sind die eigenschaften harmonischer funktionen 
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+		- | $h(k_z z)$ | Nullstellen Polstellen | besondere Werte für $k_z = \beta - j\alpha$ | Darstellung für verschiedene Werte von $k_z$ | physikalische Bedeutung | 
+		   | $e^{-jk_zz}$ | $k_zz → - j \infty$<br /><br />$k_zz→j\infty$ | $k_z$ reell <br />$k_z$ imaginär <br />$k_z$ komplex | $e^{-j\beta z} \\ e^{-\alpha z} \\ e^{-j\alpha z} e^{-j\beta z}$ | Wanderwelle in $+z$ <br />evaneszentes Feld, abklingend <br />gedämpfte Welle | 
+		   | $e^{jk_zz}$ | $k_zz → j \infty$<br /><br />$k_zz → - j\infty$ | $k_z$ reell <br />$k_z$ imaginär <br />$k_z$ komplex | $e^{+j\beta z} \\ e^{+\alpha z} \\ e^{+j\alpha z} e^{-j\beta z}$ | Wanderwelle in $-z$ <br />evaneszentes Feld, anklingend <br />gedämpfte Welle | 
+		   | $\sin (k_{z2})$ | $k_zz → n\pi$<br /><br />$k_zz→\pm j\infty$ | $k_z$ reell <br />$k_z$ imaginär <br />$k_z$ komplex | $\sin(\beta z) \\ -j\sinh(\alpha z) \\ \cos(\beta z)\cosh(\alpha z) + j \sin(\beta z) \sinh(\alpha z)$ | stehende Welle <br />zwei evaneszente Felder <br />gegenlaufige gedämpfte Wellen | 
+		   | $\cos (k_zz)$ | $k_zz → (n+\frac12)\pi$<br /><br />$k_zz → \pm j\infty$ | $k_z$ reell <br />$k_z$ imaginär <br />$k_z$ komplex | $\cos(\beta z) \\ \cosh(\alpha z) \\ \cos(\beta z)\cosh(\alpha z) + j \sin(\beta z) \sinh(\alpha z)$ | stehende Welle <br />zwei evaneszente Felder <br />gegenläufige gedämpfte Wellen |
