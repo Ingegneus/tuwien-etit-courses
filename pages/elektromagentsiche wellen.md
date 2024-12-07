@@ -1,3 +1,4 @@
+public:: true
 icon:: -
 inherit-color-icon-from:: -
 template-used:: standard-page

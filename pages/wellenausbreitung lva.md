@@ -1,7 +1,8 @@
+public:: true
 icon:: 🛜
 inherit-color-icon-from:: [[logseq-page-color-purple]]
 tags:: uni
-alias:: wave propagation, wellenausbreitungs
+alias:: wave propagation, wellenausbreitungs, wellenausbreitung, WA
 
 - ## vorlesungen
 	- ![📚 WA-Skriptum-17.Auflage.pdf](file://C:\Users\Matteo\Documents\Uni\Wellenausbreitung\WA-Skriptum-17.Auflage.pdf)

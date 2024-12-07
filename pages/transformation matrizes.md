@@ -3,6 +3,7 @@ icon:: 💱
 inherit-color-icon-from:: [[logseq-page-color-pink]]
 template-used:: standard-page
 tags:: [[uni]], [[mathematik]]
+alias:: transformationsmatrix, transformationsmatrizen, transformation matrix
 
 - $\mathbf{V}=\begin{pmatrix}\mathbf{v}_1 & \mathbf{v}_2 & \cdots & \mathbf{v}_{n}\end{pmatrix}$
   tags:: formel

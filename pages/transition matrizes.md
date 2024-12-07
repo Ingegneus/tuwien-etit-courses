@@ -2,7 +2,8 @@ public:: true
 icon:: 🪟
 color:: "#9bf6ff"
 template-used:: standard-page
-tags:: [[uni]], [[automatisierungstechnik]]
+tags:: [[uni]], [[automatisierungstechnik]], [[matrix]]
+alias:: transitionsmatrix, transitionsmatrizen, transition matrix
 
 - $\mathbf{\Phi}(t) = \exp(\mathbf{A}t) = \left(\sum_{k=0}^{\infty}\mathbf{A}^{k}\frac{t^{k}}{k!}\right)$
   id:: 6717bedf-9586-4607-a3d4-5211a81e6421

@@ -1,3 +1,4 @@
+public:: true
 icon:: ⭕
 inherit-color-icon-from:: [[logseq-page-color-orange]]
 tags:: [[uni]], [[automatisierungstechnik]], [[signale uns systeme 1]] 

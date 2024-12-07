@@ -2,6 +2,7 @@ public:: true
 icon:: 🔌
 inherit-color-icon-from:: [[logseq-page-color-red]]
 tags:: uni
+alias:: ST, schaltungstechnik
 
 - [📁 folder](file://C:\Users\Matteo\Documents\Uni\Schaltungstechnik)
 - ## vorlesungen

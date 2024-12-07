@@ -1,7 +1,9 @@
+public:: true
 icon:: ↘️
 inherit-color-icon-from:: [[logseq-page-color-red]]
 template-used:: standard-page
 tags:: [[uni]], [[mathematik]]
+alias:: jordansche normalform, jordan canonical form
 
 - $\tilde{\mathbf{A}}=\mathbf{V}^{-1}\mathbf{AV}$
   tags:: formel
