@@ -132,7 +132,7 @@ alias:: automatisierung, automatisierungs
 			  $$\begin{array}{l}\dot{\mathbf{x}}=\left[\begin{array}{c}-\alpha & \alpha \\ 0 & -1\end{array}\right]\mathbf{x},\\ y=\left[1\quad1
 			  \right]\mathbf{x},\end{array}$$
 			  mit einer allgemeinen [[Abtastzeit]] $T_a > 0$, wobei der Parameter $\alpha$ konstant und reellwertig ist.
-			- c) Beweisen Sie allgemein die Gültigkeit des [[Separationsprinzips]] für [[lineare]], [[zeitinvariante]], [[[[zeitdiskrete]]]] [[Eingrößensysteme]] der Form
+			- c) Beweisen Sie allgemein die Gültigkeit des [[Separationsprinzips]] für [[lineare]], [[zeitinvariante]], [[zeitdiskrete]] [[Eingrößensysteme]] der Form
 			  background-color:: green
 			  $$\begin{array}{l}\mathbf{x}_{k+1}=\Phi\mathbf{x}_{k}+\Gamma u_{k} ,\quad\mathbf{x}(0)=\mathbf{x}_{0}, \\ y_{k}=\mathbf{c}^{\mathrm{T}}\mathbf{x}_{k}~.\end{array}$$
 			- d) Geben Sie die [[Übertragungsfunktion]] eines [[Lag-Glied]] an und skizzieren Sie dessen [[Sprungantwort]]. Beschriften Sie die [[Sprungantwort]] und stellen Sie den Zusammenhang zu den Parametern der [[Übertragungsfunktion]] her.
@@ -175,7 +175,7 @@ alias:: automatisierung, automatisierungs
 				  background-color:: green
 				- ii) Nachfolgend wird das System ohne Störung ($\mathbf{v}_{k} = \mathbf{0}$) betrachtet. Wie lautet die Bedingung für die Ruhelagen dieses Systems für konstante Eingangsgrößen $\mathbf{u}_{k} = \mathbf{u}_{s}$? Wie viele Ruhelagen gibt es?
 				  background-color:: green
-			- b) Bestimmen Sie die eingeschwungene Lösung einer BIBO-stabilen [[Übertragungsfunktion]] $G(z)$ für die Eingangsfolge
+			- b) Bestimmen Sie die eingeschwungene Lösung einer [[BIBO-stabilen]] [[Übertragungsfunktion]] $G(z)$ für die Eingangsfolge
 			  background-color:: green
 			  $$(u_{k})=\Big(\frac{1}{2}\cos\Bigl(\frac{\pi}{2}k T_{a}+\frac{\pi}{8}\Bigr)\Bigr),\quad T_{a}=0.5\mathrm{s}.$$
 			- c) Gegeben ist die $q$-Übertragungsfunktion
@@ -284,13 +284,13 @@ alias:: automatisierung, automatisierungs
 	  deck:: Uni::Automatisierungstechnik_Theorie
 	  tags:: flashcard, wip, ai
 	  collapsed:: true
-		- was ist die zustandsraumdarstellung eines systems
+		- was ist die [[zustandsraumdarstellung]] eines systems
 		  collapsed:: true
-		  Die Zustandsraumdarstellung (State-Space Representation) ist eine mathematische Methode zur Beschreibung dynamischer Systeme. 
+		  Die [[zustandsraumdarstellung]] (State-Space Representation) ist eine mathematische Methode zur Beschreibung dynamischer Systeme. 
 		  
 		  Anstatt die Eingangs-/Ausgangsbeziehung direkt darzustellen, fokussiert sie sich auf den **inneren Zustand** des Systems zu einem bestimmten Zeitpunkt.
 		  
-		  Hier sind die Schlüsselkomponenten der Zustandsraumdarstellung:
+		  Hier sind die Schlüsselkomponenten der [[zustandsraumdarstellung]]:
 		  
 		  * **Zustandsvektor (x(t)):** Dieser Vektor enthält alle Variablen, die den aktuellen Zustand des Systems beschreiben.
 		  * **Eingangsvektor (u(t)):** Dieser Vektor repräsentiert externe Eingänge, die das System beeinflussen.
@@ -308,7 +308,7 @@ alias:: automatisierung, automatisierungs
 		      * C ist die Ausgangsmatrix, die angibt, wie der Zustand den Ausgang beeinflusst.
 		      * D ist die Durchgriffsmatrix, die einen direkten Zusammenhang zwischen Eingang und Ausgang beschreibt (optional).
 		  
-		  **Vorteile der Zustandsraumdarstellung:**
+		  **Vorteile der [[zustandsraumdarstellung]]:**
 		  
 		  * **Allgemeingültigkeit:** Sie kann eine große Klasse von Systemen beschreiben, sowohl lineare als auch nichtlineare.
 		  * **Kompaktheit:** Die gesamte Systemdynamik wird in den Matrizen A, B, C und D zusammengefasst.

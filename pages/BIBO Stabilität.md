@@ -2,7 +2,7 @@ public:: true
 icon:: 🗿
 inherit-color-icon-from:: [[logseq-page-color-green]]
 tags:: [[uni]], [[automatisierungstechnik]] 
-alias:: BIBO-stabil, BIBO-Stabilität, BIBO stabil
+alias:: BIBO-stabil, BIBO-Stabilität, BIBO stabil, BIBO-stabilen, BIBO stabilen
 
 - steht für <u>B</u>ounded <u>I</u>nput <u>B</u>ounded <u>O</u>utput
 - wann ist ein [[system]] [[BIBO-stabil]]? 
