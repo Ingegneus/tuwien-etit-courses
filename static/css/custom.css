@@ -283,5 +283,5 @@ border-bottom:none}
 
 /* pdf reader */
 .extensions__pdf-header{
-	background-color: black!important;
+	background: blackvar(--ls-wb-background-color-default);
 }
