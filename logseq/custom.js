@@ -70,10 +70,19 @@ const Kits = Module.setChild("Kits")
     const btnRemove = Kits.createElementOfClass("button", "out", "❌");
     const divRow = Kits.createElementOfClass("div", "out", btnRemove, "...running...");
 
-    const wrapper = container.getElementsByClassName("block-content-wrapper")[0];
-    wrapper.append(divRow);
+    // Get the triggering button (the one that was clicked)
+    const button = container.querySelector("button.kit.eval");
 
-    Kits.addClickEventToButton(Kits.onRemoveClicked.bind(null, wrapper), btnRemove);
+    // If the button is found, insert the divRow **after** it
+    if (button) {
+        button.after(divRow);
+    } else {
+        // Fallback to append if no button is found (old behavior)
+        const wrapper = container.getElementsByClassName("block-content-wrapper")[0];
+        wrapper.append(divRow);
+    }
+
+    Kits.addClickEventToButton(Kits.onRemoveClicked.bind(null, container), btnRemove);
     return divRow;
 })
 .setStatic(function onRemoveClicked(wrapper, e){

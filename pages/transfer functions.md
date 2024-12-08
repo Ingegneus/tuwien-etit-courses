@@ -1,8 +1,8 @@
 public:: true
 icon:: 📉
 inherit-color-icon-from:: [[logseq-page-color-red]]
-tags:: [[uni]], [[schaltungstechnik]], [[automatisierungstechnik]], [[signale uns systeme 1]] 
-alias:: Übertragungsfunktion
+tags:: [[uni]], [[schaltungstechnik]], [[automatisierungstechnik]], [[signale uns systeme 1]]
+alias:: übertragungsfunktion, übertragungsfunktionen, transfer function
 
 - $G(s) = \frac{Y\left(s\right)}{X\left(s\right)}$
   tags:: formel

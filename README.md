@@ -53,10 +53,11 @@ Die häufigsten git befehle die du brauchen wirst sind:
 - `git pull` - zieht den zustand von github und vereint es mit deiner lokalen version  
 
 ### variante 2: statische HTML
-lade dir die `html.zip` datei von [hier](https://github.com/Ingegneus/tuwien-etit-courses/releases) runter, entpacke sie und öffne die `index.html` datei (sollte sich automatisch im browser öffnen).
+lade dir die `html.zip` datei von [hier](https://github.com/Ingegneus/tuwien-etit-courses/releases) runter, entpacke sie und öffne die `index.html` datei (sollte sich automatisch im browser öffnen). bedenke, dass einiges im browser nicht funktionieren wird, da es nur eine statische html datei ist. das heißt alles was mit plugins zu tun hat wird nicht gehen
 
 ### variante 3: github pages
-du kannst variante 2 auch online nutzen indem du diese webseite öffnest [link](https://ingegneus.github.io/tuwien-etit-courses/)
+du kannst variante 2 auch online nutzen indem du diesen link öffnest [link](https://ingegneus.github.io/tuwien-etit-courses/). bedenke, dass einiges im browser nicht funktionieren wird, da es nur eine statische html datei ist. das heißt alles was mit plugins zu tun hat wird nicht gehen
+
 ### mein logseq setup
 ich verwende logseq für so ziemlich alles und habe einige workflows entwickelt. für die uni nutze ich diese plugins:  
 - live math (einfachere eingabe von latex)  
