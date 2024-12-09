@@ -289,6 +289,8 @@
 	:evalpage "<button class='kit eval' data-kit='evalpage'>► Evaluate code of open code-blocks</button>"
 	:evalparent "<button class='kit eval' data-kit='evalparent'>► Evaluate code of parent block</button>"
 	:runpage "<button class='kit run' data-kit='runpage' data-page-name='$1'>► Run code of page $1</button>"
+	:clearnamespace "<button class='kit run' data-kit='runpage' data-page-name='$1'>► Clear Python Namespace</button>"
+	:loadunipackages "<button class='kit run' data-kit='runpage' data-page-name='$1'>► Load Uni Packages</button>"
 	:togglemsg "<button class='kit' data-kit='togglemsg'>► Toggle messages</button>"
 		
 	"yesterday" "<div class='kit' data-kit='expandmacro'>[$1](<% yesterday %>)</div>"

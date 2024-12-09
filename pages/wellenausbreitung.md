@@ -12,7 +12,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 	- ![📚 Formelsammlung_7.Auflage.pdf](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Unterlagen\Formelsammlung_7.Auflage.pdf)
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
-	  collapsed:: true
 		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.6}$) eingestrahlt.
 		  background-color:: green
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp)
@@ -49,7 +48,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- $\vect{P}_{\mathrm{t}} = \vect{P}_{\mathrm{TE,t}} + \vect{P}_{\mathrm{TM,t}}$
 					  tags:: formel
 					  bezeichnung:: leistung der transmittierten welle
-					  id:: 673b6e21-b584-4162-9dee-58697f01a4bb
 					  collapsed:: true
 						- $\vect{P}_{\mathrm{t}}$ ... gesamte leistung der transmittierten Welle $\mathrm{\left[ W \right]}$
 						- $\vect{P}_{\mathrm{TE,t}}$ ... leistung der transmittierten TE Welle $\mathrm{\left[ W \right]}$
@@ -124,38 +122,46 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- ((6735b379-5292-4604-baef-85a4c9a6fc3f))
 					- ((6735b379-9a02-48b3-997c-2ecd856cb257))
 				- code
+					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
 					- ```python
-					  import pyodide_js
-					  await pyodide_js.loadPackage("micropip")
-					  import micropip
-					  await micropip.install('scipy')
-					  from scipy import *
-					  from scipy.constants import *
-					  from numpy import arcsin, arctan, arccos
+					  printer.seek(0); printer.truncate(0)
 					  
 					  n1 = 1
 					  n2 = 1.33
 					  n = n2/n1
 					  theta1 = 75 * degree
 					  theta2 = arcsin(n1/n2 * sin(theta1))
-					  "theta2: " + f"{round(theta2 / degree,3)}" +" deg"
+					  resPrint('θ_2', round(theta2 / degree,3), '°')
+					  
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  gammaTE = (( n1 * cos(theta1) - n2 * cos(theta2) ) /
 					             ( n1 * cos(theta1) + n2 * cos(theta2) ))
-					  "gammaTE: " + str(gammaTE)
+					  
+					  resPrint('Γ_TE', gammaTE, '')
+					  
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 					- ```python
+					  printer.seek(0); printer.truncate(0)
 					  gammaTM = (( n2*cos(theta1)-n1*cos(theta2) ) /
 					             ( n2*cos(theta1)+n1*cos(theta2) ))
-					  "gammaTM: " + str(gammaTM)
+					  resPrint('Γ_TM', gammaTM, '')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 					- ```python
+					  printer.seek(0); printer.truncate(0)
 					  R = round(10 * log10((gammaTE**2+gammaTM**2)/2),3)
 					  "R: " + str(R) + " dB"
+					  resPrint('R', R, 'dB')
+					  
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 			- b) Wie gut kann das ideal eingesetzte Polarisationsﬁlter des zweiten Fotografen die Reﬂexion im Vergleich zum ersten Fotografen unterdrücken (in $\mathrm{dB}$)?
@@ -163,27 +169,35 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				- es geht hierbei darum, dass ein filter verwendet wird welches den TM oder TE anteil filtert
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  # gammaTM = 0
-					  R_TM=round(10 * log10((gammaTE**2)/2),3)
-					  "R_TM: " + str(R_TM) + " dB"
+					  R_TM = round(10 * log10((gammaTE**2)/2),3)
+					  resPrint('R_TM', R_TM, 'dB')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  # gammaTE = 0
 					  R_TE = round(10 * log10((gammaTM**2)/2),3)
-					  "R_TE: " + str(R_TE) + " dB"
+					  resPrint('R_TM', R_TM, 'dB')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  # R_TE negativer
-					  "Photograf2/Photograf1: " + str(R_TE-R) + " dB"
+					  resPrint('Photograf2/Photograf1', R_TE-R, 'dB')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 			- [📚 2024-11-20 19h04m.xopp](../assets/documents/2024-11-20 19h04m.xopp)
 			- ![📚 2024-11-20 19h04m_annotated.pdf](../assets/documents/2024-11-20 19h04m_annotated.pdf)
 	- Stehende Welle im verlustbehafteten Medium
 	  background-color:: green
-	  collapsed:: true
 		- Eine sich im [verlustbehafteten Medium](((6740c4fa-4d26-4310-b196-321b7391feb6))) (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden [metallischen Wand mit unendlicher Leitfähigkeit](((67405634-4634-4d0d-b586-6a52b1bb7c75))) reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
 		  background-color:: green
 		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
@@ -191,37 +205,23 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- skript
 			  collapsed:: true
 				- ((67405657-2347-4d8b-93f5-98a6b52c836c))
-				  id:: 67405634-4634-4d0d-b586-6a52b1bb7c75
 				- ((6740c51b-b09e-4b73-b018-e2d77efe468b))
-				  id:: 6740c4fa-4d26-4310-b196-321b7391feb6
 			- {{evalpage}}
 			- a) Wie groß ist die Phasengeschwindigkeit $v_P$?
 			  background-color:: green
 				- formeln
 					- ((673e3379-4b5b-475a-91a4-08da8e21eb58))
 				- code
+					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
 					- ```python
-					  import pyodide_js
-					  await pyodide_js.loadPackage("micropip")
-					  import micropip
-					  await micropip.install('scipy')
-					  from scipy import *
-					  from scipy.constants import *
-					  from numpy import *
-					  await micropip.install('matplotlib')
-					  import matplotlib.pyplot as plt
-					  import io, base64
-					  await micropip.install('sympy')
-					  import sympy as sp
-					  from sympy.utilities.lambdify import lambdify
-					  from sympy import latex
-					  
+					  printer.seek(0); printer.truncate(0)
 					  
 					  epsr = 7
 					  mur = 1
 					  
 					  v_p = 1/((epsilon_0 * epsr * mu_0 * mur)**(1/2))
-					  "v_p = " + f"{v_p:.4g}" + " m/s"
+					  resPrint('v_p',v_p,'m/s')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 			- b) Setzten Sie die einfallende Welle an ($E_e$ und $H_e$) und berechnen Sie die Wellenzahl $k_e$. Wie groß ist die Dämpfung in $\mathrm{dB/m}$
@@ -234,15 +234,20 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- ((67459ac7-d3b4-47bf-9ac5-0379a5e2e1e8)) [FS](((673e3379-64cb-4d50-98c9-668f6b9fd3fd)))
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  mu = mur * mu_0
 					  eps = epsr * epsilon_0
 					  f = 20E6
 					  w = 2 * pi * f
 					  ke = w * sqrt(mu * eps)
-					  "ke = " + f"{ke:.4g}" + "rad/m"
+					  resPrint('ke', ke, 'rad/m')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  # bei z = 0
 					  E0 = 5
 					  sig = 1.5e-3
@@ -253,14 +258,18 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  alpha = real(jke)
 					  beta = imag(jke)
 					  
-					  "α = " + f"{alpha:.4g}" + " rad/m \n\
-					  β = " + f"{beta:.4g}" + " rad/m"
+					  resPrint('α', alpha, 'rad/m',
+					           'β', beta, 'rad/m')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  D = 20 * log10(E0 / (E0 * e**-alpha))
 					  
-					  "D = " + f"{D:.4g}" + " dB"
+					  resPrint('D',D, 'dB')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 						- ich weiß leider nicht warum man genau die Dämpfung so ausrechnet und warum man genau $\alpha$ verwendet #wip
@@ -272,31 +281,31 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- ((673e3379-54d5-49f8-b0db-18b82bf799c4))
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  z0 = 8
 					  z = z0
 					  Ee = E0 * e**(-jke*z)
-					  "Ee(z=8) = " + f"{Ee:.4g}" + " V/m \n\
-					  abs(Ee) = " + f"{abs(Ee):.4g}" + " V/m"
+					  
+					  resPrint('Ee(z=8)',Ee,'V/m',
+					           'abs(Ee)', abs(Ee), 'V/m')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 					- ```python
+					  printer.seek(0); printer.truncate(0)
 					  T = 1/f
-					  print(T)
 					  t = linspace(0, 2*T , 500)  # Generate 500 points between 0 and 4π
 					  y = E0*e**(-alpha*z0)*cos(w*t-beta*z0)
 					  
 					  # Create the plot
 					  plt.clf()
 					  plt.plot(t, y)  # Plot y = sin(x)
-					  plt.xlabel('t')  # Label the x-axis
-					  plt.ylabel('E_e(z_0, t)')  # Label the y-axis
+					  plt.xlabel('$t$')  # Label the x-axis
+					  plt.ylabel('$E_e(z_0, t)$')  # Label the y-axis
 					  plt.grid(True)  # Add a grid
-					  buf = io.BytesIO()
-					  plt.savefig(buf, format = 'png')
-					  buf.seek(0)
-					  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
-					  buf.close()
-					  png
+					  showPlot()
+					  #printer.getvalue()
 					  ```
 						- {{evalparent}}
 			- d) Finden Sie einen Ansatz für die reﬂektierte Welle ($E_r$ und $H_r$)! Wie muss der zeitliche Verlauf der reﬂektierten Welle aussehen, damit die Randbedingungen erfüllt sind?
@@ -314,6 +323,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- $z_0$ ... entfernung zur stelle an der die reflexion stattfindet $\mathrm{\left[ m \right]}$
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
 					  t = sp.symbols('t')
 					  z = sp.symbols('z', real=True)
 					  z0 = 8
@@ -349,12 +359,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  plt.xlabel("t")
 					  plt.grid(True)
 					  plt.legend()
-					  buf = io.BytesIO()
-					  plt.savefig(buf, format = 'png')
-					  buf.seek(0)
-					  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
-					  buf.close()
-					  png
+					  
+					  showPlot()
+					  #printer.getvalue()
 					  ```
 						- {{evalparent}}
 				- verstehe das beispiel nicht. da ist was an der reflektierten welle falsch
@@ -369,6 +376,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				- code
 					- meine lösung
 						- ```python
+						  printer.seek(0); printer.truncate(0)
+						  
 						  # meine lösung
 						  # symbolic math
 						  E_s = sp.symbols('E')
@@ -382,12 +391,15 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						  E_s = E0_s * (sp.exp(-jke_s*z_s) \
 						            -sp.exp(-jke_s*(z0_s-z_s)))
 						  Eabs_s = sp.simplify(sp.conjugate(E_s)*E_s)
-						  'E = ' + str(Eabs_s) + '\n\n\
-						  latex output: ' + latex(Eabs_s)
+						  
+						  symPrint(Eabs_s)
+						  printer.getvalue()
 						  ```
 							- {{evalparent}}
 							- $E_{0}^{2} \cdot \left(1 - e^{\left(2 z - z_{0}\right) \left(α - 1.0 i β\right)}\right) \left(1 - e^{\left(2 z - z_{0}\right) \left(α + 1.0 i β\right)}\right) e^{- 2 z α}$
 						- ```python
+						  printer.seek(0); printer.truncate(0)
+						  
 						  # plot
 						  # bei z = z0
 						  lam = 2*pi / ke
@@ -405,26 +417,26 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						  plt.xlabel('z') 
 						  plt.ylabel('E')
 						  plt.grid(True)
-						  buf = io.BytesIO()
-						  plt.savefig(buf, format = 'png')
-						  buf.seek(0)
-						  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
-						  buf.close()
-						  png
+						  
+						  showPlot()
+						  printer.getvalue()
 						  ```
 							- {{evalparent}}
 					- ausarbeitung
 						- ```python
+						  printer.seek(0); printer.truncate(0)
 						  # lösung aus ausarbeitung
 						  Eabs_s  =E0_s**2 * (sp.exp(-2 * a_s * z_s) + \
 						                      sp.exp(-2 * a_s * (z0_s - z_s)) - \
 						                      2 * sp.exp(-2 * a_s * z0_s) * sp.cos(2*b_s*(z0_s-z_s)))
-						  'E = ' + str(Eabs_s) + '\n\n\
-						  latex output: ' + latex(Eabs_s)
+						  
+						  symPrint(Eabs_s)
+						  printer.getvalue()
 						  ```
 							- {{evalparent}}
 							- $E_{0}^{2} \left(e^{- 2 α \left(- z + z_{0}\right)} - 2 e^{- 2 z_{0} α} \cos{\left(2 β \left(- z + z_{0}\right) \right)} + e^{- 2 z α}\right)$
 						- ```python
+						  printer.seek(0); printer.truncate(0)
 						  # plot
 						  # bei z = z0
 						  lam = 2*pi / ke
@@ -442,19 +454,15 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						  plt.xlabel('z') 
 						  plt.ylabel('E')
 						  plt.grid(True)
-						  buf = io.BytesIO()
-						  plt.savefig(buf, format = 'png')
-						  buf.seek(0)
-						  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
-						  buf.close()
-						  png
+						  
+						  showPlot()
+						  #printer.getvalue()
 						  ```
 							- {{evalparent}}
 			- [📚 2024-11-21 18h45m.xopp](../assets/documents/2024-11-21 18h45m.xopp)
 			- ![📚 2024-11-21 18h45m_annotated.pdf](../assets/documents/2024-11-21 18h45m_annotated.pdf)
 	- Rechteckhohlleiter
 	  background-color:: green
-	  collapsed:: true
 		- Variante 1) Untersuchen Sie die Ausbreitung von $\mathrm{TE}_{m,n}$ Wellen in $z$ Richtung im skizzierten Rechteckhohlleiter.
 		  background-color:: green
 		  collapsed:: true
@@ -478,7 +486,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  background-color:: green
 	- Hohlraumresonator
 	  background-color:: green
-	  collapsed:: true
 		- Variante 1) Berechnen Sie den Grundmodus $\mathrm{TE_{101}}$ eines luftgefüllten ($\varepsilon_r = 1$) Hohlraumresonators (Abmessungen: $a = 4\mathrm{cm}$, $b = 2\mathrm{cm}$, $c = 4\mathrm{cm}$) mit $\mathbb{R}_M = 20\mathrm{m\Omega}$.
 		  background-color:: green
 		  ![img](../assets/documents/Wa_hohlraumresonator_bsp_1.webp)
@@ -489,21 +496,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- ((673e3379-4b5b-475a-91a4-08da8e21eb58))
 					- ((674b703d-c8a8-4814-8c70-f8289a9b6bdf))
 				- code
+					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
 					- ```python
-					  import pyodide_js
-					  await pyodide_js.loadPackage("micropip")
-					  import micropip
-					  await micropip.install('scipy')
-					  from scipy import *
-					  from scipy.constants import *
-					  from numpy import *
-					  await micropip.install('matplotlib')
-					  import matplotlib.pyplot as plt
-					  import io, base64
-					  await micropip.install('sympy')
-					  import sympy as sp
-					  from sympy.utilities.lambdify import lambdify
-					  from sympy import latex
+					  printer.seek(0); printer.truncate(0)
 					  
 					  # angabe
 					  a = 4E-2
@@ -523,7 +518,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  vp = 1 / sqrt((eps * mu))
 					  wmnp = pi * vp * sqrt((m/a)**2 + (n/b)**2 + (p/c)**2)
 					  fmnp = wmnp / (2 * pi)
-					  "fmnp = " + f"{fmnp:.4g}" + "Hz"
+					  resPrint('f_mnp', fmnp, 'Hz')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 			- b) Berechnen Sie die unbelastetet Güte! Vereinfachen Sie zuerst die Formel unter der Berücksichtigung $a = c$! Setzen Sie dann Zahlenwerte ein!
@@ -532,6 +528,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- ((6745a3c5-66f7-450b-94fe-f6068dde589d))
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  Rm_s, a_s, b_s, c_s, eta_s = sp.symbols('R_m a b c eta', 
 					                                          real=True, 
 					                                          positive=True)
@@ -554,10 +552,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  Q0_s_sim = Q0_s.subs(c_s, a_s)
 					           
 					  Q0_s_sim = sp.simplify(Q0_s_sim)
-					  'Q0_s = ' + str(Q0_s) + '\n\n\
-					  latex output: ' + latex(Q0_s) + '\n\n\
-					  Q0_s_sim = ' + str(Q0_s_sim) + '\n\n\
-					  latex output: ' + latex(Q0_s_sim)
+					  symPrint(Q0_s)
+					  symPrint(Q0_s_sim)
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 						- $\frac{\pi b \eta \left(a^{2} + c^{2}\right)^{\frac{3}{2}}}{2 Rm \left(a c \left(a^{2} + c^{2}\right) + 2 b \left(a^{3} + c^{3}\right)\right)}$
@@ -574,6 +571,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- ((673c4eb2-5827-434c-a323-0ff29f347504))
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  # resonanzfrequenz
 					  epsr = 2.5
 					  eps = epsilon_0 * epsr
@@ -582,10 +581,13 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  vp = 1 / sqrt((eps * mu))
 					  wmnp = pi * vp * sqrt((m/a)**2 + (n/b)**2 + (p/c)**2)
 					  fmnp = wmnp / (2 * pi)
-					  "fmnp = " + f"{fmnp:.4g}" + "Hz"
+					  resPrint('f_mnp', fmnp, 'Hz')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  # unbelastete güte
 					  eta = sqrt(mu/eps)
 					  Q0 = (
@@ -595,7 +597,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					        (a * c * (a**2 + c**2) + 2 * b * (a**3 + c**3))
 					      )
 					  )
-					  "Q0 = " + f"{Q0:.4g}"
+					  resPrint('Q_0', Q0, '')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 		- Variante 2) Berechnen Sie den Grundmodus $\mathrm{TE_{101}}$ eines luftgefüllten ($\varepsilon_r = 1$) Hohlraumresonators (Abmessungen: $a = 2b=c$, $\mathbb{R}_M = 30\mathrm{m\Omega}$).
@@ -608,22 +611,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- ((673e3379-4b5b-475a-91a4-08da8e21eb58))
 					- ((674b703d-c8a8-4814-8c70-f8289a9b6bdf))
 				- code
+					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
 					- ```python
-					  pyodide_js.globals.clear();
-					  import pyodide_js
-					  await pyodide_js.loadPackage("micropip")
-					  import micropip
-					  await micropip.install('scipy')
-					  from scipy import *
-					  from scipy.constants import *
-					  from numpy import *
-					  await micropip.install('matplotlib')
-					  import matplotlib.pyplot as plt
-					  import io, base64
-					  await micropip.install('sympy')
-					  import sympy as sp
-					  from sympy.utilities.lambdify import lambdify
-					  from sympy import latex
+					  printer.seek(0); printer.truncate(0)
 					  
 					  # angabe
 					  mur = 1
@@ -662,10 +652,10 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  a = float(solution[0])
 					  b = a/2
 					  c = a
-					  ("a = " + f"{a*100:.4g}" + "cm" + "\n" + 
-					   "b = " + f"{b*100:.4g}" + "cm" + "\n" + 
-					   "c = " + f"{c*100:.4g}" + "cm"
-					  )
+					  resPrint('a', a*100, 'cm',
+					           'b', b*100, 'cm',
+					           'c', c*100, 'cm')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 			- b) Berechnen Sie die unbelastetet Güte! Vereinfachen Sie zuerst die Formel unter der Berücksichtigung $a = 2b = c$!
@@ -674,6 +664,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- ((6745a3c5-66f7-450b-94fe-f6068dde589d))
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  eta_s = sp.symbols('eta', real=True, positive=True)
 					  Q0_s = (
 					    (sp.pi * eta_s) / (2 * Rm_s) *
@@ -685,17 +677,22 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  Q0_s_sim = Q0_s.subs(c_s, a_s).subs(b_s, a_s/2)
 					           
 					  Q0_s_sim = sp.simplify(Q0_s_sim)
-					  'Q0_s = ' + str(Q0_s) + '\n\n\
-					  latex output: \n' + latex(Q0_s) + '\n\n\
-					  Q0_s_sim = ' + str(Q0_s_sim) + '\n\n\
-					  latex output: \n' + latex(Q0_s_sim)
+					  
+					  symPrint(Q0_s)
+					  symPrint(Q0_s_sim)
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 						- $\frac{\pi b \eta \left(a^{2} + c^{2}\right)^{\frac{3}{2}}}{2 Rm \left(a c \left(a^{2} + c^{2}\right) + 2 b \left(a^{3} + c^{3}\right)\right)}$
 						- $\frac{\sqrt{2} \pi \eta}{8 R_{m}}$
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  eta = sqrt(mu/eps)
-					  Q0_s_sim.subs(a_s, a).subs(b_s,b).subs(Rm_s, Rm).subs(eta_s, eta).evalf(n=5)
+					  resPrint('Q0_s', 
+					           Q0_s_sim.subs(a_s, a).subs(b_s,b).subs(Rm_s, Rm).subs(eta_s, eta).evalf(n=5),
+					           '')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 			- c) Berechnen Sie die relative Dielektrizitätskonstante und die unbelastete [[Güte]], wenn der Hohlraumresonator mit einem verlustlosen Dielektrikum gefüllt ist, um die Resonanzfrequenz auf $15 \mathrm{GHz}$ zu reduzieren!
@@ -706,6 +703,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- ((673c4eb2-5827-434c-a323-0ff29f347504))
 				- code
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  # dielektrizitätskonstante
 					  fR = 15E9
 					  
@@ -729,10 +728,13 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  solution = sp.solve(eqn, epsr_s)
 					  epsr = float(solution[0])
 					  
-					  "ɛ_r = " + f"{epsr:.4g}"
+					  resPrint('ɛ_r', epsr, '')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
 					  # unbelastete güte
 					  eps = epsr * epsilon_0
 					  eta = sqrt(mu/eps)
@@ -743,14 +745,14 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					        (a * c * (a**2 + c**2) + 2 * b * (a**3 + c**3))
 					      )
 					  )
-					  "Q0 = " + f"{Q0:.4g}"
+					  resPrint('Q0', Q0, '')
+					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 			- [📚 2024-12-01 16h11m.xopp](../assets/documents/2024-12-01 16h11m.xopp)
 			- ![📚 2024-12-01 16h11m_annotated.pdf](../assets/documents/2024-12-01 16h11m_annotated.pdf)
 	- [[Koaxialkabel]]
 	  background-color:: green
-	  collapsed:: true
 		- Variante 1)
 		  background-color:: green
 		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp)
@@ -759,27 +761,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				- formeln
 					- ((6745a3c5-c563-4874-8d5b-50fee6812aea))
 				- code
+					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
 					- ```python
-					  pyodide_js.globals.clear();
-					  ```
-						- {{evalparent}}
-					- ```python
-					  import pyodide_js
-					  await pyodide_js.loadPackage("micropip")
-					  import micropip
-					  await micropip.install('scipy')
-					  from scipy import *
-					  from scipy.constants import *
-					  from numpy import *
-					  await micropip.install('matplotlib')
-					  import matplotlib.pyplot as plt
-					  import io, base64, sys
-					  await micropip.install('sympy')
-					  import sympy as sp
-					  from sympy.utilities.lambdify import lambdify
-					  from sympy import latex
-					  printer = io.StringIO()
-					  sys.stdout = printer
+					  printer.seek(0); printer.truncate(0)
 					  
 					  # angabe
 					  ZL = 60
@@ -803,11 +787,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  ri = (ri_s.subs(ra_s, ra)
 					          	.subs(eta_s, eta)).evalf(n=4)
 					  
-					  print(f"r_i = {ri*1000:.4g}mm")
-					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
-					  print(f"latex output: {latex(ri_s)}")
-					  sp.pprint(ri_s,use_unicode=False)
-					  
+					  resPrint('r_i', ri*1000, 'mm')
+					  symPrint(ri_s)
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
@@ -822,11 +803,12 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				- code
 					- ```python
 					  printer.seek(0); printer.truncate(0)
+					  
 					  sig = 57E6
 					  f = 5E9
 					  w = 2*pi*f
 					  d = sqrt(2/(w*mu*sig))
-					  print(f"d = {d*1E9:.4g}nm")
+					  resPrint('d', d*1E9, 'nm')
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
@@ -836,8 +818,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					       1 / (2 * pi) * (1 / ri + 1 / ra))
 					  
 					  alphaR = R/(2*ZL)
-					  print(f"αR = {alphaR:.4g}Np/m")
-					  print(f"αR = {alphaR*20/log(10):.4g}dB/m")
+					  
+					  resPrint('αR', alphaR, 'Np/m',
+					           'αR', alphaR*20/log(10), 'dB/m')
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
@@ -852,7 +835,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  Rsq = 120*pi
 					  r_s = sp.symbols('r', positive=True, real=True)
 					  R = sp.integrate(Rsq/(2*pi*r_s), (r_s,ri,ra))
-					  print(f"R = {R:.4g}Ω")
+					  resPrint('R', R, 'Ω')
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
@@ -872,7 +855,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.seek(0); printer.truncate(0)
 					  RA = R # wert der vorher berechnet wurde
 					  rA = (RA-ZL)/(RA+ZL)
-					  print(f"r = {rA*1E4:.4g}e-4")
+					  resPrint('r', rA*1E4,'e-4')
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
@@ -885,26 +868,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				- formeln
 					- ((6745a3c5-c563-4874-8d5b-50fee6812aea))
 				- code
+					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
 					- ```python
-					  pyodide_js.globals.clear();
-					  ```
-						- {{evalparent}}
-					- ```python
-					  import pyodide_js
-					  await pyodide_js.loadPackage("micropip")
-					  import micropip
-					  await micropip.install('scipy')
-					  from scipy import *
-					  from scipy.constants import *
-					  from numpy import *
-					  await micropip.install('matplotlib')
-					  import matplotlib.pyplot as plt
-					  import io, base64, sys
-					  await micropip.install('sympy')
-					  import sympy as sp
-					  from sympy.utilities.lambdify import lambdify
-					  printer = io.StringIO()
-					  sys.stdout = printer
+					  printer.seek(0); printer.truncate(0)
 					  
 					  # angabe
 					  ZL = 50
@@ -928,10 +894,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  ri = (ri_s.subs(ra_s, ra)
 					          	.subs(eta_s, eta)).evalf(n=4)
 					  
-					  print(f"r_i = {ri*1000:.4g}mm")
-					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
-					  print(f"latex code: {sp.latex(ri_s)}")
-					  sp.pprint(ri_s,use_unicode=False)
+					  resPrint('r_i', ri*1000,'mm')
+					  symPrint(ri_s)
 					  
 					  printer.getvalue()
 					  ```
@@ -951,12 +915,11 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  w = 2*pi*f
 					  R = (sqrt((w * mu)/(2 * sig))*
 					       1 / (2 * pi) * (1 / ri + 1 / ra))
-					  print(f"R' = {R:.4g}Ω/m")
+					  resPrint("R'",R,'Ω/m')
 					  
 					  alphaR = R/(2*ZL)
-					  print(f"alphaR = {alphaR:.4g}Np/m")
-					  print(f"alphaR = {alphaR*20/log(10):.4g}dB/m")
-					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+					  resPrint('alphaR', alphaR, 'Np/m',
+					           'alphaR', alphaR*20/log(10),'dB/m')
 					  
 					  printer.getvalue()
 					  ```
@@ -972,42 +935,23 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  tand= 0.001
 					  
 					  G = w * (2 * pi * eps) / (log(ra/float(ri))) * tand
-					  print(f"G' = {G*1E3:.4g}mS/m")
+					  resPrint("G'",G*1E3,'mS/m')
 					  a = G*ZL/2
-					  print(f"α_G = {a*20/log(10):.4g}dB/m") # bin mir hier nicht sicher ob die umrechnung nötig ist
-					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+					  resPrint('α_G',a*20/log(10),'dB/m') # bin mir hier nicht sicher ob die umrechnung nötig ist
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 		- Variante 3)
 		  background-color:: green
-		  collapsed:: true
 		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp) ![img](../assets/documents/WA_rechteckhohlleiter_bsp_1.webp)
 			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 50 \mathrm{\Omega}$. Der Außenradius sei $r_a = 6.3 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 2.25$.
 			  background-color:: green
 				- formeln
 					- ((6745a3c5-c563-4874-8d5b-50fee6812aea))
 				- code
+					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
 					- ```python
-					  pyodide_js.globals.clear();
-					  ```
-						- {{evalparent}}
-					- ```python
-					  import pyodide_js
-					  await pyodide_js.loadPackage("micropip")
-					  import micropip
-					  await micropip.install('scipy')
-					  from scipy import *
-					  from scipy.constants import *
-					  from numpy import *
-					  await micropip.install('matplotlib')
-					  import matplotlib.pyplot as plt
-					  import io, base64, sys
-					  await micropip.install('sympy')
-					  import sympy as sp
-					  from sympy.utilities.lambdify import lambdify
-					  printer = io.StringIO()
-					  sys.stdout = printer
+					  printer.seek(0); printer.truncate(0)
 					  
 					  # angabe
 					  ZL = 50
@@ -1031,10 +975,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  ri = (ri_s.subs(ra_s, ra)
 					          	.subs(eta_s, eta)).evalf(n=4)
 					  
-					  print(f"r_i = {ri*1000:.4g}mm")
-					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
-					  print(f"latex code: {sp.latex(ri_s)}")
-					  sp.pprint(ri_s,use_unicode=False)
+					  resPrint('r_i', ri*1000, 'mm')
+					  symPrint(ri_s)
 					  
 					  printer.getvalue()
 					  ```
@@ -1054,12 +996,11 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  w = 2*pi*f
 					  R = (sqrt((w * mu)/(2 * sig))*
 					       1 / (2 * pi) * (1 / ri + 1 / ra))
-					  print(f"R' = {R:.4g}Ω/m")
+					  resPrint("R'",R, 'Ω/m')
 					  
 					  alphaR = R/(2*ZL)
-					  print(f"alphaR = {alphaR:.4g}Np/m")
-					  print(f"alphaR = {alphaR*20/log(10):.4g}dB/m")
-					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+					  resPrint('alphaR', alphaR, 'Np/m',
+					           'alphaR', alphaR*20/log(10),'dB/m')
 					  
 					  printer.getvalue()
 					  ```
@@ -1075,10 +1016,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  tand= 0.001
 					  
 					  G = w * (2 * pi * eps) / (log(ra/float(ri))) * tand
-					  print(f"G' = {G*1E3:.4g}mS/m")
+					  resPrint("G'",G*1E3,'mS/m')
 					  a = G*ZL/2
-					  print(f"α_G = {a:.4g}dB/m")
-					  print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+					  resPrint('α_G',a*20/log(10),'dB/m') # bin mir hier nicht sicher ob die umrechnung nötig ist
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
@@ -1087,7 +1027,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				- TODO this
 	- Dielektrische Platte #wip
 	  background-color:: green
-	  collapsed:: true
 		- Berechnen Sie die Ausbreitungseigenschaften der $\mathrm{H}_{10}$-ähnlichen Grundwelle (siehe Rechteckhohlleiter), die von einer in $y$- und $z$-Richtung unbegrenzten und in $x$-Richtung $2d$ dicken dielektrischen Platte (Raum 1) geführt wird (Raum 2 ist Luft)!
 		  background-color:: green
 		  ![img](../assets/documents/WA_dielektrische_platte_bsp_1.webp)
@@ -1101,7 +1040,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			  background-color:: green
 	- Dielektrischer Wellenleiter
 	  background-color:: green
-	  collapsed:: true
 		- Gegeben sei ein dielektrischer Wellenleiter der Dicke $d = 1\mathrm{cm}$ mit einer relativen Permittivität von $\varepsilon_2 = 2.26$. Oberhalb des Wellenleiters beﬁnde sich Luft ($\varepsilon_3 = 1$), unterhalb ein idealer Leiter. Es breite sich eine Welle in $z$-Richtung aus!
 		  background-color:: green
 		  ![img](../assets/documents/WA_dielektrischer_wellenleiter_bsp_1.webp)
@@ -1123,7 +1061,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						  collapsed:: true
 							- ((675090f8-65ba-412b-8543-a560d7644e48))
 				- code
-				  id:: 67517609-f23a-458d-a213-d605769b4963
 				  collapsed:: true
 				- medium 2
 					- da in $x$-richtung stehende wellen anzunehmen sind wird $\cos$ oder $\sin$ angestzt. da am metall die randbedingung $E_{tang}$ erfüllt sein muss ([link](((67459ac8-e918-4a08-8003-07057ff681d6)))), wird ein $\cos$ angesetzt
@@ -1136,35 +1073,15 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- $k_{x1}^{2}+k_{z}^{2} = k_1^2 = \omega^{2} \varepsilon_{1} \mu_{0} \\ -k_{x2}^{2} + k_{z}^{2} = k_2^2 = \omega^{2} \varepsilon_{2} \mu_{0}$
 					  tags:: formel, wip
 					  bezeichnung:: separationsbedingung für [[dielektrische wellenleiter]] [link](((674d7759-0e35-482f-8086-9026be01cd14)))
-					  id:: 67509364-eaba-40b7-bcaa-fc7c23e9954a
 					  collapsed:: true
 						- $-$ ...
 						- skript
 							- ((67517642-4ec8-4409-ade6-cc8d78118a1e))
 					- ((67508103-1a02-4819-8b68-7d3d9cf8f041))
 				- code
+					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
 					- ```python
-					  pyodide_js.globals.clear();
-					  ```
-						- {{evalparent}}
-					- ```python
-					  import pyodide_js
-					  await pyodide_js.loadPackage("micropip")
-					  import micropip
-					  await micropip.install('scipy')
-					  from scipy import *
-					  from scipy.constants import *
-					  from numpy import *
-					  await micropip.install('matplotlib')
-					  import matplotlib.pyplot as plt
-					  import io, base64, sys
-					  await micropip.install('sympy')
-					  import sympy as sp
-					  from sympy.utilities.lambdify import lambdify
-					  from sympy import latex
-					  printer = io.StringIO()
-					  stdout = sys.stdout
-					  sys.stdout = printer
+					  printer.seek(0); printer.truncate(0)
 					  
 					  A2, kappa2, kx2, ky2, kz, k2, \
 					  Ex2, Ey2, Ez2, Hx2, Hy2, Hz2, \
@@ -1186,8 +1103,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					        )
 					  	 )
 					  print("######  E_x2  ######")
-					  print(f"latex code: {sp.latex(Ex2)}")
-					  sp.pprint(Ex2, use_unicode=False)
+					  symPrint(Ex2)
 					  
 					  Ey2 = (-1j / kappa2**2 *
 					    	  (
@@ -1196,8 +1112,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					        )
 					  	 )
 					  print("\n######  E_y2  ######")
-					  print(f"latex code: {sp.latex(Ey2)}")
-					  sp.pprint(Ey2, use_unicode=False)
+					  symPrint(Ey2)
+					  
 					  
 					  Hx2 = (-1j / kappa2**2 *
 					    	  (
@@ -1206,8 +1122,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					        )
 					  	 )
 					  print("\n######  H_x2  ######")
-					  print(f"latex code: {sp.latex(Hx2)}")
-					  sp.pprint(Hx2, use_unicode=False)
+					  symPrint(Hx2)
+					  
 					  
 					  Hy2 = (-1j / kappa2**2 *
 					    	  (
@@ -1216,8 +1132,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					        )
 					  	 )
 					  print("\n######  H_y2  ######")
-					  print(f"latex code: {sp.latex(Hy2)}")
-					  sp.pprint(Hy2, use_unicode=False)
+					  symPrint(Hy2)
 					  
 					  printer.getvalue()
 					  ```
@@ -1243,8 +1158,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					        )
 					  	 )
 					  print("######  E_x3  ######")
-					  print(f"latex code: {sp.latex(Ex3)}")
-					  sp.pprint(Ex3, use_unicode=False)
+					  symPrint(Ex3)
 					  
 					  Ey3 = (-1j / kappa3**2 *
 					    	  (
@@ -1253,8 +1167,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					        )
 					  	 )
 					  print("\n######  E_y3  ######")
-					  print(f"latex code: {sp.latex(Ey3)}")
-					  sp.pprint(sp.simplify(Ey3), use_unicode=False)
+					  symPrint(Ey3)
 					  
 					  Hx3 = (-1j / kappa3**2 *
 					    	  (
@@ -1263,8 +1176,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					        )
 					  	 )
 					  print("\n######  H_x3  ######")
-					  print(f"latex code: {sp.latex(Hx3)}")
-					  sp.pprint(sp.simplify(Hx3), use_unicode=False)
+					  symPrint(Hx3)
 					  
 					  Hy3 = (-1j / kappa3**2 *
 					    	  (
@@ -1273,8 +1185,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					        )
 					  	 )
 					  print("\n######  H_y3  ######")
-					  print(f"latex code: {sp.latex(Hy3)}")
-					  sp.pprint(Hy3, use_unicode=False)
+					  symPrint(Hy3)
 					  
 					  printer.getvalue()
 					  ```
@@ -1315,16 +1226,14 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  print("######  Ey  ######")
 					  eqn = sp.Eq(Ety2,Ety3)
 					  rBEy = sp.solve(eqn, A3)[A3]
-					  print(f"latex code: {sp.latex(sp.trigsimp(rBEy))}")
-					  sp.pprint(sp.trigsimp(rBEy), use_unicode=False)
+					  symPrint(sp.trigsimp(rBEy))
 					  
 					  print("\n######  Hz  ######")
 					  eqn = sp.Eq(Htz2,Htz3)
 					  rBHz = sp.solve(eqn, A3)[A3]
 					  eqn = sp.Eq(rBEy, rBHz)
 					  rBHz = rBEy-rBHz
-					  print(f"latex code: {sp.latex(sp.simplify(rBHz))}")
-					  sp.pprint(sp.simplify(rBHz), use_unicode=False)
+					  symPrint(sp.simplify(rBHz))
 					  
 					  printer.getvalue()
 					  ```
@@ -1413,12 +1322,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  plt.ylabel('k')  # Label the y-axis
 					  plt.grid(True)  # Add a grid
 					  plt.legend()
-					  buf = io.BytesIO()
-					  plt.savefig(buf, format = 'png')
-					  buf.seek(0)
-					  png = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
-					  buf.close()
-					  png
+					  showPlot()
 					  #printer.getvalue()
 					  ```
 						- {{evalparent}}

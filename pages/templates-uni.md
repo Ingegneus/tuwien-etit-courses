@@ -104,28 +104,9 @@ tags:: [[templates]], [[uni]]
 - new calc block
   template:: new calc block
   template-including-parent:: false
+	- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
 	- ```python
-	  pyodide_js.globals.clear();
-	  ```
-		- {{evalparent}}
-	- ```python
-	  import pyodide_js
-	  await pyodide_js.loadPackage("micropip")
-	  import micropip
-	  await micropip.install('scipy')
-	  from scipy import *
-	  from scipy.constants import *
-	  from numpy import *
-	  await micropip.install('matplotlib')
-	  import matplotlib.pyplot as plt
-	  import io, base64, sys
-	  await micropip.install('sympy')
-	  import sympy as sp
-	  from sympy.utilities.lambdify import lambdify
-	  from sympy import latex
-	  printer = io.StringIO()
-	  stdout = sys.stdout
-	  sys.stdout = printer
+	  printer.seek(0); printer.truncate(0)
 	  
 	  var_numeric
 	  var_symbolic

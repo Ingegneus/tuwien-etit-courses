@@ -139,6 +139,7 @@ button.kit {
 	background: var(--ls-tertiary-background-color);
 	padding: 2px 4px 2px 4px;
 	border-radius: 4px;
+    margin: 2px 0px 2px 0px;
 }
 button.out {
 	background: var(--ls-tertiary-background-color);
