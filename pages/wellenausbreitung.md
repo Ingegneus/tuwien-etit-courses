@@ -12,6 +12,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 	- ![📚 Formelsammlung_7.Auflage.pdf](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Unterlagen\Formelsammlung_7.Auflage.pdf)
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.6}$) eingestrahlt.
 		  background-color:: green
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp)
@@ -198,6 +199,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-11-20 19h04m_annotated.pdf](../assets/documents/2024-11-20 19h04m_annotated.pdf)
 	- Stehende Welle im verlustbehafteten Medium
 	  background-color:: green
+	  collapsed:: true
 		- Eine sich im [verlustbehafteten Medium](((6740c4fa-4d26-4310-b196-321b7391feb6))) (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden [metallischen Wand mit unendlicher Leitfähigkeit](((67405634-4634-4d0d-b586-6a52b1bb7c75))) reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
 		  background-color:: green
 		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
@@ -463,6 +465,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-11-21 18h45m_annotated.pdf](../assets/documents/2024-11-21 18h45m_annotated.pdf)
 	- Rechteckhohlleiter
 	  background-color:: green
+	  collapsed:: true
+		- TODO this
 		- Variante 1) Untersuchen Sie die Ausbreitung von $\mathrm{TE}_{m,n}$ Wellen in $z$ Richtung im skizzierten Rechteckhohlleiter.
 		  background-color:: green
 		  collapsed:: true
@@ -486,6 +490,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  background-color:: green
 	- Hohlraumresonator
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1) Berechnen Sie den Grundmodus $\mathrm{TE_{101}}$ eines luftgefüllten ($\varepsilon_r = 1$) Hohlraumresonators (Abmessungen: $a = 4\mathrm{cm}$, $b = 2\mathrm{cm}$, $c = 4\mathrm{cm}$) mit $\mathbb{R}_M = 20\mathrm{m\Omega}$.
 		  background-color:: green
 		  ![img](../assets/documents/Wa_hohlraumresonator_bsp_1.webp)
@@ -753,6 +758,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-12-01 16h11m_annotated.pdf](../assets/documents/2024-12-01 16h11m_annotated.pdf)
 	- [[Koaxialkabel]]
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1)
 		  background-color:: green
 		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp)
@@ -1025,8 +1031,10 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- d) Berechnen Sie mittels der Power-Loss-Method den Dämpfungskoefﬁzienten des abgebildeten Rechteckhohlleiters mit den Abmessungen $a = 22.86 \mathrm{mm}$ und $b = 10.16 \mathrm{mm}$ bei $10 \mathrm{GHz}$ (Grundmodus $\mathrm{TE}_{10}$) in $\mathrm{dB/m}$. Erklären Sie dabei Ihre Vorgehensweise. Das Metall sei durch $\sigma = 5.7 \cdot 10^7 \mathrm{S/m}$ charakterisiert. Bei der gesuchten Ausbreitung in $z$-Richtung lauten die Feldkomponenten: $\\ E_x = 0 \\ E_{y}=-\frac{j\omega\mu}{\pi}a A \sin\left(\frac{\pi}{a}x\right)e^{-j k_{z}z} \\ E_z=0 \\ H_{x}=\frac{j k_{z}}{\pi}a A \sin\left(\frac{\pi}{a}x\right)e^{-j k_{z}z} \\ H_y = 0 \\ H_{z} = A \cos \left( \frac{\pi}{a}x \right) e^{-j k_{z}z}$
 			  background-color:: green
 				- TODO this
-	- Dielektrische Platte #wip
+	- Dielektrische Platte
 	  background-color:: green
+	  collapsed:: true
+		- TODO this
 		- Berechnen Sie die Ausbreitungseigenschaften der $\mathrm{H}_{10}$-ähnlichen Grundwelle (siehe Rechteckhohlleiter), die von einer in $y$- und $z$-Richtung unbegrenzten und in $x$-Richtung $2d$ dicken dielektrischen Platte (Raum 1) geführt wird (Raum 2 ist Luft)!
 		  background-color:: green
 		  ![img](../assets/documents/WA_dielektrische_platte_bsp_1.webp)
@@ -1040,6 +1048,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			  background-color:: green
 	- Dielektrischer Wellenleiter
 	  background-color:: green
+	  collapsed:: true
 		- Gegeben sei ein dielektrischer Wellenleiter der Dicke $d = 1\mathrm{cm}$ mit einer relativen Permittivität von $\varepsilon_2 = 2.26$. Oberhalb des Wellenleiters beﬁnde sich Luft ($\varepsilon_3 = 1$), unterhalb ein idealer Leiter. Es breite sich eine Welle in $z$-Richtung aus!
 		  background-color:: green
 		  ![img](../assets/documents/WA_dielektrischer_wellenleiter_bsp_1.webp)

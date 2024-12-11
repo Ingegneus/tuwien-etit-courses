@@ -308,7 +308,7 @@ alias:: ST, schaltungstechnik lva
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional
 	  collapsed:: true
-	  ![img](../assets/documents/schaltung-elektrometer.webp)
+	  ![img](../assets/documents/schaltung-elektrometer.svg)
 		- elektrometer verstärker
 		- beweis, dass das, das selbe ist
 			- [📚 2024-06-25 17h17m.xopp](../assets/documents/2024-06-25 17h17m.xopp)
