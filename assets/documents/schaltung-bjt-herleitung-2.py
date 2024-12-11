@@ -19,7 +19,7 @@ schemdraw.config(lblofst=0.2, bgcolor='white', lw=1.5)
 elm.CurrentLabelInline.defaults['headwidth'] = 0.2
 elm.style(elm.STYLE_IEC)
 
-factor=0.6
+factor=0.7
 
 with schemdraw.Drawing(show=True) as d:
     d.config(unit=2.5)
@@ -53,4 +53,4 @@ with schemdraw.Drawing(show=True) as d:
     elm.Line().left(d.unit*factor)
     
     
-#saveSchemdraw.saveSchematic(d, __file__)
+saveSchemdraw.saveSchematic(d, __file__)

@@ -8,6 +8,7 @@ alias:: transitionsmatrix, transitionsmatrizen, transition matrix
 - $\mathbf{\Phi}(t) = \exp(\mathbf{A}t) = \left(\sum_{k=0}^{\infty}\mathbf{A}^{k}\frac{t^{k}}{k!}\right)$
   tags:: formel, transitionsmatrix
   bezeichnung:: definition der [[transitionsmatrix]]
+  id:: 67595b69-3c1d-43c3-b710-375f4dec56e4
 	- $\Phi(t)$ ... [[transitionsmatrix]]
 	- $t$ ... zeit
 	- $\mathbf{A}$ ... [[Systemmatrix]] eines [[linearen]], [[autonomen]] systems

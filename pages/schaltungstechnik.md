@@ -504,6 +504,7 @@ alias:: ST, schaltungstechnik lva
 		- ${}\bar{v_{b}}^2=4kTr_{b}\Delta f$
 		  tags:: formel, [[rauschen]], [[BJT]], wip
 		  bezeichnung:: Spannungsquadrat des Rauschgenerators an der [[Basis]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] ([[thermisches rauschen]]) [V]
+		  id:: 67595b68-f21a-4b53-857e-73495668e87d
 			- $k$ ... Boltzmannkonstante [J/K]
 			- ${}T$ ... [[Temperatur]] $\mathrm{[K]}$
 			- ${}r_{b}$ ... Basis Widerstand des [[BJT]] im [[kleinsignal]] modell [Ω]
@@ -513,10 +514,11 @@ alias:: ST, schaltungstechnik lva
 	- $\bar{i_{c}}^2$ ... Stromquadrat des Rauschgenerators am [[Kollektor]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] $\mathrm{[V]}$
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]]
-		- ${{}}\bar{i_{c}}^2=2qI_{C}\Delta f$
+		- $\bar{i}_{c}^2=2qI_{C}\Delta f$
+		  id:: 67595b68-be94-4d00-a26f-1910e44d1b75
 		  tags:: formel, [[rauschen]], [[BJT]], wip
-		  bezeichnung:: Stromquadrat des Rauschgenerators am [[Kollektor]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] ([[schrot rauschen]]) [V]
-		  collapsed:: true
+		  bezeichnung:: Stromquadrat des Rauschgenerators am [[Kollektor]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] ([[schrot rauschen]])
+			- $\bar{i}_{c}^2$ ... Stromquadrat des Rauschgenerators $\mathrm{\left[V\right]}$
 			- $q$ ...  []
 			- ${}I_C$ ... []
 			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
@@ -627,9 +629,8 @@ alias:: ST, schaltungstechnik lva
 					- $i_o=g_{m}v_{b}+i_{c}=g_{m}v_{i}$
 					- $v_{i}=v_{b}+\frac{i_{c}}{g_{m}}$
 				- $v_{b}$ und $i_{c}$ sind unabhängige generatoren daher
-				  collapsed:: true
 					- $\bar{v_{i}}^2=\bar{v_{b}}^2+\frac{\bar{i_{c}}^2} {g_{m}^2}$
-				- jetzt werden ((66730db4-b890-499c-9dc8-565d9ab86164)) und ((66730f82-8ebf-44b4-8dc1-c6ffb19cfd68)) eingesetzt
+				- jetzt werden ((67595b68-f21a-4b53-857e-73495668e87d)) und ((67595b68-be94-4d00-a26f-1910e44d1b75)) eingesetzt
 					- $v_{i}^2=4kTr_{b}\Delta f+\frac{2qI_{C}\Delta f}{g_{m}^2}$
 					- $\frac{v_{i}^2}{\Delta f}=4kT\left(r_{b}+\frac{qI_{C}}{2kTg_{m}^2}\right)$
 					  collapsed:: true
@@ -838,10 +839,11 @@ alias:: ST, schaltungstechnik lva
 			  tags:: formel, test
 			  bezeichnung:: ein test um zu sehen wie das ausschaut wenn man terme mit referenzen anschreibt
 			- $2qI\Delta f$
-			  tags:: formel, [[rauschen]], wip
-			  bezeichnung:: $\bar{i}^2=$ Stromquadrat des Rauschgenerators aufgrund von [[schrot rauschen]] [A²]
 			  id:: 667b0f07-887e-4fbc-8f69-76f7b0dee63f
+			  tags:: formel, [[rauschen]], wip
+			  bezeichnung:: Stromquadrat des Rauschgenerators aufgrund von [[schrot rauschen]]
 			  collapsed:: true
+				- $\bar{i}^2$ ... Stromquadrat des Rauschgenerators aufgrund von [[schrot rauschen]] $\mathrm{\left[A^2\right]}$
 				- $q$ ...  []
 				- $I$ ... relevanter strom $\mathrm{[A]}$
 				- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$

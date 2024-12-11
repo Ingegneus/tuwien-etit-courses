@@ -19,33 +19,35 @@ schemdraw.config(lblofst=0.2, bgcolor='white', lw=1.5)
 elm.CurrentLabelInline.defaults['headwidth'] = 0.2
 elm.style(elm.STYLE_IEC)
 
+factor=0.7
+
 with schemdraw.Drawing(show=True) as d:
     d.config(unit=2.5)
-    Vs = celm.EUSourceV().right().label(r"$\bar{v}^2_b$")
+    Vs = celm.EUSourceV().right(d.unit*factor).label(r"$\bar{v}^2_b$")
     Rb = elm.Resistor().down().label(r"$r_\pi$")
-    elm.Line().left().dot()
+    elm.Line().left(d.unit*factor).dot()
     elm.Line().up().dot().label(r"$E$", loc="left").label(r"$B$", loc="right")
     
-    elm.Line().at(Vs.end).right()
+    elm.Line().at(Vs.end).right(d.unit*factor)
     C = elm.Capacitor().down().label(r"$C_\pi$").label(r"$+$", loc="right").label(r"$-$", loc="left")
     elm.CurrentLabel().at(C).label(r"$v_1$")
-    elm.Line().left()
+    elm.Line().left(d.unit*factor)
     
-    elm.Line().at(C.end).right()
+    elm.Line().at(C.end).right(d.unit*factor)
     
     Is = celm.EUSourceI().up()
     elm.CurrentLabelInline('out').at(Is).label(r"$g_m v_1$")
     
-    elm.Line().right()
+    elm.Line().right(d.unit*factor)
     Ro = elm.Resistor().down().label(r"$r_o$").hold()
-    elm.Line().right().dot()
+    elm.Line().right(d.unit*factor).dot()
     Ic = celm.EUSourceI().down().label(r"$\bar{i}^2_c$").label(r"$C$", loc="right").hold()
     
-    elm.Line().right()
+    elm.Line().right(d.unit*factor)
     elm.CurrentLabelInline().label(r"$i_o$")
     elm.Line().down()
-    elm.Line().left()
-    elm.Line().left()
-    elm.Line().left()
+    elm.Line().left(d.unit*factor)
+    elm.Line().left(d.unit*factor)
+    elm.Line().left(d.unit*factor)
     
 saveSchemdraw.saveSchematic(d, __file__)

@@ -63,4 +63,4 @@ alias:: et1
   tags:: formel
   bezeichnung:: [[permittivität]] in materie
 	- $\varepsilon_r$ ... relative [[permittivität]] $\mathbf{[-]}$
-	- ((6734c4a0-0bc0-452c-a33f-bcf1d8de32da))
+	- ((67403e6e-6727-48b1-a844-64fcf2c30521))

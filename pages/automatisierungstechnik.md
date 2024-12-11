@@ -393,14 +393,15 @@ alias:: automatisierung, automatisierungs
 	  tags:: flashcard, grundlagen
 	  id:: 670b86ba-d750-4530-be16-b35b2ad26db7
 	  collapsed:: true
-		- ((6717bedf-9586-4607-a3d4-5211a81e6421))
-		  collapsed:: true
-		- das folgt aus dem exponential lösungsansatz für [diese](((670d3663-38e7-4891-a2e8-7ae2cf96c68a)))
-		  $\dot{\mathbf{x}}=\mathbf{A}\mathbf{x}~,\qquad\mathbf{x}(t_{0})=\mathbf{x}_{0}$
+		- ((67595b69-3c1d-43c3-b710-375f4dec56e4))
+		  id:: 67595b46-0bc5-4384-a4e3-1df1bc030227
+		- das folgt aus dem exponential lösungsansatz für diese
+		  $\dot {\mathbf{x}} = \mathbf{A}\mathbf{x}~,\qquad\mathbf{x}(t_{0}) = \mathbf{x}_{0}$
 		  [[differentialgleichung]].
 		- das heißt die [[transitionsmatrix]] ist die lösung der dgl
 		- skript
 		  collapsed:: true
+			- ((670d3663-38e7-4891-a2e8-7ae2cf96c68a))
 			- ((6707f767-f6a9-4d62-ae9c-86f991f58961))
 			- ((6707f738-87ae-421f-84a1-bf6003713cb4))
 	- welche wichtigen eigenschaften hat die [[transitionsmatrix]]

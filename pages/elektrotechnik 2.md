@@ -28,5 +28,5 @@ alias:: et2
   bezeichnung:: Flussdichte in Permanentmagneten
 	- $B_M$ ... Flussdichte in Permanentmagneten $\mathrm{\left[ T \right]}$
 	- $B_{r}$ ... Remanenzflussdichte $\mathrm{\left[ T \right]}$
-	- ((6734c602-a4f5-4ca4-80b7-f85dbd4c18c8))
+	- ((67403e6f-2a7f-4aec-8c79-829be01340e3))
 	- $H_{m}$ ... magnetische Feldstärke im Magneten $\mathrm{\left[ Am \right]}$
