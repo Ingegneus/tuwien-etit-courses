@@ -207,17 +207,19 @@ alias:: ST, schaltungstechnik lva
 		- ![📚 2024-06-26 11h16m_annotated.pdf](../assets/documents/2024-06-26 11h16m_annotated.pdf)
 - ## flashcards
 	- ### index
+	  collapsed:: true
 		- {{query (and [[flashcard]] (page [[schaltungstechnik]]))}}
 		  query-table:: true
 		  query-properties:: [:block :tags]
 		  query-sort-by:: block
 		  query-sort-desc:: false
+		  collapsed:: true
 	- welche arten des [[rauschens]] gibt es? 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
 		- ((667b092b-dad5-493e-b7c7-d98cdefef492))
 		- ((667b08a1-5da1-445d-9e45-897c1f96e825))
-		- ((667b11a2-3589-4353-aeed-70fac1313b8a))
+		- ((67595b68-4d59-4600-adf5-c0910ffaac0c))
 		- ((667afa05-a7fb-4630-9979-446113e45ff7))
 		- ((667b11a2-0e7c-4d83-b124-2abb6a47676f))
 		- ((667b09c0-6b33-4154-aef3-ded0255ace46))
@@ -275,8 +277,9 @@ alias:: ST, schaltungstechnik lva
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
 		- ![img](../assets/documents/stromflusswinkel-erklärung.webp)
+		  id:: 67595b68-151f-4b26-add4-9038e3ebfbf4
 		- der stromflusswinkel ist definiert, als jener strom der durch den "ausgangstransistor" in einer periode fließt
-		- [hier](((82ad4c74-8901-4beb-8e30-8f952015e015))) ist grün der a-betrieb, gelb der ab-betreib, rot der b-betrieb
+		- [hier](((67595b68-151f-4b26-add4-9038e3ebfbf4))) ist <span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-green);'>grün</span> der a-betrieb, <span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-yellow);color: black'>gelb</span> der ab-betreib, <span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-red);'>rot</span> der b-betrieb
 		- {{embed ((666bec6f-8035-4981-a281-6440fe48db6e))}}
 		- {{embed ((666bec6f-5a7a-4513-87df-2a7b0293fc97))}}
 		- {{embed ((666bec6f-f6b7-41e7-95b9-ede73db9ff4d))}}
@@ -680,7 +683,7 @@ alias:: ST, schaltungstechnik lva
 	- Extraktion erklären
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[schaltungs design]]
-		- Als Synthese wird allgemein die Umsetzung einer Beschreibung auf einer höheren Ebene in eine niedrigere bezeichnet, also die praktische Realisierung des Top-down-Entwurfs. Die Umkehrung dieses Vorgangs heißt Extraktion. Im engeren Sinn bezeichnet Extraktion die ==Identifizierung von Elementen im Layout== und ihre Umsetzung als Schaltbild
+		- Als Synthese wird allgemein die Umsetzung einer Beschreibung auf einer höheren Ebene in eine niedrigere bezeichnet, also die praktische Realisierung des Top-down-Entwurfs. Die Umkehrung dieses Vorgangs heißt Extraktion. Im engeren Sinn bezeichnet Extraktion die <span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-yellow);color: black'>Identifizierung von Elementen im Layout</span> und ihre Umsetzung als Schaltbild
 	- ASIC (application specific integrated circuit) Entwurf erklären
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[integration von systemen]]
@@ -721,6 +724,7 @@ alias:: ST, schaltungstechnik lva
 	- Arten des Rauschens im FET
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[feldeffekt transistor]]
+	  collapsed:: true
 		- {{embed ((667b092b-dad5-493e-b7c7-d98cdefef492))}}
 		- {{embed ((667b09c0-6b33-4154-aef3-ded0255ace46))}}
 		- {{embed ((667b08a1-5da1-445d-9e45-897c1f96e825))}}
@@ -729,7 +733,7 @@ alias:: ST, schaltungstechnik lva
 	  tags:: flashcard, [[rauschen]]
 	  id:: 667b08a1-5da1-445d-9e45-897c1f96e825
 		- In der Festkörpertechnologie spricht man vom 1/f-Rauschen, das in aktiven Bauelementen und Kohlewiderständen auftritt.
-		- entsteht durch ==fluktuierende Umladung von Störstellen== und Oberflächenzuständen und ist proportional zu 1/f.
+		- entsteht durch <span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-yellow);color: black'>fluktuierende Umladung von Störstellen</span> und Oberflächenzuständen und ist proportional zu 1/f.
 			- Bipolartransistor: durch Verunreinigungen und Kristallfehler
 			- JFET: durch tiefe Störstellen im Kanal
 			- MOSFET: durch Si/SiO2-Interface Zustände im Kanal
@@ -745,6 +749,7 @@ alias:: ST, schaltungstechnik lva
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[rauschen]]
 	  id:: 667b09c0-6b33-4154-aef3-ded0255ace46
+	  collapsed:: true
 		- beruht auf der endlichen Größe der Elementarladung q. Die Struktur der Ladung ist "körnig" (sie entspricht "Schrotkörnern").
 		- Schrotrauschen tritt immer bei fließen eines Stromes auf. Es ist in Dioden und Transistoren vorhanden (wegen pn übergang)
 		- zufälliger prozess > weißes rauschen
@@ -767,14 +772,17 @@ alias:: ST, schaltungstechnik lva
 				- $K_2$ ... []
 				- $f_{c}$ ... []
 			- $K_1\frac{I^{a}}{f}\Delta f$
+			  id:: 667b1127-ca10-42fe-9e94-ead01edb4972
 			  tags:: formel, [[rauschen]], wip
 			  bezeichnung:: text
 			- $K_2 \frac{I^{c}}{1+\left(\frac{f}{f_{c}}\right)^2}\Delta f$
+			  id:: 667b1139-139a-48fc-9bab-78b4f6c84dfb
 			  tags:: formel, [[rauschen]], wip
 			  bezeichnung:: text
 	- [[telegrafen rauschen]] ([[popcorn noise]], [[burst rauschen]])
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[rauschen]]
+	  id:: 67595b68-4d59-4600-adf5-c0910ffaac0c
 		- äußert sich als unregelmäßige spitzen im strom
 			- -> ist immer mit stromfluss verbunden
 		- tritt eher bei niedrigeren frequenzen auf (einige Hz bis kHz)
