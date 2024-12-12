@@ -129,7 +129,7 @@ alias:: ST, schaltungstechnik lva
 		- {{embed ((6671b8bb-800c-461e-91dd-48a72f080ce5))}}
 	- ### zeichnen Sie ein ESB eines [[feldeffekt transistor]] mit aquivalenten Eingangsrauschquellen ein und leiten Sie diese aus den Rauschgeneratoren ab
 	  background-color:: green
-		- {{embed ((6673e06c-7213-47d6-bed7-1743a3123e42))}}
+		- {{embed ((67595b68-b5b2-4061-a44a-439db0d52751))}}
 	- ### Welche Ausgangsspannung liefert die Schaltung?
 	  background-color:: green
 		- ![file](../assets/documents/schaltung-ausgang-spg-1.webp)
@@ -613,6 +613,7 @@ alias:: ST, schaltungstechnik lva
 	- leiten Sie aus den Rauschgeneratoren die äquivalenten Eingangsrauschquellen des [[FET]] ab
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, wip , [[feldeffekt transistor]] , [[rauschen]], [[transistor]]
+	  id:: 67595b68-b5b2-4061-a44a-439db0d52751
 		- ![file](../assets/documents/fet-rausch-äquivalent.webp)
 		- vereinfachungen:
 			- $C_{gd}$ wird vernachlässigt
