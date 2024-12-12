@@ -17,6 +17,8 @@ from customPyCode import customSchemdrawElements as celm
 ###### style settings ######
 schemdraw.config(lblofst=0.2, bgcolor='white', lw=1.5)
 elm.CurrentLabelInline.defaults['headwidth'] = 0.2
+elm.CurrentLabel.defaults['headwidth'] = 0.2
+elm.Arrow.defaults['arrowwidth'] = 0.2
 elm.style(elm.STYLE_IEC)   
 
 with schemdraw.Drawing(background='white', show=False) as d:
@@ -32,7 +34,7 @@ with schemdraw.Drawing(background='white', show=False) as d:
     elm.Wire('-|').at(R2.end).to(Opv.in1)   
     
     elm.Line().left(d.unit*0.5).at(Opv.in2)
-    Ue = celm.EUSourceV().down(d.unit*2).reverse().label('$U_e$')
+    Ue = celm.SourceV().down(d.unit*2).reverse().label('$U_e$')
     elm.CurrentLabel(top=False).at(Ue).reverse()
     elm.Wire('|-').to(R1.end)
     

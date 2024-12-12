@@ -7,7 +7,6 @@ alias:: ST, schaltungstechnik lva
 - [📁 folder](file://C:\Users\Matteo\Documents\Uni\Schaltungstechnik)
 - ## vorlesungen
 - ## beispiele
-  collapsed:: true
 	- ### Verstärkungsfehler
 	  background-color:: green
 		- a) Zeichnen Sie eine Invertierende OV-Grundschaltung
@@ -30,7 +29,6 @@ alias:: ST, schaltungstechnik lva
 				- ${{v_{gt}=\frac{2\cdot u_{a}}{u_{ep}-u_{en}}}}$
 				  tags:: [[formel]], [[vv-opv]], [[opv]]
 				  bezeichnung:: gleichtaktverstärkung (open loop gain) (wenn ideal, $v_{gt\infty}=0$) $\mathrm{[-]}$
-				  collapsed:: true
 					- $u_{en}$ ... potential am negativen [[opv]] kontakt $\mathrm{[V]}$
 					  $u_{ep}$ ... potential am positiven [[opv]] kontakt $\mathrm{[V]}$
 					  $u_{a}$ ... ausgangsspannung $\mathrm{[V]}$
@@ -43,13 +41,11 @@ alias:: ST, schaltungstechnik lva
 				  tags:: [[formel]], [[vv-opv]], [[opv]]
 				  bezeichnung:: schleifen verstärkung (loop gain) (wenn ideal, ??) $\mathrm{[-]}$
 				  id:: 6676c9a3-b64a-4899-92bd-d0463f4b9f84
-				  collapsed:: true
 					- $\beta$ ... schleifen verstärkung $\mathrm{[-]}$
 					  $v_{g}$ ... geradeaus leerlaufverstärkung $\mathrm{[-]}$
 		- c) Berechnen Sie den Fehlerfaktor $F$.
 		  background-color:: green
 		- canvas
-		  collapsed:: true
 			- [[draws/2024-06-13-16-48-03.excalidraw]]
 		- d) kreuzen sie den richtigen an.
 		  background-color:: green
@@ -75,7 +71,6 @@ alias:: ST, schaltungstechnik lva
 				- $R=R_{\square}\cdot\frac{L}{W}$
 				  tags:: formel
 				  bezeichnung:: Leiterbahn widerstand aufgrund des [[Schichtwiderstands]] [Ω]
-				  collapsed:: true
 					- $R_{\square}$ ... [[Schichtwiderstand]] [Ω/□]
 					- $L$ ... Länge der Leiterbahn $\mathrm{[m]}$
 					- $W$ ... Weite/Breite der Leiterbahn $\mathrm{[m]}$
@@ -111,7 +106,6 @@ alias:: ST, schaltungstechnik lva
 				- ${}\omega=2\cdot\pi\cdot f$
 				  tags:: formel, Kreisfrequenz, Frequenz, [[übertragungsfunktion]]
 				  bezeichnung:: Kreisfrequenz [rad/s]
-				  collapsed:: true
 					- ${}f$ ... Frequenz $\mathrm{[Hz]}$
 		- d) Wie groß ist der Fehler der Verstärkung $v_1=\frac{u_{a1}}{u_{e1}}$ (Abweichung Ist-Wert vom Soll-Wert) bei 10MHz?
 		  background-color:: green
@@ -213,7 +207,6 @@ alias:: ST, schaltungstechnik lva
 		- ![📚 2024-06-26 11h16m_annotated.pdf](../assets/documents/2024-06-26 11h16m_annotated.pdf)
 - ## flashcards
 	- ### index
-	  collapsed:: true
 		- {{query (and [[flashcard]] (page [[schaltungstechnik]]))}}
 		  query-table:: true
 		  query-properties:: [:block :tags]
@@ -265,13 +258,10 @@ alias:: ST, schaltungstechnik lva
 	- Warum werden parallel geschaltene [[transistoren]] verwendet? Vorteile, Nachteile?
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[transistor]]
-	  collapsed:: true
 		- bei Hochleistungsverstärker kann oft ein [[Transistor]] die last nicht alleine tragen, daher müssen mehrere parallel geschalten werden.
 		- vorteile
-		  collapsed:: true
 			- skalierbar. man kann im nachhinein mehr leistungsfähigkeit hinzufügen
 		- nachteile
-		  collapsed:: true
 			- komplexer
 			- geringerer [[wirkungsgrad]] aufgrund von $R_{E}$
 		- ![img](../assets/documents/parallelgeschaltene-transistoren.webp)
@@ -279,13 +269,11 @@ alias:: ST, schaltungstechnik lva
 	  ![img](../assets/documents/cmos-multiplexer.webp)
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
-	  collapsed:: true
 		- in dem ein weiterer schalter eingebaut wird um den selben spannungsabfall zu erzeugen
 		- ![img](../assets/documents/cmos-multiplexer-verbesserung.webp)
 	- was ist der stromflusswinkel und wie schaut er für den a/ab/b betrieb aus?
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
-	  collapsed:: true
 		- ![img](../assets/documents/stromflusswinkel-erklärung.webp)
 		- der stromflusswinkel ist definiert, als jener strom der durch den "ausgangstransistor" in einer periode fließt
 		- [hier](((82ad4c74-8901-4beb-8e30-8f952015e015))) ist grün der a-betrieb, gelb der ab-betreib, rot der b-betrieb
@@ -295,20 +283,17 @@ alias:: ST, schaltungstechnik lva
 	- was ist die slew rate?
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
-	  collapsed:: true
 		- das ist die maximale rate mit der das ausgangssignal ansteigen kann
 		- sie hängt von der korrektur kapazität $C_{k}$ ab. der maximale [[basis]][[strom]] begrenzt die umladegeschwindigkeit des [[kondensators]]
 		- ${SR= \left. \frac{\text{d}U_{a}}{\text{d}t} \right\rvert_{max}}$
 		  tags:: formel
 		  bezeichnung:: maximale anstiegsgeschwindigkeit (slew rate) [V/s]
-		  collapsed:: true
 			- $U_a$ ... ausgangsspannung $\mathrm{[V]}$
 			- $\frac{\text{d}}{\text{d}t}$ ... zeit ableitung $\mathrm{[s]}$
 	- um welche schaltungen handelt es sich?
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional
-	  collapsed:: true
-	  ![img](../assets/documents/schaltung-elektrometer.svg)
+	  ![img](../assets/documents/schaltung-elektrometer.webp)
 		- elektrometer verstärker
 		- beweis, dass das, das selbe ist
 			- [📚 2024-06-25 17h17m.xopp](../assets/documents/2024-06-25 17h17m.xopp)
@@ -316,16 +301,12 @@ alias:: ST, schaltungstechnik lva
 	- Beschreibe die Vor- und Nachteile der Kaskodenschaltung, das Funktionsprinzip und wo sie eingesetzt werden
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
-	  collapsed:: true
 		- vorteile
-		  collapsed:: true
 			- hohe [[verstärkung]] durch hohen [[Ausgangswiderstand]]
 			- geringe rückkopplung an den eingang durch kompensation der [[Miller-Kapazität]]
 		- nachteil
-		  collapsed:: true
 			- geringerer ausgangsspannungshub durch zusätzlichen [[transistor]] $T_2$
 		- funktionsweise
-		  collapsed:: true
 			- der [[transistor]] $T_1$ arbeitet in emitterschaltung, bei der der [[transistor]] $T_2$ den
 			  [[kollektor]][[widerstand]] ersetzt. $T_2$ arbeitet in [[basis]][[schaltung]]. im arbeitspunkt fließt durch
 			  beide [[transistoren]] der gleiche strom, wenn man den basisstrom von $T_2$ vernachlässigt.
@@ -340,46 +321,38 @@ alias:: ST, schaltungstechnik lva
 	- komplementärer emitterfolger im ab-betrieb
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[transistor]]
-	  collapsed:: true
 		- ![file](../assets/documents/komp-emitterfolger-2dioden.webp)
 		- die schaltung hat ähnlichkeiten zu jener im b-betrieb, nur dass zwischen den basis kontakten von $T_1$ und $T_2$ eine offset spannung erzeugt werden muss um die [[transistoren]] "vorzuladen". dafür wird die flussspannung der dioden verwendet
 	- komplementärer emitterfolger im b-betrieb
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, [[transistor]]
-	  collapsed:: true
 		- ![file](../assets/documents/emitterfolger-b-betrieb.webp)
 	- betriebsbereiche auf der arbeitsgeraden
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[transistor]]
-	  collapsed:: true
 		- ![file](../assets/documents/arbeitsbereiche-kl-feld.webp)
 	- emitterfolger im a-betrieb
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[transistor]]
-	  collapsed:: true
 		- ![file](../assets/documents/emitterfolger-a-betrieb.webp)
 		- arbeitspunkteinstellung mittels $R_{a}$ und $R_{b}$
 	- Ausgangskennlinienfeld eines [[feldeffekttransistor]] mit Early-Spannung
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[feldeffekt transistor]]
-	  collapsed:: true
 		- ![file](../assets/documents/ausgangskennlinienfeld-fet.webp)
 	- Ausgangskennlinienfeld eines [[bipolartransistors]] mit Early-Spannung
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]]
-	  collapsed:: true
 		- ![file](../assets/documents/ausgangskennlinienfeld-bjt.webp)
 	- was ist die korrekte Ersatzschaltung für die Berechnung der Eingangsrauschgrößen der Gesamtschaltung
 	  $\bar{v_{ia}}^2$, $\bar{i_{ia}}^2$ ... Eingangsrauschgrößen des Verstärkers
 	  ![file](../assets/documents/korr-esb-verstärker-rauschen.webp)
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
-	  collapsed:: true
 		- ![file](../assets/documents/korr-esb-verstärker-rauschen-schaltung.webp)
 	- Was ist das Problem bei der Integration von Frequenzgangskompensation? Abhilfe?
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
-	  collapsed:: true
 		- Es können keine Grenzfrequenzen $f_{g1}$ zustande kommen, welche sehr große Kapazitäten benötigen, da die chipfläche dafür nicht ausreicht.
 		- Durch [Pole-splitting](((6676c9a3-b141-486d-bed1-f2178e1cf8d6))) wird der [[Miller-Effekt]] ausgenützt, wodurch die [[Miller-Kapazität]], um die Spannungsverstärkung vergrößert wird. außerdem bewirkt der effekt, eine gegenkopplung die $R_{a}$ reduziert. dadurch erhöht sich die Frequenz $f_{g2}$ (pole splitting)
 		- die kritische frequenz $f_{k}$ wird, dann durch $f_{g3}$ statt $f_{g2}$ bestimmt.
@@ -387,12 +360,9 @@ alias:: ST, schaltungstechnik lva
 	- was ist die angepasste Freqeunzgangskorrektur, worin besteht der Unterschied zur universellen Freqeunzgangskorrektur?
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, stabilität
-	  collapsed:: true
 		- Universelle Frequenzgangskompensation
-		  collapsed:: true
 			- für alle äußeren ohmschen Beschaltungen stabil
 		- Angepasste Frequenzgangkorrektur
-		  collapsed:: true
 			- nur für $A_0>1$ stabil, aber dafür größere Bandbreite
 			- $f_{g1}$ kann um $A_0$ größer gewählt werden
 		- ![file](../assets/documents/univ-vs-ange-freq-komp.webp)
@@ -400,9 +370,7 @@ alias:: ST, schaltungstechnik lva
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, stabilität
 	  id:: 6676c9a3-b141-486d-bed1-f2178e1cf8d6
-	  collapsed:: true
 		- die frequenzgangskompensation ist eine methode um im aktiven verstärkerbereich des OPVs ($v_{g}\ge0\text{dB}$) nur einen Pol wirksam zu machen. Der Verstärker ist durch den modifizieren Frequenzgang, selbst bei gegenkopplung stabil.
-		  collapsed:: true
 			- frequenzgangskompensation ist notwendig um stabilität zu gewährleisten
 		- pole splitting bezieht sich daruaf, dass die pole $f_{g1}$ und $f_{g2}$ auseinander geschoben werden.
 		- dabei soll die verstärkung $=0\text{dB}$ bei $f_{g2}$ sein
@@ -412,90 +380,76 @@ alias:: ST, schaltungstechnik lva
 	  ![file](../assets/documents/komp-emitterfolger-2dioden.webp) 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, schaltung, wip
-	  collapsed:: true
 		- Komplementärer [[Emitterfolger]] im [[AB-Betrieb]] mit 2 [[dioden]]
 	- Um welche Schaltung handelt es sich?
 	  ![file](../assets/documents/var-z-diode.webp) 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, schaltung, wip
-	  collapsed:: true
 		- Komplementärer [[Emitterfolger]] im [[AB-Betrieb]]
 		- variable z-diode
 	- Um welche Schaltung handelt es sich?
 	  ![file](../assets/documents/vv-opv.webp) 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, opv, schaltung
-	  collapsed:: true
 		- vv-opv
 		- breitband operationsverstärker
 	- Um welche Schaltung handelt es sich?
 	  ![file](../assets/documents/vc-opv.webp) 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, opv, schaltung
-	  collapsed:: true
 		- vc-opv
 		- transkonduktanz verstärker
 	- Um welche Schaltung handelt es sich?
 	  ![file](../assets/documents/cv-opv.webp) 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, opv, schaltung
-	  collapsed:: true
 		- cv-opv
 		- transimpedanz verstärker
 	- Um welche Schaltung handelt es sich?
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, opv, schaltung
-	  collapsed:: true
 	  ![file](../assets/documents/cc-opv-1.webp)
 		- cc-opv
 		- stromverstärker
 	- pnp [[transistor]]
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]] , transistor
-	  collapsed:: true
 		- ![file](../assets/documents/pnp-BJT.webp)
 		- [[eselsbrücke]]: ***P***feil ***N***ach ***P***ipi (innen)
 		- $U_{f}<0$ und $U_{BE}\le U_{f}$
 		  tags:: formel
 		  bezeichnung:: bedingungen für das durchschalten eines npn [[transistors]]
-		  collapsed:: true
 			- $U_{f}$ ... fluss spannung $\mathrm{[V]}$
 			- $U_{BE}$ ... [[Basis]]-[[Emitter]] spannung $\mathrm{[V]}$
 	- npn [[transistor]]
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]] , transistor
-	  collapsed:: true
 		- ![file](../assets/documents/npn-BJT.webp)
 		- [[eselsbrücke]]: ***N***icht ***P***feil ***N***ach innen
 		- $U_{f}>0$ und $U_{BE}\ge U_{f}$
 		  tags:: formel
 		  bezeichnung:: bedingungen für das durchschalten eines npn [[transistors]]
-		  collapsed:: true
 			- $U_{f}$ ... fluss spannung $\mathrm{[V]}$
 			- $U_{BE}$ ... [[Basis]]-[[Emitter]] spannung $\mathrm{[V]}$
 	- p-Kanal MOSFET enhancement mode (selbstsperrend) schaltzeichen und bedingung
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, MOSFET, transistor, FET
-	  collapsed:: true
 		- ![file](../assets/documents/pMOSFET.webp)
 		- der freie [[Bulk]] anschluss macht nicht wirklich was. er sollte nur gelten $\varphi_{B}\ge\varphi_{S}$
 		- $U_{th}<0$ und ${}U_{GS}\le U_{th}$
 		  tags:: formel
 		  bezeichnung:: bedingungen für das durchschalten eines nMOS [[transistors]]
-		  collapsed:: true
 			- $U_{th}$ ... threshold spannung $\mathrm{[V]}$
 			- $U_{GS}$ ... [[Gate]]-[[Source]] spannung $\mathrm{[V]}$
 	- n-Kanal MOSFET enhancement mode (selbstsperrend) schaltzeichen und bedingung
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, MOSFET, transistor, FET
-	  collapsed:: true
 		- ![file](../assets/documents/nMOSFET.webp)
 		- [[eselsbrücke]]: pfeil geht rei***N***
 		- der freie [[Bulk]] anschluss macht nicht wirklich was. er sollte nur gelten $\varphi_{B}\le\varphi_{S}$
 		- $U_{th}>0$ und ${}U_{GS}\ge U_{th}$
 		  tags:: formel
 		  bezeichnung:: bedingungen für das durchschalten eines nMOS [[transistors]]
-		  collapsed:: true
 			- $U_{th}$ ... threshold spannung $\mathrm{[V]}$
 			- $U_{GS}$ ... [[Gate]]-[[Source]] spannung $\mathrm{[V]}$
 	- ${\bar{v_{b}}^2}$ ... Spannungsquadrat des Rauschgenerators an der [[Basis]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] $\mathrm{[V]}$
@@ -530,16 +484,17 @@ alias:: ST, schaltungstechnik lva
 		- $\bar{i_{b}}^2=2qI_{B}\Delta f+K_1\frac{I_{B}^{a}}{f}\Delta f+K_2 \frac{I_{B}^{c}}{1+\left(\frac{f}{f_{c}}\right)^2}\Delta f$
 		  tags:: formel, [[rauschen]], [[BJT]], wip
 		  bezeichnung:: Stromquadrat des Rauschgenerators an der [[Basis]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] (terme: [[schrot rauschen]] , [[funkel rauschen]], [[telegrafen rauschen]]) [A²]
+		  id:: 67595b68-86c8-4cb2-a777-f98b4457e311
 			- $q$ ...  []
 			- $I_B$ ... [[Basis]]strom $\mathrm{[A]}$
 			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
 			- $K_1$ ... empirischer korrektur faktor je nach bauelement $\mathrm{[-]}$
 				- hängt vom herstellungsprozess des bauelementes bzw. des ics ab und kann für bauelemente auf einem wafer wegen kontamination (am jeweiligen ort vorhanden/nicht vorhanden) stark streuen. für rauscharme niederfrequenzschaltungen, die aus diskreten bauelementen oder standard-ics aufgebaut werden, lassen sich die komponenten deshalb bezüglich geringstem 1/f-rauschen selektieren. die amplitudenverteilung des [[1\/f-rauschens]] ist nicht gaussisch.
 			- $a$ ... eine konstante von $0.5-2$ $\mathrm{[-]}$
-			- $f$ ... []
-			- $K_2$ ... []
-			- $I_{B}^{c}$ ... []
-			- $f_{c}$ ... []
+			- $f$ ... $\mathrm{\left[\placeholder{}\right]}$
+			- $K_2$ ... $\mathrm{\left[\placeholder{}\right]}$
+			- $I_{B}^{c}$ ... $\mathrm{\left[\placeholder{}\right]}$
+			- $f_{c}$ ... $\mathrm{\left[\placeholder{}\right]}$
 		- terme:
 			- [[schrot rauschen]]
 			- [[funkel rauschen]]
@@ -550,13 +505,13 @@ alias:: ST, schaltungstechnik lva
 		- $\bar{i_{d}}^2=4kT\frac23g_{m}\Delta f+K_1\frac{I_{D}^{a}}{f}\Delta f$
 		  tags:: formel, [[rauschen]], [[BJT]], wip
 		  bezeichnung:: Stromquadrat des Rauschgenerators am [[Drain]] eines [[FET]] im [[kleinsignal]] [[ersatzschaltbild]] (terme: [[thermisches rauschen]], [[funkel rauschen]]) [V]
-		  collapsed:: true
+		  id:: 67595b68-323e-4a7b-94c3-4b9773d4a963
 			- $k$ ... Boltzmannkonstante [J/K]
 			- ${}T$ ... [[Temperatur]] $\mathrm{[K]}$
 			- $g_{m}$ ... [[transkonduktanz]] $\mathrm{[S]}$
 			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
 			- $K_1$ ...
-			- $f$ ...
+			- $f$ ... frequenz $\mathrm{\left[Hz\right]}$
 		- terme
 			- [[thermisches rauschen]]
 			- [[funkel rauschen]]
@@ -566,8 +521,8 @@ alias:: ST, schaltungstechnik lva
 		- $\bar{i_{g}}^2=2qI_{G}\Delta f$
 		  tags:: formel, [[rauschen]], [[BJT]], wip
 		  bezeichnung:: Stromquadrat des Rauschgenerators am [[Kollektor]] eines [[FET]] im [[kleinsignal]] [[ersatzschaltbild]] ([[schrot rauschen]]) [V]
+		  id:: 67595b68-20a8-40dc-b540-37cec1aedce1
 			- $q$ ...  []
-			  collapsed:: true
 			- ${}I_G$ ... []
 			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
 		- terme:
@@ -575,35 +530,29 @@ alias:: ST, schaltungstechnik lva
 	- [[Transmissiongate]] und dessen [[Ausgangswiderstand]] in Abhängigkeit der [[Eingangsspannung]] 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, FET, Schaltung
-	  collapsed:: true
 		- ![file](../assets/documents/schaltung-transmissionsgate.webp)
 		- ![file](../assets/documents/transmissionsgate-ausgangswiderstand.webp)
 	- [[feldeffekttransistor]] als Serienschalter, Funktionsweise und Ausgangswiderstand
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, FET, Schalter, Schaltung
-	  collapsed:: true
 		- ![file](../assets/documents/fet-serienschalter.webp)
 		- für $U_{st}-U_{e}>U_{th}$ sperrt; $r_{a}=R$
 		- für $U_{st}-U_{e}<U_{th}$ leitet; $r_{a}=R\parallel r_{ds}$
 	- vollständiges Kleinsignalersatzschaltbild mit Rauschgeneratoren [[bipolar transistor]]
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]], schaltung
-	  collapsed:: true
 		- ![file](../assets/documents/kleinsig-esb-bjt.webp)
 	- Kleinsignalersatzschaltbild mit äquivalenten (b) Rauschgeneratoren [[bipolar transistor]] (Eingangsrauschquellen)
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]], schaltung
-	  collapsed:: true
 		- ![file](../assets/documents/bjt-rausch-äquivalent.webp)
 	- vollständiges Kleinsignalersatzschaltbild mit Rauschgeneratoren [[FET]]
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[feldeffekt transistor]] , schaltung
-	  collapsed:: true
 		- ![file](../assets/documents/kleinsig-esb-fet.webp)
 	- Kleinsignalersatzschaltbild mit äquivalenten (b) Rauschgeneratoren [[FET]] (Eingangsrauschquellen)
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[feldeffekt transistor]] , schaltung
-	  collapsed:: true
 		- ![file](../assets/documents/fet-rausch-äquivalent.webp)
 	- leiten Sie aus den Rauschgeneratoren die äquivalenten Eingangsrauschquellen des [[BJT]] ab
 	  deck:: Uni::Schaltungstechnik_Theorie
@@ -612,12 +561,10 @@ alias:: ST, schaltungstechnik lva
 		- ![file](../assets/documents/bjt-rausch-äquivalent.webp)
 		  id:: 6673c33b-d1b0-4c8e-a98e-4242de035fab
 		- vereinfachungen:
-		  collapsed:: true
 			- $C_{\mu}$ wird vernachlässigt
 			- kurzschlusslast wird betrachtet
 		- äquivalenten Eingangsrauschgeneratoren Erzeugen gleiches Ausgangsrauschen bei idealer Schaltung, wie die Originalrauschgeneratoren
 		- Bei der Berechnung der äquivalenten Eingangsrauschgeneratoren kann man folgendermaßen vorgehen:
-		  collapsed:: true
 			- Eingang beider Schaltungen (a) und (b) kurzschließen und Ausgangsrausch strom $i_{o}$ berechnen, um $\bar{v_{i}}^2$ zu erhalten.
 			  logseq.order-list-type:: number
 				- vereinfachung:
@@ -625,7 +572,6 @@ alias:: ST, schaltungstechnik lva
 				- ausgehend von [a)](((6673c33b-d1b0-4c8e-a98e-4242de035fab))), wird der eingang kurzgeschlossen
 				- ![file](../assets/documents/schaltung-bjt-herleitung-1.webp)
 				- gesamt rauschstrom am ausgang soll bei beiden schaltungen gleich sein
-				  collapsed:: true
 					- $i_o=g_{m}v_{b}+i_{c}=g_{m}v_{i}$
 					- $v_{i}=v_{b}+\frac{i_{c}}{g_{m}}$
 				- $v_{b}$ und $i_{c}$ sind unabhängige generatoren daher
@@ -633,11 +579,9 @@ alias:: ST, schaltungstechnik lva
 				- jetzt werden ((67595b68-f21a-4b53-857e-73495668e87d)) und ((67595b68-be94-4d00-a26f-1910e44d1b75)) eingesetzt
 					- $v_{i}^2=4kTr_{b}\Delta f+\frac{2qI_{C}\Delta f}{g_{m}^2}$
 					- $\frac{v_{i}^2}{\Delta f}=4kT\left(r_{b}+\frac{qI_{C}}{2kTg_{m}^2}\right)$
-					  collapsed:: true
 						- $\frac{kTg_{m}}{qI_{C}}$ das muss irgend eine größe sein die ich nicht kenne
 					- ${\frac{v_{i}^2}{\Delta f}=4kT\left(r_{b}+\frac{1}{2g_{m}}\right)}$
 					  background-color:: yellow
-					  collapsed:: true
 						- daraus sieht man, dass die spektrale dichte der äquivalenten rauschspannung von einem Eingangsrauschwiderstand $R_{eq}$ kommt
 						- ${{\frac{v_{i}^2}{\Delta f}=4kTR_{eq}}}$
 					-
@@ -648,7 +592,6 @@ alias:: ST, schaltungstechnik lva
 				- ausgehend von [a)](((6673c33b-d1b0-4c8e-a98e-4242de035fab))), bleiben die eingänge offen
 				- ![file](../assets/documents/schaltung-bjt-herleitung-2.webp)
 				- gesamt rauschstrom am ausgang soll bei beiden schaltungen gleich sein
-				  collapsed:: true
 					- $i_o=i_c+\beta(j\omega)i_b=\beta(j\omega)i_i$
 					  bezeichnung:: rauschstrom am ausgang
 					  tags:: formel
@@ -658,15 +601,12 @@ alias:: ST, schaltungstechnik lva
 						- $i_{i}$ ... äquivalenter eingangs rauschstrom $\mathrm{[A]}$
 					- $i_{i}=i_{b}+\frac{i_{c}}{\beta\left(j\omega\right)}$
 					- $i_{b}$ und $i_{c}$ sind unabhängige generatoren daher
-					  collapsed:: true
 						- ${\bar{i_{i}}^2=\bar{i_{b}}^2+\frac{\bar{i_{c}}^2}{\left|\beta(j\omega)\right|^2}}$
 							- $\beta\left(j\omega\right)=\frac{\beta_0}{1+\frac{\omega}{\omega_\beta}}$
 					- jetzt werden ((6673c33b-6cae-4a2a-8395-caeb1633cf30)) und ((66730f82-8ebf-44b4-8dc1-c6ffb19cfd68)) eingesetzt
-					  collapsed:: true
 						- [[burst noise]] wird vernachlässigt
 						- $\bar{i_{i}}^2=2qI_{B}\Delta f+K_1\frac{I_{B}^{a}}{f}\Delta f+\frac{2qI_{C}\Delta f}{|\beta\left(j\omega\right)|^2}$
 						- $\frac{\bar{i_{i}}^2}{\Delta f}=2q\left(I_{B}+\frac{K_1}{2q}\frac{I_{B}^{a}}{f}+\frac{I_{C}}{|\beta\left(j\omega\right)|^2}\right)$
-						  collapsed:: true
 							- daraus sieht man, dass die spektrale dichte des äquivalenten rauschstroms von einem äquivalenten Eingangs-schrot-rauschstrom $I_{eq}$ kommt
 							- ${\frac{i_{i}^2}{\Delta f}=2qI_{eq}}$
 							-
@@ -675,7 +615,6 @@ alias:: ST, schaltungstechnik lva
 	  tags:: flashcard, wip , [[feldeffekt transistor]] , [[rauschen]], [[transistor]]
 		- ![file](../assets/documents/fet-rausch-äquivalent.webp)
 		- vereinfachungen:
-		  collapsed:: true
 			- $C_{gd}$ wird vernachlässigt
 			- kurzschlusslast wird betrachtet
 		- äquivalenten Eingangsrauschgeneratoren Erzeugen gleiches Ausgangsrauschen bei idealer Schaltung, wie die Originalrauschgeneratoren
@@ -684,22 +623,18 @@ alias:: ST, schaltungstechnik lva
 			  logseq.order-list-type:: number
 			  id:: 6673e94c-9857-44f4-b1d9-59ec665faf69
 				- vereinfachung:
-				  collapsed:: true
 					- der [[Gate]] rauschstromgenerator wird [kurzgeschlossen](((6673e94c-9857-44f4-b1d9-59ec665faf69))), daher fällt er weg
 				- ausgehend von [a)](((c4ee6e12-bbfe-493b-9d00-5fb1a69f697e))), wird der eingang kurzgeschlossen
 				- ![file](../assets/documents/schaltung-fet-herleitung-1.webp)
 				- gesamt rauschstrom am ausgang soll bei beiden schaltungen gleich sein
-				  collapsed:: true
 					- $i_{o}=i_{d}=g_{m}v_{i}$
 					- ${v_{i}=\frac{i_{d}}{g_{m}}}$
 					- ${\bar{v_{i}}^2=\frac{\bar{i_{d}}^2}{g_{m}^2}}$
-					  collapsed:: true
-				- jetzt wird ((6673e811-b88b-40a7-a89e-eeccc792600f)) eingesetzt
+				- jetzt wird ((67595b68-323e-4a7b-94c3-4b9773d4a963)) eingesetzt
 					- $v_{i}^2=\frac{4kT\frac23g_{m}\Delta f+K_1\frac{I_{D}^{a}}{f}\Delta f}{g_{m}^2}$
 					- ${\frac{v_{i}^2}{\Delta f}=4kT\frac23\frac{1}{g_{m}}+K_1\frac{I_{D}^{a}}{f}\frac{1}{g_{m}^2}}$
 					- $\frac{v_{i}^2}{\Delta f}=4kT\left(\frac23\frac{1}{g_{m}}+K_1\frac{I_{D}^{a}}{f}\frac{1}{g_{m}^2}\frac{1}{4kT}\right)$
 					  background-color:: yellow
-					  collapsed:: true
 						- daraus sieht man (angeblich), dass die spektrale dichte der äquivalenten rauschspannung von einem Eingangsrauschwiderstand $R_{eq}$ kommt
 						- ${{\frac{v_{i}^2}{\Delta f}=4kTR_{eq}}}$
 			- Eingang beider Schaltungen (a) und (b) öffnen und $i_{o}$ berechnen um auf $\bar{i_{i}}^2$ zu kommen
@@ -716,95 +651,76 @@ alias:: ST, schaltungstechnik lva
 						- $i_{i}$ ... äquivalenter eingangs rauschstrom $\mathrm{[A]}$
 					- $i_{o}=i_{g}+i_{d}\frac{j\omega Cgs}{g_{m}}=i_{i}$
 					- $i_{g}$ und $i_{d}$ sind unabhängige generatoren daher
-					  collapsed:: true
 						- $\bar{i_{i}}^2=\bar{i_{g}}^2+\bar{i_{d}}^2\frac{\omega^2C_{gs}^2}{g_{m}^2}$
-					- jetzt werden ((6673e811-b88b-40a7-a89e-eeccc792600f)) und ((6673e811-14f3-44b0-9001-27b78c58243b)) eingesetzt
-					  collapsed:: true
+					- jetzt werden ((67595b68-323e-4a7b-94c3-4b9773d4a963)) und ((67595b68-323e-4a7b-94c3-4b9773d4a963)) eingesetzt
 						- ${\bar{i_{i}^2}=2qI_{G}\Delta f+\frac{\omega^2C_{gs}^2}{g_{m}^2}^{}\left(4kT\frac23g_{m}\Delta f+K_1\frac{I_{D}^{a}}{f}\Delta f\right)}$
 						- $\frac{\bar{i_{i}^2}}{\Delta f}=2qI_{G}+\frac{\omega^2C_{gs}^2}{g_{m}^2}^{}\left(4kT\frac23g_{m}+K_1\frac{I_{D}^{a}}{f}\right)$
 						  background-color:: yellow
 	- Schritte im Schaltungs Entwurf
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, schaltungs design
-	  collapsed:: true
 		- ![file](../assets/documents/schaltung-entwurf-diagramm.webp)
 	- Electrical Rule Check erklären
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[schaltungs design]]
-	  collapsed:: true
 		- Der Electrical Rule Check (ERC) dient zur Überprüfung des Layouts auf elementare elektrische Fehler, wozu Unterbrechungen, Kurzschlüsse und falsche Bauelementparameter gehören. Die dafür benötigten elektrischen Regeln sind in der Technologiedatei enthalten. Eine Untersuchung des Schaltungsverhaltens wie bei der Simulation ist mit dem ERC nicht möglich.
 	- Design Rule Check erklären
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[schaltungs design]]
-	  collapsed:: true
 		- Mit dem Design Rule Check (DRC) wird überprüft, ob das erzeugte Layout den Entwurfsregeln der zugrundeliegenden Technologie genügt. Der DRC geschieht auf rein geometrischer Basis und wird daher in der Regel vor den weiterführenden elektrischen Überprüfungen durchgeführt. Die geometrischen Entwurfsregeln definieren für die verschiedenen Arten von Strukturen bestimmte Mindestgrößen und -abstände, die nicht unterschritten werden dürfen. Im Einzelnen unterscheidet man zwischen folgenden Arten von Regeln:
-		  collapsed:: true
 			- Breite (Width) eines Gebiets, z.B. einer Metallisierung
 			- Abstand (Spacing) zwischen zwei Gebieten, z.B. Metallisierungen/Überlappung (Overlap) unterschiedlicher Gebiete, z.B. zwischen Metallisierung und kontaktiertem Diffusionsgebiet
 			- Einschluss (Enclosure) eines Gebiets in einem anderen, z.B. eines Kontaktlochs in der kontaktierten Metallisierung
 	- Layout vs. Schematic Check erklären
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[schaltungs design]]
-	  collapsed:: true
 		- Der Netzlistenvergleich oder Layout vs. Schematic Check (LVS Check) ist der umfassendste der drei Verifikationsschritte und wird daher meist als letzter durchgeführt.
 		  Beim LVS Check wird die Übereinstimmung des erzeugten Layouts mit dem speziﬁzierten (ursprünglichen) Schaltplan überprüft. Die Regeln für den LVS Check sind ebenfalls in der Technologiedatei enthalten. Konkret werden beim LVS Check die Netzliste der Spezifikation und die aus der Extraktion des Layouts gewonnene Netzliste miteinander verglichen. Probleme können sich aufgrund der parasitären Elemente und der zusätzlichen Knoten in der extrahierten Netzliste ergeben, die bei einem zu empfindlich eingestellten Vergleich leicht zu Fehlmeldungen führen.
 	- Extraktion erklären
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[schaltungs design]]
-	  collapsed:: true
 		- Als Synthese wird allgemein die Umsetzung einer Beschreibung auf einer höheren Ebene in eine niedrigere bezeichnet, also die praktische Realisierung des Top-down-Entwurfs. Die Umkehrung dieses Vorgangs heißt Extraktion. Im engeren Sinn bezeichnet Extraktion die ==Identifizierung von Elementen im Layout== und ihre Umsetzung als Schaltbild
 	- ASIC (application specific integrated circuit) Entwurf erklären
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[integration von systemen]]
-	  collapsed:: true
 		- Full Custom:
-		  collapsed:: true
 			- vollständig aufgrund der Spezifikationen des Anwenders entworfen, ohne dabei auf standard Zellen oder Blöcke zurückzugreifen.
 			- Chipfläche: klein
 		- Semi Custom:
-		  collapsed:: true
 			- Standardzellen:
 				- zugriff auf Bibliotheken mit standardisierten Funktionen
 			- Gate-Arrays:
-			  collapsed:: true
 				- Regelmäßige meist matrixförmige Anordnungen von Gatterstrukturen und einzelnen Transistoren/passiven Bauelementen
 			- Chipfläche: mittel
 		- Programmable logic device (PLD):
-		  collapsed:: true
 			- Logikschaltungen
 			- Chipfläche: groß
 	- Post Layout Simulation erklären
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[schaltungs design]]
-	  collapsed:: true
 		- Simulations nach der Verifikation des Layouts, um parasitäre Effekte zu untersuchen und zu schauen ob noch immer das spezifizierte Verhalten gewährleistet ist
 	- Stromflusswinkel, Ruhestrom - AB-Betrieb
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[transistor]]
 	  id:: 666bec6f-5a7a-4513-87df-2a7b0293fc97
-	  collapsed:: true
 		- Stromflusswinkel $>180\degree$
 		- Ruhestrom klein
 	- Stromflusswinkel, Ruhestrom - A-Betrieb
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[transistor]]
 	  id:: 666bec6f-8035-4981-a281-6440fe48db6e
-	  collapsed:: true
 		- Stromflusswinkel $=360\degree$
 		- Ruhestrom groß
 	- Stromflusswinkel, Ruhestrom - B-Betrieb
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[transistor]]
 	  id:: 666bec6f-f6b7-41e7-95b9-ede73db9ff4d
-	  collapsed:: true
 		- Stromflusswinkel $<180\degree$
 		- Ruhestrom klein (tatsächlich =0)
 	- Arten des Rauschens im FET
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[feldeffekt transistor]]
-	  collapsed:: true
 		- {{embed ((667b092b-dad5-493e-b7c7-d98cdefef492))}}
-		  collapsed:: true
 		- {{embed ((667b09c0-6b33-4154-aef3-ded0255ace46))}}
 		- {{embed ((667b08a1-5da1-445d-9e45-897c1f96e825))}}
 	- [[funkel rauschen]] ([[flicker noise]], [[1/f noise]])
@@ -813,7 +729,6 @@ alias:: ST, schaltungstechnik lva
 	  id:: 667b08a1-5da1-445d-9e45-897c1f96e825
 		- In der Festkörpertechnologie spricht man vom 1/f-Rauschen, das in aktiven Bauelementen und Kohlewiderständen auftritt.
 		- entsteht durch ==fluktuierende Umladung von Störstellen== und Oberflächenzuständen und ist proportional zu 1/f.
-		  collapsed:: true
 			- Bipolartransistor: durch Verunreinigungen und Kristallfehler
 			- JFET: durch tiefe Störstellen im Kanal
 			- MOSFET: durch Si/SiO2-Interface Zustände im Kanal
@@ -822,7 +737,6 @@ alias:: ST, schaltungstechnik lva
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[rauschen]]
 	  id:: 667b092b-dad5-493e-b7c7-d98cdefef492
-	  collapsed:: true
 		- verursacht durch Schwingungen in Körpern aufgrund der thermischen Energie
 		- direkt proportional zu $T$
 		- zufälliger prozess > weißes rauschen
@@ -830,7 +744,6 @@ alias:: ST, schaltungstechnik lva
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[rauschen]]
 	  id:: 667b09c0-6b33-4154-aef3-ded0255ace46
-	  collapsed:: true
 		- beruht auf der endlichen Größe der Elementarladung q. Die Struktur der Ladung ist "körnig" (sie entspricht "Schrotkörnern").
 		- Schrotrauschen tritt immer bei fließen eines Stromes auf. Es ist in Dioden und Transistoren vorhanden (wegen pn übergang)
 		- zufälliger prozess > weißes rauschen
@@ -842,13 +755,11 @@ alias:: ST, schaltungstechnik lva
 			  id:: 667b0f07-887e-4fbc-8f69-76f7b0dee63f
 			  tags:: formel, [[rauschen]], wip
 			  bezeichnung:: Stromquadrat des Rauschgenerators aufgrund von [[schrot rauschen]]
-			  collapsed:: true
 				- $\bar{i}^2$ ... Stromquadrat des Rauschgenerators aufgrund von [[schrot rauschen]] $\mathrm{\left[A^2\right]}$
 				- $q$ ...  []
 				- $I$ ... relevanter strom $\mathrm{[A]}$
 				- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
 				- $K_1$ ... empirischer korrektur faktor je nach bauelement $\mathrm{[-]}$
-				  collapsed:: true
 					- hängt vom herstellungsprozess des bauelementes bzw. des ICs ab und kann für bauelemente auf einem wafer wegen kontamination (am jeweiligen ort vorhanden/nicht vorhanden) stark streuen. für rauscharme niederfrequenzschaltungen, die aus diskreten bauelementen oder standard-ics aufgebaut werden, lassen sich die komponenten deshalb bezüglich geringstem 1/f-rauschen selektieren. die amplitudenverteilung des [[1\/f-rauschens]] ist nicht gaussisch.
 				- $c$ ... eine konstante von $0.5-2$ $\mathrm{[-]}$
 				- $f$ ... []
@@ -870,35 +781,28 @@ alias:: ST, schaltungstechnik lva
 	- typischer Verlauf der äquivalenten Eingangsrauschspannung für einen [[FET]] mit wesentlichen Verursachern des Rauschen in den Abschnitten der Kurve
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[FET]], [[transistor]], [[rauschen]]
-	  collapsed:: true
 		- ![file](../assets/documents/fet rauschmodell.webp)
 	- [[Bodediagramm]] Verlauf von $G=\frac{sT}{1+sT}$ (Hochpass)
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, Hochpass
-	  collapsed:: true
 		- ![hochpass.webp](../assets/documents/hochpass.webp)
 	- [[Bodediagramm]] Verlauf von $G=\frac{1}{1+sT}$ (Tiefpass)
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, Tiefpass
-	  collapsed:: true
 		- ![tiefpass.webp](../assets/documents/tiefpass.webp)
 	- [[Bodediagramm]] Verlauf von $G=sT$ (D-Glied)
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, D-Glied
-	  collapsed:: true
 		- ![d-glied.webp](../assets/documents/d-glied.webp)
 	- [[Bodediagramm]] Verlauf von $G=K$ (P-Glied)
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, P-Glied
-	  collapsed:: true
 		- ![p-glied.webp](../assets/documents/p-glied.webp)
 	- [[Bodediagramm]] Verlauf von $G=\frac{1}{sT}$ (I-Glied)
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, I-Glied
-	  collapsed:: true
 		- ![i-glied.webp](../assets/documents/i-glied.webp)
 	- [[Bodediagramm]] Verlauf von ${G=1+sT}$ (PD-Glied)
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, PD-Glied
-	  collapsed:: true
 		- ![pd-glied.webp](../assets/documents/pd-glied.webp)

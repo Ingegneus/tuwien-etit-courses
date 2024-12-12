@@ -21,19 +21,18 @@ elm.CurrentLabel.defaults['headwidth'] = 0.2
 elm.Arrow.defaults['arrowwidth'] = 0.2
 elm.style(elm.STYLE_IEC)
 
-with schemdraw.Drawing(background='white', show=False) as d:
-    d.config(unit=2)
-    Opv = elm.Opamp(leads=True,).flip()
-    elm.Line().at(Opv.in2).up()
-    R1 = elm.Resistor().left().label(r"$R_1$")
+with schemdraw.Drawing(show=True) as d:
+    d.config(unit=2.5)
     elm.Vss()
-    R2 = elm.Resistor().at(R1.start).right().label(r"$R_2$")
-    elm.Wire('-|').to(Opv.out)
-    Out = elm.Line().right(d.unit*0.5).dot(open=True).label(r"$u_a(t)$", loc="right")
-    Ue = celm.SourceV().at(Opv.in1).down().label(r"$u_e(t)$")
+    Ue = celm.SourceV().up()
+    elm.CurrentLabel().at(Ue).label(r"$u_e$")
+    Rs = elm.Resistor().right().label(r"$R_s$")
+    Tr = elm.Bjt().label(r"$T$")
+    elm.Line().at(Tr.emitter).down().toy(Ue.start)
     elm.Vss()
     
-    elm.Arrow().at(Opv.vs).up(d.unit*.3).label(r'$10\mathrm{V}$', loc='bottom')
-    elm.Arrow().at(Opv.vd).down(d.unit*.3).label(r'$-10\mathrm{V}$', loc='bottom')
-
+    Ua = elm.Line().at(Tr.collector).right().dot(open=True).label(r"$u_a$",loc="right")
+    Rl = elm.Resistor().at(Tr.collector).up().label(r"$R_L$")
+    elm.Arrow().up(d.unit*0.1).label(r"$+$",loc="right")
+    
 saveSchemdraw.saveSchematic(d, __file__)
