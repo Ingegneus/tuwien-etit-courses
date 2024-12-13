@@ -12,14 +12,12 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 	- ![📚 Formelsammlung_7.Auflage.pdf](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Unterlagen\Formelsammlung_7.Auflage.pdf)
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
-	  collapsed:: true
 		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.6}$) eingestrahlt.
 		  background-color:: green
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp)
 			- {{evalpage}}
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
-			  collapsed:: true
 				- formeln
 					- $\Theta_i = \Theta_r$
 					  tags:: formel
@@ -35,12 +33,10 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- $n_2$ ... [[brechungsindex]] $\mathrm{[-]}$
 			- b) Berechnen Sie die Querschnitsfläche $A$ des transmittierten Strahls!
 			  background-color:: green
-			  collapsed:: true
 				- formeln
 					- ((6734720b-5c51-4f95-ac33-ed541e99c1ca))
 			- c) Berechnen Sie die Leistungen $P_{\mathrm{TE,t}}$ und $P_{\mathrm{TM,t}}$ der transmittierten Wellen!
 			  background-color:: green
-			  collapsed:: true
 				- formeln
 					- ((6735b379-5292-4604-baef-85a4c9a6fc3f))
 					- ((6735b379-80fa-4b2a-be2d-af5089fe1fa8))
@@ -49,7 +45,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- $\vect{P}_{\mathrm{t}} = \vect{P}_{\mathrm{TE,t}} + \vect{P}_{\mathrm{TM,t}}$
 					  tags:: formel
 					  bezeichnung:: leistung der transmittierten welle
-					  collapsed:: true
+					  id:: 675ac3d6-3993-4c69-a300-cc0df932374a
 						- $\vect{P}_{\mathrm{t}}$ ... gesamte leistung der transmittierten Welle $\mathrm{\left[ W \right]}$
 						- $\vect{P}_{\mathrm{TE,t}}$ ... leistung der transmittierten TE Welle $\mathrm{\left[ W \right]}$
 						- $\vect{P}_{\mathrm{TM,t}}$ ... leistung der transmittierten TM Welle $\mathrm{\left[ W \right]}$
@@ -63,7 +59,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- {{evalpage}}
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
-			  collapsed:: true
 				- formeln
 					- $\Theta_i = \Theta_r$
 					  tags:: formel
@@ -79,7 +74,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- $n_2$ ... [[brechungsindex]] $\mathrm{[-]}$
 			- b) Berechnen Sie die TE und TM-Anteile ($E$ und $H$) der reﬂektierten und der transmittierten Welle!
 			  background-color:: green
-			  collapsed:: true
 				- formeln
 					- ((6735b379-5292-4604-baef-85a4c9a6fc3f))
 					- ((6735b379-80fa-4b2a-be2d-af5089fe1fa8))
@@ -93,14 +87,12 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- $\eta H = E$
 					  tags:: formel, wip
 					  bezeichnung:: abgeleitet von hier [link](((6735b379-187a-4654-8126-efd8a322477b)))
-					  collapsed:: true
 						- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
 						- $H$ ... magnetsiche feldstärke $\mathrm{\left[ \frac{A}{m} \right]}$
 						- $E$ ... elektrische feldstärke $\mathrm{\left[ \frac{V}{s} \right]}$
 					- ((67360de7-70f6-457a-b7e1-e13b553b5d80))
 			- c) Berechnen Sie die Elliptizität der reﬂektierten und der transmittierten Welle in $\mathrm{dB}$!
 			  background-color:: green
-			  collapsed:: true
 				- formeln
 					- ((67360dd7-52ba-4a90-a63b-ad4871a896af))
 			- [📚 2024-11-18 17h41m.xopp](../assets/documents/2024-11-18 17h41m.xopp)
@@ -112,7 +104,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- a) Wie groß ist die (gesamte) reﬂektierte Lichtleistung im Verhältnis zur eingestrahlten (in $\mathrm{dB}$)? Zeichnen Sie alle verwendeten Winkel ein.
 			  background-color:: green
 				- formeln
-				  collapsed:: true
 					- $\Theta_i = \Theta_r$
 					  tags:: formel
 					  bezeichnung:: Reflektions gesetz
@@ -199,15 +190,15 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-11-20 19h04m_annotated.pdf](../assets/documents/2024-11-20 19h04m_annotated.pdf)
 	- Stehende Welle im verlustbehafteten Medium
 	  background-color:: green
-	  collapsed:: true
 		- Eine sich im [verlustbehafteten Medium](((6740c4fa-4d26-4310-b196-321b7391feb6))) (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden [metallischen Wand mit unendlicher Leitfähigkeit](((67405634-4634-4d0d-b586-6a52b1bb7c75))) reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
 		  background-color:: green
 		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
 		  ![img](../assets/documents/WA_stehende_welle_wand_bsp1.webp)
 			- skript
-			  collapsed:: true
 				- ((67405657-2347-4d8b-93f5-98a6b52c836c))
+				  id:: 67405634-4634-4d0d-b586-6a52b1bb7c75
 				- ((6740c51b-b09e-4b73-b018-e2d77efe468b))
+				  id:: 6740c4fa-4d26-4310-b196-321b7391feb6
 			- {{evalpage}}
 			- a) Wie groß ist die Phasengeschwindigkeit $v_P$?
 			  background-color:: green
@@ -465,11 +456,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-11-21 18h45m_annotated.pdf](../assets/documents/2024-11-21 18h45m_annotated.pdf)
 	- Rechteckhohlleiter
 	  background-color:: green
-	  collapsed:: true
 		- TODO this
 		- Variante 1) Untersuchen Sie die Ausbreitung von $\mathrm{TE}_{m,n}$ Wellen in $z$ Richtung im skizzierten Rechteckhohlleiter.
 		  background-color:: green
-		  collapsed:: true
 		  ![img](../assets/documents/WA_rechteckhohlleiter_bsp_1.webp)
 			- Finden Sie einen geeigneten Ansatz für die Komponenten der gewünschten Moden in Ausbreitungsrichtung, der die Wellengleichung erfüllt. Ermitteln Sie die Separationsbedingungen.
 			  background-color:: green
@@ -490,7 +479,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  background-color:: green
 	- Hohlraumresonator
 	  background-color:: green
-	  collapsed:: true
 		- Variante 1) Berechnen Sie den Grundmodus $\mathrm{TE_{101}}$ eines luftgefüllten ($\varepsilon_r = 1$) Hohlraumresonators (Abmessungen: $a = 4\mathrm{cm}$, $b = 2\mathrm{cm}$, $c = 4\mathrm{cm}$) mit $\mathbb{R}_M = 20\mathrm{m\Omega}$.
 		  background-color:: green
 		  ![img](../assets/documents/Wa_hohlraumresonator_bsp_1.webp)
@@ -758,7 +746,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-12-01 16h11m_annotated.pdf](../assets/documents/2024-12-01 16h11m_annotated.pdf)
 	- [[Koaxialkabel]]
 	  background-color:: green
-	  collapsed:: true
 		- Variante 1)
 		  background-color:: green
 		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp)
@@ -854,7 +841,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- $R_A$ ... Abschlusswiderstrand $\mathrm{\left[\Omega\right]}$
 						- $Z_L$ ... leitungsimpedanz $\mathrm{\left[\Omega\right]}$
 						- skript
-						  collapsed:: true
 							- ((674ec847-fd7d-4084-915e-8421e8671ad5))
 				- code
 					- ```python
@@ -1033,7 +1019,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				- TODO this
 	- Dielektrische Platte
 	  background-color:: green
-	  collapsed:: true
 		- TODO this
 		- Berechnen Sie die Ausbreitungseigenschaften der $\mathrm{H}_{10}$-ähnlichen Grundwelle (siehe Rechteckhohlleiter), die von einer in $y$- und $z$-Richtung unbegrenzten und in $x$-Richtung $2d$ dicken dielektrischen Platte (Raum 1) geführt wird (Raum 2 ist Luft)!
 		  background-color:: green
@@ -1048,7 +1033,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			  background-color:: green
 	- Dielektrischer Wellenleiter
 	  background-color:: green
-	  collapsed:: true
 		- Gegeben sei ein dielektrischer Wellenleiter der Dicke $d = 1\mathrm{cm}$ mit einer relativen Permittivität von $\varepsilon_2 = 2.26$. Oberhalb des Wellenleiters beﬁnde sich Luft ($\varepsilon_3 = 1$), unterhalb ein idealer Leiter. Es breite sich eine Welle in $z$-Richtung aus!
 		  background-color:: green
 		  ![img](../assets/documents/WA_dielektrischer_wellenleiter_bsp_1.webp)
@@ -1060,17 +1044,16 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- $H_{z1}=A_{1}~\mathrm{cos}\left(k_{x1}x\right)e^{-j k_{z}z} \\ H_{z2}=A_{2}~e^{-k_{x2}(x-d)}~e^{-j k_{z}z}$
 					  tags:: formel, wellenausbreitung
 					  bezeichnung:: ansatz für die $\mathrm{TE}$-welle in einem ebenen wellenleiter
-					  collapsed:: true
+					  id:: 67508103-1a02-4819-8b68-7d3d9cf8f041
 						- $H_{z1}, H_{z2}$ ... magnetische feldstärkekomponente in medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
 						- $A_1, A_2$ ... amplitude in medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
 						- $k_{x1}, k_{x2}$ ... [[wellenzahl]] in medium 1 bzw 2 $\mathrm{\left[\frac{rad}{m}\right]}$
 						- $z$ ... ausbreitungsrichtung $\mathrm{\left[m\right]}$
 						- $d$ ... [[eindringtiefe]] $\mathrm{\left[m\right]}$
 						- skript
-						  collapsed:: true
 							- ((675090f8-65ba-412b-8543-a560d7644e48))
 				- code
-				  collapsed:: true
+				  id:: 67517609-f23a-458d-a213-d605769b4963
 				- medium 2
 					- da in $x$-richtung stehende wellen anzunehmen sind wird $\cos$ oder $\sin$ angestzt. da am metall die randbedingung $E_{tang}$ erfüllt sein muss ([link](((67459ac8-e918-4a08-8003-07057ff681d6)))), wird ein $\cos$ angesetzt
 				- medium 3
@@ -1082,7 +1065,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- $k_{x1}^{2}+k_{z}^{2} = k_1^2 = \omega^{2} \varepsilon_{1} \mu_{0} \\ -k_{x2}^{2} + k_{z}^{2} = k_2^2 = \omega^{2} \varepsilon_{2} \mu_{0}$
 					  tags:: formel, wip
 					  bezeichnung:: separationsbedingung für [[dielektrische wellenleiter]] [link](((674d7759-0e35-482f-8086-9026be01cd14)))
-					  collapsed:: true
+					  id:: 67509364-eaba-40b7-bcaa-fc7c23e9954a
 						- $-$ ...
 						- skript
 							- ((67517642-4ec8-4409-ade6-cc8d78118a1e))
@@ -1209,7 +1192,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- $E_{\mathrm{tang1}},E_{\mathrm{tang2}}$ ... tangential komponente des [[elektrischen feldes]] im medium 1 bzw 2 $\mathrm{\left[\frac{V}{m}\right]}$
 						- $H_{\mathrm{tang1}},H_{\mathrm{tang2}}$ ... tangential komponente des [[magnetischen feldes]] im medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
 						- skript
-						  collapsed:: true
 							- ((6751d667-3181-4b73-87e6-9e864f549a9c))
 							- ((6751d67e-65ca-4200-97c6-6e1dbfc841a2))
 					- ((67508103-1a02-4819-8b68-7d3d9cf8f041))
@@ -1250,7 +1232,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- d) Bestimmen Sie die Dispersionsgleichung und die Grenzfrequenzen der ersten drei Moden! Skizzieren Sie das Dispersionsdiagramm!
 			  background-color:: green
 				- skript
-				  collapsed:: true
 					- ((675330c9-5692-476c-ab43-c0f8c7614a54))
 				- formeln
 					- ((674d7759-f065-41be-aa7b-2bb81097b152))
@@ -1360,10 +1341,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			  background-color:: green
 				- ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_1.webp) ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_2.webp)
 - ## flashcards
-  collapsed:: true
 	- ### index
 		- query-table:: true
-		  collapsed:: true
 		  #+BEGIN_QUERY
 		  {
 		  :title [:b "all flashcards"]
@@ -1385,7 +1364,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  #+END_QUERY
 		- query-table:: true
 		  query-properties:: [:block :tags]
-		  collapsed:: true
 		  #+BEGIN_QUERY
 		  {
 		  :title [:b "all flashcards defined here"]
@@ -1407,10 +1385,10 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
 		- ((67508103-1a02-4819-8b68-7d3d9cf8f041))
-	- wie lautet die separationsbedingung fpr [[dielektrische wellenleiter]]?
+	- wie lautet die separationsbedingung für [[dielektrische wellenleiter]]?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
-		- ((67517609-f23a-458d-a213-d605769b4963))
+		- ((67509364-eaba-40b7-bcaa-fc7c23e9954a))
 	- wofür stehen $\mathrm{TM}$, $\mathrm{TE}$ und $\mathrm{TEM}$?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
@@ -1423,12 +1401,11 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		- $\mathrm{TEM}$
 			- ***T***ransversal ***E***lektro-***M***agnetische Welle
 			- $H_z = E_z = 0$ also der magnetische und elektrische feldstärke vektor ist komplett transversal ($90°$) zur ausbreitungsrichtung (hier $z$)
-	- wie teilt sich die leistung einer welle bei zitkular polarisierten welle auf?
+	- wie teilt sich die leistung einer welle bei zirkular polarisierten wellen auf?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
-	  collapsed:: true
-		- die TE und TM Wellen haben die gleiche leistung
-		- ((673b6e21-b584-4162-9dee-58697f01a4bb))
+		- die $\mathrm{TE}$ und $\mathrm{TM}$ Wellen haben die gleiche leistung
+		- ((675ac3d6-3993-4c69-a300-cc0df932374a))
 	- welcher faktor ($\Gamma_{\mathrm{TM}},~\Gamma_{\mathrm{TE}}, ~T_{\mathrm{TM}},~T_{\mathrm{TE}}$) ist unter einfall des [[brewster winkels]] gleich $0$?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard

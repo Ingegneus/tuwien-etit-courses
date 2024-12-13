@@ -49,6 +49,7 @@ alias:: ST, schaltungstechnik lva
 			- [[draws/2024-06-13-16-48-03.excalidraw]]
 		- d) kreuzen sie den richtigen an.
 		  background-color:: green
+		  id:: 666c6b2d-53cf-48a6-a98f-e7f51157b0b3
 			- formeln
 				- $\beta=-\frac{u_{ed}}{u_{a}}$
 				  tags:: [[formel]], [[opv]]
@@ -213,7 +214,6 @@ alias:: ST, schaltungstechnik lva
 		  query-properties:: [:block :tags]
 		  query-sort-by:: block
 		  query-sort-desc:: false
-		  collapsed:: true
 	- welche arten des [[rauschens]] gibt es? 
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard
@@ -458,10 +458,11 @@ alias:: ST, schaltungstechnik lva
 	- ${\bar{v_{b}}^2}$ ... Spannungsquadrat des Rauschgenerators an der [[Basis]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] $\mathrm{[V]}$
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[bipolar transistor]]
-		- ${}\bar{v_{b}}^2=4kTr_{b}\Delta f$
+	  id:: 675ac3d3-1ff8-4ecb-8e7c-b2ae0b933dc9
+		- $\bar{v_{b}}^2=4kTr_{b}\Delta f$
+		  id:: 67595b68-f21a-4b53-857e-73495668e87d
 		  tags:: formel, [[rauschen]], [[BJT]], wip
 		  bezeichnung:: Spannungsquadrat des Rauschgenerators an der [[Basis]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] ([[thermisches rauschen]]) [V]
-		  id:: 67595b68-f21a-4b53-857e-73495668e87d
 			- $k$ ... Boltzmannkonstante [J/K]
 			- ${}T$ ... [[Temperatur]] $\mathrm{[K]}$
 			- ${}r_{b}$ ... Basis Widerstand des [[BJT]] im [[kleinsignal]] modell [Ω]
@@ -568,11 +569,11 @@ alias:: ST, schaltungstechnik lva
 			- kurzschlusslast wird betrachtet
 		- äquivalenten Eingangsrauschgeneratoren Erzeugen gleiches Ausgangsrauschen bei idealer Schaltung, wie die Originalrauschgeneratoren
 		- Bei der Berechnung der äquivalenten Eingangsrauschgeneratoren kann man folgendermaßen vorgehen:
-			- Eingang beider Schaltungen (a) und (b) kurzschließen und Ausgangsrausch strom $i_{o}$ berechnen, um $\bar{v_{i}}^2$ zu erhalten.
+			- Eingang beider Schaltungen [(a)](((6673c33b-d1b0-4c8e-a98e-4242de035fab))) und [(b)](((6673c33b-d1b0-4c8e-a98e-4242de035fab))) kurzschließen und Ausgangsrausch strom $i_{o}$ berechnen, um $\bar{v_{i}}^2$ zu erhalten.
 			  logseq.order-list-type:: number
 				- vereinfachung:
 					- der rauschstrom kommt von einer konstant stromquelle. dadurch, dass $r_{b}\ll r_{\pi}$, fließt der strom hauptsächlich über $r_{b}$. der spannungsabfall daran ist dann sehr klein im vergleich zum spannungsabfall an $r_{\pi}$. daher wird der einfluss von $i_{b}^2$ und $r_{b}$ vernachlässigt.
-				- ausgehend von [a)](((6673c33b-d1b0-4c8e-a98e-4242de035fab))), wird der eingang kurzgeschlossen
+				- ausgehend von [(a)](((6673c33b-d1b0-4c8e-a98e-4242de035fab))), wird der eingang kurzgeschlossen
 				- ![file](../assets/documents/schaltung-bjt-herleitung-1.webp)
 				- gesamt rauschstrom am ausgang soll bei beiden schaltungen gleich sein
 					- $i_o=g_{m}v_{b}+i_{c}=g_{m}v_{i}$
@@ -587,8 +588,7 @@ alias:: ST, schaltungstechnik lva
 					  background-color:: yellow
 						- daraus sieht man, dass die spektrale dichte der äquivalenten rauschspannung von einem Eingangsrauschwiderstand $R_{eq}$ kommt
 						- ${{\frac{v_{i}^2}{\Delta f}=4kTR_{eq}}}$
-					-
-			- Eingang beider Schaltungen (a) und (b) öffnen und $i_{o}$ berechnen um auf $\bar{i_{i}}^2$ zu kommen
+			- Eingang beider Schaltungen [(a)](((6673c33b-d1b0-4c8e-a98e-4242de035fab))) und [(b)](((6673c33b-d1b0-4c8e-a98e-4242de035fab))) öffnen und $i_{o}$ berechnen um auf $\bar{i_{i}}^2$ zu kommen
 			  logseq.order-list-type:: number
 				- vereinfachung:
 					- die rausch spannungsquelle $\bar{v_{b}}^2$ und der [[Basis]][[widerstand]] $r_{b}$ fallen weg, da der eingang offen ist.
@@ -606,7 +606,7 @@ alias:: ST, schaltungstechnik lva
 					- $i_{b}$ und $i_{c}$ sind unabhängige generatoren daher
 						- ${\bar{i_{i}}^2=\bar{i_{b}}^2+\frac{\bar{i_{c}}^2}{\left|\beta(j\omega)\right|^2}}$
 							- $\beta\left(j\omega\right)=\frac{\beta_0}{1+\frac{\omega}{\omega_\beta}}$
-					- jetzt werden ((6673c33b-6cae-4a2a-8395-caeb1633cf30)) und ((66730f82-8ebf-44b4-8dc1-c6ffb19cfd68)) eingesetzt
+					- jetzt werden ((67595b68-86c8-4cb2-a777-f98b4457e311)) und ((67595b68-be94-4d00-a26f-1910e44d1b75)) eingesetzt
 						- [[burst noise]] wird vernachlässigt
 						- $\bar{i_{i}}^2=2qI_{B}\Delta f+K_1\frac{I_{B}^{a}}{f}\Delta f+\frac{2qI_{C}\Delta f}{|\beta\left(j\omega\right)|^2}$
 						- $\frac{\bar{i_{i}}^2}{\Delta f}=2q\left(I_{B}+\frac{K_1}{2q}\frac{I_{B}^{a}}{f}+\frac{I_{C}}{|\beta\left(j\omega\right)|^2}\right)$
@@ -618,17 +618,18 @@ alias:: ST, schaltungstechnik lva
 	  tags:: flashcard, wip , [[feldeffekt transistor]] , [[rauschen]], [[transistor]]
 	  id:: 67595b68-b5b2-4061-a44a-439db0d52751
 		- ![file](../assets/documents/fet-rausch-äquivalent.webp)
+		  id:: 675ac3d3-faf8-4519-92c7-3c37775008f5
 		- vereinfachungen:
 			- $C_{gd}$ wird vernachlässigt
 			- kurzschlusslast wird betrachtet
 		- äquivalenten Eingangsrauschgeneratoren Erzeugen gleiches Ausgangsrauschen bei idealer Schaltung, wie die Originalrauschgeneratoren
 		- Bei der Berechnung der äquivalenten Eingangsrauschgeneratoren kann man folgendermaßen vorgehen:
-			- Eingang beider Schaltungen (a) und (b) kurzschließen und Ausgangsrausch strom $i_{o}$ berechnen, um $\bar{v_{i}}^2$ zu erhalten.
+			- Eingang beider Schaltungen [(a)](((675ac3d3-faf8-4519-92c7-3c37775008f5))) und [(b)](((675ac3d3-faf8-4519-92c7-3c37775008f5))) kurzschließen und Ausgangsrausch strom $i_{o}$ berechnen, um $\bar{v_{i}}^2$ zu erhalten.
 			  logseq.order-list-type:: number
 			  id:: 6673e94c-9857-44f4-b1d9-59ec665faf69
 				- vereinfachung:
 					- der [[Gate]] rauschstromgenerator wird [kurzgeschlossen](((6673e94c-9857-44f4-b1d9-59ec665faf69))), daher fällt er weg
-				- ausgehend von [a)](((c4ee6e12-bbfe-493b-9d00-5fb1a69f697e))), wird der eingang kurzgeschlossen
+				- ausgehend von [(a)](((675ac3d3-faf8-4519-92c7-3c37775008f5))), wird der eingang kurzgeschlossen
 				- ![file](../assets/documents/schaltung-fet-herleitung-1.webp)
 				- gesamt rauschstrom am ausgang soll bei beiden schaltungen gleich sein
 					- $i_{o}=i_{d}=g_{m}v_{i}$
@@ -641,9 +642,9 @@ alias:: ST, schaltungstechnik lva
 					  background-color:: yellow
 						- daraus sieht man (angeblich), dass die spektrale dichte der äquivalenten rauschspannung von einem Eingangsrauschwiderstand $R_{eq}$ kommt
 						- ${{\frac{v_{i}^2}{\Delta f}=4kTR_{eq}}}$
-			- Eingang beider Schaltungen (a) und (b) öffnen und $i_{o}$ berechnen um auf $\bar{i_{i}}^2$ zu kommen
+			- Eingang beider Schaltungen [(a)](((675ac3d3-faf8-4519-92c7-3c37775008f5))) und [(b)](((675ac3d3-faf8-4519-92c7-3c37775008f5))) öffnen und $i_{o}$ berechnen um auf $\bar{i_{i}}^2$ zu kommen
 			  logseq.order-list-type:: number
-				- ausgehend von [a)](((c4ee6e12-bbfe-493b-9d00-5fb1a69f697e))), bleiben die eingänge offen
+				- ausgehend von [a)](((675ac3d3-faf8-4519-92c7-3c37775008f5))), bleiben die eingänge offen
 				- ![file](../assets/documents/schaltung-fet-herleitung-2.webp)
 				- gesamt rauschstrom am ausgang soll bei beiden schaltungen gleich sein
 					- $i_{o}=i_{d}+i_{g}\frac{g_{m}}{j\omega C_{gs}}=i_{i}\frac{g_{m}}{j\omega C_{gs}}$
@@ -790,7 +791,7 @@ alias:: ST, schaltungstechnik lva
 	- typischer Verlauf der äquivalenten Eingangsrauschspannung für einen [[FET]] mit wesentlichen Verursachern des Rauschen in den Abschnitten der Kurve
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, [[FET]], [[transistor]], [[rauschen]]
-		- ![file](../assets/documents/fet rauschmodell.webp)
+		- ![file](../assets/documents/fet rauschmodell.webp){:height 238, :width 437}
 	- [[Bodediagramm]] Verlauf von $G=\frac{sT}{1+sT}$ (Hochpass)
 	  deck:: Uni::Schaltungstechnik_Theorie
 	  tags:: flashcard, bidirectional, Bodediagramm, Hochpass

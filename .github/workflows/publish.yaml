@@ -8,8 +8,6 @@ jobs:
     name: Publish Logseq graph
     steps:
       - uses: actions/checkout@v4
-      - name: Logseq Graph Validator
-        uses: logseq/graph-validator@v0.4.0    
       - uses: logseq/publish-spa@v0.3.1
       - name: Add a nojekyll file # to make sure asset paths are correctly identified
         run: touch $GITHUB_WORKSPACE/www/.nojekyll

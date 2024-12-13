@@ -332,7 +332,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites []
+ :favorites ["675ac3d3-1a27-4ef7-a6b2-21e83c69f2a3"]
 
  ;; Set flashcards interval.
  ;; Expected value:
