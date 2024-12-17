@@ -259,7 +259,7 @@
 		["img" [[:editor/input "![img](../assets/documents/.webp)"]]]
 		["l" [[:editor/input "[]([[]])"]]]
 		
-		["highlight-yellow" [[:editor/input "<span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-yellow);color: black'></span>"]]]
+		["highlight-yellow" [[:editor/input "<span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-yellow);'></span>"]]]
 		["highlight-red" [[:editor/input "<span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-red);'></span>"]]]
 		["highlight-pink" [[:editor/input "<span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-pink);'></span>"]]]
 		["highlight-blue" [[:editor/input "<span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-blue);'></span>"]]]

@@ -5,39 +5,49 @@ tags:: uni
 alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 
 - ## vorlesungen
-	- ![📚 WA-Skriptum-17.Auflage.pdf](file://C:\Users\Matteo\Documents\Uni\Wellenausbreitung\WA-Skriptum-17.Auflage.pdf)
+	- ![📚 WA-Skriptum-17.Auflage.pdf](.\assets\uni-unterlagen\Wellenausbreitung\WA-Skriptum-17.Auflage.pdf)
 	- [[wellen vo temp]]
 - ## beispiele
-	- ![📚 23_wa_version2.pdf](file://C:\Users\Matteo\Documents\Uni\Wellenausbreitung\23_wa_version2.pdf)
-	- ![📚 Formelsammlung_7.Auflage.pdf](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Unterlagen\Formelsammlung_7.Auflage.pdf)
+	- ![📚 23_wa_version2.pdf](.\assets\uni-unterlagen\Wellenausbreitung\23_wa_version2.pdf)
+	- ![📚 Formelsammlung_7.Auflage.pdf](.\assets\uni-unterlagen\Wellenausbreitung\Formelsammlung_7.Auflage.pdf)
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{3~mm^2}$ und einer Leistung von $P = \mathrm{10~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.6}$) eingestrahlt.
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp)
 			- {{evalpage}}
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- $\Theta_i = \Theta_r$
 					  tags:: formel
 					  bezeichnung:: Reflektions gesetz
+					  collapsed:: true
 						- $\Theta_i$ ... einfallswinkel (***i***nbound) $\mathrm{[°]}$
 						- $\Theta_r$ ... reflektionswinkel (***r***eflected) $\mathrm{[°]}$
 					- ((6734720f-e42f-46c0-a512-3075ea423042))
 					- $\Theta_{b}=\arctan\left(\frac{n_2}{n_1}\right)$
 					  tags:: formel
 					  bezeichnung:: [[brewster winkel]]
+					  collapsed:: true
 						- $\Theta_b$ ... Brewster winkel $\mathrm{[°]}$
 						- $n_1$ ... [[brechungsindex]] $\mathrm{[-]}$
 						- $n_2$ ... [[brechungsindex]] $\mathrm{[-]}$
 			- b) Berechnen Sie die Querschnitsfläche $A$ des transmittierten Strahls!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6734720b-5c51-4f95-ac33-ed541e99c1ca))
 			- c) Berechnen Sie die Leistungen $P_{\mathrm{TE,t}}$ und $P_{\mathrm{TM,t}}$ der transmittierten Wellen!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6735b379-5292-4604-baef-85a4c9a6fc3f))
 					- ((6735b379-80fa-4b2a-be2d-af5089fe1fa8))
 					- ((6735b379-8ba8-4a90-b5e2-8b5b38036526))
@@ -46,6 +56,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  tags:: formel
 					  bezeichnung:: leistung der transmittierten welle
 					  id:: 675ac3d6-3993-4c69-a300-cc0df932374a
+					  collapsed:: true
 						- $\vect{P}_{\mathrm{t}}$ ... gesamte leistung der transmittierten Welle $\mathrm{\left[ W \right]}$
 						- $\vect{P}_{\mathrm{TE,t}}$ ... leistung der transmittierten TE Welle $\mathrm{\left[ W \right]}$
 						- $\vect{P}_{\mathrm{TM,t}}$ ... leistung der transmittierten TM Welle $\mathrm{\left[ W \right]}$
@@ -55,26 +66,33 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-11-12 16h29m_annotated.pdf](../assets/documents/2024-11-12 16h29m_annotated.pdf)
 		- Variante 2) Eine zirkular polarisierte Welle mit einem Querschnitt von $A = \mathrm{2~mm^2}$ und einer Leistung von $P = \mathrm{1~mW}$ wird unter dem Brewster-Winkel auf eine Grenzﬂäche zwischen Vakuum ($n_1 = \mathrm{1}$) und Glas ($n_2 = \mathrm{1.5}$) eingestrahlt.
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/Documents/WA_vakuum_glas_bsp.webp)
 			- {{evalpage}}
 			- a) Berechnen Sie Einfallswinkel $\Theta_e$, Reﬂexionswinkel $\Theta_r$ und Austrittswinkel $\Theta_t$ und zeichnen Sie diese in die Skizze ein!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- $\Theta_i = \Theta_r$
 					  tags:: formel
 					  bezeichnung:: Reflektions gesetz
+					  collapsed:: true
 						- $\Theta_i$ ... einfallswinkel (***i***nbound) $\mathrm{[°]}$
 						- $\Theta_r$ ... reflektionswinkel (***r***eflected) $\mathrm{[°]}$
 					- ((6734720f-e42f-46c0-a512-3075ea423042))
 					- $\Theta_{b}=\arctan\left(\frac{n_2}{n_1}\right)$
 					  tags:: formel
 					  bezeichnung:: [[brewster winkel]] [link](((6735b379-a4a2-48f4-800f-7b9292b7a3a1)))
+					  collapsed:: true
 						- $\Theta_b$ ... Brewster winkel $\mathrm{[°]}$
 						- $n_1$ ... [[brechungsindex]] $\mathrm{[-]}$
 						- $n_2$ ... [[brechungsindex]] $\mathrm{[-]}$
 			- b) Berechnen Sie die TE und TM-Anteile ($E$ und $H$) der reﬂektierten und der transmittierten Welle!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6735b379-5292-4604-baef-85a4c9a6fc3f))
 					- ((6735b379-80fa-4b2a-be2d-af5089fe1fa8))
 					- ((6735b379-8ba8-4a90-b5e2-8b5b38036526))
@@ -82,31 +100,39 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- $\Gamma_{TM} = 0$
 					  tags:: formel
 					  bezeichnung:: reflektionsfaktor wenn einfallswinkel = [[brewster winkel]] [FS](((6735b379-a4a2-48f4-800f-7b9292b7a3a1)))
+					  collapsed:: true
 						- $\Gamma_{TM}$ ... reflektionsfaktor $\mathrm{\left[ - \right]}$
 					- ((6735b379-9a02-48b3-997c-2ecd856cb257))
 					- $\eta H = E$
 					  tags:: formel, wip
 					  bezeichnung:: abgeleitet von hier [link](((6735b379-187a-4654-8126-efd8a322477b)))
+					  collapsed:: true
 						- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
 						- $H$ ... magnetsiche feldstärke $\mathrm{\left[ \frac{A}{m} \right]}$
 						- $E$ ... elektrische feldstärke $\mathrm{\left[ \frac{V}{s} \right]}$
 					- ((67360de7-70f6-457a-b7e1-e13b553b5d80))
 			- c) Berechnen Sie die Elliptizität der reﬂektierten und der transmittierten Welle in $\mathrm{dB}$!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((67360dd7-52ba-4a90-a63b-ad4871a896af))
 			- [📚 2024-11-18 17h41m.xopp](../assets/documents/2024-11-18 17h41m.xopp)
 			- ![📚 2024-11-18 17h41m_annotated.pdf](../assets/documents/2024-11-18 17h41m_annotated.pdf)
 		- Variante 3) Ein Lichtstrahl der Sonne (unpolarisiert, aber TM, TE gleich stark) fällt zu später Stunde ($\Theta_e = 75°$) auf einen See ($n_2 = 1.33$). An der glatten Wasseroberﬂäche wird er reﬂektiert. Zwei Fotografen fotograﬁeren diese Landschaft. Der zweite verwendet ein ideales Polarisationsﬁlter um die Reﬂexion der Sonne im Wasser zu unterdrücken.
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/WA_vakuum_glas_bsp.webp)
 			- {{evalpage}}
 			- a) Wie groß ist die (gesamte) reﬂektierte Lichtleistung im Verhältnis zur eingestrahlten (in $\mathrm{dB}$)? Zeichnen Sie alle verwendeten Winkel ein.
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- $\Theta_i = \Theta_r$
 					  tags:: formel
 					  bezeichnung:: Reflektions gesetz
+					  collapsed:: true
 						- $\Theta_i$ ... einfallswinkel (***i***nbound) $\mathrm{[°]}$
 						- $\Theta_r$ ... reflektionswinkel (***r***eflected) $\mathrm{[°]}$
 					- ((6734720f-e42f-46c0-a512-3075ea423042))
@@ -114,8 +140,10 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- ((6735b379-5292-4604-baef-85a4c9a6fc3f))
 					- ((6735b379-9a02-48b3-997c-2ecd856cb257))
 				- code
+				  collapsed:: true
 					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  n1 = 1
@@ -128,7 +156,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  gammaTE = (( n1 * cos(theta1) - n2 * cos(theta2) ) /
@@ -139,7 +168,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  gammaTM = (( n2*cos(theta1)-n1*cos(theta2) ) /
 					             ( n2*cos(theta1)+n1*cos(theta2) ))
@@ -147,7 +177,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  R = round(10 * log10((gammaTE**2+gammaTM**2)/2),3)
 					  "R: " + str(R) + " dB"
@@ -158,9 +189,12 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- b) Wie gut kann das ideal eingesetzte Polarisationsﬁlter des zweiten Fotografen die Reﬂexion im Vergleich zum ersten Fotografen unterdrücken (in $\mathrm{dB}$)?
 			  background-color:: green
+			  collapsed:: true
 				- es geht hierbei darum, dass ein filter verwendet wird welches den TM oder TE anteil filtert
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # gammaTM = 0
@@ -169,7 +203,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # gammaTE = 0
@@ -178,7 +213,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # R_TE negativer
@@ -190,11 +226,14 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-11-20 19h04m_annotated.pdf](../assets/documents/2024-11-20 19h04m_annotated.pdf)
 	- Stehende Welle im verlustbehafteten Medium
 	  background-color:: green
+	  collapsed:: true
 		- Eine sich im [verlustbehafteten Medium](((6740c4fa-4d26-4310-b196-321b7391feb6))) (z.B.: trockener Erdboden) ausbreitende ebene Welle mit $f = \mathrm{20~MHz}$ wird von einer auf die Ausbreitungsrichtung senkrecht stehenden [metallischen Wand mit unendlicher Leitfähigkeit](((67405634-4634-4d0d-b586-6a52b1bb7c75))) reﬂektiert (siehe Abbildung). Die Amplitude der einfallenden Welle bei $z = 0$ beträgt $\mathrm{5~V/m}$.
 		  background-color:: green
+		  collapsed:: true
 		  Hinweis: $\varepsilon_0 = \mathrm{8,854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
 		  ![img](../assets/documents/WA_stehende_welle_wand_bsp1.webp)
 			- skript
+			  collapsed:: true
 				- ((67405657-2347-4d8b-93f5-98a6b52c836c))
 				  id:: 67405634-4634-4d0d-b586-6a52b1bb7c75
 				- ((6740c51b-b09e-4b73-b018-e2d77efe468b))
@@ -202,11 +241,15 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- {{evalpage}}
 			- a) Wie groß ist die Phasengeschwindigkeit $v_P$?
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((673e3379-4b5b-475a-91a4-08da8e21eb58))
 				- code
+				  collapsed:: true
 					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  epsr = 7
@@ -219,14 +262,18 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- b) Setzten Sie die einfallende Welle an ($E_e$ und $H_e$) und berechnen Sie die Wellenzahl $k_e$. Wie groß ist die Dämpfung in $\mathrm{dB/m}$
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((67404a07-268a-4632-b86f-c136cdfaf0eb))
 					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
 					- ((673e3379-65ec-4bba-988b-f6a5d8499e68)) [FS](((6745a2d1-96eb-4141-93fd-4c8e10df8d94)))
 					- ((674496c6-ef08-4cfe-8444-ef86aadf0f47)) [FS](((6740c68b-e124-4f93-b1f1-9c8be879951c)))
 					- ((67459ac7-d3b4-47bf-9ac5-0379a5e2e1e8)) [FS](((673e3379-64cb-4d50-98c9-668f6b9fd3fd)))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  mu = mur * mu_0
@@ -238,7 +285,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # bei z = 0
@@ -256,7 +304,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  D = 20 * log10(E0 / (E0 * e**-alpha))
@@ -268,12 +317,16 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- ich weiß leider nicht warum man genau die Dämpfung so ausrechnet und warum man genau $\alpha$ verwendet #wip
 			- c) Berechnen Sie die komplexe Amplitude und den zeitlichen Verlauf der einfallenden Welle am Ort der metallischen Wand $z_0 = \mathrm{8~m}$!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
 					- ((673e3379-9e8e-4059-b99e-e764c678fa51))
 					- ((673e3379-54d5-49f8-b0db-18b82bf799c4))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  z0 = 8
@@ -285,7 +338,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  T = 1/f
 					  t = linspace(0, 2*T , 500)  # Generate 500 points between 0 and 4π
@@ -303,19 +357,24 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- d) Finden Sie einen Ansatz für die reﬂektierte Welle ($E_r$ und $H_r$)! Wie muss der zeitliche Verlauf der reﬂektierten Welle aussehen, damit die Randbedingungen erfüllt sind?
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((67459ac8-e918-4a08-8003-07057ff681d6))
 					- ((6745a3c5-baa9-4655-ac6f-92348bdacfc0))
 					- $E_{r}=Ae^{jk_{z}\left(z_0-z\right)}$
 					  tags:: formel
 					  bezeichnung:: ansatz für die reflektierte/rücklaufende welle
+					  collapsed:: true
 						- $E_r$ ... reflektierte/rücklaufende welle des [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
 						- $A$ ... anfangs amplitude der reflektierten welle. entspricht der einfallenden welle $\mathrm{\left[ \frac{V}{m} \right]}$
 						- $k_z$ ... [[komplexe]] [[wellenzahl]] $\mathrm{\left[ \frac{rad}{m} \right]}$
 						- $z$ ... entfernung in ausbreitungsrichtung (hier $z$-Achse) $\mathrm{\left[ m \right]}$
 						- $z_0$ ... entfernung zur stelle an der die reflexion stattfindet $\mathrm{\left[ m \right]}$
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  t = sp.symbols('t')
 					  z = sp.symbols('z', real=True)
@@ -360,15 +419,21 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				- verstehe das beispiel nicht. da ist was an der reflektierten welle falsch
 			- e) Berechnen Sie die Hüllkurve des Gesamtfeldes
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- $|E_{ges}|^2 = \vect{E}(z) \cdot \vect{E}^*(z)$
 					  tags:: formel
 					  bezeichnung:: analyse der hüllkurve des [elektrischen gesamtfeldes]([[elektrisches feld]])
+					  collapsed:: true
 						- $|E_{ges}|^2$ ... betrags quadrat des gesamten [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
 						- $\vect{E}(z)$ ... [[komplexe]] amplitude des [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
 				- code
+				  collapsed:: true
 					- meine lösung
-						- ```python
+					  collapsed:: true
+						- collapsed:: true
+						  ```python
 						  printer.seek(0); printer.truncate(0)
 						  
 						  # meine lösung
@@ -390,7 +455,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						  ```
 							- {{evalparent}}
 							- $E_{0}^{2} \cdot \left(1 - e^{\left(2 z - z_{0}\right) \left(α - 1.0 i β\right)}\right) \left(1 - e^{\left(2 z - z_{0}\right) \left(α + 1.0 i β\right)}\right) e^{- 2 z α}$
-						- ```python
+						- collapsed:: true
+						  ```python
 						  printer.seek(0); printer.truncate(0)
 						  
 						  # plot
@@ -416,7 +482,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						  ```
 							- {{evalparent}}
 					- ausarbeitung
-						- ```python
+					  collapsed:: true
+						- collapsed:: true
+						  ```python
 						  printer.seek(0); printer.truncate(0)
 						  # lösung aus ausarbeitung
 						  Eabs_s  =E0_s**2 * (sp.exp(-2 * a_s * z_s) + \
@@ -428,7 +496,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						  ```
 							- {{evalparent}}
 							- $E_{0}^{2} \left(e^{- 2 α \left(- z + z_{0}\right)} - 2 e^{- 2 z_{0} α} \cos{\left(2 β \left(- z + z_{0}\right) \right)} + e^{- 2 z α}\right)$
-						- ```python
+						- collapsed:: true
+						  ```python
 						  printer.seek(0); printer.truncate(0)
 						  # plot
 						  # bei z = z0
@@ -456,13 +525,17 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-11-21 18h45m_annotated.pdf](../assets/documents/2024-11-21 18h45m_annotated.pdf)
 	- Rechteckhohlleiter
 	  background-color:: green
+	  collapsed:: true
 		- TODO this
 		- Variante 1) Untersuchen Sie die Ausbreitung von $\mathrm{TE}_{m,n}$ Wellen in $z$ Richtung im skizzierten Rechteckhohlleiter.
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/WA_rechteckhohlleiter_bsp_1.webp)
 			- Finden Sie einen geeigneten Ansatz für die Komponenten der gewünschten Moden in Ausbreitungsrichtung, der die Wellengleichung erfüllt. Ermitteln Sie die Separationsbedingungen.
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					-
 				- code
 			- Leiten Sie daraus die restlichen Feldkomponenten her und passen Sie an den Rand an! Welche Komponenten verschwinden?
@@ -479,18 +552,24 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  background-color:: green
 	- Hohlraumresonator
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1) Berechnen Sie den Grundmodus $\mathrm{TE_{101}}$ eines luftgefüllten ($\varepsilon_r = 1$) Hohlraumresonators (Abmessungen: $a = 4\mathrm{cm}$, $b = 2\mathrm{cm}$, $c = 4\mathrm{cm}$) mit $\mathbb{R}_M = 20\mathrm{m\Omega}$.
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/Wa_hohlraumresonator_bsp_1.webp)
 			- a) Berechnen Sie die Resonanzfrequenz!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6745a3c5-c443-4fb4-bbea-b455958f827a))
 					- ((673e3379-4b5b-475a-91a4-08da8e21eb58))
 					- ((674b703d-c8a8-4814-8c70-f8289a9b6bdf))
 				- code
+				  collapsed:: true
 					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # angabe
@@ -517,10 +596,14 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- b) Berechnen Sie die unbelastetet Güte! Vereinfachen Sie zuerst die Formel unter der Berücksichtigung $a = c$! Setzen Sie dann Zahlenwerte ein!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6745a3c5-66f7-450b-94fe-f6068dde589d))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  Rm_s, a_s, b_s, c_s, eta_s = sp.symbols('R_m a b c eta', 
@@ -552,18 +635,23 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 						- $\frac{\pi b \eta \left(a^{2} + c^{2}\right)^{\frac{3}{2}}}{2 Rm \left(a c \left(a^{2} + c^{2}\right) + 2 b \left(a^{3} + c^{3}\right)\right)}$
 						- $\frac{\sqrt{2} \pi b \eta}{2 R_{m} \left(a + 2 b\right)}$
-					- ```python
+					- collapsed:: true
+					  ```python
 					  Q0_s_sim.subs(a_s, a).subs(b_s,b).subs(Rm_s, Rm).subs(eta_s, eta).evalf(n=5)
 					  ```
 						- {{evalparent}}
 			- c) Berechnen Sie die Resonanzfrequenz und die unbelastete Güte, wenn der Hohlraumresonator mit einem verlustlosen Dielektrikum $\varepsilon_r = 2.5$ gefüllt ist!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6745a3c5-c443-4fb4-bbea-b455958f827a))
 					- ((6745a3c5-66f7-450b-94fe-f6068dde589d))
 					- ((673c4eb2-5827-434c-a323-0ff29f347504))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # resonanzfrequenz
@@ -578,7 +666,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # unbelastete güte
@@ -596,16 +685,21 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 		- Variante 2) Berechnen Sie den Grundmodus $\mathrm{TE_{101}}$ eines luftgefüllten ($\varepsilon_r = 1$) Hohlraumresonators (Abmessungen: $a = 2b=c$, $\mathbb{R}_M = 30\mathrm{m\Omega}$).
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/Wa_hohlraumresonator_bsp_1.webp)
 			- a) Berechnen Sie die Abmessungen $a, b, c$ für eine Resonanzfrequenz von $20 \mathrm{GHz}$!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6745a3c5-c443-4fb4-bbea-b455958f827a))
 					- ((673e3379-4b5b-475a-91a4-08da8e21eb58))
 					- ((674b703d-c8a8-4814-8c70-f8289a9b6bdf))
 				- code
+				  collapsed:: true
 					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # angabe
@@ -653,10 +747,14 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- b) Berechnen Sie die unbelastetet Güte! Vereinfachen Sie zuerst die Formel unter der Berücksichtigung $a = 2b = c$!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6745a3c5-66f7-450b-94fe-f6068dde589d))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  eta_s = sp.symbols('eta', real=True, positive=True)
@@ -678,7 +776,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 						- $\frac{\pi b \eta \left(a^{2} + c^{2}\right)^{\frac{3}{2}}}{2 Rm \left(a c \left(a^{2} + c^{2}\right) + 2 b \left(a^{3} + c^{3}\right)\right)}$
 						- $\frac{\sqrt{2} \pi \eta}{8 R_{m}}$
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  eta = sqrt(mu/eps)
@@ -690,12 +789,16 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- c) Berechnen Sie die relative Dielektrizitätskonstante und die unbelastete [[Güte]], wenn der Hohlraumresonator mit einem verlustlosen Dielektrikum gefüllt ist, um die Resonanzfrequenz auf $15 \mathrm{GHz}$ zu reduzieren!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6745a3c5-c443-4fb4-bbea-b455958f827a))
 					- ((6745a3c5-66f7-450b-94fe-f6068dde589d))
 					- ((673c4eb2-5827-434c-a323-0ff29f347504))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # dielektrizitätskonstante
@@ -725,7 +828,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # unbelastete güte
@@ -746,16 +850,22 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-12-01 16h11m_annotated.pdf](../assets/documents/2024-12-01 16h11m_annotated.pdf)
 	- [[Koaxialkabel]]
 	  background-color:: green
+	  collapsed:: true
 		- Variante 1)
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp)
 			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 60 \mathrm{\Omega}$. Der Außenradius sei $r_a = 8.5 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 1$.
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6745a3c5-c563-4874-8d5b-50fee6812aea))
 				- code
+				  collapsed:: true
 					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # angabe
@@ -788,13 +898,17 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- $r_{a} e^{- \frac{376.991118430776}{\eta}}$
 			- b) Die Innen- bzw. Außenleiter bestehen aus Kupfer mit $\sigma = 57 \cdot 10^6 \mathrm{S/m}$. Wie groß ist die Eindringtiefe bei $f = 5 \mathrm{GHz}$? Berechnen Sie die ohmschen Verluste des Kabels in $\mathrm{dB/m}$.
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((674d7759-c315-4a22-a755-be7a35c4b441))
 					- ((674d7759-1d40-46b8-9d39-cbf868cd298e))
 					- ((674d7759-4a7e-4220-b396-27bd49ccaa45))
 					- ((674de501-a2a9-4e7a-8a81-892354262c7e))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  sig = 57E6
@@ -805,7 +919,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  R = (sqrt((w * mu)/(2 * sig))*
 					       1 / (2 * pi) * (1 / ri + 1 / ra))
@@ -819,11 +934,15 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- c) Ein Ende der Koaxialleitung wird mit Hilfe einer kreisförmigen Scheibe aus Graphit abgeschlossen. Die Scheibe habe ein $R_\square  = 120\pi \mathrm{\Omega}$. Welchen ohmschen Widerstand hat die kreisförmige Scheibe für eine einfallende $\mathrm{TEM}$ Welle?
 			  background-color:: green
+			  collapsed:: true
 				- ![img](../assets/documents/WA_koaxleitung_abschluss_illustration.webp)
 				- formeln
+				  collapsed:: true
 					- ((674d7759-2399-4628-94f1-400ee5be7c0e))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  Rsq = 120*pi
 					  r_s = sp.symbols('r', positive=True, real=True)
@@ -834,16 +953,22 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- d) Wie groß ist der Reﬂexionsfaktor am Ende der Koaxialleitung auf Grund des Abschlusswidertandes der kreisförmigen Scheibe? In welchem Frequenzbereich gilt dieser Reﬂexionsfaktor?
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- $\rho_{A} = \frac{R_{A}-Z_{L}}{R_{A}+Z_{L}}$
 					  tags:: formel
 					  bezeichnung:: reflexionsfaktor am ende einer [[koaxialleitung]]
+					  collapsed:: true
 						- $R_A$ ... Abschlusswiderstrand $\mathrm{\left[\Omega\right]}$
 						- $Z_L$ ... leitungsimpedanz $\mathrm{\left[\Omega\right]}$
 						- skript
+						  collapsed:: true
 							- ((674ec847-fd7d-4084-915e-8421e8671ad5))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  RA = R # wert der vorher berechnet wurde
 					  rA = (RA-ZL)/(RA+ZL)
@@ -854,14 +979,19 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- es ist schwierig den frequenzbereich abzuschätzen, da $R_A$ und $Z_L$ von der frequenz abhängen
 		- Variante 2)
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp)
 			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 50 \mathrm{\Omega}$. Der Außenradius sei $r_a = 7.3 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 2.35$.
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6745a3c5-c563-4874-8d5b-50fee6812aea))
 				- code
+				  collapsed:: true
 					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # angabe
@@ -895,12 +1025,16 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- $r_{a} e^{- \frac{314.15926535898}{\eta}}$
 			- b) Berechnen Sie die ohmschen Verluste $\alpha_R$ des Kabels für eine Leitfähigkeit des Innen- bzw. Außenleiters von $\sigma=5.7\cdot10^7\mathrm{S/m}$ bei $8\mathrm{GHz}$ in $\mathrm{dB/m}$.
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((674d7759-1d40-46b8-9d39-cbf868cd298e))
 					- ((674d7759-4a7e-4220-b396-27bd49ccaa45))
 					- ((674de501-a2a9-4e7a-8a81-892354262c7e))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  sig = 57E6
 					  f = 8E9
@@ -918,10 +1052,14 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- c) Berechnen Sie die dielektrischen Verluste $\alpha_G$ des Kabels für ein Dielektrikum mit $\tan\delta = 0.001 \mathrm{dB/m}$ in $\mathrm{dB/m}$.
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((674d7759-056e-4bac-998e-f2bccdc83035))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  tand= 0.001
@@ -935,14 +1073,19 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 		- Variante 3)
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/WA_koaxialkabel_bsp_1.webp) ![img](../assets/documents/WA_rechteckhohlleiter_bsp_1.webp)
 			- a) Bestimmen Sie einen geeigneten Innenradius $r_i$ des abgebildeten Koaxialkabels für $Z_L = 50 \mathrm{\Omega}$. Der Außenradius sei $r_a = 6.3 \mathrm{mm}$, das verwendete Dielektrikum sei Luft mit $\varepsilon_r = 2.25$.
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6745a3c5-c563-4874-8d5b-50fee6812aea))
 				- code
+				  collapsed:: true
 					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  # angabe
@@ -976,12 +1119,16 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- $r_{a} e^{- \frac{314.15926535898}{\eta}}$
 			- b) Berechnen Sie die ohmschen Verluste $\alpha_R$ des Kabels für eine Leitfähigkeit des Innen- bzw. Außenleiters von $\sigma=5.7\cdot10^7\mathrm{S/m}$ bei $10\mathrm{GHz}$ in $\mathrm{dB/m}$.
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((674d7759-1d40-46b8-9d39-cbf868cd298e))
 					- ((674d7759-4a7e-4220-b396-27bd49ccaa45))
 					- ((674de501-a2a9-4e7a-8a81-892354262c7e))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  sig = 57E6
 					  f = 10E9
@@ -999,10 +1146,14 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- c) Berechnen Sie die dielektrischen Verluste $\alpha_G$ des Kabels für ein Dielektrikum mit $\tan\delta = 0.001 \mathrm{dB/m}$ in $\mathrm{dB/m}$.
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((674d7759-056e-4bac-998e-f2bccdc83035))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  tand= 0.001
@@ -1016,12 +1167,15 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- d) Berechnen Sie mittels der Power-Loss-Method den Dämpfungskoefﬁzienten des abgebildeten Rechteckhohlleiters mit den Abmessungen $a = 22.86 \mathrm{mm}$ und $b = 10.16 \mathrm{mm}$ bei $10 \mathrm{GHz}$ (Grundmodus $\mathrm{TE}_{10}$) in $\mathrm{dB/m}$. Erklären Sie dabei Ihre Vorgehensweise. Das Metall sei durch $\sigma = 5.7 \cdot 10^7 \mathrm{S/m}$ charakterisiert. Bei der gesuchten Ausbreitung in $z$-Richtung lauten die Feldkomponenten: $\\ E_x = 0 \\ E_{y}=-\frac{j\omega\mu}{\pi}a A \sin\left(\frac{\pi}{a}x\right)e^{-j k_{z}z} \\ E_z=0 \\ H_{x}=\frac{j k_{z}}{\pi}a A \sin\left(\frac{\pi}{a}x\right)e^{-j k_{z}z} \\ H_y = 0 \\ H_{z} = A \cos \left( \frac{\pi}{a}x \right) e^{-j k_{z}z}$
 			  background-color:: green
+			  collapsed:: true
 				- TODO this
 	- Dielektrische Platte
 	  background-color:: green
+	  collapsed:: true
 		- TODO this
 		- Berechnen Sie die Ausbreitungseigenschaften der $\mathrm{H}_{10}$-ähnlichen Grundwelle (siehe Rechteckhohlleiter), die von einer in $y$- und $z$-Richtung unbegrenzten und in $x$-Richtung $2d$ dicken dielektrischen Platte (Raum 1) geführt wird (Raum 2 ist Luft)!
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/WA_dielektrische_platte_bsp_1.webp)
 			- a) Finden Sie einen Ansatz für die Komponenten des elektromagnetischen Feldes in Ausbreitungsrichtung (positive $z$-Richtung) $E_{z1}$, $E_{z2}$, $H_{z1}$ und $H_{z2}$ der die Wellengleichung erfüllt und geben Sie die Separationsbedingungen an! Nutzen Sie die Symmetrie der Platte und berücksichtigen Sie nur $x > −d$!
 			  background-color:: green
@@ -1033,46 +1187,61 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			  background-color:: green
 	- Dielektrischer Wellenleiter
 	  background-color:: green
+	  collapsed:: true
 		- Gegeben sei ein dielektrischer Wellenleiter der Dicke $d = 1\mathrm{cm}$ mit einer relativen Permittivität von $\varepsilon_2 = 2.26$. Oberhalb des Wellenleiters beﬁnde sich Luft ($\varepsilon_3 = 1$), unterhalb ein idealer Leiter. Es breite sich eine Welle in $z$-Richtung aus!
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/WA_dielektrischer_wellenleiter_bsp_1.webp)
 			- a) Finden Sie den minimalen Ansatz für $\mathrm{TE}$-Wellen! Benennen Sie alle Terme!
 			  background-color:: green
+			  collapsed:: true
 				- skript
+				  collapsed:: true
 					- ((67508335-6d86-4e15-a41a-550561c07696))
 				- formeln
+				  collapsed:: true
 					- $H_{z1}=A_{1}~\mathrm{cos}\left(k_{x1}x\right)e^{-j k_{z}z} \\ H_{z2}=A_{2}~e^{-k_{x2}(x-d)}~e^{-j k_{z}z}$
 					  tags:: formel, wellenausbreitung
 					  bezeichnung:: ansatz für die $\mathrm{TE}$-welle in einem ebenen wellenleiter
 					  id:: 67508103-1a02-4819-8b68-7d3d9cf8f041
+					  collapsed:: true
 						- $H_{z1}, H_{z2}$ ... magnetische feldstärkekomponente in medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
 						- $A_1, A_2$ ... amplitude in medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
 						- $k_{x1}, k_{x2}$ ... [[wellenzahl]] in medium 1 bzw 2 $\mathrm{\left[\frac{rad}{m}\right]}$
 						- $z$ ... ausbreitungsrichtung $\mathrm{\left[m\right]}$
 						- $d$ ... [[eindringtiefe]] $\mathrm{\left[m\right]}$
 						- skript
+						  collapsed:: true
 							- ((675090f8-65ba-412b-8543-a560d7644e48))
 				- code
 				  id:: 67517609-f23a-458d-a213-d605769b4963
 				- medium 2
+				  collapsed:: true
 					- da in $x$-richtung stehende wellen anzunehmen sind wird $\cos$ oder $\sin$ angestzt. da am metall die randbedingung $E_{tang}$ erfüllt sein muss ([link](((67459ac8-e918-4a08-8003-07057ff681d6)))), wird ein $\cos$ angesetzt
 				- medium 3
+				  collapsed:: true
 					- in $x$-richtung dissipiert die welle mit einer $e$ potenz
 			- b) Berechnen Sie die Separationsbedingungen und berechnen Sie die restlichen Feldkomponenten!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((6750988d-c460-4ec0-8652-1b15a9976b66))
 					- $k_{x1}^{2}+k_{z}^{2} = k_1^2 = \omega^{2} \varepsilon_{1} \mu_{0} \\ -k_{x2}^{2} + k_{z}^{2} = k_2^2 = \omega^{2} \varepsilon_{2} \mu_{0}$
 					  tags:: formel, wip
 					  bezeichnung:: separationsbedingung für [[dielektrische wellenleiter]] [link](((674d7759-0e35-482f-8086-9026be01cd14)))
 					  id:: 67509364-eaba-40b7-bcaa-fc7c23e9954a
+					  collapsed:: true
 						- $-$ ...
 						- skript
+						  collapsed:: true
 							- ((67517642-4ec8-4409-ade6-cc8d78118a1e))
 					- ((67508103-1a02-4819-8b68-7d3d9cf8f041))
 				- code
+				  collapsed:: true
 					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  A2, kappa2, kx2, ky2, kz, k2, \
@@ -1129,7 +1298,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  A3, kappa3, kx3, ky3, k3, \
@@ -1184,19 +1354,25 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- c) Finden Sie die Randbedingungen!
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((67459ac8-e918-4a08-8003-07057ff681d6))
 					- $E_{\mathrm{tang1}} = E_{\mathrm{tang2}} \\ H_{\mathrm{tang1}} = H_{\mathrm{tang2}}$
 					  tags:: formel
 					  bezeichnung:: randbedingungen für den übergang einer welle an einer grenzfläche zwischen dielektrika
+					  collapsed:: true
 						- $E_{\mathrm{tang1}},E_{\mathrm{tang2}}$ ... tangential komponente des [[elektrischen feldes]] im medium 1 bzw 2 $\mathrm{\left[\frac{V}{m}\right]}$
 						- $H_{\mathrm{tang1}},H_{\mathrm{tang2}}$ ... tangential komponente des [[magnetischen feldes]] im medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
 						- skript
+						  collapsed:: true
 							- ((6751d667-3181-4b73-87e6-9e864f549a9c))
 							- ((6751d67e-65ca-4200-97c6-6e1dbfc841a2))
 					- ((67508103-1a02-4819-8b68-7d3d9cf8f041))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  # randbedingung für x = d
 					  Ety2, Ety3, Hty2, Hty3, \
@@ -1231,13 +1407,18 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- d) Bestimmen Sie die Dispersionsgleichung und die Grenzfrequenzen der ersten drei Moden! Skizzieren Sie das Dispersionsdiagramm!
 			  background-color:: green
+			  collapsed:: true
 				- skript
+				  collapsed:: true
 					- ((675330c9-5692-476c-ab43-c0f8c7614a54))
 				- formeln
+				  collapsed:: true
 					- ((674d7759-f065-41be-aa7b-2bb81097b152))
 					- ((67509364-eaba-40b7-bcaa-fc7c23e9954a))
 				- code
-					- ```python
+				  collapsed:: true
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  d_n = 1E-2
 					  epsr2 = 2.26
@@ -1273,7 +1454,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
-					- ```python
+					- collapsed:: true
+					  ```python
 					  printer.seek(0); printer.truncate(0)
 					  
 					  w_n = linspace(0, 
@@ -1326,7 +1508,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  ![img](../assets/documents/WA_parallelplattenleitung_bsp_1.webp)
 			- a) Berechnen Sie die Komponenten der gefragten Moden, ﬁnden Sie einen Ansatz der die Wellengleichung erfüllt, ermitteln Sie die Separationsbedingungen und passen Sie an den Rand an! Verwenden Sie dabei die Näherung $w \gg d$. Welche Komponenten verschwinden?
 			  background-color:: green
+			  collapsed:: true
 				- formeln
+				  collapsed:: true
 					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
 					- ((6735b379-187a-4654-8126-efd8a322477b))
 					- ((67403e6c-c82c-4ada-a67e-ba11b41ebcc8)) [FS](((67404a07-268a-4632-b86f-c136cdfaf0eb)))
@@ -1334,15 +1518,22 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- b) Berechnen Sie den Mediumswiderstand, den Leitungswellenwiderstand und die [[grenzfrequenz]] des gefragten Modus für $w = 12 \mathrm{mm}$, $d = 3 \mathrm{mm}$! Geben Sie alle zur Berechnung notwendigen Schritte an!
 			  background-color:: green
 				- formeln
+					- $d \text{\textemdash} d$
+					- $\ftt$
+					- $\circ\hspace{-.4em} - \hspace{-.4em} - \hspace{-.2em}\bullet$
 				- code
 			- c) Berechnen Sie mittels der Power Loss Method den Dämpfungskoeﬃzienten für den gefragten Modus in $\mathrm{dB/m}$. Das Metall sei durch $\sigma_{Cu} = 48 \cdot 10^6 \mathrm{S/m}$ charakterisiert, die Frequenz sei $7 \mathrm{GHz}$. Geben Sie alle zur Berechnung notwendigen Schritte an!
 			  background-color:: green
 			- d) Zeichnen Sie die tatsächlichen Feldbilder ohne Verwendung der Näherung $w \gg d$ in zwei Ansichten! Welche Wellentypen sind prinzipiell auf dieser Leitung ausbreitungsfähig?
 			  background-color:: green
+			  collapsed:: true
 				- ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_1.webp) ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_2.webp)
 - ## flashcards
+  collapsed:: true
 	- ### index
+	  collapsed:: true
 		- query-table:: true
+		  collapsed:: true
 		  #+BEGIN_QUERY
 		  {
 		  :title [:b "all flashcards"]
@@ -1364,6 +1555,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  #+END_QUERY
 		- query-table:: true
 		  query-properties:: [:block :tags]
+		  collapsed:: true
 		  #+BEGIN_QUERY
 		  {
 		  :title [:b "all flashcards defined here"]
@@ -1384,37 +1576,47 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 	- wie lautet der ansatz für die $\mathrm{TE}$-welle in einem ebenen wellenleiter
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  collapsed:: true
 		- ((67508103-1a02-4819-8b68-7d3d9cf8f041))
 	- wie lautet die separationsbedingung für [[dielektrische wellenleiter]]?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  collapsed:: true
 		- ((67509364-eaba-40b7-bcaa-fc7c23e9954a))
 	- wofür stehen $\mathrm{TM}$, $\mathrm{TE}$ und $\mathrm{TEM}$?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  collapsed:: true
 		- $\mathrm{TM}$
+		  collapsed:: true
 			- ***T***ransversal ***M***agnetische Welle
 			- $H_z=0$ also der magnetische feldstärke vektor ist komplett transversal ($90°$) zur ausbreitungsrichtung (hier $z$)
 		- $\mathrm{TE}$
+		  collapsed:: true
 			- ***T***ransversal ***E***lektrische Welle
 			- $E_z=0$ also der elektrische feldstärke vektor ist komplett transversal ($90°$) zur ausbreitungsrichtung (hier $z$)
 		- $\mathrm{TEM}$
+		  collapsed:: true
 			- ***T***ransversal ***E***lektro-***M***agnetische Welle
 			- $H_z = E_z = 0$ also der magnetische und elektrische feldstärke vektor ist komplett transversal ($90°$) zur ausbreitungsrichtung (hier $z$)
 	- wie teilt sich die leistung einer welle bei zirkular polarisierten wellen auf?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  collapsed:: true
 		- die $\mathrm{TE}$ und $\mathrm{TM}$ Wellen haben die gleiche leistung
 		- ((675ac3d6-3993-4c69-a300-cc0df932374a))
 	- welcher faktor ($\Gamma_{\mathrm{TM}},~\Gamma_{\mathrm{TE}}, ~T_{\mathrm{TM}},~T_{\mathrm{TE}}$) ist unter einfall des [[brewster winkels]] gleich $0$?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  collapsed:: true
 		- $\Gamma_{\mathrm{TM}}$
 	- was beschreibt eine mode?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  collapsed:: true
 		- eine mode beschreibt die gestalt der felder
 	- was ist die günstigste form eines quaderförmigen hohlraum resonators?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  collapsed:: true
 		- wenn man das größte volumen bei kleinstmöglicher oberfläche hat, also $a=b=c$

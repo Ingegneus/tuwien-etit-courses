@@ -6,7 +6,7 @@ alias:: automatisierung, automatisierungs
 
 - [📁 folder](file://C:\Users\Matteo\Documents\Uni\Automatisierung)
 - ## vorlesungen
-	- ![📚 2020_Gesamtskriptum.pdf](file://C:\Users\Matteo\Documents\Uni\Automatisierung\willi\01_Vorlesung\2020_Gesamtskriptum.pdf)
+	- ![📚 2020_Gesamtskriptum.pdf](.\assets\uni-unterlagen\Automatisierungstechnik\2020_Gesamtskriptum.pdf)
 	- [[aut vo temp]]
 - ## beispiele
 	- [UE1](((670d389a-4eef-4ce3-b96d-45d619392212)))

@@ -3,8 +3,7 @@ tags:: wellenausbreitung
 
 - ## vorlesungen
 	- 1 Einleitung
-	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\1 Einleitung.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\1 Einleitung.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Willkommen allseits noch einmal zur Wellenausbreitungsvorlesung. Ich werde selber den Vorlesungsteil machen. Mein Name ist Christoph Mecklenbräuger und der Übungsteil wird von Herbert Groll im Wesentlichen in Form von vorgerechneten Übungsbeispielen vorgetragen. Ich hoffe, wir sehen und hören uns immer dienstags und donnerstags, wie hier am Merkblatt sichtbar und die Übungstermine finden unregelmäßig statt, aber werden im Vorab über TIS und natürlich auch in der Vorlesung angekündigt.
 			- {{renderer :media-timestamp, 00:00:43}} Das Skriptum Wellenausbreitung ist erhältlich im grafischen Zentrum und es gibt eine 2020er Neuauflage, die in weiten Teilen identisch ist mit den früheren Jahren.
 			- {{renderer :media-timestamp, 00:01:05}} Es gibt halt Nachbesserungen, Ausbesserungen von Tippfehlern, aber keine wesentlichen Stoffänderungen in den letzten zwei, drei Jahren. Wir bitten euch, diese Vorlesung im TIS zu abonnieren, wie man sagt. Ja, also zu euren Favoriten dazu zählen heißt das, glaube ich.
@@ -116,7 +115,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:54:02}} und dieselben Operationen, die auch von Maxwells ursprünglicher Gleichungen ausgehen. So um 1950 herum hat man es noch einmal neu geschrieben, ist nur eine andere mathematische Darstellung, der Inhalt und der Lösungscharakter bleibt derselben. Gut, ich glaube, das ist ein guter Schlusspunkt für heute.
 	- 2 Maxwellsche Theorie
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\2 Maxwellsche Theorie.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\2 Maxwellsche Theorie.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Schönen guten Morgen allseits. Willkommen zurück zur Wellenausbreitung. Herbert und ich heißen euch willkommen. Bevor ich mit Kapitel 2 anfange, möchte ich noch einen Nachtrag zu Kapitel 1 bringen. Und das betrifft hier Details zur Folie Vergleich Leitungen und Freiraumausbreitung. Einerseits die grüne Bemerkung auf der Folie rechts unten. Ich habe also gesagt, die Leistung, die von einer Antenne in den Freiraum abgestrahlt wird, die verdünnt sich auf immer größer werdende Kugelschalen.
 			- {{renderer :media-timestamp, 00:00:47}} Man spricht hier von einer omnidirektionalen Antenne oder in wissenschaftlichem Jargon von einem Isotropstrahler, also eine strahlende Quelle, die in alle Richtungen des Raumes gleich viel Leistungsdichte emittiert.
 			- {{renderer :media-timestamp, 00:01:10}} Das ist eine mathematische Idealisierung. So ein Isotropstrahler, der existiert zwar zum Beispiel für akustische Wellen, aber nicht für elektromagnetische Wellen. Vielleicht eine Frage in die Runde. Weiß jemand, warum dieser Isotropstrahler, der also eine elektromagnetische Welle als Kugelwelle gleichmäßig isotrop in alle Raumrichtungen ausstrahlt, elektromagnetisch nicht existieren kann?
@@ -256,7 +255,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:08:08}} das ist das Oberflächenintegral über den Pointing Vector plus die elektrischen Verluste, die diszipierte Leistung. Abnahme der elektromagnetischen Energie muss immer gleich sein, Abstrahlung plus Dissipation. Ich glaube, das ist ein guter Punkt, um die Vorlesung für heute zu beenden.
 	- 2.3 Poyntingscher Satz
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\2.3 Poyntingscher Satz.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\2.3 Poyntingscher Satz.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Schönen guten Morgen, allseits willkommen zur Wellenausbreitung. Heute ist der 8. Oktober und wir wollen heute gleich mal mit einem Vorführung von einem Ding der Woche beginnen. Herbert erklärt Alkoaxialkabel. an einem Kabel passiert, die Hand von der Wehnausbreitung, von der elektronischen Welle. Das ist ein kauxialer Kabel. Das kauxialer Kabel besteht aus einem Ausleiter und einem Innenleiter, die konzentrisch angeordnet sind. Und zwischen dem Ausleiter und dem Innenleiter ist das Dielektrikum. Das Dielektrikum ist eigentlich der Bereich, wo die Welle geführt wird.
 			- {{renderer :media-timestamp, 00:00:52}} Und das Dilektikum ist maßgeblich dafür, wie stark - ein Faktor dafür, wie stark die Dämpfung auf der Leitung ist.
 			- {{renderer :media-timestamp, 00:01:04}} Ein anderer Faktor für die Dämpfung der Leitung ist, wie gut ist die Oberfläche, die metallische jeweils an der Oberfläche von dem Innenleiter und an der Innenseite vom Außenleiter, wo ein Teil der Welle des Fels eindringt. Das muss sehr gut leiten sein. Wir haben hier bei diesem Wellenbadleiter,
@@ -379,7 +378,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:59:34}} Argumentation für den dritten Term und sehen, dass die beiden von mir eingeringelten Terme im ganzen Raum konstant geblieben sein müssen. Und das ist der entscheidende Gedankengang von Bernoulli gewesen, der dann zur Separation, wie man sagt, dieser partiellen Differenzagleichung führt. An dieser Stelle will ich die Vorlesung für heute stoppen und ich frage wieder, ob es Fragen dazu gibt. Ich halte die Aufzeichnung für heute wieder an.
 	- 2.4.4 Sommerfeldsche Ausstrahlungsbedingung
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\2.4.4 Sommerfeldsche Ausstrahlungsbedingung.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\2.4.4 Sommerfeldsche Ausstrahlungsbedingung.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Ich beginne mit einem kleinen Nachtrag zu Kapitel 4 noch, wo wir die Randbedingungen diskutiert haben. Sie erinnern sich, Stetigkeit der Tangential- und Normalkomponenten bzw. Sprungbedingungen für die vier Feldgrößen ED und BH. Und eine zusätzliche Randbedingung, die ein bisschen aus dem Rahmen fällt, will ich auch vorstellen. Und zwar ist das die Arnold-Sommerfeldsche Ausstrahlungsbedingung.
 			- {{renderer :media-timestamp, 00:00:40}} Sommerfeld war ein deutscher Physiker am Anfang des 20. Jahrhunderts, so in der ersten Hälfte des 20. Jahrhunderts. Und er hat, glaube ich, erstmals formuliert, dass Energie nicht aus dem Unendlichen in die vorgeschriebenen, er schrieb Singularitäten, weil er etwas mathematisch angehaucht war als theoretischer Physiker.
 			- {{renderer :media-timestamp, 00:01:04}} aber das sind nichts anderes als die Quellen des Feldes eingestrahlt werden. Also wenn eine Antenne eine Welle in den Freiraum ausstrahlt, dann strahlt der unendlich ferne Punkt nichts zurück auf die Antenne. Oder anders formuliert, der unendlich ferne Punkt reflektiert nichts, sondern reißt alle einstrahlende Leistung und Energie an sich.
@@ -500,7 +499,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:58:31}} jetzt auch den Pointing-Vektor, der dazu gehört, ausrechnen, also das Kreuzprodukt E_x_h. und dann sehen wir, dass der Pointing-Vektor keine x-Komponente hat und keine y-Komponente, sondern ausschließlich eine z-Komponente und diese Z-Komponente, die transportiert Richtung in die Ausbreitungsrichtung und nicht quer dazu.
 	- 3 Homogene Ebene Welle
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\3 Homogene Ebene Welle.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\3 Homogene Ebene Welle.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Herzlich willkommen. Wir schauen uns heute eine kleine Visualisierung an für Lösungen von eindimensionalen Wellengleichungen. Wir haben das letztens kurz in dieser Tabelle gesehen, dass es hier verschiedene Ansätze gibt. Ja, und dass man ein bisschen mehr Gespür dafür bekommt,
 			- {{renderer :media-timestamp, 00:00:30}} sehen wir uns da ein paar Animationen jetzt an. Die Bedienung ist, also das ist ein MATLAB-Skript, die Bedienung ist ein bisschen diffizil, das heißt, es kann das eine oder andere Mal ein bisschen herumhüpfen, aber ich probiere mein Bestes. Okay. Ah, jetzt sieht man es noch nicht. Gut. Ich gebe das hier rüber. Dann sieht man das ja. So, Christoph, du kannst natürlich auch immer gerne kommentieren.
 			- {{renderer :media-timestamp, 00:01:02}} Ja, mache ich. Hier, einfache Funktion, ein Cosinus Omega T minus KZ. Und wir sehen hier auf der Y-Achse ist hier die Amplitude. Wenn das jetzt ein Feld darstellt, für die Feldstärke zum Beispiel. und auf der X-Achse haben wir hier die Z-Koordinate.
@@ -624,7 +623,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:00:13}} Das, was wir bisher als Wellenzahlvektor k gesehen haben, ist dann der Imaginärteil des Gamma-Vektors, aber der Gamma-Vektor hat eben auch einen Realteil, der die unterschiedlichen Dämpfungskonstanten in unterschiedliche Raumrichtungen beschreibt.
 	- 3.4 Die HEW in verlustbehafteten Medien
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\3.4 Die HEW in verlustbehafteten Medien.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\3.4 Die HEW in verlustbehafteten Medien.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Schönen guten Morgen allseits. Bevor wir wieder mit dem Stoff weitermachen, zeigen wir als Ding der Woche die sogenannte Parallelplattenleitung. Ein sehr einfacher Wellenleiter besteht aus zwei parallelen Platten und Herbert wird euch das vorführen. Parallelplattenleitung ist hier ein Übergang von der Parallelplatte auf den kopf jahr als sie hier hat man erst eine abträgung und dann ein fähnchen nach unter das
 			- {{renderer :media-timestamp, 00:00:40}} ging alles dazu um diesen übergang von den leitungen auf die kursaleitung zu realisieren Gut, dann schieben wir das hier weg.
 			- {{renderer :media-timestamp, 00:01:04}} Und dann machen wir weiter mit 3.4. Also die homogene Ebene Welle in verlustbehafteten Medien. Wir fangen an mit den beiden Rotorgleichungen. Also 3.17 auf dieser Folie ist natürlich nichts anderes als das Faraday'sche Induktionsgesetz, aber in der komplexen Zeigerrechnung. Die Gleichung 3.18 auf dieser Folie ist der Ampere-Maxwellsche Satz, also der Durchflutungssatz erweitert von Maxwell um den Verschiebungsstrom.
@@ -760,7 +759,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:06:06}} Mein Go-To-Meeting ist ein bisschen komisch heute. Okay. Fragen dazu?
 	- 4.2 Grenzfläche zu ideal leitfähigem Metall
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\4.2 Grenzfläche zu ideal leitfähigem Metall.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\4.2 Grenzfläche zu ideal leitfähigem Metall.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Hier habe ich ein Dielenzikon mitgebracht, das von einem geschäumten Kunststoff besteht. Das ist etwas ähnlich wie ein Schwamm oder Styropor. Allerdings ist dieses Material wesentlich steifer als herkömmliches Styropor und deswegen geeignet, um Versuchsaufbauten daraus herzustellen.
 			- {{renderer :media-timestamp, 00:00:31}} Dieses Material heißt Rohazell und es besteht halt wie jeder Schraubstoff hauptsächlich aus Luft. Und deswegen sind auch seine die elektrischen Eigenschaften ganz ähnlich wie Luft. Insbesondere hat es einen sehr geringen Verlustwinkel und ein Epsilon relativ sehr nahe an 1. Genau diesen Versuchsaufbau, den sehen Sie hier.
 			- {{renderer :media-timestamp, 00:01:00}} Den benutzen wir, um insbesondere sehr kleine Antennen messen zu können. Das ist ein drehbares Ding und Sie sehen hier diese Perlenkette, die einfach als Antrieb dient, um dann den oberen Teil kippen zu können. Das ganze Teil enthält fast kein Metall, sodass es für elektromagnetische Wellen fast durchsichtig ist, sodass man kleine Antennen gut sieht.
@@ -896,7 +895,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:06:00}} Wenn ich den Quasi-Leiter ersetzen würde durch einen perfekten Leiter, dann würde die Welle am perfekten Leiter einfach reflektiert werden und es würde gar keine Wellenführung in Z-Richtung stattfinden. Das ist also etwas counterintuitive, dass es gerade die Verluste sind, die zu einer Wellenführung führen. Die Verluste dämpfen die Welle natürlich, aber sie führen sie auch.
 	- 5 Die Oberflächenwelle
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\5 Die Oberflächenwelle.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\5 Die Oberflächenwelle.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Ja, also hallo, heute haben wir als Ding der Woche ein kurzes Video, einen Schnappschuss von einer Funkkanalmessung, die wir letzte Woche durchgeführt haben mit Theo Brunner und AIT am AIT-Standort im 21. Vizier, Giefingasse. Ja genau, die Funkkanalmessung ist eine Funkkanalmessung für vehikulare Kommunikation. Also, wo sich mindestens einer der beiden Teilnehmer, der Funkteilnehmer bewegt, weil hier der Funkkanal an sich sehr zeitlich veränderlich und dynamisch eben ist und da braucht man solche Funkkanalmessungen, um dann auf Basis dieser Daten auch Modelle erstellen zu können.
 			- {{renderer :media-timestamp, 00:00:56}} und auf Basis dieser Modelle kann man weitere Simulationen dann durchführen
 			- {{renderer :media-timestamp, 00:01:00}} und Hersteller für Funksysteme verwenden diese Funkmodelle und Simulationen und dann wirklich Endverbrauchergeräte, die dann in den Autos oder sonstiger Infrastruktur, wie zum Beispiel für intelligente Ampeln benötigt werden können, um diese herzustellen. Genau, und so eine Funkkanalmessung sieht dann so aus. Christoph, bitte einmal das Video starten. Lass es ein paar mal laufen. Bei mir ruckelt es ein wenig, aber ich erkläre mal was passiert.
@@ -1008,7 +1007,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:54:04}} Das ist jetzt ein interessantes Ergebnis, weil sozusagen das ausdrückt, dass die Verlustleistung pro Fläche BDZ nur abhängend von der tangentialen H-Feldstärke an der Oberfläche. Natürlich in den Näherungen, die wir gemacht haben. Das gibt uns einen Schlüssel für die spätere Einrechnung von Verlusten in Wellenleiterstrukturen.
 	- 5.3 Wellenwiderstände und Leistungsumsatz
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\5.3 Wellenwiderstände und Leistungsumsatz.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\5.3 Wellenwiderstände und Leistungsumsatz.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird jetzt aufgenommen. Guten Morgen, ich rekapituliere heute noch einmal kurz die Oberflächenwelle und fange an mit einem historischen Rückblick. Ihr seht hier ein historisches Foto der Station in Cornwall an der Südwestspitze von England.
 			- {{renderer :media-timestamp, 00:00:30}} die Guglielmo Marconi Anfang 1900 angefangen hat aufzubauen. Ihr seht hier vier Antennenmasten. Die ursprüngliche Station hat eigentlich anders ausgesehen. Ich habe hier ein weiteres Foto von Wikipedia. Hier seht ihr die ursprüngliche Antennenanlage, vielleicht etwas klein, hier etwas.
 			- {{renderer :media-timestamp, 00:01:00}} aber einen Sturm hatte die zerstört bevor sie in Betrieb gehen konnte. Und Marconi ist berühmt geworden mit der Nachricht am 12. Dezember 1901, dass er drei Punkte, das ist der Morse Code für den Buchstaben S, über den Atlantik übertragen hat. Heute,
@@ -1134,7 +1133,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:01:08}} Es findet also gar kein Energietransport oder Impulstransport oder Informationstransport bei der Grenzwellenlänge mehr statt, während die Phasengeschwindigkeit hier zu einer Singularität führt. Gut, nach dieser Kurvendiskussion, glaube ich, kann ich die Vorlesung für heute schließen und lade noch ein letztes Mal für heute zu Fragen ein.
 	- 6.1 Rechteckhohlleiter
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\6.1 Rechteckhohlleiter.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\6.1 Rechteckhohlleiter.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Herzlich willkommen zur Wählerausbreitung. Wir haben das letzte Mal schon über den Rechte-Kohlleiter ein wenig durchgenommen. Und zu dem Rechte-Kohlleiter, also wir haben hier verschiedenste Moden, die ausbreitungsfähig sind im Rechte-Kohlleiter. einer die und dem t&t im modus und so und hier haben wir auch die moden indizes kurz
 			- {{renderer :media-timestamp, 00:00:40}} besprochen habe gehen wir heute näher noch einen in die materie und dazu gibt es jetzt eine kleine demo für die veranschaulichung der ti und der tm moden am rechte kohleiter So, was wir hier sehen, ist jetzt, also wir haben einmal einen Quader, hier sehen wir die Querschnittsfläche am Eingang des rechten Kohlleiters,
 			- {{renderer :media-timestamp, 00:01:18}} Hier mit Seitenfläche, also die Schnittfläche hier im Eingang ist die XY-Ebene, bei Z ist gleich 0 und die Seitenfläche hier ist bei der Fläche YZ und die Grundfläche hier ist XZ.
@@ -1269,7 +1268,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:05:31}} Deswegen geht die E-Feldlinie von hier oben geradlinig nach hier unten. Und sozusagen dieser Ort hier von positiver Ladung ist genau gegenübergestellt mit diesem Ort hier unten mit der negativen Ladungsakkumulation. Und dieses Paar, ihr könntet euch das wie eine Dipole vorstellen. Hier oben ist Plus, hier unten ist Minus, bewegt sich mit gleicher Geschwindigkeit, mit der Phasengeschwindigkeit eben in Z-Richtung.
 	- 6.1.2 Feldbilder und Feldwellenwiderstand
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\6.1.2 Feldbilder und Feldwellenwiderstand.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\6.1.2 Feldbilder und Feldwellenwiderstand.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Reticuleiter gibt es in diversen Größen und Ausführungen. Geht man zu einem höheren Spaniel, müssen sich auch die Querschnitte des Reticuleiters verkleinern. und das spiel das ist hier und für noch größere
 			- {{renderer :media-timestamp, 00:00:34}} frequenzen müssen auch die leute keiner werden es ist so zusammen hat ein profil gewünschte wert und ende von richtigen kohleiter wird dann ein flansch eingelötet ja in verschiedenen größen jetzt da oder auch beweglich er ist die das machen außenmaterial von leiter ist die ritt
 			- {{renderer :media-timestamp, 00:01:10}} ähnlich wieder der kurs ausgeführt und so lässt sich ein wenig bewegen und ist nicht so komplett starr verbindungen gibt es auch sogenannte knie 90 grad nie oder 90 grad ist also man hat hier
@@ -1378,7 +1377,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:52:31}} Dann berechnen wir das P von Z über den Pointingvektor und integrieren den Realteil des komplexen Pointingvektors, insbesondere die TZ-Komponente, über die Querschnittsfläche des Rechteckohlleiters. der Kohleiters und dann berechnen wir die Leistungsabnahme in z-Richtung über die Power-Loss-Method, ein halb h-Tangential-Quadrat mal r-Square mal differenziellen Flächenelement. Das differenzielle Flächenelement
 	- 6.2 Hohlraumresonator
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\6.2 Hohlraumresonator.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\6.2 Hohlraumresonator.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Schönen guten Morgen noch einmal. Willkommen in der Wellenausbreitung. Wir stecken mitten im Kapitel zum Rechteck-Hohlleiter. Und hier habe ich einen kommerziell hergestellten Übergang von WR90-Hohlleiter. Also das ist dieser Hohlleiter für das X-Band. Das erstreckt sich etwa von 8,2 bis 12,5 Gigabit. um 10 Gigahertz herum. Und ihr seht, im Inneren gibt es hier so eine Art Stummelantenne und auf
 			- {{renderer :media-timestamp, 00:00:39}} der Rückwand seht ihr eine flache kreisförmige Scheibe, ein zylindrisches Objekt. Und diese stummelartige Antenne. Das ist die Ankopplung des E-Feldes des TE10-Modus und diese, das ist
 			- {{renderer :media-timestamp, 00:01:02}} im Wesentlichen der fortgesetzte Innenleiter dieses Koaxialanschlusses. Also der Innenleiter dieser Koaxial... Kannst du das erholen, bitte? Ja, der Innenleiter dieser Koaxialleitung. wird nach innen in den Hohlleiter fortgesetzt und ist dann hier sozusagen als kurze Stummelantenne sichtbar. An der Rückwand sehen wir einen glänzenden Metallzylinder und dieser glänzende Metallzylinder,
@@ -1517,7 +1516,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:07:45}} Und das ist eine sehr bequeme Messvorschrift für die Güte, wie man das in der Praxis dann messen kann. Jetzt halte ich mal an, bin jetzt glaube ich eh am Ende meiner Zeit für heute.
 	- 7 Koaxialleitungen
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\7 Koaxialleitungen.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\7 Koaxialleitungen.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Schönen guten Morgen allseits. Willkommen zurück in der Wellenausbreitung. Wir sind ja mitten im Kapitel 6, gegen Ende des Kapitel 6 inzwischen schon. Wir haben gesprochen über den Hohlleiter, wir haben gesprochen ganz allgemein über Güte von Resonatoren und angefangen mit dem Hohlraumresonator.
 			- {{renderer :media-timestamp, 00:00:31}} Und die Art, wie das hier in der Vorlesung eingeführt wird, ist, dass der Hohlraumresonator ein kurzes Stück Hohlleiter ist und entlang Ausbreitungsrichtung, also bei uns ist das die Z-Koordinate, wird der Hohlleiter beidseitig metallisch verschlossen, sodass wir dann also eine stehende Welle in X-Richtung, Richtung haben, charakterisiert durch die Wellenzahl m pi durch a, in y-Richtung Nordpol pi durch b und dann in z-Richtung, das ist eben neu, das kz-Quadrat in dieser gleichen, das wird jetzt ein p pi durch c.
 			- {{renderer :media-timestamp, 00:01:15}} Und a, b und c sind die drei Abmessungen des Hohlraumes, der quadraförmig angenommen wird. Und nach der Separationsbedingung wird das dann Omega Quadrat Epsilon µ, wobei Epsilon und µ die beiden Parameter des Dielektrikums im Innenraum sind.
@@ -1637,7 +1636,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:58:13}} Dann können wir das L' natürlich ausrechnen. Wir setzen das ein. Wir müssen das dr durch r integrieren. Das Ergebnis kennen wir seit dem ersten Semester. Das ist dann der Logarithmus. Das ist dann die klassische Formel. Wenn man für das µ 4π mal 10 hoch minus 7 Henry pro Meter einsetzt, dann kann man das sehr konkret für ein Luftdielektrikum ausrechnen.
 	- 7.1.5 Widerstandsbelag und Ableitungsbelag
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\7.1.5 Widerstandsbelag und Ableitungsbelag.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\7.1.5 Widerstandsbelag und Ableitungsbelag.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Guten Morgen allseits. Willkommen zurück in der Wellenausbreitung. Wir befinden uns mitten im Kapitel zur Koaxialeitung. Das ist Kapitel 7. Ich habe hier ein Stück mitgebracht. Es sieht eigentlich aus wie ein Stück Rundstab. Aber tatsächlich ist es eine Koaxialeitung. Ich hoffe, dass man das halbwegs erkennen kann. Es gibt also einen Außenleiter, der besteht, wie man das vielleicht am Glanz erkennen kann, aus Kupfer und das Kupfer ist außenseitig noch einmal verzint worden, damit man das gut anlöten kann und aus einem Innenleiter.
 			- {{renderer :media-timestamp, 00:00:51}} Das Ganze ist mit einem Teflon-Dielektrikum versehen. Diese Art von Koaxialleitung nennt man Semi-Rigid, für halb fest oder halb starr.
 			- {{renderer :media-timestamp, 00:01:08}} Das hat die Bewandtnis, dass man das einmal biegen kann. Dazu gibt es eigene Biegewerkzeuge, um sicherzugehen, dass der Krümmungsradius bei der Biegung nicht zu klein wird. Denn man muss sicherstellen, dass auch bei der Biegung hier der Innenleiter immer schön zentrisch in der Korrekturleitung bleibt,
@@ -1757,7 +1756,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:58:03}} natürlich µ1 nehmen, aber alle praktischen Dielektriker, die wir verwenden, haben einfach µ0 als Wert. Also Epsilon 1 und µ0 sind die Parameter dieses Dielektrikums der Dicke D. Und oben anschließt in der Regel an Luft. Luft hat dann also Epsilon 0 und µ0. Hier ist es etwas allgemeiner formuliert für Medium 2, Epsilon 2 und µ0. Und kommende Woche diskutieren wir
 	- 8.1 Ebener dielektrischer Wellenleiter
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\8.1 Ebener dielektrischer Wellenleiter.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\8.1 Ebener dielektrischer Wellenleiter.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird jetzt aufgenommen. Herzlich willkommen zur heutigen Wellenausbreitung. Wir hatten das letzte Mal mit Coaxial-Kabel abgeschlossen, aber wir wollten noch eine MATLAB-Simulation zeigen oder ein kleines Skript, das ist jetzt hier zu MATLAB realisiert, wo wir diese Schaltvorgänge auf Leitungen nochmal veranschaulichen können.
 			- {{renderer :media-timestamp, 00:00:32}} und dazu schauen wir uns nochmal die Schaltung, wie hier in der Abbildung gezeichnet, an. Und zwar haben wir einen Generator hier mit der Spannung UG. Der hat einen Ausgangswiderstand RG oder in der MATLAB-Simulation heißt das auch dann ZG, aber es ist hier Synonym.
 			- {{renderer :media-timestamp, 00:01:06}} Dann haben wir einen Schalter, der soll uns den Beginn von unserer Simulation dann auch symbolisieren. Wir haben hier einen Wellenleiter mit der Leitungsimpedanz ZL, also zum Beispiel ein Koaxialkabel.
@@ -1880,7 +1879,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:59:31}} Man kann also hier wirklich ganze Schaltungen darin konzipieren. Man kann Streifenleitungen auch auf den integrierten Schaltkreis integrieren. Da braucht man natürlich nur kurze Strecken und deswegen ist das das Mittel, um Hochfrequenzschaltungen auf Chips, um Hochfrequenzschaltungen überhaupt auf Leiterplatten zu realisieren.
 	- 9 Streifenleitungen
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\9 Streifenleitungen.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\9 Streifenleitungen.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Schönen guten Morgen, wir sind im Kapitel 9 angelangt zu den Streifenleitungen. Und hier auf der ersten Folie zum Kapitel sehen wir, dass wir die Streifenleitungen anwenden können, sagen wir mal vom Very High Frequency Bereich ab 10 Meter Wellenlänge bis in den Millimeter. Millimeter Wellenbereich, also weit über 100 Gigahertz, vielleicht sogar bis 300 Gigahertz.
 			- {{renderer :media-timestamp, 00:00:36}} Dann haben wir ein Millimeter Wellenlänge. Jenseits fangen dann schon die der Terahertz Wellenbereich an. Da kommen dann eher andere die elektrische Wellenleiter zum Einsatz. Das geht ja dann schon in Richtung Glasfaser. Bei den Eigenschaften habe ich gesagt, die Streifenleitung eignet sich nur aufgrund ihrer Verluste für kurze Verbindungen,
 			- {{renderer :media-timestamp, 00:01:06}} aber insbesondere ihre Integrierbarkeit, ihre Strukturierbarkeit lassen sie für das Mittel der Wahl erscheinen, um darauf Schaltungen zu implementieren. Man kann zwar auch Schaltungen in Quaxialleitungstechnik und Nullleitertechnik realisieren, aber man ist dann wirklich beschränkt auf sehr einfache Schaltungen, während man mit Mikrostreifenleitungstechnik auch sehr komplexe Schaltungen realisieren kann.
@@ -1988,7 +1987,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:52:11}} Also hier die obere badewannenartige Kurve, die ist die Unterseite des Mikrostreifens. Und die niedrigere Badewannenkurve entspricht dem Stromdichteverlauf auf der grünen Oberseite des Mikrostreifens.
 	- 10 Wellen und Hindernisse
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\10 Wellen und Hindernisse.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\10 Wellen und Hindernisse.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird jetzt aufgenommen. Ja, schönen guten Morgen allseits. Wir sind gegen Ende des Kapitels 9, Mikrostreifenleitung. Wir haben besprochen, dass hier sogenannte quasi TEM-Wellen ausbreitungsfähig sind. E-Liter-Linie ist deswegen quasi, weil einerseits haben wir es ja mit einer Zweileiterstruktur zu tun, also der Mikrostreifen auf der oberen Seite des Dielektrikums und die Groundplane als Rückleitung.
 			- {{renderer :media-timestamp, 00:00:40}} Deswegen ist etwas TEM-mäßiges zu erwarten. Aber weil wir zwei verschiedene Permittivitäten haben, nämlich Luft im oberen Halbraum und ein Substrat mit einem höheren Epsilon R unterhalb der Streifenleitung,
 			- {{renderer :media-timestamp, 00:01:04}} ist hier eine TEM-Welle doch nicht mathematisch an die Randbedingungen anpassbar und man braucht gewisse EZ- und HZ-Komponenten, um die Randbedingungen erfüllen zu können. Diese Longitudinalkomponenten der Welle sind aber klein verglichen mit den Transversalkomponenten, deswegen spricht man eben von einer Quasi-TEM-Welle. Wir haben also doch eine
@@ -2093,7 +2092,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:50:38}} Und wenn der Berggipfel sich weiter zurückzieht aus dem Fresnel-Ellipsoid, bekomme ich abwechselnd diese Überhöhungen und Zusatzdämpfungen gegenüber dem Freiraum.
 	- 11 Antennen
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\11 Antennen.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\11 Antennen.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird jetzt aufgenommen. Ja, heute fangen wir an mit Kapitel 11 über Antennen und da gibt es ganz viel Theorie natürlich. Und als Ding der Woche will ich mit euch die einfachste Antenne überhaupt diskutieren. Und ich meine jetzt hier nicht die Satellitenschüssel, die inzwischen jeder kennt.
 			- {{renderer :media-timestamp, 00:00:33}} Ich meine auch nicht die Yagi-Uda Fernsehantenne, die ihr seht, sondern ganz oben, ich werde ein bisschen reinzoomen, seht ihr eine Dipolantenne. Also es ist eine Stange, die hier nach rechts geht und eine zweite Stange, die hier nach links geht. Und diese beiden leitfähigen Stangen oder Drähte bilden zusammen eine Dipolantenne.
 			- {{renderer :media-timestamp, 00:01:05}} Hier in dem grauen Installationskastel versteckt sich noch ein sogenannter Ballon. Ich werde gleich das Kastel öffnen, damit ihr seht, was drin geht, und nach unten seht ihr eine Koaxialleitung als Anschluss. Insgesamt ist hier von Spitze des Stabes hier bis Spitze des Stabes da, ist es etwa ein Meter breit.
@@ -2220,7 +2219,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:01:32}} Schreibweise, die sagt, die Rayleigh-Distanz ist 2d² durch Lambda und wenn dieser Wert kleiner als Lambda wird, dann addieren wir einfach noch Lambda dazu. Das ist ja nur eine Grenze, um einen Fehler zu begrenzen und keine so exakte Rechnung. In diesem Ausdruck mit 2d² durch Lambda und bei Bedarf addieren wir noch Lambda dazu, ist der, wie man es oft in der Literatur findet.
 	- 11.3 Richtdiagramm
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\11.3 Richtdiagramm.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\11.3 Richtdiagramm.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Schönen guten Morgen allseits. Letzte Vorlesungseinheit vor den Weihnachtsferien. Nächste Woche und übernächste Woche ist nix und dann sehen wir uns erst im Januar wieder. Traditionell beginne ich dann immer die Vorlesung mit der Besprechung der Ferialhausübung. Eine Besprechung dazu habe ich am Dienstag vorgestern schon gemacht.
 			- {{renderer :media-timestamp, 00:00:36}} Die Anleitung dazu findet ihr unter der Rubrik Teaching auf der Instituts-Homepage. Da gibt es dann einen Button für die Wellenausbreitung. Da gibt es allgemeine Infos, Informationen zu Prüfungen und Zusatzmaterial zur Vorlesung. Und da gibt es eben die Weihnachtsexperiment Anleitung.
 			- {{renderer :media-timestamp, 00:01:03}} Ihr erinnert euch Laserpointer, Geodreieck und ein Packerl Gelatine. Der Rest steht dann in der Dokumentation, wenn ihr darauf klickt. Dieses Jahr neu möchte ich zusätzlich eine Weihnachtssimulation als Aufgabe anbieten, ebenfalls mit maximal drei Punkten, die angerechnet werden auf die schriftliche Prüfung. Wir kommen dazu später noch. Und ich schlage hier drei Tools vor, wobei das alle drei denselben, dasselbe numerische Verfahren in ihrem Kern enthalten.
@@ -2350,7 +2349,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:03:10}} Also die schraffierte Fläche hier außerhalb des Raumwinkels ist genauso groß wie die schraffierte Fläche innerhalb des Raumwinkels. Ich schneide also alles das weg, was außerhalb ist und klebe es innen zur Hauptkeule dazu.
 	- 11.4 Gewinn
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\11.4 Gewinn.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\11.4 Gewinn.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} This conference will now be recorded. Schönen guten Morgen allseits und noch nachträglich alles Gute zum neuen Jahr. Ich hoffe, ihr habt die Ferien gut überstanden. Zur Erinnerung, wir befinden uns mitten im Kapitel 11 über Antennen. Heute geht es hauptsächlich um den Gewinn, aber am Anfang zeigen wir natürlich immer ein Ding der Woche. Ich habe hier ein Mobilfunkgerät mitgebracht.
 			- {{renderer :media-timestamp, 00:00:34}} Hersteller tut nichts zur Sache. Und heutzutage sieht man ja da keine Antennen außen mehr. Das war früher anders und auch bei Walkie Talkies. Die sehen zum Beispiel so aus, sieht man deutlich. Hier gibt es eine Antenne, meistens aus praktischen Gründen. flexibel ausgeführt, damit wenn man es in der Hosentasche mit sich führt, sich nicht verletzen kann. Eine sogenannte Gummiwendelantenne.
 			- {{renderer :media-timestamp, 00:01:04}} Viele frühere Handys hatten auch solche Antennen, aber heutzutage sind die Antennen im Gehäuse drin und die kann man hier sehen. Also das ist ein defektes Handy, deswegen kann ich da auch dran herumschreiben. Man sieht hier eine eine leiterbahnstruktur die reichlich kompliziert ausgeführt ist und
@@ -2478,7 +2477,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:02:10}} die gemeinsame Leitung auf 25 Ohm habe und die anderen Leitungen auf 50 Ohm. Das ist aber ein Detail, auf das an dieser Stelle noch nicht eingegangen wird. Gut, diese Konstruktion, die nennt man Kreuzdipol.
 	- 11.6 Impedanz
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\11.6 Impedanz.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\11.6 Impedanz.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Schönen guten Morgen allseits. Willkommen zurück zur Wellenausbreitung. Wir sind immer noch im Kapitel 11 über Antennen. Und als Ding der Woche zeigt Herbert euch die Vertikalantenne, den gängigen Typ, auch Groundplane-Antenne genannt, in einer besonders minimalen Aus, Führungsform. Stichwort Sputnik-Antenne, weil sie so aussieht wie dieser erste Satellit, der jemals die Erde umrundet hat.
 			- {{renderer :media-timestamp, 00:00:39}} Wir können eine Dipole-Antenne auch leicht abwandeln und aus der Lambda-Halbe Dipole mit der Stromverteilung, die ich jetzt auch gezeichnet habe, das spiegelungsprinzip anwenden und aus den lambda hdp einen lambda viertel monopolenachtung über
 			- {{renderer :media-timestamp, 00:01:06}} ground das heißt wir haben jetzt nur ein leitungsstück, das lambda viertel lang ist und und statt den zweiten Arm des Defaults ändern wir jetzt hier die Anwendung so, dass wir hier eine Massefläche haben, also über Erde oder auch ein Ground Plane genannt.
@@ -2588,7 +2587,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:53:07}} und der Ganzwellendipol hat noch einen höheren Gewinn, den ich jetzt leider nicht auswendig kann. Leider geht diese Folge dann irregulär weiter, also die Kreise werden nicht weiter eingedäpscht, sondern der 3-Lambda-Halbe-Dipol, so wie er hier gezeichnet hat, hat jetzt schon ein wildes Diagramm,
 	- 11.10.4 Wendelantenne
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\11.10.4 Wendelantenne.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\11.10.4 Wendelantenne.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird jetzt aufgenommen. schönen guten morgen willkommen zurück zur wellenausbreitung heute machen wir weiter im kapitel antennen und die antenne die wir heute in einigem detail besprechen werden ist die wendel antenne die sieht so ein bisschen aus wie ein korkenzieher in groß oder in klein und das griechische Wort für Schnecke ist Helix und deswegen heißt sie insbesondere im englischen Sprachraum auch Helixantenne.
 			- {{renderer :media-timestamp, 00:00:39}} Das ist ein durchaus dankbares Objekt für studentische Praktikumsarbeiten. Im Sommersemester biete ich gemeinsam mit Robert Langwieser eine Lehrveranstaltung an, die heißt Praktische Realisierung von Antennen oder Antennenentwurf und Aufbau.
 			- {{renderer :media-timestamp, 00:01:05}} Und ich habe euch hier drei Protokolle mitgebracht, die sich mit Helixantennen beschäftigen. Eine Helixantenne ist eine Antenne, die zirkular polarisiert empfangen kann und senden kann natürlich auch. Ich habe das ja schon betont, wenn sie links zirkular polarisiert senden kann, dann empfängt sie auch links zirkular polarisiert.
@@ -2707,7 +2706,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:57:30}} Eine zweite logarithmisch periodische Antenne in vertikaler Polarisation kann man am Gürtel sehen. Dort, wo der Gürtel auf den Wienfluss trifft, gibt es also die Brücke, auf der die U6 fährt. Und wenn Sie ein bisschen suchen, sehen Sie in der Nähe der Lengenfeldgasse, aber noch sozusagen auf der gürtelseitigen Seite der U6-Station Lengenfeldgasse
 	- 11.10.5 Flächenhafte Antennen
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\11.10.5 Flächenhafte Antennen.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\11.10.5 Flächenhafte Antennen.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Guten Morgen, willkommen zurück zur Weltausbreitung. Heute ist der 19. Januar. Ihr erinnert euch vielleicht noch an diese Handskizze vom letzten Mal, wo ich die Funktionsweise einer konischen Dipolantenne gezeigt habe. Ihr seht hier einen Doppelkegel.
 			- {{renderer :media-timestamp, 00:00:31}} Eine Kegelhälfte geht nach oben, ein Kegel geht nach unten. Und man würde den Kegel typischerweise in der Mitte anspeisen. Ich habe dann auch angedeutet, hier durch die Symmetrieebene, dass man sich die eine Hälfte des Doppelkegels sparen kann. So eine Antenne habe ich hier mitgebracht. Das ist also eine Disk-Cone-Antenne.
 			- {{renderer :media-timestamp, 00:01:01}} Ihr seht hier die Symmetrie-Ebene. Ich kann den hier so reinlegen. Da wird die Rotation symmetrisch ausgeführt. Sehr schön ist auch, dass ihr hier im Spiegelbild das Spiegelbild des realen Kegels in der Ground Plane sehen könnt. Das, was wir mit dem Auge nicht sehen können, ist, dass die Ladungspolarität des Spiegelbilds gegensätzlich zur Aufladung des Originals ist.
@@ -2849,7 +2848,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:09:06}} Wenn Sie für die Ausbreitungsdämpfung Werte herausbekommen, die kleiner sind als 100 Dezibel, dann freuen Sie sich. Wenn Sie Werte herausbekommen, die wesentlich größer sind als 100 Dezibel, dann schauen Sie besser nochmal nach, ob Sie das richtig ausgerechnet haben. Natürlich gibt es auch Probleme, wo Sie dann 250 Dezibel Ausbreitungsdämpfung haben könnten.
 	- 12.4 Radar
 	  collapsed:: true
-		- ![wel-vo](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\12.4 Radar.mp4)
+		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\12.4 Radar.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. So, heutiges Thema ist Radar und ich habe dazu eine Überblicksfolie, die dann natürlich auch in den Folien sichtbar sein wird, aber die ist relativ unübersichtlich, deswegen möchte ich das nach und nach aufbauen. Ich habe hier links einen Sender. Dieser Sender ist charakterisiert durch eine Sendeleistung PS und einen Gewinn der Sendeantenne GS.
 			- {{renderer :media-timestamp, 00:00:36}} Und dann natürlich in großer Entfernung D haben wir dann ein kantiges Objekt, das sogenannte Radarziel. Und dieses kantige Objekt, das wollen wir gedanklich etwas vereinfachen.
 			- {{renderer :media-timestamp, 00:01:01}} Aber zunächst einmal sozusagen die Sendeantenne des Radars. Die sendet natürlich eine Kugelwelle aus. Und am Radarziel selber haben wir dann eine Intensität Ti, also der Realteil des Komplexes. Pointing Vectors von der einfallenden Welle. Die können wir jetzt inzwischen schon auswendig hinschreiben. Das ist PS mal GS durch 4PiD². Also die Sendeleistung multipliziert mit dem Gewinn der Sendeantenne und dann die Isotrope Ausbreitung als Kugelwelle.
@@ -2961,7 +2960,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:54:04}} Ich falte also die Kanalimpulsantwort mit dem Einzelimpuls meines Sendesignals. Und diese Faltung mit Hilfe eines Einzelimpulses, mit vielen Impulsen, ergibt mir natürlich beim Empfänger viele zappelnde, unabhängige Impulse, die teilweise überlappen, hier links, aber teilweise auch unabhängig voneinander, Fäden.
 	- Übung 1
 	  collapsed:: true
-		- ![wel-ue](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\Übungen\Übung 1.mp4)
+		- ![wel-ue](.\assets\uni-unterlagen\Wellenausbreitung\VOs\ue\Übung 1.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird jetzt aufgenommen. Hallo zur ersten Übung in der Wellenausweitung. Wir haben das letzte Mal die Beispiele 5 und die Beispiele 6 vorangekündigt zum durchrechnen und ich werde das jetzt hier mit dem geteilten bildschirm machen und diese beiden beispiele genauer durchgehen ok also
 			- {{renderer :media-timestamp, 00:00:34}} beispiel 5 die handelt es sich um eine überlagerung gegenläufiger wellen und Wir haben hier eine Welle, die eintrifft auf eine Grenzfläche. Und diese Grenzfläche ist eine metallische Wand. Also es ist hier dann eine ideale Reflexion.
 			- {{renderer :media-timestamp, 00:01:05}} Und hier sind schon die Feldvektoren eingezeichnet für die einfallende Welle. Also wir haben hier die elektrische Feldstärke, den Vektor, der zeigt hier in die x-Richtung, dann die magnetische Feldstärke hier aus der Zeichenebene raus in y-Richtung und den Wellenvektor k, der ist bei diesem Beispiel in z-Richtung.
@@ -3158,7 +3157,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:36:31}} im verlustbehaften Fall haben wir das 2Pi durch Beta. Das ist hier die Wellenlänge, was wir sonst eben mit einem reinen KZ hätten. und deswegen ist das Beta eben 2 Pi durch Lambda und eingesetzt ergibt sich dann, weil Lambda halbe ist jetzt wieder so ein Minimum. Also genau wie im vorherigen Beispiel bei den Phi ist gleich 0.
 	- Übung 2
 	  collapsed:: true
-		- ![wel-ue](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\Übungen\Übung 2.mp4)
+		- ![wel-ue](.\assets\uni-unterlagen\Wellenausbreitung\VOs\ue\Übung 2.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird jetzt aufgenommen. Guten Morgen, heute ist die zweite Übung für Wellenausbreitung. Wie angekündigt, werden wir heute das Beispiel Nummer 7 aus der Beispielsammlung rechnen, Parallelplattenleitung. Und wir untersuchen dazu eben diese Anordnung von zwei Platten, die parallel zueinander übereinander angeordnet sind.
 			- {{renderer :media-timestamp, 00:00:35}} und wir haben hier ein Koordinatensystem eingezeichnet. Diese Platten sind in Abstand D zueinander. In X-Richtung nehmen wir diese Platten unendlich ausgedehnt an und wir wollen für die Z-Richtung die Wellenausbreitung unterstehen.
 			- {{renderer :media-timestamp, 00:01:05}} Also eine Welle, die aus den unendlichen, aus minus Z angeregt wurde, wandert jetzt an der parallelen Plattenleitung als Wanderwelle in Plus Z Richtung. Ja, und weil wir jetzt hier diese Ränder haben, also oben eine Platte und unten eine Platte, gibt es jetzt neben einer homogenen ebenen Welle, TEM-Welle, gibt es jetzt auch TE- und TM-Wellen.
@@ -3346,7 +3345,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:32:03}} Ja, aber im Wesentlichen, das ist im 4.4, im Wesentlichen geht es darum, man kann sich diese TM und den TE-Modus über diesen Ansatz, so wie wir ihn jetzt gemacht haben mit der modalen Lösung und so, kann man auch wie im Kapitel 4 beschrieben, über das Zueinanderführen von zwei einfachen Grenzflächen machen und über diese Strahlen sich überlegen, die sich dann eben in dem Winkel von der oberen Plattenseite zur unteren Plattenseite hin und her oszillieren.
 	- Übung 3
 	  collapsed:: true
-		- ![wel-ue](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\Übungen\Übung 3.mp4)
+		- ![wel-ue](.\assets\uni-unterlagen\Wellenausbreitung\VOs\ue\Übung 3.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} This conference will now be recorded. Perfekt. So, ja, nochmal herzlich willkommen zur dritten Übung. Wir rechnen das Beispiel Nummer 9, TM-Wellen auf dem dialektischen Wellenleiter. Und bei diesem Beispiel müssen wir die Ausbreitung von TM-Wellen von dieser Sandwich-Struktur untersuchen. Und wir haben hier drei Materialien. Wir haben einerseits ein ideal leitfähiges Material hier auf der untersten Schicht, das verlustlos ist. Das können wir als idealer Leiter annehmen.
 			- {{renderer :media-timestamp, 00:00:40}} Dann haben wir ein Dielektrikum der Dicke D mit einem Epsilon 1 für dieses Material und die [[Permeabilität]] µ0. Und dann haben wir ein zweites Dielektrikum mit einem Epsilon 2.
 			- {{renderer :media-timestamp, 00:01:03}} Das kann hier zum Beispiel das Dielektrikum Luft sein, aber hier ganz allgemein mit dem Y2 und dem µ0. Also magnetisch gesehen sind die beiden Dielektrika hier nicht zu unterscheiden. Ja, und wir müssen jetzt für diese Anordnung, Wellenauswertung, TM-Wellen untersuchen. Das werden wir jetzt machen.
@@ -3543,8 +3542,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:36:40}} Das ist dann dieser Modenfilter. Genau, den ganzen Ansatz müsste man jetzt auch machen für den TM-Modus. Ich höre an dieser Stelle auf, das wird jetzt da zu lang das Ganze. und ja, aber wichtig ist in dem Fall von den normalen Hohlraumresonator
 			- {{renderer :media-timestamp, 01:37:03}} kann es jetzt zusätzliche Bedingungen geben, die manche Moden nicht ausbreitungsfähig machen und je nachdem, ob ein Schlitz am Rand ist oder irgendein zusätzlicher Filter im Innenraum, haben dann mit stimmte moden keine lösung und wenn man die bedingungen berücksichtigt hat dann kann man mit normalen lösungswege verwenden und nach
 	- Übung 4
-	  collapsed:: true
-		- ![wel-ue](C:\Users\Matteo\Downloads\Wellenausbreitung (VU)\Video\2020W\Übungen\Übung 4.mp4)
+		- ![wel-ue](.\assets\uni-unterlagen\Wellenausbreitung\VOs\ue\Übung 4.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird jetzt aufgenommen. Ja, wir rechnen jetzt das Beispiel Nummer 17, idealisierte Richtantenne, mit einer einfachen Gleichung für eine Richtcharakteristik einer Antenne, also ideal angenommen. Die Richtcharakteristik ist über diese Gleichung hier angegeben und die Frage ist, wie sieht das Richtdiagramm aus? Stellen Sie das grafisch dar.
 			- {{renderer :media-timestamp, 00:00:31}} Frage 2, wie groß sind der äquivalente Raumwinkel und die Direktivität dieser Antenne? Und dann die Frage 3, wie groß ist der Gewinn dieser Antenne über einen Isotropstrahler? Und hierbei wird noch ein 10-prozentiger Anteil der Leistung in Grund von Wärme verloren gehen. Das muss man dann beim Gewinn mit einberechnen. Und dann ist noch eine Frage Nummer 4. Fertigen Sie eine Footprint-Darstellung, also eine Kurven-Schar, der Sendeleistung an, wo man das in einer Ebene anzeigt, also die Kurven gleichen.
 			- {{renderer :media-timestamp, 00:01:13}} Gleicher Sendeleistung sind dann geschlossen und geschlossen. Kurven dieser Ebene. Ja, gut. Wir werden das jetzt durchgehen. Also zuerst einmal, wenn man eine Antenne misst und die, nehmen wir als Beispiel eine Antenne in unserer Antennemesskammer, dann muss man eben, will man jetzt eben charakterisieren, in welcher Richtung verhält sich die Antenne jetzt mit stärkerer Sende- oder Empfangsleistung und in welcher Richtung ist die Antenne.

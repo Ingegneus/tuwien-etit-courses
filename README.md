@@ -23,16 +23,16 @@ ich hasse die art und weise wie lehrmaterial organisiert und präsentiert wird. 
 ## wie nutze ich das hier
 es gibt drei arten wie du diese ausarbeitung verwenden kannst.
 ### variante 1: installation (explizit windows, aber sollte für macos und linux gleich finktionieren)
-hierfür brauchst du erstmal [logseq](https://github.com/logseq/logseq). was ist logseq? Das ist eine Plattform für Wissensmanagement und Zusammenarbeit. Sie legt den Fokus auf Privatsphäre, Langlebigkeit und Benutzerkontrolle. mehr infos findest du [hier](https://logseq.com/).
-als nächstes empfehle ich dir [git](https://git-scm.com/downloads) zu installieren. damit kannst du recht einfach updates zu diesem material herunter laden und auch kollaborieren. sobald du das installiert hast, such dir einen folder aus wo du deinen "grafen" speichern möchtest, dann öffne ein terminal (command prompt, powershell, ...) 
-`cd dein/pfad/zum/grafen` 
-und verwende 
+hierfür brauchst du erstmal [logseq](https://github.com/logseq/logseq). was ist logseq? Das ist eine Plattform für Wissensmanagement und Zusammenarbeit. Sie legt den Fokus auf Privatsphäre, Langlebigkeit und Benutzerkontrolle. mehr infos findest du [hier](https://logseq.com/).  
+als nächstes empfehle ich dir [git](https://git-scm.com/downloads) zu installieren. damit kannst du recht einfach updates zu diesem material herunter laden und auch kollaborieren. sobald du das installiert hast, such dir einen folder aus wo du deinen "grafen" speichern möchtest, dann öffne ein terminal (command prompt, powershell, ...)  
+`cd dein/pfad/zum/grafen`  
+und verwende  
 `git clone https://github.com/Ingegneus/tuwien-etit-courses.git`
-
-solltest du git nicht installieren wollen/können/was auch immer, dann kannst du den inhalt dieses repos mit diesem [link](https://github.com/Ingegneus/tuwien-etit-courses/archive/refs/heads/main.zip) herunterladen. entpacke ihn und verschiebe den `tuwien-etit-courses` ordner in deinen ordner für den grafen. 
+jetzt musst du die anleitung [hier](https://github.com/Ingegneus/logseq-plugin-config) befolgen. damit hast du alle plugins sowie meine konfiguration kopiert. das wichtigste sind dort die KaTeX definitionen.  
+  
+solltest du git nicht installieren wollen/können/was auch immer, dann kannst du den inhalt dieses repos mit diesem [link](https://github.com/Ingegneus/tuwien-etit-courses/archive/refs/heads/main.zip) herunterladen. entpacke ihn und verschiebe den `tuwien-etit-courses` ordner in deinen ordner für den grafen.  
 
 jetzt sollte dein folder so ausschauen:
-
 ```
 logseq-graf/
 ├─ assets/
@@ -56,7 +56,7 @@ Die häufigsten git befehle die du brauchen wirst sind:
 lade dir die `html.zip` datei von [hier](https://github.com/Ingegneus/tuwien-etit-courses/releases) runter, entpacke sie und öffne die `index.html` datei (sollte sich automatisch im browser öffnen). bedenke, dass einiges im browser nicht funktionieren wird, da es nur eine statische html datei ist. das heißt alles was mit plugins zu tun hat wird nicht gehen
 
 ### variante 3: github pages
-du kannst variante 2 auch online nutzen indem du diesen link öffnest [link](https://ingegneus.github.io/tuwien-etit-courses/). bedenke, dass einiges im browser nicht funktionieren wird, da es nur eine statische html datei ist. das heißt alles was mit plugins zu tun hat wird nicht gehen
+effektiv ist das selbe wie 2 nur online. nutze diesen link öffnest [link](https://ingegneus.github.io/tuwien-etit-courses/). bedenke, dass einiges im browser nicht funktionieren wird, da es nur eine statische html datei ist. das heißt alles was mit plugins zu tun hat wird nicht gehen
 
 ### mein logseq setup
 ich verwende logseq für so ziemlich alles und habe einige workflows entwickelt. für die uni nutze ich diese plugins:  
@@ -70,3 +70,5 @@ ich verwende logseq für so ziemlich alles und habe einige workflows entwickelt.
 
 ### TODOs
 - [contribution guidelines](https://github.com/Ingegneus/tuwien-etit-courses/blob/main/UNI-CONTRIBUTION.md)
+- wenn du einen fehler finden solltest dann, öffne bitte hier einen issue.
+- wie sollen die uni unterlagen organisiert und verteilt werden?
