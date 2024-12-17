@@ -119,6 +119,19 @@ iframe[src*='player.vimeo'] {
 /* change tag styling */
 a.tag {
     border: 1px solid var(--ls-tag-text-color,var(--lx-accent-11,hsl(var(--primary))));
+	background-color: var(--ls-primary-background-color);
+	opacity:1;
+}
+
+.awLi-tagHasBg .tag.awLi-color {
+    color: var(--ls-tag-text-color);
+    background-color: var(--ls-primary-background-color)!important;
+}
+
+.kef-media-ts-ts{
+    background-color: var(--ls-primary-background-color);
+	border-radius: 4px;
+	padding: 2px;
 }
 
 /* code block */
@@ -285,4 +298,13 @@ border-bottom:none}
 /* pdf reader */
 .extensions__pdf-header{
 	background: blackvar(--ls-wb-background-color-default);
+}
+
+[style*="background-color: var(--ls-highlight-color-yellow);"] {
+	color: black;
+}
+
+[style*="background-color: var(--ls-highlight-color-"] > .page-reference {
+	background-color: var(--ls-primary-background-color);
+	padding: 2px;
 }
