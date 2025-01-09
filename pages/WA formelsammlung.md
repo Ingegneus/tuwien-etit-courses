@@ -5,7 +5,10 @@ template-used:: standard-page
 tags:: [[wellenausbreitung]], formeln
 alias:: cheat sheet
 
+- ![📚 Formelsammlung_7.Auflage.pdf](.\assets\uni-unterlagen\Wellenausbreitung\Formelsammlung_7.Auflage.pdf)
 - ## [[maxwell]]
+  collapsed:: true
+	- [S. 1](((677f9cf8-f37e-4b35-8c07-3ff96a2323f1)))
 	- $\vect{\nabla} \cdot \vect{S} = \opn{lim}_{\mathcal{V} \to0} \frac{1}{V} \oint_{\Sigma} \vect{S} \cdot \opn{d} \vect{F} = - \frac{\partial}{\partial t} \rho$
 	- $\vect{\nabla} \cdot( \vect{\nabla} \times \vect{H}) \equiv0$
 	- $\vect{\nabla} \times \vect{H} = \vect{S} + \frac{\partial}{\partial t} \vect{D}$
@@ -37,6 +40,7 @@ alias:: cheat sheet
 	- $\delta = \varepsilon + \frac{\sigma}{j \omega} = \varepsilon - j \frac{\sigma}{\omega}$
 	- $\tan \theta = \frac{\varepsilon''}{\varepsilon'} = \frac{\sigma}{\omega \varepsilon}$
 	  id:: 673e3379-c5b6-4af8-a61a-20daa9718476
+	  collapsed:: true
 		- $\tan \theta$ ...  verlustwinkel
 		- $\varepsilon''$ ... [[imaginärteil]] von ((673e3379-64cb-4d50-98c9-668f6b9fd3fd)) $\mathrm{\left[ \frac{As}{Vm} \right]}$
 		- $\varepsilon'$ ... [[realteil]]  von ((673e3379-64cb-4d50-98c9-668f6b9fd3fd)) $\mathrm{\left[ \frac{As}{Vm} \right]}$
@@ -100,6 +104,8 @@ alias:: cheat sheet
 	- ((6750988d-c460-4ec0-8652-1b15a9976b66))
 	  id:: 674d7759-2ef6-4ef6-9620-b611b833d779
 - ## [[homogene ebene wellen]]
+  collapsed:: true
+	- [S. 5](((677f9d41-15df-4c22-be17-7538e60becb7)))
 	- $+ \cfrac{\partial}{\partial z}e_{y} = \mu \cfrac{\partial}{\partial t}h_{x}$
 	- $- \cfrac{\partial}{\partial z}e_{x} = \mu \cfrac{\partial}{\partial t}h_{y}$
 	- $0 = \mu \cfrac{\partial}{\partial t}h_{z}$
@@ -111,6 +117,7 @@ alias:: cheat sheet
 	  tags:: formel
 	  bezeichnung:: allgemeiner lösungsansatz der eindimensionalen [[hew]]
 	  id:: 6745a3c5-baa9-4655-ac6f-92348bdacfc0
+	  collapsed:: true
 		- $e_x(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung $\mathrm{\left[ \frac{V}{m} \right]}$
 		- $e_x^{+}(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung der hinlaufenden welle $\mathrm{\left[ \frac{V}{m} \right]}$
 		- $e_x^{-}(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung der rücklaufenden welle $\mathrm{\left[ \frac{V}{m} \right]}$
@@ -130,6 +137,7 @@ alias:: cheat sheet
 		- $\omega$ ... [[kreisfrequenz]] der welle $\mathrm{\left[ \frac{rad}{s} \right]}$
 		- $k$ ... [[wellenzahl]] $\mathrm{\left[ \frac{rad}{m} \right]}$
 	- ((673c4eb2-5827-434c-a323-0ff29f347504))
+	  id:: 67646b82-6d7d-47d2-bb9e-0000d5f455c2
 	- ((673b66c9-9d1e-40e9-9289-92ee3f902303))
 	- $h_{x}^{ + } = - \cfrac{e_{y}^{ + }}{\eta}$
 	- $\cfrac{e_{x}^{ + }}{h_{y}^{ + }} = - \cfrac{e_{y}^{ + }}{h_{x}^{ + }} = \eta$
@@ -152,6 +160,7 @@ alias:: cheat sheet
 	  id:: 673e3379-9e8e-4059-b99e-e764c678fa51
 	  tags:: formel, wip
 	  bezeichnung:: allgemeine form einer polarisierten welle (elliptische polarisation) Effektivwert (?)
+	  collapsed:: true
 		- $-$ ...
 		- skript
 			- ((67459414-cc15-4ce4-be2d-77b9db927f8b))
@@ -181,7 +190,7 @@ alias:: cheat sheet
 	  bezeichnung:: transportierte leistung in der parallelplattenleitung
 		- $E_{y0}$ ... elektrisches Feld in $y$-Richtung (normal zur Platte/Grenzfläche) $\mathrm{\left[ \frac{V}{m} \right]}$
 		- $d$ ... abstand zwischen den platten der parallelplattenleitung $\mathrm{\left[ m \right]}$
-		- $Z_{PV}$ ... Widerstand der über leistung und spannung berechnet wird. entspricht dem [[wellenwiderstand]] $Z_L$ bzw $\eta$ $\mathrm{\left[ \Omega \right]}$
+		- $Z_{PV}$ ... Leitungswellenwiderstand (?). Widerstand der über leistung und spannung berechnet wird. entspricht dem [[wellenwiderstand]] $Z_L$ bzw $\eta$ $\mathrm{\left[ \Omega \right]}$
 	- $\vect{\nabla}\times\vec{E}=-j\omega\mu\vect{H}$
 	- $\vect{\nabla}\times\vect{H}=\sigma\vec{E}+j\omega\varepsilon\vect{E}$
 	- ((67459ac7-d3b4-47bf-9ac5-0379a5e2e1e8))
@@ -209,6 +218,8 @@ alias:: cheat sheet
 		- $\mu$ ...
 		- $\sigma$ ... elektrische leitfähigkeit $\mathrm{\left[ \frac{S}{m} \right]}$
 - ## Reﬂexion an glatten Grenzflächen, die [[parallelplattenleitung]]
+  collapsed:: true
+	- [S. 8](((677f9d68-fcb5-4a5b-a2fd-8a396f1f8d0a)))
 	- $\frac{\sin \Theta_{1}}{\sin \Theta_{2}} =  \sqrt{\frac{\varepsilon_{2}}{\varepsilon_{1}}} =  \frac{n_{2}}{n_{1}}$
 	  tags:: formel
 	  bezeichnung:: brechungsgesetz/gesetz von snellius
@@ -266,6 +277,8 @@ alias:: cheat sheet
 	- $\lambda_{\mathrm{H},m}= \frac{\lambda_{0}}{\sqrt{1-( \frac{\lambda_{0}}{\lambda_{\mathrm{G},m}})^{2}}}$
 	- $\sin \Theta_{m}= \frac{\lambda_{0}}{\lambda_{\mathrm{H},m}}= \sqrt{1-( \frac{m \lambda_{0}}{2d})^{2}}$
 - ## Die [[oberflächenwelle]]
+  collapsed:: true
+	- [S. 9](((677f9d88-87bb-4a8d-9a0f-3e5744c782e1)))
 	- ${s_{1}= \cfrac{\sigma_{1}}{\omega \varepsilon_{1}} \gg1}$
 	- ${s_{2}= \cfrac{\sigma_{2}}{\omega \varepsilon_{2}} \ll1}$
 	- $k_{\mathrm{E2}}= \omega \sqrt{\varepsilon_{2} \mu_{0}}$
@@ -308,6 +321,8 @@ alias:: cheat sheet
 	- $R= \cfrac{l}{2 \pi a} \sqrt{\cfrac{\omega \mu}{2 \sigma_{1}}}, \quad X= \cfrac{l}{2 \pi a} \sqrt{\cfrac{\omega \mu}{2 \sigma_{1}}}$
 	- $\cfrac{R}{R_{0}}= \cfrac{X}{X_{0}}= \cfrac{a}{2} \sqrt{\cfrac{\omega \mu \sigma_{1}}{2}}= \cfrac{a}{2d_{1}} \propto \sqrt{\omega} \gg1$
 - ## Resonatoren
+  collapsed:: true
+	- [S. 11](((677f9d9c-d39d-4951-8678-363a04793cb4)))
 	- $\lambda_{\mathrm{G},m,n} = \frac{1}{\sqrt{\left(\frac{m}{2a} \right)^{2} + \left(\frac{n}{2b} \right)^{2}}}$
 	  tags:: formel
 	  bezeichnung:: [grenzwellenlänge]([[wellenlänge]]) des $\mathrm{TE}_{mn}$ oder $\mathrm{TM}_{mn}$ modus
@@ -373,6 +388,8 @@ alias:: cheat sheet
 		- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
 		- $\mathbb{R}_\mathrm{M}$ ... oberflächenwiderstand $\mathrm{\left[ \Omega \right]}$
 - ## [[koaxialleitungen]]
+  collapsed:: true
+	- [S. 13](((677f9db4-66d0-4a27-9319-1ee51e246d94)))
 	- ${\vect{E}} = {E_{r} \vect{e_{r}}}$
 	- ${\vect{H}} = {H_{\varphi} \vect{e_{\varphi}}}$
 	- $\frac{\partial}{\partial z}U(z) + Z'I(z) = 0 ,\qquad \frac{\partial}{\partial z}I(z) + Y'U(z) = 0$
@@ -447,6 +464,8 @@ alias:: cheat sheet
 	- $p_{v}(z) = - \frac{\opn{d}P}{\opn{d}z} = - \frac{\opn{d}}{\opn{d}z}P_{0}e^{ - 2 \alpha z} = 2 \alpha P_{0}e^{ - 2 \alpha z} = 2 \alpha P(z)$
 	- $\mathrm{mit} \qquad \alpha = \alpha_{R} + \alpha_{G}$
 - ## [[dielektrische wellenleiter]]
+  collapsed:: true
+	- [S. 15](((677f9dca-32a1-4dec-b900-f8422e84750a)))
 	- ${\xi = k_{x1}d}$
 	- ${\eta = k_{x2}d}$
 	- ${ - \xi \cot \xi = \eta}$
@@ -463,6 +482,7 @@ alias:: cheat sheet
 		- ((67403e6f-2a7f-4aec-8c79-829be01340e3))
 		- $\varepsilon_{r1}, \varepsilon_{r2}$ ... relative [[permittivität]] $\mathrm{\left[-\right]}$
 - ## [[streifenleitungen]]
+	- [S. 16](((677f9ddb-619a-431e-ad3e-32d1c258411b)))
 	- $Z_{\mathrm{L},0} \approx \sqrt{\frac{\mu_{0}}{\varepsilon_{0}}} \frac{1}{2 \pi} \ln \left(\frac{8h}{w} + \frac{w}{4h} \right)$
 	- $Z_{\mathrm{L}} = \frac{Z_{\mathrm{L},0}}{\sqrt{\varepsilon_{\mathrm{eff}}}}$
 	- $\lambda = \frac{\lambda_{0}}{\sqrt{\varepsilon_{\mathrm{eff}}}}$
@@ -471,28 +491,32 @@ alias:: cheat sheet
 	- $h_{\mathrm{max}} = \frac{\lambda_{0}}{4 \sqrt{\varepsilon_{r} - 1}}$
 	- $f_{c,\mathrm{QTEM}} = \frac{c}{(2w + 0,8h) \sqrt{\varepsilon_{r}}}$
 	- $\alpha = \alpha_{\mathrm{L}} + \alpha_{\mathrm{D}}$
-	- $- \cfrac{\partial}{\partial \varepsilon}P(z) = |H_{x 0}|^{2} \mathbb{R} w~, \quad \mathbb{R} = \sqrt{\frac{\omega \mu}{\nu \mu}}~, \quad \alpha_L = \cfrac{1}{2P(z)} \sqrt{\cfrac{\omega \mu}{\rho}}w|H_{z 0}|^{2} = \sqrt{\cfrac{\omega \mu}{2 \sigma}} \cfrac{1}{\eta h}$
+	- $\begin{aligned} - \cfrac{\partial}{\partial \varepsilon}P(z) = & |H_{x 0}|^{2} \mathbb{R} w~, \\ \mathbb{R} =  & \sqrt{\frac{\omega \mu}{\nu \mu}}~, \\ \alpha_L = & \cfrac{1}{2P(z)} \sqrt{\cfrac{\omega \mu}{\rho}}w|H_{z 0}|^{2} = \sqrt{\cfrac{\omega \mu}{2 \sigma}} \cfrac{1}{\eta h}\end{aligned}$ 
+	  id:: 67646b82-5793-44f2-bf08-2157166a28aa
+	  [link](((67646b82-fd98-4993-91b2-db2db6267fd3)))
 	- $P = \int \vect{P} \cdot \opn{d} \vect{F} = \int T_{w,z} \opn{d}x \opn{d}y = \frac{1}{2} \int E_{y} H_{x}^{*} \opn{d}x \opn{d}y = \frac{1}{2 \eta}|E_{y0}|^{2} hw$
-	- $Z_{\mathrm{W}} = \eta \frac{h}{w}.$
-	- $\alpha_{\mathrm{L}} = \sqrt{\frac{\omega \mu}{2 \sigma}} \frac{1}{Z_{\mathrm{L}}w}.$
-	- $\alpha_{\mathrm{L}}' = \alpha_{\mathrm{L}} \left(1 + \frac{2}{\pi} \arctan$
-	- $left(1,4 \frac{\Delta}{d_{1}}$
-	- $right) \right)$
+	- ((677f880d-96b0-404f-aba0-4f8d87e354a1))
+	  id:: 677f8df3-6685-4052-a48a-f893c12cfc77
+	- $\alpha_{\mathrm{L}} = \sqrt{\frac{\omega \mu}{2 \sigma}} \frac{1}{Z_{\mathrm{L}}w}$
+	  id:: 67646b82-fd98-4993-91b2-db2db6267fd3
+	- $\alpha_{\mathrm{L}}' = \alpha_{\mathrm{L}} \left(1 + \frac{2}{\pi} \arctan \left(1,4 \frac{\Delta}{d_{1}} \right) \right)$
 	- $\alpha_{\mathrm{D}} = k_{\mathrm{E}} \frac{S}{2},\quad \frac{\varepsilon'}{\varepsilon''} = \tan \Theta = s$
 	- $\alpha_{\mathrm{D}} = \frac{\pi}{\lambda} \tan \Theta$
 	- $\alpha_{\mathrm{D}} = \frac{\pi}{\lambda} \tan \Theta \left(\frac{\varepsilon_{r}}{\varepsilon_{\mathrm{eff}}} \frac{\varepsilon_{\mathrm{eff}} - 1}{\varepsilon_{r} - 1} \right)$
 - ## Wellen und Hindernisse
+  collapsed:: true
+	- [S. 17](((677f9dee-cbfa-428f-8158-c5169aa0c07e)))
 	- $\Gamma_{\mathrm{rauh}} = \Gamma_{\mathrm{glatt}} \exp \left[ - 2 \left(k \sigma \cos \Theta_{\mathrm{e}} \right)^{2} \right]$
 	- $E/E_{0} = 1/2 - \exp \left( - j \pi/4 \right) \left[C \left(v \right) + j S \left(v \right) \right]/\sqrt{2}$
 	- $C \left(v \right) = \int^{v} \cos \left(\pi t^{2}/2 \right)d t \qquad S \left(v \right) = \int^{v} \sin \left(\pi t^{2}/2 \right)d t$
 	- $v = h \sqrt{2/\lambda \left(1/d_{s} + 1/d_{e} \right)}$
 - ## [[antennen]]
+  collapsed:: true
+	- [S. 18](((677f9e00-c940-4779-8c23-449b4e9ba2e2)))
 	- $\vect{\mathbf{A}} \left(\vect{r} \right) = \mu \int \frac{\vect{\mathbf{S}}_{e} \left(\vect{r}' \right)e^{ - j k \left|\vect{r} - \vect{r}' \right|}}{4 \pi \left|\vect{r} - \vect{r}' \right|} d V'$
 	- ${V}'$
 	- $\vect{\mathbf{A}} \left(\vect{r} \right) = \mu \frac{e^{ - j k r}}{4 \pi r} \int \vect{\mathbf{S}}_{e} \left(\vect{r}' \right) e^{ + j k r' \cos \vartheta}d V' = \mu \frac{e^{ - j k r}}{4 \pi r} \vect{\mathbf{N}} \left(\vartheta \right)$
-	- ${|\tilde{r} - \tilde{r}'|} = {\sqrt{r^{2} + r'^{2} - 2r r' \cos \tilde{\vartheta}}}$
-	- ${ - } { \sqrt{\left(r - r' \cos \vartheta \right)^{2} + r'^{2} \sin^{2} \vartheta}}$
-	- $= {(r - r' \cos \vartheta) \left[1 + \frac{1}{2} \frac{r'}{\left(r - r' \cos \vartheta \right)^{2}} + \cdots \right]}$
+	- $\begin{aligned}|\tilde{r} - \tilde{r}'| = & {\sqrt{r^{2} + r'^{2} - 2r r' \cos \vartheta}} \\ = & \sqrt{\left(r - r' \cos \vartheta \right)^{2} + r'^{2} \sin^{2} \vartheta} \\ = & {(r - r' \cos \vartheta) \left[1 + \frac{1}{2} \frac{r'^2 \sin^2 \vartheta}{\left(r - r' \cos \vartheta \right)^{2}} + \cdots \right]}\end{aligned}$
 	- $\Delta \alpha = k \Delta r = \frac{2 \pi}{\lambda} \frac{r'^{2} \sin^2 \vartheta}{2 \left(r - r' \cos \vartheta \right)}$
 	- $\Delta \alpha_{m a x} = \frac{\pi}{\lambda} \frac{r'^{2}}{r}$
 	- $\frac{\pi}{2} = \frac{\pi}{\lambda} \frac{D^{2}}{r_{R}}$
@@ -579,17 +603,19 @@ alias:: cheat sheet
 	- $Q = \frac{\omega}{2G_{A}} \left(\frac{\partial B_{A}}{\partial \omega} \right) \bigg|_{\omega = \omega_{0}} \qquad \mathrm{mit} \qquad \mathbf{Y}_{A} = G_{A} + j B_{A}$
 	- $\mathcal{r} = \mathcal{r}_{\mathsf{0}} \exp \left(\mathit{a} \psi \right)$
 	- $\frac{P_{S1}}{P_{E2}} = \frac{P_{S2}}{P_{E1}}$
-	- $G \left(\vartheta,\varphi \right) = \frac{P_{\mathrm{L_{REF}}}}{P_{\mathrm{L_{DUT}}}} \cdot \frac{\left|E_{\vartheta_{\mathrm{DUT}}} \left(\vartheta,\varphi \right) \right|^{2}}{\left|E_{\vartheta_{\mathrm{REF}}} \left(\vartheta,\varphi \right) \right|^{2}} = $
+	- $G \left(\vartheta,\varphi \right) = \frac{P_{\mathrm{L_{REF}}}}{P_{\mathrm{L_{DUT}}}} \cdot \frac{\left|E_{\vartheta_{\mathrm{DUT}}} \left(\vartheta,\varphi \right) \right|^{2}}{\left|E_{\vartheta_{\mathrm{REF}}} \left(\vartheta,\varphi \right) \right|^{2}} =$
 	- $M E G = \int G \left(\vartheta,\varphi \right) P \left(\vartheta,\varphi \right)d \Omega$
 	- $\mathbf{4} \boldsymbol{\pi}$
 	- $\Delta \omega = \frac{\omega_{0}}{Q}$
 	- $Q = \frac{\omega}{2G_{A}} \left(\frac{\partial B_{A}}{\partial \omega} \right) \bigg|_{\omega = \omega_{0}} \qquad \mathrm{mit} \qquad \mathbf{Y}_{A} = G_{A} + j B_{A}$
 	- $\mathcal{r} = \mathcal{r}_{\mathsf{0}} \exp \left(\mathit{a} \psi \right)$
 	- $\frac{P_{S1}}{P_{E2}} = \frac{P_{S2}}{P_{E1}}$
-	- $G \left(\vartheta,\varphi \right) = \frac{P_{\mathrm{L_{REF}}}}{P_{\mathrm{L_{DUT}}}} \cdot \frac{\left|E_{\vartheta_{\mathrm{DUT}}} \left(\vartheta,\varphi \right) \right|^{2}}{\left|E_{\vartheta_{\mathrm{REF}}} \left(\vartheta,\varphi \right) \right|^{2}} =$
+	- $\begin{aligned}G\left(\vartheta,\varphi\right)= & \frac{P_{\mathrm{L_{REF}}}}{P_{\mathrm{L_{DUT}}}} \cdot \frac{\left|E_{\vartheta_{\mathrm{DUT}}} \left(\vartheta,\varphi\right)\right|^{2}} {\left|E_{\vartheta_{\mathrm{REF}}} \left(\vartheta,\varphi\right)\right|^{2}} = \\ =& \frac{P_{\mathrm{L_{REF}}}}{P_{\mathrm{L_{DUT}}}} \frac{\left|E_{\vartheta_{\mathrm{DUT}}}\right|_{\mathrm{max}}^{2}}{\left|E_{\vartheta_{\mathrm{REF}}}\right|_{\mathrm{max}}^{2}}\frac{\left|f_{\mathrm{DUT}}\left(\vartheta,\varphi\right)\right|^{2}}{\left|f_{\mathrm{REF}}\left(\vartheta,\varphi\right)\right|^{2}}= \\ = & G_{\mathrm{REF}}\cdot\frac{\left|f_{\mathrm{DUT}}\left(\vartheta,\varphi\right)\right|^{2}}{\left|f_{\mathrm{REF}}\left(\vartheta,\varphi\right)\right|^{2}} \end{aligned}$
 	- $M E G = \int G \left(\vartheta,\varphi \right) P \left(\vartheta,\varphi \right)d \Omega$
 	- $\mathbf{4} \boldsymbol{\pi}$
 - ## wellen im freien raum
+  collapsed:: true
+	- [S. 23](((677f9e16-d327-4592-a537-5690a7082038)))
 	- $r \doteq \sqrt{\frac{d \lambda}{4}}$
 	- $T_{e,I S O} = \frac{P_{s}}{4 \pi d^{2}}$
 	- $T_{e} = \frac{P_{s}G_{s}}{4 \pi d^{2}}$
@@ -607,19 +633,18 @@ alias:: cheat sheet
 	- $\frac{P_{e}}{P_{s}} = \sigma G_{s}^{2} \bigg(\frac{\lambda}{4 \pi} \bigg)^{2} \frac{1}{4 \pi d^{4}}$
 	- $\sigma = A G = A \frac{4 \pi}{\lambda^{2}}A = 4 \pi \frac{A^{2}}{\lambda^{2}}$
 - ## [[mehrwegausbreitung]]
+	- [S. 24](((677f9e30-fbb1-4656-af18-4d0e59104263)))
 	- $\tau_{1} = d_{1}/c,\qquad \mathrm{und} \qquad \tau_{2} = d_{2}/c$
 	- $\mathbf{h}(\tau) = \mathbf{A}_{1} \delta \left(\tau - \tau_{1} \right) + \mathbf{A}_{2} \delta \left(\tau - \tau_{2} \right)$
-	- $\mathbf{H} \left(j \omega \right) = \int \mathbf{h}(\tau)e^{ - j \omega \tau} \left.d \tau = \mathbf{A}_{1} \left.e^{ - j \omega \tau_{1}} + \mathbf{A}_{2} \left.e^{ - j \omega \tau_{2}} \right.$
+	- $\mathbf{H} \left(j \omega \right) = \int_0^\infty \mathbf{h}(\tau) e^{-j \omega \tau} \opn{d} \tau = \mathbf{A}_{1} e^{-j \omega \tau_{1}} + \mathbf{A}_{2} e^{-j\omega\tau_{2}}$
 	- $\left|\mathbf{H} \left(j \omega \right) \right| = \sqrt{A_{1}^{2} + A_{2}^{2} + 2 \lambda_{1}A_{2} \cos \left(\omega \cdot \Delta \tau \right)} \qquad \mathrm{mit} \qquad \Delta \tau = \tau_{2} - \tau_{1}$
 	- $\Delta f_{N o t c h} = \frac{1}{\Delta \tau}$
 	- $\mathbf{H} \left(j \omega \right) = \left|\mathbf{H} \left(j \omega \right) \right|e^{j \phi_{H} \left(j \omega \right)}$
 	- $\tau_{G r} = - \frac{d \phi_{H}}{d \omega}$
-	- $\vect{\mathbf{E}} \left(\vect{r} \right) = \vect{\mathbf{E}}_{1} \left.e^{ - j \vect{k}_{1} \vect{r}} + \vect{\mathbf{E}}_{2} \left.e^{ - j \vect{k}_{2} \vect{r}} \right.$
-	- ${\varepsilon^{I}(l)} { = E_{0} \cdot \mathrm{ev}(\varepsilon_{i}(l - E||l_{0} - l|l_{0})}$
-	- ${\varepsilon'(l)} { = l_{0} \cdot \mathrm{ev}(\varepsilon_{i}') k_{i}'|l_{0}'}$
-	- ${\varepsilon_{0} \cdot \mathrm{ev}(\varepsilon_{i}') \cdot \mathrm{ev}(\varepsilon_{i}') \cdot \mathrm{ev}(\varepsilon_{i}') \cdot \mathrm{ev}(\varepsilon_{i}') \cdot \mathrm{ev}(\varepsilon_{i}'|l_{0}')}$
-	- ${\varepsilon_{0} \cdot \mathrm{ev}(\varepsilon_{i}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}'|l_{0}}'|l_{0}'|l_{0}|l_{0}'|l_{0}} \right)}$
-	- ${|l_{0}'|l_{0}|l_{0}'|l_{0}|l_{0}} \right).}$
+	- $\vect{\mathbf{E}} \left(\vect{r} \right) = \vect{\mathbf{E}}_{1} e^{ - j \vect{k}_{1} \vect{r}} + \vect{\mathbf{E}}_{2} e^{ - j \vect{k}_{2} \vect{r}}$
+	- $\vect{\mathcal{E}}(t)=\vect{E}_{0}\cdot\cos{(\omega t-k d)}$
+	- $\begin{aligned} \vect{\mathcal{E}}\left(t\right) = & \vect{E}_{0} \cdot \cos \left( \omega t-k \left[d_{0} + v t\right] \right) \\ = & \vect{E}_{0}\cdot\cos\left(t\left[\omega-k v\right]-k d_{0}\right)\\ = & \vect{E}_{0}\cdot\cos\left(t\left[2\pi f-\frac{2\pi}{\lambda}v\right]-k d_{0}\right) \\ = & \vect{E}_{0}\cdot\cos\left(2\pi t\left[f-\frac{v}{\lambda}\right]-k d_{0}\right)\end{aligned}$
+	- $\Delta f_{D}=-\frac{v}{\lambda}=-f\cdot\frac{v}{c}$
 	- $\Delta f_{D} = - \frac{v}{\lambda} \cos \left(\gamma \right) = - f \cdot \frac{v}{c} \mathrm{cos} \left(\gamma \right)$
 	- $p(E) = \frac{1}{\sigma \sqrt{2 \cdot \pi}} \cdot e^{ - \frac{E^{2}}{2 \cdot \sigma^{2}}}$
 	- $\mathrm{Varianz}{: = \overline{{E^{2}}} - \left(\overline{{E}} \right)^{2}}$

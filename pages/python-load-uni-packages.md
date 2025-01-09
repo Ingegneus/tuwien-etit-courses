@@ -1,3 +1,10 @@
+public:: true
+icon:: 🐍
+inherit-color-icon-from:: [[logseq-page-color-green]] 
+template-used:: standard-page
+tags:: python, uni
+
+- provides some [[python]] utility functions. meant to be used with [[uni]] related tasks
 - ```python
   import pyodide_js
   await pyodide_js.loadPackage("micropip")

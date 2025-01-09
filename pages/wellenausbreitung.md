@@ -1510,24 +1510,88 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			  background-color:: green
 			  collapsed:: true
 				- formeln
-				  collapsed:: true
 					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
+					  id:: 67646c21-51cf-48bb-b84c-2196d75fba9e
 					- ((6735b379-187a-4654-8126-efd8a322477b))
 					- ((67403e6c-c82c-4ada-a67e-ba11b41ebcc8)) [FS](((67404a07-268a-4632-b86f-c136cdfaf0eb)))
-				- code
-			- b) Berechnen Sie den Mediumswiderstand, den Leitungswellenwiderstand und die [[grenzfrequenz]] des gefragten Modus für $w = 12 \mathrm{mm}$, $d = 3 \mathrm{mm}$! Geben Sie alle zur Berechnung notwendigen Schritte an!
+				- der ansatz ist:
+					- ((673e3379-7ae8-425b-bf90-a176d50f983b)) 
+					  ((6735b379-187a-4654-8126-efd8a322477b))
+				- separationsbedingungen:
+					- ((67403e6c-c82c-4ada-a67e-ba11b41ebcc8)) [FS](((67404a07-268a-4632-b86f-c136cdfaf0eb)))
+				- rand anpassen
+					- da $w \gg d$ ist das feld zwischen den platten annähernd homogen, daher ist $E_x = 0$
+			- b) Berechnen Sie den [[Mediumswiderstand]], den Leitungswellenwiderstand und die [[grenzfrequenz]] des gefragten Modus für $w = 12 \mathrm{mm}$, $d = 3 \mathrm{mm}$! Geben Sie alle zur Berechnung notwendigen Schritte an!
 			  background-color:: green
 				- formeln
-					- $d \text{\textemdash} d$
-					- $\ftt$
-					- $\circ\hspace{-.4em} - \hspace{-.4em} - \hspace{-.2em}\bullet$
+					- ((673c4eb2-5827-434c-a323-0ff29f347504)) [FS](((67646b82-6d7d-47d2-bb9e-0000d5f455c2)))
+					- ((677f880d-96b0-404f-aba0-4f8d87e354a1)) [FS](((677f8df3-6685-4052-a48a-f893c12cfc77)))
+					- ((677f93d6-ecad-4035-8078-04095dc4b5eb))
 				- code
-			- c) Berechnen Sie mittels der Power Loss Method den Dämpfungskoeﬃzienten für den gefragten Modus in $\mathrm{dB/m}$. Das Metall sei durch $\sigma_{Cu} = 48 \cdot 10^6 \mathrm{S/m}$ charakterisiert, die Frequenz sei $7 \mathrm{GHz}$. Geben Sie alle zur Berechnung notwendigen Schritte an!
+					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
+					  mu = 1 * mu_0
+					  eps_r = 3.5
+					  eps = eps_r * epsilon_0
+					  eta = sqrt(mu/eps)
+					  
+					  resPrint("η", eta, "Ω")
+					  
+					  w = 12E-3 
+					  h = 3E-3
+					  ZL = eta * h/w
+					  
+					  resPrint("Z_L", ZL, "Ω")
+					  
+					  resPrint("f_g",0, "Hz")
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+			- c) Berechnen Sie mittels der [[Power Loss Method]] den Dämpfungskoeﬃzienten für den gefragten Modus in $\mathrm{dB/m}$. Das Metall sei durch $\sigma_{Cu} = 48 \cdot 10^6 \mathrm{S/m}$ charakterisiert, die Frequenz sei $7 \mathrm{GHz}$. Geben Sie alle zur Berechnung notwendigen Schritte an!
 			  background-color:: green
+				- forneln
+					- ((67646b82-5793-44f2-bf08-2157166a28aa))
+					- ((67646b82-fd98-4993-91b2-db2db6267fd3))
+				- code
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
+					  f= 7E9
+					  omega = 2 * pi * f
+					  sigma = 48E6
+					  
+					  alpha_L = sqrt((omega*mu)/(2*sigma))*1/(eta*h)
+					  
+					  resPrint("α_L",
+					           alpha_L, 
+					           "Np/m", 
+					           "α_L", 
+					           alpha_L*20/log(10), 
+					           "dB/m")
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
 			- d) Zeichnen Sie die tatsächlichen Feldbilder ohne Verwendung der Näherung $w \gg d$ in zwei Ansichten! Welche Wellentypen sind prinzipiell auf dieser Leitung ausbreitungsfähig?
 			  background-color:: green
 			  collapsed:: true
 				- ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_1.webp) ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_2.webp)
+	- Leiten Sie den Dampfungsbelag der abgebildeten leeren Parallelplattenleitung mit dem Plattenabstand $d$ und der Plattenbreite $w$ $w\gg d$ ) her. Nehmen Sie an, daß sich eine $\mathrm{TEM}$-Welle in $z_{i}$-Richtung ausbreitet.
+	  background-color:: green
+	  ![img](../assets/documents/WA_parallelplattenleitung_bsp_2.webp)
+		- a) Finden Sie einen Ansatz für die Komponenten des gefragten Modus, der die Wellengleichung erfüllt (nachprüfen!), ermitteln Sie die Separationsbedingungen und passen Sie an den Rand an! Welche Komponenten verschwinden?
+		  background-color:: green
+		- b) Zeichnen Sie die Feldbilder in zwei Ansichten ($xy$- und $yz$-Ebene)! Erklaren Sie die Auswirkungen der Naherung $w\gg d!$ Welche Wellentypen sind prinzipiell auf dieser Leitung ausbreitungsfähig?
+		  background-color:: green
+		- c) Berechnen Sie den Mediumswiderstand, den Leitungswellenwiderstand und die Grenzfrequenz des gefragten Modus!
+		  background-color:: green
+		- d) Berechnen Sie mittels der [[Power Loss Method]] den Dämpfungskoeffizienten für den gefragten Modus. Das Metall sei durch $\sigma_{\mathbf{Cu}}=5.7\times10^{7}\mathbf{S}/\mathbf{m}$ (nun nicht mehr verlustfrei) charakterisiert, die Frequenz sei $1\mathrm{GHz}$, $w=20\mathrm{mm}$, $d=1.5\mathrm{mm}$
+		  background-color:: green
+		- e) Berechnen und skizzieren Sie das Dispersionsdiagramm fur den gefragten Modus.
+		  background-color:: green
 - ## flashcards
   collapsed:: true
 	- ### index
@@ -1573,6 +1637,24 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  ]
 		  }
 		  #+END_QUERY
+	- welche wellen sind im rechteck hohlleiter ausbreitungsfähig?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+		- $\mathrm{TE}$ und $\mathrm{TM}$ wellen
+		- die $\mathrm{TEM}$ welle ist **nicht** ausbreitungsfähig aufgrund der randbedingungen [link](((67459ac8-e918-4a08-8003-07057ff681d6))). der hohlleiter kann in $x$ und $y$ richtung kein $E$ feld haben, da das potential überall gleich ist
+	- Wie groß ist die [[grenzfrequenz]] der $\mathrm{TEM}$ welle in einer [[parallelplattenleitung]] ?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+	  id:: 677f93d6-ecad-4035-8078-04095dc4b5eb
+		- $0 \mathrm{ Hz }$
+	- Was ist die vorgehensweise der [[Power Loss Method]]? 
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+		- Berechnung der Feldbildes für ideal leitfähige Wände
+		- Ansatz $P(z) = P_0 e^{−2αz}$
+		- Diﬀerentation nach $z$ ergibt $\alpha=\frac{1}{2P(z)}\left(-\frac{\partial}{\partial z}P(z)\right)$
+		- Berechnung der transportieren Leistung mittels Poyntingvektor $P=\int\mathrm{Re}\{\vect{T}\}\cdot\mathrm{d}\vect{F}$
+		- Berechnung der Leistungsabnahme in $z$-Richtung mit $-\mathrm{d}P=\frac{1}{2}|H_{\mathrm{tang}}|^{2}\mathbb{R}_{\mathrm{M}}\mathrm{d}F$
 	- wie lautet der ansatz für die $\mathrm{TE}$-welle in einem ebenen wellenleiter
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard

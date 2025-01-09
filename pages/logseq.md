@@ -3,7 +3,6 @@ color:: "#7084e7"
 
 - this page will be for collecting useful insights into how to use [[logseq]] effectively, as well as collecting tips and tricks
 - insights
-  collapsed:: true
 	- it is useful to dump everything into the [[journals]] page and tag all clutter with #inbox and then sort it out (either by referencing or moving) when at a pc or something
 	- this is how I set up my journaling template [link](https://blog.logseq.com/how-to-set-up-an-automated-daily-template-in-logseq/)
 	- I want to get into styling [[logseq]]
@@ -56,7 +55,6 @@ color:: "#7084e7"
 		- `:now` writes the current time in a non changing way via the `now_fix` macro
 		- `gestern`/`yesterday` will be expanded to a link to the corresponding day
 - Plugins
-  collapsed:: true
 	- https://hub.logseq.com/use-cases/1Sr4awszMQzD4GM5KvWim7/10-must-have-plugins-for-logseq/jgDG2ZVkeZGSQHXUNkWroo
 	- https://github.com/logseq/awesome-logseq
 	- [cannibalox/logtools: Logtools: utilities for Logseq (kanban, image gallery, priority matrix, ...)](https://github.com/cannibalox/logtools)

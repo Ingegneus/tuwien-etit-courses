@@ -3,6 +3,7 @@ tags:: wellenausbreitung
 
 - ## vorlesungen
 	- 1 Einleitung
+	  collapsed:: true
 		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\1 Einleitung.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Willkommen allseits noch einmal zur Wellenausbreitungsvorlesung. Ich werde selber den Vorlesungsteil machen. Mein Name ist Christoph Mecklenbräuger und der Übungsteil wird von Herbert Groll im Wesentlichen in Form von vorgerechneten Übungsbeispielen vorgetragen. Ich hoffe, wir sehen und hören uns immer dienstags und donnerstags, wie hier am Merkblatt sichtbar und die Übungstermine finden unregelmäßig statt, aber werden im Vorab über TIS und natürlich auch in der Vorlesung angekündigt.
 			- {{renderer :media-timestamp, 00:00:43}} Das Skriptum Wellenausbreitung ist erhältlich im grafischen Zentrum und es gibt eine 2020er Neuauflage, die in weiten Teilen identisch ist mit den früheren Jahren.
@@ -1986,7 +1987,6 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:51:41}} Wir haben im Wesentlichen zwei Oberflächen, nämlich die hier in Rot skizzierte Unterseite des Mikrostreifens und die in Grün markierte Oberseite des Mikrostreifens. Und auf der Unterseite, also auf der rot markierten Seite, die dem Dielektrikum zugewandt ist und natürlich der Grundplatte zugewandt ist, haben wir die höhere Stromdichte.
 			- {{renderer :media-timestamp, 00:52:11}} Also hier die obere badewannenartige Kurve, die ist die Unterseite des Mikrostreifens. Und die niedrigere Badewannenkurve entspricht dem Stromdichteverlauf auf der grünen Oberseite des Mikrostreifens.
 	- 10 Wellen und Hindernisse
-	  collapsed:: true
 		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\10 Wellen und Hindernisse.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird jetzt aufgenommen. Ja, schönen guten Morgen allseits. Wir sind gegen Ende des Kapitels 9, Mikrostreifenleitung. Wir haben besprochen, dass hier sogenannte quasi TEM-Wellen ausbreitungsfähig sind. E-Liter-Linie ist deswegen quasi, weil einerseits haben wir es ja mit einer Zweileiterstruktur zu tun, also der Mikrostreifen auf der oberen Seite des Dielektrikums und die Groundplane als Rückleitung.
 			- {{renderer :media-timestamp, 00:00:40}} Deswegen ist etwas TEM-mäßiges zu erwarten. Aber weil wir zwei verschiedene Permittivitäten haben, nämlich Luft im oberen Halbraum und ein Substrat mit einem höheren Epsilon R unterhalb der Streifenleitung,
