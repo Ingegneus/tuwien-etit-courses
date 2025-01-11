@@ -7,7 +7,6 @@ alias:: cheat sheet
 
 - ![📚 Formelsammlung_7.Auflage.pdf](.\assets\uni-unterlagen\Wellenausbreitung\Formelsammlung_7.Auflage.pdf)
 - ## [[maxwell]]
-  collapsed:: true
 	- [S. 1](((677f9cf8-f37e-4b35-8c07-3ff96a2323f1)))
 	- $\vect{\nabla} \cdot \vect{S} = \opn{lim}_{\mathcal{V} \to0} \frac{1}{V} \oint_{\Sigma} \vect{S} \cdot \opn{d} \vect{F} = - \frac{\partial}{\partial t} \rho$
 	- $\vect{\nabla} \cdot( \vect{\nabla} \times \vect{H}) \equiv0$
@@ -82,11 +81,22 @@ alias:: cheat sheet
 	- $\nabla^{2} \vect{E} - \mu \varepsilon \frac{\partial^{2}}{\partial t^{2}} \vect{E} - \mu \sigma \frac{\partial}{\partial t} \vect{E} = 0$
 	  tags:: formel, wip
 	  bezeichnung:: wellengleichung (telegrafengleichung) mit verlusten
-		- $-$ ...
+	  id:: 67646b82-91a5-483a-9d35-9669db690b89
+		- $\nabla^2$ ... [[laplace operator]]
+		- $\vect{E}$ ... elektrischer feldstärke vektor der momentanwerte $\mathrm{\left[ \frac{V}{m} \right]}$
+		- $\mu$ ... magnetische permeabilität $\mathrm{\left[ \frac{Vs}{Am} \right]}$
+		- $\varepsilon$ ... elektrische permittivität $\mathrm{\left[ \frac{As}{Vm} \right]}$
+		- $\sigma$ ... elektrische leitfähigkeit $\mathrm{\left[ \frac{S}{m} \right]}$
+		- $t$ ... zeit
+		- $\cfrac{\partial}{\partial t}, \cfrac{\partial^2}{\partial t^2}$ ... partielle ableitung 1./2. ordnung nach der zeit
 	- $\nabla^{2} \vect{E} + ( \omega^{2} \mu \varepsilon - j \omega \mu \sigma) \vect{E} = 0$
 	- $\nabla^{2} \vect{E} + \omega^{2} \mu \delta \vect{E} = 0$
 	- $\nabla^{2} = \frac{\partial^{2}}{\partial x^{2}} + \frac{\partial^{2}}{\partial y^{2}} + \frac{\partial^{2}}{\partial z^{2}}$
 	- $k = \omega \sqrt{\mu \delta}$
+	  tags:: formel, wip
+	  bezeichnung:: wellenzahl
+		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
+		- $\delta$ ... [[komplexe]] [[dielektrizitätskonstante]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
 	- $\Psi(x,y,z) = X(x)Y(y)Z(z)$
 	- $\frac{1}{X(x)} \frac{\partial^{2}}{\partial x^{2}}X(x) + \frac{1}{Y(y)} \frac{\partial^{2}}{\partial y^{2}}Y(y) + \frac{1}{Z(z)} \frac{\partial^{2}}{\partial z^{2}}Z(z) + \underbrace{k^{2}}_{\text{const.}} = 0$
 	- $\frac{1}{X(x)} \frac{\partial^{2}}{\partial x^{2}}X(x) = - k_{x}^{2}$
@@ -94,17 +104,15 @@ alias:: cheat sheet
 	  tags:: formel, wip
 	  bezeichnung:: separationsbedingung
 	  id:: 674d7759-0e35-482f-8086-9026be01cd14
-		- $-$ ...
+		- $\delta$ ... [[komplexe]] [[dielektrizitätskonstante]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
 	- $\frac{\partial^{2}}{\partial x^{2}}X(x) + k_{x}^{2}X(x) = 0$
 	- $\frac{\partial}{\partial y}H_{z} - \frac{\partial}{\partial z}H_{y} = j \omega \delta E_{x} \\ \frac{\partial}{\partial z}H_{x} - \frac{\partial}{\partial x}H_{z} = j \omega \delta E_{y} \\ \frac{\partial}{\partial x}H_{y} - \frac{\partial}{\partial y}H_{x} = j \omega \delta E_{z} \\ \frac{\partial}{\partial y}E_{z} - \frac{\partial}{\partial z}E_{y} = - j \omega \mu H_{x} \\ \frac{\partial}{\partial z}E_{x} - \frac{\partial}{\partial x}E_{z} = - j \omega \mu H_{y} \\ \frac{\partial}{\partial x}E_{y} - \frac{\partial}{\partial y}E_{x} = - j \omega \mu H_{z}$
 	  tags:: formel, wip
-	  bezeichnung:: komponentenweise darstellung der [[maxwellschen]] rotorgleichungen in [[kartesischer]] form. vorraussetzung: [[harmonische]] Vorgänge und Quellenfreiheit. 
-	  anschreiben
+	  bezeichnung:: komponentenweise darstellung der [[maxwellschen]] rotorgleichungen in [[kartesischer]] form. vorraussetzung: [[harmonische]] Vorgänge und Quellenfreiheit anschreiben
 		- $-$ ...
 	- ((6750988d-c460-4ec0-8652-1b15a9976b66))
 	  id:: 674d7759-2ef6-4ef6-9620-b611b833d779
 - ## [[homogene ebene wellen]]
-  collapsed:: true
 	- [S. 5](((677f9d41-15df-4c22-be17-7538e60becb7)))
 	- $+ \cfrac{\partial}{\partial z}e_{y} = \mu \cfrac{\partial}{\partial t}h_{x}$
 	- $- \cfrac{\partial}{\partial z}e_{x} = \mu \cfrac{\partial}{\partial t}h_{y}$
@@ -113,10 +121,20 @@ alias:: cheat sheet
 	- $+ \cfrac{\partial}{\partial z}h_{x} = \varepsilon \cfrac{\partial}{\partial t}e_{y}$
 	- $0 = \varepsilon \cfrac{\partial}{\partial t}e_{z}$
 	- $\cfrac{\partial^2}{\partial z^2}e_{x} - \mu \varepsilon \cfrac{\partial^2}{\partial t^2}e_{x} = 0$
+	  id:: 67646b82-c128-49c7-b8b1-18a53926ceca
+	  tags:: formel
+	  bezeichnung:: eindimensionale homogene Wellengleichung in karthesischen koordinaten
+		- $z$ ... raumkoordinate $\mathrm{\left[ m \right]}$
+		- $\cfrac{\partial^2}{\partial z^2}$ ... partielle ableitung 2. ordnung nach der $z$ koordinate
+		- $e_x$ ... momentan wert des elektrischen feldes in $x$ richtung $\mathrm{\left[ \frac{V}{m} \right]}$
+		- $\mu$ ... magnetische permeabilität $\mathrm{\left[ \frac{Vs}{Am} \right]}$
+		- $\varepsilon$ ... elektrische permittivität $\mathrm{\left[ \frac{As}{Vm} \right]}$
+		- $t$ ... zeit
+		- $\cfrac{\partial^2}{\partial t^2}$ ... partielle ableitung 2. ordnung nach der zeit
 	- $e_{x}\left(z,t\right) = \underbrace{c_1f_1\left(z - vt\right)}_{ = e_{x}^{ + }\left(z,t\right)} + \underbrace{c_2f_2\left(z + vt\right)}_{ = e_{x}^{ - }\left(z,t\right)}$
+	  id:: 6745a3c5-baa9-4655-ac6f-92348bdacfc0
 	  tags:: formel
 	  bezeichnung:: allgemeiner lösungsansatz der eindimensionalen [[hew]]
-	  id:: 6745a3c5-baa9-4655-ac6f-92348bdacfc0
 	  collapsed:: true
 		- $e_x(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung $\mathrm{\left[ \frac{V}{m} \right]}$
 		- $e_x^{+}(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung der hinlaufenden welle $\mathrm{\left[ \frac{V}{m} \right]}$
@@ -178,8 +196,21 @@ alias:: cheat sheet
 	- ${e_{y}\left(z,0\right)} = {E \cos \left( - kz \pm \cfrac{\pi}{2} \right) = \pm E \sin \left(kz \right)}$
 	- $\vect{E} =E_{y0}e^{ - jkz} \vect{i}_y$
 	  id:: 673e3379-7ae8-425b-bf90-a176d50f983b
+	  tags:: formel
+	  bezeichnung:: ansatz der elektrischen komponente einer $\mathrm{TEM}$ welle
+		- $\vect{E}$ ... elektrischer feldstärke vektor $\mathrm{\left[ \frac{V}{m} \right]}$
+		- $E_{y0}$ ... amplitude des elektrischen feldes in $y$ richtung $\mathrm{\left[ \frac{V}{m} \right]}$
+		- $k_z$ ...  wellenzahl in $z$ richtung $\mathrm{\left[ \frac{rad}{m} \right]}$
+		- $\vect{i}_y$ ... einheitsvektor in $y$ richtung $\mathrm{\left[ - \right]}$
 	- $\eta \vect{H} = - E_{y0}e^{ - jkz} \vect{i}_{x}$
 	  id:: 6735b379-187a-4654-8126-efd8a322477b
+	  tags:: formel
+	  bezeichnung:: ansatz der magnetischen komponente einer $\mathrm{TEM}$ welle
+		- $\eta$ ... mediumswiderstand $\mathrm{\left[ \Omega \right]}$
+		- $\vect{H}$ ... magnetischer feldstärke vektor $\mathrm{\left[ \frac{A}{m} \right]}$
+		- $E_{y0}$ ... amplitude des elektrischen feldes in $y$ richtung $\mathrm{\left[ \frac{V}{m} \right]}$
+		- $k_z$ ...  wellenzahl in $z$ richtung $\mathrm{\left[ \frac{rad}{m} \right]}$
+		- $\vect{i}_x$ ... einheitsvektor in $x$ richtung $\mathrm{\left[ - \right]}$
 	- $\begin{aligned} P&=\int\vect{P}\cdot\opn{d}\vect{F}=\cfrac12\opn{Re} \left\{\int(\vect{E}\times\vect{H^{*}})\cdot\opn{d}\vect{F} \right\} \\ &= \cfrac{1}{2} \opn{Re} \left\{\int(E_{x}H_{y}^{*} - E_{y}H_{x}^{*}) \opn{d}F \right\} \\ &= \cfrac{w d}{2} \opn{Re} \{ - E_{y0}e^{ - j k z}( - \cfrac{E_{y0}}{\eta}e^{ + j k z}) \} = \cfrac{E_{y0}^{2}}{2 \eta}w d \end{aligned}$
 	- $P = \cfrac{|U|^{2}}{2Z_{\opn{PV}}}$
 	  id:: 6735b379-6bbc-4df6-9bbd-9f29e63108cf
@@ -211,6 +242,7 @@ alias:: cheat sheet
 	  id:: 674d7759-c315-4a22-a755-be7a35c4b441
 	  tags:: formel
 	  bezeichnung:: eindringtiefe
+	  collapsed:: true
 		- $\alpha$ ... [[realteil]] der [[komplexen]] [[wellenzahl]] $\mathrm{\left[ \frac{rad}{m} \right]}$
 		- $k_\mathrm{E}$ ...
 		- $s$ ... bandbreite $\mathrm{\left[ - \right]}$
@@ -224,6 +256,7 @@ alias:: cheat sheet
 	  tags:: formel
 	  bezeichnung:: brechungsgesetz/gesetz von snellius
 	  id:: 6734720f-e42f-46c0-a512-3075ea423042
+	  collapsed:: true
 		- $\Theta_1$ ... winkel in medium 1 (eintritt) $\mathrm{[°]}$
 		- $\Theta_2$ ... winkel in medium 2 (transmission) $\mathrm{[°]}$
 		- $\varepsilon_1$ ... absolute [[permittivität]] $\mathrm{\left[\frac{As}{Vm}\right]}$
@@ -233,6 +266,7 @@ alias:: cheat sheet
 	  id:: 6735b379-5292-4604-baef-85a4c9a6fc3f
 	  tags:: formel, wip
 	  bezeichnung:: reflektionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TM fall)
+	  collapsed:: true
 		- $\Gamma_{\mathrm{TM}}$ ... reflexionsfaktor der TM Welle $\mathrm{\left[ - \right]}$
 		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
 		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
@@ -242,6 +276,7 @@ alias:: cheat sheet
 	  id:: 6735b379-80fa-4b2a-be2d-af5089fe1fa8
 	  tags:: formel, wip
 	  bezeichnung:: transmissionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TM fall)
+	  collapsed:: true
 		- $T_{\mathrm{TE}}$ ... transmissionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
 		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
 		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
@@ -251,6 +286,7 @@ alias:: cheat sheet
 	  id:: 6735b379-8ba8-4a90-b5e2-8b5b38036526
 	  tags:: formel, wip
 	  bezeichnung:: reflektionsfaktor der transversal polarisierten elektrischen welle (fresnel formel TE fall)
+	  collapsed:: true
 		- $\Gamma_{\mathrm{TE}}$ ... reflexionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
 		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
 		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
@@ -260,6 +296,7 @@ alias:: cheat sheet
 	  id:: 6735b379-1a1f-417e-8323-7fe94bd9e2cf
 	  tags:: formel
 	  bezeichnung:: transmissionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TE fall)
+	  collapsed:: true
 		- $T_{\mathrm{TE}}$ ... transmissionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
 		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
 		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
@@ -272,6 +309,16 @@ alias:: cheat sheet
 	- $\lambda_{\mathrm{H},m}= \frac{\lambda_{0}}{\sin \Theta_{m}}$
 	- $d=m \frac{\lambda_{0}}{2}$
 	- $f_{\mathrm{G},m}= \frac{m \mathit{c}}{2d}$
+	  id:: 67646b82-d905-4edd-915a-d4c002f45a0b
+	  tags:: formel
+	  bezeichnung:: [[grenzfrequenz]] einer bestimmten mode
+		- $f_{\mathrm{G},m}$ ... [[grenzfrequenz]] $\mathrm{\left[ Hz \right]}$
+		- $m$ ... entspricht der mode $\mathrm{\left[ - \right]}$
+		- $c$ ... lichtgeschwindigkeit im medium $\mathrm{\left[ \frac{m}{s} \right]}$
+		- $d$ ... abstand zwischen den platten/hohlleitergröße $\mathrm{\left[ m \right]}$
+		- skript
+		  collapsed:: true
+			- ((67814da4-970e-4339-a254-52ccde167cb4))
 	- $\lambda_{\mathrm{G},m}= \frac{c}{f_{\mathrm{G},m}}= \frac{2d}{m}$
 	- $\lambda_{\mathrm{H},m}= \frac{\lambda_{0}}{\sqrt{1-( \frac{m \lambda_{0}}{2d})^{2}}}$
 	- $\lambda_{\mathrm{H},m}= \frac{\lambda_{0}}{\sqrt{1-( \frac{\lambda_{0}}{\lambda_{\mathrm{G},m}})^{2}}}$
@@ -310,6 +357,7 @@ alias:: cheat sheet
 	  id:: 674d7759-2399-4628-94f1-400ee5be7c0e
 	  tags:: formel
 	  bezeichnung:: gesamtwiderstand eines leiterstreifens aufgrund des skin effekts
+	  collapsed:: true
 		- $R$ ... gesamter ohmscher widerstand $\mathrm{\left[\Omega\right]}$
 		- $l$ ... länge des streifens $\mathrm{\left[m\right]}$
 		- $\mathbb{R}_{\square}$ ... oberflächenwiderstand $\mathrm{\left[\Omega\right]}$
@@ -482,6 +530,7 @@ alias:: cheat sheet
 		- ((67403e6f-2a7f-4aec-8c79-829be01340e3))
 		- $\varepsilon_{r1}, \varepsilon_{r2}$ ... relative [[permittivität]] $\mathrm{\left[-\right]}$
 - ## [[streifenleitungen]]
+  collapsed:: true
 	- [S. 16](((677f9ddb-619a-431e-ad3e-32d1c258411b)))
 	- $Z_{\mathrm{L},0} \approx \sqrt{\frac{\mu_{0}}{\varepsilon_{0}}} \frac{1}{2 \pi} \ln \left(\frac{8h}{w} + \frac{w}{4h} \right)$
 	- $Z_{\mathrm{L}} = \frac{Z_{\mathrm{L},0}}{\sqrt{\varepsilon_{\mathrm{eff}}}}$
@@ -491,10 +540,11 @@ alias:: cheat sheet
 	- $h_{\mathrm{max}} = \frac{\lambda_{0}}{4 \sqrt{\varepsilon_{r} - 1}}$
 	- $f_{c,\mathrm{QTEM}} = \frac{c}{(2w + 0,8h) \sqrt{\varepsilon_{r}}}$
 	- $\alpha = \alpha_{\mathrm{L}} + \alpha_{\mathrm{D}}$
-	- $\begin{aligned} - \cfrac{\partial}{\partial \varepsilon}P(z) = & |H_{x 0}|^{2} \mathbb{R} w~, \\ \mathbb{R} =  & \sqrt{\frac{\omega \mu}{\nu \mu}}~, \\ \alpha_L = & \cfrac{1}{2P(z)} \sqrt{\cfrac{\omega \mu}{\rho}}w|H_{z 0}|^{2} = \sqrt{\cfrac{\omega \mu}{2 \sigma}} \cfrac{1}{\eta h}\end{aligned}$ 
+	- $\begin{aligned} - \cfrac{\partial}{\partial z}P(z) = & |H_{x 0}|^{2} \mathbb{R} w~, \\ \mathbb{R} =  & \sqrt{\frac{\omega \mu}{\nu \mu}}~, \\ \alpha_L = & \cfrac{1}{2P(z)} \sqrt{\cfrac{\omega \mu}{\rho}}w|H_{z 0}|^{2} = \sqrt{\cfrac{\omega \mu}{2 \sigma}} \cfrac{1}{\eta h}\end{aligned}$ 
 	  id:: 67646b82-5793-44f2-bf08-2157166a28aa
 	  [link](((67646b82-fd98-4993-91b2-db2db6267fd3)))
 	- $P = \int \vect{P} \cdot \opn{d} \vect{F} = \int T_{w,z} \opn{d}x \opn{d}y = \frac{1}{2} \int E_{y} H_{x}^{*} \opn{d}x \opn{d}y = \frac{1}{2 \eta}|E_{y0}|^{2} hw$
+	  id:: 67646b82-afb7-461b-b7c5-33308e3f9af8
 	- ((677f880d-96b0-404f-aba0-4f8d87e354a1))
 	  id:: 677f8df3-6685-4052-a48a-f893c12cfc77
 	- $\alpha_{\mathrm{L}} = \sqrt{\frac{\omega \mu}{2 \sigma}} \frac{1}{Z_{\mathrm{L}}w}$

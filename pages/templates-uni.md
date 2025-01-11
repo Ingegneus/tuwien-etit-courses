@@ -110,10 +110,9 @@ tags:: [[templates]], [[uni]]
 	  
 	  var_numeric
 	  var_symbolic
-	  print(f"var = {var_numeric:.4g}unit")
-	  print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
-	  print(f"latex code: {sp.latex(var_symbolic)}")
-	  sp.pprint(var_symbolic, use_unicode=False)
+	  resPrint("var", var_numeric, "unit")
+	  
+	  symPrint(var_symbolic)
 	  
 	  printer.getvalue()
 	  ```
@@ -124,10 +123,8 @@ tags:: [[templates]], [[uni]]
 	- ```python
 	  printer.seek(0); printer.truncate(0)
 	  
-	  print(f"var = {var_numeric:.4g}unit")
-	  print("‾‾‾‾‾‾‾‾‾‾‾‾")
-	  print(f"latex code: {sp.latex(var_symbolic)}")
-	  sp.pprint(var_symbolic, use_unicode=False)
+	  resPrint("var", var_numeric, "unit")
+	  symPrint(var_symbolic)
 	  
 	  printer.getvalue()
 	  ```

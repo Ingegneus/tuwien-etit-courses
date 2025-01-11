@@ -64,7 +64,7 @@ tags:: python, uni
           output = f"{name} = {val:.4g}{unit}"
           outputs.append(output)
           print(output)
-      print('‾' * len(max(outputs)))
+      print('‾' * (len(max(outputs, key=len))))
   ```
 - ```python
   def showSvgImg(buf):

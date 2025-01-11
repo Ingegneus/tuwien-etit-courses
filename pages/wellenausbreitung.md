@@ -1504,11 +1504,11 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 	  background-color:: green
 		- Es soll die Ausbreitungsfähigkeit des $\mathrm{TEM}$ Modus in $z$-Richtung auf dem abgebildeten Parallelplattenleiter (mit $\varepsilon_r = 3.5$) untersucht werden.
 		  background-color:: green
+		  collapsed:: true
 		  Hinweis: $\varepsilon_0 = \mathrm{8.854· 10^{−12}~As/Vm}$, $µ0 = \mathrm{4π · 10^{−7}~Vs/Am}$.
 		  ![img](../assets/documents/WA_parallelplattenleitung_bsp_1.webp)
 			- a) Berechnen Sie die Komponenten der gefragten Moden, ﬁnden Sie einen Ansatz der die Wellengleichung erfüllt, ermitteln Sie die Separationsbedingungen und passen Sie an den Rand an! Verwenden Sie dabei die Näherung $w \gg d$. Welche Komponenten verschwinden?
 			  background-color:: green
-			  collapsed:: true
 				- formeln
 					- ((673e3379-7ae8-425b-bf90-a176d50f983b))
 					  id:: 67646c21-51cf-48bb-b84c-2196d75fba9e
@@ -1526,7 +1526,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				- formeln
 					- ((673c4eb2-5827-434c-a323-0ff29f347504)) [FS](((67646b82-6d7d-47d2-bb9e-0000d5f455c2)))
 					- ((677f880d-96b0-404f-aba0-4f8d87e354a1)) [FS](((677f8df3-6685-4052-a48a-f893c12cfc77)))
-					- ((677f93d6-ecad-4035-8078-04095dc4b5eb))
+					- ((6780ec62-3611-4ae5-9d18-fac23a212ae4))
 				- code
 					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
 					- ```python
@@ -1546,15 +1546,31 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  resPrint("Z_L", ZL, "Ω")
 					  
 					  resPrint("f_g",0, "Hz")
-					  
+					  outputs=["ab = c","a     ccc ddd d b"]
+					  print(max(outputs))
 					  printer.getvalue()
 					  ```
 						- {{evalparent}}
 			- c) Berechnen Sie mittels der [[Power Loss Method]] den Dämpfungskoeﬃzienten für den gefragten Modus in $\mathrm{dB/m}$. Das Metall sei durch $\sigma_{Cu} = 48 \cdot 10^6 \mathrm{S/m}$ charakterisiert, die Frequenz sei $7 \mathrm{GHz}$. Geben Sie alle zur Berechnung notwendigen Schritte an!
 			  background-color:: green
 				- forneln
+				  collapsed:: true
 					- ((67646b82-5793-44f2-bf08-2157166a28aa))
 					- ((67646b82-fd98-4993-91b2-db2db6267fd3))
+					- ((67646b82-afb7-461b-b7c5-33308e3f9af8))
+				- schritte [link](((677ffa90-cda3-43fe-adf6-f66acaa766bc)))
+					- ((677ffa90-8b80-4f55-84fd-04b043315ff2))
+					  logseq.order-list-type:: number
+					- ((677ffa90-906b-474f-bd86-9937b6d51c53))
+					  logseq.order-list-type:: number
+						- $P(z) = P_0 e^{−2αz} \quad / \ln$
+						- $\ln (P(z)) = −2αz +\ln (P_0) \quad / \pdif{z}$
+						- $\pdif{z}\ln(Pz)= - \pdif{z} 2 \alpha z + \pdif{z} \ln(P_0)$
+						- $\frac{\pdif{z} P(z)}{P(z)}=-2\alpha \quad / \cdot \frac{1}{-2}$
+					- ((67646b82-afb7-461b-b7c5-33308e3f9af8))
+					  logseq.order-list-type:: number
+					- ((67646b82-5793-44f2-bf08-2157166a28aa))
+					  logseq.order-list-type:: number
 				- code
 					- ```python
 					  printer.seek(0); printer.truncate(0)
@@ -1562,7 +1578,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  f= 7E9
 					  omega = 2 * pi * f
 					  sigma = 48E6
-					  
 					  alpha_L = sqrt((omega*mu)/(2*sigma))*1/(eta*h)
 					  
 					  resPrint("α_L",
@@ -1577,21 +1592,148 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- d) Zeichnen Sie die tatsächlichen Feldbilder ohne Verwendung der Näherung $w \gg d$ in zwei Ansichten! Welche Wellentypen sind prinzipiell auf dieser Leitung ausbreitungsfähig?
 			  background-color:: green
-			  collapsed:: true
+				- es sind die $\mathrm{TEM}$, $\mathrm{TE}$ und $\mathrm{TM}$ wellen ausbreitungsfähig
 				- ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_1.webp) ![img](../assets/documents/WA_parallelplattenleitung_feldbild_illustration_2.webp)
-	- Leiten Sie den Dampfungsbelag der abgebildeten leeren Parallelplattenleitung mit dem Plattenabstand $d$ und der Plattenbreite $w$ $w\gg d$ ) her. Nehmen Sie an, daß sich eine $\mathrm{TEM}$-Welle in $z_{i}$-Richtung ausbreitet.
-	  background-color:: green
-	  ![img](../assets/documents/WA_parallelplattenleitung_bsp_2.webp)
-		- a) Finden Sie einen Ansatz für die Komponenten des gefragten Modus, der die Wellengleichung erfüllt (nachprüfen!), ermitteln Sie die Separationsbedingungen und passen Sie an den Rand an! Welche Komponenten verschwinden?
+		- Es soll die Ausbreitungsfähigkeit von $\mathrm{TEM}$, $\mathrm{TE}_m$ und $\mathrm{TM}_m$ Moden in $z$-Richtung auf dem abgebildeten Parallelplattenleiter (mit $\varepsilon_r = 1$) untersucht werden
 		  background-color:: green
-		- b) Zeichnen Sie die Feldbilder in zwei Ansichten ($xy$- und $yz$-Ebene)! Erklaren Sie die Auswirkungen der Naherung $w\gg d!$ Welche Wellentypen sind prinzipiell auf dieser Leitung ausbreitungsfähig?
+		  collapsed:: true
+		  ![img](../assets/documents/WA_parallelplattenleitung_bsp_1.webp)
+			- Die Leitung soll von $10$ bis $12 \mathrm{GHz}$ im Monomodebetrieb eingesetzt werden. Dimensionieren Sie $d$ so, dass die Grenze für Monomodebetrieb $20\%$ über bzw. unter dem angegebenen Bereich liegt.
+			  background-color:: green
+			  collapsed:: true
+				- formeln
+				  collapsed:: true
+					- ((67646b82-d905-4edd-915a-d4c002f45a0b))
+					  id:: 6781497e-e0d9-41b2-81c2-a48dc4ecc371
+				- Da es zwei voneinander isolierte Leiter gibt, ist eine $\mathrm{TEM}$-Welle ausbreitungsfähig. Die untere Grenzfrequenz liegt bei $0 \mathrm{Hz}$, sodass nur dafür gesorgt werden muss, dass sich keine $\mathrm{TE}$  bzw. $\mathrm{TM}$-Wellen ausbreiten können.
+				- code
+					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
+					  fu= 10E9
+					  fo=12E9
+					  m = 1 # weil monomode
+					  fG1 = 1.2 * fo
+					  
+					  d = m*c/2/fG1
+					  
+					  resPrint("d", d, "m")
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+			- Welche Moden sind bei der doppelten Betriebsfrequenz ausbreitungsfähig?
+			  background-color:: green
+			  collapsed:: true
+				- formeln
+					- ((67646b82-d905-4edd-915a-d4c002f45a0b))
+				- code
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
+					  fGm = 2 * fo
+					  m = int(fGm *2*d/c)
+					  
+					  resPrint("m", m, "")
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+					- die wellen moden sind so indiziert
+						- $\mathrm{TE}_{mn}$
+						- $\mathrm{TM}_{mn}$
+					- also sind die $\mathrm{TEM}$, $\mathrm{TE}_{10}$ und $\mathrm{TM}_{10}$ ausbreitungsfähig
+			- Zeichnen Sie ein Dispersionsdiagramm für die untersten $5$ Moden.
+			  background-color:: green
+				- formeln
+					- ((67646b82-d905-4edd-915a-d4c002f45a0b))
+					- ((67403e6c-c82c-4ada-a67e-ba11b41ebcc8)) [FS](((67404a07-268a-4632-b86f-c136cdfaf0eb)))
+				- code
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  eps_r = 1
+					  eps = epsilon_0 *eps_r
+					  mu_r = 1
+					  mu = mu_0 *mu_r
+					  
+					  fGm = 0
+					  for m in range(1,3):
+					    fGm = m*c/2/d
+					    resPrint("fG"+str(m),
+					           fGm/1E9,
+					           "GHz")
+					  w = 2 * pi * fGm
+					  k = w * sqrt(eps * mu)
+					  resPrint("k_max",
+					           k,
+					           "rad/m")
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+				- ![img](../assets/documents/dispersionsdiagramm_parallelplattenleitung.webp){:height 238, :width 331}
+		- Es soll die Ausbreitungsfähigkeit von $\mathrm{TM}_n$ Moden auf dem abgebildeten Parallelplattenleiter (mit $\omega > d, \varepsilon_r = 1$) untersucht werden.
 		  background-color:: green
-		- c) Berechnen Sie den Mediumswiderstand, den Leitungswellenwiderstand und die Grenzfrequenz des gefragten Modus!
-		  background-color:: green
-		- d) Berechnen Sie mittels der [[Power Loss Method]] den Dämpfungskoeffizienten für den gefragten Modus. Das Metall sei durch $\sigma_{\mathbf{Cu}}=5.7\times10^{7}\mathbf{S}/\mathbf{m}$ (nun nicht mehr verlustfrei) charakterisiert, die Frequenz sei $1\mathrm{GHz}$, $w=20\mathrm{mm}$, $d=1.5\mathrm{mm}$
-		  background-color:: green
-		- e) Berechnen und skizzieren Sie das Dispersionsdiagramm fur den gefragten Modus.
-		  background-color:: green
+		  ![img](../assets/documents/WA_parallelplattenleitung_bsp_1.webp)
+			- Finden Sie einen Ansatz für die gefragten Moden, der die Wellengleichung erfüllt, und überprüfen Sie dies. Berechnen Sie alle weiteren Komponenten. Ermitteln Sie die Separationsbedingungen und passen Sie an den Rand an.
+			  background-color:: green
+				- formeln
+					- ((678194dd-cc06-4d4f-86fb-d2d5d226846f))
+					- ((67646b82-91a5-483a-9d35-9669db690b89))
+					- ((6750988d-c460-4ec0-8652-1b15a9976b66)) [FS](((674d7759-2ef6-4ef6-9620-b611b833d779)))
+				- ansatz
+					- $H_z=0$
+					- $E_z = B \cdot \sin(k_y y) e^{-j k_z z}$
+				- separationsbedingung
+					- annahme: verlustlos, daher $\sigma =0$
+					- $\nabla^{2} \vect{E} - \mu \varepsilon \frac{\partial^{2}}{\partial t^{2}} \vect{E} - \cc{red}{\mu \sigma \frac{\partial}{\partial t} \vect{E}} = 0 \quad / \sigma = 0$
+					- $\nabla^{2} \vect{E} = \mu \varepsilon \frac{\partial^{2}}{\partial t^{2}} \vect{E} \quad / \vect{E} = E_z \cdot e^{j\omega t} \quad / E_z = B \cdot \sin(k_y y) e^{-j k_z z}$
+					- $\nabla^{2} B \cdot \sin(k_y y) e^{-j k_z z} \cdot e^{j\omega t} = \mu \varepsilon \frac{\partial^{2}}{\partial t^{2}}\left( B \cdot \sin(k_y y) e^{-j k_z z} \cdot e^{j\omega t}\right)$
+					- $B e^{j \omega t}\left(-k_y^2 \sin(k_y y) e^{-j k_z z} -  k_z^2 \sin(k_y y) e^{-j k_z z}\right)= - \mu \varepsilon B \cdot \sin(k_y y) e^{-j k_z z} \cdot \omega^2 e^{j\omega t}$
+					- $B e^{j \omega t} \sin(k_y y) e^{-j k_z z} \left(-k_y^2  -  k_z^2\right)= - \mu \varepsilon  \omega^2 B \cdot \sin(k_y y) e^{-j k_z z} \cdot e^{j\omega t}$
+					  id:: 6782b1c1-cef2-453f-abdb-82cc77cb0f2f
+					- $\cc{red}e_z (k_y^2 + k_z^2) = \mu \varepsilon \omega^2 \cc{red}e_z$
+					- $k_y^2 + k_z^2 = \mu \varepsilon \omega^2$
+					  id:: 6782b286-917a-48a9-8ef0-ca93dbfd79be
+					  background-color:: yellow
+				- rand anpassen
+					- $E_{\parallel}(y=0)=0$ und $E_{\parallel}(y=d)=0$
+					- dafür muss $E_{z}(y=0)=0$ und $E_{z}\left(y=d\right)=0$
+						- bei $y=0$
+							- passt schon
+							- $\sin(k_{y}y)=0$
+						- bei $y=d$
+							- $\sin(k_{y} d)=0$
+							- $k_{y}d=\pi n$
+							- $k_{y}=\frac{\pi n}{d}$
+							  background-color:: yellow
+				- modale lösungen
+					- $E_x$
+						- $E_x = 0$
+						  background-color:: yellow
+					- $E_y$
+						- $E_{y} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial y}E_{z} - \cc {red}{\omega \mu \frac{\partial}{\partial x}H_{z} }\right) \quad / E_z = B \cdot \sin(k_y y) e^{-j k_z z} \quad /H_z=0$
+						- $E_{y} = \frac{ - j}{\kappa^{2}} \left(k_{z} \pdif{y} B \cdot \sin(k_y y) e^{-j k_z z} \right) \quad /\kappa = k^2-k_z^2$
+							- keine ausbreitung in $x$ daher $\kappa = k_y$ [link](((6782b286-917a-48a9-8ef0-ca93dbfd79be)))
+						- $E_{y} = \frac{ - j}{k_y^{\cc{red} 2}} \left(k_{z} B \cdot \cc{red} k_y \cos(k_y y) e^{-j k_z z} \right)$
+						- $E_{y} = \frac{ - j k_z}{k_y} \left( B \cdot \cos(k_y y) e^{-j k_z z} \right)$
+						  background-color:: yellow
+					- $H_x$
+						- $H_{x} = \frac{ - j}{\kappa^{2}} \left(\cc{red}{k_{z} \frac{\partial}{\partial x}H_{z}} - \omega \delta \frac{\partial}{\partial y}E_{z} \right) \quad / E_z = B \cdot \sin(k_y y) e^{-j k_z z} \quad /H_z=0$
+						- $H_{x} = \frac{ - j}{\kappa^{2}} \left(- \omega \delta \frac{\partial}{\partial y}\left( B \cdot \sin(k_y y) e^{-j k_z z}\right)\right)$
+						- $H_{x} = \frac{ - j}{\kappa^{2}} \left(- \omega \delta B k_y \left(\cos(k_y y) e^{-j k_z z}\right)\right) \quad /\kappa = k^2-k_z^2$
+							- keine ausbreitung in $x$ daher $\kappa = k_y$
+							  id:: 6782901b-5d68-4f1f-a7a8-74f5055cded5
+						- $H_{x} = \frac{j}{k_y^{\cc{red}2}} \left(\omega \delta B \cc{red}k_y\left(\cos(k_y y) e^{-j k_z z}\right)\right)$
+						- $H_{x} = \frac{j  \omega \delta}{k_y} B \left(\cos(k_y y) e^{-j k_z z}\right)$
+						  background-color:: yellow
+					- $H_y$
+						- $H_y = 0$
+						  background-color:: yellow
+			- Berechnen Sie den Mediumswiderstand $\eta$, den Feldwellenwiderstand $Z_{W,n}$ und die Grenzirequenz $f_g$, aller gefragten Moden!
+			  background-color:: green
+				-
 - ## flashcards
   collapsed:: true
 	- ### index
@@ -1608,8 +1750,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  [?page :block/name ?pagename]
 		  [?block :block/path-refs [:block/name "flashcard"]]
 		  ( or
-		  (property ?block :deck "Uni::Automatisierungstechnik_Theorie")
-		  (property ?block :deck "Uni::Mathematik_Theorie")
+		  (property ?block :deck "Uni::Wellenausbreitung_Theorie")
 		  )
 		  ( not
 		  (?page :page/name "templates-uni")
@@ -1630,32 +1771,80 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  [?page :block/name ?pagename]
 		  [?block :block/path-refs [:block/name "flashcard"]]
 		  ( or
-		  (property ?block :deck "Uni::Automatisierungstechnik_Theorie")
-		  (property ?block :deck "Uni::Mathematik_Theorie")
+		  (property ?block :deck "Uni::Wellenausbreitung_Theorie")
 		  )
-		  [?page :page/name "automatisierungstechnik"]
+		  [?page :page/name "wellenausbreitung"]
 		  ]
 		  }
 		  #+END_QUERY
+	-
+	- was ist eine entartete mode?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+	  collapsed:: true
+		- Zwei Moden werden als entartet bezeichnet wenn sie gleiche Ausbreitungseigenschaften haben also gleiches $k_z$, $v_G$, ... haben. Diese Moden sind deswegen nicht identisch da das Feldbild unterschiedlich ist.
+		- skript
+			- ((6782a3fb-3b8a-408e-9791-4dc33f95f960))
+	- wie lautet der ansatz für eine $\mathrm{TM}$ welle in einer parallelplattenleitung?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+	  id:: 678194dd-cc06-4d4f-86fb-d2d5d226846f
+		- $H_z=0$
+		- $E_z = B \cdot \sin(k_y y) e^{-j k_z z}$
+			- $\sin$ da das transversale feld an der wand $=0$ sein muss
+	- wie lautet der ansatz für eine $\mathrm{TE}$ welle in einer parallelplattenleitung?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+		- $E_z=0$
+		- $H_z = A \cdot \cos(k_y y) e^{-j k_z z}$
+			- $\cos$ weil an der wand das feld mit dem flächenstrom springt
+	- wie lautet der ansatz für die $\mathrm{TEM}$ welle in einer parallelplattenleitung?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+		- ((673e3379-7ae8-425b-bf90-a176d50f983b))
+		- ((6735b379-187a-4654-8126-efd8a322477b))
+	- was ist die [[grenzfrequenz]]
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+	  collapsed:: true
+		- die [[grenzfrequenz]] im kontext der [[wellenausbreitung]] gibt an, ab welcher [[Frequenz]] eine bestimmte mode ausbreitungsfähig ist
+		- skript
+			- ((67814bdd-887a-474f-a649-a5d3f325d26a))
 	- welche wellen sind im rechteck hohlleiter ausbreitungsfähig?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  collapsed:: true
 		- $\mathrm{TE}$ und $\mathrm{TM}$ wellen
 		- die $\mathrm{TEM}$ welle ist **nicht** ausbreitungsfähig aufgrund der randbedingungen [link](((67459ac8-e918-4a08-8003-07057ff681d6))). der hohlleiter kann in $x$ und $y$ richtung kein $E$ feld haben, da das potential überall gleich ist
 	- Wie groß ist die [[grenzfrequenz]] der $\mathrm{TEM}$ welle in einer [[parallelplattenleitung]] ?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
 	  id:: 677f93d6-ecad-4035-8078-04095dc4b5eb
+	  collapsed:: true
 		- $0 \mathrm{ Hz }$
+		  id:: 6780ec62-3611-4ae5-9d18-fac23a212ae4
+		- Sobald man zwei voneinander isolierte Leiter hat kann Gleichstrom ($f = 0 \mathrm{Hz}$) geführt werden.
 	- Was ist die vorgehensweise der [[Power Loss Method]]? 
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
-		- Berechnung der Feldbildes für ideal leitfähige Wände
-		- Ansatz $P(z) = P_0 e^{−2αz}$
-		- Diﬀerentation nach $z$ ergibt $\alpha=\frac{1}{2P(z)}\left(-\frac{\partial}{\partial z}P(z)\right)$
-		- Berechnung der transportieren Leistung mittels Poyntingvektor $P=\int\mathrm{Re}\{\vect{T}\}\cdot\mathrm{d}\vect{F}$
-		- Berechnung der Leistungsabnahme in $z$-Richtung mit $-\mathrm{d}P=\frac{1}{2}|H_{\mathrm{tang}}|^{2}\mathbb{R}_{\mathrm{M}}\mathrm{d}F$
-	- wie lautet der ansatz für die $\mathrm{TE}$-welle in einem ebenen wellenleiter
+	  id:: 677ffa90-cda3-43fe-adf6-f66acaa766bc
+	  collapsed:: true
+		- prinzip
+			- Bei der Power-Loss-Methode berechnet man zuerst die Feldkomponenten unter der Annahme ideal leitfähiger Wände. Anschließend wird angenommen, dass die Wände doch kleine Verluste aufweisen, die allerdings so klein sind, dass das Feldbild näherungsweise unverändert bleibt. Durch die Verluste geht ein Teil der Leistung auf dem Weg verloren. Das wird durch den Ansatz $P(z) = P_0 \cdot e^{-2\alpha z}$ beschrieben, wobei $\alpha$ der gesuchte Dämpfungskoeffizient ist. $P_0$ kann man zwar über die Feldkomponenten des idealen Hohlleiters berechnen, trotzdem kann man nicht einfach auf $\alpha$ umformen, weil man $P(z)$ nicht kennt. Deswegen wird $P(z)$ abgeleitet, sodass man für $P(z) = P_0$ einsetzten kann und die Leistungsabnahme über die Verluste aufgrund des Oberflächenwiderstandes berechnen kann.
+		- anleitung
+			- Berechnung der Feldbildes für ideal leitfähige Wände
+			  logseq.order-list-type:: number
+			- Ansatz $P(z) = P_0 e^{−2αz}$
+			  id:: 677ffa90-8b80-4f55-84fd-04b043315ff2
+			  logseq.order-list-type:: number
+			- Diﬀerentation nach $z$ ergibt $\alpha=\frac{1}{2P(z)}\left(-\frac{\partial}{\partial z}P(z)\right)$
+			  id:: 677ffa90-906b-474f-bd86-9937b6d51c53
+			  logseq.order-list-type:: number
+			- Berechnung der transportieren Leistung mittels Poyntingvektor $P=\int\mathrm{Re}\{\vect{T}\}\cdot\mathrm{d}\vect{F}$
+			  logseq.order-list-type:: number
+			- Berechnung der Leistungsabnahme in $z$-Richtung mit $-\mathrm{d}P=\frac{1}{2}|H_{\mathrm{tang}}|^{2}\mathbb{R}_{\mathrm{M}}\mathrm{d}F$
+			  logseq.order-list-type:: number
+	- wie lautet der ansatz für die $\mathrm{TE}$-welle in einem ebenen dielektrischen wellenleiter
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
 	  collapsed:: true

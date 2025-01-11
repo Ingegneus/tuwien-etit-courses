@@ -46,4 +46,4 @@ alias:: maxwellschen, maxwellsche
   id:: 6750988d-c460-4ec0-8652-1b15a9976b66
   tags:: formel, wip
   bezeichnung:: restlichen feldkomponente. allgemein gültig
-	- $\kappa$ ... hilfsvariable $\kappa^2=k^2-k_z^2$
+	- $\kappa$ ... hilfsvariable/wellenzahl $\kappa^2=k^2-k_z^2$

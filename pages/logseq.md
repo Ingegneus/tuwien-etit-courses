@@ -29,7 +29,6 @@ color:: "#7084e7"
 			- "original" tag/page should be in english, with translation aliases
 			- ?der ursprüngliche tag/seite sollte ein sammelbegriff sein?  --> nein, es sollten wirklich nur synonyme sein
 - important [[shortcuts]]
-  collapsed:: true
 	- in [[logseq]] to use the "letters only" shortcuts you need to not have focus on a page and then type the letters one after the other
 	- `ctrl + click`
 	  select a block without entering edit mode
@@ -48,12 +47,14 @@ color:: "#7084e7"
 	- ``t > r``
 	  "toggle right" close/open right sidebar
 	- ``g > h``
-	  "go home" gos back to the journals page
+	  "go home" goes back to the journals page
 	- ``t > w``
 	  "toggle wide" wide mode
 	- I created some "[[shortcuts]]" using [[kits]], macros and [[espanso]]
 		- `:now` writes the current time in a non changing way via the `now_fix` macro
 		- `gestern`/`yesterday` will be expanded to a link to the corresponding day
+	- `t > n`
+	  "toggle numbered list" sets the bullet points to numbers
 - Plugins
 	- https://hub.logseq.com/use-cases/1Sr4awszMQzD4GM5KvWim7/10-must-have-plugins-for-logseq/jgDG2ZVkeZGSQHXUNkWroo
 	- https://github.com/logseq/awesome-logseq

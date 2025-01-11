@@ -167,7 +167,8 @@ div.out button.out {
 div.out:hover button.out {
     visibility: visible;
 }
-/*  */
+
+	/* change the buttons of kits */
 div.out {
 	font-size: 14px;
 	font-family: 'Emoji', 'Fira Code', Monaco, Menlo, Consolas, 'COURIER NEW', monospace;
@@ -276,6 +277,10 @@ svg.awLi-favicon {
     padding: 0 0.2em;
 }
 
+.katex *{
+	border-color: currentColor;
+}
+
 /* block reference underline */
 .block-ref {
 	display: inline-block;
@@ -300,11 +305,18 @@ border-bottom:none}
 	background: blackvar(--ls-wb-background-color-default);
 }
 
+/* change the font color of bright highlighted text */
 [style*="background-color: var(--ls-highlight-color-yellow);"] {
 	color: black;
+	border-color: black!important;
 }
 
+/* change the background for tags/links on highlighted bg */
 [style*="background-color: var(--ls-highlight-color-"] > .page-reference {
 	background-color: var(--ls-primary-background-color);
 	padding: 2px;
+}
+
+::selection {
+  background: var(--lx-accent-07);
 }
