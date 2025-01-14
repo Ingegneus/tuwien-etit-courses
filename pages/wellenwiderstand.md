@@ -25,7 +25,7 @@ alias:: wellenwiderstand, mediumswiderstand
   id:: 677f880d-96b0-404f-aba0-4f8d87e354a1
   tags:: formel, [[streifenleitung]]
   bezeichnung:: wellenleitungswiderstand einer [[streifenleitung]], [[parallelplattenleitung]]. auch $Z_W$ genannt
-	- $Z_L$ ... wellenleitungswiderstand $\mathrm{\left[ \Omega \right]}$
+	- $Z_L$ ... leitungswellenwiderstand $\mathrm{\left[ \Omega \right]}$
 	- $\eta$ ... [[wellenwiderstand]]/mediumswiderstand $\mathrm{\left[ \Omega \right]}$
 	  id:: 6780ec63-3188-4c2f-979b-94fee1798e85
 	- $h$ ... abstand zwischen den leiterplatten $\mathrm{\left[ m \right]}$

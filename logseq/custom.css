@@ -1,7 +1,6 @@
 /* awesome content plugin */
 @import url("https://raw.githack.com/yoyurec/logseq-awesome-content/main/src/awesomeContent-cdn.css") only screen and (max-width: 2024px);
 
-
 /* change emoji font */
 :root {
 	--ls-font-family: 'Emoji', Inter;
@@ -296,6 +295,26 @@ svg.awLi-favicon {
 	text-decoration: none!important; 
 }
 
+.content .done .form-checkbox{
+	opacity: 1;
+}
+
+.block-marker{
+	opacity:1;
+}
+
+.content .todo .form-checkbox{
+	opacity:1;
+	}
+
+/*
+:root {
+    --awCo-priority-a-user: var(--ls-highlight-color-yellow);
+    --awCo-priority-b: ;
+    --awCo-priority-c: ...!important;
+}
+*/
+
 /* sticky headers */
 .will-stick .is-sticky{
 border-bottom:none}
@@ -317,6 +336,7 @@ border-bottom:none}
 	padding: 2px;
 }
 
+/* change the color of selected text */
 ::selection {
   background: var(--lx-accent-07);
 }

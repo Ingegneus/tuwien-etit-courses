@@ -258,7 +258,7 @@
 		["doc" [[:editor/input "![📚 doc](../assets/documents/)"]]]
 		["img" [[:editor/input "![img](../assets/documents/.webp)"]]]
 		["l" [[:editor/input "[]([[]])"]]]
-		["checkbox" [[:editor/input "<p><input type="checkbox" class="form-checkbox">  </p>" {:backward-pos 5}]]]
+		["checkbox" [[:editor/input "<p><input type=\"checkbox\" class=\"form-checkbox\">  </p>" {:backward-pos 5}]]]
 		["iframe" [[:editor/input "{{{iframe }}}" {:backward-pos 3}]]]		
 		
 		["highlight-yellow" [[:editor/input "<span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-yellow);'></span>"]]]

@@ -42,8 +42,9 @@ alias:: maxwellschen, maxwellsche
   bezeichnung:: integral form der [[maxwell]] gleichungen mittels des gaußschen satz und satz von stokes
 	- $-$ ...
 -
-- $E_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial x}E_{z} + \omega \mu \frac{\partial}{\partial y}H_{z} \right) \\ E_{y} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial y}E_{z} - \omega \mu \frac{\partial}{\partial x}H_{z} \right) \\ H_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial x}H_{z} - \omega \delta \frac{\partial}{\partial y}E_{z} \right) \\ H_{y} = \frac{ - j}{\kappa^{2}} \left( k_{z} \frac{\partial}{\partial y} H_{z} + \omega \delta \frac{\partial}{\partial x} E_{z} \right)$
+- $E_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \pdif{x}E_{z} + \omega \mu \pdif{y}H_{z} \right) \\ E_{y} = \frac{ - j}{\kappa^{2}} \left(k_{z} \pdif{y}E_{z} - \omega \mu \pdif{x}H_{z} \right) \\ H_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \pdif{x}H_{z} - \omega \delta \pdif{y}E_{z} \right) \\ H_{y} = \frac{ - j}{\kappa^{2}} \left( k_{z} \pdif{y} H_{z} + \omega \delta \pdif{x} E_{z} \right)$
   id:: 6750988d-c460-4ec0-8652-1b15a9976b66
   tags:: formel, wip
   bezeichnung:: restlichen feldkomponente. allgemein gültig
 	- $\kappa$ ... hilfsvariable/wellenzahl $\kappa^2=k^2-k_z^2$
+	- $\delta$ ... [[komplexe]] [[dielektrizitätskonstante]] $\mathrm{\left[ \frac{As}{Vm} \right]}$

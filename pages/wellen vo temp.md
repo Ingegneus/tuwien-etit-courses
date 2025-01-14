@@ -1987,6 +1987,7 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:51:41}} Wir haben im Wesentlichen zwei Oberflächen, nämlich die hier in Rot skizzierte Unterseite des Mikrostreifens und die in Grün markierte Oberseite des Mikrostreifens. Und auf der Unterseite, also auf der rot markierten Seite, die dem Dielektrikum zugewandt ist und natürlich der Grundplatte zugewandt ist, haben wir die höhere Stromdichte.
 			- {{renderer :media-timestamp, 00:52:11}} Also hier die obere badewannenartige Kurve, die ist die Unterseite des Mikrostreifens. Und die niedrigere Badewannenkurve entspricht dem Stromdichteverlauf auf der grünen Oberseite des Mikrostreifens.
 	- 10 Wellen und Hindernisse
+	  collapsed:: true
 		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\10 Wellen und Hindernisse.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird jetzt aufgenommen. Ja, schönen guten Morgen allseits. Wir sind gegen Ende des Kapitels 9, Mikrostreifenleitung. Wir haben besprochen, dass hier sogenannte quasi TEM-Wellen ausbreitungsfähig sind. E-Liter-Linie ist deswegen quasi, weil einerseits haben wir es ja mit einer Zweileiterstruktur zu tun, also der Mikrostreifen auf der oberen Seite des Dielektrikums und die Groundplane als Rückleitung.
 			- {{renderer :media-timestamp, 00:00:40}} Deswegen ist etwas TEM-mäßiges zu erwarten. Aber weil wir zwei verschiedene Permittivitäten haben, nämlich Luft im oberen Halbraum und ein Substrat mit einem höheren Epsilon R unterhalb der Streifenleitung,
@@ -2218,7 +2219,6 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 01:01:20}} und Lambda. Der größere der beiden. Eine andere Art und Weise, das auszudrücken, ist eine saloppe
 			- {{renderer :media-timestamp, 01:01:32}} Schreibweise, die sagt, die Rayleigh-Distanz ist 2d² durch Lambda und wenn dieser Wert kleiner als Lambda wird, dann addieren wir einfach noch Lambda dazu. Das ist ja nur eine Grenze, um einen Fehler zu begrenzen und keine so exakte Rechnung. In diesem Ausdruck mit 2d² durch Lambda und bei Bedarf addieren wir noch Lambda dazu, ist der, wie man es oft in der Literatur findet.
 	- 11.3 Richtdiagramm
-	  collapsed:: true
 		- ![wel-vo](.\assets\uni-unterlagen\Wellenausbreitung\VOs\11.3 Richtdiagramm.mp4)
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird nun aufgezeichnet. Schönen guten Morgen allseits. Letzte Vorlesungseinheit vor den Weihnachtsferien. Nächste Woche und übernächste Woche ist nix und dann sehen wir uns erst im Januar wieder. Traditionell beginne ich dann immer die Vorlesung mit der Besprechung der Ferialhausübung. Eine Besprechung dazu habe ich am Dienstag vorgestern schon gemacht.
 			- {{renderer :media-timestamp, 00:00:36}} Die Anleitung dazu findet ihr unter der Rubrik Teaching auf der Instituts-Homepage. Da gibt es dann einen Button für die Wellenausbreitung. Da gibt es allgemeine Infos, Informationen zu Prüfungen und Zusatzmaterial zur Vorlesung. Und da gibt es eben die Weihnachtsexperiment Anleitung.
@@ -2958,6 +2958,8 @@ tags:: wellenausbreitung
 			- {{renderer :media-timestamp, 00:53:16}} Jeder einzelne Dirac-Impuls ist charakterisiert durch eine Amplitude, die einem Schwund unterworfen ist und eine Verzögerungszeit Tau. Und die zappeln halt hoch und runter statistisch.
 			- {{renderer :media-timestamp, 00:53:33}} Ich habe die inverse Fourier-Transformierte meines Sendespektrums. Er gibt mir den einzelnen Puls, die einzelne Pulsdauer, den ich moduliere mit einem Bit oder allgemeiner mit einem Symbol, zum Beispiel einem vierwertigen Symbol in vier Amplituden oder in vier verschiedenen Phasen. Und die Faltung, was oben die Multiplikation ist, ist jetzt hier die Faltung.
 			- {{renderer :media-timestamp, 00:54:04}} Ich falte also die Kanalimpulsantwort mit dem Einzelimpuls meines Sendesignals. Und diese Faltung mit Hilfe eines Einzelimpulses, mit vielen Impulsen, ergibt mir natürlich beim Empfänger viele zappelnde, unabhängige Impulse, die teilweise überlappen, hier links, aber teilweise auch unabhängig voneinander, Fäden.
+- ## übungen
+  collapsed:: true
 	- Übung 1
 	  collapsed:: true
 		- ![wel-ue](.\assets\uni-unterlagen\Wellenausbreitung\VOs\ue\Übung 1.mp4)
@@ -3158,6 +3160,7 @@ tags:: wellenausbreitung
 	- Übung 2
 	  collapsed:: true
 		- ![wel-ue](.\assets\uni-unterlagen\Wellenausbreitung\VOs\ue\Übung 2.mp4)
+		  id:: 67646c1d-7201-4f71-aa55-79cf2219f9a2
 			- {{renderer :media-timestamp, 00:00:00}} Diese Konferenz wird jetzt aufgenommen. Guten Morgen, heute ist die zweite Übung für Wellenausbreitung. Wie angekündigt, werden wir heute das Beispiel Nummer 7 aus der Beispielsammlung rechnen, Parallelplattenleitung. Und wir untersuchen dazu eben diese Anordnung von zwei Platten, die parallel zueinander übereinander angeordnet sind.
 			- {{renderer :media-timestamp, 00:00:35}} und wir haben hier ein Koordinatensystem eingezeichnet. Diese Platten sind in Abstand D zueinander. In X-Richtung nehmen wir diese Platten unendlich ausgedehnt an und wir wollen für die Z-Richtung die Wellenausbreitung unterstehen.
 			- {{renderer :media-timestamp, 00:01:05}} Also eine Welle, die aus den unendlichen, aus minus Z angeregt wurde, wandert jetzt an der parallelen Plattenleitung als Wanderwelle in Plus Z Richtung. Ja, und weil wir jetzt hier diese Ränder haben, also oben eine Platte und unten eine Platte, gibt es jetzt neben einer homogenen ebenen Welle, TEM-Welle, gibt es jetzt auch TE- und TM-Wellen.

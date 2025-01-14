@@ -7,6 +7,7 @@ alias:: cheat sheet
 
 - ![📚 Formelsammlung_7.Auflage.pdf](.\assets\uni-unterlagen\Wellenausbreitung\Formelsammlung_7.Auflage.pdf)
 - ## [[maxwell]]
+  collapsed:: true
 	- [S. 1](((677f9cf8-f37e-4b35-8c07-3ff96a2323f1)))
 	- $\vect{\nabla} \cdot \vect{S} = \opn{lim}_{\mathcal{V} \to0} \frac{1}{V} \oint_{\Sigma} \vect{S} \cdot \opn{d} \vect{F} = - \frac{\partial}{\partial t} \rho$
 	- $\vect{\nabla} \cdot( \vect{\nabla} \times \vect{H}) \equiv0$
@@ -37,6 +38,7 @@ alias:: cheat sheet
 	- $\vect{E}(x,y,z,t) = \vect{E}( \vect{r},t) = \opn{Re} \{\vect{E}( \vect{r})e^{j \omega t} \} = \frac{1}{2} \left( \vect{E}( \vect{r})e^{j \omega t} + \vect{E^{*}}( \vect{r})e^{ - j \omega t} \right)$
 	- $\vect{\nabla} \times \vect{H} = \vect{S} + j \omega \vect{D} = \sigma \vect{E} + j \omega \varepsilon \vect{E} = j \omega \delta \vect{E}$
 	- $\delta = \varepsilon + \frac{\sigma}{j \omega} = \varepsilon - j \frac{\sigma}{\omega}$
+	  id:: 67646b82-d9c1-4b67-aa1d-70d30b6541ec
 	- $\tan \theta = \frac{\varepsilon''}{\varepsilon'} = \frac{\sigma}{\omega \varepsilon}$
 	  id:: 673e3379-c5b6-4af8-a61a-20daa9718476
 	  collapsed:: true
@@ -78,7 +80,7 @@ alias:: cheat sheet
 	- $\vect{n} \cdot( \vect{B}_{1} - \vect{B}_{2}) = 0$
 	- $\vect{n} \times( \vect{E}_{1} - \vect{E}_{2}) = \vect{0}$
 	- $\vect{n} \times( \vect{H}_{1} - \vect{H}_{2}) = \vect{K}$
-	- $\nabla^{2} \vect{E} - \mu \varepsilon \frac{\partial^{2}}{\partial t^{2}} \vect{E} - \mu \sigma \frac{\partial}{\partial t} \vect{E} = 0$
+	- $\nabla^{2} \vect{E} - \mu \varepsilon \pdiff{t} \vect{E} - \mu \sigma \frac{\partial}{\partial t} \vect{E} = 0$
 	  tags:: formel, wip
 	  bezeichnung:: wellengleichung (telegrafengleichung) mit verlusten
 	  id:: 67646b82-91a5-483a-9d35-9669db690b89
@@ -91,28 +93,31 @@ alias:: cheat sheet
 		- $\cfrac{\partial}{\partial t}, \cfrac{\partial^2}{\partial t^2}$ ... partielle ableitung 1./2. ordnung nach der zeit
 	- $\nabla^{2} \vect{E} + ( \omega^{2} \mu \varepsilon - j \omega \mu \sigma) \vect{E} = 0$
 	- $\nabla^{2} \vect{E} + \omega^{2} \mu \delta \vect{E} = 0$
-	- $\nabla^{2} = \frac{\partial^{2}}{\partial x^{2}} + \frac{\partial^{2}}{\partial y^{2}} + \frac{\partial^{2}}{\partial z^{2}}$
+	- $\nabla^{2} = \pdiff{x} + \pdiff{y} + \pdiff{z}$
+	  id:: 67646b82-b5eb-4e3f-abc8-275303abed5c
 	- $k = \omega \sqrt{\mu \delta}$
 	  tags:: formel, wip
 	  bezeichnung:: wellenzahl
 		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
 		- $\delta$ ... [[komplexe]] [[dielektrizitätskonstante]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
 	- $\Psi(x,y,z) = X(x)Y(y)Z(z)$
-	- $\frac{1}{X(x)} \frac{\partial^{2}}{\partial x^{2}}X(x) + \frac{1}{Y(y)} \frac{\partial^{2}}{\partial y^{2}}Y(y) + \frac{1}{Z(z)} \frac{\partial^{2}}{\partial z^{2}}Z(z) + \underbrace{k^{2}}_{\text{const.}} = 0$
-	- $\frac{1}{X(x)} \frac{\partial^{2}}{\partial x^{2}}X(x) = - k_{x}^{2}$
+	- $\frac{1}{X(x)} \pdiff{x}X(x) + \frac{1}{Y(y)} \pdiff{y}Y(y) + \frac{1}{Z(z)} \pdiff{z}Z(z) + \underbrace{k^{2}}_{\text{const.}} = 0$
+	- $\frac{1}{X(x)} \pdiff{x}X(x) = - k_{x}^{2}$
 	- $k_{x}^{2} + k_{y}^{2} + k_{z}^{2} = k^{2} = \omega^{2} \mu \delta$
 	  tags:: formel, wip
 	  bezeichnung:: separationsbedingung
 	  id:: 674d7759-0e35-482f-8086-9026be01cd14
 		- $\delta$ ... [[komplexe]] [[dielektrizitätskonstante]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
-	- $\frac{\partial^{2}}{\partial x^{2}}X(x) + k_{x}^{2}X(x) = 0$
-	- $\frac{\partial}{\partial y}H_{z} - \frac{\partial}{\partial z}H_{y} = j \omega \delta E_{x} \\ \frac{\partial}{\partial z}H_{x} - \frac{\partial}{\partial x}H_{z} = j \omega \delta E_{y} \\ \frac{\partial}{\partial x}H_{y} - \frac{\partial}{\partial y}H_{x} = j \omega \delta E_{z} \\ \frac{\partial}{\partial y}E_{z} - \frac{\partial}{\partial z}E_{y} = - j \omega \mu H_{x} \\ \frac{\partial}{\partial z}E_{x} - \frac{\partial}{\partial x}E_{z} = - j \omega \mu H_{y} \\ \frac{\partial}{\partial x}E_{y} - \frac{\partial}{\partial y}E_{x} = - j \omega \mu H_{z}$
+		  id:: 67646b82-819c-4927-9c2f-03c15802ec4f
+	- $\pdiff{x}X(x) + k_{x}^{2}X(x) = 0$
+	- $\pdif{y}H_{z} - \pdif{z}H_{y} = j \omega \delta E_{x} \\ \pdif{z}H_{x} - \pdif{x}H_{z} = j \omega \delta E_{y} \\ \pdif{x}H_{y} - \pdif{y}H_{x} = j \omega \delta E_{z} \\ \pdif{y}E_{z} - \pdif{z}E_{y} = - j \omega \mu H_{x} \\ \pdif{z}E_{x} - \pdif{x}E_{z} = - j \omega \mu H_{y} \\ \pdif{x}E_{y} - \pdif{y}E_{x} = - j \omega \mu H_{z}$
 	  tags:: formel, wip
 	  bezeichnung:: komponentenweise darstellung der [[maxwellschen]] rotorgleichungen in [[kartesischer]] form. vorraussetzung: [[harmonische]] Vorgänge und Quellenfreiheit anschreiben
 		- $-$ ...
 	- ((6750988d-c460-4ec0-8652-1b15a9976b66))
 	  id:: 674d7759-2ef6-4ef6-9620-b611b833d779
 - ## [[homogene ebene wellen]]
+  collapsed:: true
 	- [S. 5](((677f9d41-15df-4c22-be17-7538e60becb7)))
 	- $+ \cfrac{\partial}{\partial z}e_{y} = \mu \cfrac{\partial}{\partial t}h_{x}$
 	- $- \cfrac{\partial}{\partial z}e_{x} = \mu \cfrac{\partial}{\partial t}h_{y}$
@@ -338,7 +343,12 @@ alias:: cheat sheet
 	- $E_{x1}=k_{\mathrm{E2}}d_{1} \cfrac{1- \cfrac{j \varepsilon_{2}}{2s_{1} \varepsilon_{1}}}{-1+j}A_{1}e^{ j k_{x1}x}e^{-j k_{z}z}$
 	- $E_{x1}=-E_{z1} \sqrt{\cfrac{\omega \varepsilon_{2}}{2 \sigma_{1}}}(1+j)$
 	- $E_{x2}=- \cfrac{1}{1-j}E_{z2} \Big( \sqrt{\cfrac{2 \sigma_{1}}{\omega \varepsilon_{2}}}-j \sqrt{\cfrac{\omega \varepsilon_{2}}{2 \sigma_{1}}} \Big)$
-	- $Z_{\mathrm{W}}= \cfrac{E_{x}}{H_{y}}$
+	- $Z_{\mathrm{W}} = \cfrac{E_{x}}{H_{y}} = -\cfrac{E_{y}}{H_{x}}$
+	  id:: 67646b82-eb39-40e9-8c9c-8e081117f756
+	  tags:: formel, wip
+	  bezeichnung:: Feldwellenwiderstand ($Z_{\mathrm{W,TE}}$)
+		- $E_x$ ...
+		- $H_y$ ...
 	- $Z_{\mathrm{W2}}= \cfrac{k_{z}}{\omega \delta_{2}}= \cfrac{k_{\mathrm{E2}} \left(1-j \cfrac{1}{2s_{1}} \cfrac{\varepsilon_{2}}{\varepsilon_{1}} \right)}{\omega \varepsilon_{2}(1-j s_{2})} \approx \eta_{\mathrm{E2}} \left(1+j \cfrac{s_{2}}{2} \right)$
 	- $Z_{\mathrm{W1}}= \cfrac{k_{z}}{\omega \delta_{1}}$
 	- $\begin{aligned} I_{z}&= \int \limits_{\Sigma} \vect{S}_{1} \cdot \opn{d} \vect{F}= \sigma_{1} \int \limits_{x=0}^{\infty} \int \limits_{y=0}^{b}E_{z1} \opn{d}x \opn{d}y  \\ & =  \sigma_{1} A_{1} b e^{-j k_{z}z} \int \limits_{x=0}^{\infty}e^{j k_{x1}x} \mathrm{d}x  \\ &=j \cfrac{\sigma_{1}A_{1}b}{k_{x1}}e^{-j k_{z}z} \end{aligned}$
@@ -383,16 +393,20 @@ alias:: cheat sheet
 	- $v_{\mathrm{P}} = \frac{c}{\sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}}$
 	- $v_{\mathrm{G}} = c \sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}$
 	- $\kappa^{2} = \left(\frac{m \pi}{a} \right)^{2} + \left(\frac{n \pi}{b} \right)^{2} \equiv \omega^{2} \varepsilon \mu - k_{z}^{2}$
+	  id:: 67646b82-a752-4db8-b782-284ff6dc6db8
 	- $\begin{aligned} P & = \int \opn{Re}\{\vect{T}\} \cdot \opn{d} \vect{F} = \int T_{z} \opn{d}x \opn{d}y = - \frac{1}{2} \int \limits_{0}^{a} \int \limits_{0}^{b} E_{y}H_{x}^{*} \opn{d}x \opn{d}y \\ & = \frac{\omega \vect{k}_{z} \mu}{2} \left(\frac{a A}{\pi} \right)^{2}b \int \limits_{0}^{a} \sin^{2}(\frac{\pi}{a}x) \opn{d}x = \frac{\omega k_{z} \mu}{4}a b \left(\frac{a A}{\pi} \right)^{2} \end{aligned}$
 	- $- \opn{d}P = \frac{1}{2}|H_{\mathrm{tang}}|^{2} \mathbb{R}_{\mathrm{M}} \opn{d}F$
-	- $\begin{aligned} - \frac{\partial}{\partial z}P(z) & = \frac12 \mathbb{R}_{\mathrm{M}} \left(2 \int_0^{a} \Big[|H_{x}|^2 + |H_{z}|^2 \Big]_{y = 0} \opn{d}x + 2 \int \limits_{0}^{b} \Big[|\underbrace{H_{y}}_0|^2 + |H_{z}|^2 \Big]_{x = 0} \opn{d}y \right) \\ &={\mathbb{R}_{\mathrm{M}}A^{2} \left(\left(\cfrac{k_{z}a}{\pi} \right)^{2} \int \limits_{0}^{a} \sin^{2} \left(\cfrac{\pi}{a}x \right) \mathrm{d}x + \int \limits_{0}^{b} \cfrac{a}{\pi} \cos^{2} \left(\cfrac{\pi}{a}x \right) \mathrm{d}x + \int \limits_{0}^{b} \mathrm{d}y \right)} \\ & = A^{2} \mathbb{R}_{\mathrm{M}} \left(\frac{a}{2} \left(1 + \left(\frac{2a}{\lambda_{\mathrm{H}}} \right)^{2} \right) + b \right) \end{aligned}$
+	- $\begin{aligned} - \pdif{z}P(z) & = \frac12 \mathbb{R}_{\mathrm{M}} \left(2 \int_0^{a} \Big[|H_{x}|^2 + |H_{z}|^2 \Big]_{y = 0} \opn{d}x + 2 \int \limits_{0}^{b} \Big[|\underbrace{H_{y}}_0|^2 + |H_{z}|^2 \Big]_{x = 0} \opn{d}y \right) \\ &={\mathbb{R}_{\mathrm{M}}A^{2} \left(\left(\cfrac{k_{z}a}{\pi} \right)^{2} \int \limits_{0}^{a} \sin^{2} \left(\cfrac{\pi}{a}x \right) \mathrm{d}x + \int \limits_{0}^{b} \cfrac{a}{\pi} \cos^{2} \left(\cfrac{\pi}{a}x \right) \mathrm{d}x + \int \limits_{0}^{b} \mathrm{d}y \right)} \\ & = A^{2} \mathbb{R}_{\mathrm{M}} \left(\frac{a}{2} \left(1 + \left(\frac{2a}{\lambda_{\mathrm{H}}} \right)^{2} \right) + b \right) \end{aligned}$
 	- $\alpha = \frac{\pi}{\omega \mu} \mathbb{R}_{\mathrm{M}} \frac{\lambda_{\mathrm{H}}}{a^{3} b} \left(\frac{a}{2} \left(1 + \left(\frac{2a}{\lambda_{\mathrm{H}}}\right)^{2} \right) + b \right)$
 	- $c = p \frac{\lambda_{\mathrm{H}}}{2}, \quad \text{bzw.} \quad k_{z} = \frac{2 \pi}{\lambda_{\mathrm{H}}} = \frac{p \pi}{c}$
 	  id:: 6745a3c5-8db7-45c1-93bd-26e16b795df2
 	- $\left(\frac{m \pi}{a} \right)^{2} + \left(\frac{n \pi}{b} \right)^{2} + \left(\frac{p \pi}{c} \right)^{2} = \omega_{m n p}^{2} \varepsilon \mu$
 	  tags:: formel, wip
 	  bezeichnung:: separationsbedingung
-		- $-$ ...
+	  id:: 67646b82-9985-4e5d-ad63-f1a604ea0334
+		- $m,n,p$ ... modenindizes $\mathrm{\left[ - \right]}$
+		- $a,b,c$ ... abmessungen des resonators $\mathrm{\left[ m \right]}$
+		-
 	- $\omega_{m n p} = \pi v \sqrt{\left(\frac{m}{a} \right)^{2} + \left(\frac{n}{b} \right)^{2} + \left(\frac{p}{c} \right)^{2}}$
 	  id:: 6745a3c5-c443-4fb4-bbea-b455958f827a
 	  tags:: formel
@@ -440,9 +454,9 @@ alias:: cheat sheet
 	- [S. 13](((677f9db4-66d0-4a27-9319-1ee51e246d94)))
 	- ${\vect{E}} = {E_{r} \vect{e_{r}}}$
 	- ${\vect{H}} = {H_{\varphi} \vect{e_{\varphi}}}$
-	- $\frac{\partial}{\partial z}U(z) + Z'I(z) = 0 ,\qquad \frac{\partial}{\partial z}I(z) + Y'U(z) = 0$
+	- $\pdif{z}U(z) + Z'I(z) = 0 ,\qquad \pdif{z}I(z) + Y'U(z) = 0$
 	- ${\mathrm{mit}} { \quad Z' = R' + j \omega L' ,\quad} {Y' = G' + j \omega C'}$
-	- $\frac{\partial}{\partial z}U(z) - Y'Z'U(z) = 0 ,\qquad \frac{\partial}{\partial z}I(z) - Y'Z'I(z) = 0$
+	- $\pdif{z}U(z) - Y'Z'U(z) = 0 ,\qquad \pdif{z}I(z) - Y'Z'I(z) = 0$
 	- $U_{v} = Z_{\mathrm{L}}I_{v} ,\qquad U_{r} = - Z_{\mathrm{L}}I_{r}$
 	- $Z_{\mathrm{L}} = \sqrt{\frac{Z'}{Y'}} \quad \text{bzw.} \quad Z_{\mathrm{L}} = \sqrt{\frac{R' + j \omega L'}{G' + j \omega C'}}$
 	  id:: 674d7759-d37d-42be-8941-e48d01b3fc05
@@ -530,12 +544,18 @@ alias:: cheat sheet
 		- ((67403e6f-2a7f-4aec-8c79-829be01340e3))
 		- $\varepsilon_{r1}, \varepsilon_{r2}$ ... relative [[permittivität]] $\mathrm{\left[-\right]}$
 - ## [[streifenleitungen]]
-  collapsed:: true
 	- [S. 16](((677f9ddb-619a-431e-ad3e-32d1c258411b)))
 	- $Z_{\mathrm{L},0} \approx \sqrt{\frac{\mu_{0}}{\varepsilon_{0}}} \frac{1}{2 \pi} \ln \left(\frac{8h}{w} + \frac{w}{4h} \right)$
 	- $Z_{\mathrm{L}} = \frac{Z_{\mathrm{L},0}}{\sqrt{\varepsilon_{\mathrm{eff}}}}$
+	  id:: 67646b82-d0e0-4846-b3a4-95047ec3ffab
 	- $\lambda = \frac{\lambda_{0}}{\sqrt{\varepsilon_{\mathrm{eff}}}}$
 	- $\varepsilon_{\mathrm{eff}} = 1 + q(\varepsilon_{r} - 1)$
+	  id:: 67646b82-7d16-4f2c-8ee2-9a3d830a3bc4
+	  tags:: formel
+	  bezeichnung:: effektive [[permittivität]]
+		- $\varepsilon_{\mathrm{eff}}$ ... effektive [[permittivität]] $\mathrm{\left[ - \right]}$
+		- $q$ ... füllfaktor $\mathrm{\left[ - \right]}$
+		- $\varepsilon_r$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
 	- $f_{c,\mathrm{TEM}} = \frac{c}{4h \sqrt{\varepsilon_{r} - 1}}$
 	- $h_{\mathrm{max}} = \frac{\lambda_{0}}{4 \sqrt{\varepsilon_{r} - 1}}$
 	- $f_{c,\mathrm{QTEM}} = \frac{c}{(2w + 0,8h) \sqrt{\varepsilon_{r}}}$

@@ -33,4 +33,5 @@ alias:: jordansche normalform, jordan canonical form
 - was sind jordan blöcke?
   deck:: Uni::Automatisierungstechnik_Theorie
   tags:: flashcard, wip
+  id:: 67646bfa-00c0-46ba-8cd6-6c4940a458f9
 	-

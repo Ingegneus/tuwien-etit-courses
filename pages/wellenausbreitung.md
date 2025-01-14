@@ -1502,6 +1502,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-12-05 11h58m_annotated.pdf](../assets/documents/2024-12-05 11h58m_annotated.pdf)
 	- Parallelplattenleitung
 	  background-color:: green
+	  collapsed:: true
 		- Es soll die Ausbreitungsfähigkeit des $\mathrm{TEM}$ Modus in $z$-Richtung auf dem abgebildeten Parallelplattenleiter (mit $\varepsilon_r = 3.5$) untersucht werden.
 		  background-color:: green
 		  collapsed:: true
@@ -1600,9 +1601,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  ![img](../assets/documents/WA_parallelplattenleitung_bsp_1.webp)
 			- Die Leitung soll von $10$ bis $12 \mathrm{GHz}$ im Monomodebetrieb eingesetzt werden. Dimensionieren Sie $d$ so, dass die Grenze für Monomodebetrieb $20\%$ über bzw. unter dem angegebenen Bereich liegt.
 			  background-color:: green
-			  collapsed:: true
 				- formeln
-				  collapsed:: true
 					- ((67646b82-d905-4edd-915a-d4c002f45a0b))
 					  id:: 6781497e-e0d9-41b2-81c2-a48dc4ecc371
 				- Da es zwei voneinander isolierte Leiter gibt, ist eine $\mathrm{TEM}$-Welle ausbreitungsfähig. Die untere Grenzfrequenz liegt bei $0 \mathrm{Hz}$, sodass nur dafür gesorgt werden muss, dass sich keine $\mathrm{TE}$  bzw. $\mathrm{TM}$-Wellen ausbreiten können.
@@ -1625,7 +1624,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- {{evalparent}}
 			- Welche Moden sind bei der doppelten Betriebsfrequenz ausbreitungsfähig?
 			  background-color:: green
-			  collapsed:: true
 				- formeln
 					- ((67646b82-d905-4edd-915a-d4c002f45a0b))
 				- code
@@ -1675,6 +1673,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				- ![img](../assets/documents/dispersionsdiagramm_parallelplattenleitung.webp){:height 238, :width 331}
 		- Es soll die Ausbreitungsfähigkeit von $\mathrm{TM}_n$ Moden auf dem abgebildeten Parallelplattenleiter (mit $\omega > d, \varepsilon_r = 1$) untersucht werden.
 		  background-color:: green
+		  collapsed:: true
 		  ![img](../assets/documents/WA_parallelplattenleitung_bsp_1.webp)
 			- Finden Sie einen Ansatz für die gefragten Moden, der die Wellengleichung erfüllt, und überprüfen Sie dies. Berechnen Sie alle weiteren Komponenten. Ermitteln Sie die Separationsbedingungen und passen Sie an den Rand an.
 			  background-color:: green
@@ -1687,19 +1686,20 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- $E_z = B \cdot \sin(k_y y) e^{-j k_z z}$
 				- separationsbedingung
 					- annahme: verlustlos, daher $\sigma =0$
-					- $\nabla^{2} \vect{E} - \mu \varepsilon \frac{\partial^{2}}{\partial t^{2}} \vect{E} - \cc{red}{\mu \sigma \frac{\partial}{\partial t} \vect{E}} = 0 \quad / \sigma = 0$
-					- $\nabla^{2} \vect{E} = \mu \varepsilon \frac{\partial^{2}}{\partial t^{2}} \vect{E} \quad / \vect{E} = E_z \cdot e^{j\omega t} \quad / E_z = B \cdot \sin(k_y y) e^{-j k_z z}$
-					- $\nabla^{2} B \cdot \sin(k_y y) e^{-j k_z z} \cdot e^{j\omega t} = \mu \varepsilon \frac{\partial^{2}}{\partial t^{2}}\left( B \cdot \sin(k_y y) e^{-j k_z z} \cdot e^{j\omega t}\right)$
+					- $\nabla^{2} \vect{E} - \mu \varepsilon \pdiff{t} \vect{E} - \cc{\red}{\mu \sigma \frac{\partial}{\partial t} \vect{E}} = 0 \op{\sigma = 0}$
+					- $\nabla^{2} \vect{E} = \mu \varepsilon \pdiff{t} \vect{E} \op{\vect{E} = E_z \cdot e^{j\omega t} \quad} \op{E_z = B \cdot \sin(k_y y) e^{-j k_z z}}$
+					- $\nabla^{2} B \cdot \sin(k_y y) e^{-j k_z z} \cdot e^{j\omega t} = \mu \varepsilon \pdiff{t}\left( B \cdot \sin(k_y y) e^{-j k_z z} \cdot e^{j\omega t}\right)$
 					- $B e^{j \omega t}\left(-k_y^2 \sin(k_y y) e^{-j k_z z} -  k_z^2 \sin(k_y y) e^{-j k_z z}\right)= - \mu \varepsilon B \cdot \sin(k_y y) e^{-j k_z z} \cdot \omega^2 e^{j\omega t}$
 					- $B e^{j \omega t} \sin(k_y y) e^{-j k_z z} \left(-k_y^2  -  k_z^2\right)= - \mu \varepsilon  \omega^2 B \cdot \sin(k_y y) e^{-j k_z z} \cdot e^{j\omega t}$
 					  id:: 6782b1c1-cef2-453f-abdb-82cc77cb0f2f
-					- $\cc{red}e_z (k_y^2 + k_z^2) = \mu \varepsilon \omega^2 \cc{red}e_z$
+					- $\cc{\red}e_z (k_y^2 + k_z^2) = \mu \varepsilon \omega^2 \cc{\red}e_z$
 					- $k_y^2 + k_z^2 = \mu \varepsilon \omega^2$
 					  id:: 6782b286-917a-48a9-8ef0-ca93dbfd79be
 					  background-color:: yellow
 				- rand anpassen
 					- $E_{\parallel}(y=0)=0$ und $E_{\parallel}(y=d)=0$
 					- dafür muss $E_{z}(y=0)=0$ und $E_{z}\left(y=d\right)=0$
+					  background-color:: yellow
 						- bei $y=0$
 							- passt schon
 							- $\sin(k_{y}y)=0$
@@ -1713,29 +1713,290 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 						- $E_x = 0$
 						  background-color:: yellow
 					- $E_y$
-						- $E_{y} = \frac{ - j}{\kappa^{2}} \left(k_{z} \frac{\partial}{\partial y}E_{z} - \cc {red}{\omega \mu \frac{\partial}{\partial x}H_{z} }\right) \quad / E_z = B \cdot \sin(k_y y) e^{-j k_z z} \quad /H_z=0$
-						- $E_{y} = \frac{ - j}{\kappa^{2}} \left(k_{z} \pdif{y} B \cdot \sin(k_y y) e^{-j k_z z} \right) \quad /\kappa = k^2-k_z^2$
+						- $E_{y} = \frac{ - j}{\kappa^{2}} \left(k_{z} \pdif{y}E_{z} - \cc {\red}{\omega \mu \pdif{x}H_{z} }\right) \op{E_z = B \cdot \sin(k_y y) e^{-j k_z z}} \op{H_z=0}$
+						- $E_{y} = \frac{ - j}{\kappa^{2}} \left(k_{z} \pdif{y} B \cdot \sin(k_y y) e^{-j k_z z} \right) \op{\kappa = k^2-k_z^2}$
 							- keine ausbreitung in $x$ daher $\kappa = k_y$ [link](((6782b286-917a-48a9-8ef0-ca93dbfd79be)))
-						- $E_{y} = \frac{ - j}{k_y^{\cc{red} 2}} \left(k_{z} B \cdot \cc{red} k_y \cos(k_y y) e^{-j k_z z} \right)$
-						- $E_{y} = \frac{ - j k_z}{k_y} \left( B \cdot \cos(k_y y) e^{-j k_z z} \right)$
+						- $E_{y} = \frac{ - j}{k_y^{\cc{\red} 2}} \left(k_{z} B \cdot \cc{\red} k_y \cos(k_y y) e^{-j k_z z} \right)$
+						- $E_{y} = \frac{ - j k_z}{k_y}  B \left(\cos(k_y y) e^{-j k_z z} \right)$
 						  background-color:: yellow
+						  id:: 6782b182-e5b1-4ee5-8a19-ef54ec29d937
 					- $H_x$
-						- $H_{x} = \frac{ - j}{\kappa^{2}} \left(\cc{red}{k_{z} \frac{\partial}{\partial x}H_{z}} - \omega \delta \frac{\partial}{\partial y}E_{z} \right) \quad / E_z = B \cdot \sin(k_y y) e^{-j k_z z} \quad /H_z=0$
-						- $H_{x} = \frac{ - j}{\kappa^{2}} \left(- \omega \delta \frac{\partial}{\partial y}\left( B \cdot \sin(k_y y) e^{-j k_z z}\right)\right)$
-						- $H_{x} = \frac{ - j}{\kappa^{2}} \left(- \omega \delta B k_y \left(\cos(k_y y) e^{-j k_z z}\right)\right) \quad /\kappa = k^2-k_z^2$
-							- keine ausbreitung in $x$ daher $\kappa = k_y$
+						- $H_{x} = \frac{ - j}{\kappa^{2}} \left(\cc{\red}{k_{z} \pdif{x}H_{z}} - \omega \delta \pdif{y}E_{z} \right) \op{E_z = B \cdot \sin(k_y y) e^{-j k_z z}} \op{H_z=0}$
+						- $H_{x} = \frac{ - j}{\kappa^{2}} \left(- \omega \delta \pdif{y}\left( B \cdot \sin(k_y y) e^{-j k_z z}\right)\right)$
+						- $H_{x} = \frac{ - j}{\kappa^{2}} \left(- \omega \delta B k_y \left(\cos(k_y y) e^{-j k_z z}\right)\right) \op{\kappa = k^2-k_z^2}$
+							- keine ausbreitung in $x$ daher $\kappa = k_y$ [link](((6782b286-917a-48a9-8ef0-ca93dbfd79be)))
 							  id:: 6782901b-5d68-4f1f-a7a8-74f5055cded5
-						- $H_{x} = \frac{j}{k_y^{\cc{red}2}} \left(\omega \delta B \cc{red}k_y\left(\cos(k_y y) e^{-j k_z z}\right)\right)$
+						- $H_{x} = \frac{j}{k_y^{\cc{\red}2}} \left(\omega \delta B \cc{\red}k_y\left(\cos(k_y y) e^{-j k_z z}\right)\right)$
 						- $H_{x} = \frac{j  \omega \delta}{k_y} B \left(\cos(k_y y) e^{-j k_z z}\right)$
 						  background-color:: yellow
+						  id:: 6782b182-90b1-4576-b364-681a47161c16
 					- $H_y$
 						- $H_y = 0$
 						  background-color:: yellow
-			- Berechnen Sie den Mediumswiderstand $\eta$, den Feldwellenwiderstand $Z_{W,n}$ und die Grenzirequenz $f_g$, aller gefragten Moden!
+			- Berechnen Sie den Mediumswiderstand $\eta$, den Feldwellenwiderstand $Z_{W,n}$ und die Grenzfrequenz $f_g$, aller gefragten Moden!
 			  background-color:: green
-				-
+				- formeln
+					- ((673c4eb2-5827-434c-a323-0ff29f347504))
+					- ((67646b82-eb39-40e9-8c9c-8e081117f756))
+					- ((6782b182-e5b1-4ee5-8a19-ef54ec29d937))
+					- ((6782b182-90b1-4576-b364-681a47161c16))
+					- ((67646b82-a752-4db8-b782-284ff6dc6db8))
+					- ((67646b82-d9c1-4b67-aa1d-70d30b6541ec))
+					- ((67646b82-d905-4edd-915a-d4c002f45a0b))
+				- mediumswellenwiderstand
+				  background-color:: green
+					- $\eta = \eta_0 = 376.7 \Omega$
+					  background-color:: yellow
+				- feldwellenwiderstand
+				  background-color:: green
+					- $Z_{W} = - \cfrac{E_{y}}{H_{x}} = \cfrac{ \cfrac{ - \cc{\green}j k_z}{\cc{\red}k_y} \cc{\blue}{B \left( \cos(k_y y) e^{-j k_z z} \right)}}{\cfrac{\cc{\green}j  \omega \delta}{\cc{\red}k_y} \cc{\blue}{B \left(\cos(k_y y) e^{-j k_z z}\right)}}$
+					- $Z_{W}=-\frac{k_{z}}{\omega\delta} \op{\delta = \varepsilon - j \frac{\sigma}{\omega}} \op{\sigma = 0 \quad\text{weil verlustlos}}$
+					- $Z_{W}=-\frac{k_{z}}{\omega\varepsilon} \op {k_{z}=\sqrt{\omega^2\varepsilon\mu-\left(\frac{n\pi}{d}\right)^2}}$
+						- separationsbedingung ((67646b82-a752-4db8-b782-284ff6dc6db8))
+						- suchen die moden $n$
+						- $\left(\frac{n \pi}{b} \right)^{2} = \omega^{2} \varepsilon \mu - k_{z}^{2} \op{+k_z^2} \op{-\left(\frac{n \pi}{b} \right)^{2}}$
+						- $k_{z}^2=\omega^2\varepsilon\mu-\left(\frac{n\pi}{b}\right)^2 \op{b=d} \op{\sqrt{\square}}$
+						- $k_{z}=\sqrt{\omega^2\varepsilon\mu-\left(\frac{n\pi}{d}\right)^2}$
+					- $Z_{W}=\frac{\sqrt{\omega^2\varepsilon\mu-\left(\frac{n\pi}{d}\right)^2}}{\omega \varepsilon}$
+					  background-color:: yellow
+				- grenzfrequenz
+				  background-color:: green
+					- $f_{\mathrm{G},n}=\frac{\mathnormal{n}\mathit{c}}{2d}$
+					  background-color:: yellow
+		- Es soll die Ausbreitungsfähigkeit von $\mathrm{TE}_n$ Moden auf dem abgebildeten Parallelplattenleiter (mit $\omega > d, \varepsilon_r = 1$) untersucht werden.
+		  background-color:: green
+		  ![img](../assets/documents/WA_parallelplattenleitung_bsp_1.webp)
+			- Finden Sie einen Ansatz für die gefragten Moden, der die Wellengleichung erfüllt, und überprüfen Sie dies. Berechnen Sie alle weiteren Komponenten. Ermitteln Sie die Separationsbedingungen und passen Sie an den Rand an.
+			  background-color:: green
+				- formeln
+					- ((6782b182-42d6-4423-bde1-d72287bf7080))
+					- ((67646b82-91a5-483a-9d35-9669db690b89))
+					- ((6750988d-c460-4ec0-8652-1b15a9976b66)) [FS](((674d7759-2ef6-4ef6-9620-b611b833d779)))
+				- ansatz
+					- $E_z=0$
+					- $H_z = B \cdot \cos(k_y y) e^{-j k_z z}$
+					- $H_{z,mom} = H_z \cdot e^{j \omega t} = B \cdot \cos(k_y y) e^{-j k_z z}\cdot e^{j \omega t}$
+				- separationsbedingung
+				  background-color:: green
+					- $\nabla^{2} \vect{H} - \mu \varepsilon \pdiff{t} \vect{H} - \cc{\red} {\mu \sigma \frac{\partial}{\partial t} \vect{H}} = 0 \op{\sigma=0} \op{+\mu \varepsilon \pdiff{t} \vect{H}}$
+						- separationsansatz
+						  collapsed:: true
+							- skript
+								- ((6785692e-7da1-4bcb-8cee-c5ac910a4942))
+							- video
+								- {{renderer :media-timestamp, 14:52, ((67646c1d-7201-4f71-aa55-79cf2219f9a2))}}
+						- verlustlos: $\sigma=0$
+						- $\nabla^{2}{H}$
+						  collapsed:: true
+							- mit ((67646b82-b5eb-4e3f-abc8-275303abed5c))
+							- $\nabla^2 {H} = \pdiff{x}H_x + \pdiff{y}H_y + \pdiff{z}H_z$
+					- $\cc{\red}{\pdiff{x}H_{z,mom}} + \pdiff{y}H_{z,mom} + \pdiff{z}H_{z,mom} = \mu \varepsilon \pdiff{t} H_{z,mom} \quad / \pdiff{x}H_{z,mom}=0$
+					  collapsed:: true
+						- ((6750988d-c460-4ec0-8652-1b15a9976b66))
+						- $\pdif{x} H_{z,mom} = \pdif{x} B \cdot \cos(k_y y) e^{-j k_z z} e^{j \omega t}= 0$
+						- $\pdif{x} E_z = \pdif{x}0= 0$
+					- $- B\cdot  e^{-j k_z z} e^{j \omega t} \cdot k_y^2 \cos(k_y y)  -B \cdot k_y \cos (k_y y) \cdot k_z^2 e^{-j k_z z} e^{j \omega t} = -\mu \varepsilon B \cdot \cos(k_y y) e^{-j k_z z}\cdot \omega^2 e^{j \omega t} \op{H_{z,mom}=B \cdot \cos(k_y y) e^{-j k_z z}\cdot e^{j \omega t}}$
+						- $\pdiff{y}H_{z,mom} = \pdiff{y} B \cdot \cos(k_y y) e^{-j k_z z}\cdot e^{j \omega t}$
+							- $\pdif{y} H_{z,mom}= - B\cdot k_y \sin(k_y y) \cdot e^{-j k_z z} e^{j \omega t}$
+							- $\pdiff{y}H_{z,mom} = - B\cdot k_y^2 \cos(k_y y) \cdot  e^{-j k_z z} e^{j \omega t}$
+						- $\pdiff{z}H_{z,mom} = \pdiff{z} B \cdot \cos(k_y y) e^{-j k_z z}\cdot e^{j \omega t}$
+							- $\pdif{z} H_{z,mom}= -B \cdot k_y \cos (k_y y) \cdot j k_z e^{-j k_z z} e^{j \omega t}$
+							- $\pdiff{z} H_{z,mom}= -B \cdot k_y \cos (k_y y) \cdot k_z^2 e^{-j k_z z} e^{j \omega t}$
+						- $\pdiff{t}H_{z,mom} = \pdiff{t} B \cdot \cos(k_y y) e^{-j k_z z}\cdot e^{j \omega t}$
+							- $\pdif{t}H_{z,mom} = B \cdot \cos(k_y y) e^{-j k_z z}\cdot j \omega e^{j \omega t}$
+							- $\pdiff{t}H_{z,mom} = -B \cdot \cos(k_y y) e^{-j k_z z}\cdot \omega^2 e^{j \omega t}$
+					- $\cc{\red}{H_{z,mom}} \left(-k_y^2 - k_z^2\right) = -\mu \varepsilon \omega^2 \cc{\red}{H_{z,mom}} \op{\cfrac{1}{H_{z,mom}}}$
+					- $k_y^2 + k_z^2=\mu\varepsilon \omega^2$
+					  background-color:: yellow
+					  id:: 678585fb-4e4f-4638-a32d-289152681d32
+				- rand anpassen
+				  background-color:: green
+					- $H_z$ muss bei $y=0$ und $y=d$ die maxima haben
+					- $H_z= B \cdot \cos(k_y y) e^{-j k_z z} \overset{!}{=} \opn{max}H_z$
+						- $\cos(k_y y) \overset{!}{=} 1$
+							- bei $0$ oder $n\pi$
+							- $y\in 0...d$
+						- $k_y d \overset{!}{=}n\pi$
+						- $k_y = \frac{n\pi}{d}$
+						  background-color:: yellow
+					- $E_\parallel = 0$
+					  background-color:: yellow
+				- modale lösungen
+				  background-color:: green
+					- $E_x$
+						- $E_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z} \pdif{x}E_{z} + \omega \mu \pdif{y}H_{z} \right) \op{E_z = 0}$
+							- $\pdif{y} H_{z}= - B\cdot k_y \sin(k_y y) \cdot e^{-j k_z z}$
+						- $E_x = \frac{j}{\kappa^2}\omega \mu B\cdot k_y \sin(k_y y) \cdot e^{-j k_z z} \op{\kappa^2 = k^2-k_z^2}$
+							- keine ausbreitung in $x$ daher $\kappa = k_y$ [link](((6782b286-917a-48a9-8ef0-ca93dbfd79be)))
+						- $E_x = \frac{j\omega\mu }{k_y^{\cc{\red}{2}}}B\cdot \cc{\red}{k_y} \sin(k_y y) \cdot e^{-j k_z z}$
+						- $E_x = \frac{j\omega\mu}{k_y}B\cdot \sin(k_y y) \cdot e^{-j k_z z}$
+						  background-color:: yellow
+						  id:: 678585fb-fbec-486f-af8a-b60e8a233de0
+					- $E_y$
+						- $E_{y} = \frac{ - j}{\kappa^{2}} \left(\cc{\red}{k_{z} \pdif{y}E_{z}} - \omega \mu \pdif{x}H_{z} \right) \op{E_z = 0}$
+						- $E_{y} = \frac{ j}{\kappa^{2}} \left(\cc{\red}{\omega \mu \pdif{x}H_{z}} \right) \op{\pdif{x}H_{z} =0}$
+						- $E_y = 0$
+						  background-color:: yellow
+					- $H_x$
+						- $H_{x} = \frac{ - j}{\kappa^{2}} \left(k_{z}\pdif{x}H_{z} - \cc{\red}{\omega \delta \pdif{y}E_{z}} \right) \op{E_x = 0}$
+						- $H_{x} = \frac{ - j}{\kappa^{2}} \left(\cc{\red}{k_{z}\pdif{x}H_{z}} \right) \op{\pdif{x}H_{z} = 0}$
+						- $H_x = 0$
+						  background-color:: yellow
+					- $H_y$
+						- $H_{y} = \frac{ - j}{\kappa^{2}} \left( k_{z} \pdif{y} H_{z} + \cc{\red}{\omega \delta \pdif{x} E_{z}} \right)  \op{E_z = 0} \op{H_z = B \cdot \cos(k_y y) e^{-j k_z z}}$
+						- $H_{y} = \frac{ - j}{\kappa^{2}} \left( k_{z} \pdif{y} H_{z} \right)  \op{\pdif{y} H_{z} = - B \cdot k_y  \sin(k_y y) e^{-j k_z z}}$
+							- $\pdif{y} H_{z} = \pdif{y} B \cdot \cos(k_y y) e^{-j k_z z}$
+							- $\pdif{y} H_{z} = - B \cdot k_y  \sin(k_y y) e^{-j k_z z}$
+						- $H_{y} = - \frac{ - j}{\kappa^{2}} k_{z} B \cdot k_y  \sin(k_y y) e^{-j k_z z} \op{\kappa^2 = k^2-k_z^2}$
+							- keine ausbreitung in $x$ daher $\kappa = k_y$ [link](((6782b286-917a-48a9-8ef0-ca93dbfd79be)))
+						- $H_{y} = - \frac{ - j}{k_y^{\cc{\red}{2}}} k_{z} B \cdot \cc{\red}{k_y}  \sin(k_y y) e^{-j k_z z}$
+						- $H_{y} = - \frac{ - j k_z}{k_y} B \cdot \sin(k_y y) e^{-j k_z z}$
+						  background-color:: yellow
+						  id:: 67861cf0-a4d2-4063-9a7b-c5f66442b559
+			- Berechnen Sie den Mediumswiderstand $\eta$, den Feldwellenwiderstand $Z_{W,n}$ und die Grenzfrequenz $f_g$, aller gefragten Moden!
+			  background-color:: green
+				- formeln
+					- ((673c4eb2-5827-434c-a323-0ff29f347504))
+					- ((67646b82-eb39-40e9-8c9c-8e081117f756))
+					- ((678585fb-fbec-486f-af8a-b60e8a233de0))
+					- ((67861cf0-a4d2-4063-9a7b-c5f66442b559))
+					- ((67646b82-a752-4db8-b782-284ff6dc6db8))
+					- ((67646b82-d9c1-4b67-aa1d-70d30b6541ec))
+					- ((67646b82-d905-4edd-915a-d4c002f45a0b))
+				- mediumswellenwiderstand
+				  background-color:: green
+					- $\eta = \eta_0 = 376.7 \Omega$
+					  background-color:: yellow
+				- feldwellenwiderstand
+				  background-color:: green
+					- $Z_W = \frac{E_x}{H_y} = \frac{\frac{\cc{\red}{j}\omega\mu}{\cc{\green}{k_y}}\cc{\blue}{B\cdot \sin(k_y y) \cdot e^{j k_z z}}}{- \frac{ - \cc{\red}{j} k_z}{\cc{\green}{k_y}} \cc{\blue}{B \cdot \sin(k_y y) \cdot e^{-j k_z z}}}$
+					- $Z_W = \frac{\omega \mu}{k_z} \op{k_z=\sqrt{\omega^2\varepsilon\mu-\left(\frac{n\pi}{d}\right)^2}}$
+						- separationsbedingung ((67646b82-a752-4db8-b782-284ff6dc6db8))
+						- wir suchen die moden $n$
+						- $\left(\frac{n\pi}{b}\right)^2=\omega^2\varepsilon\mu-k_{z}^2 \op{+k_z^2} \op{-\left(\frac{n\pi}{b}\right)^2}$
+						- $k_z^2=\omega^2\varepsilon\mu-\left(\frac{n\pi}{b}\right)^2 \op{b=d} \op{\sqrt{\square}}$
+						- $k_z=\sqrt{\omega^2\varepsilon\mu-\left(\frac{n\pi}{d}\right)^2}$
+					- $Z_W = \frac{\omega\mu}{\sqrt{\omega^2\varepsilon\mu-\left(\frac{n\pi}{d}\right)^2}}$
+					  background-color:: yellow
+				- grenzfrequenz
+				  background-color:: green
+					- ((67646b82-d905-4edd-915a-d4c002f45a0b))
+	- Mikrostreifenleitung
+	  background-color:: green
+	  collapsed:: true
+		- Dimensionieren Sie eine $50 \Omega$ Mikrostreifenleitung bei $9 \mathrm{GHz}$ mit Hilfe des abgebildeten Nomogramms. Als Trägermaterial ist ein $\mathrm{Al_2 O_3}$-Keramiksubstrat ($\varepsilon_r = \mathrm{9}$) vorgesehen. Die Höhe des Trägermaterials ist $h = 0.8 \mathrm{mm}$. Erklären Sie jeden Schritt Ihrer Vorgehensweise. 
+		  background-color:: green
+		  ![img](../assets/documents/WA_mikrostreifenleitung_bsp1_1.webp)
+		  ![img](../assets/documents/WA_mikrostreifenleitung_bsp1_2.webp)
+			- formeln
+				- ((67869dba-8d1f-4175-9b8e-5be3bdf26257))
+				- ((67646b82-7d16-4f2c-8ee2-9a3d830a3bc4))
+				- ((67646b82-d0e0-4846-b3a4-95047ec3ffab))
+			- $i=0$
+				- $\varepsilon_{{\mathrm{eff}}} = \varepsilon_r = 9$
+				- $Z_{L}=50\mathrm{\Omega}$ aus angabe
+				- $Z_{L,0}=Z_{L}\cdot\sqrt{\varepsilon_{r}}$ 
+				  ```calc
+				  50 * sqrt(9)
+				  ```
+				- aus dem ([link](((67869f81-7c7c-4ec3-b139-dcffb333b423)) )), für $Z_L=150 \mathrm{\Omega}$, das $\frac{w}{h}$ ablesen. $\frac{w}{h} = 0.65$
+				- aus dem ([link](((67869f81-7c7c-4ec3-b139-dcffb333b423))), für $\frac{w}{h} = 0.65$, das $q$ ablesen. $q = 0.6$
+				- $\varepsilon_{{\mathrm{eff}}} = 1 + q(\varepsilon_r − 1) = 1 + 0.6(9− 1)$
+				  
+				  ```calc
+				  1 + 0.6 * (9-1)
+				  ```
+			- $i=1$
+				- $Z_{L,1}=Z_{L}\cdot\sqrt{\varepsilon_{{\mathrm{eff}}}}$ 
+				  ```calc
+				  50 * sqrt(5.8)
+				  ```
+				- $\frac{w}{h} = 1.1$
+				- $q=0.64$
+				- $\varepsilon_{{\mathrm{eff}}} = 1 + 0.64(9− 1)$
+				  ```calc
+				  1 + 0.64 * (9-1)
+				  ```
+			- $i=2$
+				- $Z_{L,2}=Z_{L}\cdot\sqrt{\varepsilon_{{\mathrm{eff}}}}$ 
+				  ```calc
+				  50 * sqrt(6.12)
+				  ```
+				- $\frac{w}{h} = 1$
+				- $q=0.625$
+				- $\varepsilon_{{\mathrm{eff}}} = 1 + 0.625(9− 1)$
+				  ```calc
+				  1 + 0.625 * (9-1)
+				  ```
+			- aus $i=2$
+				- $h=\frac{w}{h}\cdot h = 0.8\mathrm{mm}$
+				  background-color:: yellow
+	- Richtdiagramm und Gewinn einer Antenne
+	  background-color:: green
+		- Eine verlustlose Antenne habe die Richtcharakteristik $\\f(\vartheta,\varphi)=|\sin(\vartheta)\cos(\varphi)\cos(\varphi/2)|$
+		  background-color:: green
+			- Skizzieren Sie das Richtdiagramm in horizontaler ($x/y$) und vertikaler ($x/z$) Ebene! Zeichnen Sie $\vartheta$ und $\varphi$ in den Skizzen und dem Koordinatensystem ein.
+			  background-color:: green
+			- Berechnen Sie den äquivalenten Raumwinkel und die Direktivität!
+			  background-color:: green
+			- Hinweis: ${\int \sin^{3}(a x)\opn{d}x = -\frac{1}{a}\cos(a x)+\frac{1}{3a}\cos^{3}(a x)}$ und $\int(\cos(x)\cos(a x))^{2}\mathrm{d}x={\frac{\sin(2(a+1)x)}{16(a+1)}+\frac{\sin(2(a-1)x)}{16(a-1)}+\frac{\sin(2a x)}{8a}+\frac{\sin(2 x)}{8}+\frac{x}{4}}$
+			- Berechnen Sie den Gewinn über dem Isotropstrahler und über dem Hertz'schen Dipol!
+			  background-color:: green
+	- Mikrowellenherd
+	  background-color:: green
+	  collapsed:: true
+		- TODO this
+		- Gegeben ist der unten dargestellte Hohlraumresonator der als Mikrowellenherd im $\mathrm{TE}_{204}$-Modus bei einer Frequenz von $f = 2.45 \mathrm{GHz}$ betrieben wird. Die Abmessungen des Resonators sind $a = 30 \mathrm{cm}$ und $b = 40 \mathrm{cm}$. In der Mitte des Herds liegt eine quadratische Toastscheibe der Höhe $h = 1 \mathrm{cm}$ und der Seitenlänge $l = 12 \mathrm{cm}$.
+		  background-color:: green
+		  ![img](../assets/documents/WA_mikrowellenherd.webp)
+			- Berechnen Sie die Höhe $c$ des Resonators!
+			  background-color:: green
+				- formeln
+					- ((67646b82-9985-4e5d-ad63-f1a604ea0334))
+				- $\left(\frac{m \pi}{a} \right)^{2} + \left(\frac{n \pi}{b} \right)^{2} + \left(\frac{p \pi}{c} \right)^{2} = \omega_{m n p}^{2} \varepsilon \mu \op{-\left(\frac{m \pi}{a} \right)^{2} \op{- \left(\frac{n \pi}{b} \right)^{2}}}$
+				- $\left(\frac{p \pi}{c} \right)^{2} = \omega_{m n p}^{2} \varepsilon \mu -\left(\frac{m \pi}{a} \right)^{2} - \left(\frac{n \pi}{b} \right)^{2} \op{\cdot \frac{1}{p^2\pi^2}} \op{\sqrt{\square}}$
+				- $\frac{1}{c} = \frac{\sqrt{\omega_{m n p}^{2} \varepsilon \mu -\left(\frac{m \pi}{a} \right)^{2} - \left(\frac{n \pi}{b} \right)^{2}}}{p\pi} \op{\square^{-1}}$
+				- $c = \frac{p\pi}{\sqrt{\omega_{m n p}^{2} \varepsilon \mu -\left(\frac{m \pi}{a} \right)^{2} - \left(\frac{n \pi}{b} \right)^{2}}}$
+				  background-color:: yellow
+				- code
+					- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
+					- ```python
+					  printer.seek(0); printer.truncate(0)
+					  
+					  ### angabe ###
+					  m=2; n=0; p=4 
+					  a=30E-2; b = 40E-2
+					  f = 2.45E9
+					  
+					  # da mikorwellenherd material = luft #
+					  eps = epsilon_0
+					  mu = mu_0
+					  
+					  ### calc ###
+					  w = 2 * pi * f
+					  c = ((p * pi)/
+					       (sqrt(w**2*eps*mu - (m*pi/a)**2 - (n*pi/b)**2 )))
+					  
+					  resPrint("c", c*1E2, "cm")
+					  
+					  printer.getvalue()
+					  ```
+						- {{evalparent}}
+			- Berechnen Sie die gesamte Verlustleistung, die in den Wänden des Resonators in Wärme umgewandelt wird! Gehen Sie dabei von den angegebenen Feldbildern des $\mathrm{TE}_{mnp}$-Modus aus und nehmen Sie $A = 1 \mathrm{A/m}$ an. Die Leitfähigkeit des Wandmatterials beträgt $\sigma = 1.4 \cdot 10^6 \mathrm{S/m}$.
+			  background-color:: green
+			  :LOGBOOK:
+			  CLOCK: [2025-01-14 Tue 17:29:43]--[2025-01-14 Tue 17:29:44] =>  00:00:01
+			  :END:
+			  $\begin{aligned}H_{x} = & - \frac{A}{ \kappa^{2}} \frac{m \pi}{a} \frac{p \pi}{c} \sin \left( \frac{m \pi}{a}x \right) \cos \left( \frac{n \pi}{b}y \right) \cos \left( \frac{p \pi}{c}z \right)~, \\ H_{y} = & - \frac{A}{ \kappa^{2}} \frac{n \pi}{b} \frac{p \pi}{c} \cos \left( \frac{m \pi}{a}x \right) \sin \left( \frac{n \pi}{b}y \right) \cos \left( \frac{p \pi}{c}z \right)~, \\ H_{z} = & A \cos \left( \frac{m \pi}{a}x \right) \cos \left( \frac{n \pi}{b}y \right) \sin \left( \frac{p \pi}{c}z \right)~, \\ E_{x} = & \frac{ \mathrm{j}A \omega \mu}{ \kappa^{2}} \frac{n \pi}{b} \cos \left( \frac{m \pi}{a}x \right) \sin \left( \frac{n \pi}{b}y \right) \sin \left( \frac{p \pi}{c}z \right)~, \\ E_{y} = & - \frac{ \mathrm{j}A \omega \mu}{ \kappa^{2}} \frac{m \pi}{a} \sin \left( \frac{m \pi}{a}x \right) \cos \left( \frac{n \pi}{b}y \right) \sin \left( \frac{p \pi}{c}z \right)~, \\ E_{z} = & 0~. \end{aligned}$
+			- Die Toastscheibe habe eine komplexe Dielektrizititskonstante von $\delta_T = \varepsilon_0(1 - j)$. Berechnen Sie damit die Verlustleistungsdichte in der Toastscheibel!
+			  background-color:: green
+			- Berechnen Sie den Temperaturverlauf in der Toastscheibe. Nehmen Sie dazu an, dass die Temperatur der Verlustleistungsdichte proportional ist sich aufgrund der geringen Höhe der Scheibe gleichmäßig über diese verteilt. Skizzieren Sie den Temperaturverlauf in der Toastscheibe! Gehen Sie von repräsentativen Schnitte durch die $x$-$z$- sowie durch die $z$-$y$-Ebene aus!
+			  background-color:: green
+			- Berechnen Sie die gesamte im Toast umgesetzte Leistung! Geben Sie den Wirkungsgrad des Herds an!
+			  background-color:: green
+			- Zusatzfrage: Wo sollte der Toast ohne zuhilfenahme anderer Gegenstände platziert werden, damit er die maximale Leistung aufnimmt?
+			  background-color:: green
 - ## flashcards
-  collapsed:: true
 	- ### index
 	  collapsed:: true
 		- query-table:: true
@@ -1777,10 +2038,60 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  ]
 		  }
 		  #+END_QUERY
-	-
+	- wie schaut die iterative methode der berechnung und dimensionierung von mikrostreifenleitungen aus?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+	  id:: 67869dba-8d1f-4175-9b8e-5be3bdf26257
+		- Setze $\varepsilon_{{\mathrm{eff}}} = \varepsilon_r$.
+		  logseq.order-list-type:: number
+		- $Z_{L,0} = Z_L \sqrt{\varepsilon_{\mathrm{eff}}}$.
+		  logseq.order-list-type:: number
+		- Bestimme $w/h$ aus ((67869f81-7c7c-4ec3-b139-dcffb333b423)).
+		  logseq.order-list-type:: number
+		- Bestimme $q$ aus ((67869f81-7c7c-4ec3-b139-dcffb333b423)) .
+		  logseq.order-list-type:: number
+		  id:: 67869e69-c39a-4ae0-a633-0f74063fb6d3
+		- Berechne $\varepsilon_{{\mathrm{eff}}} = 1 + q(\varepsilon_r − 1)$ oder lese $\sqrt{\varepsilon_{{\mathrm{eff}}}}$ aus ((6786a080-51de-454b-b838-e68afa80ea0e)) ab.
+		  logseq.order-list-type:: number
+		- Gehe zu 2.
+		  logseq.order-list-type:: number
+		- Abbildung 9.3
+		  id:: 67869f81-7c7c-4ec3-b139-dcffb333b423
+			- ![img](../assets/documents/WA_mikrostreifenleitung_bsp1_2.webp)
+		- Abbildung 9.4 #.grid
+		  id:: 6786a080-51de-454b-b838-e68afa80ea0e
+			- ![img](../assets/documents/WA_mikrostreifenleitung_abb_9_3_1.webp)
+			  id:: 6786bd8a-55da-400b-8454-323eb67b4841
+			- ![img](../assets/documents/WA_mikrostreifenleitung_abb_9_3_2.webp)
+			  id:: 6786bd8f-c3c3-4cf9-9266-fa424ba1aa9f
+		- skript
+		  collapsed:: true
+			- ((67869e23-68e5-49dd-bb45-43b16048e86b))
+			- ((67869fd7-52e0-4b2b-9b54-a6648092f0b2))
+			- ((6786a0b1-caed-41bd-85f4-8460a08a1d75))
+	- welche moden sind auf einer mikrostreifenleitung (microstrip) ausbreitungsfähig?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+	  collapsed:: true
+		- es kann sich eine $\mathrm{TEM}$-welle ausbreiten, wenn das dielektrikum luft ist
+		- unter gewissen dilektrikums- und geometriebedingungen kann sich keine $\mathrm{TEM}$ mehr ausbreiten. bei geringen frequenzen ist es aber fast der fall daher spricht man von einer $\mathrm{Quasi-TEM}$-welle.
+		- skript
+			- ((67869d88-6686-46a0-a840-17e81ce4081e))
+	- was sind mediumswellen-, feldwellen-, leitungswellen-, wellenwiderstand?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard, wip
+	  id:: 6782b182-622e-48bd-a53f-c06309d5ec8b
+	  collapsed:: true
+		- mediums und wellenwiderstand sind das selbe
+		- bei $\mathrm{HEW}$ sind die feldwellen- und mediumswellenwiderstände gleich
+		- der leitungswellenwiderstand beschreibt den leistungstransport
+		- skript
+			- ((67851df0-5ab5-4a75-8265-e9e53af56ff7))
+			- ((67851fab-caa6-40df-ad82-c4000f0c0f2e))
 	- was ist eine entartete mode?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 6782b182-e1dd-4926-b18f-9c45a7e41387
 	  collapsed:: true
 		- Zwei Moden werden als entartet bezeichnet wenn sie gleiche Ausbreitungseigenschaften haben also gleiches $k_z$, $v_G$, ... haben. Diese Moden sind deswegen nicht identisch da das Feldbild unterschiedlich ist.
 		- skript
@@ -1795,17 +2106,20 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 	- wie lautet der ansatz für eine $\mathrm{TE}$ welle in einer parallelplattenleitung?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 6782b182-42d6-4423-bde1-d72287bf7080
 		- $E_z=0$
 		- $H_z = A \cdot \cos(k_y y) e^{-j k_z z}$
 			- $\cos$ weil an der wand das feld mit dem flächenstrom springt
 	- wie lautet der ansatz für die $\mathrm{TEM}$ welle in einer parallelplattenleitung?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 6782b182-2a75-43e1-8d1a-841a209d0d91
 		- ((673e3379-7ae8-425b-bf90-a176d50f983b))
 		- ((6735b379-187a-4654-8126-efd8a322477b))
 	- was ist die [[grenzfrequenz]]
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 6782b182-d4ed-4471-b1fc-84cc026d131a
 	  collapsed:: true
 		- die [[grenzfrequenz]] im kontext der [[wellenausbreitung]] gibt an, ab welcher [[Frequenz]] eine bestimmte mode ausbreitungsfähig ist
 		- skript
@@ -1813,6 +2127,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 	- welche wellen sind im rechteck hohlleiter ausbreitungsfähig?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 6782b182-d507-4c21-ac25-c90201305d7d
 	  collapsed:: true
 		- $\mathrm{TE}$ und $\mathrm{TM}$ wellen
 		- die $\mathrm{TEM}$ welle ist **nicht** ausbreitungsfähig aufgrund der randbedingungen [link](((67459ac8-e918-4a08-8003-07057ff681d6))). der hohlleiter kann in $x$ und $y$ richtung kein $E$ feld haben, da das potential überall gleich ist
@@ -1837,7 +2152,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- Ansatz $P(z) = P_0 e^{−2αz}$
 			  id:: 677ffa90-8b80-4f55-84fd-04b043315ff2
 			  logseq.order-list-type:: number
-			- Diﬀerentation nach $z$ ergibt $\alpha=\frac{1}{2P(z)}\left(-\frac{\partial}{\partial z}P(z)\right)$
+			- Diﬀerentation nach $z$ ergibt $\alpha=\frac{1}{2P(z)}\left(-\pdif{z}P(z)\right)$
 			  id:: 677ffa90-906b-474f-bd86-9937b6d51c53
 			  logseq.order-list-type:: number
 			- Berechnung der transportieren Leistung mittels Poyntingvektor $P=\int\mathrm{Re}\{\vect{T}\}\cdot\mathrm{d}\vect{F}$
@@ -1847,16 +2162,19 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 	- wie lautet der ansatz für die $\mathrm{TE}$-welle in einem ebenen dielektrischen wellenleiter
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 6782b182-6135-4504-8f65-e2db92f8a049
 	  collapsed:: true
 		- ((67508103-1a02-4819-8b68-7d3d9cf8f041))
 	- wie lautet die separationsbedingung für [[dielektrische wellenleiter]]?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 67646c21-36a2-4f1e-a9a8-461e961487bb
 	  collapsed:: true
 		- ((67509364-eaba-40b7-bcaa-fc7c23e9954a))
 	- wofür stehen $\mathrm{TM}$, $\mathrm{TE}$ und $\mathrm{TEM}$?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 67646c21-efac-49c1-a118-9f4ea5100dab
 	  collapsed:: true
 		- $\mathrm{TM}$
 		  collapsed:: true
@@ -1873,21 +2191,25 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 	- wie teilt sich die leistung einer welle bei zirkular polarisierten wellen auf?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 67646c21-75b8-4d62-a84d-fd2b77d32114
 	  collapsed:: true
 		- die $\mathrm{TE}$ und $\mathrm{TM}$ Wellen haben die gleiche leistung
 		- ((675ac3d6-3993-4c69-a300-cc0df932374a))
 	- welcher faktor ($\Gamma_{\mathrm{TM}},~\Gamma_{\mathrm{TE}}, ~T_{\mathrm{TM}},~T_{\mathrm{TE}}$) ist unter einfall des [[brewster winkels]] gleich $0$?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 67646c21-31de-4693-b808-597bb6baef8c
 	  collapsed:: true
 		- $\Gamma_{\mathrm{TM}}$
 	- was beschreibt eine mode?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 67646c21-c201-4def-a190-73ad78b275d4
 	  collapsed:: true
 		- eine mode beschreibt die gestalt der felder
 	- was ist die günstigste form eines quaderförmigen hohlraum resonators?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
+	  id:: 67646c21-49b5-4033-bf39-6d7a95c5ade1
 	  collapsed:: true
 		- wenn man das größte volumen bei kleinstmöglicher oberfläche hat, also $a=b=c$
