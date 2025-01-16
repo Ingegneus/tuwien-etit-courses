@@ -4,7 +4,8 @@ template-used:: standard-page
 tags:: tech, it
 
 - common commands #tip #shortcuts
-	- |----------------------------------------|------------------------------|---------------------|
+	- |latex code|mnemonic/what it does|example|
+	  |--|--|--|
 	  |`\begin{matrix} & & \\ & & \end{matrix}`|<u>matrix</u> (like an array)| $\begin{matrix} 1 & 0 \\ 0 & 1\end{matrix}$|
 	  |`\begin{pmatrix} & & \\ & & \end{pmatrix}`|<u>p</u>arenthesis <u>matrix</u>| $\begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix}$|
 	  |`\begin{bmatrix} & & \\ & & \end{bmatrix}`|<u>b</u>racket <u>matrix</u>| $\begin{bmatrix} 1 & 0 \\ 0 & 1\end{bmatrix}$|
@@ -14,3 +15,4 @@ tags:: tech, it
 	  |`\frac{}{}`| <u>frac</u>tion |$\frac{1}{\sqrt{2}+\frac{1}{\sqrt{2} + \frac{1}{\sqrt{2}+\dotsb}}}$|
 	  |`\cfrac{}{}`| <u>c</u>ontinued <u>frac</u>tion (nested fractions don't look so small)|$\cfrac{1}{\sqrt{2}+\cfrac{1}{\sqrt{2} + \cfrac{1}{\sqrt{2}+\dotsb}}}$|
 	  |`\left\{ \right\}`| adapting curly braces| $\left\{\frac12\right\}$ |
+	  |`\limits_start^end`|set the limits above and below the integral|$\int\limits_0^1$|

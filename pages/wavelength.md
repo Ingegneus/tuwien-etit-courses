@@ -8,6 +8,6 @@ alias:: wellenlänge
 - $\lambda = \frac{v}{f}$
   tags:: formel
   bezeichnung:: wellenlänge in einem medium
-	- $\lambda$ ... [[wellenlänge]] $\mathrm{\left[ m \right]}$
-	- $v$ ... lichtgeschwindigkeit im medium $\mathrm{\left[ \frac{m}{s} \right]}$
-	- $f$ ... frequenz der welle $\mathrm{\left[ Hz \right]}$
+	- $\lambda$ ... [[wellenlänge]] $\iu{ m }$
+	- $v$ ... lichtgeschwindigkeit im medium $\iu{ \frac{m}{s} }$
+	- $f$ ... frequenz der welle $\iu{ Hz }$

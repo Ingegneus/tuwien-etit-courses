@@ -9,4 +9,4 @@ alias:: kreisfrequenz
   tags:: formel
   bezeichnung:: berechnung der [[kreisfrequenz]]
   id:: 674b703d-c8a8-4814-8c70-f8289a9b6bdf
-	- $f$ ... frequenz $\mathrm{\left[ Hz \right]}$
+	- $f$ ... frequenz $\iu{ Hz }$

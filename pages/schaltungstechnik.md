@@ -509,7 +509,7 @@ alias:: ST, schaltungstechnik lva
 		  id:: 67595b68-be94-4d00-a26f-1910e44d1b75
 		  tags:: formel, [[rauschen]], [[BJT]], wip
 		  bezeichnung:: Stromquadrat des Rauschgenerators am [[Kollektor]] eines [[BJT]] im [[kleinsignal]] [[ersatzschaltbild]] ([[schrot rauschen]])
-			- $\bar{i}_{c}^2$ ... Stromquadrat des Rauschgenerators $\mathrm{\left[V\right]}$
+			- $\bar{i}_{c}^2$ ... Stromquadrat des Rauschgenerators $\iu{V}$
 			- $q$ ...  []
 			- ${}I_C$ ... []
 			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
@@ -529,10 +529,10 @@ alias:: ST, schaltungstechnik lva
 			- $K_1$ ... empirischer korrektur faktor je nach bauelement $\mathrm{[-]}$
 				- hängt vom herstellungsprozess des bauelementes bzw. des ics ab und kann für bauelemente auf einem wafer wegen kontamination (am jeweiligen ort vorhanden/nicht vorhanden) stark streuen. für rauscharme niederfrequenzschaltungen, die aus diskreten bauelementen oder standard-ics aufgebaut werden, lassen sich die komponenten deshalb bezüglich geringstem 1/f-rauschen selektieren. die amplitudenverteilung des [[1\/f-rauschens]] ist nicht gaussisch.
 			- $a$ ... eine konstante von $0.5-2$ $\mathrm{[-]}$
-			- $f$ ... $\mathrm{\left[\placeholder{}\right]}$
-			- $K_2$ ... $\mathrm{\left[\placeholder{}\right]}$
-			- $I_{B}^{c}$ ... $\mathrm{\left[\placeholder{}\right]}$
-			- $f_{c}$ ... $\mathrm{\left[\placeholder{}\right]}$
+			- $f$ ... $\iu{\placeholder{}}$
+			- $K_2$ ... $\iu{\placeholder{}}$
+			- $I_{B}^{c}$ ... $\iu{\placeholder{}}$
+			- $f_{c}$ ... $\iu{\placeholder{}}$
 		- terme:
 			- [[schrot rauschen]]
 			- [[funkel rauschen]]
@@ -550,7 +550,7 @@ alias:: ST, schaltungstechnik lva
 			- $g_{m}$ ... [[transkonduktanz]] $\mathrm{[S]}$
 			- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$
 			- $K_1$ ...
-			- $f$ ... frequenz $\mathrm{\left[Hz\right]}$
+			- $f$ ... frequenz $\iu{Hz}$
 		- terme
 			- [[thermisches rauschen]]
 			- [[funkel rauschen]]
@@ -812,7 +812,7 @@ alias:: ST, schaltungstechnik lva
 			  id:: 667b0f07-887e-4fbc-8f69-76f7b0dee63f
 			  tags:: formel, [[rauschen]], wip
 			  bezeichnung:: Stromquadrat des Rauschgenerators aufgrund von [[schrot rauschen]]
-				- $\bar{i}^2$ ... Stromquadrat des Rauschgenerators aufgrund von [[schrot rauschen]] $\mathrm{\left[A^2\right]}$
+				- $\bar{i}^2$ ... Stromquadrat des Rauschgenerators aufgrund von [[schrot rauschen]] $\iu{A^2}$
 				- $q$ ...  []
 				- $I$ ... relevanter strom $\mathrm{[A]}$
 				- $\Delta f$ ... [[bandbreite]] in der die Schaltung betrieben werden soll $\mathrm{[Hz]}$

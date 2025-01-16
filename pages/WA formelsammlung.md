@@ -43,11 +43,11 @@ alias:: cheat sheet
 	  id:: 673e3379-c5b6-4af8-a61a-20daa9718476
 	  collapsed:: true
 		- $\tan \theta$ ...  verlustwinkel
-		- $\varepsilon''$ ... [[imaginärteil]] von ((673e3379-64cb-4d50-98c9-668f6b9fd3fd)) $\mathrm{\left[ \frac{As}{Vm} \right]}$
-		- $\varepsilon'$ ... [[realteil]]  von ((673e3379-64cb-4d50-98c9-668f6b9fd3fd)) $\mathrm{\left[ \frac{As}{Vm} \right]}$
-		- $\sigma$ ... elektrische leitfähigkeit $\mathrm{\left[ \frac{S}{m} \right]}$
-		- $\varepsilon$ ... absolute [[permittivität]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
-		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
+		- $\varepsilon''$ ... [[imaginärteil]] von ((673e3379-64cb-4d50-98c9-668f6b9fd3fd)) $\iu{ \frac{As}{Vm} }$
+		- $\varepsilon'$ ... [[realteil]]  von ((673e3379-64cb-4d50-98c9-668f6b9fd3fd)) $\iu{ \frac{As}{Vm} }$
+		- $\sigma$ ... elektrische leitfähigkeit $\iu{ \frac{S}{m} }$
+		- $\varepsilon$ ... absolute [[permittivität]] $\iu{ \frac{As}{Vm} }$
+		- $\omega$ ... [[kreisfrequenz]] $\iu{ \frac{rad}{s} }$
 	- $\vect{\nabla} \cdot \vect{E} = 0$
 	- $\vect{\nabla} \cdot \vect{H} = 0$
 	- $\vect{\nabla} \times \vect{E} = - j \omega \mu \vect{H}$
@@ -85,10 +85,10 @@ alias:: cheat sheet
 	  bezeichnung:: wellengleichung (telegrafengleichung) mit verlusten
 	  id:: 67646b82-91a5-483a-9d35-9669db690b89
 		- $\nabla^2$ ... [[laplace operator]]
-		- $\vect{E}$ ... elektrischer feldstärke vektor der momentanwerte $\mathrm{\left[ \frac{V}{m} \right]}$
-		- $\mu$ ... magnetische permeabilität $\mathrm{\left[ \frac{Vs}{Am} \right]}$
-		- $\varepsilon$ ... elektrische permittivität $\mathrm{\left[ \frac{As}{Vm} \right]}$
-		- $\sigma$ ... elektrische leitfähigkeit $\mathrm{\left[ \frac{S}{m} \right]}$
+		- $\vect{E}$ ... elektrischer feldstärke vektor der momentanwerte $\iu{ \frac{V}{m} }$
+		- $\mu$ ... magnetische permeabilität $\iu{ \frac{Vs}{Am} }$
+		- $\varepsilon$ ... elektrische permittivität $\iu{ \frac{As}{Vm} }$
+		- $\sigma$ ... elektrische leitfähigkeit $\iu{ \frac{S}{m} }$
 		- $t$ ... zeit
 		- $\cfrac{\partial}{\partial t}, \cfrac{\partial^2}{\partial t^2}$ ... partielle ableitung 1./2. ordnung nach der zeit
 	- $\nabla^{2} \vect{E} + ( \omega^{2} \mu \varepsilon - j \omega \mu \sigma) \vect{E} = 0$
@@ -98,8 +98,8 @@ alias:: cheat sheet
 	- $k = \omega \sqrt{\mu \delta}$
 	  tags:: formel, wip
 	  bezeichnung:: wellenzahl
-		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
-		- $\delta$ ... [[komplexe]] [[dielektrizitätskonstante]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
+		- $\omega$ ... [[kreisfrequenz]] $\iu{ \frac{rad}{s} }$
+		- $\delta$ ... [[komplexe]] [[dielektrizitätskonstante]] $\iu{ \frac{As}{Vm} }$
 	- $\Psi(x,y,z) = X(x)Y(y)Z(z)$
 	- $\frac{1}{X(x)} \pdiff{x}X(x) + \frac{1}{Y(y)} \pdiff{y}Y(y) + \frac{1}{Z(z)} \pdiff{z}Z(z) + \underbrace{k^{2}}_{\text{const.}} = 0$
 	- $\frac{1}{X(x)} \pdiff{x}X(x) = - k_{x}^{2}$
@@ -107,7 +107,7 @@ alias:: cheat sheet
 	  tags:: formel, wip
 	  bezeichnung:: separationsbedingung
 	  id:: 674d7759-0e35-482f-8086-9026be01cd14
-		- $\delta$ ... [[komplexe]] [[dielektrizitätskonstante]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
+		- $\delta$ ... [[komplexe]] [[dielektrizitätskonstante]] $\iu{ \frac{As}{Vm} }$
 		  id:: 67646b82-819c-4927-9c2f-03c15802ec4f
 	- $\pdiff{x}X(x) + k_{x}^{2}X(x) = 0$
 	- $\pdif{y}H_{z} - \pdif{z}H_{y} = j \omega \delta E_{x} \\ \pdif{z}H_{x} - \pdif{x}H_{z} = j \omega \delta E_{y} \\ \pdif{x}H_{y} - \pdif{y}H_{x} = j \omega \delta E_{z} \\ \pdif{y}E_{z} - \pdif{z}E_{y} = - j \omega \mu H_{x} \\ \pdif{z}E_{x} - \pdif{x}E_{z} = - j \omega \mu H_{y} \\ \pdif{x}E_{y} - \pdif{y}E_{x} = - j \omega \mu H_{z}$
@@ -129,11 +129,11 @@ alias:: cheat sheet
 	  id:: 67646b82-c128-49c7-b8b1-18a53926ceca
 	  tags:: formel
 	  bezeichnung:: eindimensionale homogene Wellengleichung in karthesischen koordinaten
-		- $z$ ... raumkoordinate $\mathrm{\left[ m \right]}$
+		- $z$ ... raumkoordinate $\iu{ m }$
 		- $\cfrac{\partial^2}{\partial z^2}$ ... partielle ableitung 2. ordnung nach der $z$ koordinate
-		- $e_x$ ... momentan wert des elektrischen feldes in $x$ richtung $\mathrm{\left[ \frac{V}{m} \right]}$
-		- $\mu$ ... magnetische permeabilität $\mathrm{\left[ \frac{Vs}{Am} \right]}$
-		- $\varepsilon$ ... elektrische permittivität $\mathrm{\left[ \frac{As}{Vm} \right]}$
+		- $e_x$ ... momentan wert des elektrischen feldes in $x$ richtung $\iu{ \frac{V}{m} }$
+		- $\mu$ ... magnetische permeabilität $\iu{ \frac{Vs}{Am} }$
+		- $\varepsilon$ ... elektrische permittivität $\iu{ \frac{As}{Vm} }$
 		- $t$ ... zeit
 		- $\cfrac{\partial^2}{\partial t^2}$ ... partielle ableitung 2. ordnung nach der zeit
 	- $e_{x}\left(z,t\right) = \underbrace{c_1f_1\left(z - vt\right)}_{ = e_{x}^{ + }\left(z,t\right)} + \underbrace{c_2f_2\left(z + vt\right)}_{ = e_{x}^{ - }\left(z,t\right)}$
@@ -141,11 +141,11 @@ alias:: cheat sheet
 	  tags:: formel
 	  bezeichnung:: allgemeiner lösungsansatz der eindimensionalen [[hew]]
 	  collapsed:: true
-		- $e_x(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung $\mathrm{\left[ \frac{V}{m} \right]}$
-		- $e_x^{+}(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung der hinlaufenden welle $\mathrm{\left[ \frac{V}{m} \right]}$
-		- $e_x^{-}(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung der rücklaufenden welle $\mathrm{\left[ \frac{V}{m} \right]}$
-		- $z$ ... $z$-koordinate, hier ist es die ausbreitungsrichtung $\mathrm{\left[ m \right]}$
-		- $t$ ... zeit $\mathrm{\left[ s \right]}$
+		- $e_x(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung $\iu{ \frac{V}{m} }$
+		- $e_x^{+}(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung der hinlaufenden welle $\iu{ \frac{V}{m} }$
+		- $e_x^{-}(z,t)$ ... momentanwert des [[elektrischen feldes]] in $x$-richtung der rücklaufenden welle $\iu{ \frac{V}{m} }$
+		- $z$ ... $z$-koordinate, hier ist es die ausbreitungsrichtung $\iu{ m }$
+		- $t$ ... zeit $\iu{ s }$
 		- $c_1 , c_2$ ... beliebige komplexe constante
 		- $f_1(z-vt) , f_2(z-vt)$ ... beliebige 2 mal stetig differenzierbare funktion
 		- skript
@@ -154,11 +154,11 @@ alias:: cheat sheet
 	  tags:: formel
 	  bezeichnung:: phasengeschwindigkeit
 	  id:: 673e3379-4b5b-475a-91a4-08da8e21eb58
-		- $v_p$ ... phasengeschwindigkeit $\mathrm{\left[ \frac{m}{s} \right]}$
-		- $\varepsilon$ ... absolute [[permittivität]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
-		- $\mu$ ... absolute [[permeabilität]] $\mathrm{\left[ \frac{Vs}{Am} \right]}$
-		- $\omega$ ... [[kreisfrequenz]] der welle $\mathrm{\left[ \frac{rad}{s} \right]}$
-		- $k$ ... [[wellenzahl]] $\mathrm{\left[ \frac{rad}{m} \right]}$
+		- $v_p$ ... phasengeschwindigkeit $\iu{ \frac{m}{s} }$
+		- $\varepsilon$ ... absolute [[permittivität]] $\iu{ \frac{As}{Vm} }$
+		- $\mu$ ... absolute [[permeabilität]] $\iu{ \frac{Vs}{Am} }$
+		- $\omega$ ... [[kreisfrequenz]] der welle $\iu{ \frac{rad}{s} }$
+		- $k$ ... [[wellenzahl]] $\iu{ \frac{rad}{m} }$
 	- ((673c4eb2-5827-434c-a323-0ff29f347504))
 	  id:: 67646b82-6d7d-47d2-bb9e-0000d5f455c2
 	- ((673b66c9-9d1e-40e9-9289-92ee3f902303))
@@ -203,19 +203,19 @@ alias:: cheat sheet
 	  id:: 673e3379-7ae8-425b-bf90-a176d50f983b
 	  tags:: formel
 	  bezeichnung:: ansatz der elektrischen komponente einer $\mathrm{TEM}$ welle
-		- $\vect{E}$ ... elektrischer feldstärke vektor $\mathrm{\left[ \frac{V}{m} \right]}$
-		- $E_{y0}$ ... amplitude des elektrischen feldes in $y$ richtung $\mathrm{\left[ \frac{V}{m} \right]}$
-		- $k_z$ ...  wellenzahl in $z$ richtung $\mathrm{\left[ \frac{rad}{m} \right]}$
-		- $\vect{i}_y$ ... einheitsvektor in $y$ richtung $\mathrm{\left[ - \right]}$
+		- $\vect{E}$ ... elektrischer feldstärke vektor $\iu{ \frac{V}{m} }$
+		- $E_{y0}$ ... amplitude des elektrischen feldes in $y$ richtung $\iu{ \frac{V}{m} }$
+		- $k_z$ ...  wellenzahl in $z$ richtung $\iu{ \frac{rad}{m} }$
+		- $\vect{i}_y$ ... einheitsvektor in $y$ richtung $\iu{ - }$
 	- $\eta \vect{H} = - E_{y0}e^{ - jkz} \vect{i}_{x}$
 	  id:: 6735b379-187a-4654-8126-efd8a322477b
 	  tags:: formel
 	  bezeichnung:: ansatz der magnetischen komponente einer $\mathrm{TEM}$ welle
-		- $\eta$ ... mediumswiderstand $\mathrm{\left[ \Omega \right]}$
-		- $\vect{H}$ ... magnetischer feldstärke vektor $\mathrm{\left[ \frac{A}{m} \right]}$
-		- $E_{y0}$ ... amplitude des elektrischen feldes in $y$ richtung $\mathrm{\left[ \frac{V}{m} \right]}$
-		- $k_z$ ...  wellenzahl in $z$ richtung $\mathrm{\left[ \frac{rad}{m} \right]}$
-		- $\vect{i}_x$ ... einheitsvektor in $x$ richtung $\mathrm{\left[ - \right]}$
+		- $\eta$ ... mediumswiderstand $\iu{ \Omega }$
+		- $\vect{H}$ ... magnetischer feldstärke vektor $\iu{ \frac{A}{m} }$
+		- $E_{y0}$ ... amplitude des elektrischen feldes in $y$ richtung $\iu{ \frac{V}{m} }$
+		- $k_z$ ...  wellenzahl in $z$ richtung $\iu{ \frac{rad}{m} }$
+		- $\vect{i}_x$ ... einheitsvektor in $x$ richtung $\iu{ - }$
 	- $\begin{aligned} P&=\int\vect{P}\cdot\opn{d}\vect{F}=\cfrac12\opn{Re} \left\{\int(\vect{E}\times\vect{H^{*}})\cdot\opn{d}\vect{F} \right\} \\ &= \cfrac{1}{2} \opn{Re} \left\{\int(E_{x}H_{y}^{*} - E_{y}H_{x}^{*}) \opn{d}F \right\} \\ &= \cfrac{w d}{2} \opn{Re} \{ - E_{y0}e^{ - j k z}( - \cfrac{E_{y0}}{\eta}e^{ + j k z}) \} = \cfrac{E_{y0}^{2}}{2 \eta}w d \end{aligned}$
 	- $P = \cfrac{|U|^{2}}{2Z_{\opn{PV}}}$
 	  id:: 6735b379-6bbc-4df6-9bbd-9f29e63108cf
@@ -224,9 +224,9 @@ alias:: cheat sheet
 	  id:: 6735b379-fdec-41d2-9e92-0a885348c026
 	  tags:: formel
 	  bezeichnung:: transportierte leistung in der parallelplattenleitung
-		- $E_{y0}$ ... elektrisches Feld in $y$-Richtung (normal zur Platte/Grenzfläche) $\mathrm{\left[ \frac{V}{m} \right]}$
-		- $d$ ... abstand zwischen den platten der parallelplattenleitung $\mathrm{\left[ m \right]}$
-		- $Z_{PV}$ ... Leitungswellenwiderstand (?). Widerstand der über leistung und spannung berechnet wird. entspricht dem [[wellenwiderstand]] $Z_L$ bzw $\eta$ $\mathrm{\left[ \Omega \right]}$
+		- $E_{y0}$ ... elektrisches Feld in $y$-Richtung (normal zur Platte/Grenzfläche) $\iu{ \frac{V}{m} }$
+		- $d$ ... abstand zwischen den platten der parallelplattenleitung $\iu{ m }$
+		- $Z_{PV}$ ... Leitungswellenwiderstand (?). Widerstand der über leistung und spannung berechnet wird. entspricht dem [[wellenwiderstand]] $Z_L$ bzw $\eta$ $\iu{ \Omega }$
 	- $\vect{\nabla}\times\vec{E}=-j\omega\mu\vect{H}$
 	- $\vect{\nabla}\times\vect{H}=\sigma\vec{E}+j\omega\varepsilon\vect{E}$
 	- ((67459ac7-d3b4-47bf-9ac5-0379a5e2e1e8))
@@ -248,12 +248,12 @@ alias:: cheat sheet
 	  tags:: formel
 	  bezeichnung:: eindringtiefe
 	  collapsed:: true
-		- $\alpha$ ... [[realteil]] der [[komplexen]] [[wellenzahl]] $\mathrm{\left[ \frac{rad}{m} \right]}$
+		- $\alpha$ ... [[realteil]] der [[komplexen]] [[wellenzahl]] $\iu{ \frac{rad}{m} }$
 		- $k_\mathrm{E}$ ...
-		- $s$ ... bandbreite $\mathrm{\left[ - \right]}$
-		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[ \frac{rad}{s} \right]}$
+		- $s$ ... bandbreite $\iu{ - }$
+		- $\omega$ ... [[kreisfrequenz]] $\iu{ \frac{rad}{s} }$
 		- $\mu$ ...
-		- $\sigma$ ... elektrische leitfähigkeit $\mathrm{\left[ \frac{S}{m} \right]}$
+		- $\sigma$ ... elektrische leitfähigkeit $\iu{ \frac{S}{m} }$
 - ## Reﬂexion an glatten Grenzflächen, die [[parallelplattenleitung]]
   collapsed:: true
 	- [S. 8](((677f9d68-fcb5-4a5b-a2fd-8a396f1f8d0a)))
@@ -264,7 +264,7 @@ alias:: cheat sheet
 	  collapsed:: true
 		- $\Theta_1$ ... winkel in medium 1 (eintritt) $\mathrm{[°]}$
 		- $\Theta_2$ ... winkel in medium 2 (transmission) $\mathrm{[°]}$
-		- $\varepsilon_1$ ... absolute [[permittivität]] $\mathrm{\left[\frac{As}{Vm}\right]}$
+		- $\varepsilon_1$ ... absolute [[permittivität]] $\iu{\frac{As}{Vm}}$
 		- $n_1$ ... [[brechungsindex]] $\mathrm{[-]}$
 		- $n_2$ ... [[brechungsindex]] $\mathrm{[-]}$
 	- $\Gamma_{\mathrm{TM}} =  \displaystyle \frac{\sqrt{\varepsilon_{2}} \cos \Theta_{1} -  \sqrt{\varepsilon_{1}} \cos \Theta_{2}}{\sqrt{\varepsilon_{2}} \cos \Theta_{1} +  \sqrt{\varepsilon_{1}} \cos \Theta_{2}} =  \displaystyle \frac{n^{2} \cos \Theta_{1} -  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}{n^{2} \cos \Theta_{1} +  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}$
@@ -272,41 +272,41 @@ alias:: cheat sheet
 	  tags:: formel, wip
 	  bezeichnung:: reflektionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TM fall)
 	  collapsed:: true
-		- $\Gamma_{\mathrm{TM}}$ ... reflexionsfaktor der TM Welle $\mathrm{\left[ - \right]}$
-		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
-		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
-		- $\Theta_2$ ... transmissionswinkel $\mathrm{\left[ ° \right]}$
-		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\mathrm{\left[ - \right]}$
+		- $\Gamma_{\mathrm{TM}}$ ... reflexionsfaktor der TM Welle $\iu{ - }$
+		- $\varepsilon_i$ ... relative [[permittivität]] $\iu{ - }$
+		- $\Theta_1$ ... eintrittswinkel $\iu{ ° }$
+		- $\Theta_2$ ... transmissionswinkel $\iu{ ° }$
+		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\iu{ - }$
 	- ${T_{\mathrm{TM}}} = {\displaystyle \frac{2 \sqrt{\varepsilon_{1}} \cos \Theta_{1}}{\sqrt{\varepsilon_{2}} \cos \Theta_{1} +  \sqrt{\varepsilon_{1}} \cos \Theta_{2}} =  \displaystyle \frac{2n \cos \Theta_{1}}{n^{2} \cos \Theta_{1} +  \sqrt{n^{2} -  \sin^{2} \Theta_{1}}}}$
 	  id:: 6735b379-80fa-4b2a-be2d-af5089fe1fa8
 	  tags:: formel, wip
 	  bezeichnung:: transmissionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TM fall)
 	  collapsed:: true
-		- $T_{\mathrm{TE}}$ ... transmissionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
-		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
-		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
-		- $\Theta_2$ ... transmissionswinkel $\mathrm{\left[ ° \right]}$
-		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\mathrm{\left[ - \right]}$
+		- $T_{\mathrm{TE}}$ ... transmissionsfaktor der TE Welle $\iu{ - }$
+		- $\varepsilon_i$ ... relative [[permittivität]] $\iu{ - }$
+		- $\Theta_1$ ... eintrittswinkel $\iu{ ° }$
+		- $\Theta_2$ ... transmissionswinkel $\iu{ ° }$
+		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\iu{ - }$
 	- $\Gamma_{\mathrm{TE}} = \frac{\sqrt{\varepsilon_{1}} \cos \Theta_{1} - \sqrt{\varepsilon_{2}} \cos \Theta_{2}}{\sqrt{\varepsilon_{1}} \cos \Theta_{1} + \sqrt{\varepsilon_{2}} \cos \Theta_{2}} = \frac{\cos \Theta_{1} - \sqrt{n^{2} - \sin^{2} \Theta_{1}}}{\cos \Theta_{1} + \sqrt{n^{2} - \sin^{2} \Theta_{1}}}$
 	  id:: 6735b379-8ba8-4a90-b5e2-8b5b38036526
 	  tags:: formel, wip
 	  bezeichnung:: reflektionsfaktor der transversal polarisierten elektrischen welle (fresnel formel TE fall)
 	  collapsed:: true
-		- $\Gamma_{\mathrm{TE}}$ ... reflexionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
-		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
-		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
-		- $\Theta_2$ ... transmissionswinkel $\mathrm{\left[ ° \right]}$
-		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\mathrm{\left[ - \right]}$
+		- $\Gamma_{\mathrm{TE}}$ ... reflexionsfaktor der TE Welle $\iu{ - }$
+		- $\varepsilon_i$ ... relative [[permittivität]] $\iu{ - }$
+		- $\Theta_1$ ... eintrittswinkel $\iu{ ° }$
+		- $\Theta_2$ ... transmissionswinkel $\iu{ ° }$
+		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\iu{ - }$
 	- $T_{\mathrm{TE}} = \frac{2 \sqrt{\varepsilon_{1}} \cos \Theta_{1}}{\sqrt{\varepsilon_{1}} \cos \Theta_{1} + \sqrt{\varepsilon_{2}} \cos \Theta_{2}} = \frac{2 \cos \Theta_{1}}{\cos \Theta_{1} + \sqrt{n^{2} - \sin^{2} \Theta_{1}}}$
 	  id:: 6735b379-1a1f-417e-8323-7fe94bd9e2cf
 	  tags:: formel
 	  bezeichnung:: transmissionsfaktor der transversal polarisierten magnetischen welle (fresnel formel TE fall)
 	  collapsed:: true
-		- $T_{\mathrm{TE}}$ ... transmissionsfaktor der TE Welle $\mathrm{\left[ - \right]}$
-		- $\varepsilon_i$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
-		- $\Theta_1$ ... eintrittswinkel $\mathrm{\left[ ° \right]}$
-		- $\Theta_2$ ... transmissionswinkel $\mathrm{\left[ ° \right]}$
-		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\mathrm{\left[ - \right]}$
+		- $T_{\mathrm{TE}}$ ... transmissionsfaktor der TE Welle $\iu{ - }$
+		- $\varepsilon_i$ ... relative [[permittivität]] $\iu{ - }$
+		- $\Theta_1$ ... eintrittswinkel $\iu{ ° }$
+		- $\Theta_2$ ... transmissionswinkel $\iu{ ° }$
+		- $n$ ... relativer [[brechnungsindex]] [link](((67360de7-70f6-457a-b7e1-e13b553b5d80))) $\iu{ - }$
 	- $\Gamma_{\mathrm{TM}} = 0 \quad \Leftarrow \quad \tan \Theta_{\mathrm{B}} =$ ((67360de7-70f6-457a-b7e1-e13b553b5d80))
 	  id:: 6735b379-a4a2-48f4-800f-7b9292b7a3a1
 	- $\frac{2 \pi}{\lambda_1}z_{0m} \cos \Theta_{m}=m \pi \quad \Rightarrow \quad d=-z_{0m}= \frac{\lambda_1m}{2 \cos \Theta_{m}}= \frac{m}{2f \sqrt{\mu_1 \varepsilon_1} \cos \Theta_{m}}$
@@ -317,10 +317,10 @@ alias:: cheat sheet
 	  id:: 67646b82-d905-4edd-915a-d4c002f45a0b
 	  tags:: formel
 	  bezeichnung:: [[grenzfrequenz]] einer bestimmten mode
-		- $f_{\mathrm{G},m}$ ... [[grenzfrequenz]] $\mathrm{\left[ Hz \right]}$
-		- $m$ ... entspricht der mode $\mathrm{\left[ - \right]}$
-		- $c$ ... lichtgeschwindigkeit im medium $\mathrm{\left[ \frac{m}{s} \right]}$
-		- $d$ ... abstand zwischen den platten/hohlleitergröße $\mathrm{\left[ m \right]}$
+		- $f_{\mathrm{G},m}$ ... [[grenzfrequenz]] $\iu{ Hz }$
+		- $m$ ... entspricht der mode $\iu{ - }$
+		- $c$ ... lichtgeschwindigkeit im medium $\iu{ \frac{m}{s} }$
+		- $d$ ... abstand zwischen den platten/hohlleitergröße $\iu{ m }$
 		- skript
 		  collapsed:: true
 			- ((67814da4-970e-4339-a254-52ccde167cb4))
@@ -368,14 +368,14 @@ alias:: cheat sheet
 	  tags:: formel
 	  bezeichnung:: gesamtwiderstand eines leiterstreifens aufgrund des skin effekts
 	  collapsed:: true
-		- $R$ ... gesamter ohmscher widerstand $\mathrm{\left[\Omega\right]}$
-		- $l$ ... länge des streifens $\mathrm{\left[m\right]}$
-		- $\mathbb{R}_{\square}$ ... oberflächenwiderstand $\mathrm{\left[\Omega\right]}$
-		- $b$ ... breite des streifens $\mathrm{\left[m\right]}$
+		- $R$ ... gesamter ohmscher widerstand $\iu{\Omega}$
+		- $l$ ... länge des streifens $\iu{m}$
+		- $\mathbb{R}_{\square}$ ... oberflächenwiderstand $\iu{\Omega}$
+		- $b$ ... breite des streifens $\iu{m}$
 		- $z$ ... ausbreitungsrichtung
-		- $\sigma_1$ ... elektrische leitfähigkeit $\mathrm{\left[\frac{S}{m}\right]}$
-		- $d_1$ ... eindringtiefe $\mathrm{\left[m\right]}$
-		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[\frac{rad}{s}\right]}$
+		- $\sigma_1$ ... elektrische leitfähigkeit $\iu{\frac{S}{m}}$
+		- $d_1$ ... eindringtiefe $\iu{m}$
+		- $\omega$ ... [[kreisfrequenz]] $\iu{\frac{rad}{s}}$
 	- $R= \cfrac{l}{2 \pi a} \sqrt{\cfrac{\omega \mu}{2 \sigma_{1}}}, \quad X= \cfrac{l}{2 \pi a} \sqrt{\cfrac{\omega \mu}{2 \sigma_{1}}}$
 	- $\cfrac{R}{R_{0}}= \cfrac{X}{X_{0}}= \cfrac{a}{2} \sqrt{\cfrac{\omega \mu \sigma_{1}}{2}}= \cfrac{a}{2d_{1}} \propto \sqrt{\omega} \gg1$
 - ## Resonatoren
@@ -384,11 +384,11 @@ alias:: cheat sheet
 	- $\lambda_{\mathrm{G},m,n} = \frac{1}{\sqrt{\left(\frac{m}{2a} \right)^{2} + \left(\frac{n}{2b} \right)^{2}}}$
 	  tags:: formel
 	  bezeichnung:: [grenzwellenlänge]([[wellenlänge]]) des $\mathrm{TE}_{mn}$ oder $\mathrm{TM}_{mn}$ modus
-		- $\lambda_{\mathrm{G},m,n}$ ... [grenzwellenlänge]([[wellenlänge]]) $\mathrm{\left[ m \right]}$
-		- $m$ ... modenindex $\mathrm{\left[ - \right]}$
-		- $n$ ... modenindex $\mathrm{\left[ - \right]}$
-		- $a$ ... breite des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
-		- $b$ ... höhe des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
+		- $\lambda_{\mathrm{G},m,n}$ ... [grenzwellenlänge]([[wellenlänge]]) $\iu{ m }$
+		- $m$ ... modenindex $\iu{ - }$
+		- $n$ ... modenindex $\iu{ - }$
+		- $a$ ... breite des [[hohlraumleiters]] $\iu{ m }$
+		- $b$ ... höhe des [[hohlraumleiters]] $\iu{ m }$
 	- $\lambda_{\mathrm{H}} = \frac{\lambda}{\sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}}$
 	- $v_{\mathrm{P}} = \frac{c}{\sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}}$
 	- $v_{\mathrm{G}} = c \sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}$
@@ -404,21 +404,21 @@ alias:: cheat sheet
 	  tags:: formel, wip
 	  bezeichnung:: separationsbedingung
 	  id:: 67646b82-9985-4e5d-ad63-f1a604ea0334
-		- $m,n,p$ ... modenindizes $\mathrm{\left[ - \right]}$
-		- $a,b,c$ ... abmessungen des resonators $\mathrm{\left[ m \right]}$
+		- $m,n,p$ ... modenindizes $\iu{ - }$
+		- $a,b,c$ ... abmessungen des resonators $\iu{ m }$
 		-
 	- $\omega_{m n p} = \pi v \sqrt{\left(\frac{m}{a} \right)^{2} + \left(\frac{n}{b} \right)^{2} + \left(\frac{p}{c} \right)^{2}}$
 	  id:: 6745a3c5-c443-4fb4-bbea-b455958f827a
 	  tags:: formel
 	  bezeichnung:: resonanz [[kreisfrequenz]] für $\mathrm{TE}_{mnp}$ und $\mathrm{TM}_{mnp}$ schwingungen in einem [[hohlraumleiter]]
-		- $\omega_{mnp}$ ... resonanz [[kreisfrequenz]] $\mathrm{\left[ Hz \right]}$
-		- $v$ ... phasengeschwindigkeit $\mathrm{\left[ \frac{m}{s} \right]}$
-		- $m$ ... modenindex $\mathrm{\left[ - \right]}$
-		- $n$ ... modenindex $\mathrm{\left[ - \right]}$
-		- $p$ ... modenindex $\mathrm{\left[ - \right]}$
-		- $a$ ... breite des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
-		- $b$ ... höhe des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
-		- $c$ ... länge des [[hohlraumleiters]] . muss diese bedingung erfüllen [link](((6745a3c5-8db7-45c1-93bd-26e16b795df2))) $\mathrm{\left[ m \right]}$
+		- $\omega_{mnp}$ ... resonanz [[kreisfrequenz]] $\iu{ Hz }$
+		- $v$ ... phasengeschwindigkeit $\iu{ \frac{m}{s} }$
+		- $m$ ... modenindex $\iu{ - }$
+		- $n$ ... modenindex $\iu{ - }$
+		- $p$ ... modenindex $\iu{ - }$
+		- $a$ ... breite des [[hohlraumleiters]] $\iu{ m }$
+		- $b$ ... höhe des [[hohlraumleiters]] $\iu{ m }$
+		- $c$ ... länge des [[hohlraumleiters]] . muss diese bedingung erfüllen [link](((6745a3c5-8db7-45c1-93bd-26e16b795df2))) $\iu{ m }$
 		- skript
 			- ((674b6434-58f7-44a3-b43b-601434f2dbaf))
 	- $Q_{0,m n p} = \frac{\omega_{m n p}W}{P}$
@@ -439,16 +439,16 @@ alias:: cheat sheet
 	  id:: 6745a3c5-66f7-450b-94fe-f6068dde589d
 	  tags:: formel
 	  bezeichnung:: unbelastete [[güte]] der $\mathrm{TE}_{101}$
-		- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
-		- $\mathbb{R}_\mathrm{M}$ ... oberflächenwiderstand $\mathrm{\left[ \Omega \right]}$
-		- $a$ ... breite des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
-		- $b$ ... höhe des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
-		- $c$ ... länge des [[hohlraumleiters]] $\mathrm{\left[ m \right]}$
+		- $\eta$ ... [[wellenwiderstand]] $\iu{ \Omega }$
+		- $\mathbb{R}_\mathrm{M}$ ... oberflächenwiderstand $\iu{ \Omega }$
+		- $a$ ... breite des [[hohlraumleiters]] $\iu{ m }$
+		- $b$ ... höhe des [[hohlraumleiters]] $\iu{ m }$
+		- $c$ ... länge des [[hohlraumleiters]] $\iu{ m }$
 	- $Q_{0} = \frac{\pi \eta \sqrt{2}}{6 \mathbb{R}_{\mathrm{M}}}$
 	  tags:: formel
 	  bezeichnung:: unbelastete [[güte]] der $\mathrm{TE}_{101}$ wenn $a=b=c$
-		- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
-		- $\mathbb{R}_\mathrm{M}$ ... oberflächenwiderstand $\mathrm{\left[ \Omega \right]}$
+		- $\eta$ ... [[wellenwiderstand]] $\iu{ \Omega }$
+		- $\mathbb{R}_\mathrm{M}$ ... oberflächenwiderstand $\iu{ \Omega }$
 - ## [[koaxialleitungen]]
   collapsed:: true
 	- [S. 13](((677f9db4-66d0-4a27-9319-1ee51e246d94)))
@@ -485,18 +485,18 @@ alias:: cheat sheet
 	  id:: 674d7759-1d40-46b8-9d39-cbf868cd298e
 	  tags:: formel, wip
 	  bezeichnung:: widerstandsbelag
-		- $\mu_L$ ... [[magnetische permeabilität]] des leiters $\mathrm{\left[\frac{Vs}{Am}\right]}$
+		- $\mu_L$ ... [[magnetische permeabilität]] des leiters $\iu{\frac{Vs}{Am}}$
 	- $G' = \omega C' \tan \delta_{\varepsilon} = \omega \frac{2 \pi \varepsilon}{\ln \frac{r_{a}}{r_{i}}} \tan \delta_{\varepsilon}$
 	  id:: 674d7759-056e-4bac-998e-f2bccdc83035
 	  tags:: formel
 	  bezeichnung:: leitwert belag einer [[koaxialleitung]]
-		- $\omega$ ... [[kreisfrequenz]] $\mathrm{\left[\frac{rad}{s}\right]}$
-		- $C'$ ... kapazitätsbelag $\mathrm{\left[\frac{F}{m}\right]}$
+		- $\omega$ ... [[kreisfrequenz]] $\iu{\frac{rad}{s}}$
+		- $C'$ ... kapazitätsbelag $\iu{\frac{F}{m}}$
 		- $\delta_\varepsilon$ ... eﬀektive Verlustwinkel des Dielektrikums unter Berücksichtigung eventueller 
-		  Lufträume. oft auch als $\theta_\varepsilon$ bekannt. $\mathrm{\left[\degree\right]}$
-		- $\varepsilon$ ... absolute [[permittivität]] des dielektrikums $\mathrm{\left[\frac{As}{Vm}\right]}$
-		- $r_a$ ... radius des außenleiters $\mathrm{\left[m\right]}$
-		- $r_i$ ... radius des innenleiters $\mathrm{\left[m\right]}$
+		  Lufträume. oft auch als $\theta_\varepsilon$ bekannt. $\iu{\degree}$
+		- $\varepsilon$ ... absolute [[permittivität]] des dielektrikums $\iu{\frac{As}{Vm}}$
+		- $r_a$ ... radius des außenleiters $\iu{m}$
+		- $r_i$ ... radius des innenleiters $\iu{m}$
 		- skript
 			- ((67500928-2cd7-4736-974a-ac900c32e971))
 	- $j k_{z} = \gamma = \alpha + j \beta = \sqrt{(G' + j \omega C')(R' + j \omega L')}$
@@ -507,10 +507,10 @@ alias:: cheat sheet
 		- $\alpha$ ... gesamte dämpfung
 		- $\alpha_R$ ... ohmsche verluste
 		- $\alpha_C$ ... dielektrische verluste
-		- $R'$ ... widerstandsbelag $\mathrm{\left[\frac{\Omega}{m}\right]}$
-		- $L'$ ... induktivitätsbelag $\mathrm{\left[\frac{H}{m}\right]}$
-		- $C'$ ... kapazitätsbelag $\mathrm{\left[\frac{F}{m}\right]}$
-		- $G'$ ... leitwertsbelag $\mathrm{\left[\frac{S}{m}\right]}$
+		- $R'$ ... widerstandsbelag $\iu{\frac{\Omega}{m}}$
+		- $L'$ ... induktivitätsbelag $\iu{\frac{H}{m}}$
+		- $C'$ ... kapazitätsbelag $\iu{\frac{F}{m}}$
+		- $G'$ ... leitwertsbelag $\iu{\frac{S}{m}}$
 		- $\theta_R$ ... induktiver verlustfaktor
 		- $\theta_G$ ... kapazitiver verlustfaktor
 	- $\alpha_{R} \approx \frac{R'}{2 \sqrt{\frac{L'}{C'}}} = \frac{\mathbb{R}_{\perp}}{2 \eta r_{a}} \frac{1 + \frac{r_{a}}{r_{i}}}{\ln \frac{r_{a}}{r_{i}}}$
@@ -537,13 +537,14 @@ alias:: cheat sheet
 	  id:: 674d7759-f065-41be-aa7b-2bb81097b152
 	  tags:: formel
 	  bezeichnung:: grenz [[kreisfrequenz]] eines [[dielektrischen wellenleiters]]
-		- $\omega_{c,m}$ ... grenz [[kreisfrequenz]] $\mathrm{\left[\frac{rad}{s}\right]}$
-		- $m$ ... index der untersuchten mode $\mathrm{\left[-\right]}$
-		- $d$ ... dicke der dielektrischen schicht $\mathrm{\left[m\right]}$
+		- $\omega_{c,m}$ ... grenz [[kreisfrequenz]] $\iu{\frac{rad}{s}}$
+		- $m$ ... index der untersuchten mode $\iu{-}$
+		- $d$ ... dicke der dielektrischen schicht $\iu{m}$
 		- ((67403e6e-6727-48b1-a844-64fcf2c30521))
 		- ((67403e6f-2a7f-4aec-8c79-829be01340e3))
-		- $\varepsilon_{r1}, \varepsilon_{r2}$ ... relative [[permittivität]] $\mathrm{\left[-\right]}$
+		- $\varepsilon_{r1}, \varepsilon_{r2}$ ... relative [[permittivität]] $\iu{-}$
 - ## [[streifenleitungen]]
+  collapsed:: true
 	- [S. 16](((677f9ddb-619a-431e-ad3e-32d1c258411b)))
 	- $Z_{\mathrm{L},0} \approx \sqrt{\frac{\mu_{0}}{\varepsilon_{0}}} \frac{1}{2 \pi} \ln \left(\frac{8h}{w} + \frac{w}{4h} \right)$
 	- $Z_{\mathrm{L}} = \frac{Z_{\mathrm{L},0}}{\sqrt{\varepsilon_{\mathrm{eff}}}}$
@@ -553,9 +554,9 @@ alias:: cheat sheet
 	  id:: 67646b82-7d16-4f2c-8ee2-9a3d830a3bc4
 	  tags:: formel
 	  bezeichnung:: effektive [[permittivität]]
-		- $\varepsilon_{\mathrm{eff}}$ ... effektive [[permittivität]] $\mathrm{\left[ - \right]}$
-		- $q$ ... füllfaktor $\mathrm{\left[ - \right]}$
-		- $\varepsilon_r$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
+		- $\varepsilon_{\mathrm{eff}}$ ... effektive [[permittivität]] $\iu{ - }$
+		- $q$ ... füllfaktor $\iu{ - }$
+		- $\varepsilon_r$ ... relative [[permittivität]] $\iu{ - }$
 	- $f_{c,\mathrm{TEM}} = \frac{c}{4h \sqrt{\varepsilon_{r} - 1}}$
 	- $h_{\mathrm{max}} = \frac{\lambda_{0}}{4 \sqrt{\varepsilon_{r} - 1}}$
 	- $f_{c,\mathrm{QTEM}} = \frac{c}{(2w + 0,8h) \sqrt{\varepsilon_{r}}}$
@@ -581,7 +582,6 @@ alias:: cheat sheet
 	- $C \left(v \right) = \int^{v} \cos \left(\pi t^{2}/2 \right)d t \qquad S \left(v \right) = \int^{v} \sin \left(\pi t^{2}/2 \right)d t$
 	- $v = h \sqrt{2/\lambda \left(1/d_{s} + 1/d_{e} \right)}$
 - ## [[antennen]]
-  collapsed:: true
 	- [S. 18](((677f9e00-c940-4779-8c23-449b4e9ba2e2)))
 	- $\vect{\mathbf{A}} \left(\vect{r} \right) = \mu \int \frac{\vect{\mathbf{S}}_{e} \left(\vect{r}' \right)e^{ - j k \left|\vect{r} - \vect{r}' \right|}}{4 \pi \left|\vect{r} - \vect{r}' \right|} d V'$
 	- ${V}'$
@@ -604,8 +604,22 @@ alias:: cheat sheet
 	- $f \left(\vartheta,\varphi \right) = \frac{\left|\mathrm{E}_{\mathrm{Co}} \left(\vartheta,\varphi \right) \right|}{\left|\mathrm{E}_{\mathrm{Co}} \left(\vartheta_{m a x},\varphi_{m a x} \right) \right|}$
 	- $\frac{\phi}{\phi_{m a x}} = \left|f \left(\vartheta,\varphi \right) \right|^{2}$
 	- $P_{r} = \phi_{m a x} \int \left|f \left(\vartheta,\varphi \right) \right|^{2}d \Omega = \phi_{m a x} \Omega_{\ddot{a}}$
-	- $\Omega_{\ddot{a}} = \int_{0} \int_{0} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin \vartheta d \vartheta d \varphi$
-	- ${D = \cfrac{4 \pi}{\Omega_{\dot{a}}} = \cfrac{4 \pi}{2 \pi} = \cfrac{4 \pi}{2 \pi}}$
+	- $\Omega_{\ddot{a}} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin (\vartheta) \opn {d} \vartheta \opn{d} \varphi$
+	  id:: 678780ff-0ccf-4de6-9d47-a917d9ea7907
+	  tags:: formel
+	  bezeichnung:: äquivalenter raumwinkel
+		- $\Omega_{\ddot{a}}$ ... äquivalenter raumwinkel $\iu{ sr }$
+		- $\varphi$ ...
+		- $\vartheta$ ...
+		- $f(\vartheta,\varphi)$ ... richtcharakteristik
+	- ${D=\cfrac{4\pi}{\Omega_{\ddot{a}}}=\frac{4\pi}{\int\limits_0^{2\pi}\opn d \varphi\int\limits_0^{\pi}|f(\vartheta,\varphi)|^2 \sin (\vartheta) \opn d \vartheta \opn d \varphi}}$
+	  tags:: formel
+	  bezeichnung:: direktivität einer antenne
+	  id:: 678780ff-213f-4ae3-b6b5-da29521bc3ab
+		- $\Omega_{\ddot{a}}$ ... äquivalenter raumwinkel $\iu{ sr }$
+		- $\varphi$ ...
+		- $\vartheta$ ...
+		- $f(\vartheta,\varphi)$ ... richtcharakteristik
 	- ${\int_{0}d \varphi \int_{0}^{\pi}|f(\vartheta,\varphi)|^{2} \sin \vartheta d \vartheta}$
 	- $\frac{P_{\mathrm{L_{HD}}}}{P_{\mathrm{L_{DUT}}}} = \frac{P_{\mathrm{r_{HD}}}}{P_{\mathrm{r_{DUT}}}}e_{\mathrm{DUT}} = \cdot \cdot \cdot \cdot \cdot$
 	- $|\mathbf{E}_{\vartheta_{H D}}| = \frac{\eta \left|\mathbf{I} \right|s}{2 \lambda r} \sin \vartheta.$
@@ -636,10 +650,10 @@ alias:: cheat sheet
 	  tags:: formel, wip
 	  bezeichnung:: abgestrahlte leistung einer [[antenne]]
 	  id:: 6735b379-9a02-48b3-997c-2ecd856cb257
-		- $P_S$ ... Strahlleistung $\mathrm{\left[ W \right]}$
-		- $E_0$ ... elektrische feldstärke $\mathrm{\left[ \frac{V}{m} \right]}$
-		- $A$ ... fläche der antennen apertur $\mathrm{\left[ m^2 \right]}$
-		- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
+		- $P_S$ ... Strahlleistung $\iu{ W }$
+		- $E_0$ ... elektrische feldstärke $\iu{ \frac{V}{m} }$
+		- $A$ ... fläche der antennen apertur $\iu{ m^2 }$
+		- $\eta$ ... [[wellenwiderstand]] $\iu{ \Omega }$
 		- skript
 			- ((6737138c-9739-4333-8d9b-11a498e0f337))
 	- $G = 4 \pi r^{2} \frac{T_{E} \left(r \right)}{P_{S}} = 4 \pi \frac{A}{\lambda^{2}}$
@@ -684,7 +698,6 @@ alias:: cheat sheet
 	- $M E G = \int G \left(\vartheta,\varphi \right) P \left(\vartheta,\varphi \right)d \Omega$
 	- $\mathbf{4} \boldsymbol{\pi}$
 - ## wellen im freien raum
-  collapsed:: true
 	- [S. 23](((677f9e16-d327-4592-a537-5690a7082038)))
 	- $r \doteq \sqrt{\frac{d \lambda}{4}}$
 	- $T_{e,I S O} = \frac{P_{s}}{4 \pi d^{2}}$
@@ -695,9 +708,9 @@ alias:: cheat sheet
 	- $P_{e} = \frac{P_{s}G_{s}}{4 \pi d^{2}} \frac{\lambda^{2}}{4 \pi}G_{e} = P_{s} \left(\frac{\lambda}{4 \pi d} \right)^{2} G_{s}G_{e}$
 	- $P_{e} = P_{s} \left(\frac{1}{\lambda d} \right)^{2}A_{s}A_{e}$
 	- $L \big|_{\mathrm{dB}} = 10 \mathrm{log} \frac{P_{s}}{P_{e}}$
-	- $P_{e} \left|_{\mathrm{dBW}} = P_{s} \right|_{\mathrm{dBW}} + G_{s} \right.\right|_{\mathrm{dB}} - L_{I S O} \right|_{\mathrm{dB}} + G_{e} \left.\right|_{\mathrm{dB}}$
+	- $P_{e} \big|_{\mathrm{dBW}} = P_{s} \big|_{\mathrm{dBW}} + G_{s} \big|_{\mathrm{dB}} - L_{I S O} \big|_{\mathrm{dB}} + G_{e} \big|_{\mathrm{dB}}$
 	- $L_{I S O} = - 20 \log \left(\frac{\lambda}{4 \pi d} \right)$
-	- $L_{s} = 10 \left.\log \frac{P_{s}}{P_{n}} = 10 \cdot \log \frac{P_{s}}{P_{e,\mathrm{min}}} \frac{P_{e,\mathrm{min}}}{P_{n}} = L \right|_{\mathrm{dB}} + S N R_{\mathrm{min}} \left|_{\mathrm{dB}}$
+	- $L_{s} = 10 \log \frac{P_{s}}{P_{n}} = 10 \cdot \log \frac{P_{s}}{P_{e,\mathrm{min}}} \frac{P_{e,\mathrm{min}}}{P_{n}} = L \big|_{\mathrm{dB}} + S N R_{\mathrm{min}} \big|_{\mathrm{dB}}$
 	- $T_{i} = \frac{P_{s}G_{s}}{4 \pi d^{2}}$
 	- $P_{e} = T_{e}A_{e} = \frac{T_{i} \sigma}{4 \pi d^{2}}A_{e} = \frac{P_{s}G_{s} \sigma}{\left(4 \pi d^{2} \right)^{2}} \frac{\lambda^{2}}{4 \pi}G_{e}$
 	- $\frac{P_{e}}{P_{s}} = \sigma G_{s}^{2} \bigg(\frac{\lambda}{4 \pi} \bigg)^{2} \frac{1}{4 \pi d^{4}}$

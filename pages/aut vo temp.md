@@ -3,7 +3,7 @@ tags:: Automatisierungstechnik
 
 - ## vorlesungen
 	- 2021_10_07
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_07.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_07.webm)
 			- {{renderer :media-timestamp, 00:00:02}} Ja, einen schönen guten Morgen, meine sehr geehrten Damen und Herren, ich darf sie recht herzlich begrüßen zur Vorlesung automatisierung und ich möchte ganz am Beginn kurz erzählen, was wir in dieser Vorlesung machen, werden. Im ersten Kapitel möchte ich ganz kurz dem Begriff eines Systems und von [[zustandsgrößen]], Eingangs und [[ausgangsgröße]]n diskutieren und dann in weiterer Folge
 			- {{renderer :media-timestamp, 00:00:30}} würde ich einige Beispiele zeigen von Systemen, als ein einfaches elektrisches System mechanisches System hydraulisches biologisches System. Und dann möchte ich Ihnen auch noch zeigen, was der Unterschied zwischen Zeitkontinuerlichen und Zeit des Krätensystemen sind, mit der das ist das erste Kapitel ist seine Art Motivationskapitel, das soll also grundsätzlich zeigen, welche Systemklassen wir im Rahmen dieser Vorlesung behandeln wollen. Als zweite Kapitel
 			- {{renderer :media-timestamp, 00:01:00}} wird sich dann auseinandersetzen, mit Systemeigenschaften, hier insbesondere mit den Begriffen Linearität und Zeit Invarianz, das ist insofern es sehr wichtig, weil wir im Rahmen dieser Vorlesung den Fokus auf Lineare Zeit Invariante Systeme setzen werden. Und deshalb ist es wichtig, zu wissen, was versteht man unter Linearität und Zeit in Varianz. Und dann werde ich Ihnen auch zeigen, die Existenz und Eindeutigkeit
@@ -176,7 +176,7 @@ tags:: Automatisierungstechnik
 	  :LOGBOOK:
 	  CLOCK: [2024-10-09 Wed 09:34:11]--[2024-10-09 Wed 09:34:13] =>  00:00:02
 	  :END:
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_12.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_12.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:00}} So einen schönen guten Morgen, meine Damen und Herren, wir wollen heute mit dem zweiten Kapitel in [[Automatisierung]] beginnen und hier geht es um Systemeigenschaften und dazu wollen wir mal unsere [[zustandsraumdarstellung]] eines nicht linearen dynamischen Systems betrachten, der Form 2.1 und Sie können sich erinnern, wir haben die letzte Stunde diskutiert,
 			- {{renderer :media-timestamp, 00:00:32}} dass ein dynamisches System in unserem Fall als explizites nicht lineares Differentialgleichungssystem dargestellt wird und x beschreibt hier also den Zustand, u ist der Eingang, t ist die Zeit und y ist der Ausgang und wir haben gesagt mit x Punkt beschreiben wir die totale Zeitableitung der [[zustandsgrößen]] x nach der Zeit und damit ich dieses Differentialgleichungssystem auch lösen
@@ -356,7 +356,7 @@ tags:: Automatisierungstechnik
 		- schreibe eine zusammenfassung der vorlesung 2021_10_07 und umrande alle wichtigen schlagwörter in doppelte eckige klammern.  wie hier: \[\[begriff\]\]. formattiere die antwort um sie in logseq verwenden zu können
 	- 2021_10_14
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_14.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_14.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:02}} So einen schönen guten Morgen, meine Damen und Herren. Wir haben letzte Stunde bereits diskutiert über den Begriff der Ruhelage und ich darf vielleicht nochmals ganz kurz wiederholen, wenn Sie ein System haben, der Form x Punkt ist f von x, das ist also ein dynamisches System, nochmals zur Erinnerung, der Punkt steht für die totale Zeitableitung, dann können wir für dieses System die Ruhelage
 			- {{renderer :media-timestamp, 00:00:30}} bestimmen, indem wir sagen x Punkt ist Null und wir lösen dann das nicht lineare Gleichungssystem f von xR ist Null. Ja und wir suchen dann xR. Bitte im allgemeinen, im nicht linearen Fall habe ich dann hier nicht lineare Gleichungen und wenn das x aus Rn kommt, also für festgehaltene Zeit, dann haben Sie im weiterer Folge hier N Gleichungen
@@ -526,7 +526,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:22:30}} es dann gelingt unter der Voraussetzung, dass ich verschiedene Eigenwerte habe, die entsprechend, wo die geometrische Vielfachheit gleich der algebraischen Vielfachheit ist, dann kann ich quasi das auf Diagonalform transformieren. Und das werden wir nächste Stunde diskutieren. Da werde ich aber am Beginn nochmals mit Ihnen besprechen, was ist ein Eigenwert und was versteht man unter algebraischer und geometrischer Vielfachheit.
 	- 2021_10_19
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_19.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_19.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:03}} Einen schönen guten Morgen, meine Damen und Herren. Wir haben letzte Stunde uns beschäftigt mit den ersten Ideen der Chardanche Normalform und ich darf vielleicht nochmals ganz kurz wiederholen, was wir eigentlich machen wollen. Wir haben also gesagt, wenn wir ein System haben, der Form x Punkt ist gleich a mal x plus b mal u,
 			- {{renderer :media-timestamp, 00:00:30}} dem Anfangswert x0 und y ist cx plus du, dann ist das ein klassisches lineares Zeitinvariantes System, wie wir das im Rahmen dieser Vorlesung behandeln wollen, in [[zustandsraumdarstellung]]. Und jetzt kann ich mithilfe einer regulären Zustandstransformation das System transformieren. Also der Form x ist gleich v mal z, wobei v eine reguläre [[matrix]] ist.
@@ -704,7 +704,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:26:30}} Sie feststellen, anhand der Eigenwerte, wie in weiterer Folge das Lösungsverhalten um die Rohrlage sein wird. Ist das soweit verständlich? Oder gibt es Fragen von Ihrer Seite? So, ich habe Ihnen heute gezeigt, wie man die Eigenwerte interpretieren kann. Wir haben die Jorange Normalform hergeleitet
 	- 2021_10_21
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_21.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_21.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:03}} So, einen schönen guten Morgen nochmals, meine Damen und Herren. Wir haben letzte Stunde die Jorange Normalform diskutiert und wenn Sie sich erinnern können, war das eben so, wir hatten ein System der Form x Punkt ist a mal x und wir sind da näher gegangen und haben das Lösungsverhalten dieses Systems charakterisiert. Also sprich, wenn ich so ein System
 			- {{renderer :media-timestamp, 00:00:30}} habe x Punkt ist a mal x, dann lautet ja die Lösung x von t ist gleich Phi von t mal x Null und jetzt weiß man, wenn ich die Eigenwerte der [[matrix]] a bestimme und a hat nur reelle Koeffizienten, dann gibt es eben die Möglichkeiten, dass die Eigenwerte entweder reell sind oder konjugiert komplex und
@@ -864,7 +864,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:17:30}} dann über das sogenannte Realisierungsproblem sprechen. Das heißt, wir haben jetzt gelernt, wie komme ich von der [[zustandsraumdarstellung]] zur [[übertragungsfunktion]] und wir werden das nächste Mal dann schauen, wie komme ich von der [[übertragungsfunktion]] G von S zur [[zustandsraumdarstellung]] und das ist das sogenannte Realisierungsproblem. Das möchte ich aber heute nicht beginnen, das werden wir dann die nächste Stunde machen. Die nächste Stunde, ich glaube, der Dienstag ist ein Feiertag,
 	- 2021_10_28
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_28.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_10_28.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:02}} Einen schönen guten Morgen meine Damen und Herren. Wir haben als letzte Stunde uns unter anderem auch beschäftigt, wie wir zu der Zustandsdarstellung eines linearen Zeitinvarianten Systems x Punkt ist da x plus b mal u hier als ein Größensystem geschrieben und y ist c transponiert x plus d mal u eine entsprechende
 			- {{renderer :media-timestamp, 00:00:30}} Eingangsausgangsdarstellung auch herleiten können und das haben wir mit Hilfe der sogenannten Laplace Transformation gemacht. Wir nehmen an der Anfangswert ist Null und dann können wir sagen die [[übertragungsfunktion]] g von s ist die Laplace transformierte der [[ausgangsgröße]] zur Laplace transformierten der [[eingangsgröße]]. Das Dach bitteschön sorgt an, dass diese Größe im Laplace transformierten Bereich
@@ -1049,7 +1049,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:30:00}} die der strecke ganz gezielt verändern durch den regler und damit ich dann weiß welche regler [[übertragungsfunktionen]] sinnvoll sind muss ich sozusagen wissen wie man mit bode diagrammen umgeht damit man überhaupt im frequenzbereich das ist keine vollautomatische methode ist aber sehr sehr hilfreich weil man auch ein verständnis dafür bekommt was man denn mit welchen übertragungsglieder wie beeinflussen kann deshalb ist mir das
 	- 2021_11_04
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_04.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_04.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:03}} Einen schönen guten Morgen, meine Damen und Herren. Wir haben letzte Stunde begonnen, über den kontinuierlichen Frequenzgang zu sprechen. Und der kontinuierliche Frequenzgang zur Erinnerung ist, wenn ich die [[übertragungsfunktion]] G von S habe und S durch Iω ersetze, dann erhalte NG von Iω. Und wenn ich ω festhalte, ist das eine komplexe Zahl.
 			- {{renderer :media-timestamp, 00:00:30}} Und es gibt nun zwei Möglichkeiten, wie ich so eine komplexe Zahl darstellen kann. Entweder durch Betrag und Phase oder in weiterer Folge kann ich sozusagen das auch in Polarkoordinaten darstellen, in der gaussischen Ebene, also imaginär Teil über real Teil. Und dementsprechend kann man so einen kontinuierlichen Frequenzgang, G von Iω, entweder als
@@ -1255,7 +1255,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:40:30}} ich meine, die Frage, die sich vielleicht auch noch stellt, dann höre ich schon auf. Es wird immer wieder gefragt, warum ich noch so großen Wert darauf lege, dass die Leute Bodediagramm bezeichnen können. Spätestens im nächsten Kapitel werden Sie das sehen, weil der sogenannte Frequenzkennlinienverfahren ist ein Reglerentwurf, wo wir jetzt dieses Bodediagramm mit Hilfe eines Reglers dann so verbiegen werden, damit der geschlossene Kreis, also damit dann in weiterer Folge die Regelung so funktioniert, wie wir uns
 	- 2021_11_09
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_09.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_09.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:03}} Einen schönen guten Morgen, meine Damen und Herren. Wir haben uns letzte Stunde mit dem Zeichnen von Bodediagrammen beschäftigt und ich möchte heute Ihnen noch kurz erläutern, was eine sogenannte phasenminimale oder nicht phasenminimale [[übertragungsfunktion]] ist. Dazu bitte betrachten Sie die Definition 3 .6. Man nennt es
 			- {{renderer :media-timestamp, 00:00:30}} eine [[übertragungsfunktion]] phasenminimal, wenn alle Pole und Nullstellen in der linken offenen S -Halbebene liegen. Vielleicht hier nochmals zum Begriff, was ist die linke offene S -Halbebene? Ja, es ist also so, dass typischerweise wir dann in der komplexen Ebene das betrachten und Sie hier den Realteil von S und hier den imaginär Teil von S auftragen. Wenn wir von der linken offenen S -Halbebene sprechen,
@@ -1450,7 +1450,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:35:00}} ich Ihnen erklären, die Begriffe, was ist eine Steuerung, was ist eine Steuerung mit Störgrößenaufschaltung und was ist eine Regelung. Und wenn wir das haben, dann können wir zum Regeleinwurf gehen. Ist das vom Prinzip her, von der Idee her mal soweit oder gibt es Fragen dazu? Also ich wollte Ihnen das anhand
 	- 2021_11_16
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_16.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_16.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:03}} So einen schönen guten Morgen, meine Damen und Herren. Wir haben letzte Stunde begonnen, darüber zu diskutieren, was ein Regelkreis ist und wie ein Regelkreis aufgebaut ist. Lassen Sie mich das nochmals ganz kurz wiederholen. Wir haben gesagt, es gibt ein System, das ich in weiterer Folge gezielt beeinflussen möchte oder regeln möchte. In der [[regelungstechnik]]
 			- {{renderer :media-timestamp, 00:00:30}} wird das meistens als Strecke bezeichnet, also englischsprachig sagt man Plein dazu. Und typischerweise zur Strecke zugehörig sind dann auch die sogenannten Stellglieder oder Aktoren, die werden im Wesentlichen auch als Teil der Strecke dann gesehen. Ja, damit das nicht ganz abstrakt ist, stellen Sie sich vor, es könnte jetzt die Aufgabe sein, die Temperatur in einem Raum
@@ -1636,7 +1636,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:30:30}} genau die gewünschten Eigenschaften hat, dass nämlich die Durchtrittsfrequenz festgelegt ist an einer bestimmten Stelle, dass ich eine bestimmte Verstärkung links habe und das wird mir dann garantieren, dass ich bis zu Omega C ungefähr, nicht ganz bis Omega C, ein gutes Führungsverhalten, eine gute Störunterdrückung habe. Ist einmal die Grundidee dahinter so weit klar? Da gibt es
 	- 2021_11_18
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_18.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_18.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:03}} So einen schönen guten Morgen, meine Damen und Herren. Wir haben letzte Stunde begonnen, zu diskutieren, was ist eine Regelung, eine Steuerung und eine Steuerung mit Störgrößenaufschaltung und ich möchte Ihnen heute am Beginn der Vorlesung das Ganze nochmals kurz in einer Simulation zeigen, anhand des Beispiels der Antriebsregelstrecke. Dazu habe ich zur Erinnerung nochmals
 			- {{renderer :media-timestamp, 00:00:30}} Abbildung 4 .2 hier aufgezeigt und Sie können sich erinnern, die Idee war, wir haben hier einen elektrischen Motor, eine fremderregte Gleichstrommaschine. Wie gesagt, für die Regelungsaufgabe ist es jetzt nicht unbedingt notwendig, dass Sie genau wissen, wie eine Gleichstrommaschine funktioniert. Es ist nur so, die Gleichstrommaschine selbst wird versorgt von einer sogenannten Ankerspannung UA und
@@ -1803,7 +1803,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:21:02}} welche Armlängen hat man für den Fliehkraftregler gebraucht und welche Massen und hat dann sozusagen über dieses Verfahren dann den Fliehkraftregler dimensioniert. Aber das ist heutzutage nach wie vor ein wichtiges Kriterium, das er erlaubt zu prüfen, ob ein Polinom ein Hurwitz -Polinom ist, ohne explizit die Wurzeln zu rechnen. Gut,
 	- 2021_11_22
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_22.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_22.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:04}} Okay. Zuerst werden wir ein bisschen mit Theorie beginnen. Und
 			- {{renderer :media-timestamp, 00:00:30}} zwar, wir behandeln in [[Automatisierung]] dynamische Systeme oder in erster Linie dynamische Systeme und wichtig ist die Unterscheidung in [[eingangsgrößen]], [[zustandsgrößen]] und [[ausgangsgröße]]n. Also konkret, wenn man irgendein System hat, was hineingeht,
@@ -1997,7 +1997,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:34:30}} die Zeitvariant oder Zeit -N -Variant nachzuweisen. Aber wenn hier die Zeit explizit vorkommt, dann kann man schon direkt darauf schließen, dass es Zeitvariant ist. Gut, wenn es dann keine Fragen mehr gibt, sehr die ersten Wochen sehr scharf im Weg, wünsche ich Ihnen noch eine schöne Woche und
 	- 2021_11_23
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_23.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_23.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:02}} So, einen schönen guten Morgen meine Damen und Herren. Wir haben uns letzte Stunde mit Stabilitätskriterien beschäftigt und zwar mit dem sogenannten Roth -Hurwitz -Verfahren. Und die Aufgabe dieses Roth -Hurwitz -Verfahrens war es, wenn wir noch einmal zurückgehen, wenn ich ein Polynom -Koeffizienten
 			- {{renderer :media-timestamp, 00:00:30}} festzustellen, ob es sich bei diesem Polynom um ein sogenanntes Hurwitz -Polynom handelt oder nicht. Ja, was ist ein Hurwitz -Polynom? Ein Hurwitz -Polynom ist ein Polynom, wo sämtliche Nullstellen in der linken offenen Es halb Ebene liegen oder mit anderen Worten der Realteil der entsprechenden Wurzeln, also Nullstellen, echt kleiner als Null ist. Natürlich
@@ -2173,7 +2173,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:25:30}} unnötig das gehirn sondern dass im stande sind so wie ich das hier gemacht habe schritt für schritt zu sagen ja wo wirkt eine größe im regelkreis ein und was muss ich jetzt in der regelung tun damit ich zum beispiel bleibende regelabweichung 0 habe oder eine konstante bleibende regelabweichung das kann ich in weiterer folge sozusagen direkt daraus ablisten ist das bitte soweit verständlich
 	- 2021_11_25
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_25.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_25.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:02}} So einen schönen guten Morgen, meine Damen und Herren. Wir haben letzte Stunde uns mit dem Frequenzkennlinienverfahren beschäftigt. Ich möchte vielleicht nochmals ganz kurz wiederholen. Wenn wir einen einfachen Regelkreis haben mit der Führungsgröße R, hier den Regelfehler E, hier die Regelübertragungsfunktion R von S, dann hätten wir hier noch
 			- {{renderer :media-timestamp, 00:00:30}} unsere Strecke G von S, Ausgang Y, Regelgröße, Rückkopplung mit Minus. Dann ist die Idee des Frequenzkennlinienverfahrens folgende. Wir spezifizieren die Sprungantwort des geschlossenen Kreises. Das heißt also, ich schalte gedanklich für R von T einen Sprung auf und erhalte dann sozusagen eine Sprungantwort. Und von dieser Sprungantwort
@@ -2335,7 +2335,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:18:31}} Aber die anderen Dinge werde ich sagen, die können wir eins zu eins aus der zeitkontinuierlichen Welt übernehmen. Ist das soweit verständlich? Gibt es noch Fragen von Ihrer Seite? Sehe ich im Moment nicht. Der kommende Dienstag, den muss ich aufgrund eines Termins, den ich leider wahrnehmen muss und der ist auch nicht aufschiebbar,
 	- 2021_11_29
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_29.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_11_29.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:02}} So, also wie gesagt, heute geht es um lineare dynamische Systeme und dessen Lösung und da werde ich vielleicht kurz einmal noch auf das Vorlesungsskript hinüberspringen und ein paar wesentliche Dinge für heute wiederholen. Zuerst ist das ja die Systemdarstellung von linearen zeitinvarianten Systemen, die Sie schon bereits kennengelernt haben und im Satz 2 .4
 			- {{renderer :media-timestamp, 00:00:30}} sieht man hier die Lösung so eines allgemeinen linearen zeitinvarianten Systems. Mit Phi bezeichnen wir in unserem Fall die sogenannte Transitionsmatrik und Sie sehen schon, die kommt hier in der Lösung zweimal vor, das heißt, die ist auf jeden Fall sehr wesentlich zur Berechnung unserer Lösung. Und wir haben auch Eigenschaften kennengelernt, die diese [[transitionsmatrix]] erfüllen muss und zwar sie bildet zum einen einmal auf
@@ -2500,7 +2500,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:20:00}} für nächstes Mal, also für die dritte Übung. Wie gesagt, die Bonusbeispiele laufen noch eine Woche. Also wenn Sie Fragen haben, können wir uns fragen, wenn Sie diese lösen. Aber Sie wissen ja, die Bonusaufgaben sind kein Muss, also Sie müssen sie nicht lesen. Ich soll nochmal kurz die Rechnung von 2 .4 herzeigen. Natürlich, welche Rechnung meinen Sie, Herr Kenter? Also Sie können gerne Ihr Mikrofon einschalten.
 	- 2021_12_06
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_12_06.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_12_06.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:16}} So wunderbar. Zuerst geht es in dieser Übung um die [[übertragungsfunktion]] von linearen dynamischen Systemen.
 			- {{renderer :media-timestamp, 00:00:33}} Vorneweg die [[übertragungsfunktion]] beschreibt das Verhältnis von der Ausganggröße zur [[eingangsgröße]] im Laplace -Bereich. Also wir sehen hier bei einem System eine
@@ -2708,7 +2708,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:41:33}} Akkustangens omega zu omega fünftel omega fünftel ok? Meinen Sie so? Ja, was jetzt passiert, wenn man omega gleich null setzt, Akkustangens von null ist wieder null ja, null null null null
 	- 2021_12_07
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_12_07.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_12_07.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:02}} So einen schönen guten Morgen, meine Damen und Herren. Wir haben letzte Stunde begonnen, über digitale Regelkreise zu sprechen und ich darf vielleicht nochmals ganz kurz wiederholen. Wir haben im Prinzip, so wie wir das betrachten, die Strecke und den Aktor, das ist also die kontinuierliche Welt. Und normalerweise ist es so, dass wir dann
 			- {{renderer :media-timestamp, 00:00:30}} zwei Möglichkeiten haben, diese kontinuierlichen Systeme zu beschreiben. Und zwar, wir behandeln in dieser Vorlesung hauptsächlich lineare und zeitinvariante Systeme und wir haben gesagt, wir haben entweder eine Zustandsdarstellung, also in Form von Differentialgleichungen oder eine Eingangsausgangsdarstellung, also vom Eingang U, von der [[Stellgröße]] U zur Regelgröße Y in Form von einer [[übertragungsfunktion]] oder im Mehrgrößenfall
@@ -2880,7 +2880,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:23:30}} linearisiert und die schnellste Zeitkonstante hernimmt und dann sagt, okay, ich brauche noch ca. Faktor 4 bis 10 schnellere Abtastzeit. Eine Dekade ist sozusagen immer eine gute Wahl. Das ist immer auf der Seite, muss ich schneller abtasten als die schnellste Zeitkonstante, die ich noch beeinflussen möchte. Ist es soweit verständlich oder gibt es Fragen dazu?
 	- 2021_12_13
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_12_13.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_12_13.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:04}} So, Sie sollten jetzt auch schon den Bildschirm von meinem Tablet sehen und wie immer gab es ja schon Aufgaben, die Sie sich durchrechnen konnten im Vorhinein. Wie immer werden auch heute wieder die Lösungen dieser Aufgaben heute noch am Abend nach dieser Übung hochgeladen, beziehungsweise dann auch für die fünfte Übung die Angaben hochgeladen. Sie wissen natürlich, nehmen Sie quasi am meisten von der Übung mit, wenn Sie sich vielleicht das vorher schon ein Teil
 			- {{renderer :media-timestamp, 00:00:30}} der Übung hochgeladen haben. Schauen wir uns gleich hier die Aufgabe 4 .1 an. Wir haben hier eine Streckenübertragungsfunktion gegeben, die wie bei 4 .1 lautet und dazu auch den geschlossenen Regelkreis. Das ist so der Standardregelkreis, den Sie auch in der Vorlesung schon kennengelernt haben. Und nun stellt sich die Frage, wenn man einen gewissen Regler, der hier schon angegeben ist, verwendet, soll man jetzt untersuchen, ob das Sinn macht, so einen
@@ -3058,7 +3058,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:26:30}} beantwortet die Frage. Sind sonst noch Fragen jederseits aufgetaucht. Wenn nicht, also wie immer, werde ich die Lösung der heutigen Übung heute noch hochladen und auch die Angabe für nächstes Mal. Die nächste Übung findet dann nach Weihnachten statt und auch die Bonusaufgabe 4 für den Regelentwurf, da haben Sie dann auch über Weihnachten Zeit und gibt
 	- 2021_12_14
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_12_14.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2021_12_14.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:03}} Ja, einen schönen guten Morgen, meine Damen und Herren. Wir wollen heute fortfahren in der Vorlesung [[Automatisierung]]. Wir haben das letzte Mal begonnen mit dem digitalen Regelkreis. Ich darf vielleicht ganz kurz am Beginn der Vorlesung nochmals kurz wiederholen, damit Sie das Ganze einordnen können. Wir beschäftigen uns mit linearen Zeitinvarianten -Systemen und wir
 			- {{renderer :media-timestamp, 00:00:30}} haben begonnen im Rahmen dieser Vorlesung über [[zeitkontinuierliche]] Systeme zu sprechen. Bei zeitkontinuierlichen Systemen war es dann so, dass wir eine Zustandsdarstellung in Form eines Systems von Differentialgleichungen hatten. Also x Punkt ist da x plus b mal o mit dem Anfangswert x0 und y ist gleich c transponiert x plus t mal u. Ich
@@ -3256,7 +3256,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:36:31}} weiter zu zeichnen, gibt es keine weitere Information mehr und so können Sie sich dann, wenn Sie wollen, die Z -Transformation, die Dustin -Transformation, also beliebig zwischen diesen einzelnen Bereichen hin und her transformieren und das finden Sie quasi auch auf der Homepage, dieses Skript, wo Sie dann sehen, wie Sie damit umgehen können. Gut, gibt es Fragen von
 	- 2022_01_10
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_10.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_10.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:04}} Gleich zu Beginn werde ich ein wenig über Theorie sprechen und zwar über den digitalen Regelkreis an sich. Okay, Moment.
 			- {{renderer :media-timestamp, 00:00:30}} Jetzt der Ton besser. Wunderbar. Okay, wir werden zu Beginn über den digitalen Regelkreis an sich sprechen. Seitdem Rechenhardware wesentlich billiger geworden ist, werden viele Regelkreise in digital rechnen umgesetzt. Dementsprechend sind
@@ -3489,7 +3489,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:54:01}} Und das Pole auf der imaginären Achse auf den Einheitskreis transformiert werden bzw. wieder auf die imaginäre Achse. Und Pole aus der rechten Halbebene, das äußere, das Einheitskreise transformiert werden und auch wieder in der rechten Halbebene landen.
 	- 2022_01_11
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_11.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_11.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:02}} So einen schönen guten Morgen, meine Damen und Herren. Wir haben letzte Stunde begonnen mit digitalen Regelkreisen und ich darf vielleicht nochmals ganz kurz wiederholen, wie hier die Vorgehensweise war. Also eigentlich ist es so, dass im Allgemeinen haben wir ein zeitkontinuierliches System. Das ist die Strecke, wie wir sagen, die zum Beispiel
 			- {{renderer :media-timestamp, 00:00:30}} in Form einer [[übertragungsfunktion]] G von S gegeben ist. Das könnte aber auch ein System sein in Form von Differentialgleichungen. In unserem Fall ist es ja so, dass wir lineare Zeitinvariantesysteme betrachten. Das wäre dann ein System von gewöhnlichen Differentialgleichungen. Dafür kann man dann natürlich auch das Eingangsausgangsverhalten bestimmen. Das heißt von der [[eingangsgröße]]
@@ -3661,7 +3661,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:23:30}} wahrscheinlich schon gemerkt, dass wenn ich, wenn ich von der Erreichbarkeit spreche, hier und da den Begriff Steuerbarkeit auch heranziehe und in der englischsprachigen Literatur, auch im Matlab sehen Sie, dass dort die Abkürzung war und das Wort steht für Steuerbarkeit. Das englische Wort für Erreichbarkeit wäre. Das sind schon sehr, sehr Feinheiten, die ich dann so sehr ins Detail gar nicht erläutern möchte. Also das nächste Mal aber
 	- 2022_01_17
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_17.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_17.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:01}} Und dann können wir schon heute mit der heutigen Übung starten. In der letzten Vorlesung beim Herrn Professor haben Sie die Begriffe Erreichbarkeit und Beobachtbarkeit kennengelernt. Die möchte ich heute noch einmal kurz wiederholen und dann dazu ein Beispiel machen. Dazu habe ich schon die Seite im Skriptum aufgeschlagen mit der Definition der Erreichbarkeit. Wir sehen auch, dass ein System dann vollständig
 			- {{renderer :media-timestamp, 00:00:30}} erreichbar ist, wenn es quasi einen Anfangszustand x0 von 0 gibt und dann nach einer gewissen Zeit n jeder beliebige Zustand mit einer gewissen Eingangsfolge oder Steuerfolge angenommen werden kann. Das ist quasi eine sehr allgemeine Definition. Das ist kein Satz, den wir da haben. Das heißt, wir können ja nicht alle Zustände prüfen, ob wir die erreichen können und deswegen werden wir heute dann noch Methoden kennenlernen, die wir prüfen
@@ -3813,7 +3813,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:13:30}} Wie gesagt, nächste Woche am Montag wird dann der Kollege eine Prüfung oder die letzte Prüfung vorrechnen. Und ansonsten, wenn es Fragen gibt, bitte einfach per Mail bei uns melden unter automatisierung376000 .at und ansonsten wünsche ich Ihnen noch einen schönen Nachmittag. Danke. Vielen
 	- 2022_01_18
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_18.mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_18.webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:02}} Einen schönen guten Morgen, meine Damen und Herren. Wir haben uns letzte Stunde beschäftigt mit dem Begriff der Erreichbarkeit und haben auch diskutiert, wie man diese Erreichbarkeit prüfen kann. Der Begriff der Erreichbarkeit ist, ich würde mal so sagen, der Begriff, den man heute typischerweise verwendet. Aber ich habe letzte Stunde schon gesagt, in der englischsprachigen Literatur und das haben Sie auch in Matlab
 			- {{renderer :media-timestamp, 00:00:30}} gesehen, wo wir den Begriff Controllability [[matrix]] verwendet haben. Das ist sozusagen Steuerbarkeitsmatrix. Eigentlich englisch übersetzt wäre das für Erreichbarkeit die Reachability [[matrix]]. Ist die Frage, warum gibt es diesen Begriff Steuerbarkeit und Erreichbarkeit? Das hat ursprünglich hat man den Begriff der Steuerbarkeit
@@ -3986,7 +3986,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:24:00}} dann weiß ich, dass wenn ich einen Sprung aufschalte der Höhe R0, dass für k gegen unendlich das ypsilon k genau gegen R0 geht. Das bitte, meine Damen und Herren, war jetzt eine Herleitung, die eine Alternative ist zu dem, wie ich es im Skriptum habe. Ich muss rausbekommen.
 	- 2022_01_24(1)
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_24(1).mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_24(1).webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:02}} So, einen schönen guten Morgen, meine Damen und Herren. Wir haben letzte Stunde begonnen mit dem Zustandsregler oder dem Entwurf eines Zustandsreglers und ich darf vielleicht nochmals ganz kurz wiederholen. Ausgangspunkt ist ein Abtastsystem der Form xk plus eins ist Phi mal xk plus Gamma uk mit dem Anfangswert x0. Und wir
 			- {{renderer :media-timestamp, 00:00:30}} wollen jetzt einen Zustandsregler entwerfen. Also x ist der Zustand, u ist der Eingang. Bitte nochmals für Sie zur Erinnerung, wenn hier xk steht, denn ist damit gemeint x zum Zeitpunkt k mal ta. Das ist also sozusagen x ausgewertet ab das Zeitpunkt k mal ta und k plus eins entsprechend am Abtastpunkt k plus eins mal ta. Und das Zustandsregelgesetz
@@ -4200,7 +4200,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:44:30}} kann auch ohne Regler sozusagen in der Praxis verwendet werden und ist sehr brauchbar. Zu guter Letzt noch, man kann dafür auch Optimierungstheorie einsetzen und einen optimalen Zustandsregler entwerfen, das ist dann der sogenannte Linear Quadratic Regulator oder Riccati Regler oder ich kann einen optimalen Beobachter bauen, einen sogenannten Minimum Variantschätzer, das ist dann das sogenannte Kallmann Filter. Diese Dinge machen wir in den Grundlagen hier nicht, das kommt dann für
 	- 2022_01_24(2)
 	  collapsed:: true
-		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_24(2).mp4)
+		- ![aut-vo](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\2022_01_24(2).webm)
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:06}} So, herzlich willkommen und schönen Nachmittag nochmal von meiner Seite. Gleich vorneweg würde ich Sie gerne bitten, die LVA -[[Automatisierung]] zu bewerten. Also die LVA -Bewertung ist mittlerweile offen. Sie können das entweder über die Details -Seite im [[TISS]] machen, also oder halt direkt
 			- {{renderer :media-timestamp, 00:00:30}} diesen QR -Code scannen. Alternativ dazu können Sie im LVA -Cockpit die Lehrveranstaltung suchen und zum einen werden Sie hier oben aufgefordert und zum anderen haben Sie in der Zeile der [[Automatisierung]] hier hinten dann einen gelben Stern. Es gibt eine Kurzversion der Bewertung und eine Langversion, bei der Sie auch Kommentare eingeben können.
@@ -4465,7 +4465,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 02:10:00}} halbe durch Q. Damit sage ich danke für Ihre Aufmerksamkeit, ich glaube das war es von der Prüfung, genau, die Lösungen können wir noch durchgehen. Ich würde Sie darum bitten, die Lehrveranstaltungsbewertung auszufüllen und wenn Sie noch Fragen haben, stehe Ihnen jetzt noch zur Verfügung und ansonsten natürlich
 		- 2022_11_22_Automatisierung_UE1
 		  collapsed:: true
-			- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_11_22_Automatisierung_UE1.mp4)
+			- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_11_22_Automatisierung_UE1.webm)
 			  collapsed:: true
 				- {{renderer :media-timestamp, 00:00:04}} Okay, also ich habe jetzt die Aufzeichnung gestartet. Für die, die es nur in der Aufzeichnung sehen, tut mir leid, dass die Beschreibung von [[Tuwel]], [[TISS]] und Moebius jetzt nicht Teil der Aufnahme ist. Im Wesentlichen auf der
 				- {{renderer :media-timestamp, 00:00:30}} [[TISS]] Seite der LVA [[Automatisierung]] finden Sie einen Link zum [[Tuwel]] Online Kurs und zur Instituts Homepage. Auf der Instituts Homepage finden Sie die Übungsbeispiele und Klausurbeispiele. Hier rechnen Sie bitte die Klausur ohne Lösungen und sehen Sie sich erst die Lösungen an, wenn Sie fertig gerechnet haben. Das ist effizienter, weil Sie sich nicht täuschen, indem Sie denken,
@@ -4639,7 +4639,7 @@ tags:: Automatisierungstechnik
 				- {{renderer :media-timestamp, 01:24:31}} Nichtsdestotrotz würde mich freuen, wenn die von Ihnen, denen es möglich ist, in die Präsenzübungstermine zu kommen, weil da bekomme ich tatsächlich leichter mit, ob ich zu schnell bin, zu langsam und mir fällt auch besser auf, wenn ich in exzessivem Dialekt verfalle. Danke für Ihre Aufmerksamkeit. Ich werde die Aufzeichnung schon mal
 		- 2022_11_29_Automatisierung_UE2
 		  collapsed:: true
-			- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_11_29_Automatisierung_UE2.mp4)
+			- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_11_29_Automatisierung_UE2.webm)
 			  collapsed:: true
 				- {{renderer :media-timestamp, 00:00:03}} Herzlich willkommen nochmal zur Automatisierungsübung. Heute betrachten wir in der zweiten Übung lineare dynamische Systeme und wir werden zunächst kurz mal motivieren, warum wir die nachfolgenden Sachen überhaupt benötigen, kurz die Theorie wiederholen und dann werden wir zu den Übungsbeispielen übergehen. Und noch kurz einen Einschub zur
 				- {{renderer :media-timestamp, 00:00:30}} Matrixinversion, wie man Matrizen effizient invertiert, wird noch kommen und wie gesagt, am Schluss können Sie dann noch Fragen stellen. Ganz allgemein in 3 .2 ziehen Sie das Zustandsraummodell, mit dem die letzte Übung beendet hat, sich erinnert sich, wenn Sie ein allgemeines System haben, typischerweise nicht linear, dann können Sie es immer durch Linearisierung in diese [[zustandsraumdarstellung]] überführen.
@@ -4832,7 +4832,7 @@ tags:: Automatisierungstechnik
 				- {{renderer :media-timestamp, 01:34:04}} Wir müssen nur aufpassen, dass D kommen den beiden Termen vor, die sind mit dem Produkt verknüpft. Das ist die Produktregel also. Deshalb können wir es rausziehen. Da haben wir dann den Zweier vom Halbleiten vom Sinus. Und so können Sie dann auch beliebige Korrespondenzen berechnen.
 		- 2022_12_06_Automatisierung_UE3
 		  collapsed:: true
-			- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_12_06_Automatisierung_UE3.mp4)
+			- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_12_06_Automatisierung_UE3.webm)
 			  collapsed:: true
 				- {{renderer :media-timestamp, 00:00:04}} So, genau, also wie gesagt, herzlich willkommen zur Ausübung. Heute geht es um Regelkreise beziehungsweise zum Nutenteil über [[übertragungsfunktionen]] und Stabilität. Bevor wir mit der Aufgabe 3 .1 beginnen, die Theorie dazu.
 				- {{renderer :media-timestamp, 00:00:32}} Vorerst [[übertragungsfunktionen]] vom Systemen in Zustandsdarstellung lassen sich immer explizit berechnen. Nach dieser Vorschrift, das ist immer ein gebrochenes rationales Verhältnis mit einem Zählergrad Kleiner gleich
@@ -4997,7 +4997,7 @@ tags:: Automatisierungstechnik
 				- {{renderer :media-timestamp, 01:20:00}} Beispiel eine Kürzung von instabilen Polen oder so ähnliches haben, kann es natürlich immer passieren, dass wir Dinge nicht am Ausgang sehen oder nicht über den Eingang beeinflussen können, die aber sehr wohl einen Einfluss auf die instabilität zur Folge haben. Dementsprechend einmal im Hinterkopf behalten, wenn es sich um eine Eingangsausgangsdarstellung handelt, dass
 		- 2022_12_13_Automatisierung_UE4
 		  collapsed:: true
-			- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_12_13_Automatisierung_UE4.mp4)
+			- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_12_13_Automatisierung_UE4.webm)
 			  collapsed:: true
 				- {{renderer :media-timestamp, 00:00:05}} In der heutigen Einheit werden wir uns verschiedene Methoden ansehen, wie man Regeln entwerfen kann. Und zunächst werden wir ein Einstiegsbeispiel mal betrachten, wo gleich vorweg, wo man sieht, wie man den Regeln nicht entwerfen soll. Das heißt, wir sehen in Aufgabe 4 .1 eine Übertragungsstrecke G von S. Und wenn Sie hier den
 				- {{renderer :media-timestamp, 00:00:30}} Nenner betrachten, werden Sie feststellen, dass der erste Teil die Nullstelle bei plus fünf liegt. Und damit in der rechten S -Halbübne liegt und damit instabil ist. Der zweite Term liegt bei der offenen S -Halbübne, die ist stabil. Aber wie gesagt, der erste Term, der macht Probleme, der ist instabil.
@@ -5182,7 +5182,7 @@ tags:: Automatisierungstechnik
 				- {{renderer :media-timestamp, 01:30:01}} Deswegen müssen wir uns das mit Simulation überprüfen. Und wenn sich herausstellt, dass wir hier die Vorgaben nicht eingehalten werden, dann können Sie zurückgehen beim Regenangturf. Und das Überschwingen, was wir mit 25 % gewählt haben, etwas niedriger wählen. Und dann können Sie es wieder durchführen und durch Simulation testen, ob Ihr gemütliches Verhalten erreicht wird. Das war es schon wieder für heute. Ich bedanke mich für Ihre Aufmerksamkeit. Ich beende das Recording und stehe Ihnen
 		- 2023_01_10_Automatisierung_UE5
 		  collapsed:: true
-			- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2023_01_10_Automatisierung_UE5.mp4)
+			- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2023_01_10_Automatisierung_UE5.webm)
 			  collapsed:: true
 				- {{renderer :media-timestamp, 00:00:06}} So, schönen guten Abend. Willkommen zur fünften Übung der Automatisierungsübung. Heute wird es um digitale bzw. [[zeitdiskrete]] Regelkreise gehen. Bevor es aber, also wir werden die Aufgabe 5 .1 und 5 .5
 				- {{renderer :media-timestamp, 00:00:30}} behandeln. Bevor wir dazu kommen, werde ich aber automatisieren das Skriptum, die betreffenden oder entzeigen. Also zum einen typischerweise haben wir oder verwenden wir für die [[regelungstechnik]]
@@ -5342,7 +5342,7 @@ tags:: Automatisierungstechnik
 				- {{renderer :media-timestamp, 01:17:31}} Genau, ansonsten das zweite, was ich sagen wollte, übermorgen startet die Frist für die LVA -Bewertung. Wir freuen uns wirklich ehrlich über jede Rückmeldung. Bitte machen Sie die LVA -Bewertung, wenn Sie mal in die Öffis sitzen, wenn Sie eh gerade nichts Besseres zu tun haben, typischerweise in die Öffis,
 	- 2022_11_22_Automatisierung_UE1
 	  collapsed:: true
-		- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_11_22_Automatisierung_UE1.mp4)
+		- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_11_22_Automatisierung_UE1.webm)
 		  id:: 670d389a-4eef-4ce3-b96d-45d619392212
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:04}}   Okay,  also  ich  habe  jetzt  die  Aufzeichnung  gestartet.  Für  die,  die  es  nur  in  der  Aufzeichnung  sehen,  tut  mir  leid,  dass  die  Beschreibung  von  [[Tuwel]],  [[TISS]]  und  [[Möbius]]  jetzt  nicht  Teil  der  Aufnahme  ist.  Im  Wesentlichen  auf  der
@@ -5517,7 +5517,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:24:31}}   Nichtsdestotrotz  würde  mich  freuen,  wenn  die  von  Ihnen,  denen  es  möglich  ist,  in  die  Präsenzübungstermine  zu  kommen,  weil  da  bekomme  ich  tatsächlich  leichter  mit,  ob  ich  zu  schnell  bin,  zu  langsam  und  mir  fällt  auch  besser  auf,  wenn  ich  in  exzessivem  Dialekt  verfalle.  Danke  für  Ihre  Aufmerksamkeit.  Ich  werde  die  Aufzeichnung  schon  mal
 	- 2022_11_29_Automatisierung_UE2
 	  collapsed:: true
-		- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_11_29_Automatisierung_UE2.mp4)
+		- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_11_29_Automatisierung_UE2.webm)
 		  id:: 6713c96e-d606-449c-8013-b19ee52a12e9
 		  collapsed:: true
 			- {{renderer :media-timestamp, 00:00:03}}   Herzlich  willkommen  nochmal  zur  Automatisierungsübung.  Heute  betrachten  wir  in  der  zweiten  Übung  lineare  dynamische  Systeme  und  wir  werden  zunächst  kurz  mal  motivieren,  warum  wir  die  nachfolgenden  Sachen  überhaupt  benötigen,  kurz  die  Theorie  wiederholen  und  dann  werden  wir  zu  den  Übungsbeispielen  übergehen.  Und  noch  kurz  einen  Einschub  zur
@@ -5710,7 +5710,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:33:32}}   S  durch  diesen  werden  wir  jetzt  quasi  rücktransformieren.  Das  heißt,  unter  dem  Strich  D  nach  Dt,  das  ist  für  das  S.  Und  das  kennen  wir  schon.
 			- {{renderer :media-timestamp, 01:34:04}}   Wir  müssen  nur  aufpassen,  dass  D  kommen  den  beiden  Termen  vor,  die  sind  mit  dem  Produkt  verknüpft.  Das  ist  die  Produktregel  also.  Deshalb  können  wir  es  rausziehen.  Da  haben  wir  dann  den  Zweier  vom  Halbleiten  vom  Sinus.  Und  so  können  Sie  dann  auch  beliebige  Korrespondenzen  berechnen.
 	- 2022_12_06_Automatisierung_UE3
-		- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_12_06_Automatisierung_UE3.mp4)
+		- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_12_06_Automatisierung_UE3.webm)
 		  id:: 67234c2b-153b-4204-b3b8-5828d0122842
 			- {{renderer :media-timestamp, 00:00:04}}   So,  genau,  also  wie  gesagt,  herzlich  willkommen  zur  Ausübung.  Heute  geht  es  um  Regelkreise  beziehungsweise  zum  Nutenteil  über  [[übertragungsfunktionen]]  und  Stabilität.  Bevor  wir  mit  der  Aufgabe  3 .1  beginnen,  die  Theorie  dazu.
 			- {{renderer :media-timestamp, 00:00:32}}   Vorerst  [[übertragungsfunktionen]]  vom  Systemen  in  Zustandsdarstellung  lassen  sich  immer  explizit  berechnen.  Nach  dieser  Vorschrift,  das  ist  immer  ein  gebrochenes  rationales  Verhältnis  mit  einem  Zählergrad  Kleiner  gleich
@@ -5875,7 +5875,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:20:00}}   Beispiel  eine  Kürzung  von  instabilen  Polen  oder  so  ähnliches  haben,  kann  es  natürlich  immer  passieren,  dass  wir  Dinge  nicht  am  Ausgang  sehen  oder  nicht  über  den  Eingang  beeinflussen  können,  die  aber  sehr  wohl  einen  Einfluss  auf  die  instabilität  zur  Folge  haben.  Dementsprechend  einmal  im  Hinterkopf  behalten,  wenn  es  sich  um  eine  Eingangsausgangsdarstellung  handelt,  dass
 	- 2022_12_13_Automatisierung_UE4
 	  collapsed:: true
-		- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_12_13_Automatisierung_UE4.mp4)
+		- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2022_12_13_Automatisierung_UE4.webm)
 		  id:: 67234c2b-aaa9-48f3-9a71-4c2e5d08fd4c
 			- {{renderer :media-timestamp, 00:00:05}}   In  der  heutigen  Einheit  werden  wir  uns  verschiedene  Methoden  ansehen,  wie  man  Regeln  entwerfen  kann.  Und  zunächst  werden  wir  ein  Einstiegsbeispiel  mal  betrachten,  wo  gleich  vorweg,  wo  man  sieht,  wie  man  den  Regeln  nicht  entwerfen  soll.  Das  heißt,  wir  sehen  in  Aufgabe  4 .1  eine  Übertragungsstrecke  G  von  S.  Und  wenn  Sie  hier  den
 			- {{renderer :media-timestamp, 00:00:30}}   Nenner  betrachten,  werden  Sie  feststellen,  dass  der  erste  Teil  die  Nullstelle  bei  plus  fünf  liegt.  Und  damit  in  der  rechten  S -Halbübne  liegt  und  damit  instabil  ist.  Der  zweite  Term  liegt  bei  der  offenen  S -Halbübne,  die  ist  stabil.  Aber  wie  gesagt,  der  erste  Term,  der  macht  Probleme,  der  ist  instabil.
@@ -6060,7 +6060,7 @@ tags:: Automatisierungstechnik
 			- {{renderer :media-timestamp, 01:30:01}}   Deswegen  müssen  wir  uns  das  mit  Simulation  überprüfen.  Und  wenn  sich  herausstellt,  dass  wir  hier  die  Vorgaben  nicht  eingehalten  werden,  dann  können  Sie  zurückgehen  beim  Regenangturf.  Und  das  Überschwingen,  was  wir  mit  25  %  gewählt  haben,  etwas  niedriger  wählen.  Und  dann  können  Sie  es  wieder  durchführen  und  durch  Simulation  testen,  ob  Ihr  gemütliches  Verhalten  erreicht  wird.  Das  war  es  schon  wieder  für  heute.  Ich  bedanke  mich  für  Ihre  Aufmerksamkeit.  Ich  beende  das  Recording  und  stehe  Ihnen
 	- 2023_01_10_Automatisierung_UE5
 	  collapsed:: true
-		- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2023_01_10_Automatisierung_UE5.mp4)
+		- ![aut-ue](.\assets\uni-unterlagen\Automatisierungstechnik\VOs\ue\2023_01_10_Automatisierung_UE5.webm)
 		  id:: 67234c2b-aa3d-4983-b0c1-7ac4398465e3
 			- {{renderer :media-timestamp, 00:00:06}}   So,  schönen  guten  Abend.  Willkommen  zur  fünften  Übung  der  Automatisierungsübung.  Heute  wird  es  um  digitale  bzw.  [[zeitdiskrete]]  Regelkreise  gehen.  Bevor  es  aber,  also  wir  werden  die  Aufgabe  5 .1  und  5 .5
 			- {{renderer :media-timestamp, 00:00:30}}   behandeln.  Bevor  wir  dazu  kommen,  werde  ich  aber  automatisieren  das  Skriptum,  die  betreffenden  oder  entzeigen.  Also  zum  einen  typischerweise  haben  wir  oder  verwenden  wir  für  die  [[regelungstechnik]]

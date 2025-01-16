@@ -26,7 +26,7 @@ alias:: et2
 - $B_{M}=B_{r}+\mu_{0}\cdot H$
   tags:: formel
   bezeichnung:: Flussdichte in Permanentmagneten
-	- $B_M$ ... Flussdichte in Permanentmagneten $\mathrm{\left[ T \right]}$
-	- $B_{r}$ ... Remanenzflussdichte $\mathrm{\left[ T \right]}$
+	- $B_M$ ... Flussdichte in Permanentmagneten $\iu{ T }$
+	- $B_{r}$ ... Remanenzflussdichte $\iu{ T }$
 	- ((67403e6f-2a7f-4aec-8c79-829be01340e3))
-	- $H_{m}$ ... magnetische Feldstärke im Magneten $\mathrm{\left[ Am \right]}$
+	- $H_{m}$ ... magnetische Feldstärke im Magneten $\iu{ Am }$

@@ -19,5 +19,5 @@ alias:: polarisations, polarisiert, polarisiertes, polarized
   tags:: formel
   bezeichnung:: elliptizität einer elektromagnetischen welle
   id:: 67360dd7-52ba-4a90-a63b-ad4871a896af
-	- $\epsilon$ ... elliptizität [link](((673626f1-7a7f-4324-88a7-2e0ecdfd2cb8))) $\mathrm{\left[ - \right]}$ oder $\mathrm{\left[ dB \right]}$
-	- $a,b$ ... hauptachsen ($b$ ist immer die kurze achse) $\mathrm{\left[ m \right]}$
+	- $\epsilon$ ... elliptizität [link](((673626f1-7a7f-4324-88a7-2e0ecdfd2cb8))) $\iu{ - }$ oder $\iu{ dB }$
+	- $a,b$ ... hauptachsen ($b$ ist immer die kurze achse) $\iu{ m }$

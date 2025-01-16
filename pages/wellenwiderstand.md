@@ -9,10 +9,10 @@ alias:: wellenwiderstand, mediumswiderstand
   id:: 673c4eb2-5827-434c-a323-0ff29f347504
   tags:: formel
   bezeichnung:: [[wellenwiderstand]] in verlustbehafteten medien
-	- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
+	- $\eta$ ... [[wellenwiderstand]] $\iu{ \Omega }$
 	  id:: 6745a3e6-234f-4498-958d-161644084cd7
-	- $\mu$ ... absolute [[magnetische permeabilität]] des mediums $\mathrm{\left[ \frac{A}{s} \right]}$
-	- $\varepsilon$ ... absolute [[elektrische permittivität]] des mediums $\mathrm{\left[ \frac{V}{m} \right]}$
+	- $\mu$ ... absolute [[magnetische permeabilität]] des mediums $\iu{ \frac{A}{s} }$
+	- $\varepsilon$ ... absolute [[elektrische permittivität]] des mediums $\iu{ \frac{V}{m} }$
 - $\eta_0=\sqrt{\frac{\mu_0}{\varepsilon_0}}$
   id:: 673b66c9-9d1e-40e9-9289-92ee3f902303
   tags:: formel
@@ -25,8 +25,8 @@ alias:: wellenwiderstand, mediumswiderstand
   id:: 677f880d-96b0-404f-aba0-4f8d87e354a1
   tags:: formel, [[streifenleitung]]
   bezeichnung:: wellenleitungswiderstand einer [[streifenleitung]], [[parallelplattenleitung]]. auch $Z_W$ genannt
-	- $Z_L$ ... leitungswellenwiderstand $\mathrm{\left[ \Omega \right]}$
-	- $\eta$ ... [[wellenwiderstand]]/mediumswiderstand $\mathrm{\left[ \Omega \right]}$
+	- $Z_L$ ... leitungswellenwiderstand $\iu{ \Omega }$
+	- $\eta$ ... [[wellenwiderstand]]/mediumswiderstand $\iu{ \Omega }$
 	  id:: 6780ec63-3188-4c2f-979b-94fee1798e85
-	- $h$ ... abstand zwischen den leiterplatten $\mathrm{\left[ m \right]}$
-	- $w$ ... breite der leitung $\mathrm{\left[ m \right]}$
+	- $h$ ... abstand zwischen den leiterplatten $\iu{ m }$
+	- $w$ ... breite der leitung $\iu{ m }$

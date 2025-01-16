@@ -45,6 +45,7 @@ tags:: python, uni
       buf.seek(0)
       png = showPngImg(buf.read())
       buf.close()
+      plt.clf()
       return png
   ```
 - ```python

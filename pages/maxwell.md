@@ -47,4 +47,4 @@ alias:: maxwellschen, maxwellsche
   tags:: formel, wip
   bezeichnung:: restlichen feldkomponente. allgemein gültig
 	- $\kappa$ ... hilfsvariable/wellenzahl $\kappa^2=k^2-k_z^2$
-	- $\delta$ ... [[komplexe]] [[dielektrizitätskonstante]] $\mathrm{\left[ \frac{As}{Vm} \right]}$
+	- $\delta$ ... [[komplexe]] [[dielektrizitätskonstante]] $\iu{ \frac{As}{Vm} }$

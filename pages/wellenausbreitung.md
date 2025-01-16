@@ -57,9 +57,9 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  bezeichnung:: leistung der transmittierten welle
 					  id:: 675ac3d6-3993-4c69-a300-cc0df932374a
 					  collapsed:: true
-						- $\vect{P}_{\mathrm{t}}$ ... gesamte leistung der transmittierten Welle $\mathrm{\left[ W \right]}$
-						- $\vect{P}_{\mathrm{TE,t}}$ ... leistung der transmittierten TE Welle $\mathrm{\left[ W \right]}$
-						- $\vect{P}_{\mathrm{TM,t}}$ ... leistung der transmittierten TM Welle $\mathrm{\left[ W \right]}$
+						- $\vect{P}_{\mathrm{t}}$ ... gesamte leistung der transmittierten Welle $\iu{ W }$
+						- $\vect{P}_{\mathrm{TE,t}}$ ... leistung der transmittierten TE Welle $\iu{ W }$
+						- $\vect{P}_{\mathrm{TM,t}}$ ... leistung der transmittierten TM Welle $\iu{ W }$
 					- ((6735b379-9a02-48b3-997c-2ecd856cb257))
 					- ((67360de7-70f6-457a-b7e1-e13b553b5d80))
 			- [📚 2024-11-12 16h29m.xopp](../assets/documents/2024-11-12 16h29m.xopp)
@@ -101,15 +101,15 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  tags:: formel
 					  bezeichnung:: reflektionsfaktor wenn einfallswinkel = [[brewster winkel]] [FS](((6735b379-a4a2-48f4-800f-7b9292b7a3a1)))
 					  collapsed:: true
-						- $\Gamma_{TM}$ ... reflektionsfaktor $\mathrm{\left[ - \right]}$
+						- $\Gamma_{TM}$ ... reflektionsfaktor $\iu{ - }$
 					- ((6735b379-9a02-48b3-997c-2ecd856cb257))
 					- $\eta H = E$
 					  tags:: formel, wip
 					  bezeichnung:: abgeleitet von hier [link](((6735b379-187a-4654-8126-efd8a322477b)))
 					  collapsed:: true
-						- $\eta$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
-						- $H$ ... magnetsiche feldstärke $\mathrm{\left[ \frac{A}{m} \right]}$
-						- $E$ ... elektrische feldstärke $\mathrm{\left[ \frac{V}{s} \right]}$
+						- $\eta$ ... [[wellenwiderstand]] $\iu{ \Omega }$
+						- $H$ ... magnetsiche feldstärke $\iu{ \frac{A}{m} }$
+						- $E$ ... elektrische feldstärke $\iu{ \frac{V}{s} }$
 					- ((67360de7-70f6-457a-b7e1-e13b553b5d80))
 			- c) Berechnen Sie die Elliptizität der reﬂektierten und der transmittierten Welle in $\mathrm{dB}$!
 			  background-color:: green
@@ -366,11 +366,11 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  tags:: formel
 					  bezeichnung:: ansatz für die reflektierte/rücklaufende welle
 					  collapsed:: true
-						- $E_r$ ... reflektierte/rücklaufende welle des [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
-						- $A$ ... anfangs amplitude der reflektierten welle. entspricht der einfallenden welle $\mathrm{\left[ \frac{V}{m} \right]}$
-						- $k_z$ ... [[komplexe]] [[wellenzahl]] $\mathrm{\left[ \frac{rad}{m} \right]}$
-						- $z$ ... entfernung in ausbreitungsrichtung (hier $z$-Achse) $\mathrm{\left[ m \right]}$
-						- $z_0$ ... entfernung zur stelle an der die reflexion stattfindet $\mathrm{\left[ m \right]}$
+						- $E_r$ ... reflektierte/rücklaufende welle des [[elektrischen feldes]] $\iu{ \frac{V}{m} }$
+						- $A$ ... anfangs amplitude der reflektierten welle. entspricht der einfallenden welle $\iu{ \frac{V}{m} }$
+						- $k_z$ ... [[komplexe]] [[wellenzahl]] $\iu{ \frac{rad}{m} }$
+						- $z$ ... entfernung in ausbreitungsrichtung (hier $z$-Achse) $\iu{ m }$
+						- $z_0$ ... entfernung zur stelle an der die reflexion stattfindet $\iu{ m }$
 				- code
 				  collapsed:: true
 					- collapsed:: true
@@ -426,8 +426,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  tags:: formel
 					  bezeichnung:: analyse der hüllkurve des [elektrischen gesamtfeldes]([[elektrisches feld]])
 					  collapsed:: true
-						- $|E_{ges}|^2$ ... betrags quadrat des gesamten [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
-						- $\vect{E}(z)$ ... [[komplexe]] amplitude des [[elektrischen feldes]] $\mathrm{\left[ \frac{V}{m} \right]}$
+						- $|E_{ges}|^2$ ... betrags quadrat des gesamten [[elektrischen feldes]] $\iu{ \frac{V}{m} }$
+						- $\vect{E}(z)$ ... [[komplexe]] amplitude des [[elektrischen feldes]] $\iu{ \frac{V}{m} }$
 				- code
 				  collapsed:: true
 					- meine lösung
@@ -960,8 +960,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  tags:: formel
 					  bezeichnung:: reflexionsfaktor am ende einer [[koaxialleitung]]
 					  collapsed:: true
-						- $R_A$ ... Abschlusswiderstrand $\mathrm{\left[\Omega\right]}$
-						- $Z_L$ ... leitungsimpedanz $\mathrm{\left[\Omega\right]}$
+						- $R_A$ ... Abschlusswiderstrand $\iu{\Omega}$
+						- $Z_L$ ... leitungsimpedanz $\iu{\Omega}$
 						- skript
 						  collapsed:: true
 							- ((674ec847-fd7d-4084-915e-8421e8671ad5))
@@ -1205,11 +1205,11 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  bezeichnung:: ansatz für die $\mathrm{TE}$-welle in einem ebenen wellenleiter
 					  id:: 67508103-1a02-4819-8b68-7d3d9cf8f041
 					  collapsed:: true
-						- $H_{z1}, H_{z2}$ ... magnetische feldstärkekomponente in medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
-						- $A_1, A_2$ ... amplitude in medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
-						- $k_{x1}, k_{x2}$ ... [[wellenzahl]] in medium 1 bzw 2 $\mathrm{\left[\frac{rad}{m}\right]}$
-						- $z$ ... ausbreitungsrichtung $\mathrm{\left[m\right]}$
-						- $d$ ... [[eindringtiefe]] $\mathrm{\left[m\right]}$
+						- $H_{z1}, H_{z2}$ ... magnetische feldstärkekomponente in medium 1 bzw 2 $\iu{\frac{A}{m}}$
+						- $A_1, A_2$ ... amplitude in medium 1 bzw 2 $\iu{\frac{A}{m}}$
+						- $k_{x1}, k_{x2}$ ... [[wellenzahl]] in medium 1 bzw 2 $\iu{\frac{rad}{m}}$
+						- $z$ ... ausbreitungsrichtung $\iu{m}$
+						- $d$ ... [[eindringtiefe]] $\iu{m}$
 						- skript
 						  collapsed:: true
 							- ((675090f8-65ba-412b-8543-a560d7644e48))
@@ -1362,8 +1362,8 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					  tags:: formel
 					  bezeichnung:: randbedingungen für den übergang einer welle an einer grenzfläche zwischen dielektrika
 					  collapsed:: true
-						- $E_{\mathrm{tang1}},E_{\mathrm{tang2}}$ ... tangential komponente des [[elektrischen feldes]] im medium 1 bzw 2 $\mathrm{\left[\frac{V}{m}\right]}$
-						- $H_{\mathrm{tang1}},H_{\mathrm{tang2}}$ ... tangential komponente des [[magnetischen feldes]] im medium 1 bzw 2 $\mathrm{\left[\frac{A}{m}\right]}$
+						- $E_{\mathrm{tang1}},E_{\mathrm{tang2}}$ ... tangential komponente des [[elektrischen feldes]] im medium 1 bzw 2 $\iu{\frac{V}{m}}$
+						- $H_{\mathrm{tang1}},H_{\mathrm{tang2}}$ ... tangential komponente des [[magnetischen feldes]] im medium 1 bzw 2 $\iu{\frac{A}{m}}$
 						- skript
 						  collapsed:: true
 							- ((6751d667-3181-4b73-87e6-9e864f549a9c))
@@ -1933,13 +1933,48 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				  background-color:: yellow
 	- Richtdiagramm und Gewinn einer Antenne
 	  background-color:: green
-		- Eine verlustlose Antenne habe die Richtcharakteristik $\\f(\vartheta,\varphi)=|\sin(\vartheta)\cos(\varphi)\cos(\varphi/2)|$
+		- Eine verlustlose Antenne habe die Richtcharakteristik $\\ f(\vartheta,\varphi)=|\sin(\vartheta)\cos(\varphi)\cos(\varphi/2)|$
 		  background-color:: green
 			- Skizzieren Sie das Richtdiagramm in horizontaler ($x/y$) und vertikaler ($x/z$) Ebene! Zeichnen Sie $\vartheta$ und $\varphi$ in den Skizzen und dem Koordinatensystem ein.
 			  background-color:: green
+				- ![img](../assets/documents/WA_richtdiagramm_koordinatensystem.webp)
+				- man muss die fälle für die 2 ebenen unterscheiden und dann mehr oder weniger einsetzen?
+				- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
+				- ```python
+				  printer.seek(0); printer.truncate(0)
+				  ### x/y ebene ###
+				  # theta = 90
+				  phi = linspace(0, 2 * pi, 500)
+				  f = abs(cos(phi)*cos(phi/2))
+				  
+				  # Create the polar plot
+				  plt.polar(phi, f)
+				  showPlot()
+				  ```
+					- {{evalparent}}
+				- ```python
+				  printer.seek(0); printer.truncate(0)
+				  ### x/z ebene ###
+				  # phi = 0
+				  theta = linspace(0, 2 * pi, 500)
+				  f = abs(sin(theta))
+				  
+				  # Create the polar plot
+				  plt.polar(theta, f)
+				  showPlot()
+				  ```
+					- {{evalparent}}
 			- Berechnen Sie den äquivalenten Raumwinkel und die Direktivität!
 			  background-color:: green
-			- Hinweis: ${\int \sin^{3}(a x)\opn{d}x = -\frac{1}{a}\cos(a x)+\frac{1}{3a}\cos^{3}(a x)}$ und $\int(\cos(x)\cos(a x))^{2}\mathrm{d}x={\frac{\sin(2(a+1)x)}{16(a+1)}+\frac{\sin(2(a-1)x)}{16(a-1)}+\frac{\sin(2a x)}{8a}+\frac{\sin(2 x)}{8}+\frac{x}{4}}$
+			  Hinweis: ${\int \sin^{3}(a x)\opn{d}x = -\frac{1}{a}\cos(a x)+\frac{1}{3a}\cos^{3}(a x)}$ und $\int(\cos(x)\cos(a x))^{2}\mathrm{d}x={\frac{\sin(2(a+1)x)}{16(a+1)}+\frac{\sin(2(a-1)x)}{16(a-1)}+\frac{\sin(2a x)}{8a}+\frac{\sin(2 x)}{8}+\frac{x}{4}}$
+				- formeln
+					- ((678780ff-0ccf-4de6-9d47-a917d9ea7907))
+					- ((678780ff-213f-4ae3-b6b5-da29521bc3ab))
+				- äquivalenter raumwinkel
+				  background-color:: green
+					- $\Omega_{\ddot{a}} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin (\vartheta) \opn {d} \vartheta \opn{d} \varphi \op{f(\vartheta,\varphi)=|\sin(\vartheta)\cos(\varphi)\cos(\varphi/2)|}$
+					- $\Omega_{\ddot{a}} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \left|\sin(\vartheta)\cos(\varphi)\cos\left(\frac{\varphi}{2}\right)\right|^{2} \sin (\vartheta) \opn {d} \vartheta \opn{d} \varphi \op{|\square|^2 = \square ^2}$
+					- $\Omega_{\ddot{a}} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \sin(\vartheta)^2\cos(\varphi)^2\cos(\varphi/2)^{2} \sin (\vartheta) \opn {d} \vartheta \opn{d} \varphi$
 			- Berechnen Sie den Gewinn über dem Isotropstrahler und über dem Hertz'schen Dipol!
 			  background-color:: green
 	- Mikrowellenherd

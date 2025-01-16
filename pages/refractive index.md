@@ -10,26 +10,26 @@ alias:: brechungsindex, brechungsindexes, brechungsindizes
   tags:: formel
   bezeichnung:: relativer [[brechnungsindex]]
   collapsed:: true
-	- $n$ ... relativer brechungsindex $\mathrm{\left[ - \right]}$
+	- $n$ ... relativer brechungsindex $\iu{ - }$
 	  id:: 673e338e-cda2-43e1-9f69-c0d84c64bbb9
-	- $k_1$ ... wellenzahl $\mathrm{\left[ \frac{rad}{m} \right]}$
-	- $k_2$ ... wellenzahl $\mathrm{\left[ \frac{rad}{m} \right]}$
-	- $\varepsilon_1$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
-	- $\varepsilon_2$ ... relative [[permittivität]] $\mathrm{\left[ - \right]}$
-	- $n_1$ ... [[brechungsindex]] $\mathrm{\left[ - \right]}$
-	- $n_2$ ... [[brechungsindex]] $\mathrm{\left[ - \right]}$
-	- $\eta_1$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
-	- $\eta_2$ ... [[wellenwiderstand]] $\mathrm{\left[ \Omega \right]}$
+	- $k_1$ ... wellenzahl $\iu{ \frac{rad}{m} }$
+	- $k_2$ ... wellenzahl $\iu{ \frac{rad}{m} }$
+	- $\varepsilon_1$ ... relative [[permittivität]] $\iu{ - }$
+	- $\varepsilon_2$ ... relative [[permittivität]] $\iu{ - }$
+	- $n_1$ ... [[brechungsindex]] $\iu{ - }$
+	- $n_2$ ... [[brechungsindex]] $\iu{ - }$
+	- $\eta_1$ ... [[wellenwiderstand]] $\iu{ \Omega }$
+	- $\eta_2$ ... [[wellenwiderstand]] $\iu{ \Omega }$
 - $\underline n=\sqrt{\underline \mu_r \cdot \underline \varepsilon_r}$
   tags:: formel
   bezeichnung:: [[konplexer]] [[brechnungsindex]]
-	- $\underline n$ ... [[komplexer]] [[brechnungsindex]] $\mathrm{\left[ - \right]}$
-	- $\underline \mu$ ... [[komplexer]] relativer [[magnetsiche permeabilität]] $\mathrm{\left[ - \right]}$
-	- $\underline \varepsilon$ ... [[komplexer]] relativer [[elektrische permittivität]] $\mathrm{\left[ - \right]}$
+	- $\underline n$ ... [[komplexer]] [[brechnungsindex]] $\iu{ - }$
+	- $\underline \mu$ ... [[komplexer]] relativer [[magnetsiche permeabilität]] $\iu{ - }$
+	- $\underline \varepsilon$ ... [[komplexer]] relativer [[elektrische permittivität]] $\iu{ - }$
 - $n=\sqrt{\mu_r \cdot \varepsilon_r}$
   tags:: formel
   bezeichnung:: [[brechnungsindex]]
   collapsed:: true
-	- $\underline n$ ... [[komplexer]] [[brechnungsindex]] $\mathrm{\left[ - \right]}$
-	- $\underline \mu$ ... [[komplexe]] relativer [[magnetsiche permeabilität]] $\mathrm{\left[ - \right]}$
-	- $\underline \varepsilon$ ... [[komplexe]] relativer [[elektrische permittivität]] $\mathrm{\left[ - \right]}$
+	- $\underline n$ ... [[komplexer]] [[brechnungsindex]] $\iu{ - }$
+	- $\underline \mu$ ... [[komplexe]] relativer [[magnetsiche permeabilität]] $\iu{ - }$
+	- $\underline \varepsilon$ ... [[komplexe]] relativer [[elektrische permittivität]] $\iu{ - }$
