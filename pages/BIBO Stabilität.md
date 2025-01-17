@@ -9,7 +9,7 @@ alias:: BIBO-stabil, BIBO-Stabilität, BIBO stabil, BIBO-stabilen, BIBO stabilen
   deck:: Uni::Automatisierungstechnik_Theorie
   tags:: flashcard, grundlagen
   id:: 672a2871-2bdc-4d6b-a6ea-5ec459e0d191
-	- $\int_{0}^{\infty}|g(t)|\opn{d}t<\infty$
+	- $\int_{0}^{\infty}|g(t)|\d t<\infty$
 	  tags:: formel
 	  bezeichnung:: Bedingung für [[BIBO-Stabilität]], wenn ein [[lineares]], [[zeitinvariantes]] [[Eingrößensystem]] dieser Form vorliegt [link](((6729bee5-385f-4bbf-ac7d-5f099188180c))) (entspricht absoluter integrabilität)
 		- $g(t)$ ... [[impulsantwort]] [link](((672a3592-c9ec-4f08-a779-e8d980b3a932)))

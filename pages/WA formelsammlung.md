@@ -9,7 +9,7 @@ alias:: cheat sheet
 - ## [[maxwell]]
   collapsed:: true
 	- [S. 1](((677f9cf8-f37e-4b35-8c07-3ff96a2323f1)))
-	- $\vect{\nabla} \cdot \vect{S} = \opn{lim}_{\mathcal{V} \to0} \frac{1}{V} \oint_{\Sigma} \vect{S} \cdot \opn{d} \vect{F} = - \frac{\partial}{\partial t} \rho$
+	- $\vect{\nabla} \cdot \vect{S} = \opn{lim}_{\mathcal{V} \to0} \frac{1}{V} \oint_{\Sigma} \vect{S} \cdot \d  \vect{F} = - \frac{\partial}{\partial t} \rho$
 	- $\vect{\nabla} \cdot( \vect{\nabla} \times \vect{H}) \equiv0$
 	- $\vect{\nabla} \times \vect{H} = \vect{S} + \frac{\partial}{\partial t} \vect{D}$
 	- $\vect{\nabla} \cdot \vect{S} = - \frac{\partial}{\partial t}( \vect{\nabla} \cdot \vect{D}) = - \frac{\partial}{\partial t} \rho$
@@ -18,13 +18,13 @@ alias:: cheat sheet
 	- ((674d7759-9266-4b79-976c-cf24786054dc))
 	- ((674d7759-5865-4965-ba0b-734256ee8c82))
 	- ((674d7759-9dd7-4dae-9bfd-fab05a74ed26))
-	- $\int_{\Sigma} \vect{D} \cdot \opn{d} \vect{F} = \int_{\tau} \rho \opn{d}V$
+	- $\int_{\Sigma} \vect{D} \cdot \d  \vect{F} = \int_{\tau} \rho \d V$
 	  id:: 674d7759-90de-4016-b2c3-c6ff31f602cd
-	- $\int_{\Sigma} \vect{B} \cdot \opn{d} \vect{F} = 0$
+	- $\int_{\Sigma} \vect{B} \cdot \d  \vect{F} = 0$
 	  id:: 674d7759-c6ee-43ea-b699-6c73aca1240d
-	- $\oint \vect{E} \cdot \opn{d} \vect{l} =  - \frac{\partial}{\partial t} \int_{\Sigma} \vect{B} \cdot \opn{d} \vect{F}$
+	- $\oint \vect{E} \cdot \d  \vect{l} =  - \frac{\partial}{\partial t} \int_{\Sigma} \vect{B} \cdot \d  \vect{F}$
 	  id:: 674d7759-0a77-4eca-b8f6-dece037a378a
-	- $\oint \vect{H} \cdot \opn{d} \vect{l} =  \int_{\Sigma} \vect{S} \cdot \opn{d} \vect{F} + \frac{\partial}{\partial t} \int_{\Sigma} \vect{D} \cdot \opn{d} \vect{F}$
+	- $\oint \vect{H} \cdot \d  \vect{l} =  \int_{\Sigma} \vect{S} \cdot \d  \vect{F} + \frac{\partial}{\partial t} \int_{\Sigma} \vect{D} \cdot \d  \vect{F}$
 	  id:: 674d7759-852f-457f-b1c5-6a68ea277918
 	- $\vect{F} = q \left( \vect{E} + \vect{v} \times \vect{B} \right)$
 	- $\vect{S} = \sigma \vect{E}$
@@ -33,7 +33,7 @@ alias:: cheat sheet
 	- $\vect{B} = \mu \vect{H} = \mu_{r} \mu_{0} \vect{H}$
 	- $\frac{\partial}{\partial t} \rho( \vect{r},t) + \frac{\sigma}{\varepsilon} \rho( \vect{r},t) = 0$
 	- $\rho( \vect{r},t) = \rho_{0}( \vect{r})e^{ - \frac{\sigma}{\varepsilon}t}$
-	- $\tau_{\opn{D}} = \frac{\varepsilon}{\sigma}$
+	- $\tau_{\d } = \frac{\varepsilon}{\sigma}$
 	- $\vect{\nabla} \cdot \vect{E} = 0$
 	- $\vect{E}(x,y,z,t) = \vect{E}( \vect{r},t) = \opn{Re} \{\vect{E}( \vect{r})e^{j \omega t} \} = \frac{1}{2} \left( \vect{E}( \vect{r})e^{j \omega t} + \vect{E^{*}}( \vect{r})e^{ - j \omega t} \right)$
 	- $\vect{\nabla} \times \vect{H} = \vect{S} + j \omega \vect{D} = \sigma \vect{E} + j \omega \varepsilon \vect{E} = j \omega \delta \vect{E}$
@@ -56,8 +56,8 @@ alias:: cheat sheet
 	- $\vect{\nabla}\cdot\vect{P}(t)=-\sigma\underbrace{{E}(t)\cdot{E}(t)}_{\vect{E^2}(t)}-\frac{\partial}{\partial t}\left(\frac{\varepsilon}{2} \underbrace{{E}(t)\cdot{E}(t)}_{\vect{E^2}(t)}+\frac{\mu}{2} \underbrace{\vect{H}(t)\cdot\vect{H}(t)}_{\vect{H^2}(t)}\right)$
 	- $w_{\opn{e}}(t) = \frac{\varepsilon}{2} \vect{E^2}(t)$
 	- $w_{\opn{m}}(t) = \frac{\mu}{2} \vect{H}^{2}(t)$
-	- $\int_{\mathcal{V}} \vect{\nabla} \cdot \vect{P}(t) \opn{d}V = \oint_{\Sigma} \vect{P}(t) \cdot \opn{d} \vect{F}$
-	- $- \frac{\partial}{\partial t} \int_{\mathcal{V}} \left(w_{\opn{e}}(t) + w_{\opn{m}}(t) \right) \opn{d}V = \oint_{\Sigma} \vect{P}(t) \cdot \opn{d} \vect{F} + \int_{\mathcal{V}}p_{\opn{v}}(t) \opn{d}V$
+	- $\int_{\mathcal{V}} \vect{\nabla} \cdot \vect{P}(t) \d V = \oint_{\Sigma} \vect{P}(t) \cdot \d  \vect{F}$
+	- $- \frac{\partial}{\partial t} \int_{\mathcal{V}} \left(w_{\opn{e}}(t) + w_{\opn{m}}(t) \right) \d V = \oint_{\Sigma} \vect{P}(t) \cdot \d  \vect{F} + \int_{\mathcal{V}}p_{\opn{v}}(t) \d V$
 	- $\vect{E}( \vect{r},t) = \frac{1}{2} \left( \vect{E}( \vect{r}) \mathit{e}^{j \omega t} + \vect{E}^{*}( \vect{r}) \mathit{e}^{ - j \omega t} \right)$
 	- $\vect{E}(t) \cdot \vect{E}(t) = \frac{1}{4} \left( \vect{E}( \vect{r}) \cdot \vect{E}( \vect{r})e^{2j \omega t} + 2 \vect{E}( \vect{r}) \cdot \vect{E}^{*}( \vect{r}) + \vect{E}^{*}( \vect{r}) \cdot \vect{E}^{*}( \vect{r})e^{ - 2j \omega t} \right)$
 	- $\overrightarrow{E}(t) \cdot \overrightarrow{E}(t) = \frac{1}{2}| \overrightarrow{E}(t)|^{2}$
@@ -65,11 +65,11 @@ alias:: cheat sheet
 	- $\overline{{w_{\mathrm{m}}(t)}} = w_{\mathrm{m}} = \frac{\mu}{4}| \vect{H}(t)|^{2}$
 	- $\overline{{p_{\mathrm{v}}(t)}} = p_{\mathrm{v}} = \frac{\sigma}{2}| \vect{E}(t)|^{2}$
 	- $\vect{T} = \frac{1}{2} \vect{E} \times \vect{H}^{*} = \vect{T}_{\opn{w}} + j \vect{T}_{\opn{b}}$
-	- ${{\oint \vect{E} \cdot \opn{d} \vect{l}' = }} { E_{t1} \Delta l + E_{n1} \Delta x + E_{n2} \Delta x - E_{t2} \Delta l - E_{n2} \Delta x - E_{n1} \Delta x}$
-	- $= { (E_{t1} - E_{t2}) \Delta l - 0E_{n1} + 0E_{n2} = - \frac{\partial}{\partial t} \int_{F} \vect{B} \cdot \opn{d} \vect{F} = 0}$
+	- ${{\oint \vect{E} \cdot \d  \vect{l}' = }} { E_{t1} \Delta l + E_{n1} \Delta x + E_{n2} \Delta x - E_{t2} \Delta l - E_{n2} \Delta x - E_{n1} \Delta x}$
+	- $= { (E_{t1} - E_{t2}) \Delta l - 0E_{n1} + 0E_{n2} = - \frac{\partial}{\partial t} \int_{F} \vect{B} \cdot \d  \vect{F} = 0}$
 	- $E_{t1} = E_{t2}$
 	- $H_{t1} = H_{t2}$
-	- $\int \vect{D} \cdot \opn{d} \vect{F} = (D_{n1} - D_{n2}) \Delta F = \rho_{\opn{S}} \Delta F$
+	- $\int \vect{D} \cdot \d  \vect{F} = (D_{n1} - D_{n2}) \Delta F = \rho_{\opn{S}} \Delta F$
 	- $D_{n1} - D_{n2} = \rho_{\opn{S}} \quad \to \quad \varepsilon_{1}E_{n1} - \varepsilon_{2}E_{n2} = \rho_{\opn{S}}$
 	- $B_{n1} = B_{n2} \to \mu_{1} H_{n1} = \mu_{2}H_{n2}$
 	- $\vect{n} \cdot \vect{D}_{1} = \rho_{\opn{S}}$
@@ -216,10 +216,10 @@ alias:: cheat sheet
 		- $E_{y0}$ ... amplitude des elektrischen feldes in $y$ richtung $\iu{ \frac{V}{m} }$
 		- $k_z$ ...  wellenzahl in $z$ richtung $\iu{ \frac{rad}{m} }$
 		- $\vect{i}_x$ ... einheitsvektor in $x$ richtung $\iu{ - }$
-	- $\begin{aligned} P&=\int\vect{P}\cdot\opn{d}\vect{F}=\cfrac12\opn{Re} \left\{\int(\vect{E}\times\vect{H^{*}})\cdot\opn{d}\vect{F} \right\} \\ &= \cfrac{1}{2} \opn{Re} \left\{\int(E_{x}H_{y}^{*} - E_{y}H_{x}^{*}) \opn{d}F \right\} \\ &= \cfrac{w d}{2} \opn{Re} \{ - E_{y0}e^{ - j k z}( - \cfrac{E_{y0}}{\eta}e^{ + j k z}) \} = \cfrac{E_{y0}^{2}}{2 \eta}w d \end{aligned}$
+	- $\begin{aligned} P&=\int\vect{P}\cdot\d \vect{F}=\cfrac12\opn{Re} \left\{\int(\vect{E}\times\vect{H^{*}})\cdot\d \vect{F} \right\} \\ &= \cfrac{1}{2} \opn{Re} \left\{\int(E_{x}H_{y}^{*} - E_{y}H_{x}^{*}) \d F \right\} \\ &= \cfrac{w d}{2} \opn{Re} \{ - E_{y0}e^{ - j k z}( - \cfrac{E_{y0}}{\eta}e^{ + j k z}) \} = \cfrac{E_{y0}^{2}}{2 \eta}w d \end{aligned}$
 	- $P = \cfrac{|U|^{2}}{2Z_{\opn{PV}}}$
 	  id:: 6735b379-6bbc-4df6-9bbd-9f29e63108cf
-	- $U = \int_{ - d}^{0}E_{y} \opn{d}y = E_{y0}~d$
+	- $U = \int_{ - d}^{0}E_{y} \d y = E_{y0}~d$
 	- $P = \cfrac{|E_{y0}|^{2}d^{2}}{2Z_{\opn{PV}}}$
 	  id:: 6735b379-fdec-41d2-9e92-0a885348c026
 	  tags:: formel
@@ -351,19 +351,19 @@ alias:: cheat sheet
 		- $H_y$ ...
 	- $Z_{\mathrm{W2}}= \cfrac{k_{z}}{\omega \delta_{2}}= \cfrac{k_{\mathrm{E2}} \left(1-j \cfrac{1}{2s_{1}} \cfrac{\varepsilon_{2}}{\varepsilon_{1}} \right)}{\omega \varepsilon_{2}(1-j s_{2})} \approx \eta_{\mathrm{E2}} \left(1+j \cfrac{s_{2}}{2} \right)$
 	- $Z_{\mathrm{W1}}= \cfrac{k_{z}}{\omega \delta_{1}}$
-	- $\begin{aligned} I_{z}&= \int \limits_{\Sigma} \vect{S}_{1} \cdot \opn{d} \vect{F}= \sigma_{1} \int \limits_{x=0}^{\infty} \int \limits_{y=0}^{b}E_{z1} \opn{d}x \opn{d}y  \\ & =  \sigma_{1} A_{1} b e^{-j k_{z}z} \int \limits_{x=0}^{\infty}e^{j k_{x1}x} \mathrm{d}x  \\ &=j \cfrac{\sigma_{1}A_{1}b}{k_{x1}}e^{-j k_{z}z} \end{aligned}$
+	- $\begin{aligned} I_{z}&= \int \limits_{\Sigma} \vect{S}_{1} \cdot \d  \vect{F}= \sigma_{1} \int \limits_{x=0}^{\infty} \int \limits_{y=0}^{b}E_{z1} \d x \d y  \\ & =  \sigma_{1} A_{1} b e^{-j k_{z}z} \int \limits_{x=0}^{\infty}e^{j k_{x1}x} \mathrm{d}x  \\ &=j \cfrac{\sigma_{1}A_{1}b}{k_{x1}}e^{-j k_{z}z} \end{aligned}$
 	- $T_{x0}= \cfrac{1}{2} \Big(-E_{z0}H_{y0}^{*} \Big)=- \cfrac{1}{2} \cfrac{\omega \delta_{1}^{*}}{k_{x1}^{*}}|A_{1}|^{2}$
-	- $\opn{d}P=T_{x0}~b \opn{d}z$
-	- $T_{x0}~b \opn{d}z= \cfrac{1}{2}|I_{z}|^{2} \opn{d}Z \quad \Rightarrow \quad \opn{d}Z=- \cfrac{\omega \delta_{1}^{*}k_{x1}^{2}}{\sigma_{1}^{2}} \cfrac{\opn{d}z}{b}$
+	- $\d P=T_{x0}~b \d z$
+	- $T_{x0}~b \d z= \cfrac{1}{2}|I_{z}|^{2} \d Z \quad \Rightarrow \quad \d Z=- \cfrac{\omega \delta_{1}^{*}k_{x1}^{2}}{\sigma_{1}^{2}} \cfrac{\d z}{b}$
 	- $\mathrm{d}Z \approx \eta_{1} \cfrac{\mathrm{d}z}{b}$
 	- $\mathrm{d}Z= \mathrm{d} \mathbb{R}+j \mathrm{d} \mathbb{X}, \quad \mathrm{d} \mathbb{R}= \cfrac{\mathrm{d}z}{b} \mathbb{R}_{1}, \quad \mathrm{d} \mathbb{X}= \cfrac{\mathrm{d}z}{b} \mathbb{X}_{1}$
-	- $\mathrm{d}P_{\mathrm{W}}=T_{\mathrm{W}}b \opn{d}z= \cfrac{1}{2}|I_{z}|^{2} \opn{d} \mathbb{R}$
+	- $\mathrm{d}P_{\mathrm{W}}=T_{\mathrm{W}}b \d z= \cfrac{1}{2}|I_{z}|^{2} \d  \mathbb{R}$
 	- $I_{z}=-b H_{y1}(0)$
-	- $\mathrm{d}P_{\mathrm{w}}= \cfrac{1}{2}|H_{y1}(0)|^{2}b \mathbb{R}_{1} \opn{d}z \quad \text{bzw.} \quad \cfrac{\mathrm{d}P_{\mathrm{W}}}{\mathrm{d}z}= \cfrac{1}{2}|H_{y1}(0)|^{2}b \mathbb{R}_{1}$
+	- $\mathrm{d}P_{\mathrm{w}}= \cfrac{1}{2}|H_{y1}(0)|^{2}b \mathbb{R}_{1} \d z \quad \text{bzw.} \quad \cfrac{\mathrm{d}P_{\mathrm{W}}}{\mathrm{d}z}= \cfrac{1}{2}|H_{y1}(0)|^{2}b \mathbb{R}_{1}$
 	- $p= \cfrac{1}{b} \cfrac{\mathrm{d}P_{\mathrm{W}}}{\mathrm{d}z}= \cfrac{1}{2}|H_{\mathrm{tang}}(0)|^{2} \mathbb{R}_1$
 	- $\mathbb{R}_{1}= \cfrac{1}{\sigma_{1}d_{1}}= \mathbb{R}_{\square} \quad \text{(lies: R square)}$
 	- $R= \cfrac{l}{\sigma A}$
-	- $R= \int \mathrm{d}R= \int \limits_{0}^{l} \cfrac{\mathbb{R}_{\square}}{b} \opn{d}z= \cfrac{1}{\sigma_{1}d_{1}} \cfrac{l}{b} \propto \sqrt{\omega}$
+	- $R= \int \mathrm{d}R= \int \limits_{0}^{l} \cfrac{\mathbb{R}_{\square}}{b} \d z= \cfrac{1}{\sigma_{1}d_{1}} \cfrac{l}{b} \propto \sqrt{\omega}$
 	  id:: 674d7759-2399-4628-94f1-400ee5be7c0e
 	  tags:: formel
 	  bezeichnung:: gesamtwiderstand eines leiterstreifens aufgrund des skin effekts
@@ -394,9 +394,9 @@ alias:: cheat sheet
 	- $v_{\mathrm{G}} = c \sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}$
 	- $\kappa^{2} = \left(\frac{m \pi}{a} \right)^{2} + \left(\frac{n \pi}{b} \right)^{2} \equiv \omega^{2} \varepsilon \mu - k_{z}^{2}$
 	  id:: 67646b82-a752-4db8-b782-284ff6dc6db8
-	- $\begin{aligned} P & = \int \opn{Re}\{\vect{T}\} \cdot \opn{d} \vect{F} = \int T_{z} \opn{d}x \opn{d}y = - \frac{1}{2} \int \limits_{0}^{a} \int \limits_{0}^{b} E_{y}H_{x}^{*} \opn{d}x \opn{d}y \\ & = \frac{\omega \vect{k}_{z} \mu}{2} \left(\frac{a A}{\pi} \right)^{2}b \int \limits_{0}^{a} \sin^{2}(\frac{\pi}{a}x) \opn{d}x = \frac{\omega k_{z} \mu}{4}a b \left(\frac{a A}{\pi} \right)^{2} \end{aligned}$
-	- $- \opn{d}P = \frac{1}{2}|H_{\mathrm{tang}}|^{2} \mathbb{R}_{\mathrm{M}} \opn{d}F$
-	- $\begin{aligned} - \pdif{z}P(z) & = \frac12 \mathbb{R}_{\mathrm{M}} \left(2 \int_0^{a} \Big[|H_{x}|^2 + |H_{z}|^2 \Big]_{y = 0} \opn{d}x + 2 \int \limits_{0}^{b} \Big[|\underbrace{H_{y}}_0|^2 + |H_{z}|^2 \Big]_{x = 0} \opn{d}y \right) \\ &={\mathbb{R}_{\mathrm{M}}A^{2} \left(\left(\cfrac{k_{z}a}{\pi} \right)^{2} \int \limits_{0}^{a} \sin^{2} \left(\cfrac{\pi}{a}x \right) \mathrm{d}x + \int \limits_{0}^{b} \cfrac{a}{\pi} \cos^{2} \left(\cfrac{\pi}{a}x \right) \mathrm{d}x + \int \limits_{0}^{b} \mathrm{d}y \right)} \\ & = A^{2} \mathbb{R}_{\mathrm{M}} \left(\frac{a}{2} \left(1 + \left(\frac{2a}{\lambda_{\mathrm{H}}} \right)^{2} \right) + b \right) \end{aligned}$
+	- $\begin{aligned} P & = \int \opn{Re}\{\vect{T}\} \cdot \d  \vect{F} = \int T_{z} \d x \d y = - \frac{1}{2} \int \limits_{0}^{a} \int \limits_{0}^{b} E_{y}H_{x}^{*} \d x \d y \\ & = \frac{\omega \vect{k}_{z} \mu}{2} \left(\frac{a A}{\pi} \right)^{2}b \int \limits_{0}^{a} \sin^{2}(\frac{\pi}{a}x) \d x = \frac{\omega k_{z} \mu}{4}a b \left(\frac{a A}{\pi} \right)^{2} \end{aligned}$
+	- $- \d P = \frac{1}{2}|H_{\mathrm{tang}}|^{2} \mathbb{R}_{\mathrm{M}} \d F$
+	- $\begin{aligned} - \pdif{z}P(z) & = \frac12 \mathbb{R}_{\mathrm{M}} \left(2 \int_0^{a} \Big[|H_{x}|^2 + |H_{z}|^2 \Big]_{y = 0} \d x + 2 \int \limits_{0}^{b} \Big[|\underbrace{H_{y}}_0|^2 + |H_{z}|^2 \Big]_{x = 0} \d y \right) \\ &={\mathbb{R}_{\mathrm{M}}A^{2} \left(\left(\cfrac{k_{z}a}{\pi} \right)^{2} \int \limits_{0}^{a} \sin^{2} \left(\cfrac{\pi}{a}x \right) \mathrm{d}x + \int \limits_{0}^{b} \cfrac{a}{\pi} \cos^{2} \left(\cfrac{\pi}{a}x \right) \mathrm{d}x + \int \limits_{0}^{b} \mathrm{d}y \right)} \\ & = A^{2} \mathbb{R}_{\mathrm{M}} \left(\frac{a}{2} \left(1 + \left(\frac{2a}{\lambda_{\mathrm{H}}} \right)^{2} \right) + b \right) \end{aligned}$
 	- $\alpha = \frac{\pi}{\omega \mu} \mathbb{R}_{\mathrm{M}} \frac{\lambda_{\mathrm{H}}}{a^{3} b} \left(\frac{a}{2} \left(1 + \left(\frac{2a}{\lambda_{\mathrm{H}}}\right)^{2} \right) + b \right)$
 	- $c = p \frac{\lambda_{\mathrm{H}}}{2}, \quad \text{bzw.} \quad k_{z} = \frac{2 \pi}{\lambda_{\mathrm{H}}} = \frac{p \pi}{c}$
 	  id:: 6745a3c5-8db7-45c1-93bd-26e16b795df2
@@ -426,8 +426,8 @@ alias:: cheat sheet
 	  bezeichnung:: unbelastete [[güte]] (innere [[güte]])
 		- $-$ ...
 	- $Q_{0} = \frac{2 \pi W}{P T} \quad \text{mit} \quad T = \frac{1}{f_{m n p}}$
-	- $W = \frac{1}{4} \int_{\mathcal{V}} \left(\varepsilon \vect{E} \cdot \vect{E}^{*} + \mu \vect{H} \cdot \vect{H}^{*} \right) \opn{d}V$
-	- $P = \frac{1}{2} \mathbb{R}_{\mathrm{M}} \oint_{\Sigma} \vect{H}_{\mathrm{tang}} \cdot \vect{H}_{\mathrm{tang}}^{*} \opn{d}F$
+	- $W = \frac{1}{4} \int_{\mathcal{V}} \left(\varepsilon \vect{E} \cdot \vect{E}^{*} + \mu \vect{H} \cdot \vect{H}^{*} \right) \d V$
+	- $P = \frac{1}{2} \mathbb{R}_{\mathrm{M}} \oint_{\Sigma} \vect{H}_{\mathrm{tang}} \cdot \vect{H}_{\mathrm{tang}}^{*} \d F$
 	- $\lambda_{101} = \frac{2a c}{\sqrt{a^{2} + c^{2}}}$
 	- $\omega_{101} = \frac{\pi}{\sqrt{\varepsilon \mu}} \frac{\sqrt{a^{2} + c^{2}}}{a c}$
 	- $E_{y} = - 2 \omega \mu \frac{a}{\pi}A \sin \left(\frac{\pi}{a}x \right) \sin \left(\frac{\pi}{c}z \right)$
@@ -468,14 +468,14 @@ alias:: cheat sheet
 	- $j k_{z} = \sqrt{Y'Z'} = \sqrt{(G' + j \omega C')(R' + j \omega L')}$
 	- $\frac{R'}{L'} = \frac{G'}{C'}$
 	- $v_{\mathrm{P}} = \frac{\omega}{k} = \frac{\omega}{\opn{Re}\{k_{z}\}} \approx \frac{1}{\sqrt{L'C'}}$
-	- $L = \frac{1}{I} \int_{A} \vect{B} \cdot \vect{n_{A}} \opn{d} \mathcal{A}$
-	- $L' = \frac{1}{I} \int_{r_{i}}^{r_{a}} \vect{B} \cdot \vect{n_{A}} \opn{d}r = \frac{1}{I} \int_{r_{i}}^{r_{a}}B_{\varphi} \opn{d}r = \frac{\mu}{I} \int_{r_{i}}^{r_{a}}H_{\varphi} \opn{d}r$
+	- $L = \frac{1}{I} \int_{A} \vect{B} \cdot \vect{n_{A}} \d  \mathcal{A}$
+	- $L' = \frac{1}{I} \int_{r_{i}}^{r_{a}} \vect{B} \cdot \vect{n_{A}} \d r = \frac{1}{I} \int_{r_{i}}^{r_{a}}B_{\varphi} \d r = \frac{\mu}{I} \int_{r_{i}}^{r_{a}}H_{\varphi} \d r$
 	- $H_{\varphi} = \frac{I}{2 \pi r}$
-	- $L' = \frac{\mu}{I} \int_{r_{i}}^{r_{a}} \frac{I}{2 \pi r} \opn{d}r$
+	- $L' = \frac{\mu}{I} \int_{r_{i}}^{r_{a}} \frac{I}{2 \pi r} \d r$
 	- $L' = \frac{\mu}{2 \pi} \ln \frac{r_{a}}{r_{i}}$
-	- $C = \frac{Q}{\int_{\mathcal{C}} \vect{E} \cdot \vect{e_{r}} \opn{d}r}$
+	- $C = \frac{Q}{\int_{\mathcal{C}} \vect{E} \cdot \vect{e_{r}} \d r}$
 	- $\vect{E} = \frac{\tau}{2 \pi \varepsilon} \frac{\vect{e_{r}}}{r}$
-	- $C' = \frac{\tau}{\int_{\mathcal{C}} \vect{E} \cdot \vect{e}_{r} \opn{d}r} = \frac{\tau}{\int_{r_{i}}^{r_{a}} \frac{\tau}{2 \pi \varepsilon} \frac{\vect{e}_{r}'}{r} \cdot \vect{e}_{r}' \opn{d}r} = \frac{2 \pi \varepsilon}{\int_{r_{i}}^{r_{a}} \frac{1}{r} \opn{d}r}$
+	- $C' = \frac{\tau}{\int_{\mathcal{C}} \vect{E} \cdot \vect{e}_{r} \d r} = \frac{\tau}{\int_{r_{i}}^{r_{a}} \frac{\tau}{2 \pi \varepsilon} \frac{\vect{e}_{r}'}{r} \cdot \vect{e}_{r}' \d r} = \frac{2 \pi \varepsilon}{\int_{r_{i}}^{r_{a}} \frac{1}{r} \d r}$
 	- $C' = \frac{2 \pi \varepsilon}{\ln \frac{r_{a}}{r_{i}}}$
 	- $Z_{\mathrm{L,verlustlos}} = \frac{\eta}{2 \pi} \ln \frac{r_{a}}{r_{i}} \quad \text{mit} \quad \eta = \sqrt{\frac{\mu}{\varepsilon}}$
 	  id:: 6745a3c5-c563-4874-8d5b-50fee6812aea
@@ -523,7 +523,7 @@ alias:: cheat sheet
 	- $Z_{\mathrm{L,max.Spannungsfest}} = \frac{60 \Omega}{\sqrt{\varepsilon_{r}}}$
 	- $P_{\mathrm{max}} = \frac{U_{\mathrm{max}}^{2}}{2Z_{\mathrm{L}}} = \frac{\pi E_{\mathrm{max}}^{2}r_{i}^{2}}{\eta} \ln \frac{r_{a}}{r_{i}} = \frac{\pi E_{\mathrm{max}}^{2}r_{a}^{2}}{\eta} \frac{\ln \frac{r_{a}}{r_{i}}}{(\frac{r_{a}}{r_{i}})^{2}}$
 	- $Z_{\mathrm{L,max. Leistung}} = \frac{30 \Omega}{\sqrt{\varepsilon_{r}}}$
-	- $p_{v}(z) = - \frac{\opn{d}P}{\opn{d}z} = - \frac{\opn{d}}{\opn{d}z}P_{0}e^{ - 2 \alpha z} = 2 \alpha P_{0}e^{ - 2 \alpha z} = 2 \alpha P(z)$
+	- $p_{v}(z) = - \frac{\d P}{\d z} = - \frac{\d }{\d z}P_{0}e^{ - 2 \alpha z} = 2 \alpha P_{0}e^{ - 2 \alpha z} = 2 \alpha P(z)$
 	- $\mathrm{mit} \qquad \alpha = \alpha_{R} + \alpha_{G}$
 - ## [[dielektrische wellenleiter]]
   collapsed:: true
@@ -564,7 +564,7 @@ alias:: cheat sheet
 	- $\begin{aligned} - \cfrac{\partial}{\partial z}P(z) = & |H_{x 0}|^{2} \mathbb{R} w~, \\ \mathbb{R} =  & \sqrt{\frac{\omega \mu}{\nu \mu}}~, \\ \alpha_L = & \cfrac{1}{2P(z)} \sqrt{\cfrac{\omega \mu}{\rho}}w|H_{z 0}|^{2} = \sqrt{\cfrac{\omega \mu}{2 \sigma}} \cfrac{1}{\eta h}\end{aligned}$ 
 	  id:: 67646b82-5793-44f2-bf08-2157166a28aa
 	  [link](((67646b82-fd98-4993-91b2-db2db6267fd3)))
-	- $P = \int \vect{P} \cdot \opn{d} \vect{F} = \int T_{w,z} \opn{d}x \opn{d}y = \frac{1}{2} \int E_{y} H_{x}^{*} \opn{d}x \opn{d}y = \frac{1}{2 \eta}|E_{y0}|^{2} hw$
+	- $P = \int \vect{P} \cdot \d  \vect{F} = \int T_{w,z} \d x \d y = \frac{1}{2} \int E_{y} H_{x}^{*} \d x \d y = \frac{1}{2 \eta}|E_{y0}|^{2} hw$
 	  id:: 67646b82-afb7-461b-b7c5-33308e3f9af8
 	- ((677f880d-96b0-404f-aba0-4f8d87e354a1))
 	  id:: 677f8df3-6685-4052-a48a-f893c12cfc77
@@ -603,29 +603,38 @@ alias:: cheat sheet
 	- $P_{r} = \int_{4 \pi}R e \left\{\vect{\mathbf{T}} \right\}r^{2} \cdot \vect{e}_{r} d \Omega = \int_{4 \pi} \phi d \Omega = \phi_{m a x} \int_{4 \pi} \frac{\phi}{\phi_{m a x}} d \Omega$
 	- $f \left(\vartheta,\varphi \right) = \frac{\left|\mathrm{E}_{\mathrm{Co}} \left(\vartheta,\varphi \right) \right|}{\left|\mathrm{E}_{\mathrm{Co}} \left(\vartheta_{m a x},\varphi_{m a x} \right) \right|}$
 	- $\frac{\phi}{\phi_{m a x}} = \left|f \left(\vartheta,\varphi \right) \right|^{2}$
-	- $P_{r} = \phi_{m a x} \int \left|f \left(\vartheta,\varphi \right) \right|^{2}d \Omega = \phi_{m a x} \Omega_{\ddot{a}}$
-	- $\Omega_{\ddot{a}} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin (\vartheta) \opn {d} \vartheta \opn{d} \varphi$
+	- $P_{r} = \phi_{m a x} \int \left|f \left(\vartheta,\varphi \right) \right|^{2}d \Omega = \phi_{m a x} \Omega_{ä}$
+	- $\Omega_{ä} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin (\vartheta) \d \vartheta \d  \varphi$
 	  id:: 678780ff-0ccf-4de6-9d47-a917d9ea7907
 	  tags:: formel
 	  bezeichnung:: äquivalenter raumwinkel
-		- $\Omega_{\ddot{a}}$ ... äquivalenter raumwinkel $\iu{ sr }$
-		- $\varphi$ ...
-		- $\vartheta$ ...
+	  collapsed:: true
+		- $\Omega_{ä}$ ... äquivalenter raumwinkel $\iu{ sr }$
+		- $\varphi$ ... azimut/längen winkel [link](((6787811c-b191-47c2-bfb0-165bf5a84e4e))) $\iu{°}$
+		- $\vartheta$ ... höhen/breiten winkel [link](((6787811c-b191-47c2-bfb0-165bf5a84e4e))) $\iu{°}$
 		- $f(\vartheta,\varphi)$ ... richtcharakteristik
-	- ${D=\cfrac{4\pi}{\Omega_{\ddot{a}}}=\frac{4\pi}{\int\limits_0^{2\pi}\opn d \varphi\int\limits_0^{\pi}|f(\vartheta,\varphi)|^2 \sin (\vartheta) \opn d \vartheta \opn d \varphi}}$
+	- ${D=\cfrac{4\pi}{\Omega_{ä}}=\frac{4\pi}{\int\limits_0^{2\pi}\opn d \varphi\int\limits_0^{\pi}|f(\vartheta,\varphi)|^2 \sin (\vartheta) \opn d \vartheta \opn d \varphi}}$
 	  tags:: formel
 	  bezeichnung:: direktivität einer antenne
 	  id:: 678780ff-213f-4ae3-b6b5-da29521bc3ab
-		- $\Omega_{\ddot{a}}$ ... äquivalenter raumwinkel $\iu{ sr }$
-		- $\varphi$ ...
-		- $\vartheta$ ...
+	  collapsed:: true
+		- $\Omega_{ä}$ ... äquivalenter raumwinkel $\iu{ sr }$
+		- $\varphi$ ... azimut/längen winkel [link](((6787811c-b191-47c2-bfb0-165bf5a84e4e))) $\iu{°}$
+		- $\vartheta$ ... höhen/breiten winkel [link](((6787811c-b191-47c2-bfb0-165bf5a84e4e))) $\iu{°}$
 		- $f(\vartheta,\varphi)$ ... richtcharakteristik
 	- ${\int_{0}d \varphi \int_{0}^{\pi}|f(\vartheta,\varphi)|^{2} \sin \vartheta d \vartheta}$
 	- $\frac{P_{\mathrm{L_{HD}}}}{P_{\mathrm{L_{DUT}}}} = \frac{P_{\mathrm{r_{HD}}}}{P_{\mathrm{r_{DUT}}}}e_{\mathrm{DUT}} = \cdot \cdot \cdot \cdot \cdot$
 	- $|\mathbf{E}_{\vartheta_{H D}}| = \frac{\eta \left|\mathbf{I} \right|s}{2 \lambda r} \sin \vartheta.$
 	- $P_{\mathrm{r_{_{HD}}}} = \frac{\pi \eta}{3} \left(\frac{s^{2}}{\lambda^{2}} \right) \left|\mathbf{I} \right|^{2}$
-	- $|\mathbb{E}_{\vartheta_{H D}}| = \sqrt{\frac{3 \eta}{4 \pi}} \sqrt{P_{r,H D}} \frac{\sin \vartheta}{r}$
+	- $|\mathbf{E}_{\vartheta_{H D}}| = \sqrt{\frac{3 \eta}{4 \pi}} \sqrt{P_{r,H D}} \frac{\sin \vartheta}{r}$
 	- $P_{\mathrm{r_{_{HD}}}} = \frac{4 \pi r^{2}}{3 \eta} \left|\mathbf{E}_{\vartheta_{H D}} \right|^{2} \frac{1}{\sin^{2} \vartheta}$
+	  id:: 678780ff-6f02-40df-af15-e74da9988f12
+	  tags:: formel, wip
+	  bezeichnung:: empfangene leistung eines hertz'schen dipols
+		- $r$ ... radius/entfernung von HD zum messpunkt $\iu{W}$
+		- $\eta$ ... wellenwiderstand des ausbreitungsmediums $\iu{\Omega}$
+		- $\mathbf{E}_{{\vartheta}_{HD}}$ ... feldstärke(?)
+		- $\vartheta$ ... elevationswinkel $\iu{°}$
 	- $\frac{\left|\mathbf{E}_{\vartheta_{H D}} \right|}{\left|\mathbf{E}_{\vartheta_{\mathrm{HD}}} \right|_{m a x}} = f_{H D} \left(\vartheta \right) = \sin \vartheta$
 	- $P_{\mathrm{r_{HD}}} = \frac{4 \pi r^{2}}{3 \eta} \left|\mathbf{E}_{\vartheta,H D} \right|_{m a x}^{2}$
 	- $\mathbb{E}_{\vartheta} = \frac{j \eta \mathbf{I}}{2 \pi r} e^{ - j k r} \mathbb{F} \left(\vartheta,\varphi \right)$
@@ -636,13 +645,25 @@ alias:: cheat sheet
 	- $\frac{\left|\mathbf{E}_{\vartheta} \right|}{\left|\mathbf{E}_{\vartheta} \right|_{m a x}} = \frac{\left|\mathbf{F} \left(\vartheta,\varphi \right) \right|}{\left|\mathbf{F} \left(\vartheta_{m a x},\varphi_{m a x} \right) \right|} = \left|f \left(\vartheta,\varphi \right) \right|$
 	- $\left|\mathbf{F} \left(\vartheta,\varphi \right) \right| = \left|f \left(\vartheta,\varphi \right) \right|\left|\mathbf{F} \left(\vartheta_{m a x},\varphi_{m a x} \right) \right| = \left|f \left(\vartheta,\varphi \right) \right|\frac{2 \pi r}{\eta \left|\mathbf{I} \right|} \left|\mathbf{E}_{\vartheta} \right|_{m a x}$
 	- $2 \pi \pi$
-	- $P_{_ \mathrm{{PUT}}} = \frac{r^{2}}{2 \eta} \left|\mathbf{E}_{\vartheta} \right|_{m a x}^{2} \underbrace{\int}_{\cdot} \int_{\cdot} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin \vartheta d \vartheta d \varphi$
-	- $\frac{P_{\mathrm{rmD}}}{P_{\mathrm{rDUT}}} = \frac{\frac{4 \pi r^{2}}{3 \eta}}{\frac{r^{2}}{2 \eta}} \frac{\left|\mathbf{E}_{\vartheta_{H D}} \right|_{m a x}^{2}}{\left|\mathbf{E}_{\vartheta} \right|_{m a x}^{2}} \int_{0}^{2 \pi} \int_{0}^{\pi} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin \vartheta d \vartheta d \varphi$
+	- $P_{\mathrm{{r_{DUT}}}} = \frac{r^{2}}{2 \eta} \left|\mathbf{E}_{\vartheta} \right|_{m a x}^{2} \int\limits_0^{2\pi} \int\limits_0^{\pi} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin \vartheta d \vartheta d \varphi$
+	- $\frac{P_{\mathrm{rmD}}}{P_{\mathrm{rDUT}}} = \frac{\frac{4 \pi r^{2}}{3 \eta}}{\frac{r^{2}}{2 \eta}} \frac{\left|\mathbf{E}_{\vartheta_{H D}} \right|_{m a x}^{2}}{\left|\mathbf{E}_{\vartheta} \right|_{m a x}^{2}} \int\limits_{0}^{2 \pi} \int\limits_{0}^{\pi} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin \vartheta d \vartheta d \varphi$
 	- $G_{R E F} = \frac{P_{\mathrm{L_{REF}}}}{P_{\mathrm{L_{DUT}}}} \cdot \frac{\left|\mathbf{E}_{\vartheta_{D U T}} \right|_{m a x}^{2}}{\left|\mathbf{E}_{\vartheta_{R E F}} \right|_{m a x}^{2}}$
-	- $G_{\mathrm{HD}} = \frac{P_{\mathrm{L}_{\mathrm{HID}}}}{P_{\mathrm{L}_{\mathrm{DUT}}}} \cdot \frac{|E_{\vartheta_{\mathrm{DUT}}}|_{\mathrm{max}}^{2}}{|E_{\vartheta_{\mathrm{HD}}}|_{\mathrm{max}}^{2}} = e_{\mathrm{DUT}} \frac{P_{\mathrm{r}_{\mathrm{HID}}}}{P_{\mathrm{r}_{\mathrm{DUT}}}} \cdot \frac{|E_{\vartheta_{\mathrm{DUT}}}|_{\mathrm{max}}^{2}}{|E_{\vartheta_{\mathrm{HD}}}|_{\mathrm{max}}^{2}}$
-	- $G_{H D} = \frac{8 \pi/\mathbf{3}}{2 \pi \pi}$
-	- ${\underset{0}{\int} \int_{0}|f(\vartheta,\varphi)|^{2} \mathrm{sin} \vartheta d \vartheta d \varphi}$
-	- $G_{H D} = \frac{8 \pi/3}{\Omega_{\ddot{a}}} = \frac{2}{3} G_{I S O}$
+	- $G_{H D} = e_{DUT}\frac{8 \pi/3}{{\int\limits_0^{2\pi} \int\limits_0^{\pi} |f(\vartheta,\varphi)|^{2} \sin \vartheta \d  \vartheta \d  \varphi}}$
+	  tags:: formel
+	  bezeichnung:: gewinn eines hertz'schen dipols gegenüber des isotropen strahlers
+		- $e_{DUT}$ ... strahlungseffizienz $\iu{-}$
+	- $G_{\mathrm{HD}} = \frac{P_{\mathrm{L}_{\mathrm{HD}}}}{P_{\mathrm{L}_{\mathrm{DUT}}}} \cdot \frac{|E_{\vartheta_{\mathrm{DUT}}}|_{\mathrm{max}}^{2}}{|E_{\vartheta_{\mathrm{HD}}}|_{\mathrm{max}}^{2}} = e_{\mathrm{DUT}} \frac{P_{\mathrm{r}_{\mathrm{HID}}}}{P_{\mathrm{r}_{\mathrm{DUT}}}} \cdot \frac{|E_{\vartheta_{\mathrm{DUT}}}|_{\mathrm{max}}^{2}}{|E_{\vartheta_{\mathrm{HD}}}|_{\mathrm{max}}^{2}}$
+	  tags:: formel
+	  bezeichnung:: -
+		- $P_{L_{HD}}$ ... sendeleistung eines hertz'schen dipols $\iu{W}$
+	- $G_{H D} = \frac{8 \pi/3}{{\int\limits_0^{2\pi} \int\limits_0^{\pi} |f(\vartheta,\varphi)|^{2} \sin \vartheta \d  \vartheta \d  \varphi}}$
+	- $G_{H D} = \frac{8 \pi/3}{\Omega_{ä}} = \frac{2}{3} G_{I S O}$
+	  id:: 678949c8-3f57-4289-8d02-6e339ae100a8
+	  tags:: formel
+	  bezeichnung:: gewinn des hertz'schen dipols gegenüber des isotropen strahlers
+		- $G_{HD}$ ... gewinn gegenüber des <u>H</u>ertz'schen <u>D</u>ipols $\iu{-}$
+		- $\Omega_{ä}$ ... äquivalenter raumwinkel $\iu{ sr }$
+		- $G_{ISO}$ ... gewinn gegenüber des <u>ISO</u>tropstrahlers $\iu{-}$
 	- $T_{E} \left(r \right) = G \frac{P_{S}}{4 \pi r^{2}}$
 	- $|\mathbf{E}_{E}| = \frac{A}{\lambda r}E_{0}$
 	- $T_{E} \left(r \right) = \frac{\left|\mathbf{E}_{E} \right|^{2}}{2 \eta} = \left(\frac{A}{\lambda r} \right)^{2} \frac{E_{0}^{2}}{2 \eta}$
@@ -719,7 +740,7 @@ alias:: cheat sheet
 	- [S. 24](((677f9e30-fbb1-4656-af18-4d0e59104263)))
 	- $\tau_{1} = d_{1}/c,\qquad \mathrm{und} \qquad \tau_{2} = d_{2}/c$
 	- $\mathbf{h}(\tau) = \mathbf{A}_{1} \delta \left(\tau - \tau_{1} \right) + \mathbf{A}_{2} \delta \left(\tau - \tau_{2} \right)$
-	- $\mathbf{H} \left(j \omega \right) = \int_0^\infty \mathbf{h}(\tau) e^{-j \omega \tau} \opn{d} \tau = \mathbf{A}_{1} e^{-j \omega \tau_{1}} + \mathbf{A}_{2} e^{-j\omega\tau_{2}}$
+	- $\mathbf{H} \left(j \omega \right) = \int_0^\infty \mathbf{h}(\tau) e^{-j \omega \tau} \d  \tau = \mathbf{A}_{1} e^{-j \omega \tau_{1}} + \mathbf{A}_{2} e^{-j\omega\tau_{2}}$
 	- $\left|\mathbf{H} \left(j \omega \right) \right| = \sqrt{A_{1}^{2} + A_{2}^{2} + 2 \lambda_{1}A_{2} \cos \left(\omega \cdot \Delta \tau \right)} \qquad \mathrm{mit} \qquad \Delta \tau = \tau_{2} - \tau_{1}$
 	- $\Delta f_{N o t c h} = \frac{1}{\Delta \tau}$
 	- $\mathbf{H} \left(j \omega \right) = \left|\mathbf{H} \left(j \omega \right) \right|e^{j \phi_{H} \left(j \omega \right)}$

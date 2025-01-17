@@ -1933,11 +1933,15 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				  background-color:: yellow
 	- Richtdiagramm und Gewinn einer Antenne
 	  background-color:: green
+	  collapsed:: true
 		- Eine verlustlose Antenne habe die Richtcharakteristik $\\ f(\vartheta,\varphi)=|\sin(\vartheta)\cos(\varphi)\cos(\varphi/2)|$
 		  background-color:: green
+		  collapsed:: true
 			- Skizzieren Sie das Richtdiagramm in horizontaler ($x/y$) und vertikaler ($x/z$) Ebene! Zeichnen Sie $\vartheta$ und $\varphi$ in den Skizzen und dem Koordinatensystem ein.
 			  background-color:: green
+			  collapsed:: true
 				- ![img](../assets/documents/WA_richtdiagramm_koordinatensystem.webp)
+				  id:: 6787811c-b191-47c2-bfb0-165bf5a84e4e
 				- man muss die fälle für die 2 ebenen unterscheiden und dann mehr oder weniger einsetzen?
 				- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
 				- ```python
@@ -1966,17 +1970,196 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 					- {{evalparent}}
 			- Berechnen Sie den äquivalenten Raumwinkel und die Direktivität!
 			  background-color:: green
-			  Hinweis: ${\int \sin^{3}(a x)\opn{d}x = -\frac{1}{a}\cos(a x)+\frac{1}{3a}\cos^{3}(a x)}$ und $\int(\cos(x)\cos(a x))^{2}\mathrm{d}x={\frac{\sin(2(a+1)x)}{16(a+1)}+\frac{\sin(2(a-1)x)}{16(a-1)}+\frac{\sin(2a x)}{8a}+\frac{\sin(2 x)}{8}+\frac{x}{4}}$
+			  collapsed:: true
+			  Hinweis: ${\int \sin^{3}(a x)\d x = -\frac{1}{a}\cos(a x)+\frac{1}{3a}\cos^{3}(a x)}$ 
+			  und $\int(\cos(x)\cos(a x))^{2}\d x={\frac{\sin(2(a+1)x)}{16(a+1)}+\frac{\sin(2(a-1)x)}{16(a-1)}+\frac{\sin(2a x)}{8a}+\frac{\sin(2 x)}{8}+\frac{x}{4}}$
 				- formeln
 					- ((678780ff-0ccf-4de6-9d47-a917d9ea7907))
 					- ((678780ff-213f-4ae3-b6b5-da29521bc3ab))
 				- äquivalenter raumwinkel
 				  background-color:: green
-					- $\Omega_{\ddot{a}} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin (\vartheta) \opn {d} \vartheta \opn{d} \varphi \op{f(\vartheta,\varphi)=|\sin(\vartheta)\cos(\varphi)\cos(\varphi/2)|}$
-					- $\Omega_{\ddot{a}} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \left|\sin(\vartheta)\cos(\varphi)\cos\left(\frac{\varphi}{2}\right)\right|^{2} \sin (\vartheta) \opn {d} \vartheta \opn{d} \varphi \op{|\square|^2 = \square ^2}$
-					- $\Omega_{\ddot{a}} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \sin(\vartheta)^2\cos(\varphi)^2\cos(\varphi/2)^{2} \sin (\vartheta) \opn {d} \vartheta \opn{d} \varphi$
+					- $\Omega_{ä} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin (\vartheta) \d \vartheta \d  \varphi \op{f(\vartheta,\varphi)=|\sin(\vartheta)\cos(\varphi)\cos(\varphi/2)|}$
+					- $\Omega_{ä} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \left|\sin(\vartheta)\cos(\varphi)\cos\left(\frac{\varphi}{2}\right)\right|^{2} \sin (\vartheta) \d \vartheta \d  \varphi \op{|\square|^2 = \square ^2}$
+					- $\Omega_{ä} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \sin(\vartheta)^2\cos(\varphi)^2\cos\left(\frac{\varphi}{2}\right)^{2} \sin (\vartheta) \d \vartheta \d  \varphi \op{\text{integral aufteilen}}$
+					- $\Omega_{ä} = \int\limits_{0}^{\pi} \sin(\vartheta)^3  \int\limits_{0}^{2\pi} \cos(\varphi)^2\cos\left(\frac{\varphi}{2}\right)^{2}\d \vartheta \d  \varphi \op{\text{Hinweis zu cos anwenden}}$
+					- $\Omega_{ä} = \int\limits_{0}^{\pi} \sin(\vartheta)^3 \left.\left(\frac{\sin(2(\frac12+1)\varphi )}{16(\frac12+1)}+\frac{\sin(2(\frac12-1)\varphi )}{16(\frac12-1)}+\frac{\sin(2\frac12 \varphi )}{8\frac12}+\frac{\sin(2 \varphi )}{8}+\frac{\varphi }{4}\right)\right|_0^{2\pi} \op{(\square)=\frac18\left(-\sin(3x)+\sin(2 x)+3\sin(x)+2x\right)}$
+						- $\left(\frac{\sin(2(\frac12+1)x)}{16(\frac12+1)}+\frac{\sin(2(\frac12-1)x)}{16(\frac12-1)}+\frac{\sin(\cc{\red}2\frac{1}{\cc{\red}2} x)}{\ccu{\red}{4}{8} \frac1{\cc{\red}2}}+\frac{\sin(2 x)}{8}+\frac{x}{4}\right)$
+						- $\frac{\sin(3x)}{16(-\frac12)}+\frac{\sin(-1x)}{16(-\frac12)}+\frac{\sin(1 x)}{4}+\frac{\sin(2 x)}{8}+\frac{x}{4}$
+						- $-\frac{\sin(3x)}{8}-\frac{\sin(-x)}{8}+\frac{\sin(x)}{4}+\frac{\sin(2 x)}{8}+\frac{x}{4} \op{\sin(-x) = -\sin(x)}$
+						- $-\frac{\sin(3x)}{8}+\frac{\sin(x)}{8}+\frac{2\sin(x)}{8}+\frac{\sin(2 x)}{8}+\frac{2x}{8}$
+						- $\frac18\left(-\sin(3x)+\sin(2 x)+3\sin(x)+2x\right)$
+					- $\Omega_{ä} = \int\limits_{0}^{\pi} \sin(\vartheta)^3 \left.\left( \frac18 \left(-\sin(3 \varphi)+\sin(2 \varphi)+3\sin(\varphi)+2\varphi \right) \right)\right|_0^{2\pi} \op{(\square)\big|_0^{2\pi} =\frac{\pi}{2}}$
+						- $\left.\left( \frac18 \left(-\sin(3 \varphi)+\sin(2 \varphi)+3\sin(\varphi)+2\varphi \right) \right)\right|_0^{2\pi}$
+						- $\frac18 \left(-\sin(3 \cdot2\pi)+\sin(2 \cdot2\pi)+3\sin(2\pi)+2\cdot2\pi \right) \op{\sin(n\cdot \pi) = 0}$
+						- $\frac{1}{{\ccu{\red}{2}{8}}} \cdot \cc{\red}4\pi$
+						- $\frac{\pi}{2}$
+					- $\Omega_{ä} =  \frac{\pi}{2}\int\limits_{0}^{\pi} \sin(\vartheta)^3 \d \vartheta\op{\text{Hinweis zu sin anwenden}}$
+					- $\Omega_{ä} =   \frac{\pi}{2}\left.\left(-\frac{1}{1}\cos(1 \vartheta)+\frac{1}{3\cdot 1}\cos^{3}(1 \vartheta)\right) \right|_0^\pi \op{(\square)\big|_0^\pi = -\cos(\vartheta) + \frac{1}{3}\cos^{3}(\vartheta)}$
+						- $\left(-\frac{1}{1}\cos(1 \vartheta)+\frac{1}{3\cdot 1}\cos^{3}(1 \vartheta)\right)$
+						- $-\cos(\vartheta) + \frac{1}{3}\cos^{3}(\vartheta)$
+					- $\Omega_{ä} =   \frac{\pi}{2}\left.\left(-\cos(\vartheta)+\frac{1}{3}\cos^{3}(\vartheta)\right) \right|_0^\pi \op{(\square)\big|_0^\pi = \frac43}$
+						- $\left.\left(-\cos(\vartheta)+\frac{1}{3}\cos^{3}(\vartheta)\right) \right|_0^\pi$
+						- $(-\cos\pi + \frac13\cos^3\pi) - (-\cos0 + \frac13\cos^30)$
+						- $(-(-1)+\frac13 (-1)^3)-(-1+\frac13 1^3)$
+						- $\frac43$
+						- ```calc
+						  :format imp
+						  (-(-1)+1/3*(-1)^3)-(-1+1/3*1^3)
+						  ```
+					- $\Omega_{ä} = \frac{\pi}{2} \frac43 = \frac{2\pi}3$
+					  background-color:: yellow
+				- direktivität
+				  background-color:: green
+				  collapsed:: true
+					- $D = \frac{{\cco{\red}{2}{4\pi}}}{\frac{\cc{\red}{2\pi}}{3}}$
+					- $D = 6$
+					  background-color:: yellow
 			- Berechnen Sie den Gewinn über dem Isotropstrahler und über dem Hertz'schen Dipol!
 			  background-color:: green
+			  collapsed:: true
+				- formeln
+					- ((678949c8-3f57-4289-8d02-6e339ae100a8))
+				- $G_{HD}=\frac{8\pi/3}{\Omega_{ä}}=\frac{\cco{\red}{4}{8} \cc{\blue}{\frac\pi3}}{\cc{\red}{2}\cc{\blue}{\frac{\pi}{3}}}$
+				- $G_{HD}=4$
+				  background-color:: yellow
+				- $G_{H D} = \frac{2}{3} G_{I S O}$
+				- $G_{ISO}= G_{HD} \cdot \frac32$
+				- $G_{ISO}=6$
+				  background-color:: yellow
+		- Eine verlustlose Antenne habe die Richtcharakteristik $\\f(\vartheta,\varphi)=\begin{cases} |\sin(\vartheta) \cos(\varphi)| & \text{für } 0 \le \varphi < \frac\pi2 \text{ und } \frac{3\pi}{2} \le \varphi < 2\pi \\ |\frac12 \sin(\vartheta)\cos(3\varphi)| & \text{sonst}\end{cases}$
+		  background-color:: green
+			- Skizzieren Sie das Richtdiagramm in horizontaler ($x/y$) und vertikaler ($x/z$) Ebene! Zeichnen Sie $\vartheta$ und $\varphi$ in Ihren Skizzen und dem abgebildeten Koordinatensystem ein.
+			  background-color:: green
+			  collapsed:: true
+				- ((6787811c-b191-47c2-bfb0-165bf5a84e4e))
+				- {{clearnamespace python-clear-namespace}}{{loadunipackages python-load-uni-packages}}
+				- ```python
+				  printer.seek(0); printer.truncate(0)
+				  ### x/y ebene ###
+				  # theta = 90
+				  phi1 = linspace(0, pi/2, 100)
+				  phi2 = linspace(pi/2, pi, 100)
+				  phi3 = linspace(pi, 3*pi/2, 100)
+				  phi4 = linspace(3*pi/2, 2*pi, 100)
+				  f1 = abs(cos(phi1))
+				  f2 = abs(cos(3*phi2))/2
+				  f3 = abs(cos(3*phi3))/2
+				  f4 = abs(cos(phi4))
+				  
+				  f = [*f1,*f2, *f3, *f4]
+				  print(len(f))
+				  phi = linspace(0, 2*pi, 400)
+				  
+				  #Create the polar plot
+				  plt.polar(phi, f)
+				  showPlot()
+				  ```
+					- {{evalparent}}
+				- ```python
+				  printer.seek(0); printer.truncate(0)
+				  ### x/z ebene ###
+				  # phi = 0 -> case 1
+				  
+				  theta = linspace(0, 2*pi, 400)
+				  f = abs(sin(theta))
+				  
+				  #Create the polar plot
+				  plt.polar(theta, f)
+				  showPlot()
+				  ```
+					- {{evalparent}}
+			- Berechnen Sie den äquivalenten Raumwinkel und die Direktivität!
+			  background-color:: green
+			  Hinweis: ${\int\sin^{3}(a x)\mathrm{d}x=-\frac{1}{a}\cos(a x)+\frac{1}{3a}\cos^{3}(a x)}$
+			  und ${\int\cos^{2}(a x)\mathrm{d}x=\frac{1}{2}x+\frac{1}{4a}\sin(2a x)}$
+				- formeln
+					- ((678780ff-0ccf-4de6-9d47-a917d9ea7907))
+					- ((678780ff-213f-4ae3-b6b5-da29521bc3ab))
+				- äquivalenter raumwinkel
+				  background-color:: green
+				  collapsed:: true
+					- $\Omega_{ä} = \int\limits_{0}^{2\pi} \int\limits_{0}^{\pi} \left|f \left(\vartheta,\varphi \right) \right|^{2} \sin (\vartheta) \d \vartheta \d  \varphi \op{\text{integral in richtige bereiche aufteilen}}$
+						- nur 2 bereiche nötig
+							- von $\frac\pi2 \longrightarrow \frac{3\pi}{2}$
+							- und von $\frac{3\pi}{2} \longrightarrow \frac{\pi}{2}$
+						- bei $\sin$/$\cos$ kann man nach beliben die grenzen verschieben
+							- von $0 \longrightarrow \pi$
+							- und von $\pi \longrightarrow 2\pi$
+						- $f(\vartheta,\varphi)=\begin{cases} f_1= |\sin(\vartheta) \cos(\varphi)| & \text{für } 0 \le \varphi < \frac\pi2 \text{ und } \frac{3\pi}{2} \le \varphi < 2\pi \\ f_2=|\frac12 \sin(\vartheta)\cos(3\varphi)| & \text{sonst}\end{cases}$
+						- $\int\limits_0^\pi \int\limits_0^\pi |f_1|^2\sin(\vartheta) \d \vartheta \d \varphi+\int\limits_\pi^{2\pi} \int\limits_0^\pi |f_2|^2\sin(\vartheta) \d \vartheta \d \varphi \op{f_1 = |\sin(\vartheta)\cos(\varphi)|} \op{f_2 = \left|\frac12 \sin(\vartheta) \cos(3\varphi)\right|}$
+						- $\int\limits_0^\pi \int\limits_0^\pi |\sin(\vartheta)\cos(\varphi)|^2\sin(\vartheta) \d \vartheta \d \varphi+\int\limits_\pi^{2\pi} \int\limits_0^\pi \left|\frac12 \sin(\vartheta) \cos(3\varphi)\right|^2 \sin(\vartheta) \d \vartheta \d \varphi \op{|\square|^2 = \square^2}$
+						- $\int\limits_0^\pi \int\limits_0^\pi \sin^3(\vartheta)\cos^2(\varphi) \d \vartheta \d \varphi + \int\limits_\pi^{2\pi} \int\limits_0^\pi \frac14 \sin^3(\vartheta) \cos^2(3\varphi) \d \vartheta \d \varphi \op{\text{Hinweis zu sin anwenden}}$
+						  collapsed:: true
+							- integral 1
+								- $\int\limits_0^\pi \int\limits_0^\pi \sin^3(\vartheta)\cos^2(\varphi) \d \vartheta \d \varphi$
+								- $\int\limits_0^\pi \sin^3(\vartheta) \int\limits_0^\pi\cos^2(\varphi) \d \vartheta \d \varphi \op{{\int\sin^{3}(a x)\mathrm{d}x=-\frac{1}{a}\cos(a x)+\frac{1}{3a}\cos^{3}(a x)}}$
+								- $\left.\left(-\cos(\vartheta)+\frac{1}{3}\cos^{3}(\vartheta)\right)\right|_0^\pi \int\limits_0^\pi\cos^2(\varphi) \d \vartheta \d \varphi \op{\left.(\square)\right|_0^\pi = \frac43}$
+									- $\left.\left(-\cos(\vartheta)+\frac{1}{3}\cos^{3}(\vartheta)\right)\right|_0^\pi$
+									- $\left(-\cos(\pi)+\frac{1}{3}\cos^{3}(\pi)\right)-\left(-\cos(0)+\frac{1}{3}\cos^{3}(0)\right)$
+									- $\left(-(-1)+\frac{1}{3}(-1)^{3}\right)-\left(-1+\frac{1}{3}1^{3}\right) = \frac43$
+										- ```calc
+										  :format imp
+										  (-(-1)+(1/3)*(-1)^3)-(-1+1/3*1)
+										  
+										  ```
+								- $\frac43 \int\limits_0^\pi\cos^2(\varphi) \d \vartheta \d \varphi$
+								  id:: 678a6e73-9287-4d5d-87b4-80c87b2b2ace
+							- integral 2
+								- $\int\limits_\pi^{2\pi} \int\limits_0^\pi \frac14 \sin^3(\vartheta) \cos^2(3\varphi) \d \vartheta \d \varphi$
+								- wie integral 1 ([link](((678a6e73-9287-4d5d-87b4-80c87b2b2ace)))) mit $\frac14$
+								- $\frac1{\cc{\red}4}\frac{\cc{\red}4}3 \int\limits_0^\pi\cos^2(3\varphi) \d \vartheta \d \varphi$
+								- $\frac13 \int\limits_\pi^{2\pi}\cos^2(3\varphi) \d \vartheta \d \varphi$
+						- $\frac43 \int\limits_0^\pi\cos^2(\varphi) \d \varphi+\frac13 \int\limits_\pi^{2\pi}\cos^2(3\varphi) \d \varphi \op{\text{Hinweis zu cos anwenden}}$
+							- integral 1
+								- $\int\limits_0^\pi\cos^2(\varphi) \d \varphi\op{{\int\cos^{2}(a x)\mathrm{d}x=\frac{1}{2}x+\frac{1}{4a}\sin(2a x)}}$
+								- $\left.\left(\frac{1}{2}\varphi+\frac{1}{4}\sin(2\varphi)\right)\right|_0^\pi \op{\left.(\square)\right|_0^\pi = \frac\pi2}$
+									- $\left.\left(\frac{1}{2}\varphi+\frac{1}{4}\sin(2\varphi)\right)\right|_0^\pi$
+									- $\left(\frac12 \pi +\frac14 \sin(\pi)\right)-\left(\frac12 0 +\frac14 \sin(0)\right)$
+									- $\frac\pi2$
+								- $\frac\pi{2}$
+							- integral 2
+								- $\int\limits_\pi^{2\pi}\cos^2(3\varphi) \d \varphi\op{{\int\cos^{2}(a x)\mathrm{d}x=\frac{1}{2}x+\frac{1}{4a}\sin(2a x)}}$
+								- $\left.\left(\frac{1}{2}\varphi+\frac{1}{4\cdot 3}\sin(2\cdot3 \varphi)\right)\right| _\pi^{2\pi} \op{\left.(\square)\right|_\pi^{2\pi}=\frac\pi2}$
+									- $\left.\left(\frac{1}{2}\varphi+\frac{1}{4\cdot 3}\sin(2\cdot3 \varphi)\right)\right| _\pi^{2\pi}$
+									- $\left(\frac122\pi+\frac{1}{12}\sin(6\cdot2\pi)\right)-\left(\frac12\pi+\frac{1}{12}\sin(6\cdot\pi)\right)$
+									- $\pi-\frac\pi2$
+									- $\frac{\pi}{2}$
+							- $\frac{\cco{\red}{2}4}3\cdot\frac{\pi}{\cc{\red}2}+\frac13\cdot\frac{\pi}{2}$
+							- $\frac{5\pi}{6}$
+							  background-color:: yellow
+				- direktivität
+				  background-color:: green
+					- $D = \frac{4\cc{\red}{\pi}}{\frac{5\cc{\red}\pi}{6}}$
+					- $D=\frac{24}{5}$
+					  background-color:: yellow
+			- Berechnen Sie den Gewinn iiber dem Isotropstrahler und iiber dem Hertz'schen Dipol!
+			  background-color:: green
+				- formeln
+					- ((678949c8-3f57-4289-8d02-6e339ae100a8))
+				- $G_{HD}=\frac{\frac{8\cc{\blue}\pi}{\cc{\red}3}}{\frac{5\cc{\blue}\pi}{\ccu{\red}{2}6}}$
+				- $G_{HD}=\frac{16}{5}$
+				  background-color:: yellow
+				- $G_{ISO}=G_{HD}\frac32$
+				- $G_{ISO}=\frac{\cco{\red}{8}16}{5}\cdot\frac3{\cc{\red}2}$
+				- $G_{ISO}=\frac{24}{5}$
+				  background-color:: yellow
+	- Hertzscher Dipol
+	  background-color:: green
+		- Ein Hertzscher Dipol inﬁnitesimaler Länge erzeugt in einem Aufpunkt in $1000\si{m}$ Entfernung und einem Elevationswinkel von $45\si{°}$ eine Feldstärke von $E = 0.01\si{V/m}$. Die Sendefrequenz sei $700\si{MHz}$.
+		  background-color:: green
+			- Geben Sie die Formel für das Richtdiagramm eines Hertzschen Dipoles an (inklusive Skizzen)!
+			  background-color:: green
+				- ((5ca74cbc-16c7-472f-8797-332c6944a227))
+				  background-color:: yellow
+				- ![img](../assets/documents/WA_hertzscher_dipol_skizze_1.webp)
+				- ![img](../assets/documents/WA_hertzscher_dipol_skizze_2.webp)
+			- Wie gross ist die Sendeleistung?
+			  background-color:: green
+				- formeln
+					- ((678780ff-6f02-40df-af15-e74da9988f12))
+				- $P_{\mathrm{r_{_{HD}}}} = \frac{4 \pi r^{2}}{3 \eta} \left|\mathbf{E}_{\vartheta_{H D}} \right|^{2} \frac{1}{\sin^{2} \vartheta}$
+	- Sektorantenne
+	  background-color:: green
 	- Mikrowellenherd
 	  background-color:: green
 	  collapsed:: true
@@ -2032,6 +2215,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- Zusatzfrage: Wo sollte der Toast ohne zuhilfenahme anderer Gegenstände platziert werden, damit er die maximale Leistung aufnimmt?
 			  background-color:: green
 - ## flashcards
+  collapsed:: true
 	- ### index
 	  collapsed:: true
 		- query-table:: true
@@ -2073,6 +2257,11 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 		  ]
 		  }
 		  #+END_QUERY
+	- wie lautet die formel für die ermittlung des richtdiagramms eines hertz'schen dipols?
+	  deck:: Uni::Wellenausbreitung_Theorie
+	  tags:: flashcard
+		- $f(\varphi,\vartheta) = |\sin(\vartheta)|$
+		  id:: 5ca74cbc-16c7-472f-8797-332c6944a227
 	- wie schaut die iterative methode der berechnung und dimensionierung von mikrostreifenleitungen aus?
 	  deck:: Uni::Wellenausbreitung_Theorie
 	  tags:: flashcard
