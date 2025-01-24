@@ -2,7 +2,7 @@ public:: true
 icon:: ⚡
 inherit-color-icon-from:: [[logseq-page-color-yellow]] 
 template-used:: standard-page
-tags:: [[uni]]
+tags:: [[uni]], bachelor
 alias:: et1
 
 - [📁 folder](file://)

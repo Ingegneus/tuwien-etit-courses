@@ -1,7 +1,7 @@
 public:: true
 icon:: 🤖
 inherit-color-icon-from:: [[logseq-page-color-lightblue]]
-tags:: [[uni]]
+tags:: [[uni]], bachelor
 alias:: automatisierung, automatisierungs
 
 - [📁 folder](file://C:\Users\Matteo\Documents\Uni\Automatisierung)

@@ -1,7 +1,7 @@
 public:: true
 icon:: 🔌
 inherit-color-icon-from:: [[logseq-page-color-red]]
-tags:: uni
+tags:: uni, bachelor
 alias:: ST, schaltungstechnik lva
 
 - [📁 folder](file://C:\Users\Matteo\Documents\Uni\Schaltungstechnik)

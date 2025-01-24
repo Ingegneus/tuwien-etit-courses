@@ -390,6 +390,9 @@ alias:: cheat sheet
 		- $a$ ... breite des [[hohlraumleiters]] $\iu{ m }$
 		- $b$ ... höhe des [[hohlraumleiters]] $\iu{ m }$
 	- $\lambda_{\mathrm{H}} = \frac{\lambda}{\sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}}$
+	  tags:: formel,wip
+	  bezeichnung:: -
+		- $-$ ...
 	- $v_{\mathrm{P}} = \frac{c}{\sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}}$
 	- $v_{\mathrm{G}} = c \sqrt{1 - \left(\frac{\lambda}{\lambda_{\mathrm{G}}} \right)^{2}}$
 	- $\kappa^{2} = \left(\frac{m \pi}{a} \right)^{2} + \left(\frac{n \pi}{b} \right)^{2} \equiv \omega^{2} \varepsilon \mu - k_{z}^{2}$
@@ -438,7 +441,7 @@ alias:: cheat sheet
 	- $Q_{0} = \frac{\pi \eta}{2 \mathbb{R}_{\mathrm{M}}} \frac{b \sqrt{(a^{2} + c^{2})^{3}}}{a c(a^{2} + c^{2}) + 2b(a^{3} + c^{3})}$
 	  id:: 6745a3c5-66f7-450b-94fe-f6068dde589d
 	  tags:: formel
-	  bezeichnung:: unbelastete [[güte]] der $\mathrm{TE}_{101}$
+	  bezeichnung:: unbelastete [[güte]] der $\mathrm{TE}_{101}$ (grundmodus)
 		- $\eta$ ... [[wellenwiderstand]] $\iu{ \Omega }$
 		- $\mathbb{R}_\mathrm{M}$ ... oberflächenwiderstand $\iu{ \Omega }$
 		- $a$ ... breite des [[hohlraumleiters]] $\iu{ m }$
@@ -544,7 +547,6 @@ alias:: cheat sheet
 		- ((67403e6f-2a7f-4aec-8c79-829be01340e3))
 		- $\varepsilon_{r1}, \varepsilon_{r2}$ ... relative [[permittivität]] $\iu{-}$
 - ## [[streifenleitungen]]
-  collapsed:: true
 	- [S. 16](((677f9ddb-619a-431e-ad3e-32d1c258411b)))
 	- $Z_{\mathrm{L},0} \approx \sqrt{\frac{\mu_{0}}{\varepsilon_{0}}} \frac{1}{2 \pi} \ln \left(\frac{8h}{w} + \frac{w}{4h} \right)$
 	- $Z_{\mathrm{L}} = \frac{Z_{\mathrm{L},0}}{\sqrt{\varepsilon_{\mathrm{eff}}}}$
@@ -591,6 +593,13 @@ alias:: cheat sheet
 	- $\Delta \alpha_{m a x} = \frac{\pi}{\lambda} \frac{r'^{2}}{r}$
 	- $\frac{\pi}{2} = \frac{\pi}{\lambda} \frac{D^{2}}{r_{R}}$
 	- $r_{R} = \frac{2D^{2}}{\lambda} \left( + \lambda \right)$
+	  id:: 678780ff-e51d-4884-95f7-d0c8d0e1b8c6
+	  tags:: formel
+	  bezeichnung:: rayleighdistanz
+		- $r_R$ ... rayleighdistanz $\iu{m}$
+		- $D$ ... [[antennen]]querabmessung (ist die diagonale) $\iu{m}$
+		- $\lambda$ ... wellenlänge $\iu{m}$
+		- $+\lambda$ ... [[wellenlänge]]. zusatzterm für kleine [[antennen]] $\iu{m}$
 	- $\frac{\left|\mathbf{E}_{\mathrm{Co}} \left(\vartheta,\varphi \right) \right|}{\left|\mathbf{E}_{\mathrm{Co}} \left(\vartheta_{m a x},\varphi_{m a x} \right) \right|} = \frac{\left|\mathbf{H}_{\mathrm{X}} \left(\vartheta,\varphi \right) \right|}{\left|\mathbf{H}_{\mathrm{X}} \left(\vartheta_{m a x},\varphi_{m a x} \right) \right|} = f \left(\vartheta,\varphi \right)$
 	- $\vartheta_{m a x} = \pi/2 \mathrm{und}$
 	- $\varphi_{m a x} = \mathrm{beliebig}$
@@ -637,7 +646,7 @@ alias:: cheat sheet
 		- $\vartheta$ ... elevationswinkel $\iu{°}$
 	- $\frac{\left|\mathbf{E}_{\vartheta_{H D}} \right|}{\left|\mathbf{E}_{\vartheta_{\mathrm{HD}}} \right|_{m a x}} = f_{H D} \left(\vartheta \right) = \sin \vartheta$
 	- $P_{\mathrm{r_{HD}}} = \frac{4 \pi r^{2}}{3 \eta} \left|\mathbf{E}_{\vartheta,H D} \right|_{m a x}^{2}$
-	- $\mathbb{E}_{\vartheta} = \frac{j \eta \mathbf{I}}{2 \pi r} e^{ - j k r} \mathbb{F} \left(\vartheta,\varphi \right)$
+	- $\mathbf{E}_{\vartheta} = \frac{j \eta \mathbf{I}}{2 \pi r} e^{ - j k r} \mathbb{F} \left(\vartheta,\varphi \right)$
 	- $\mathbf{H}_{\varphi}^{\star} = - j \frac{\mathbf{I}^{\star}}{2 \pi r} e^{ + j k r} \mathbf{F}^{\star} \left(\vartheta,\varphi \right)$
 	- $P_{\mathrm{rpcr}} - \frac{1}{2}R e \left\{\oint \left(\dot{\mathbf{E}} \times \dot{\mathbf{H}}^{\star} \right) \cdot e_{r}^{\star} d f \right\} - \frac{1}{2} \int_{0}^{2 \pi} \int_{0}^{\pi} \eta \frac{|\mathbf{I}|^{2}}{4 \pi^{2}r^{2}} \left|\mathbf{F} \left(\vartheta,\varphi \right) \right|^{2}r^{2} \sin \vartheta d \vartheta d \varphi = 0.$
 	- $= \eta \frac{\left|\mathbf{I} \right|^{2}}{8 \pi^{2}} \underset{0}{\overset{2 \pi}{\int}} \underset{0}{\overset{\pi}{\int}} \left|\mathbf{F} \left(\vartheta,\varphi \right) \right|^{2} \sin \vartheta d \vartheta d \varphi$
@@ -667,6 +676,11 @@ alias:: cheat sheet
 	- $T_{E} \left(r \right) = G \frac{P_{S}}{4 \pi r^{2}}$
 	- $|\mathbf{E}_{E}| = \frac{A}{\lambda r}E_{0}$
 	- $T_{E} \left(r \right) = \frac{\left|\mathbf{E}_{E} \right|^{2}}{2 \eta} = \left(\frac{A}{\lambda r} \right)^{2} \frac{E_{0}^{2}}{2 \eta}$
+	  id:: 678780ff-5c89-43c4-8cc2-4a35a967d4da
+	  tags:: formel. wip
+	  bezeichnung:: empfangene strahlungsleitungsdichte
+		- $T_E$ ... empfangene strahlungsleitungsdichte $\iu{\frac{W}{m^2}}$
+		- $\mathrm{\mathbf{E}}_E$ ... empfangenes elektrisches feld $\iu{\frac{V}{m}}$
 	- $P_{S} = \frac{E_{0}^{2}}{2 \eta} A$
 	  tags:: formel, wip
 	  bezeichnung:: abgestrahlte leistung einer [[antenne]]
@@ -679,7 +693,19 @@ alias:: cheat sheet
 			- ((6737138c-9739-4333-8d9b-11a498e0f337))
 	- $G = 4 \pi r^{2} \frac{T_{E} \left(r \right)}{P_{S}} = 4 \pi \frac{A}{\lambda^{2}}$
 	- $G_{I S O} = \frac{4 \pi}{\lambda^{2}}A w$
-	- $P_{E} = A \bar{T}_{E}$
+	  id:: 678780ff-d63f-4aa5-8b94-a6125c19258b
+	  tags:: formel, wip
+	  bezeichnung:: -
+		- $G_{ISO}$ ... gewinn gegenüber des isotropen strahlers $\iu{-}$
+		- $\lambda$ ... [[wellenlänge]] $\iu{-}$
+		- $A$ ... $\iu{m^2}$
+		- $w$ ...
+	- $P_{E} = A T_E$
+	  tags:: formel
+	  bezeichnung:: empfangene strahlleistung
+	  id:: 678780ff-3a49-4091-ab70-67b63ef51501
+		- $T_E$ ... empfangene strahlungsleitungsdichte $\iu{\frac{W}{m^2}}$
+		- $A$ ... wirksame antennenfläche $\iu{m^2}$
 	- $G_{\mathrm{DUT/ISO}} = \frac{\mathit{E I R P}}{P_{\mathrm{L_{\mathrm{DUT}}}}} \cdot \frac{\left|E_{\vartheta_{\mathrm{DUT}}} \right|_{\mathrm{max}}^{2}}{\left|E_{\vartheta_{\mathrm{ISO}}} \right|_{\mathrm{max}}^{2}}$
 	- $\mathit{E I R P} = P_{L}G_{I S O}$
 	- $L=ns$
@@ -717,7 +743,6 @@ alias:: cheat sheet
 	- $\frac{P_{S1}}{P_{E2}} = \frac{P_{S2}}{P_{E1}}$
 	- $\begin{aligned}G\left(\vartheta,\varphi\right)= & \frac{P_{\mathrm{L_{REF}}}}{P_{\mathrm{L_{DUT}}}} \cdot \frac{\left|E_{\vartheta_{\mathrm{DUT}}} \left(\vartheta,\varphi\right)\right|^{2}} {\left|E_{\vartheta_{\mathrm{REF}}} \left(\vartheta,\varphi\right)\right|^{2}} = \\ =& \frac{P_{\mathrm{L_{REF}}}}{P_{\mathrm{L_{DUT}}}} \frac{\left|E_{\vartheta_{\mathrm{DUT}}}\right|_{\mathrm{max}}^{2}}{\left|E_{\vartheta_{\mathrm{REF}}}\right|_{\mathrm{max}}^{2}}\frac{\left|f_{\mathrm{DUT}}\left(\vartheta,\varphi\right)\right|^{2}}{\left|f_{\mathrm{REF}}\left(\vartheta,\varphi\right)\right|^{2}}= \\ = & G_{\mathrm{REF}}\cdot\frac{\left|f_{\mathrm{DUT}}\left(\vartheta,\varphi\right)\right|^{2}}{\left|f_{\mathrm{REF}}\left(\vartheta,\varphi\right)\right|^{2}} \end{aligned}$
 	- $M E G = \int G \left(\vartheta,\varphi \right) P \left(\vartheta,\varphi \right)d \Omega$
-	- $\mathbf{4} \boldsymbol{\pi}$
 - ## wellen im freien raum
 	- [S. 23](((677f9e16-d327-4592-a537-5690a7082038)))
 	- $r \doteq \sqrt{\frac{d \lambda}{4}}$
@@ -730,7 +755,9 @@ alias:: cheat sheet
 	- $P_{e} = P_{s} \left(\frac{1}{\lambda d} \right)^{2}A_{s}A_{e}$
 	- $L \big|_{\mathrm{dB}} = 10 \mathrm{log} \frac{P_{s}}{P_{e}}$
 	- $P_{e} \big|_{\mathrm{dBW}} = P_{s} \big|_{\mathrm{dBW}} + G_{s} \big|_{\mathrm{dB}} - L_{I S O} \big|_{\mathrm{dB}} + G_{e} \big|_{\mathrm{dB}}$
+	  id:: 678780ff-d8b2-4847-a149-2e222444d0ba
 	- $L_{I S O} = - 20 \log \left(\frac{\lambda}{4 \pi d} \right)$
+	  id:: 678780ff-e738-4208-8e43-80deffe6c80a
 	- $L_{s} = 10 \log \frac{P_{s}}{P_{n}} = 10 \cdot \log \frac{P_{s}}{P_{e,\mathrm{min}}} \frac{P_{e,\mathrm{min}}}{P_{n}} = L \big|_{\mathrm{dB}} + S N R_{\mathrm{min}} \big|_{\mathrm{dB}}$
 	- $T_{i} = \frac{P_{s}G_{s}}{4 \pi d^{2}}$
 	- $P_{e} = T_{e}A_{e} = \frac{T_{i} \sigma}{4 \pi d^{2}}A_{e} = \frac{P_{s}G_{s} \sigma}{\left(4 \pi d^{2} \right)^{2}} \frac{\lambda^{2}}{4 \pi}G_{e}$

@@ -6,6 +6,7 @@ tags:: uni
 
 - hier sollten alle offenen todos und work in progress (wip) sachen aufscheinen
 - ### TODOs
+  collapsed:: true
 	- {{query (task TODO)}}
 	  query-table:: true
 - ### WIPs

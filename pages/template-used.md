@@ -1,1 +1,1 @@
-filters:: {"content-type" true}
+- {{query (property :template-used "vocabulary")}}

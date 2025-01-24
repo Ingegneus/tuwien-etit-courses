@@ -2,7 +2,7 @@ public:: true
 icon:: 🖥
 color:: [[logseq-page-color-blue]] 
 template-used:: standard-page
-tags:: [[uni]]
+tags:: [[uni]], bachelor
 alias:: digisys
 
 - [📁 folder](file://)

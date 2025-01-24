@@ -257,9 +257,12 @@
 		["." [[:editor/input "{{now}}"]]]
 		["doc" [[:editor/input "![📚 doc](../assets/documents/)"]]]
 		["img" [[:editor/input "![img](../assets/documents/.webp)"]]]
-		["l" [[:editor/input "[]([[]])"]]]
+		["l" [[:editor/input "[]([[]])" {:backward-pos 7}]]]
 		["checkbox" [[:editor/input "<p><input type=\"checkbox\" class=\"form-checkbox\">  </p>" {:backward-pos 5}]]]
 		["iframe" [[:editor/input "{{{iframe }}}" {:backward-pos 3}]]]		
+		["dndparty" [[:editor/input "[wir]([[daniel dnd party]])"]]]
+		["dekan" [[:editor/input "[Dekan]([[Dekan der Akademie]])"]]]		
+		["Calculator" [[:editor/input "```calc\n:format sci 3\n\n```"] [:codemirror/focus]]]
 		
 		["highlight-yellow" [[:editor/input "<span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-yellow);'></span>"]]]
 		["highlight-red" [[:editor/input "<span class='inline px-1 with-bg-color' style='display: inline-block; background-color: var(--ls-highlight-color-red);'></span>"]]]
