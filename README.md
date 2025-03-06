@@ -1,15 +1,16 @@
 > **🚧 Achtung**
 dieses repo ist ein work in progress (wip). es wird definitiv noch unvollständigkeiten oder fehler geben. wenn dir etwas auffällt dann melde es bitte über ein [issue](https://github.com/Ingegneus/tuwien-etit-courses/issues) oder öffne vielleicht gleich ein [pull request](https://github.com/Ingegneus/tuwien-etit-courses/pulls), damit das hier so gut werden kann wie möglich.
 
-[was ist das hier](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#was-ist-das-hier)
-    [hier ein paar screenshots](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#hier-ein-paar-screenshots)
-    [motivation](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#motivation)
-[wie nutze ich das hier](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#wie-nutze-ich-das-hier)
-    [variante 1](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#variante-1-installation-explizit-windows-aber-sollte-f%C3%BCr-macos-und-linux-gleich-finktionieren)
-    [variante 2](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#variante-2-statische-html)
-    [variante 3](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#variante-3-github-pages)
-    [wie nutze ich das hier](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#mein-logseq-setup)
-[TODOs](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#todos)
+## übersicht
+- [was ist das hier](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#was-ist-das-hier)
+  - [hier ein paar screenshots](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#hier-ein-paar-screenshots)
+  - [motivation](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#motivation)
+- [wie nutze ich das hier](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#wie-nutze-ich-das-hier)
+  - [variante 1](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#variante-1-installation-explizit-windows-aber-sollte-f%C3%BCr-macos-und-linux-gleich-finktionieren)
+  - [variante 2](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#variante-2-statische-html)
+  - [variante 3](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#variante-3-github-pages)
+  - [wie nutze ich das hier](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#mein-logseq-setup)
+- [TODOs](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#todos)
 
 
 ## was ist das hier
