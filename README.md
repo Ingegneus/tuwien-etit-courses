@@ -1,5 +1,16 @@
 > **🚧 Achtung**
-dieses repo ist ein work in progress (wip). es wird definitiv noch unvollständigkeiten oder fehler geben 
+dieses repo ist ein work in progress (wip). es wird definitiv noch unvollständigkeiten oder fehler geben. wenn dir etwas auffällt dann melde es bitte über ein [issue](https://github.com/Ingegneus/tuwien-etit-courses/issues) oder öffne vielleicht gleich ein [pull request](https://github.com/Ingegneus/tuwien-etit-courses/pulls), damit das hier so gut werden kann wie möglich.
+
+[was ist das hier](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#was-ist-das-hier)
+    [hier ein paar screenshots](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#hier-ein-paar-screenshots)
+    [motivation](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#motivation)
+[wie nutze ich das hier](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#wie-nutze-ich-das-hier)
+    [variante 1](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#variante-1-installation-explizit-windows-aber-sollte-f%C3%BCr-macos-und-linux-gleich-finktionieren)
+    [variante 2](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#variante-2-statische-html)
+    [variante 3](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#variante-3-github-pages)
+    [wie nutze ich das hier](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#mein-logseq-setup)
+[TODOs](https://github.com/Ingegneus/tuwien-etit-courses?tab=readme-ov-file#todos)
+
 
 ## was ist das hier
 in diesem logseq grafen, versuche ich so gut es geht die stärken von logseq zu verwenden, um verständliche resourcen für studierende zu bieten. das system dass ich aufgesetzt habe ist bestimmt noch ausbaufähig, aber es ist mal ein anfang.
@@ -56,7 +67,7 @@ Die häufigsten git befehle die du brauchen wirst sind:
 lade dir die `html.zip` datei von [hier](https://github.com/Ingegneus/tuwien-etit-courses/releases) runter, entpacke sie und öffne die `index.html` datei (sollte sich automatisch im browser öffnen). bedenke, dass einiges im browser nicht funktionieren wird, da es nur eine statische html datei ist. das heißt alles was mit plugins zu tun hat wird nicht gehen
 
 ### variante 3: github pages
-effektiv ist das selbe wie 2 nur online. nutze diesen link öffnest [link](https://ingegneus.github.io/tuwien-etit-courses/). bedenke, dass einiges im browser nicht funktionieren wird, da es nur eine statische html datei ist. das heißt alles was mit plugins zu tun hat wird nicht gehen
+diese methode ist sehr ähnlich zu 2, nur online. es gibt allerdings ein paar einschränkungen, ist aber im zweifelsfall praktisch. nutze diesen link öffnest [link](https://ingegneus.github.io/tuwien-etit-courses/). bedenke, dass einiges im browser nicht funktionieren wird, da es nur eine statische html datei ist. das heißt alles was mit plugins zu tun hat wird nicht gehen
 
 ### mein logseq setup
 ich verwende logseq für so ziemlich alles und habe einige workflows entwickelt. für die uni nutze ich diese plugins:  

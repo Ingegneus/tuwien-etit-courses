@@ -5,12 +5,10 @@ tags:: uni, bachelor
 alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 
 - ## vorlesungen
-  collapsed:: true
 	- ![📚 WA-Skriptum-17.Auflage.pdf](.\assets\uni-unterlagen\Wellenausbreitung\WA-Skriptum-17.Auflage.pdf)
 	- [[WA videos]]
 	- ![📚 weihnachtsaufgabe](../assets/documents/Weihnachtsaufgabe/weihnachtsaufgabe.pdf)
 - ## beispiele
-  collapsed:: true
 	- ![📚 23_wa_version2.pdf](.\assets\uni-unterlagen\Wellenausbreitung\23_wa_version2.pdf)
 	- ![📚 Formelsammlung_7.Auflage.pdf](.\assets\uni-unterlagen\Wellenausbreitung\Formelsammlung_7.Auflage.pdf)
 	- Übergang von Vakuum nach Glas
@@ -1846,7 +1844,6 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				  background-color:: yellow
 	- Richtdiagramm und Gewinn einer Antenne
 	  background-color:: green
-	  collapsed:: true
 		- Eine verlustlose Antenne habe die Richtcharakteristik $\\ f(\vartheta,\varphi)=|\sin(\vartheta)\cos(\varphi)\cos(\varphi/2)|$
 		  background-color:: green
 		  collapsed:: true
