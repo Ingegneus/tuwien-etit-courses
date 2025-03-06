@@ -340,3 +340,14 @@ border-bottom:none}
 ::selection {
   background: var(--lx-accent-07);
 }
+
+span[title] {
+  text-decoration: grey dotted underline;
+}
+
+th {
+	background: var(--lx-accent-06-alpha);
+	font-size: 16px!important;
+	font-weight: bold!important;
+}
+
