@@ -1,0 +1,171 @@
+file:: [WA-Skriptum-17.Auflage.pdf](C:\Users\Matteo\Documents\Uni\Wellenausbreitung\WA-Skriptum-17.Auflage.pdf)
+file-path:: ./assets/uni-unterlagen/Wellenausbreitung/WA-Skriptum-17.Auflage.[[PDF]]
+
+- [:span]
+  ls-type:: annotation
+  hl-page:: 120
+  hl-color:: green
+  id:: 6737138c-9739-4333-8d9b-11a498e0f337
+  hl-type:: area
+  hl-stamp:: 1731662728516
+- Grenzﬂäche zu ideal leitfähigem Metall
+  ls-type:: annotation
+  hl-page:: 47
+  hl-color:: green
+  id:: 67405657-2347-4d8b-93f5-98a6b52c836c
+- der Erweiterung auf verlustbehaftete Medien wird der Feldwellenwiderstand einer HEW komplexwertig
+  ls-type:: annotation
+  hl-page:: 40
+  hl-color:: green
+  id:: 6740c51b-b09e-4b73-b018-e2d77efe468b
+- Ellipitische Polarisation (allgemeine Form)
+  ls-type:: annotation
+  hl-page:: 33
+  hl-color:: green
+  id:: 67459414-cc15-4ce4-be2d-77b9db927f8b
+- Die Momentanwerte sind (willkürliche Annahme über die Phase ψ)
+  ls-type:: annotation
+  hl-page:: 33
+  hl-color:: green
+  id:: 674594a5-fb6a-4ebb-89dd-80b6f7e96ed2
+- Grenzﬂäche zwischen Dielektrikum und idealem Leiter
+  ls-type:: annotation
+  hl-page:: 21
+  hl-color:: green
+  id:: 6745a044-ba2d-4aa3-a3a1-ed0e93ce2b01
+- eindimensionale homogene Wellengleichung
+  ls-type:: annotation
+  hl-page:: 28
+  hl-color:: green
+  id:: 6745f002-178c-48da-aada-e68861acbbc2
+- [:span]
+  ls-type:: annotation
+  hl-page:: 73
+  hl-color:: yellow
+  id:: 674b6434-58f7-44a3-b43b-601434f2dbaf
+  hl-type:: area
+  hl-stamp:: 1732994097268
+- Der rechte Faktor in (7.28) wird Reﬂexionsfaktor ρA (entspricht ΓTE bzw. ΓTM aus Kapitel 4.1) genannt
+  ls-type:: annotation
+  hl-page:: 85
+  hl-color:: green
+  id:: 674ec847-fd7d-4084-915e-8421e8671ad5
+- [:span]
+  ls-type:: annotation
+  hl-page:: 82
+  hl-color:: green
+  id:: 67500928-2cd7-4736-974a-ac900c32e971
+  hl-type:: area
+  hl-stamp:: 1733298470318
+- Der Ansatz für TEz -Wellen (also Ez1,2 ≡ 0) ist
+  ls-type:: annotation
+  hl-page:: 88
+  hl-color:: green
+  id:: 67508335-6d86-4e15-a41a-550561c07696
+- [:span]
+  ls-type:: annotation
+  hl-page:: 88
+  hl-color:: green
+  id:: 675090f8-65ba-412b-8543-a560d7644e48
+  hl-type:: area
+  hl-stamp:: 1733333238416
+- [:span]
+  ls-type:: annotation
+  hl-page:: 88
+  hl-color:: green
+  id:: 67517642-4ec8-4409-ade6-cc8d78118a1e
+  hl-type:: area
+  hl-stamp:: 1733391936468
+- [:span]
+  ls-type:: annotation
+  hl-page:: 18
+  hl-color:: green
+  id:: 6751d667-3181-4b73-87e6-9e864f549a9c
+  hl-type:: area
+  hl-stamp:: 1733416549997
+- [:span]
+  ls-type:: annotation
+  hl-page:: 19
+  hl-color:: green
+  id:: 6751d67e-65ca-4200-97c6-6e1dbfc841a2
+  hl-type:: area
+  hl-stamp:: 1733416571149
+- [:span]
+  ls-type:: annotation
+  hl-page:: 91
+  hl-color:: green
+  id:: 675330c9-5692-476c-ab43-c0f8c7614a54
+  hl-type:: area
+  hl-stamp:: 1733505222917
+- [:span]
+  ls-type:: annotation
+  hl-page:: 51
+  hl-color:: green
+  id:: 67814bdd-887a-474f-a649-a5d3f325d26a
+  hl-type:: area
+  hl-stamp:: 1736526812488
+- m gibt die Zahl der(projizierten) halben freien Wellenlängen an, die zwischen die Platten hineinpassen
+  ls-type:: annotation
+  hl-page:: 51
+  hl-color:: green
+  id:: 67814d8f-cd76-4bcd-bad5-f87878f8171e
+- m gibt die Zahl der(projizierten) halben freien Wellenlängen an, die zwischen die Platten hineinpassen. Zu jeder natürlichen Zahl m gehört eine Welle (Wellentyp, Modus);
+  ls-type:: annotation
+  hl-page:: 51
+  hl-color:: green
+  id:: 67814da4-970e-4339-a254-52ccde167cb4
+- Zwei Moden werden als entartet bezeichnet wenn sie gleiche Ausbreitungseigenschaften haben also gleiches kz , vG, ... haben. Achtung: diese Moden sind deswegen nicht identisch da das Feldbild unterschiedlich ist!
+  ls-type:: annotation
+  hl-page:: 90
+  hl-color:: green
+  id:: 6782a3fb-3b8a-408e-9791-4dc33f95f960
+- Allgemein bezeichnet man das Verhältnis der transversalen Hauptkomponenten als den Feldwellenwiderstand1 ZW eines Modus (auch eine HEW ist ein Modus). Dieser Feldwellenwiderstand ist im allgemeinen von der Geometrie des Wellenleiters und der Materialeigenschaften des Mediums, in dem sich die Welle ausbreitet, abhängig. Genauer, der Feldwellenwiderstand eines Wellentyps (Modus) ist ein Produkt aus einem Geometriefaktor und dem Wellenwiderstand des Mediums/Mediumswellenwiderstand. Der Wellenwiderstand hängt natürlich nur von den Materialeigenschaften des Mediums ab. Diese Deﬁnition setzt ein homogenes Medium voraus, in das der Wellenleiter eingebettet ist. Bei der HEW ist der Feldwellenwiderstand und der Mediumswellenwiderstand2 identisch. Die Lösung für die HEW besteht also aus zwei zueinander senkrecht stehenden transversalen Feldkomponenten ex und hy, die über den Feldwellenwiderstand des Mediums (ε, µ)1[Ramo, Whinnery, Van Duzer, 1965] ﬁeld or wave impedance2[Ramo, Whinnery, Van Duzer, 1965] intrinsic impedance of the medium29 miteinander verknüpft sind
+  ls-type:: annotation
+  hl-page:: 29
+  hl-color:: green
+  id:: 67851df0-5ab5-4a75-8265-e9e53af56ff7
+- Zur Berechnung des Leitungswellenwiderstandes, er beschreibt den Leistungstransport
+  ls-type:: annotation
+  hl-page:: 58
+  hl-color:: green
+  id:: 67851fab-caa6-40df-ad82-c4000f0c0f2e
+- [:span]
+  ls-type:: annotation
+  hl-page:: 23
+  hl-color:: green
+  id:: 6785692e-7da1-4bcb-8cee-c5ac910a4942
+  hl-type:: area
+  hl-stamp:: 1736796460855
+- Beachte, dass jetzt keine TEM-Welle mehr auf der Mikrostrip ausbreitungsfähig ist. Die Erfahrung zeigt aber, dass die Welle einer TEM-Welle ähnlich ist, wenigstens bei tiefen Frequenzen. Wir nennen sie Quasi-TEM-Welle
+  ls-type:: annotation
+  hl-page:: 96
+  hl-color:: green
+  id:: 67869d88-6686-46a0-a840-17e81ce4081e
+- [:span]
+  ls-type:: annotation
+  hl-page:: 96
+  hl-color:: green
+  id:: 67869e23-68e5-49dd-bb45-43b16048e86b
+  hl-type:: area
+  hl-stamp:: 1736875553985
+- [:span]
+  ls-type:: annotation
+  hl-page:: 97
+  hl-color:: green
+  id:: 67869fd7-52e0-4b2b-9b54-a6648092f0b2
+  hl-type:: area
+  hl-stamp:: 1736875989561
+- [:span]
+  ls-type:: annotation
+  hl-page:: 98
+  hl-color:: green
+  id:: 6786a0b1-caed-41bd-85f4-8460a08a1d75
+  hl-type:: area
+  hl-stamp:: 1736876207308
+- [:span]
+  ls-type:: annotation
+  hl-page:: 143
+  hl-color:: green
+  id:: 678e0328-fb62-430c-be46-97b45ff38ae4
+  hl-type:: area
+  hl-stamp:: 1737360166483

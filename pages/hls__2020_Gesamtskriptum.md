@@ -1,5 +1,5 @@
 file:: [2020_Gesamtskriptum.pdf"]("C:\Users\Matteo\Documents\Uni\Automatisierung\willi\01_Vorlesung\2020_Gesamtskriptum.pdf")
-file-path:: .\assets\uni-unterlagen\Automatisierungstechnik\2020_Gesamtskriptum.pdf
+file-path:: ./assets/uni-unterlagen/Automatisierungstechnik/2020_Gesamtskriptum.pdf
 
 - [:span]
   ls-type:: annotation

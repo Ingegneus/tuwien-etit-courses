@@ -5,7 +5,7 @@ template-used:: standard-page
 tags:: [[wellenausbreitung]], formeln
 alias:: cheat sheet
 
-- ![📚 Formelsammlung_7.Auflage.pdf](.\assets\uni-unterlagen\Wellenausbreitung\Formelsammlung_7.Auflage.pdf)
+- ![📚 Formelsammlung_7.Auflage.pdf](./assets/uni-unterlagen/Wellenausbreitung/Formelsammlung_7.Auflage.pdf)
 - ## [[maxwell]]
   collapsed:: true
 	- [S. 1](((677f9cf8-f37e-4b35-8c07-3ff96a2323f1)))

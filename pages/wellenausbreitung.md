@@ -5,12 +5,12 @@ tags:: uni, bachelor
 alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 
 - ## vorlesungen
-	- ![📚 WA-Skriptum-17.Auflage.pdf](.\assets\uni-unterlagen\Wellenausbreitung\WA-Skriptum-17.Auflage.pdf)
+	- ![📚 WA-Skriptum-17.Auflage.pdf](./assets/uni-unterlagen/Wellenausbreitung/WA-Skriptum-17.Auflage.pdf)
 	- [[WA videos]]
 	- ![📚 weihnachtsaufgabe](../assets/documents/Weihnachtsaufgabe/weihnachtsaufgabe.pdf)
 - ## beispiele
-	- ![📚 23_wa_version2.pdf](.\assets\uni-unterlagen\Wellenausbreitung\23_wa_version2.pdf)
-	- ![📚 Formelsammlung_7.Auflage.pdf](.\assets\uni-unterlagen\Wellenausbreitung\Formelsammlung_7.Auflage.pdf)
+	- ![📚 23_wa_version2.pdf](./assets/uni-unterlagen/Wellenausbreitung/23_wa_version2.pdf)
+	- ![📚 Formelsammlung_7.Auflage.pdf](./assets/uni-unterlagen/Wellenausbreitung/Formelsammlung_7.Auflage.pdf)
 	- Übergang von Vakuum nach Glas
 	  background-color:: green
 	  collapsed:: true
@@ -487,6 +487,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 			- ![📚 2024-11-21 18h45m_annotated.pdf](../assets/documents/2024-11-21 18h45m_annotated.pdf)
 	- Rechteckhohlleiter
 	  background-color:: green
+	  id:: 67bed1e4-c824-44cc-9c67-6f4b8e9e2cea
 	  collapsed:: true
 		- TODO this
 		- Variante 1) Untersuchen Sie die Ausbreitung von $\mathrm{TE}_{m,n}$ Wellen in $z$ Richtung im skizzierten Rechteckhohlleiter.
@@ -1844,6 +1845,7 @@ alias:: wave propagation, wellenausbreitungs, wellenausbreitung lva, WA
 				  background-color:: yellow
 	- Richtdiagramm und Gewinn einer Antenne
 	  background-color:: green
+	  collapsed:: true
 		- Eine verlustlose Antenne habe die Richtcharakteristik $\\ f(\vartheta,\varphi)=|\sin(\vartheta)\cos(\varphi)\cos(\varphi/2)|$
 		  background-color:: green
 		  collapsed:: true

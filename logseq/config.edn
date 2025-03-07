@@ -57,7 +57,7 @@
 
  ;; Enable Block timestamps.
  ;; Default value: false
- :feature/enable-block-timestamps? true
+ ;; :feature/enable-block-timestamps? false
  ;;mi
 
  ;; Disable accent marks when searching.
@@ -176,9 +176,11 @@
  ;;  :editor/down            ["ctrl+j" "down"]
  ;;  :editor/left            ["ctrl+h" "left"]
  ;;  :editor/right           ["ctrl+l" "right"]}
- :shortcuts 
- {:whiteboard/unlock		"mod+shift+u"
-  :plugin.logseq-automatic-linker/$shortcut$mod_shift_l "mod+shift+l"}
+ ;; :shortcuts 
+ ;; {:whiteboard/unlock		"mod+shift+u"
+ ;;  :plugin.logseq-automatic-linker/$shortcut$mod_shift_l "mod+shift+l"
+ ;;  :plugin.logseq-journals-nextprev/$shortcut$ctrl_right ["shift+ctrl+right"]
+ ;;  :plugin.logseq-journals-nextprev/$shortcut$ctrl_left ["shift+ctrl+left"]}}}
 
  ;; Configure the behavior of pressing Enter in document mode.
  ;; if set to true, pressing Enter will create a new block.
@@ -459,15 +461,5 @@
  ;;   - :triple-lowbar (default)
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
- :file/name-format :triple-lowbar
- :graph/settings {:journal? false
- :builtin-pages? true
- :orphan-pages? true
- :excluded-pages? false}
- :graph/forcesettings {:link-dist 180
- :charge-strength -1000
- :charge-range 2000}
- :editor/preferred-pasting-file? true
- :ui/show-brackets? false
- :feature/enable-flashcards? false
- :zotero/settings-v2 nil}
+ ;; :file/name-format :triple-lowbar
+ }
